@@ -12,7 +12,9 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
+    "@tinacms/cli": "^2.1.9",
     "astro": "^5.17.1",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "tinacms": "^3.6.1"
   }
 }

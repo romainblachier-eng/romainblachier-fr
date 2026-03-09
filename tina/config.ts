@@ -1,57 +1,32 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
-const branch =
-  process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
-  "main";
-
 export default defineConfig({
-  branch,
-
-  // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
-  token: process.env.TINA_TOKEN,
-
+  branch: "main",
+  clientId: "3751d4fc-dd15-4aca-a025-57b1e024faf2",
+  token: "0eb32f1fe4209ae9a7775a05fe274d9e0c19616f",
   build: {
     outputFolder: "admin",
     publicFolder: "public",
   },
-  // Uncomment to allow cross-origin requests from non-localhost origins
-  // during local development (e.g. GitHub Codespaces, Gitpod, Docker).
-  // Use 'private' to allow all private-network IPs (WSL2, Docker, etc.)
-  // server: {
-  //   allowedOrigins: ['https://your-codespace.github.dev'],
-  // },
   media: {
     tina: {
-      mediaRoot: "",
+      mediaRoot: "images",
       publicFolder: "public",
     },
   },
-  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
     collections: [
       {
         name: "post",
-        label: "Posts",
-        path: "content/posts",
+        label: "Articles",
+        path: "src/content/blog",
+        format: "md",
         fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
+          { type: "string", name: "title", label: "Titre", isTitle: true, required: true },
+          { type: "datetime", name: "pubDate", label: "Date de publication", required: true },
+          { type: "string", name: "description", label: "Description (SEO)", required: true },
+          { type: "string", name: "category", label: "Catégorie" },
+          { type: "rich-text", name: "body", label: "Contenu", isBody: true },
         ],
       },
     ],
