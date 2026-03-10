@@ -1,12 +1,8 @@
 ---
-title: "Taïwan face à son équation énergétique impossible"
-description: >-
-  Taïwan importe 97 % de son énergie primaire, ne dispose que de 11 à 14 jours
-  de réserves de GNL et a fermé son dernier réacteur nucléaire en mai 2025.
-  Face à la pression militaire chinoise, la sécurité énergétique de l'île
-  n'est plus une question de politique industrielle mais de souveraineté
-  démocratique.
+title: Taïwan face à son équation énergétique impossible
+description: 'Taïwan importe 97 % de son énergie primaire, ne dispose que de 11 à 14 jours de réserves de GNL et a fermé son dernier réacteur nucléaire en mai 2025. Face à la pression militaire chinoise, la sécurité énergétique de l''île n''est plus une question de politique industrielle mais de souveraineté démocratique.'
 pubDate: 2026-03-09T15:42:51.008Z
+heroImage: /assets/Main-Lantern-2026-590x449.webp
 ---
 
 *Enseignant à Sciences Po Paris, EM Lyon, IEP Lyon, ILERI, HEIP · Président de l'Association France-Formosa*
@@ -45,4 +41,4 @@ La question n'est plus de savoir si Taïwan peut se permettre une transition én
 
 L'indépendance de facto de Taïwan, que les démocraties occidentales ont intérêt à préserver, ne tiendra pas sans une réduction substantielle de sa dépendance énergétique. Trois dynamiques convergent — dépendance aux fossiles importés, explosion de la demande tirée par les semi-conducteurs et l'IA, pression géopolitique croissante de Pékin — et la fenêtre pour agir se referme. La sécurité énergétique n'est plus un chapitre de politique industrielle. Elle est devenue la condition de possibilité de la souveraineté démocratique de l'île.
 
-*Cet article s'appuie sur des données de l'Energy Administration taïwanaise, de l'Agence internationale de l'énergie, de la Foundation for Defense of Democracies, du Global Taiwan Institute, de l'Australian Strategic Policy Institute et de S&P Global, ainsi que sur des observations de terrain lors de missions à Taïwan.*
+*Cet article s'appuie sur des données de l'Energy Administration taïwanaise, de l'Agence internationale de l'énergie, de la Foundation for Defense of Democracies, du Global Taiwan Institute, de l'Australian Strategic Policy Institute et de S\&P Global, ainsi que sur des observations de terrain lors de missions à Taïwan.*
