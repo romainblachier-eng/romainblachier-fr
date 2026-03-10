@@ -6,7 +6,7 @@ heroImage: /assets/Main-Lantern-2026-590x449.webp
 ---
 
 ```
-<p><em>Enseignant à Sciences Po , EM Lyon, IEP Lyon, ILERI, HEIP · Président de l'Association France-Formosa</em></p>
+<p><em>Enseignant à Sciences Po , EM Lyon, ILERI, HEIP · Président de l'Association France-Formosa</em></p>
 
 <p>Taïwan importe 97 % de son énergie primaire. Ses réserves stratégiques de gaz naturel liquéfié couvrent entre 11 et 14 jours de consommation. Son dernier réacteur nucléaire a été arrêté en mai 2025. Et dans le même temps, la consommation électrique de TSMC — qui fabrique plus de 90 % des puces les plus avancées au monde — pourrait tripler d'ici 2030. On mesure l'ampleur du problème.</p>
 
