@@ -1,8 +1,6 @@
 import { defineConfig } from "tinacms";
 
 
-
-
 export default defineConfig({
   branch: "main",
   clientId: "3751d4fc-dd15-4aca-a025-57b1e024faf2",
@@ -58,10 +56,13 @@ export default defineConfig({
             label: "Image principale",
           },
           {
-            type: "rich-text",
+            type: "string",
             name: "body",
             label: "Contenu",
             isBody: true,
+            ui: {
+              component: "textarea",
+            },
           },
         ],
       },
