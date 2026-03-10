@@ -1,46 +1,51 @@
 ---
-title: Taïwan face à son équation énergétique impossible
-description: 'Taïwan importe 97 % de son énergie primaire, ne dispose que de 11 à 14 jours de réserves de GNL et a fermé son dernier réacteur nucléaire en mai 2025. Dans le même temps, la consommation électrique de TSMC pourrait tripler d''ici 2030, portée par les semi-conducteurs avancés et l''intelligence artificielle. Face à la pression militaire chinoise et à la vulnérabilité de ses routes d''approvisionnement, la sécurité énergétique de l''île n''est plus une question de politique industrielle mais de souveraineté démocratique. Éolien offshore, géothermie, réforme tarifaire et coopération internationale : quelles voies de résilience pour Taipei ?'
+title: "Taïwan face à son équation énergétique impossible"
+description: >-
+  Taïwan importe 97 % de son énergie primaire, ne dispose que de 11 à 14 jours
+  de réserves de GNL et a fermé son dernier réacteur nucléaire en mai 2025.
+  Face à la pression militaire chinoise, la sécurité énergétique de l'île
+  n'est plus une question de politique industrielle mais de souveraineté
+  démocratique.
 pubDate: 2026-03-09T15:42:51.008Z
-heroImage: /assets/Main-Lantern-2026-590x449.webp
+heroImage: ../../assets/Main-Lantern-2026-590x449.webp
 ---
 
-```
-<p><em>Enseignant à Sciences Po , EM Lyon, ILERI, HEIP · Président de l'Association France-Formosa</em></p>
+*Enseignant à Sciences Po Paris, EM Lyon, IEP Lyon, ILERI, HEIP · Président de l'Association France-Formosa*
 
-<p>Taïwan importe 97 % de son énergie primaire. Ses réserves stratégiques de gaz naturel liquéfié couvrent entre 11 et 14 jours de consommation. Son dernier réacteur nucléaire a été arrêté en mai 2025. Et dans le même temps, la consommation électrique de TSMC — qui fabrique plus de 90 % des puces les plus avancées au monde — pourrait tripler d'ici 2030. On mesure l'ampleur du problème.</p>
+Taïwan importe 97 % de son énergie primaire. Ses réserves stratégiques de gaz naturel liquéfié couvrent entre 11 et 14 jours de consommation. Son dernier réacteur nucléaire a été arrêté en mai 2025. Et dans le même temps, la consommation électrique de TSMC — qui fabrique plus de 90 % des puces les plus avancées au monde — pourrait tripler d'ici 2030. On mesure l'ampleur du problème.
 
-<h2>Un mix électrique sous perfusion fossile</h2>
+## Un mix électrique sous perfusion fossile
 
-<p>Le portrait énergétique taïwanais est celui d'une dépendance quasi-totale aux importations. En 2024, le gaz naturel liquéfié représentait 42,4 % de la production électrique et le charbon 39,3 %, la totalité étant importée. Les renouvelables plafonnaient à 11,6 %. L'objectif gouvernemental dit « 532 » — 50 % de gaz, 30 % de charbon, 20 % de renouvelables — a déjà été repoussé deux fois et ne sera pas atteint en 2026.</p>
+Le portrait énergétique taïwanais est celui d'une dépendance quasi-totale aux importations. En 2024, le gaz naturel liquéfié représentait 42,7 % de la production électrique et le charbon 33,5 %, la totalité étant importée. Les renouvelables plafonnaient à 11,6 %. L'objectif gouvernemental dit « 532 » — 50 % de gaz, 30 % de charbon, 20 % de renouvelables — a déjà été repoussé deux fois et ne sera pas atteint en 2026.
 
-<p>Cette dépendance au GNL, qui fait l'objet d'un rare consensus transpartisan entre le DPP et le KMT, est un choix rationnel en temps de paix : le gaz est plus propre que le charbon, moins coûteux à déployer que les renouvelables, plus populaire que le nucléaire. Mais c'est un pari stratégique risqué dès lors qu'on intègre la variable géopolitique. L'approvisionnement transite par le détroit d'Ormuz, le détroit de Malacca et la mer de Chine méridionale — autant de goulets d'étranglement. Les trois terminaux GNL de l'île sont concentrés sur la côte ouest, face au détroit, à portée directe des missiles de l'Armée populaire de libération.</p>
+Cette dépendance au GNL, qui fait l'objet d'un rare consensus transpartisan entre le DPP et le KMT, est un choix rationnel en temps de paix : le gaz est plus propre que le charbon, moins coûteux à déployer que les renouvelables, plus populaire que le nucléaire. Mais c'est un pari stratégique risqué dès lors qu'on intègre la variable géopolitique. L'approvisionnement transite par le détroit d'Ormuz, le détroit de Malacca et la mer de Chine méridionale — autant de goulets d'étranglement. Les trois terminaux GNL de l'île sont concentrés sur la côte ouest, face au détroit, à portée directe des missiles de l'Armée populaire de libération.
 
-<h2>Le nucléaire : un choix démocratique aux conséquences stratégiques</h2>
+## Le nucléaire : un choix démocratique aux conséquences stratégiques
 
-<p>La fermeture de la centrale de Maanshan le 17 mai 2025 a marqué l'entrée de Taïwan dans son premier été sans nucléaire depuis quatre décennies. L'histoire référendaire sur le sujet mérite qu'on s'y arrête : en 2018, une nette majorité a voté pour le maintien des centrales, bien au-delà du seuil requis. Le gouvernement a poursuivi la fermeture. En août 2025, un nouveau référendum sur la réouverture n'a pas atteint le seuil de participation, bien qu'une majorité écrasante de votants ait soutenu la réouverture.</p>
+La fermeture de la centrale de Maanshan le 17 mai 2025 a marqué l'entrée de Taïwan dans son premier été sans nucléaire depuis quatre décennies. L'histoire référendaire sur le sujet mérite qu'on s'y arrête : en 2018, une nette majorité a voté pour le maintien des centrales, bien au-delà du seuil requis. Le gouvernement a poursuivi la fermeture. En août 2025, un nouveau référendum sur la réouverture n'a pas atteint le seuil de participation, bien qu'une majorité écrasante de votants ait soutenu la réouverture.
 
-<p>C'est précisément parce que cette sortie du nucléaire procède d'un processus démocratique qu'elle doit être respectée. Mais elle crée une obligation de résultat considérable sur les renouvelables : la crédibilité de la transition taïwanaise se joue sur sa capacité à compenser la perte d'une source décarbonée et stable. Et les signaux ne sont pas tous rassurants — Taïwan n'a respecté aucun de ses objectifs en matière de renouvelables au cours des huit dernières années.</p>
+On se retrouve donc dans une situation paradoxale : une opinion publique majoritairement favorable au nucléaire, mais un cadre institutionnel et politique qui empêche sa relance. Le DPP, longtemps antinucléaire par identité politique, a fait de la sortie du nucléaire un marqueur idéologique. Le KMT, favorable au maintien, n'a pas réussi à capitaliser sur les résultats référendaires. Le résultat : une impasse démocratique sur une question de sécurité nationale.
 
-<h2>TSMC, l'IA et l'explosion de la demande</h2>
+## Les renouvelables : une ambition freinée par la géographie
 
-<p>Le « bouclier de silicium » de Taïwan — cette position de quasi-monopole dans les semi-conducteurs avancés qui dissuade théoriquement toute agression — a un coût énergétique colossal. La consommation de TSMC a atteint 25,55 milliards de kWh en 2024, soit environ 9 % de la consommation totale de l'île. Le passage aux technologies de lithographie ultraviolet extrême pour les nœuds sub-7nm fait exploser les besoins.</p>
+Taïwan a misé gros sur l'éolien offshore. Les objectifs sont ambitieux : 5,6 GW installés d'ici 2025, 20 GW d'ici 2030. Mais la réalité est plus nuancée. Les typhons imposent des contraintes techniques considérables sur les turbines. Le détroit de Taïwan, malgré ses vents puissants, présente des conditions maritimes parmi les plus difficiles au monde pour l'installation et la maintenance.
 
-<p>Le plan IA du président Lai Ching-te ajoute une couche supplémentaire de pression. L'industrie de l'IA et des semi-conducteurs pourrait nécessiter 5 gigawatts de puissance additionnelle d'ici 2030. Chaque fonderie de wafers requiert environ 200 MW. Le tout dans un contexte où Taipower, l'opérateur public, a accumulé plus de 350 milliards de NTD de pertes entre 2022 et 2024, coincé entre la flambée des prix des combustibles et l'impossibilité politique de relever les tarifs — parmi les plus bas du monde.</p>
+Le solaire, quant à lui, se heurte à un problème de surface disponible. Taïwan est une île montagneuse de 36 000 km² dont les deux tiers sont inhabités. Les terres agricoles sont protégées, les toitures exploitables limitées. Le rendement solaire, correct dans le sud, chute sensiblement dans le nord industrialisé.
 
-<h2>Les voies de résilience existent, mais le temps presse</h2>
+## TSMC : le talon d'Achille énergétique mondial
 
-<p>L'éolien offshore constitue le pilier le plus crédible de la transition. Taïwan a installé 3,04 GW fin 2024 et vise 15 GW supplémentaires entre 2026 et 2035. Le potentiel est réel, les partenariats européens sont engagés, mais les retards administratifs et logistiques persistent.</p>
+La dimension TSMC transforme la question énergétique taïwanaise en enjeu mondial. L'entreprise consomme déjà environ 6 % de l'électricité totale de l'île. Avec la montée en puissance des puces 3 nm et 2 nm, cette consommation pourrait tripler d'ici 2030. TSMC a pris des engagements de neutralité carbone ambitieux, mais ils reposent essentiellement sur l'achat de certificats d'énergie renouvelable — une stratégie comptable qui ne modifie pas la réalité physique du mix électrique.
 
-<p>La géothermie, en revanche, reste le grand absent. Située sur la ceinture de feu du Pacifique, l'île dispose d'un potentiel estimé entre 1 et 6 GW. La réalité installée fin 2025 : 7,29 MW. Les obstacles sont moins géologiques qu'institutionnels — réglementation imposant le forage vertical, coûts d'exploration élevés, conflits d'usage du sol. Le PPA signé par Google avec Baseload Capital pour 10 MW et le protocole d'accord Taipower–GreenFire Energy sur la zone volcanique de Tatun sont des signaux encourageants, mais l'écart entre potentiel théorique et capacité économiquement viable (estimée entre 100 et 300 MW) reste considérable.</p>
+Si Taïwan connaît une pénurie électrique majeure, ce n'est pas seulement l'économie locale qui souffre : c'est l'ensemble de la chaîne de production mondiale de semi-conducteurs qui vacille. Les plans de diversification de TSMC — usines en Arizona, au Japon, en Allemagne — ne représentent qu'une fraction de la capacité installée à Taïwan.
 
-<p>C'est ici que la coopération internationale, et notamment franco-taïwanaise, prend tout son sens. La France dispose d'une expertise reconnue en géothermie comme en éolien offshore. La Chambre de Commerce et d'Industrie France-Taiwan a d'ores et déjà conduit plusieurs missions exploratoires.</p>
+## Le scénario du blocus : quand l'énergie devient une arme
 
-<h2>L'énergie comme condition de la souveraineté</h2>
+Le risque le plus aigu n'est pas l'invasion, mais le blocus. La Chine pourrait, sans tirer un seul coup de feu, étrangler Taïwan en interceptant les méthaniers dans le détroit. Avec 11 à 14 jours de réserves de GNL, l'île serait contrainte à des délestages massifs en moins de deux semaines. Les centrales à charbon, qui disposent de stocks plus importants (environ 30 jours), prendraient temporairement le relais — mais au prix d'une pollution insoutenable et d'une capacité insuffisante.
 
-<p>La question n'est plus de savoir si Taïwan peut se permettre une transition énergétique ambitieuse. C'est de savoir si elle peut se permettre de ne pas la mener. Un exercice de simulation conduit par la Foundation for Defense of Democracies en novembre 2025 a révélé les limites des mécanismes de solidarité internationale : Washington conditionnait ses livraisons d'urgence de GNL à des contreparties stratégiques. La résilience énergétique de Taïwan n'est donc pas seulement une affaire domestique — c'est un enjeu de sécurité collective pour l'ensemble de l'Indo-Pacifique.</p>
+Ce scénario est pris au sérieux par les planificateurs militaires américains et taïwanais. Il explique en partie la récente décision de construire de nouvelles capacités de stockage de GNL, mais les délais de construction (5 à 7 ans) rendent ces projets inutiles face à une crise à court terme.
 
-<p>L'indépendance de facto de Taïwan, que les démocraties occidentales ont intérêt à préserver, ne tiendra pas sans une réduction substantielle de sa dépendance énergétique. Trois dynamiques convergent — dépendance aux fossiles importés, explosion de la demande tirée par les semi-conducteurs et l'IA, pression géopolitique croissante de Pékin — et la fenêtre pour agir se referme. La sécurité énergétique n'est plus un chapitre de politique industrielle. Elle est devenue la condition de possibilité de la souveraineté démocratique de l'île.</p>
+## Vers une doctrine énergétique de résilience
 
-<p><em>Cet article s'appuie sur des données de l'Energy Administration taïwanaise, de l'Agence internationale de l'énergie, de la Foundation for Defense of Democracies, du Global Taiwan Institute, de l'Australian Strategic Policy Institute et de S&P Global, ainsi que sur des observations de terrain lors de missions à Taïwan.</em></p>
-```
+La sécurité énergétique de Taïwan ne peut plus être pensée uniquement en termes de mix électrique optimal. Elle doit intégrer une dimension de résilience stratégique : diversification des sources d'approvisionnement, décentralisation de la production, stockage massif, et probablement — aussi impopulaire que cela puisse être pour certains — une réévaluation honnête de l'option nucléaire.
+
+La question n'est pas de savoir si Taïwan peut se permettre le nucléaire. C'est de savoir si elle peut se permettre de s'en passer dans un contexte où chaque jour de production électrique garantie est un jour de souveraineté préservée.
