@@ -1,0 +1,6 @@
+# robots.txt — romainblachier.fr
+
+User-agent: *
+Allow: /
+
+Sitemap: https://romainblachier.fr/sitemap-index.xml
