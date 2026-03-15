@@ -5,13 +5,74 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
+
 <!doctype html>
 <html lang="fr">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+	<!-- Schema.org JSON-LD : Person + ProfessionalService -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "https://romainblachier.fr/#website",
+					"url": "https://romainblachier.fr/",
+					"name": "Romain Blachier — Expert Énergie & Géopolitique",
+					"description": "Expert franco-taïwanais en énergie et géopolitique. Conférences, formations, chroniques médias.",
+					"publisher": { "@id": "https://romainblachier.fr/#person" },
+					"inLanguage": "fr-FR"
+				},
+				{
+					"@type": "Person",
+					"@id": "https://romainblachier.fr/#person",
+					"name": "Romain Blachier",
+					"givenName": "Romain",
+					"familyName": "Blachier",
+					"jobTitle": "Expert Énergie & Géopolitique",
+					"description": "Expert franco-taïwanais en énergie et géopolitique. 18 ans d'expérience dans le secteur de l'énergie. Conférencier, enseignant et chroniqueur.",
+					"url": "https://romainblachier.fr/",
+					"sameAs": [
+						"https://www.linkedin.com/in/romainblachier",
+						"https://www.tiktok.com/@finbookie",
+						"https://romain-blachier.com"
+					],
+					"knowsAbout": [
+						"Géopolitique de l'énergie", "Taïwan", "Indo-Pacifique",
+						"Énergie nucléaire", "Transition énergétique", "Marchés de l'énergie",
+						"Semi-conducteurs", "GNL", "Communication stratégique"
+					],
+					"alumniOf": [{ "@type": "EducationalOrganization", "name": "Sciences Po Paris" }],
+					"memberOf": [{ "@type": "Organization", "name": "Association France-Formosa", "roleName": "Président" }],
+					"hasOccupation": [
+						{ "@type": "Occupation", "name": "Conférencier en géopolitique de l'énergie" },
+						{ "@type": "Occupation", "name": "Enseignant en géopolitique" },
+						{ "@type": "Occupation", "name": "Expert énergie et consultant" }
+					],
+					"knowsLanguage": ["fr", "en", "zh"],
+					"email": "contact@rb-webconsultant.net"
+				},
+				{
+					"@type": "ProfessionalService",
+					"@id": "https://romainblachier.fr/#service",
+					"name": "Romain Blachier — Conférences & Formations",
+					"provider": { "@id": "https://romainblachier.fr/#person" },
+					"serviceType": [
+						"Conférences géopolitique de l'énergie",
+						"Formations marchés de l'énergie",
+						"Expertise médias",
+						"Conseil en communication stratégique"
+					],
+					"areaServed": { "@type": "Country", "name": "France" },
+					"url": "https://romainblachier.fr/"
+				}
+			]
+		})} />
+
 		<Header />
+
 
 		<!-- HERO -->
 		<section class="hero">
@@ -34,206 +95,3 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 					D'un enseignant pour vos programmes en géopolitique ? D'un
 					conférencier qui sait captiver un auditoire ? Vous êtes au bon
 					endroit.
-				</p>
-				<a href="#contact" class="hero-cta">Discutons de votre projet</a>
-			</div>
-		</section>
-
-		<!-- ABOUT -->
-		<section class="about">
-			<div class="about-inner">
-				<h2 class="about-label">Pourquoi faire appel à moi</h2>
-				<div class="about-text">
-					<p>
-						Je ne suis pas un universitaire en chambre ni un consultant
-						généraliste. Je suis un praticien : 18 ans dans l'énergie chez
-						le 3ᵉ producteur français d'électricité, 12 ans d'élu à la
-						Métropole de Lyon avec des délégations concrètes (culture,
-						numérique, international), et enseignant à Sciences Po Paris et
-						EM Lyon depuis 2010. Quand je parle d'un sujet, je le connais de
-						l'intérieur.
-					</p>
-					<p>
-						Ce que ça change pour vous : des interventions ancrées dans le
-						réel, pas dans le jargon. Une capacité à vulgariser des sujets
-						complexes pour un auditoire grand public comme pour des
-						spécialistes. Et un réseau qui va de Taipei aux collectivités
-						françaises, en passant par le monde de la culture et des
-						festivals.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- SERVICES -->
-		<section class="services">
-			<div class="services-inner">
-				<h2 class="section-title">Ce que je peux vous apporter</h2>
-				<div class="services-grid">
-					<div class="service-card">
-						<div class="service-icon">🎓</div>
-						<h3>Cours & formations</h3>
-						<p>
-							Vous montez un programme en énergie, géopolitique ou affaires
-							publiques ? J'enseigne depuis 2010 à Sciences Po Paris, EM
-							Lyon, IEP Lyon, ILERI et HEIP. Cours clés en main ou modules
-							sur mesure — je m'adapte à vos besoins.
-						</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">📡</div>
-						<h3>Expert médias & chroniques</h3>
-						<p>
-							Vous préparez un sujet sur Taïwan, la crise énergétique ou le
-							nucléaire ? Je suis disponible pour vos plateaux TV, émissions
-							radio et podcasts. Analyses sourcées, ton direct, capacité à
-							vulgariser pour le grand public.
-						</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">🎤</div>
-						<h3>Conférences & événements</h3>
-						<p>
-							Vos participants veulent comprendre les enjeux énergétiques et
-							géopolitiques ? J'interviens en keynote, table ronde ou
-							séminaire. Un conférencier qui maîtrise son sujet, en français
-							et en anglais.
-						</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">🧭</div>
-						<h3>Communication & affaires publiques</h3>
-						<p>
-							Vous avez besoin d'un regard expert sur votre stratégie de
-							communication, vos relations institutionnelles ou votre
-							visibilité en ligne ? SEO, référencement IA (GEO),
-							communication de crise — 18 ans de pratique terrain.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- SUJETS D'EXPERTISE -->
-		<section class="sujets">
-			<div class="sujets-inner">
-				<h2 class="section-title" style="color: var(--beige);">
-					Sujets d'expertise
-				</h2>
-				<div class="tags-wrap">
-					<span class="tag">Marchés de l'énergie</span>
-					<span class="tag">Taïwan & Indo-Pacifique</span>
-					<span class="tag">Géopolitique de l'énergie</span>
-					<span class="tag">Politiques culturelles</span>
-					<span class="tag">Hydroélectricité & ENR</span>
-					<span class="tag">Nucléaire</span>
-					<span class="tag">Transition énergétique</span>
-					<span class="tag">Souveraineté énergétique</span>
-					<span class="tag">Affaires publiques</span>
-					<span class="tag">Relations institutionnelles</span>
-					<span class="tag">Systèmes politiques comparés</span>
-					<span class="tag">Communication de crise</span>
-					<span class="tag">Religion & géopolitique</span>
-					<span class="tag">Gouvernance locale</span>
-					<span class="tag">Communication numérique</span>
-					<span class="tag hi">SEO & référencement IA (GEO)</span>
-					<span class="tag">IA & enseignement</span>
-					<span class="tag">Économie de la culture</span>
-					<span class="tag">Musiques actuelles & festivals</span>
-					<span class="tag">Diplomatie culturelle</span>
-				</div>
-			</div>
-		</section>
-
-		<!-- RÉFÉRENCES -->
-		<section class="references">
-			<div class="references-inner">
-				<h2 class="section-title">Références</h2>
-				<div class="ref-grid">
-					<div class="ref-col">
-						<h3>Enseignement</h3>
-						<ul>
-							<li>Sciences Po Paris</li>
-							<li>EM Lyon Business School</li>
-							<li>IEP de Lyon</li>
-							<li>ILERI</li>
-							<li>HEIP</li>
-						</ul>
-					</div>
-					<div class="ref-col">
-						<h3>Expérience</h3>
-						<div style="margin-bottom: 1.5rem;">
-							<div class="ref-big">18 ans</div>
-							<div class="ref-cap">
-								dans le secteur de l'énergie<br />Compagnie Nationale du
-								Rhône
-							</div>
-						</div>
-						<div>
-							<div class="ref-big">12 ans</div>
-							<div class="ref-cap">
-								élu, Métropole de Lyon<br />Culture, numérique,
-								international
-							</div>
-						</div>
-					</div>
-					<div class="ref-col">
-						<h3>Culture & engagement</h3>
-						<ul>
-							<li>Pdt, Association France-Formosa</li>
-							<li>Pdt, Théâtre du Croiseur</li>
-							<li>Admin., Mediatone / Reperkusound</li>
-							<li>VP, FC Lyon – La Duchère</li>
-							<li>Auteur, <em>Guillotière(s)</em></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- CONTACT -->
-		<section class="contact-section" id="contact">
-			<div class="contact-inner">
-				<div class="contact-left">
-					<h2>Faisons connaissance</h2>
-					<p>
-						Un email suffit. Décrivez-moi votre besoin — un cours à monter,
-						un plateau à préparer, une conférence à organiser, une stratégie
-						de communication à construire — et je vous réponds sous 48h avec
-						une proposition concrète.
-					</p>
-					<div class="contact-links">
-						<a href="mailto:contact@rb-webconsultant.net"
-							>✉ contact@rb-webconsultant.net</a
-						>
-						<a
-							href="https://www.linkedin.com/in/romainblachier/"
-							target="_blank">→ LinkedIn</a
-						>
-						<a href="https://www.tiktok.com/@finbookie" target="_blank"
-							>@finbookie — décryptages énergie & géopolitique</a
-						>
-					</div>
-					<div class="contact-cv">
-						<a href="https://romain-blachier.com" target="_blank"
-							>Parcours détaillé →</a
-						>
-					</div>
-				</div>
-				<form class="contact-form" action="#" method="POST">
-					<div class="form-row">
-						<input type="text" placeholder="Nom" required />
-						<input type="email" placeholder="Email" required />
-					</div>
-					<input type="text" placeholder="Sujet de votre demande" required />
-					<textarea
-						placeholder="Décrivez votre besoin en quelques lignes..."
-						required></textarea>
-					<button type="submit">Envoyer</button>
-				</form>
-			</div>
-		</section>
-
-		<Footer />
-	</body>
-</html>
