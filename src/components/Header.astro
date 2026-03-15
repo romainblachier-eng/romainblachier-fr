@@ -1,15 +1,31 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
+import { getLangFromUrl, useTranslations, getLocalePath } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const otherLang = lang === 'fr' ? 'en' : 'fr';
+
+// Build the equivalent path in the other language
+const pathname = Astro.url.pathname;
+let otherLangPath: string;
+if (lang === 'fr') {
+	otherLangPath = `/en${pathname === '/' ? '/' : pathname}`;
+} else {
+	otherLangPath = pathname.replace(/^\/en/, '') || '/';
+}
 ---
 
 <header>
 	<nav>
-		<a href="/" class="site-brand">{SITE_TITLE.split("—")[0].trim()}</a>
+		<a href={getLocalePath(lang, '/')} class="site-brand">Romain Blachier</a>
 		<div class="internal-links">
-			<HeaderLink href="/">Accueil</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/#contact">Contact</HeaderLink>
+			<HeaderLink href={getLocalePath(lang, '/')}>{t('nav.home')}</HeaderLink>
+			<HeaderLink href={getLocalePath(lang, '/blog')}>{t('nav.blog')}</HeaderLink>
+			<HeaderLink href={getLocalePath(lang, '/') + '#contact'}>{t('nav.contact')}</HeaderLink>
+			<a href={otherLangPath} class="lang-switch" aria-label={otherLang === 'en' ? 'Switch to English' : 'Passer en français'}>
+				{otherLang === 'en' ? 'EN' : 'FR'}
+			</a>
 		</div>
 	</nav>
 </header>
@@ -45,6 +61,23 @@ import { SITE_TITLE } from "../consts";
 	.internal-links {
 		display: flex;
 		gap: 1.5rem;
+		align-items: center;
+	}
+	.lang-switch {
+		font-family: "Outfit", sans-serif;
+		font-size: 0.75rem;
+		font-weight: 500;
+		letter-spacing: 0.08em;
+		color: var(--gold);
+		text-decoration: none;
+		border: 1px solid var(--gold);
+		padding: 0.2rem 0.5rem;
+		border-radius: 3px;
+		transition: all 0.3s;
+	}
+	.lang-switch:hover {
+		background: var(--gold);
+		color: var(--navy);
 	}
 	@media (max-width: 480px) {
 		nav {

@@ -5,20 +5,23 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { lang?: string };
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+const t = useTranslations(lang as 'fr' | 'en');
 
-// Build article metadata for OG tags
 const articleMeta = {
 	publishedTime: pubDate ? new Date(pubDate).toISOString() : undefined,
 	modifiedTime: updatedDate ? new Date(updatedDate).toISOString() : undefined,
-	section: "Énergie & Géopolitique",
-	tags: ["énergie", "géopolitique", "Taïwan", "analyse"],
+	section: lang === 'fr' ? "Énergie & Géopolitique" : "Energy & Geopolitics",
+	tags: lang === 'fr'
+		? ["énergie", "géopolitique", "Taïwan", "analyse"]
+		: ["energy", "geopolitics", "Taiwan", "analysis"],
 };
 
-// Schema.org Article JSON-LD
 const articleSchema = {
 	"@context": "https://schema.org",
 	"@type": "Article",
@@ -40,13 +43,13 @@ const articleSchema = {
 		"@type": "WebPage",
 		"@id": Astro.url.toString()
 	},
-	"articleSection": "Énergie & Géopolitique",
-	"inLanguage": "fr-FR",
+	"articleSection": lang === 'fr' ? "Énergie & Géopolitique" : "Energy & Geopolitics",
+	"inLanguage": lang === 'fr' ? "fr-FR" : "en-US",
 	"isAccessibleForFree": true
 };
 ---
 
-<html lang="fr">
+<html lang={lang}>
 	<head>
 		<BaseHead title={`${title} | Romain Blachier`} description={description} article={articleMeta} />
 		<style>
@@ -91,7 +94,6 @@ const articleSchema = {
 	</head>
 
 	<body>
-		<!-- Schema.org Article JSON-LD -->
 		<script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
 		<Header />
@@ -103,11 +105,11 @@ const articleSchema = {
 				<div class="prose">
 					<div class="title">
 						<div class="date">
-							<FormattedDate date={pubDate} />
+							<FormattedDate date={pubDate} lang={lang} />
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										Mis à jour le <FormattedDate date={updatedDate} />
+										{t('blog.updated')} <FormattedDate date={updatedDate} lang={lang} />
 									</div>
 								)
 							}

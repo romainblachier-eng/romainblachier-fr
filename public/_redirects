@@ -1,0 +1,33 @@
+# Redirect English speakers to /en/ version
+/  /en/  302  Language=en
+/about  /en/about  302  Language=en
+/blog  /en/blog  302  Language=en
+/blog/*  /en/blog/:splat  302  Language=en
+
+# Also redirect other common non-French languages to English
+/  /en/  302  Language=de
+/  /en/  302  Language=es
+/  /en/  302  Language=it
+/  /en/  302  Language=pt
+/  /en/  302  Language=ja
+/  /en/  302  Language=ko
+/  /en/  302  Language=zh
+/  /en/  302  Language=ar
+/  /en/  302  Language=ru
+/  /en/  302  Language=nl
+/  /en/  302  Language=pl
+/  /en/  302  Language=sv
+/  /en/  302  Language=hi
+/  /en/  302  Language=tr
+/about  /en/about  302  Language=de
+/about  /en/about  302  Language=es
+/about  /en/about  302  Language=zh
+/about  /en/about  302  Language=ja
+/blog  /en/blog  302  Language=de
+/blog  /en/blog  302  Language=es
+/blog  /en/blog  302  Language=zh
+/blog  /en/blog  302  Language=ja
+/blog/*  /en/blog/:splat  302  Language=de
+/blog/*  /en/blog/:splat  302  Language=es
+/blog/*  /en/blog/:splat  302  Language=zh
+/blog/*  /en/blog/:splat  302  Language=ja

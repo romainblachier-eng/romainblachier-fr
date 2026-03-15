@@ -1,0 +1,254 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { useTranslations } from "../../i18n/utils";
+
+const t = useTranslations('en');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={t('seo.title')} description={t('seo.description')} />
+	</head>
+	<body>
+		<!-- Schema.org JSON-LD : Person + ProfessionalService (EN) -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "https://romainblachier.fr/en/#website",
+					"url": "https://romainblachier.fr/en/",
+					"name": "Romain Blachier — Energy & Geopolitics Expert",
+					"description": "Franco-Taiwanese energy and geopolitics expert. Conferences, university lectures, media commentary.",
+					"publisher": { "@id": "https://romainblachier.fr/#person" },
+					"inLanguage": "en-US"
+				},
+				{
+					"@type": "Person",
+					"@id": "https://romainblachier.fr/#person",
+					"name": "Romain Blachier",
+					"givenName": "Romain",
+					"familyName": "Blachier",
+					"jobTitle": "Energy & Geopolitics Expert",
+					"description": "Franco-Taiwanese energy and geopolitics expert. 18 years in the energy sector. Speaker, lecturer, and media commentator.",
+					"url": "https://romainblachier.fr/",
+					"sameAs": [
+						"https://www.linkedin.com/in/romainblachier",
+						"https://www.tiktok.com/@finbookie",
+						"https://romain-blachier.com"
+					],
+					"knowsAbout": [
+						"Energy geopolitics", "Taiwan", "Indo-Pacific",
+						"Nuclear energy", "Energy transition", "Energy markets",
+						"Semiconductors", "LNG", "Strategic communications"
+					],
+					"alumniOf": [{ "@type": "EducationalOrganization", "name": "Sciences Po Paris" }],
+					"memberOf": [{ "@type": "Organization", "name": "France-Formosa Association", "roleName": "President" }],
+					"hasOccupation": [
+						{ "@type": "Occupation", "name": "Energy geopolitics speaker" },
+						{ "@type": "Occupation", "name": "Geopolitics lecturer" },
+						{ "@type": "Occupation", "name": "Energy expert and consultant" }
+					],
+					"knowsLanguage": ["fr", "en", "zh"],
+					"email": "contact@rb-webconsultant.net"
+				},
+				{
+					"@type": "ProfessionalService",
+					"@id": "https://romainblachier.fr/en/#service",
+					"name": "Romain Blachier — Conferences & Training",
+					"provider": { "@id": "https://romainblachier.fr/#person" },
+					"serviceType": [
+						"Energy geopolitics conferences",
+						"Energy market training",
+						"Media expertise",
+						"Strategic communications consulting"
+					],
+					"areaServed": [
+						{ "@type": "Country", "name": "France" },
+						{ "@type": "Country", "name": "Taiwan" }
+					],
+					"url": "https://romainblachier.fr/en/"
+				}
+			]
+		})} />
+
+		<Header />
+
+		<!-- HERO -->
+		<section class="hero">
+			<div class="hero-inner">
+				<div class="hero-star">
+					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12 2L15.09 10.26H24L17.45 15.74L20.54 24L12 18.52L3.46 24L6.55 15.74L0 10.26H8.91L12 2Z"
+							fill="currentColor"
+						/>
+					</svg>
+				</div>
+				<h1 class="hero-name">Romain Blachier</h1>
+				<p class="hero-subtitle">{t('hero.subtitle')}</p>
+				<p class="hero-pitch">{t('hero.pitch')}</p>
+				<a href="#contact" class="hero-cta">{t('hero.cta')}</a>
+			</div>
+		</section>
+
+		<!-- ABOUT -->
+		<section class="about">
+			<div class="about-inner">
+				<h2 class="about-label">{t('about.title')}</h2>
+				<div class="about-text">
+					<p>{t('about.p1')}</p>
+					<p>{t('about.p2')}</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- SERVICES -->
+		<section class="services">
+			<div class="services-inner">
+				<h2 class="section-title">{t('services.title')}</h2>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">🎓</div>
+						<h3>{t('services.teaching.title')}</h3>
+						<p>{t('services.teaching.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">📡</div>
+						<h3>{t('services.media.title')}</h3>
+						<p>{t('services.media.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🎤</div>
+						<h3>{t('services.speaking.title')}</h3>
+						<p>{t('services.speaking.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🧭</div>
+						<h3>{t('services.comms.title')}</h3>
+						<p>{t('services.comms.desc')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AREAS OF EXPERTISE -->
+		<section class="sujets">
+			<div class="sujets-inner">
+				<h2 class="section-title" style="color: var(--beige);">
+					{t('expertise.title')}
+				</h2>
+				<div class="tags-wrap">
+					<span class="tag">{t('tag.energy_markets')}</span>
+					<span class="tag">{t('tag.taiwan')}</span>
+					<span class="tag">{t('tag.geopolitics')}</span>
+					<span class="tag">{t('tag.cultural_policy')}</span>
+					<span class="tag">{t('tag.hydro')}</span>
+					<span class="tag">{t('tag.nuclear')}</span>
+					<span class="tag">{t('tag.transition')}</span>
+					<span class="tag">{t('tag.sovereignty')}</span>
+					<span class="tag">{t('tag.public_affairs')}</span>
+					<span class="tag">{t('tag.institutional')}</span>
+					<span class="tag">{t('tag.political_systems')}</span>
+					<span class="tag">{t('tag.crisis_comms')}</span>
+					<span class="tag">{t('tag.religion')}</span>
+					<span class="tag">{t('tag.local_gov')}</span>
+					<span class="tag">{t('tag.digital_comms')}</span>
+					<span class="tag hi">{t('tag.seo')}</span>
+					<span class="tag">{t('tag.ai_teaching')}</span>
+					<span class="tag">{t('tag.culture_economy')}</span>
+					<span class="tag">{t('tag.music')}</span>
+					<span class="tag">{t('tag.cultural_diplomacy')}</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- REFERENCES -->
+		<section class="references">
+			<div class="references-inner">
+				<h2 class="section-title">{t('references.title')}</h2>
+				<div class="ref-grid">
+					<div class="ref-col">
+						<h3>{t('references.teaching')}</h3>
+						<ul>
+							<li>Sciences Po Paris</li>
+							<li>EM Lyon Business School</li>
+							<li>IEP de Lyon</li>
+							<li>ILERI</li>
+							<li>HEIP</li>
+						</ul>
+					</div>
+					<div class="ref-col">
+						<h3>{t('references.experience')}</h3>
+						<div style="margin-bottom: 1.5rem;">
+							<div class="ref-big">18 years</div>
+							<div class="ref-cap">
+								{t('references.experience.energy')}<br />Compagnie Nationale du
+								Rhône
+							</div>
+						</div>
+						<div>
+							<div class="ref-big">12 years</div>
+							<div class="ref-cap">
+								{t('references.experience.elected')}<br />{t('references.experience.elected.detail')}
+							</div>
+						</div>
+					</div>
+					<div class="ref-col">
+						<h3>{t('references.culture')}</h3>
+						<ul>
+							<li>President, France-Formosa Association</li>
+							<li>President, Théâtre du Croiseur</li>
+							<li>Board member, Mediatone / Reperkusound</li>
+							<li>VP, FC Lyon – La Duchère</li>
+							<li>Author, <em>Guillotière(s)</em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section class="contact-section" id="contact">
+			<div class="contact-inner">
+				<div class="contact-left">
+					<h2>{t('contact.title')}</h2>
+					<p>{t('contact.desc')}</p>
+					<div class="contact-links">
+						<a href="mailto:contact@rb-webconsultant.net"
+							>✉ contact@rb-webconsultant.net</a
+						>
+						<a
+							href="https://www.linkedin.com/in/romainblachier/"
+							target="_blank">→ LinkedIn</a
+						>
+						<a href="https://www.tiktok.com/@finbookie" target="_blank"
+							>@finbookie — energy & geopolitics explainers</a
+						>
+					</div>
+					<div class="contact-cv">
+						<a href="https://romain-blachier.com" target="_blank"
+							>{t('contact.cv')}</a
+						>
+					</div>
+				</div>
+				<form class="contact-form" action="#" method="POST">
+					<div class="form-row">
+						<input type="text" placeholder={t('contact.name')} required />
+						<input type="email" placeholder={t('contact.email')} required />
+					</div>
+					<input type="text" placeholder={t('contact.subject')} required />
+					<textarea
+						placeholder={t('contact.message')}
+						required></textarea>
+					<button type="submit">{t('contact.send')}</button>
+				</form>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
