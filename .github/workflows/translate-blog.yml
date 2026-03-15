@@ -1,0 +1,166 @@
+name: Translate Blog Post to English
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/blog/**/*.md'
+      - 'src/content/blog/**/*.mdx'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect new or modified FR blog posts
+        id: detect
+        run: |
+          CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'src/content/blog/' | grep -E '\.(md|mdx)$' || true)
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No new/modified blog posts found"
+            echo "has_posts=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          FILES_TO_TRANSLATE=""
+          for file in $CHANGED_FILES; do
+            filename=$(basename "$file")
+            en_path="src/content/blog_en/$filename"
+            if [ ! -f "$en_path" ]; then
+              FILES_TO_TRANSLATE="$FILES_TO_TRANSLATE $file"
+            fi
+          done
+
+          if [ -z "$FILES_TO_TRANSLATE" ]; then
+            echo "All posts already have English versions"
+            echo "has_posts=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "has_posts=true" >> $GITHUB_OUTPUT
+          echo "$FILES_TO_TRANSLATE" | tr ' ' '\n' | sed '/^$/d' > /tmp/files_to_translate.txt
+          echo "Files to translate:"
+          cat /tmp/files_to_translate.txt
+
+      - name: Translate posts via Claude API
+        if: steps.detect.outputs.has_posts == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p src/content/blog_en
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            filename=$(basename "$file")
+            en_path="src/content/blog_en/$filename"
+            echo "Translating: $file -> $en_path"
+
+            FR_FILE="$file" EN_FILE="$en_path" python3 << 'PYEOF'
+          import json, urllib.request, os
+
+          fr_file = os.environ["FR_FILE"]
+          en_file = os.environ["EN_FILE"]
+
+          fr_content = open(fr_file, "r").read()
+
+          prompt = """You are translating a French blog article to English for the website romainblachier.fr. The article is in Markdown format with YAML frontmatter.
+
+          Rules:
+          - Translate ALL text content to natural, fluent English
+          - Keep the YAML frontmatter structure identical (same keys)
+          - Translate the title, description, and all body text
+          - Keep technical terms, proper nouns, and URLs unchanged
+          - Keep the heroImage path exactly as-is
+          - Keep the pubDate exactly as-is
+          - If there is an updatedDate, keep it as-is
+          - Do NOT add any commentary - output ONLY the translated Markdown file
+
+          Here is the French article:
+
+          """ + fr_content
+
+          payload = {
+              "model": "claude-sonnet-4-20250514",
+              "max_tokens": 8192,
+              "messages": [{"role": "user", "content": prompt}]
+          }
+
+          data = json.dumps(payload).encode("utf-8")
+          req = urllib.request.Request(
+              "https://api.anthropic.com/v1/messages",
+              data=data,
+              headers={
+                  "Content-Type": "application/json",
+                  "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+                  "anthropic-version": "2023-06-01"
+              }
+          )
+
+          with urllib.request.urlopen(req) as resp:
+              result = json.loads(resp.read().decode("utf-8"))
+              translated = result["content"][0]["text"]
+
+              if translated.startswith("```"):
+                  lines = translated.split("\n")
+                  lines = lines[1:]
+                  if lines and lines[-1].strip() == "```":
+                      lines = lines[:-1]
+                  translated = "\n".join(lines)
+
+              with open(en_file, "w") as f:
+                  f.write(translated)
+              print(f"Translated: {en_file}")
+          PYEOF
+
+          done < /tmp/files_to_translate.txt
+
+      - name: Create Pull Request
+        if: steps.detect.outputs.has_posts == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="auto-translate/$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add src/content/blog_en/
+
+          if git diff --cached --quiet; then
+            echo "No translations to commit"
+            exit 0
+          fi
+
+          TRANSLATED_FILES=$(git diff --cached --name-only | tr '\n' ', ' | sed 's/,$//')
+
+          git commit -m "translate: add English versions of new blog posts"
+          git push origin "$BRANCH"
+
+          PR_URL=$(gh pr create \
+            --title "Traduction auto: nouveaux articles en anglais" \
+            --body "## Traduction automatique
+
+          Cette PR contient les traductions anglaises generees automatiquement par Claude (Sonnet).
+
+          **Fichiers traduits :** $TRANSLATED_FILES
+
+          ### Checklist avant merge
+          - [ ] Relire la traduction
+          - [ ] Verifier les termes techniques
+          - [ ] Verifier le frontmatter (title, description)
+
+          Genere automatiquement par GitHub Actions + Claude API" \
+            --head "$BRANCH" \
+            --base main \
+            --reviewer romainblachier-eng 2>&1)
+
+          echo "PR created: $PR_URL"
