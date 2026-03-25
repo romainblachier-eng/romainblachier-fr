@@ -3,6 +3,9 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { useTranslations } from "../i18n/utils";
+
+const t = useTranslations('fr');
 ---
 
 
@@ -73,7 +76,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 		<Header />
 
-
 		<!-- HERO -->
 		<section class="hero">
 			<div class="hero-inner">
@@ -86,12 +88,166 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 					</svg>
 				</div>
 				<h1 class="hero-name">Romain Blachier</h1>
-				<p class="hero-subtitle">
-					Expert énergie & géopolitique · Enseignant · Chroniqueur ·
-					Communication
-				</p>
-				<p class="hero-pitch">
-					Besoin d'un expert pour votre prochain plateau TV sur l'énergie ?
-					D'un enseignant pour vos programmes en géopolitique ? D'un
-					conférencier qui sait captiver un auditoire ? Vous êtes au bon
-					endroit.
+				<p class="hero-subtitle">{t('hero.subtitle')}</p>
+				<p class="hero-pitch">{t('hero.pitch')}</p>
+				<a href="#contact" class="hero-cta">{t('hero.cta')}</a>
+			</div>
+		</section>
+
+		<!-- ABOUT -->
+		<section class="about">
+			<div class="about-inner">
+				<h2 class="about-label">{t('about.title')}</h2>
+				<div class="about-text">
+					<p>{t('about.p1')}</p>
+					<p>{t('about.p2')}</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- SERVICES -->
+		<section class="services">
+			<div class="services-inner">
+				<h2 class="section-title">{t('services.title')}</h2>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">🎓</div>
+						<h3>{t('services.teaching.title')}</h3>
+						<p>{t('services.teaching.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">📡</div>
+						<h3>{t('services.media.title')}</h3>
+						<p>{t('services.media.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🎤</div>
+						<h3>{t('services.speaking.title')}</h3>
+						<p>{t('services.speaking.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🧭</div>
+						<h3>{t('services.comms.title')}</h3>
+						<p>{t('services.comms.desc')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SUJETS D'EXPERTISE -->
+		<section class="sujets">
+			<div class="sujets-inner">
+				<h2 class="section-title" style="color: var(--beige);">
+					{t('expertise.title')}
+				</h2>
+				<div class="tags-wrap">
+					<span class="tag">{t('tag.energy_markets')}</span>
+					<span class="tag">{t('tag.taiwan')}</span>
+					<span class="tag">{t('tag.geopolitics')}</span>
+					<span class="tag">{t('tag.cultural_policy')}</span>
+					<span class="tag">{t('tag.hydro')}</span>
+					<span class="tag">{t('tag.nuclear')}</span>
+					<span class="tag">{t('tag.transition')}</span>
+					<span class="tag">{t('tag.sovereignty')}</span>
+					<span class="tag">{t('tag.public_affairs')}</span>
+					<span class="tag">{t('tag.institutional')}</span>
+					<span class="tag">{t('tag.political_systems')}</span>
+					<span class="tag">{t('tag.crisis_comms')}</span>
+					<span class="tag">{t('tag.religion')}</span>
+					<span class="tag">{t('tag.local_gov')}</span>
+					<span class="tag">{t('tag.digital_comms')}</span>
+					<span class="tag hi">{t('tag.seo')}</span>
+					<span class="tag">{t('tag.ai_teaching')}</span>
+					<span class="tag">{t('tag.culture_economy')}</span>
+					<span class="tag">{t('tag.music')}</span>
+					<span class="tag">{t('tag.cultural_diplomacy')}</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- REFERENCES -->
+		<section class="references">
+			<div class="references-inner">
+				<h2 class="section-title">{t('references.title')}</h2>
+				<div class="ref-grid">
+					<div class="ref-col">
+						<h3>{t('references.teaching')}</h3>
+						<ul>
+							<li>Sciences Po Paris</li>
+							<li>EM Lyon Business School</li>
+							<li>IEP de Lyon</li>
+							<li>ILERI</li>
+							<li>HEIP</li>
+						</ul>
+					</div>
+					<div class="ref-col">
+						<h3>{t('references.experience')}</h3>
+						<div style="margin-bottom: 1.5rem;">
+							<div class="ref-big">18 ans</div>
+							<div class="ref-cap">
+								{t('references.experience.energy')}<br />Compagnie Nationale du
+								Rhône
+							</div>
+						</div>
+						<div>
+							<div class="ref-big">12 ans</div>
+							<div class="ref-cap">
+								{t('references.experience.elected')}<br />{t('references.experience.elected.detail')}
+							</div>
+						</div>
+					</div>
+					<div class="ref-col">
+						<h3>{t('references.culture')}</h3>
+						<ul>
+							<li>Président, Association France-Formosa</li>
+							<li>Président, Théâtre du Croiseur</li>
+							<li>Administrateur, Mediatone / Reperkusound</li>
+							<li>Vice-président, FC Lyon – La Duchère</li>
+							<li>Auteur, <em>Guillotière(s)</em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT -->
+		<section class="contact-section" id="contact">
+			<div class="contact-inner">
+				<div class="contact-left">
+					<h2>{t('contact.title')}</h2>
+					<p>{t('contact.desc')}</p>
+					<div class="contact-links">
+						<a href="mailto:contact@rb-webconsultant.net"
+							>✉ contact@rb-webconsultant.net</a
+						>
+						<a
+							href="https://www.linkedin.com/in/romainblachier/"
+							target="_blank">→ LinkedIn</a
+						>
+						<a href="https://www.tiktok.com/@finbookie" target="_blank"
+							>@finbookie — vulgarisation énergie & géopolitique</a
+						>
+					</div>
+					<div class="contact-cv">
+						<a href="https://romain-blachier.com" target="_blank"
+							>{t('contact.cv')}</a
+						>
+					</div>
+				</div>
+				<form class="contact-form" action="#" method="POST">
+					<div class="form-row">
+						<input type="text" placeholder={t('contact.name')} required />
+						<input type="email" placeholder={t('contact.email')} required />
+					</div>
+					<input type="text" placeholder={t('contact.subject')} required />
+					<textarea
+						placeholder={t('contact.message')}
+						required></textarea>
+					<button type="submit">{t('contact.send')}</button>
+				</form>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
