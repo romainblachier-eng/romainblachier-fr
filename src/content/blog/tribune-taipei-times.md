@@ -1,6 +1,6 @@
 ---
-title: 'Ma tribune dans le Taipei Times : Taïwan, l\'IA et le mur des ressources'
-description: 'Tribune publiée dans le Taipei Times sur les ambitions IA de Taïwan face aux contraintes énergétiques et hydriques du pays.'
+title: "Ma tribune dans le Taipei Times : Taïwan, l’IA et le mur des ressources"
+description: "Tribune publiée dans le Taipei Times sur les ambitions IA de Taïwan face aux contraintes énergétiques et hydriques du pays."
 pubDate: 2026-03-25T12:00:00.000Z
 heroImage: https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80
 ---
@@ -16,4 +16,3 @@ L’eau est l’autre angle mort. TSMC absorbe 150 000 tonnes d’eau par jour, 
 Je plaide pour une gouvernance transparente des arbitrages, le développement de la géothermie, et des régulations contraignantes sur la consommation d’eau des data centers.
 
 [Lire la tribune complète sur le Taipei Times](https://www.taipeitimes.com/News/editorials/archives/2026/03/25/2003854412)
-
