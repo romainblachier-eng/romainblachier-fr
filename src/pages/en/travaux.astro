@@ -1,0 +1,196 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { useTranslations } from "../../i18n/utils";
+
+const t = useTranslations('en');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={t('travaux.seo.title')} description={t('travaux.seo.description')} />
+	</head>
+	<body>
+		<Header />
+
+		<!-- HERO -->
+		<section class="travaux-hero">
+			<div class="travaux-hero-inner">
+				<h1>{t('travaux.hero.title')}</h1>
+				<p class="travaux-hero-subtitle">{t('travaux.hero.subtitle')}</p>
+			</div>
+		</section>
+
+		<!-- TEACHING -->
+		<section class="travaux-section travaux-teaching">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.teaching.title')}</h2>
+				<p class="travaux-intro">{t('travaux.teaching.intro')}</p>
+
+				<div class="teaching-grid">
+					<div class="teaching-institutions">
+						<h3 class="travaux-label">{t('travaux.teaching.since')}</h3>
+						<div class="institution-list">
+							<div class="institution-item">
+								<span class="institution-name">Sciences Po Paris</span>
+								<span class="institution-detail">Master-level courses</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">EM Lyon Business School</span>
+								<span class="institution-detail">Grande École program</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">IEP de Lyon</span>
+								<span class="institution-detail">Political science</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">ILERI</span>
+								<span class="institution-detail">International relations</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">HEIP</span>
+								<span class="institution-detail">Comparative political systems</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="teaching-subjects">
+						<h3 class="travaux-label">{t('travaux.teaching.subjects')}</h3>
+						<div class="subject-tags">
+							<span class="subject-tag">Energy markets</span>
+							<span class="subject-tag">Energy geopolitics</span>
+							<span class="subject-tag">Energy transition</span>
+							<span class="subject-tag">Energy sovereignty</span>
+							<span class="subject-tag">Taiwan & Indo-Pacific</span>
+							<span class="subject-tag">Comparative political systems</span>
+							<span class="subject-tag">Crisis communications</span>
+							<span class="subject-tag">Digital communications & web</span>
+							<span class="subject-tag">Institutional relations</span>
+							<span class="subject-tag">Religion & geopolitics</span>
+							<span class="subject-tag">Local governance</span>
+							<span class="subject-tag">Cultural economics</span>
+							<span class="subject-tag">AI & education</span>
+							<span class="subject-tag">Technology monitoring</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PUBLICATIONS -->
+		<section class="travaux-section travaux-publications">
+			<div class="travaux-inner">
+				<h2 class="section-title" style="color: var(--beige);">{t('travaux.publications.title')}</h2>
+
+				<!-- Book -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.book')}</h3>
+					<div class="pub-book">
+						<div class="pub-book-info">
+							<h4 class="pub-title">Guillotière(s)</h4>
+							<p class="pub-meta">Les Grilles d'Or, 2016 — 108 pages</p>
+							<p class="pub-meta">Foreword by Gérard Collomb</p>
+							<p class="pub-desc">
+								Semi-fiction about the Guillotière neighborhood in Lyon. A narrative that blends history, urban planning and neighborhood life to tell the story of one of the most singular areas of the Lyon metropolitan area.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Op-eds -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.tribunes')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Revue Conflits</span>
+							<span class="pub-topic">"Taiwan facing the energy squeeze" (March 2026) — analysis of Taiwan's energy vulnerability and its geopolitical implications</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taipei Times</span>
+							<span class="pub-topic">"Taiwan's AI ambitions hit a wall" (March 2026) — op-ed on the energy and water challenges of Taiwan's AI ambitions</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Contrepoints / IREF Europe</span>
+							<span class="pub-topic">"The decline of aid to Ukraine is a danger for democracies" (2023), geopolitical analysis, European energy policy</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Lyon Capitale</span>
+							<span class="pub-topic">Op-eds on Lyon, urban planning, neighborhood life</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Columns & media -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.chroniques')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Lyon Mag</span>
+							<span class="pub-topic">Local news columns, Lyon politics, neighborhood life</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">AgoraVox</span>
+							<span class="pub-topic">Current affairs: foreign policy, civil liberties, digital (2011–2015)</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.blog')}</h3>
+					<p class="pub-desc" style="color: var(--beige-dark);">
+						Personal blog on <a href="/en/blog" style="color: var(--gold);">romainblachier.fr</a> — regular analysis on energy, geopolitics, Taiwan, French politics and cultural issues.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- RESEARCH & ENGAGEMENT -->
+		<section class="travaux-section travaux-research">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.research.title')}</h2>
+
+				<div class="research-grid">
+					<div class="research-card">
+						<div class="research-icon">🇹🇼</div>
+						<h4>France-Formosa</h4>
+						<p>President of the France-Formosa Association. Promoting economic and cultural exchanges between France and Taiwan. Organizing missions in partnership with the Taiwanese representation in France.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">⚡</div>
+						<h4>Energy & geopolitics</h4>
+						<p>18 years of experience in the energy sector (CNR, France's 3rd largest electricity producer). Expertise in energy markets, nuclear power, hydroelectricity, LNG and semiconductors.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">🏛️</div>
+						<h4>Local governance</h4>
+						<p>12 years as an elected official in the Lyon Metropolitan area. Responsibilities in culture, digital, events, and international affairs. Deputy mayor of Lyon's 7th arrondissement.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">🎭</div>
+						<h4>Culture & civil society</h4>
+						<p>President of Théâtre du Croiseur. Board member at Mediatone / Reperkusound. VP of FC Lyon – La Duchère. Engagement at the intersection of culture, sport and territory.</p>
+					</div>
+				</div>
+
+				<div class="research-areas">
+					<h3 class="travaux-label">{t('travaux.research.areas')}</h3>
+					<div class="area-tags">
+						<span class="area-tag">Energy geopolitics</span>
+						<span class="area-tag">Taiwan & Indo-Pacific</span>
+						<span class="area-tag">European energy sovereignty</span>
+						<span class="area-tag">Energy transition</span>
+						<span class="area-tag">Cultural diplomacy</span>
+						<span class="area-tag">Political communications</span>
+						<span class="area-tag">Territorial governance</span>
+						<span class="area-tag">Religion & secularism</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
