@@ -1,0 +1,196 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { useTranslations } from "../i18n/utils";
+
+const t = useTranslations('fr');
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={t('travaux.seo.title')} description={t('travaux.seo.description')} />
+	</head>
+	<body>
+		<Header />
+
+		<!-- HERO -->
+		<section class="travaux-hero">
+			<div class="travaux-hero-inner">
+				<h1>{t('travaux.hero.title')}</h1>
+				<p class="travaux-hero-subtitle">{t('travaux.hero.subtitle')}</p>
+			</div>
+		</section>
+
+		<!-- ENSEIGNEMENT -->
+		<section class="travaux-section travaux-teaching">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.teaching.title')}</h2>
+				<p class="travaux-intro">{t('travaux.teaching.intro')}</p>
+
+				<div class="teaching-grid">
+					<div class="teaching-institutions">
+						<h3 class="travaux-label">{t('travaux.teaching.since')}</h3>
+						<div class="institution-list">
+							<div class="institution-item">
+								<span class="institution-name">Sciences Po Paris</span>
+								<span class="institution-detail">Cours en Master</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">EM Lyon Business School</span>
+								<span class="institution-detail">Programme Grande Ãcole</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">IEP de Lyon</span>
+								<span class="institution-detail">Sciences politiques</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">ILERI</span>
+								<span class="institution-detail">Relations internationales</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">HEIP</span>
+								<span class="institution-detail">RÃ©gimes politiques comparÃ©s</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="teaching-subjects">
+						<h3 class="travaux-label">{t('travaux.teaching.subjects')}</h3>
+						<div class="subject-tags">
+							<span class="subject-tag">MarchÃ©s de l'Ã©nergie</span>
+							<span class="subject-tag">GÃ©opolitique de l'Ã©nergie</span>
+							<span class="subject-tag">Transition Ã©nergÃ©tique</span>
+							<span class="subject-tag">SouverainetÃ© Ã©nergÃ©tique</span>
+							<span class="subject-tag">TaÃ¯wan & Indo-Pacifique</span>
+							<span class="subject-tag">SystÃ¨mes politiques comparÃ©s</span>
+							<span class="subject-tag">Communication de crise</span>
+							<span class="subject-tag">Communication numÃ©rique & web</span>
+							<span class="subject-tag">Relations institutionnelles</span>
+							<span class="subject-tag">Religion & gÃ©opolitique</span>
+							<span class="subject-tag">Gouvernance locale</span>
+							<span class="subject-tag">Ãconomie de la culture</span>
+							<span class="subject-tag">IA & enseignement</span>
+							<span class="subject-tag">Veille technologique</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PUBLICATIONS -->
+		<section class="travaux-section travaux-publications">
+			<div class="travaux-inner">
+				<h2 class="section-title" style="color: var(--beige);">{t('travaux.publications.title')}</h2>
+
+				<!-- Ouvrage -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.book')}</h3>
+					<div class="pub-book">
+						<div class="pub-book-info">
+							<h4 class="pub-title">GuillotiÃ¨re(s)</h4>
+							<p class="pub-meta">Les Grilles d'Or, 2016 â 108 pages</p>
+							<p class="pub-meta">PrÃ©face de GÃ©rard Collomb</p>
+							<p class="pub-desc">
+								Semi-fiction sur le quartier de la GuillotiÃ¨re Ã  Lyon. Un rÃ©cit qui mÃªle histoire, urbanisme et vie de quartier pour raconter l'un des territoires les plus singuliers de la mÃ©tropole lyonnaise.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tribunes & presse -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.tribunes')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Revue Conflits</span>
+							<span class="pub-topic">Â« TaÃ¯wan face Ã  l'Ã©tau Ã©nergÃ©tique Â» (mars 2026) â analyse de la vulnÃ©rabilitÃ© Ã©nergÃ©tique taÃ¯wanaise et de ses implications gÃ©opolitiques</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taipei Times</span>
+							<span class="pub-topic">Â« Taiwan's AI ambitions hit a wall Â» (mars 2026) â tribune sur les dÃ©fis Ã©nergÃ©tiques et hydriques de l'ambition IA taÃ¯wanaise</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Contrepoints / IREF Europe</span>
+							<span class="pub-topic">Â« Le dÃ©clin de l'aide Ã  l'Ukraine est un danger pour les dÃ©mocraties Â» (2023), analyses gÃ©opolitiques, politique Ã©nergÃ©tique europÃ©enne</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Lyon Capitale</span>
+							<span class="pub-topic">Â« Que les rÃ©acs continuent Ã  avoir peur de la GuillotiÃ¨re ! Â» â tribunes sur Lyon, urbanisme, vie de quartier</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Chroniques & mÃ©dias -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.chroniques')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Lyon Mag</span>
+							<span class="pub-topic">Chroniques d'actualitÃ© locale, politique lyonnaise, vie de quartier</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">AgoraVox</span>
+							<span class="pub-topic">Billets d'actualitÃ© : politique Ã©trangÃ¨re, libertÃ©s publiques, numÃ©rique (2011â2015)</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.blog')}</h3>
+					<p class="pub-desc" style="color: var(--beige-dark);">
+						Blog personnel sur <a href="/blog" style="color: var(--gold);">romainblachier.fr</a> â analyses rÃ©guliÃ¨res sur l'Ã©nergie, la gÃ©opolitique, TaÃ¯wan, la politique franÃ§aise et les enjeux culturels.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- TRAVAUX & ENGAGEMENTS -->
+		<section class="travaux-section travaux-research">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.research.title')}</h2>
+
+				<div class="research-grid">
+					<div class="research-card">
+						<div class="research-icon">ð¹ð¼</div>
+						<h4>France-Formosa</h4>
+						<p>PrÃ©sident de l'Association France-Formosa. Promotion des Ã©changes Ã©conomiques et culturels entre la France et TaÃ¯wan. Organisation de missions en partenariat avec la reprÃ©sentation taÃ¯wanaise en France.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">â¡</div>
+						<h4>Ãnergie & gÃ©opolitique</h4>
+						<p>18 ans d'expÃ©rience dans le secteur de l'Ã©nergie (CNR, 3áµ producteur franÃ§ais d'Ã©lectricitÃ©). Expertise sur les marchÃ©s de l'Ã©nergie, le nuclÃ©aire, l'hydroÃ©lectricitÃ©, le GNL et les semi-conducteurs.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">ðï¸</div>
+						<h4>Gouvernance locale</h4>
+						<p>12 ans d'Ã©lu Ã  la MÃ©tropole de Lyon. DÃ©lÃ©gations culture, numÃ©rique, Ã©vÃ©nementiel, international. Adjoint au maire du 7áµ arrondissement de Lyon.</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">ð­</div>
+						<h4>Culture & sociÃ©tÃ© civile</h4>
+						<p>PrÃ©sident du ThÃ©Ã¢tre du Croiseur. Administrateur Mediatone / Reperkusound. Vice-prÃ©sident du FC Lyon â La DuchÃ¨re. Engagement au croisement de la culture, du sport et du territoire.</p>
+					</div>
+				</div>
+
+				<div class="research-areas">
+					<h3 class="travaux-label">{t('travaux.research.areas')}</h3>
+					<div class="area-tags">
+						<span class="area-tag">GÃ©opolitique de l'Ã©nergie</span>
+						<span class="area-tag">TaÃ¯wan & Indo-Pacifique</span>
+						<span class="area-tag">SouverainetÃ© Ã©nergÃ©tique europÃ©enne</span>
+						<span class="area-tag">Transition Ã©nergÃ©tique</span>
+						<span class="area-tag">Diplomatie culturelle</span>
+						<span class="area-tag">Communication politique</span>
+						<span class="area-tag">Gouvernance territoriale</span>
+						<span class="area-tag">Religion & laÃ¯citÃ©</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
