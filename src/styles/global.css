@@ -1,5 +1,5 @@
 /*
-  Custom theme for romainblachier.fr — Astro Blog
+  Custom theme for romainblachier.fr â Astro Blog
   Navy / Beige / Gold palette with Cormorant + Outfit fonts
 */
 
@@ -151,7 +151,7 @@ hr {
 	border-top: 1px solid rgb(var(--gray-light));
 }
 
-/* ——— Homepage sections ——— */
+/* âââ Homepage sections âââ */
 
 .hero {
 	background: var(--navy);
@@ -295,7 +295,7 @@ hr {
 }
 .section-title::before,
 .section-title::after {
-	content: "✦";
+	content: "â¦";
 	font-size: 0.7rem;
 	color: var(--gold);
 	font-style: normal;
@@ -535,7 +535,7 @@ hr {
 	background: var(--gold-dim);
 }
 
-/* ——— Blog listing styles ——— */
+/* âââ Blog listing styles âââ */
 
 .blog-list {
 	max-width: 1100px;
@@ -578,7 +578,7 @@ hr {
 	margin: 0.4rem 0;
 }
 
-/* ——— Blog post styles ——— */
+/* âââ Blog post styles âââ */
 
 article.blog-post {
 	max-width: 720px;
@@ -608,7 +608,7 @@ article.blog-post .prose {
 	color: #4a4540;
 }
 
-/* ——— Site footer ——— */
+/* âââ Site footer âââ */
 
 .site-footer {
 	background: var(--navy-light);
@@ -621,7 +621,7 @@ article.blog-post .prose {
 	letter-spacing: 0.05em;
 }
 
-/* ——— Animations ——— */
+/* âââ Animations âââ */
 
 @keyframes fadeUp {
 	from {
@@ -634,7 +634,7 @@ article.blog-post .prose {
 	}
 }
 
-/* ——— Responsive ——— */
+/* âââ Responsive âââ */
 
 @media (max-width: 768px) {
 	.hero-name {
@@ -679,7 +679,7 @@ article.blog-post .prose {
 	}
 }
 
-/* ——— Utility ——— */
+/* âââ Utility âââ */
 
 .sr-only {
 	border: 0;
@@ -693,4 +693,279 @@ article.blog-post .prose {
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	white-space: nowrap;
+}
+
+/* âââ Travaux page âââ */
+
+.travaux-hero {
+	background: var(--navy);
+	color: var(--beige);
+	padding: 5rem 2.5rem 3rem;
+	position: relative;
+	overflow: hidden;
+}
+.travaux-hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(
+			ellipse at 30% 50%,
+			rgba(201, 168, 76, 0.06) 0%,
+			transparent 60%
+		),
+		radial-gradient(
+			ellipse at 70% 20%,
+			rgba(232, 220, 200, 0.04) 0%,
+			transparent 50%
+		);
+}
+.travaux-hero-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+.travaux-hero-inner h1 {
+	font-family: "Cormorant", serif;
+	font-weight: 400;
+	font-size: 2.8rem;
+	color: var(--beige);
+	margin-bottom: 0.5rem;
+}
+.travaux-hero-subtitle {
+	font-size: 0.9rem;
+	color: var(--beige-dark);
+	letter-spacing: 0.08em;
+}
+
+.travaux-section {
+	padding: 4rem 2.5rem;
+}
+.travaux-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.travaux-intro {
+	font-size: 0.95rem;
+	color: #5a554d;
+	line-height: 1.7;
+	max-width: 700px;
+	margin: 0 auto 2.5rem;
+	text-align: center;
+}
+.travaux-label {
+	font-family: "Outfit", sans-serif;
+	font-weight: 500;
+	font-size: 0.72rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--navy);
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--gold);
+	display: inline-block;
+}
+
+/* Teaching grid */
+.teaching-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+.institution-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+.institution-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #e0dbd3;
+}
+.institution-name {
+	font-family: "Cormorant", serif;
+	font-size: 1.15rem;
+	color: var(--navy);
+	font-weight: 500;
+}
+.institution-detail {
+	font-size: 0.8rem;
+	color: var(--text-muted);
+}
+.subject-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+.subject-tag {
+	padding: 0.35rem 0.85rem;
+	font-size: 0.75rem;
+	font-weight: 400;
+	border: 1px solid #e0dbd3;
+	color: #5a554d;
+	transition: all 0.3s;
+}
+.subject-tag:hover {
+	border-color: var(--gold);
+	color: var(--navy);
+}
+
+/* Publications section */
+.travaux-publications {
+	background: var(--navy);
+	color: var(--beige);
+}
+.travaux-publications .section-title {
+	color: var(--beige);
+}
+.pub-category {
+	margin-bottom: 2.5rem;
+}
+.pub-book {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+}
+.pub-book-info {
+	flex: 1;
+}
+.pub-title {
+	font-family: "Cormorant", serif;
+	font-size: 1.5rem;
+	color: var(--beige);
+	margin-bottom: 0.3rem;
+	font-weight: 400;
+}
+.pub-meta {
+	font-size: 0.82rem;
+	color: var(--beige-dark);
+	margin-bottom: 0.3rem;
+}
+.pub-desc {
+	font-size: 0.88rem;
+	color: var(--beige-dark);
+	line-height: 1.6;
+	margin-top: 0.75rem;
+}
+.pub-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+.pub-item {
+	display: flex;
+	gap: 1rem;
+	align-items: baseline;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid rgba(232, 220, 200, 0.1);
+}
+.pub-source {
+	font-family: "Cormorant", serif;
+	font-size: 1rem;
+	color: var(--gold);
+	font-weight: 500;
+	min-width: 160px;
+	flex-shrink: 0;
+}
+.pub-topic {
+	font-size: 0.82rem;
+	color: var(--beige-dark);
+	line-height: 1.5;
+}
+
+/* Research grid */
+.travaux-research {
+	background: var(--beige-light);
+}
+.research-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+.research-card {
+	padding: 1.5rem;
+	border: 1px solid #e0dbd3;
+	background: var(--white);
+	transition: all 0.3s;
+}
+.research-card:hover {
+	border-color: var(--gold);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+.research-icon {
+	font-size: 1.8rem;
+	margin-bottom: 0.75rem;
+}
+.research-card h4 {
+	font-family: "Outfit", sans-serif;
+	font-weight: 500;
+	font-size: 0.88rem;
+	color: var(--navy);
+	margin-bottom: 0.5rem;
+}
+.research-card p {
+	font-size: 0.78rem;
+	color: #5a554d;
+	line-height: 1.6;
+}
+.research-areas {
+	text-align: center;
+}
+.area-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.45rem;
+}
+.area-tag {
+	padding: 0.4rem 1rem;
+	font-size: 0.78rem;
+	font-weight: 400;
+	border: 1px solid #e0dbd3;
+	color: #5a554d;
+	transition: all 0.3s;
+}
+.area-tag:hover {
+	border-color: var(--gold);
+	color: var(--navy);
+}
+
+/* Travaux responsive */
+@media (max-width: 768px) {
+	.teaching-grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+	.research-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.pub-item {
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+	.pub-source {
+		min-width: auto;
+	}
+	.travaux-hero-inner h1 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.research-grid {
+		grid-template-columns: 1fr;
+	}
+	.travaux-section {
+		padding: 3rem 1.5rem;
+	}
+	.travaux-hero {
+		padding: 3rem 1.5rem 2rem;
+	}
 }
