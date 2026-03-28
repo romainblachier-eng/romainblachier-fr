@@ -21,6 +21,7 @@ if (lang === 'fr') {
 		<a href={getLocalePath(lang, '/')} class="site-brand">Romain Blachier</a>
 		<div class="internal-links">
 			<HeaderLink href={getLocalePath(lang, '/')}>{t('nav.home')}</HeaderLink>
+			<HeaderLink href={getLocalePath(lang, '/travaux')}>{t('nav.travaux')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/blog')}>{t('nav.blog')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/') + '#contact'}>{t('nav.contact')}</HeaderLink>
 			<a href={otherLangPath} class="lang-switch" aria-label={otherLang === 'en' ? 'Switch to English' : 'Passer en français'}>
