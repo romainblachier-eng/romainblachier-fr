@@ -1,7 +1,7 @@
 ---
 title: "Taiwan's Energy Challenges — Taiwan Insight / University of Nottingham"
 description: "Tribune publiée sur Taiwan Insight, la revue académique du Taiwan Research Hub de l'Université de Nottingham, sur les défis énergétiques de Taïwan et leurs enjeux géopolitiques."
-pubDate: 'Apr 10 2026'
+pubDate: 'Apr 10 2026 18:00:00'
 heroImage: '../../assets/taiwan-energy-wind-turbines.jpg'
 ---
 
