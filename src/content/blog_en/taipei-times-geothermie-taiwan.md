@@ -2,7 +2,7 @@
 title: "The energy beneath Taiwan's feet — Taipei Times"
 description: "Feature article published in the Taipei Times on Taiwan's geothermal potential, the regulatory and financial barriers to its development, and the energy sovereignty stakes tied to TSMC and the semiconductor industry's power demand."
 pubDate: 'Apr 17 2026'
-heroImage: '../../assets/energy-infrastructure.jpg'
+heroImage: '../../assets/qingshui-geothermal-taiwan.jpg'
 ---
 
 I published a feature in the **[Taipei Times](https://www.taipeitimes.com)** on Taiwan's geothermal potential — a massive, largely untapped resource that has become strategic in the context of the island's energy transition.
