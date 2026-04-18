@@ -78,7 +78,7 @@ export const ui = {
 		// Travaux page
 		'nav.travaux': 'Travaux',
 		'travaux.seo.title': 'Enseignement, Travaux & Publications — Romain Blachier',
-		'travaux.seo.description': "Publications, enseignements et travaux de recherche de Romain Blachier. Cours à Sciences Po Paris, EM Lyon, IEP Lyon. Auteur de Guillotière(s). Expert énergie et géopolitique.",
+		'travaux.seo.description': "Publications, enseignements et travaux de recherche de Romain Blachier. Cours à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Auteur de Guillotière(s). Expert énergie et géopolitique.",
 		'travaux.hero.title': 'Enseignement, Travaux & Publications',
 		'travaux.hero.subtitle': 'Recherche, transmission et engagement intellectuel',
 		'travaux.teaching.title': 'Enseignement',
@@ -107,12 +107,16 @@ export const ui = {
 		'hero.cta': "Let's discuss your project",
 		// About
 		'about.title': 'Why work with me',
-		'about.p1': "I'm not an ivory-tower academic or a generalist consultant. I'm a practitioner: 18 years in the energy sector at France's 3rd largest electricity producer, 12 years as an elected official in the Lyon Metropolitan area with hands-on responsibilities (culture, digital, international affairs), and a lecturer at Sciences Po Paris and EM Lyon since 2010. When I speak about a topic, I know it from the inside.",
-		'about.p2': "What this means for you: interventions grounded in reality, not jargon. An ability to make complex subjects accessible to both general and specialist audiences. And a network that spans from Taipei to French local governments, through the worlds of culture and festivals.",
+		'about.p1': "Energy and geopolitical questions are best approached from several angles at once. That's what I have tried to do over the years, holding simultaneously roles that are usually exercised separately.",
+		'about.p2': "My perspective on these questions draws on three complementary sources. Operational experience first: eighteen years in renewable energy, at the heart of a major French electricity operator, and twelve years as an elected official in the Lyon Metropolitan area, with executive responsibilities covering culture, digital affairs and international relations — exercised with full accountability.",
+		'about.p3': "Writing next, which has become a daily discipline over time. I collaborate with French and international think tanks, and I publish regularly in the French and foreign press on energy, geopolitics and public affairs.",
+		'about.p4': "Teaching finally, which has structured my year for fifteen years. I lecture at Sciences Po Paris, Grenoble École de Management, Université Lyon 1, and at several other leading French institutions, on energy markets, geopolitics, public affairs and crisis communications — in French and English.",
+		'about.p5': "Added to this are field engagements far from Lyon — in Cambodia and Ukraine — because understanding a world requires having walked through it.",
+		'about.p6': "Whatever I say about a subject, I have negotiated it, arbitrated it, published it, or taught it — often all four.",
 		// Services
 		'services.title': 'What I can bring you',
 		'services.teaching.title': 'Courses & Training',
-		'services.teaching.desc': "Building a program in energy, geopolitics or public affairs? I've been teaching at Sciences Po Paris, EM Lyon, IEP Lyon, ILERI and HEIP since 2010. Turnkey courses or custom modules — I adapt to your needs.",
+		'services.teaching.desc': "Building a program in energy, geopolitics or public affairs? I've been teaching at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ILERI and HEIP since 2010. Turnkey courses or custom modules — I adapt to your needs.",
 		'services.media.title': 'Media Expert & Commentary',
 		'services.media.desc': "Preparing a segment on Taiwan, the energy crisis or nuclear power? I'm available for your TV panels, radio shows and podcasts. Well-sourced analysis, direct tone, ability to communicate to a broad audience.",
 		'services.speaking.title': 'Conferences & Events',
@@ -164,7 +168,7 @@ export const ui = {
 		// Travaux page
 		'nav.travaux': 'Research',
 		'travaux.seo.title': 'Teaching, Research & Publications — Romain Blachier',
-		'travaux.seo.description': "Publications, teaching and research by Romain Blachier. Lecturer at Sciences Po Paris, EM Lyon, IEP Lyon. Author of Guillotière(s). Energy and geopolitics expert.",
+		'travaux.seo.description': "Publications, teaching and research by Romain Blachier. Lecturer at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Author of Guillotière(s). Energy and geopolitics expert.",
 		'travaux.hero.title': 'Teaching, Research & Publications',
 		'travaux.hero.subtitle': 'Research, knowledge sharing and intellectual engagement',
 		'travaux.teaching.title': 'Teaching',
