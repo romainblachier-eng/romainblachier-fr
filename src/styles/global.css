@@ -190,20 +190,6 @@ header nav {
 	object-fit: cover;
 	border-radius: 0;
 }
-.hero-photo-label {
-	position: absolute;
-	bottom: -12px;
-	left: 20px;
-	background: var(--ink);
-	color: #fff;
-	font-size: .7rem;
-	font-weight: 600;
-	letter-spacing: .04em;
-	text-transform: uppercase;
-	padding: .4rem .8rem;
-	border-radius: 6px;
-}
-
 /* About */
 .about {
 	background: var(--bg-alt);
