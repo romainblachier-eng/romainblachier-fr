@@ -6,7 +6,6 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const otherLang = lang === 'fr' ? 'en' : 'fr';
 
-// Build the equivalent path in the other language
 const pathname = Astro.url.pathname;
 let otherLangPath: string;
 if (lang === 'fr') {
@@ -30,65 +29,3 @@ if (lang === 'fr') {
 		</div>
 	</nav>
 </header>
-<style>
-	header {
-		background: var(--navy);
-		border-bottom: 1px solid rgba(232, 220, 200, 0.1);
-		position: sticky;
-		top: 0;
-		z-index: 100;
-	}
-	nav {
-		max-width: 1100px;
-		margin: 0 auto;
-		padding: 0.75rem 2.5rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.site-brand {
-		font-family: "Cormorant", serif;
-		font-size: 1.15rem;
-		font-weight: 400;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-		color: var(--beige);
-		text-decoration: none;
-		transition: color 0.3s;
-	}
-	.site-brand:hover {
-		color: var(--gold);
-	}
-	.internal-links {
-		display: flex;
-		gap: 1.5rem;
-		align-items: center;
-	}
-	.lang-switch {
-		font-family: "Outfit", sans-serif;
-		font-size: 0.75rem;
-		font-weight: 500;
-		letter-spacing: 0.08em;
-		color: var(--gold);
-		text-decoration: none;
-		border: 1px solid var(--gold);
-		padding: 0.2rem 0.5rem;
-		border-radius: 3px;
-		transition: all 0.3s;
-	}
-	.lang-switch:hover {
-		background: var(--gold);
-		color: var(--navy);
-	}
-	@media (max-width: 480px) {
-		nav {
-			padding: 0.75rem 1rem;
-		}
-		.site-brand {
-			font-size: 0.95rem;
-		}
-		.internal-links {
-			gap: 0.8rem;
-		}
-	}
-</style>

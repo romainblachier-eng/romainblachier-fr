@@ -3,6 +3,8 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { useTranslations } from "../../i18n/utils";
+import { Image } from "astro:assets";
+import portrait from "../../assets/portrait.jpg";
 
 const t = useTranslations('en');
 ---
@@ -13,7 +15,6 @@ const t = useTranslations('en');
 		<BaseHead title={t('seo.title')} description={t('seo.description')} />
 	</head>
 	<body>
-		<!-- Schema.org JSON-LD : Person + ProfessionalService (EN) -->
 		<script type="application/ld+json" set:html={JSON.stringify({
 			"@context": "https://schema.org",
 			"@graph": [
@@ -30,72 +31,40 @@ const t = useTranslations('en');
 					"@type": "Person",
 					"@id": "https://romainblachier.fr/#person",
 					"name": "Romain Blachier",
-					"givenName": "Romain",
-					"familyName": "Blachier",
 					"jobTitle": "Energy & Geopolitics Expert",
-					"description": "Franco-Taiwanese energy and geopolitics expert. 18 years in the energy sector. Speaker, lecturer, and media commentator.",
 					"url": "https://romainblachier.fr/",
 					"sameAs": [
 						"https://www.linkedin.com/in/romainblachier",
-						"https://www.tiktok.com/@finbookie",
-						"https://romain-blachier.com"
-					],
-					"knowsAbout": [
-						"Energy geopolitics", "Taiwan", "Indo-Pacific",
-						"Nuclear energy", "Energy transition", "Energy markets",
-						"Semiconductors", "LNG", "Strategic communications"
-					],
-					"alumniOf": [{ "@type": "EducationalOrganization", "name": "Sciences Po Paris" }],
-					"memberOf": [{ "@type": "Organization", "name": "France-Formosa Association", "roleName": "President" }],
-					"hasOccupation": [
-						{ "@type": "Occupation", "name": "Energy geopolitics speaker" },
-						{ "@type": "Occupation", "name": "Geopolitics lecturer" },
-						{ "@type": "Occupation", "name": "Energy expert and consultant" }
+						"https://www.tiktok.com/@finbookie"
 					],
 					"knowsLanguage": ["fr", "en", "zh"],
 					"email": "contact@rb-webconsultant.net"
-				},
-				{
-					"@type": "ProfessionalService",
-					"@id": "https://romainblachier.fr/en/#service",
-					"name": "Romain Blachier — Conferences & Training",
-					"provider": { "@id": "https://romainblachier.fr/#person" },
-					"serviceType": [
-						"Energy geopolitics conferences",
-						"Energy market training",
-						"Media expertise",
-						"Strategic communications consulting"
-					],
-					"areaServed": [
-						{ "@type": "Country", "name": "France" },
-						{ "@type": "Country", "name": "Taiwan" }
-					],
-					"url": "https://romainblachier.fr/en/"
 				}
 			]
 		})} />
 
 		<Header />
 
-		<!-- HERO -->
 		<section class="hero">
 			<div class="hero-inner">
-				<div class="hero-star">
-					<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M12 2L15.09 10.26H24L17.45 15.74L20.54 24L12 18.52L3.46 24L6.55 15.74L0 10.26H8.91L12 2Z"
-							fill="currentColor"
-						/>
-					</svg>
+				<div class="hero-content">
+					<div class="hero-kicker">{t('hero.subtitle')}</div>
+					<h1 class="hero-name">Romain<br/>Blachier</h1>
+					<p class="hero-pitch">{t('hero.pitch')}</p>
+					<div class="hero-ctas">
+						<a href="#contact" class="btn btn-primary">{t('hero.cta')} →</a>
+						<a href="/en/blog/" class="btn btn-outline">Blog</a>
+					</div>
 				</div>
-				<h1 class="hero-name">Romain Blachier</h1>
-				<p class="hero-subtitle">{t('hero.subtitle')}</p>
-				<p class="hero-pitch">{t('hero.pitch')}</p>
-				<a href="#contact" class="hero-cta">{t('hero.cta')}</a>
+				<div class="hero-photo">
+					<div class="hero-photo-frame">
+						<Image src={portrait} alt="Romain Blachier" width={760} height={1000} loading="eager" />
+					</div>
+					<div class="hero-photo-label">Paris · Lyon · Taipei</div>
+				</div>
 			</div>
 		</section>
 
-		<!-- ABOUT -->
 		<section class="about">
 			<div class="about-inner">
 				<h2 class="about-label">{t('about.title')}</h2>
@@ -106,9 +75,9 @@ const t = useTranslations('en');
 			</div>
 		</section>
 
-		<!-- SERVICES -->
 		<section class="services">
 			<div class="services-inner">
+				<div class="section-overline" style="text-align:center">Services</div>
 				<h2 class="section-title">{t('services.title')}</h2>
 				<div class="services-grid">
 					<div class="service-card">
@@ -135,12 +104,10 @@ const t = useTranslations('en');
 			</div>
 		</section>
 
-		<!-- AREAS OF EXPERTISE -->
 		<section class="sujets">
 			<div class="sujets-inner">
-				<h2 class="section-title" style="color: var(--beige);">
-					{t('expertise.title')}
-				</h2>
+				<div class="section-overline">Expertise</div>
+				<h2 class="section-title">{t('expertise.title')}</h2>
 				<div class="tags-wrap">
 					<span class="tag">{t('tag.energy_markets')}</span>
 					<span class="tag">{t('tag.taiwan')}</span>
@@ -166,9 +133,9 @@ const t = useTranslations('en');
 			</div>
 		</section>
 
-		<!-- REFERENCES -->
 		<section class="references">
 			<div class="references-inner">
+				<div class="section-overline" style="text-align:center">Track record</div>
 				<h2 class="section-title">{t('references.title')}</h2>
 				<div class="ref-grid">
 					<div class="ref-col">
@@ -185,16 +152,11 @@ const t = useTranslations('en');
 						<h3>{t('references.experience')}</h3>
 						<div style="margin-bottom: 1.5rem;">
 							<div class="ref-big">18 years</div>
-							<div class="ref-cap">
-								{t('references.experience.energy')}<br />Compagnie Nationale du
-								Rhône
-							</div>
+							<div class="ref-cap">{t('references.experience.energy')}<br />Compagnie Nationale du Rhône</div>
 						</div>
 						<div>
 							<div class="ref-big">12 years</div>
-							<div class="ref-cap">
-								{t('references.experience.elected')}<br />{t('references.experience.elected.detail')}
-							</div>
+							<div class="ref-cap">{t('references.experience.elected')}<br />{t('references.experience.elected.detail')}</div>
 						</div>
 					</div>
 					<div class="ref-col">
@@ -211,40 +173,30 @@ const t = useTranslations('en');
 			</div>
 		</section>
 
-		<!-- CONTACT -->
 		<section class="contact-section" id="contact">
 			<div class="contact-inner">
 				<div class="contact-left">
 					<h2>{t('contact.title')}</h2>
 					<p>{t('contact.desc')}</p>
 					<div class="contact-links">
-						<a href="mailto:contact@rb-webconsultant.net"
-							>✉ contact@rb-webconsultant.net</a
-						>
-						<a
-							href="https://www.linkedin.com/in/romainblachier/"
-							target="_blank">→ LinkedIn</a
-						>
-						<a href="https://www.tiktok.com/@finbookie" target="_blank"
-							>@finbookie — energy & geopolitics explainers</a
-						>
+						<a href="mailto:contact@rb-webconsultant.net">✉ contact@rb-webconsultant.net</a>
+						<a href="https://www.linkedin.com/in/romainblachier/" target="_blank" rel="noopener noreferrer">→ LinkedIn</a>
+						<a href="https://www.tiktok.com/@finbookie" target="_blank" rel="noopener noreferrer">@finbookie — energy & geopolitics explainers</a>
 					</div>
 					<div class="contact-cv">
-						<a href="https://romain-blachier.com" target="_blank"
-							>{t('contact.cv')}</a
-						>
+						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" action="#" method="POST">
+				<form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+					<input type="hidden" name="form-name" value="contact" />
+					<p style="display:none"><label>Do not fill: <input name="bot-field" /></label></p>
 					<div class="form-row">
-						<input type="text" placeholder={t('contact.name')} required />
-						<input type="email" placeholder={t('contact.email')} required />
+						<input type="text" name="name" placeholder={t('contact.name')} required />
+						<input type="email" name="email" placeholder={t('contact.email')} required />
 					</div>
-					<input type="text" placeholder={t('contact.subject')} required />
-					<textarea
-						placeholder={t('contact.message')}
-						required></textarea>
-					<button type="submit">{t('contact.send')}</button>
+					<input type="text" name="subject" placeholder={t('contact.subject')} required />
+					<textarea name="message" placeholder={t('contact.message')} required></textarea>
+					<button type="submit">{t('contact.send')} →</button>
 				</form>
 			</div>
 		</section>
