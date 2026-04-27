@@ -94,7 +94,7 @@ export const ui = {
 		'travaux.research.areas': 'Axes de recherche et d\'action',
 		// SEO
 		'seo.title': 'Romain Blachier — Expert Énergie & Géopolitique | Conférencier & Formateur',
-		'seo.description': "Expert franco-taïwanais en énergie et géopolitique. 18 ans secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
+		'seo.description': "Expert en énergie et géopolitique. 18 ans secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
 	},
 	en: {
 		// Nav
@@ -184,6 +184,6 @@ export const ui = {
 		'travaux.research.areas': 'Research and action areas',
 		// SEO
 		'seo.title': 'Romain Blachier — Energy & Geopolitics Expert | Speaker & Lecturer',
-		'seo.description': 'Franco-Taiwanese energy and geopolitics expert. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
+		'seo.description': 'Energy and geopolitics expert. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
 	},
 } as const;
