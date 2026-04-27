@@ -160,7 +160,11 @@ jobs:
 
           Genere automatiquement par GitHub Actions + Claude API" \
             --head "$BRANCH" \
-            --base main \
-            --reviewer romainblachier-eng 2>&1)
+            --base main)
 
           echo "PR created: $PR_URL"
+
+          # Best-effort reviewer assignment — don't fail the workflow if
+          # the GITHUB_TOKEN can't request a review from the repo owner.
+          gh pr edit "$PR_URL" --add-reviewer romainblachier-eng \
+            || echo "Warning: could not assign reviewer (non-fatal)"
