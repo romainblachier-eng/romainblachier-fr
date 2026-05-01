@@ -8,6 +8,7 @@ const blogSchema = ({ image }: { image: Function }) =>
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: image().optional(),
+		draft: z.boolean().default(false),
 	});
 
 const blog = defineCollection({

@@ -34,6 +34,12 @@ const articleFields: Collection["fields"] = [
     label: "Image principale",
   },
   {
+    type: "boolean",
+    name: "draft",
+    label: "Brouillon",
+    description: "Masquer l'article du site public",
+  },
+  {
     type: "string",
     name: "body",
     label: "Contenu",
