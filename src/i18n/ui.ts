@@ -19,7 +19,7 @@ export const ui = {
 		'about.title': 'Pourquoi faire appel à moi',
 		'about.p1': "Les sujets énergétiques et géopolitiques gagnent à être abordés par plusieurs côtés à la fois. C'est ce que j'ai essayé de faire, au fil des années, en tenant de front des rôles que l'on exerce d'ordinaire séparément.",
 		'about.p2': "Mon regard sur ces questions se nourrit de trois sources complémentaires. L'opérationnel d'abord : dix-huit ans dans l'énergie renouvelable, au cœur d'un grand opérateur français de l'électricité, et douze années d'élu à la Métropole de Lyon, avec des délégations exécutives sur la culture, le numérique et l'international, exercées en responsabilité pleine.",
-		'about.p3': "L'écriture ensuite, devenue au fil du temps une discipline quotidienne. Je collabore avec des think tanks français et internationaux, et je publie régulièrement dans la presse, française et étrangère, sur les enjeux énergétiques, géopolitiques et d'affaires publiques.",
+		'about.p3': "L'écriture ensuite, devenue au fil du temps une discipline quotidienne. Je collabore avec des think tanks français et internationaux, et je publie régulièrement dans la presse, française et étrangère, sur les enjeux énergétiques — marchés, transition, nucléaire, souveraineté —, géopolitiques et d'affaires publiques. Je m'intéresse en particulier aux questions de coopération scientifique et technologique comme levier de puissance.",
 		'about.p4': "L'enseignement enfin, qui structure mon année depuis quinze ans. J'interviens à Sciences Po Paris, à Grenoble École de Management, à l'Université Lyon 1, et dans plusieurs autres grandes écoles françaises, sur les marchés de l'énergie, la géopolitique, les affaires publiques et la communication de crise — en français comme en anglais.",
 		'about.p5': "À cela s'ajoutent des engagements de terrain loin de Lyon — au Cambodge et en Ukraine — parce que comprendre un monde suppose de l'avoir arpenté.",
 		'about.p6': "Ce que je dis d'un sujet, je l'ai négocié, arbitré, publié, ou enseigné — souvent les quatre.",
@@ -75,6 +75,7 @@ export const ui = {
 		'tag.culture_economy': 'Économie de la culture',
 		'tag.music': 'Musiques actuelles & festivals',
 		'tag.cultural_diplomacy': 'Diplomatie culturelle',
+		'tag.scientific_coop': 'Coopération scientifique',
 		// Travaux page
 		'nav.travaux': 'Travaux',
 		'travaux.seo.title': 'Enseignement, Travaux & Publications — Romain Blachier',
@@ -109,7 +110,7 @@ export const ui = {
 		'about.title': 'Why work with me',
 		'about.p1': "Energy and geopolitical questions are best approached from several angles at once. That's what I have tried to do over the years, holding simultaneously roles that are usually exercised separately.",
 		'about.p2': "My perspective on these questions draws on three complementary sources. Operational experience first: eighteen years in renewable energy, at the heart of a major French electricity operator, and twelve years as an elected official in the Lyon Metropolitan area, with executive responsibilities covering culture, digital affairs and international relations — exercised with full accountability.",
-		'about.p3': "Writing next, which has become a daily discipline over time. I collaborate with French and international think tanks, and I publish regularly in the French and foreign press on energy, geopolitics and public affairs.",
+		'about.p3': "Writing next, which has become a daily discipline over time. I collaborate with French and international think tanks, and I publish regularly in the French and foreign press on energy — markets, transition, nuclear, sovereignty —, geopolitics and public affairs. I have a particular focus on scientific and technological cooperation as a vector of geopolitical power.",
 		'about.p4': "Teaching finally, which has structured my year for fifteen years. I lecture at Sciences Po Paris, Grenoble École de Management, Université Lyon 1, and at several other leading French institutions, on energy markets, geopolitics, public affairs and crisis communications — in French and English.",
 		'about.p5': "Added to this are field engagements far from Lyon — in Cambodia and Ukraine — because understanding a world requires having walked through it.",
 		'about.p6': "Whatever I say about a subject, I have negotiated it, arbitrated it, published it, or taught it — often all four.",
@@ -165,6 +166,7 @@ export const ui = {
 		'tag.culture_economy': 'Cultural economics',
 		'tag.music': 'Live music & festivals',
 		'tag.cultural_diplomacy': 'Cultural diplomacy',
+		'tag.scientific_coop': 'Scientific cooperation',
 		// Travaux page
 		'nav.travaux': 'Research',
 		'travaux.seo.title': 'Teaching, Research & Publications — Romain Blachier',
