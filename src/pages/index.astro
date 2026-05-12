@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { useTranslations } from "../i18n/utils";
 import { Image } from "astro:assets";
 import portrait from "../assets/portrait.jpg";
+import { HeroGeometric } from "../components/ui/shape-landing-hero";
 
 const t = useTranslations('fr');
 ---
@@ -55,24 +56,17 @@ const t = useTranslations('fr');
 
 		<Header />
 
-		<section class="hero">
-			<div class="hero-inner">
-				<div class="hero-content">
-					<div class="hero-kicker">{t('hero.subtitle')}</div>
-					<h1 class="hero-name">Romain<br/>Blachier</h1>
-					<p class="hero-pitch">{t('hero.pitch')}</p>
-					<div class="hero-ctas">
-						<a href="#contact" class="btn btn-primary">{t('hero.cta')} →</a>
-						<a href="/blog/" class="btn btn-outline">Blog</a>
-					</div>
-				</div>
-				<div class="hero-photo">
-					<div class="hero-photo-frame">
-						<Image src={portrait} alt="Romain Blachier" width={760} height={1000} loading="eager" />
-					</div>
-				</div>
-			</div>
-		</section>
+		<HeroGeometric
+			client:load
+			badge={t('hero.subtitle')}
+			title1="Romain"
+			title2="Blachier"
+			description={t('hero.pitch')}
+			ctaHref="#contact"
+			ctaLabel={`${t('hero.cta')} →`}
+			secondaryHref="/blog/"
+			secondaryLabel="Blog"
+		/>
 
 		<section class="about">
 			<div class="about-inner">
