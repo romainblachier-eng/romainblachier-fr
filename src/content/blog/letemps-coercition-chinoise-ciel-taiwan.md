@@ -2,7 +2,7 @@
 title: "Ma tribune dans Le Temps : Coercition chinoise dans le ciel de Taïwan"
 description: "Publiée dans Le Temps, cette tribune analyse comment la Chine a obtenu de plusieurs États de l'océan Indien le retrait de leurs autorisations de survol au président taïwanais Lai Ching-te — un précédent qui doit alerter les démocraties."
 pubDate: 2026-04-29T10:00:00.000Z
-heroImage: '../../assets/lai-ching-te-2023.jpg'
+heroImage: '../../assets/le-temps-logo.jpg'
 ---
 
 Je viens de publier une tribune dans **Le Temps**, le quotidien suisse de référence, sur un précédent silencieux mais lourd : la coercition aérienne exercée par Pékin contre le président taïwanais Lai Ching-te.

@@ -2,7 +2,7 @@
 title: "Ma tribune sur La Grande Conversation : Ormuz révèle nos tensions énergétiques, en Asie comme en Europe"
 description: "Publiée par Terra Nova sur La Grande Conversation, cette tribune revient sur la crise pétrolière ouverte par la fermeture du détroit d'Ormuz et ce qu'elle dit de la dépendance fossile de l'Asie et des angles morts européens."
 pubDate: 2026-04-21T10:00:00.000Z
-heroImage: '../../assets/energy-infrastructure.jpg'
+heroImage: '../../assets/la-grande-conversation-logo.png'
 ---
 
 Je viens de publier une tribune sur **La Grande Conversation**, le média numérique de **Terra Nova**, sur ce que le détroit d'Ormuz révèle de nos dépendances énergétiques — en Asie comme en Europe.

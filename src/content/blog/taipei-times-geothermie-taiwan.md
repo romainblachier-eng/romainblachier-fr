@@ -2,7 +2,7 @@
 title: "The energy beneath Taiwan's feet — Taipei Times"
 description: "Reportage publié dans le Taipei Times sur le potentiel géothermique de Taïwan, les obstacles réglementaires et financiers à son développement, et les enjeux de souveraineté énergétique face à la demande de TSMC et de l'industrie des semi-conducteurs."
 pubDate: 'Apr 17 2026 09:00:00'
-heroImage: '../../assets/qingshui-geothermal-taiwan.jpg'
+heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
 Je signe dans le **[Taipei Times](https://www.taipeitimes.com)** un reportage consacré au potentiel géothermique de Taïwan — une ressource massive, largement sous-exploitée, et devenue stratégique dans le contexte de la transition énergétique de l'île.

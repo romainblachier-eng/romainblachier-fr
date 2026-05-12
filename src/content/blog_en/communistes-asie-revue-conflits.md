@@ -2,7 +2,7 @@
 title: "My article in Revue Conflits: Asian Communists — is the East still red?"
 description: "Published in Revue Conflits, this article revisits what remains of 'communism' in Asia: from North Korean racial nationalism to the Vietnamese and Laotian developmental states, the label conceals more than it clarifies."
 pubDate: 2026-04-27T10:00:00.000Z
-heroImage: '../../assets/drapeau-pc-vietnam.png'
+heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 
 I have just published an article in **Revue Conflits**, titled *"Asian Communists: is the East still red?"*. Revue Conflits is a leading French magazine on geopolitics, international relations and strategic analysis.

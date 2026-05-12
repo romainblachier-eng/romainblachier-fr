@@ -2,7 +2,7 @@
 title: "My op-ed in Le Temps: Chinese coercion in Taiwan's skies"
 description: "Published in Le Temps, this op-ed examines how Beijing pressured several Indian Ocean states into withdrawing overflight clearances for Taiwanese President Lai Ching-te — a precedent democracies cannot afford to ignore."
 pubDate: 2026-04-29T10:00:00.000Z
-heroImage: '../../assets/lai-ching-te-2023.jpg'
+heroImage: '../../assets/le-temps-logo.jpg'
 ---
 
 I have just published an op-ed in **Le Temps**, Switzerland's leading daily, on a silent but consequential precedent: the airspace coercion Beijing has exercised against Taiwanese President Lai Ching-te.

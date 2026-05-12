@@ -2,7 +2,7 @@
 title: "Ma tribune dans le Taipei Times : Taïwan, l’IA et le mur des ressources"
 description: "Tribune publiée dans le Taipei Times sur les ambitions IA de Taïwan face aux contraintes énergétiques et hydriques du pays."
 pubDate: 2026-03-25T12:00:00.000Z
-heroImage: https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80
+heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
 Le *Taipei Times* est le principal quotidien anglophone de Taïwan, publiant régulièrement des analyses d’experts internationaux.

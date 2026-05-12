@@ -2,7 +2,7 @@
 title: "Mon article dans Revue Conflits : Communistes d'Asie, l'Orient est-il toujours rouge ?"
 description: "Publié dans Revue Conflits, cet article revisite ce qu'il reste du « communisme » en Asie : du nationalisme racial nord-coréen aux États développementalistes vietnamien et laotien, le label cache plus qu'il n'éclaire."
 pubDate: 2026-04-27T10:00:00.000Z
-heroImage: '../../assets/drapeau-pc-vietnam.png'
+heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 
 Je viens de publier un article dans **Revue Conflits**, sous le titre *« Communistes d'Asie : l'Orient est-il toujours rouge ? »*. Revue Conflits est un magazine français de référence sur la géopolitique, les relations internationales et l'analyse stratégique.

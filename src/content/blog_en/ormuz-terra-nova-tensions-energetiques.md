@@ -2,7 +2,7 @@
 title: "My op-ed on La Grande Conversation: Hormuz reveals our energy tensions, in Asia and in Europe"
 description: "Published by Terra Nova on La Grande Conversation, this op-ed examines the oil crisis triggered by the closure of the Strait of Hormuz and what it says about Asia's fossil-fuel dependence and Europe's blind spots."
 pubDate: 2026-04-21T10:00:00.000Z
-heroImage: '../../assets/energy-infrastructure.jpg'
+heroImage: '../../assets/la-grande-conversation-logo.png'
 ---
 
 I have just published an op-ed on **La Grande Conversation**, the online journal of **Terra Nova**, about what the Strait of Hormuz reveals of our energy dependencies — in Asia and in Europe.
