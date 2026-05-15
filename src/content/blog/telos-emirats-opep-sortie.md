@@ -9,7 +9,7 @@ Je viens de publier un article sur **Telos**, la revue en ligne fondée par Zaki
 
 ## Telos
 
-**Telos** est une revue en ligne d'analyse et de débat fondée par le politiste Zaki Laïdi. Elle publie des contributions d'universitaires, de chercheurs et d'experts sur les grandes questions économiques, géopolitiques et sociales contemporaines. C'est un espace de réflexion exigeant, à la croisée du monde académique et du débat public.
+**Telos** est une revue en ligne à comité scientifique, d'analyse et de débat, fondée par le politiste Zaki Laïdi. Elle publie des contributions d'universitaires, de chercheurs et d'experts sur les grandes questions économiques, géopolitiques et sociales contemporaines. C'est un espace de réflexion exigeant, à la croisée du monde académique et du débat public.
 
 ## Le sujet : la sortie des Émirats de l'OPEP, aboutissement d'une trajectoire de quinze ans
 

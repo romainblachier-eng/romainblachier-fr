@@ -9,7 +9,7 @@ I have just published an article on **Telos**, the online review founded by poli
 
 ## Telos
 
-**Telos** is a French online review of analysis and debate founded by political scientist Zaki Laïdi. It publishes contributions from academics, researchers and experts on major contemporary economic, geopolitical and social issues. It is a demanding space for reflection, at the crossroads of the academic world and public debate.
+**Telos** is a French peer-reviewed online review of analysis and debate founded by political scientist Zaki Laïdi. It publishes contributions from academics, researchers and experts on major contemporary economic, geopolitical and social issues. It is a demanding space for reflection, at the crossroads of the academic world and public debate.
 
 ## The argument: the UAE's exit from OPEC, the culmination of a fifteen-year trajectory
 
