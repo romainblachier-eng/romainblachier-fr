@@ -9,7 +9,7 @@ pubDate: 2026-03-09T15:42:51.008Z
 heroImage: ../../assets/Main-Lantern-2026-590x449.webp
 ---
 
-*Lecturer at Sciences Po Paris, IEP Lyon, ILERI, HEIP · President of the France-Formosa Association*
+*Lecturer at Sciences Po Paris, EM Lyon, IEP Lyon, ILERI, HEIP · President of the France-Formosa Association*
 
 Taiwan imports 97% of its primary energy. Its strategic reserves of liquefied natural gas cover between 11 and 14 days of consumption. Its last nuclear reactor was shut down in May 2025. And at the same time, TSMC's electricity consumption — the company that manufactures over 90% of the world's most advanced chips — could triple by 2030. The scale of the problem is clear.
 
