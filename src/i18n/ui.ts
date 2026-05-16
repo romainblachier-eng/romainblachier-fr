@@ -9,7 +9,7 @@ export const ui = {
 	fr: {
 		// Nav
 		'nav.home': 'Accueil',
-		'nav.blog': 'Blog',
+		'nav.blog': 'Articles et blog',
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Expert énergie & géopolitique · Enseignant · Chroniqueur · Communication',
@@ -100,7 +100,7 @@ export const ui = {
 	en: {
 		// Nav
 		'nav.home': 'Home',
-		'nav.blog': 'Blog',
+		'nav.blog': 'Articles & Blog',
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Energy & Geopolitics Expert · Lecturer · Media Commentator · Communications',
