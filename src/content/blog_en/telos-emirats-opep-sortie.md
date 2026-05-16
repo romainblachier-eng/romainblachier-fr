@@ -5,7 +5,7 @@ pubDate: 2026-05-12T10:00:00.000Z
 heroImage: '../../assets/telos-eu-logo-hero.jpg'
 ---
 
-I have just published an article on **Telos**, the online review founded by political scientist Zaki Laïdi, about the UAE's withdrawal from OPEC and what it reveals about Emirati energy strategy.
+I have just published an article on **Telos**, the peer-reviewed online review founded by political scientist Zaki Laïdi, about the UAE's withdrawal from OPEC and what it reveals about Emirati energy strategy.
 
 ## Telos
 

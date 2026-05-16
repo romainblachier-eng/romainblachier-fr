@@ -5,7 +5,7 @@ pubDate: 2026-05-12T10:00:00.000Z
 heroImage: '../../assets/telos-eu-logo-hero.jpg'
 ---
 
-Je viens de publier un article sur **Telos**, la revue en ligne fondée par Zaki Laïdi, sur la sortie des Émirats arabes unis de l'OPEP et ce qu'elle révèle de la stratégie énergétique émirienne.
+Je viens de publier un article sur **Telos**, la revue en ligne à comité scientifique fondée par Zaki Laïdi, sur la sortie des Émirats arabes unis de l'OPEP et ce qu'elle révèle de la stratégie énergétique émirienne.
 
 ## Telos
 
