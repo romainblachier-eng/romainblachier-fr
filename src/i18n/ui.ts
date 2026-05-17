@@ -12,8 +12,8 @@ export const ui = {
 		'nav.blog': 'Articles et blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Expert énergie & géopolitique · Enseignant · Chroniqueur · Communication',
-		'hero.pitch': "Besoin d'un expert pour votre prochain plateau TV sur l'énergie ? D'un enseignant pour vos programmes en géopolitique ? D'un conférencier qui sait captiver un auditoire ? Vous êtes au bon endroit.",
+		'hero.subtitle': 'Énergie & géopolitique · Enseignant · Chroniqueur · Communication',
+		'hero.pitch': "Besoin d'un intervenant pour votre prochain plateau TV sur l'énergie ? D'un enseignant pour vos programmes en géopolitique ? D'un conférencier qui sait captiver un auditoire ? Vous êtes au bon endroit.",
 		'hero.cta': 'Discutons de votre projet',
 		// About
 		'about.title': 'Pourquoi faire appel à moi',
@@ -27,12 +27,12 @@ export const ui = {
 		'services.title': 'Ce que je peux vous apporter',
 		'services.teaching.title': 'Cours & formations',
 		'services.teaching.desc': "Vous montez un programme en énergie, géopolitique ou affaires publiques ? J'enseigne depuis 2010 à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ILERI et HEIP. Cours clés en main ou modules sur mesure — je m'adapte à vos besoins.",
-		'services.media.title': 'Expert médias & chroniques',
+		'services.media.title': 'Médias & chroniques',
 		'services.media.desc': "Vous préparez un sujet sur Taïwan, la crise énergétique ou le nucléaire ? Je suis disponible pour vos plateaux TV, émissions radio et podcasts. Analyses sourcées, ton direct, capacité à vulgariser pour le grand public.",
 		'services.speaking.title': 'Conférences & événements',
 		'services.speaking.desc': "Vos participants veulent comprendre les enjeux énergétiques et géopolitiques ? J'interviens en keynote, table ronde ou séminaire. Un conférencier qui maîtrise son sujet, en français et en anglais.",
 		'services.comms.title': 'Communication & affaires publiques',
-		'services.comms.desc': "Vous avez besoin d'un regard expert sur votre stratégie de communication, vos relations institutionnelles ou votre visibilité en ligne ? SEO, référencement IA (GEO), communication de crise — 18 ans de pratique terrain.",
+		'services.comms.desc': "Vous avez besoin d'un regard avisé sur votre stratégie de communication, vos relations institutionnelles ou votre visibilité en ligne ? SEO, référencement IA (GEO), communication de crise — 18 ans de pratique terrain.",
 		// Expertise
 		'expertise.title': "Sujets d'expertise",
 		// References
@@ -79,7 +79,7 @@ export const ui = {
 		// Travaux page
 		'nav.travaux': 'Travaux',
 		'travaux.seo.title': 'Enseignement, Travaux & Publications — Romain Blachier',
-		'travaux.seo.description': "Publications, enseignements et travaux de recherche de Romain Blachier. Cours à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Auteur de Guillotière(s). Expert énergie et géopolitique.",
+		'travaux.seo.description': "Publications, enseignements et travaux de recherche de Romain Blachier. Cours à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Auteur de Guillotière(s). Énergie et géopolitique.",
 		'travaux.hero.title': 'Enseignement, Travaux & Publications',
 		'travaux.hero.subtitle': 'Recherche, transmission et engagement intellectuel',
 		'travaux.teaching.title': 'Enseignement',
@@ -94,8 +94,8 @@ export const ui = {
 		'travaux.research.title': 'Travaux & engagements',
 		'travaux.research.areas': 'Axes de recherche et d\'action',
 		// SEO
-		'seo.title': 'Romain Blachier — Expert Énergie & Géopolitique | Conférencier & Formateur',
-		'seo.description': "Expert en énergie et géopolitique. 18 ans secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
+		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Conférencier & Formateur',
+		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
 	},
 	en: {
 		// Nav
@@ -103,8 +103,8 @@ export const ui = {
 		'nav.blog': 'Articles & Blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Energy & Geopolitics Expert · Lecturer · Media Commentator · Communications',
-		'hero.pitch': "Need an expert for your next TV panel on energy? A lecturer for your geopolitics program? A speaker who knows how to captivate an audience? You're in the right place.",
+		'hero.subtitle': 'Energy & Geopolitics · Lecturer · Media Commentator · Communications',
+		'hero.pitch': "Need a speaker for your next TV panel on energy? A lecturer for your geopolitics program? A speaker who knows how to captivate an audience? You're in the right place.",
 		'hero.cta': "Let's discuss your project",
 		// About
 		'about.title': 'Why work with me',
@@ -118,12 +118,12 @@ export const ui = {
 		'services.title': 'What I can bring you',
 		'services.teaching.title': 'Courses & Training',
 		'services.teaching.desc': "Building a program in energy, geopolitics or public affairs? I've been teaching at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ILERI and HEIP since 2010. Turnkey courses or custom modules — I adapt to your needs.",
-		'services.media.title': 'Media Expert & Commentary',
+		'services.media.title': 'Media & Commentary',
 		'services.media.desc': "Preparing a segment on Taiwan, the energy crisis or nuclear power? I'm available for your TV panels, radio shows and podcasts. Well-sourced analysis, direct tone, ability to communicate to a broad audience.",
 		'services.speaking.title': 'Conferences & Events',
 		'services.speaking.desc': "Your audience wants to understand energy and geopolitical challenges? I deliver keynotes, panel discussions and seminars. A speaker who masters the subject, in French and English.",
 		'services.comms.title': 'Communications & Public Affairs',
-		'services.comms.desc': "Need expert insight on your communications strategy, institutional relations or online visibility? SEO, AI search optimization (GEO), crisis communications — 18 years of hands-on practice.",
+		'services.comms.desc': "Need seasoned insight on your communications strategy, institutional relations or online visibility? SEO, AI search optimization (GEO), crisis communications — 18 years of hands-on practice.",
 		// Expertise
 		'expertise.title': 'Areas of expertise',
 		// References
@@ -170,7 +170,7 @@ export const ui = {
 		// Travaux page
 		'nav.travaux': 'Research',
 		'travaux.seo.title': 'Teaching, Research & Publications — Romain Blachier',
-		'travaux.seo.description': "Publications, teaching and research by Romain Blachier. Lecturer at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Author of Guillotière(s). Energy and geopolitics expert.",
+		'travaux.seo.description': "Publications, teaching and research by Romain Blachier. Lecturer at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Author of Guillotière(s). Energy and geopolitics.",
 		'travaux.hero.title': 'Teaching, Research & Publications',
 		'travaux.hero.subtitle': 'Research, knowledge sharing and intellectual engagement',
 		'travaux.teaching.title': 'Teaching',
@@ -185,7 +185,7 @@ export const ui = {
 		'travaux.research.title': 'Research & engagement',
 		'travaux.research.areas': 'Research and action areas',
 		// SEO
-		'seo.title': 'Romain Blachier — Energy & Geopolitics Expert | Speaker & Lecturer',
-		'seo.description': 'Energy and geopolitics expert. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
+		'seo.title': 'Romain Blachier — Energy & Geopolitics | Speaker & Lecturer',
+		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
 	},
 } as const;

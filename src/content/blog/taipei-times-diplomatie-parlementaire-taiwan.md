@@ -5,7 +5,7 @@ pubDate: 2026-05-03T12:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
-Je publie une nouvelle tribune dans le **[Taipei Times](https://www.taipeitimes.com)**, le principal quotidien anglophone de Taïwan, fondé en 1999. Journal de référence sur l'actualité taïwanaise et les relations internationales dans le détroit, il accueille régulièrement des analyses d'experts et d'universitaires du monde entier.
+Je publie une nouvelle tribune dans le **[Taipei Times](https://www.taipeitimes.com)**, le principal quotidien anglophone de Taïwan, fondé en 1999. Journal de référence sur l'actualité taïwanaise et les relations internationales dans le détroit, il accueille régulièrement des analyses de spécialistes et d'universitaires du monde entier.
 
 ## Le sujet : la diplomatie parlementaire comme plan B de Taïwan
 
