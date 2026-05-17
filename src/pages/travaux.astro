@@ -50,6 +50,10 @@ const t = useTranslations('fr');
 								<span class="institution-detail">Sciences politiques</span>
 							</div>
 							<div class="institution-item">
+								<span class="institution-name">ECAM Lyon</span>
+								<span class="institution-detail">École d'ingénieurs</span>
+							</div>
+							<div class="institution-item">
 								<span class="institution-name">ILERI</span>
 								<span class="institution-detail">Relations internationales</span>
 							</div>
@@ -103,36 +107,67 @@ const t = useTranslations('fr');
 					</div>
 				</div>
 
-				<!-- Tribunes & presse -->
+				<!-- Plateformes à comité scientifique -->
 				<div class="pub-category">
-					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.tribunes')}</h3>
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.scientific')}</h3>
 					<div class="pub-list">
 						<div class="pub-item">
-							<span class="pub-source">Revue Conflits</span>
-							<span class="pub-topic">« Taïwan face à l'étau énergétique » (mars 2026) — analyse de la vulnérabilité énergétique taïwanaise et de ses implications géopolitiques</span>
+							<span class="pub-source">Telos</span>
+							<span class="pub-topic">« La sortie des Émirats de l'OPEP n'est pas celle qu'on croit » (mai 2026) — analyse d'une stratégie de monétisation pétrolière sur quinze ans</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Fondation Jean-Jaurès</span>
+							<span class="pub-topic">« Quand le principal parti d'opposition taïwanais bascule vers Pékin » (avril 2026) — résilience démocratique et nouveau positionnement du KMT</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taiwan Insight</span>
+							<span class="pub-topic">« Taiwan's Energy Challenges » (avril 2026) — vulnérabilité structurelle, dépendance aux importations et sécurité énergétique de Taïwan</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Quotidiens et hebdomadaires de référence -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.dailies')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Le Temps</span>
+							<span class="pub-topic">« Coercition chinoise dans le ciel de Taïwan » (avril 2026) — pression aérienne de Pékin et précédent diplomatique</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Asia Times</span>
+							<span class="pub-topic">« KMT's imperialist rhetoric shifts Taiwan's democratic fault line » (avril 2026) — bascule idéologique et rupture des garde-fous diplomatiques</span>
 						</div>
 						<div class="pub-item">
 							<span class="pub-source">Taipei Times</span>
-							<span class="pub-topic">« Taiwan's AI ambitions hit a wall » (mars 2026) — tribune sur les défis énergétiques et hydriques de l'ambition IA taïwanaise</span>
+							<span class="pub-topic">Tribunes régulières — IA et contraintes énergétiques (mars 2026), potentiel géothermique (avril 2026), diplomatie parlementaire (mai 2026)</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Le Vif / L'Express</span>
+							<span class="pub-topic">Analyses ponctuelles sur l'énergie, la géopolitique et les relations internationales</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Médias d'opinion et chroniques -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.opinion')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Revue Conflits</span>
+							<span class="pub-topic">« Communistes d'Asie : l'Orient est-il toujours rouge ? » et « Comment Pékin a cloué au sol le président taïwanais » (avril 2026)</span>
 						</div>
 						<div class="pub-item">
 							<span class="pub-source">Contrepoints / IREF Europe</span>
 							<span class="pub-topic">« Le déclin de l'aide à l'Ukraine est un danger pour les démocraties » (2023), analyses géopolitiques, politique énergétique européenne</span>
 						</div>
 						<div class="pub-item">
-							<span class="pub-source">Lyon Capitale</span>
-							<span class="pub-topic">« Que les réacs continuent à avoir peur de la Guillotière ! » — tribunes sur Lyon, urbanisme, vie de quartier</span>
-						</div>
-					</div>
-				</div>
-
-				<!-- Chroniques & médias -->
-				<div class="pub-category">
-					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.chroniques')}</h3>
-					<div class="pub-list">
-						<div class="pub-item">
 							<span class="pub-source">Lyon Mag</span>
 							<span class="pub-topic">Chroniques d'actualité locale, politique lyonnaise, vie de quartier</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Lyon Capitale</span>
+							<span class="pub-topic">« Que les réacs continuent à avoir peur de la Guillotière ! » — tribunes sur Lyon, urbanisme, vie de quartier</span>
 						</div>
 						<div class="pub-item">
 							<span class="pub-source">AgoraVox</span>
