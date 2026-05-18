@@ -107,28 +107,54 @@ const t = useTranslations('fr');
 					</div>
 				</div>
 
-				<!-- Plateformes à comité scientifique -->
+				<!-- Publications récentes -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.recent')}</h3>
+					<div class="pub-recent-grid">
+						<a class="pub-recent-card" href="/blog/telos-emirats-opep-sortie/">
+							<div class="pub-recent-logo" aria-hidden="true">Telos</div>
+							<div class="pub-recent-date">Mai 2026</div>
+							<div class="pub-recent-title">La sortie des Émirats de l'OPEP n'est pas celle qu'on croit</div>
+						</a>
+						<a class="pub-recent-card" href="/blog/taipei-times-diplomatie-parlementaire-taiwan/">
+							<div class="pub-recent-logo" aria-hidden="true">Taipei Times</div>
+							<div class="pub-recent-date">Mai 2026</div>
+							<div class="pub-recent-title">Taiwan leans on diplomatic plan B</div>
+						</a>
+						<a class="pub-recent-card" href="/blog/letemps-coercition-chinoise-ciel-taiwan/">
+							<div class="pub-recent-logo" aria-hidden="true">Le Temps</div>
+							<div class="pub-recent-date">Avril 2026</div>
+							<div class="pub-recent-title">Coercition chinoise dans le ciel de Taïwan</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Think tanks et publications à comité scientifique -->
 				<div class="pub-category">
 					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.scientific')}</h3>
 					<div class="pub-list">
-						<div class="pub-item">
-							<span class="pub-source">Telos</span>
-							<span class="pub-topic">« La sortie des Émirats de l'OPEP n'est pas celle qu'on croit » (mai 2026) — analyse d'une stratégie de monétisation pétrolière sur quinze ans</span>
-						</div>
 						<div class="pub-item">
 							<span class="pub-source">Fondation Jean-Jaurès</span>
 							<span class="pub-topic">« Quand le principal parti d'opposition taïwanais bascule vers Pékin » (avril 2026) — résilience démocratique et nouveau positionnement du KMT</span>
 						</div>
 						<div class="pub-item">
-							<span class="pub-source">Taiwan Insight</span>
-							<span class="pub-topic">« Taiwan's Energy Challenges » (avril 2026) — vulnérabilité structurelle, dépendance aux importations et sécurité énergétique de Taïwan</span>
+							<span class="pub-source">Telos</span>
+							<span class="pub-topic">« La sortie des Émirats de l'OPEP n'est pas celle qu'on croit » (mai 2026) — analyse d'une stratégie de monétisation pétrolière sur quinze ans</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Terra Nova — La Grande Conversation</span>
+							<span class="pub-topic">« Ormuz révèle nos tensions énergétiques, en Asie comme en Europe » (avril 2026) — crise du détroit et révélateur des dépendances européennes</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taiwan Insight (University of Nottingham)</span>
+							<span class="pub-topic">« Taiwan's Energy Challenges » (avril 2026) — vulnérabilité structurelle, dépendance aux importations et sécurité énergétique</span>
 						</div>
 					</div>
 				</div>
 
-				<!-- Quotidiens et hebdomadaires de référence -->
+				<!-- Médias internationaux -->
 				<div class="pub-category">
-					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.dailies')}</h3>
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.international')}</h3>
 					<div class="pub-list">
 						<div class="pub-item">
 							<span class="pub-source">Le Temps</span>
@@ -142,16 +168,12 @@ const t = useTranslations('fr');
 							<span class="pub-source">Taipei Times</span>
 							<span class="pub-topic">Tribunes régulières — IA et contraintes énergétiques (mars 2026), potentiel géothermique (avril 2026), diplomatie parlementaire (mai 2026)</span>
 						</div>
-						<div class="pub-item">
-							<span class="pub-source">Le Vif / L'Express</span>
-							<span class="pub-topic">Analyses ponctuelles sur l'énergie, la géopolitique et les relations internationales</span>
-						</div>
 					</div>
 				</div>
 
-				<!-- Médias d'opinion et chroniques -->
+				<!-- Médias français -->
 				<div class="pub-category">
-					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.opinion')}</h3>
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.french')}</h3>
 					<div class="pub-list">
 						<div class="pub-item">
 							<span class="pub-source">Revue Conflits</span>
@@ -162,16 +184,30 @@ const t = useTranslations('fr');
 							<span class="pub-topic">« Le déclin de l'aide à l'Ukraine est un danger pour les démocraties » (2023), analyses géopolitiques, politique énergétique européenne</span>
 						</div>
 						<div class="pub-item">
-							<span class="pub-source">Lyon Mag</span>
-							<span class="pub-topic">Chroniques d'actualité locale, politique lyonnaise, vie de quartier</span>
+							<span class="pub-source">Le Vif / L'Express</span>
+							<span class="pub-topic">Analyses ponctuelles sur l'énergie, la géopolitique et les relations internationales</span>
 						</div>
-						<div class="pub-item">
-							<span class="pub-source">Lyon Capitale</span>
-							<span class="pub-topic">« Que les réacs continuent à avoir peur de la Guillotière ! » — tribunes sur Lyon, urbanisme, vie de quartier</span>
+					</div>
+				</div>
+
+				<!-- Par thématique -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.themes')}</h3>
+					<div class="pub-themes-grid">
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.energy')}</h4>
+							<p class="pub-theme-desc">Marchés pétroliers et gaziers, transition énergétique, nucléaire, hydroélectricité, semi-conducteurs, IA et contraintes en ressources.</p>
+							<div class="pub-theme-sources">Telos · Terra Nova · Taipei Times · Taiwan Insight</div>
 						</div>
-						<div class="pub-item">
-							<span class="pub-source">AgoraVox</span>
-							<span class="pub-topic">Billets d'actualité : politique étrangère, libertés publiques, numérique (2011–2015)</span>
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.geopolitics')}</h4>
+							<p class="pub-theme-desc">Détroits stratégiques (Ormuz, Malacca), souveraineté européenne, OPEP, coercition chinoise, aide à l'Ukraine.</p>
+							<div class="pub-theme-sources">Le Temps · Revue Conflits · Terra Nova · Contrepoints</div>
+						</div>
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.taiwan')}</h4>
+							<p class="pub-theme-desc">Sécurité énergétique de Taïwan, recompositions politiques (KMT/DPP), diplomatie parlementaire, relations à travers le détroit.</p>
+							<div class="pub-theme-sources">Taipei Times · Asia Times · Fondation Jean-Jaurès · Taiwan Insight</div>
 						</div>
 					</div>
 				</div>
@@ -200,7 +236,7 @@ const t = useTranslations('fr');
 					<div class="research-card">
 						<div class="research-icon">⚡</div>
 						<h4>Énergie & géopolitique</h4>
-						<p>18 ans d'expérience dans le secteur de l'énergie (grand opérateur français de l'électricité). Expertise sur les marchés de l'énergie, le nucléaire, l'hydroélectricité, le GNL et les semi-conducteurs.</p>
+						<p>18 ans d'expérience dans le secteur de l'énergie (grand opérateur français de l'électricité). Travaux sur les marchés de l'énergie, le nucléaire, l'hydroélectricité, le GNL et les semi-conducteurs.</p>
 					</div>
 					<div class="research-card">
 						<div class="research-icon">🏛️</div>
