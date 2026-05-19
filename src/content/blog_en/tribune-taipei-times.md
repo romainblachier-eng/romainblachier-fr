@@ -5,7 +5,7 @@ pubDate: 2026-03-25T12:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
-The *Taipei Times* is Taiwan's leading English-language daily, regularly featuring analyses from international experts.
+The *Taipei Times* is Taiwan's leading English-language daily, regularly featuring analyses from international specialists.
 
 I published an op-ed on the gap between Taiwan's AI ambitions and its natural-resource constraints.
 

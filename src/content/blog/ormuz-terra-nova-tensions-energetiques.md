@@ -11,7 +11,7 @@ Je viens de publier une tribune sur **La Grande Conversation**, le média numér
 
 **Terra Nova** est un think tank progressiste français, fondé en 2008, qui produit des notes et des rapports de politiques publiques sur la transition écologique, l'économie, la démocratie et les affaires internationales. C'est l'une des principales fondations de réflexion de la gauche réformiste en France.
 
-**La Grande Conversation** est le média en ligne de Terra Nova. On y retrouve, sous un format plus court et plus vivant que les rapports, des analyses d'experts, de chercheurs et de praticiens sur les grands débats du moment : climat, géopolitique, démocratie, économie. C'est un espace utile pour faire dialoguer le monde de la recherche, celui de la décision publique et le débat citoyen.
+**La Grande Conversation** est le média en ligne de Terra Nova. On y retrouve, sous un format plus court et plus vivant que les rapports, des analyses de spécialistes, de chercheurs et de praticiens sur les grands débats du moment : climat, géopolitique, démocratie, économie. C'est un espace utile pour faire dialoguer le monde de la recherche, celui de la décision publique et le débat citoyen.
 
 ## Le sujet : Ormuz, révélateur des tensions énergétiques
 

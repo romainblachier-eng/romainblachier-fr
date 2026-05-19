@@ -11,6 +11,6 @@ Taiwan holds an estimated **33,000+ MW** of recoverable geothermal capacity, con
 
 The piece maps the structural bottlenecks holding back this baseload resource: restrictive vertical-drilling regulations, inconsistent permitting processes, the lack of specialized drilling infrastructure, overlaps with protected parks and Indigenous territories, and a financing gap. A Hualien well drilled by a Swedish company took nearly a year and NT$100 million to complete — compared to six weeks in Iceland for a comparable operation.
 
-The article draws on interviews with key players in the sector — **Baseload Capital / Baseload Power**, **FengYeu Green Energy** (Lin Po-keng), and **Bernard Sanjuan**, a geothermal expert from the French Geological Survey (BRGM) — and concludes that the government must share early-stage exploration risk in order to attract private capital.
+The article draws on interviews with key players in the sector — **Baseload Capital / Baseload Power**, **FengYeu Green Energy** (Lin Po-keng), and **Bernard Sanjuan**, a geothermal specialist from the French Geological Survey (BRGM) — and concludes that the government must share early-stage exploration risk in order to attract private capital.
 
 → [Read the article on Taipei Times](https://www.taipeitimes.com/News/feat/archives/2026/04/17/2003855742)

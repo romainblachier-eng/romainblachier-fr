@@ -11,7 +11,7 @@ I have just published an op-ed on **La Grande Conversation**, the online journal
 
 **Terra Nova** is a French progressive think tank, founded in 2008, that produces policy notes and reports on the ecological transition, the economy, democracy and international affairs. It is one of the leading think tanks of France's reformist left.
 
-**La Grande Conversation** is Terra Nova's online journal. In a shorter and livelier format than its reports, it gathers analyses from experts, researchers and practitioners on the major debates of the day: climate, geopolitics, democracy, economics. It's a useful space for bringing research, public decision-making and citizen debate into conversation.
+**La Grande Conversation** is Terra Nova's online journal. In a shorter and livelier format than its reports, it gathers analyses from specialists, researchers and practitioners on the major debates of the day: climate, geopolitics, democracy, economics. It's a useful space for bringing research, public decision-making and citizen debate into conversation.
 
 ## The argument: Hormuz as a revealer of energy tensions
 

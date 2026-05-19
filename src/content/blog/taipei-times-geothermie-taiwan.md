@@ -11,6 +11,6 @@ Taïwan dispose d'un potentiel géothermique estimé à plus de **33 000 MW** r�
 
 L'enquête identifie les blocages structurels qui freinent le déploiement de cette énergie de base : une réglementation de forage vertical restrictive, des processus d'autorisation inconstants, l'absence d'infrastructure de forage spécialisée, des chevauchements avec les parcs protégés et les territoires autochtones, et un déficit de financement. Un puits creusé à Hualien par une entreprise suédoise a nécessité près d'un an et 100 millions de dollars taïwanais, contre six semaines en Islande pour un ouvrage comparable.
 
-Le papier s'appuie sur des entretiens avec des acteurs clés du secteur — **Baseload Capital / Baseload Power**, **FengYeu Green Energy** (Lin Po-keng), ainsi que **Bernard Sanjuan**, expert du Bureau de recherches géologiques et minières (BRGM) français — et conclut sur la nécessité pour l'État de partager le risque des phases d'exploration précoces afin d'attirer le capital privé.
+Le papier s'appuie sur des entretiens avec des acteurs clés du secteur — **Baseload Capital / Baseload Power**, **FengYeu Green Energy** (Lin Po-keng), ainsi que **Bernard Sanjuan**, spécialiste du Bureau de recherches géologiques et minières (BRGM) français — et conclut sur la nécessité pour l'État de partager le risque des phases d'exploration précoces afin d'attirer le capital privé.
 
 → [Lire l'article sur Taipei Times](https://www.taipeitimes.com/News/feat/archives/2026/04/17/2003855742)

@@ -5,7 +5,7 @@ pubDate: 2026-03-25T12:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
-Le *Taipei Times* est le principal quotidien anglophone de Taïwan, publiant régulièrement des analyses d’experts internationaux.
+Le *Taipei Times* est le principal quotidien anglophone de Taïwan, publiant régulièrement des analyses de spécialistes internationaux.
 
 J’y signe aujourd’hui une tribune sur le fossé entre les ambitions IA de Taïwan et ses contraintes en ressources naturelles.
 

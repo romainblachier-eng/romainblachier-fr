@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 325" role="img" aria-label="Le Vif / L'Express">
+  <rect width="1280" height="325" fill="#E1101E"/>
+  <g fill="#ffffff">
+    <!-- L -->
+    <rect x="48" y="50" width="79" height="22"/>
+    <rect x="60" y="50" width="55" height="235"/>
+    <rect x="48" y="263" width="79" height="22"/>
+    <rect x="60" y="245" width="195" height="40"/>
+    <rect x="238" y="225" width="22" height="60"/>
+
+    <!-- E -->
+    <rect x="278" y="50" width="79" height="22"/>
+    <rect x="290" y="50" width="55" height="235"/>
+    <rect x="278" y="263" width="79" height="22"/>
+    <rect x="290" y="50" width="190" height="40"/>
+    <rect x="290" y="148" width="160" height="40"/>
+    <rect x="290" y="245" width="200" height="40"/>
+    <rect x="460" y="68" width="22" height="40"/>
+    <rect x="430" y="170" width="22" height="40"/>
+    <rect x="468" y="225" width="22" height="60"/>
+
+    <!-- V -->
+    <rect x="540" y="50" width="83" height="22"/>
+    <rect x="687" y="50" width="83" height="22"/>
+    <polygon points="555,50 618,50 660,285 627,285"/>
+    <polygon points="755,50 692,50 650,285 683,285"/>
+
+    <!-- I -->
+    <rect x="803" y="50" width="89" height="22"/>
+    <rect x="820" y="50" width="55" height="235"/>
+    <rect x="803" y="263" width="89" height="22"/>
+
+    <!-- F -->
+    <rect x="928" y="50" width="79" height="22"/>
+    <rect x="940" y="50" width="55" height="235"/>
+    <rect x="940" y="50" width="170" height="40"/>
+    <rect x="940" y="148" width="150" height="40"/>
+    <rect x="1090" y="68" width="22" height="40"/>
+    <rect x="1070" y="170" width="22" height="40"/>
+    <rect x="928" y="263" width="79" height="22"/>
+  </g>
+
+  <!-- l'express vertical badge -->
+  <g transform="translate(1180 32)">
+    <rect x="0" y="0" width="68" height="261" fill="#E1101E" stroke="#ffffff" stroke-width="6"/>
+    <g transform="rotate(-90 34 130)">
+      <text x="34" y="130"
+            fill="#ffffff"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-style="italic"
+            font-weight="800"
+            font-size="48"
+            text-anchor="middle"
+            dominant-baseline="middle">l'express</text>
+    </g>
+  </g>
+</svg>

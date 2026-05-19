@@ -5,7 +5,7 @@ pubDate: 'May 03 2026'
 heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
-I published a new op-ed in the **[Taipei Times](https://www.taipeitimes.com)**, Taiwan's leading English-language daily, founded in 1999. The paper is a reference source on Taiwanese affairs and cross-strait relations, regularly featuring analysis from international experts and academics.
+I published a new op-ed in the **[Taipei Times](https://www.taipeitimes.com)**, Taiwan's leading English-language daily, founded in 1999. The paper is a reference source on Taiwanese affairs and cross-strait relations, regularly featuring analysis from international specialists and academics.
 
 ## The subject: parliamentary diplomacy as Taiwan's plan B
 
