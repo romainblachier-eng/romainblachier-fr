@@ -2,7 +2,7 @@
 title: "The KMT's 'imperialist' rhetoric shifts Taiwan's democratic fault line"
 description: "An op-ed published in Asia Times on the ideological drift of the KMT under Cheng Li-wun's presidency — and what it reveals about the future of Taiwanese democracy."
 pubDate: 'Apr 10 2026'
-heroImage: '../../assets/taiwan-kmt-cheng-li-wun-april-2026.jpg'
+heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 
 I published an op-ed in **[Asia Times](https://asiatimes.com)**, the leading English-language media outlet on Asian affairs, about the rhetorical shift of the Kuomintang (KMT) in Taiwan.

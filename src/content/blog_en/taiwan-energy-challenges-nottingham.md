@@ -2,7 +2,7 @@
 title: "Taiwan's Energy Challenges — Taiwan Insight / University of Nottingham"
 description: "Opinion piece published in Taiwan Insight, the academic journal of the University of Nottingham's Taiwan Research Hub, on Taiwan's energy challenges and their geopolitical implications."
 pubDate: 'Apr 10 2026'
-heroImage: '../../assets/taiwan-energy-wind-turbines.jpg'
+heroImage: '../../assets/university-of-nottingham-logo.svg'
 ---
 
 I published an opinion piece in **[Taiwan Insight](https://taiwaninsight.org)**, the academic journal of the University of Nottingham's **Taiwan Research Hub** — one of the leading English-language research platforms dedicated to Taiwan.
