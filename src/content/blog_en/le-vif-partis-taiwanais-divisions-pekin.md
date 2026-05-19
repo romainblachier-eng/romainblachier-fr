@@ -2,7 +2,7 @@
 title: "Le Vif: Taiwan's partisan divisions — a windfall for Beijing?"
 description: "Belgian weekly Le Vif publishes an in-depth article on the divergences between the KMT and the DPP over relations with China, featuring analysis from Barthélémy Courmont and myself."
 pubDate: 'May 14 2026 12:00:00'
-heroImage: '../../assets/taiwan-kmt-cheng-li-wun-april-2026.jpg'
+heroImage: '../../assets/le-vif-logo.svg'
 ---
 
 **[Le Vif](https://www.levif.be)** is one of the leading news weeklies in French-speaking Belgium — the Belgian equivalent of *L'Express* or *Le Point*. In its May 14 edition, the magazine publishes a feature article on the divisions among Taiwan's political parties over China, under the headline *"Taiwan's parties divided — a windfall for Beijing?"*
@@ -17,6 +17,6 @@ The article also shines a light on the legislative deadlock over defence spendin
 
 **Barthélémy Courmont**, professor at the Institut catholique de Lille, offers an important perspective. He cautions that viewing the KMT as straightforwardly pro-reunification is a misleading oversimplification, and argues that Taiwan's two main parties hold divergent but not necessarily irreconcilable positions on the China question.
 
-I am also quoted in my capacity as president of the France-Formosa association, commenting on the rhetoric adopted by Cheng Li-wun during her Beijing visit and on the three-variable balance that has conditioned Taiwan's status quo since 1979: Taiwan's own capacity for self-defence, the credibility of the American commitment, and Beijing's strategic patience.
+My own analysis is also featured, commenting on the rhetoric adopted by Cheng Li-wun during her Beijing visit and on the three-variable balance that has conditioned Taiwan's status quo since 1979: Taiwan's own capacity for self-defence, the credibility of the American commitment, and Beijing's strategic patience.
 
 → [Read the article on Le Vif](https://www.levif.be/international/chine-vs-etats-unis-pourquoi-les-divisions-des-partis-taiwanais-sont-une-aubaine-pour-pekin/)
