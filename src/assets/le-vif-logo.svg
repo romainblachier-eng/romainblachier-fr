@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 325" role="img" aria-label="Le Vif / L'Express">
-  <rect width="1280" height="325" fill="#DA1F26"/>
-  <text x="40" y="245"
+  <rect width="1280" height="325" fill="#E1101E"/>
+  <text x="40" y="252"
         fill="#ffffff"
-        font-family="Georgia, 'Times New Roman', serif"
+        font-family="'Rockwell', 'Roboto Slab', 'Courier New', serif"
         font-weight="900"
-        font-size="280"
-        letter-spacing="6">LE VIF</text>
+        font-size="290"
+        letter-spacing="2">LE VIF</text>
   <g transform="translate(1190 30)">
-    <rect x="0" y="0" width="58" height="265" fill="#DA1F26" stroke="#ffffff" stroke-width="6"/>
+    <rect x="0" y="0" width="58" height="265" fill="#E1101E" stroke="#ffffff" stroke-width="6"/>
     <text x="29" y="240"
           fill="#ffffff"
-          font-family="Georgia, 'Times New Roman', serif"
+          font-family="'Rockwell', 'Roboto Slab', 'Courier New', serif"
           font-style="italic"
           font-weight="700"
           font-size="48"
