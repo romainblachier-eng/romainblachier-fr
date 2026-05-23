@@ -1,7 +1,7 @@
 ---
 title: "Mon article sur Telos : la sortie des Émirats de l'OPEP n'est pas celle qu'on croit"
 description: "Publié sur Telos, cet article analyse le retrait des Émirats arabes unis de l'OPEP en avril 2026 — non pas comme une rupture soudaine, mais comme l'aboutissement logique d'une stratégie de quinze ans de maximisation de la rente pétrolière."
-pubDate: 2026-05-12T10:00:00.000Z
+pubDate: 2026-05-23T10:00:00.000Z
 heroImage: '../../assets/telos-eu-logo-hero.jpg'
 ---
 
