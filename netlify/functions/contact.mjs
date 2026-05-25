@@ -18,16 +18,26 @@ export default async (req) => {
       });
     }
 
-    const NTFY_TOPIC = process.env.NTFY_TOPIC;
-    if (NTFY_TOPIC) {
-      await fetch(`https://ntfy.sh/${NTFY_TOPIC}`, {
+    const RESEND_API_KEY = process.env.RESEND_API_KEY;
+    if (RESEND_API_KEY) {
+      const emailRes = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
-          Title: `Contact: ${subject}`,
-          Tags: 'envelope',
+          Authorization: `Bearer ${RESEND_API_KEY}`,
+          'Content-Type': 'application/json',
         },
-        body: `De: ${name} <${email}>\n\n${message}`,
-      }).catch(() => {});
+        body: JSON.stringify({
+          from: 'Formulaire Contact <onboarding@resend.dev>',
+          to: 'romain.blachier@gmail.com',
+          reply_to: email,
+          subject: `[romainblachier.fr] ${subject}`,
+          text: `Nouveau message via le formulaire de contact\n\nDe : ${name} <${email}>\nSujet : ${subject}\n\n${message}`,
+        }),
+      });
+
+      if (!emailRes.ok) {
+        console.error('Resend error:', await emailRes.text());
+      }
     }
 
     console.log('Contact form submission:', JSON.stringify({ name, email, subject, message }));
@@ -36,7 +46,8 @@ export default async (req) => {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-  } catch {
+  } catch (err) {
+    console.error('Function error:', err);
     return new Response(JSON.stringify({ error: 'Server error' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
