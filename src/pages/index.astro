@@ -183,8 +183,9 @@ const t = useTranslations('fr');
 						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" id="contact-form" action="/api/contact" method="POST">
-					<p style="display:none"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+				<form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/romain.blachier@gmail.com" method="POST">
+					<input type="hidden" name="_captcha" value="false" />
+					<input type="hidden" name="_subject" value="[romainblachier.fr] Nouveau message" />
 					<div class="form-row">
 						<input type="text" name="name" placeholder={t('contact.name')} required />
 						<input type="email" name="email" placeholder={t('contact.email')} required />
@@ -212,10 +213,10 @@ const t = useTranslations('fr');
 						success.style.display = 'none';
 						error.style.display = 'none';
 						try {
-							const res = await fetch('/api/contact', {
+							const res = await fetch(form.action, {
 								method: 'POST',
-								headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-								body: new URLSearchParams(new FormData(form)).toString()
+								headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+								body: JSON.stringify(Object.fromEntries(new FormData(form)))
 							});
 							if (res.ok) {
 								form.reset();
