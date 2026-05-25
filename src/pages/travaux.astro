@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import MediaLogosBand from "../components/MediaLogosBand.astro";
 import { useTranslations } from "../i18n/utils";
 
 const t = useTranslations('fr');
@@ -87,10 +88,40 @@ const t = useTranslations('fr');
 			</div>
 		</section>
 
+		<!-- FORMATS D'INTERVENTION -->
+		<section class="travaux-section" style="background: var(--bg-alt);">
+			<div class="travaux-inner">
+				<h2 class="section-title">Formats d'intervention</h2>
+				<div class="formats-grid">
+					<div class="format-card">
+						<div class="format-icon">🎓</div>
+						<h4>Cours universitaire</h4>
+						<p>Semestre complet ou module intensif. Public : Master / Grande École. Français ou anglais.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🎤</div>
+						<h4>Keynote conférence</h4>
+						<p>45 à 60 minutes. En français ou en anglais. Capacité illimitée.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🛠️</div>
+						<h4>Atelier / séminaire</h4>
+						<p>Demi-journée, format interactif. Jusqu'à 25 participants.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">📡</div>
+						<h4>Interview presse</h4>
+						<p>TV, radio, podcast. Disponible en direct ou en différé.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- PUBLICATIONS -->
 		<section class="travaux-section travaux-publications">
 			<div class="travaux-inner">
 				<h2 class="section-title" style="color: var(--beige);">{t('travaux.publications.title')}</h2>
+				<MediaLogosBand />
 
 				<!-- Ouvrage -->
 				<div class="pub-category">
@@ -265,9 +296,9 @@ const t = useTranslations('fr');
 				</div>
 
 				<div class="research-academia">
-					<h3 class="travaux-label">Publications académiques</h3>
+					<h3 class="travaux-label">Articles et publications</h3>
 					<p class="pub-desc">
-						Retrouvez mes travaux de recherche, articles et publications sur
+						Retrouvez mes articles et publications sur
 						<a href="https://independent.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer" style="color: var(--accent-dark); font-weight: 600;">Academia.edu →</a>
 					</p>
 				</div>

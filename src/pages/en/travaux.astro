@@ -2,6 +2,7 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import MediaLogosBand from "../../components/MediaLogosBand.astro";
 import { useTranslations } from "../../i18n/utils";
 
 const t = useTranslations('en');
@@ -83,10 +84,40 @@ const t = useTranslations('en');
 			</div>
 		</section>
 
+		<!-- FORMATS -->
+		<section class="travaux-section" style="background: var(--bg-alt);">
+			<div class="travaux-inner">
+				<h2 class="section-title">Speaking formats</h2>
+				<div class="formats-grid">
+					<div class="format-card">
+						<div class="format-icon">🎓</div>
+						<h4>University course</h4>
+						<p>Full semester or intensive module. Master / Grande École level. French or English.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🎤</div>
+						<h4>Keynote</h4>
+						<p>45 to 60 minutes. In French or English. Any audience size.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🛠️</div>
+						<h4>Workshop / seminar</h4>
+						<p>Half-day, interactive format. Up to 25 participants.</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">📡</div>
+						<h4>Press interview</h4>
+						<p>TV, radio, podcast. Available live or pre-recorded.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- PUBLICATIONS -->
 		<section class="travaux-section travaux-publications">
 			<div class="travaux-inner">
 				<h2 class="section-title" style="color: var(--beige);">{t('travaux.publications.title')}</h2>
+				<MediaLogosBand />
 
 				<!-- Book -->
 				<div class="pub-category">
@@ -261,9 +292,9 @@ const t = useTranslations('en');
 				</div>
 
 				<div class="research-academia">
-					<h3 class="travaux-label">Academic publications</h3>
+					<h3 class="travaux-label">Articles and publications</h3>
 					<p class="pub-desc">
-						Find my research papers, articles and publications on
+						Find my articles and publications on
 						<a href="https://independent.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer" style="color: var(--accent-dark); font-weight: 600;">Academia.edu →</a>
 					</p>
 				</div>

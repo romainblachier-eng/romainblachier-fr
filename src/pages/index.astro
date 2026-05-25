@@ -7,6 +7,7 @@ import { useTranslations } from "../i18n/utils";
 import { Image } from "astro:assets";
 import portrait from "../assets/portrait.jpg";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
+import MediaLogosBand from "../components/MediaLogosBand.astro";
 
 const t = useTranslations('fr');
 ---
@@ -68,16 +69,37 @@ const t = useTranslations('fr');
 			secondaryLabel="Articles et blog"
 		/>
 
+		<MediaLogosBand />
+
 		<section class="about">
 			<div class="about-inner">
-				<h2 class="about-label">{t('about.title')}</h2>
-				<div class="about-text">
-					<p>{t('about.p1')}</p>
-					<p>{t('about.p2')}</p>
-					<p>{t('about.p3')}</p>
-					<p>{t('about.p4')}</p>
-					<p>{t('about.p5')}</p>
-					<p>{t('about.p6')}</p>
+				<div class="about-left">
+					<div class="hero-photo">
+						<div class="hero-photo-frame">
+							<Image src={portrait} alt="Romain Blachier" width={380} height={507} />
+						</div>
+					</div>
+					<div class="experience-badges">
+						<div class="experience-badge">
+							<span class="ref-big">18 ans</span>
+							<span class="ref-cap">dans le secteur de l'énergie</span>
+						</div>
+						<div class="experience-badge">
+							<span class="ref-big">12 ans</span>
+							<span class="ref-cap">élu, Métropole de Lyon</span>
+						</div>
+					</div>
+				</div>
+				<div class="about-right">
+					<h2 class="about-label">{t('about.title')}</h2>
+					<div class="about-text">
+						<p>{t('about.p1')}</p>
+						<p>{t('about.p2')}</p>
+						<p>{t('about.p3')}</p>
+						<p>{t('about.p4')}</p>
+						<p>{t('about.p5')}</p>
+						<p>{t('about.p6')}</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -116,28 +138,33 @@ const t = useTranslations('fr');
 				<div class="section-overline">Thématiques</div>
 				<h2 class="section-title">{t('topics.title')}</h2>
 				<div class="tags-wrap">
-					<span class="tag">{t('tag.energy_markets')}</span>
-					<span class="tag">{t('tag.taiwan')}</span>
-					<span class="tag">{t('tag.geopolitics')}</span>
-					<span class="tag">{t('tag.cultural_policy')}</span>
-					<span class="tag">{t('tag.hydro')}</span>
-					<span class="tag">{t('tag.nuclear')}</span>
-					<span class="tag">{t('tag.transition')}</span>
-					<span class="tag">{t('tag.sovereignty')}</span>
-					<span class="tag">{t('tag.public_affairs')}</span>
-					<span class="tag">{t('tag.institutional')}</span>
-					<span class="tag">{t('tag.political_systems')}</span>
-					<span class="tag">{t('tag.crisis_comms')}</span>
-					<span class="tag">{t('tag.religion')}</span>
-					<span class="tag">{t('tag.local_gov')}</span>
-					<span class="tag">{t('tag.digital_comms')}</span>
-					<span class="tag hi">{t('tag.seo')}</span>
-					<span class="tag">{t('tag.ai_teaching')}</span>
-					<span class="tag">{t('tag.culture_economy')}</span>
-					<span class="tag">{t('tag.music')}</span>
-					<span class="tag">{t('tag.cultural_diplomacy')}</span>
-					<span class="tag">{t('tag.scientific_coop')}</span>
+					<span class="tag hi">{t('tag.energy_markets')}</span>
+					<span class="tag hi">{t('tag.geopolitics')}</span>
+					<span class="tag hi">{t('tag.taiwan')}</span>
+					<span class="tag hi">{t('tag.nuclear')}</span>
+					<span class="tag hi">{t('tag.transition')}</span>
+					<span class="tag hi">{t('tag.sovereignty')}</span>
 				</div>
+				<details class="tags-more">
+					<summary class="tags-toggle">Voir toutes les thématiques</summary>
+					<div class="tags-wrap" style="margin-top: .75rem;">
+						<span class="tag">{t('tag.hydro')}</span>
+						<span class="tag">{t('tag.public_affairs')}</span>
+						<span class="tag">{t('tag.institutional')}</span>
+						<span class="tag">{t('tag.political_systems')}</span>
+						<span class="tag">{t('tag.crisis_comms')}</span>
+						<span class="tag">{t('tag.religion')}</span>
+						<span class="tag">{t('tag.local_gov')}</span>
+						<span class="tag">{t('tag.digital_comms')}</span>
+						<span class="tag">{t('tag.seo')}</span>
+						<span class="tag">{t('tag.ai_teaching')}</span>
+						<span class="tag">{t('tag.cultural_policy')}</span>
+						<span class="tag">{t('tag.culture_economy')}</span>
+						<span class="tag">{t('tag.music')}</span>
+						<span class="tag">{t('tag.cultural_diplomacy')}</span>
+						<span class="tag">{t('tag.scientific_coop')}</span>
+					</div>
+				</details>
 			</div>
 		</section>
 
