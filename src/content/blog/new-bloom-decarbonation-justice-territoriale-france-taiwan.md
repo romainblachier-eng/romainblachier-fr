@@ -2,7 +2,7 @@
 title: "Justice territoriale et transition énergétique — New Bloom Magazine"
 description: "Article publié dans New Bloom Magazine comparant les approches française et taïwanaise de la transition énergétique sous l'angle de la justice territoriale et de la gouvernance démocratique."
 pubDate: 'May 24 2026 12:00:00'
-heroImage: '../../assets/new-bloom-logo.png'
+heroImage: '../../assets/new-bloom-logo-hero.png'
 ---
 
 Je publie dans **[New Bloom Magazine](https://newbloommag.net)**, revue taïwano-américaine spécialisée dans les mouvements sociaux et la politique en Asie-Pacifique, un article de fond intitulé *Decarbonizing With Whom? Territorial Justice and the Energy Transition in France and Taiwan*.
