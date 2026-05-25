@@ -171,7 +171,7 @@ const t = useTranslations('en');
 						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 					<input type="hidden" name="form-name" value="contact" />
 					<p style="display:none"><label>Do not fill: <input name="bot-field" /></label></p>
 					<div class="form-row">
@@ -180,8 +180,46 @@ const t = useTranslations('en');
 					</div>
 					<input type="text" name="subject" placeholder={t('contact.subject')} required />
 					<textarea name="message" placeholder={t('contact.message')} required></textarea>
-					<button type="submit">{t('contact.send')} →</button>
+					<button type="submit" id="contact-submit">{t('contact.send')} →</button>
+					<div id="contact-success" class="form-feedback" style="display:none">
+						Thank you for your message! I'll get back to you within 48 hours.
+					</div>
+					<div id="contact-error" class="form-feedback form-feedback--error" style="display:none">
+						Something went wrong. You can email me directly at
+						<a href="mailto:contact@rb-webconsultant.net">contact@rb-webconsultant.net</a>.
+					</div>
 				</form>
+				<script>
+					document.getElementById('contact-form').addEventListener('submit', async (e) => {
+						e.preventDefault();
+						const form = e.target;
+						const btn = document.getElementById('contact-submit');
+						const success = document.getElementById('contact-success');
+						const error = document.getElementById('contact-error');
+						btn.disabled = true;
+						btn.textContent = 'Sending...';
+						success.style.display = 'none';
+						error.style.display = 'none';
+						try {
+							const res = await fetch('/', {
+								method: 'POST',
+								headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+								body: new URLSearchParams(new FormData(form)).toString()
+							});
+							if (res.ok) {
+								form.reset();
+								success.style.display = 'block';
+								btn.textContent = 'Sent!';
+							} else {
+								throw new Error(res.status);
+							}
+						} catch {
+							error.style.display = 'block';
+							btn.textContent = 'Send →';
+							btn.disabled = false;
+						}
+					});
+				</script>
 			</div>
 		</section>
 
