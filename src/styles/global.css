@@ -514,6 +514,28 @@ header nav {
 	border-color: rgba(239, 68, 68, .25);
 }
 .form-feedback--error a { color: #fca5a5; text-decoration: underline }
+.captcha-row {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+	margin-top: .25rem;
+}
+.captcha-row label {
+	font-size: .85rem;
+	color: rgba(255,255,255,.7);
+	white-space: nowrap;
+}
+.captcha-row input {
+	width: 100px;
+	padding: .6rem .75rem;
+	background: rgba(255,255,255,.06);
+	border: 1px solid rgba(255,255,255,.12);
+	border-radius: 8px;
+	color: #fff;
+	font-size: .9rem;
+	text-align: center;
+}
+.captcha-row input::placeholder { color: rgba(255,255,255,.35) }
 
 /* Footer */
 .site-footer {

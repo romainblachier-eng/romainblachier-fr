@@ -198,24 +198,71 @@ const t = useTranslations('en');
 						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" id="contact-form" action="https://formsubmit.co/romain.blachier@gmail.com" method="POST">
+				<form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/romain.blachier@gmail.com" method="POST">
+					<input type="hidden" name="_captcha" value="false" />
 					<input type="hidden" name="_subject" value="[romainblachier.fr] New message" />
-					<input type="hidden" name="_next" value="https://romainblachier.fr/en/?thanks=1#contact" />
 					<div class="form-row">
 						<input type="text" name="name" placeholder={t('contact.name')} required />
 						<input type="email" name="email" placeholder={t('contact.email')} required />
 					</div>
 					<input type="text" name="subject" placeholder={t('contact.subject')} required />
 					<textarea name="message" placeholder={t('contact.message')} required></textarea>
+					<div class="captcha-row" id="captcha-row">
+						<label id="captcha-label"></label>
+						<input type="text" id="captcha-input" placeholder="Your answer" required autocomplete="off" />
+					</div>
 					<button type="submit" id="contact-submit">{t('contact.send')} →</button>
 					<div id="contact-success" class="form-feedback" style="display:none">
 						Thank you for your message! I'll get back to you within 48 hours.
 					</div>
+					<div id="contact-error" class="form-feedback form-feedback--error" style="display:none">
+						Something went wrong. You can email me directly at
+						<a href="mailto:contact@rb-webconsultant.net">contact@rb-webconsultant.net</a>.
+					</div>
 				</form>
 				<script>
-					if (new URLSearchParams(window.location.search).has('thanks')) {
-						document.getElementById('contact-success').style.display = 'block';
-					}
+					(function() {
+						const a = Math.floor(Math.random() * 10) + 1;
+						const b = Math.floor(Math.random() * 10) + 1;
+						const answer = a + b;
+						document.getElementById('captcha-label').textContent = 'Anti-spam: what is ' + a + ' + ' + b + '?';
+						document.getElementById('contact-form').addEventListener('submit', async (e) => {
+							e.preventDefault();
+							const input = document.getElementById('captcha-input');
+							if (parseInt(input.value, 10) !== answer) {
+								input.style.borderColor = '#f87171';
+								input.value = '';
+								input.placeholder = 'Wrong answer, try again';
+								return;
+							}
+							const form = e.target;
+							const btn = document.getElementById('contact-submit');
+							const success = document.getElementById('contact-success');
+							const error = document.getElementById('contact-error');
+							btn.disabled = true;
+							btn.textContent = 'Sending...';
+							success.style.display = 'none';
+							error.style.display = 'none';
+							try {
+								const data = Object.fromEntries(new FormData(form));
+								delete data['_captcha'];
+								const res = await fetch(form.action, {
+									method: 'POST',
+									headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+									body: JSON.stringify(data)
+								});
+								if (res.ok) {
+									form.reset();
+									success.style.display = 'block';
+									btn.textContent = 'Sent!';
+								} else { throw new Error(res.status); }
+							} catch {
+								error.style.display = 'block';
+								btn.textContent = 'Send →';
+								btn.disabled = false;
+							}
+						});
+					})();
 				</script>
 			</div>
 		</section>
