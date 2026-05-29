@@ -198,9 +198,9 @@ const t = useTranslations('en');
 						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/romain.blachier@gmail.com" method="POST">
-					<input type="hidden" name="_captcha" value="false" />
+				<form class="contact-form" id="contact-form" action="https://formsubmit.co/romain.blachier@gmail.com" method="POST">
 					<input type="hidden" name="_subject" value="[romainblachier.fr] New message" />
+					<input type="hidden" name="_next" value="https://romainblachier.fr/en/?thanks=1#contact" />
 					<div class="form-row">
 						<input type="text" name="name" placeholder={t('contact.name')} required />
 						<input type="email" name="email" placeholder={t('contact.email')} required />
@@ -211,41 +211,11 @@ const t = useTranslations('en');
 					<div id="contact-success" class="form-feedback" style="display:none">
 						Thank you for your message! I'll get back to you within 48 hours.
 					</div>
-					<div id="contact-error" class="form-feedback form-feedback--error" style="display:none">
-						Something went wrong. You can email me directly at
-						<a href="mailto:contact@rb-webconsultant.net">contact@rb-webconsultant.net</a>.
-					</div>
 				</form>
 				<script>
-					document.getElementById('contact-form').addEventListener('submit', async (e) => {
-						e.preventDefault();
-						const form = e.target;
-						const btn = document.getElementById('contact-submit');
-						const success = document.getElementById('contact-success');
-						const error = document.getElementById('contact-error');
-						btn.disabled = true;
-						btn.textContent = 'Sending...';
-						success.style.display = 'none';
-						error.style.display = 'none';
-						try {
-							const res = await fetch(form.action, {
-								method: 'POST',
-								headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-								body: JSON.stringify(Object.fromEntries(new FormData(form)))
-							});
-							if (res.ok) {
-								form.reset();
-								success.style.display = 'block';
-								btn.textContent = 'Sent!';
-							} else {
-								throw new Error(res.status);
-							}
-						} catch {
-							error.style.display = 'block';
-							btn.textContent = 'Send →';
-							btn.disabled = false;
-						}
-					});
+					if (new URLSearchParams(window.location.search).has('thanks')) {
+						document.getElementById('contact-success').style.display = 'block';
+					}
 				</script>
 			</div>
 		</section>
