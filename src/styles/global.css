@@ -90,22 +90,58 @@ header nav {
 	font-weight: 500;
 }
 .internal-links a:hover, .internal-links a.active { color: var(--ink) }
-.lang-switch {
+/* Language dropdown (FR / EN / 中) */
+.lang-dd { position: relative; display: inline-block }
+.lang-dd-toggle {
+	list-style: none;
+	display: inline-flex;
+	align-items: center;
+	gap: .3rem;
+	cursor: pointer;
 	font-family: var(--sans);
-	font-size: .7rem;
+	font-size: .72rem;
 	font-weight: 600;
-	letter-spacing: .04em;
+	letter-spacing: .03em;
+	color: var(--muted);
+	border: 1px solid var(--line);
+	padding: .28rem .55rem;
+	border-radius: 6px;
+	transition: all .15s;
+	white-space: nowrap;
+	user-select: none;
+}
+.lang-dd-toggle::-webkit-details-marker { display: none }
+.lang-dd-toggle:hover { color: var(--ink); border-color: var(--ink) }
+.lang-dd[open] .lang-dd-toggle { background: var(--ink); color: #fff; border-color: var(--ink) }
+.lang-dd-globe { font-size: .82rem; line-height: 1 }
+.lang-dd-caret { font-size: .6rem; opacity: .8 }
+.lang-dd-menu {
+	position: absolute;
+	right: 0;
+	top: calc(100% + .4rem);
+	margin: 0;
+	padding: .3rem;
+	list-style: none;
+	min-width: 9.5rem;
+	background: #fff;
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+	z-index: 200;
+}
+.lang-dd-menu li { list-style: none; margin: 0 }
+.lang-dd-menu a {
+	display: block;
+	padding: .5rem .65rem;
+	border-radius: 6px;
+	font-size: .85rem;
+	font-weight: 500;
 	color: var(--muted);
 	text-decoration: none;
-	border: 1px solid var(--line);
-	padding: .2rem .5rem;
-	border-radius: 4px;
-	transition: all .15s;
+	white-space: nowrap;
 }
-.lang-switch:hover { background: var(--ink); color: #fff; border-color: var(--ink) }
-.lang-switcher { display: inline-flex; gap: .35rem; align-items: center }
-.lang-switch.active { background: var(--ink); color: #fff; border-color: var(--ink) }
-.lang-switch.active:hover { opacity: .9 }
+.lang-dd-menu a:hover { background: rgba(0, 0, 0, .05); color: var(--ink) }
+.lang-dd-menu a.active { background: var(--ink); color: #fff }
 
 /* Hero */
 .hero {
@@ -1074,13 +1110,13 @@ article.blog-post .prose {
 	.research-grid { grid-template-columns: 1fr }
 }
 
-/* Mobile header: stack the brand and let the nav + language buttons wrap so
-   the FR / EN / 中 switcher stays fully visible instead of overflowing. */
+/* Mobile header: brand on its own centered row, then nav links + the language
+   dropdown wrap and center below so nothing overflows off-screen. */
 @media (max-width: 720px) {
 	header nav {
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: .55rem .9rem;
+		gap: .5rem .9rem;
 		padding: .7rem 1rem;
 	}
 	.site-brand { width: 100%; text-align: center }
@@ -1088,18 +1124,12 @@ article.blog-post .prose {
 		width: 100%;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: .55rem .9rem;
+		align-items: center;
+		gap: .5rem 1rem;
 	}
-	.lang-switcher {
-		gap: .45rem;
-		margin-left: .25rem;
-		padding-left: .65rem;
-		border-left: 1px solid var(--line);
-	}
-	.lang-switch {
-		padding: .32rem .6rem;
-		font-size: .78rem;
-	}
+	.lang-dd-toggle { padding: .34rem .6rem; font-size: .78rem }
+	/* Keep the menu within the viewport when the toggle sits near the centre. */
+	.lang-dd-menu { right: 50%; transform: translateX(50%) }
 }
 
 @media (prefers-reduced-motion: reduce) {
