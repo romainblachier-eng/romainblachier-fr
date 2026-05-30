@@ -1074,6 +1074,34 @@ article.blog-post .prose {
 	.research-grid { grid-template-columns: 1fr }
 }
 
+/* Mobile header: stack the brand and let the nav + language buttons wrap so
+   the FR / EN / 中 switcher stays fully visible instead of overflowing. */
+@media (max-width: 720px) {
+	header nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: .55rem .9rem;
+		padding: .7rem 1rem;
+	}
+	.site-brand { width: 100%; text-align: center }
+	.internal-links {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: .55rem .9rem;
+	}
+	.lang-switcher {
+		gap: .45rem;
+		margin-left: .25rem;
+		padding-left: .65rem;
+		border-left: 1px solid var(--line);
+	}
+	.lang-switch {
+		padding: .32rem .6rem;
+		font-size: .78rem;
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*, *::before, *::after { animation: none !important; transition: none !important }
 }
