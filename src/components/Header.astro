@@ -4,15 +4,20 @@ import { getLangFromUrl, useTranslations, getLocalePath } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const otherLang = lang === 'fr' ? 'en' : 'fr';
 
 const pathname = Astro.url.pathname;
-let otherLangPath: string;
-if (lang === 'fr') {
-	otherLangPath = `/en${pathname === '/' ? '/' : pathname}`;
-} else {
-	otherLangPath = pathname.replace(/^\/en/, '') || '/';
-}
+// Strip any locale prefix to obtain the "bare" path shared across languages.
+const bare = pathname.replace(/^\/(en|zh)(?=\/|$)/, "") || "/";
+const localized = (code: string) =>
+	code === "fr"
+		? bare === "/" ? "/" : bare
+		: `/${code}${bare === "/" ? "/" : bare}`;
+
+const langLinks = [
+	{ code: "fr", label: "FR", aria: "Passer en français" },
+	{ code: "en", label: "EN", aria: "Switch to English" },
+	{ code: "zh", label: "中", aria: "切換為繁體中文" },
+];
 ---
 
 <header>
@@ -23,9 +28,27 @@ if (lang === 'fr') {
 			<HeaderLink href={getLocalePath(lang, '/travaux')}>{t('nav.travaux')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/blog')}>{t('nav.blog')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/') + '#contact'}>{t('nav.contact')}</HeaderLink>
-			<a href={otherLangPath} class="lang-switch" aria-label={otherLang === 'en' ? 'Switch to English' : 'Passer en français'}>
-				{otherLang === 'en' ? 'EN' : 'FR'}
-			</a>
+			<span class="lang-switcher">
+				{langLinks.map((l) => (
+					<a
+						href={localized(l.code)}
+						class={`lang-switch${l.code === lang ? ' active' : ''}`}
+						data-lang={l.code}
+						aria-label={l.aria}
+						aria-current={l.code === lang ? 'true' : undefined}
+					>{l.label}</a>
+				))}
+			</span>
 		</div>
 	</nav>
 </header>
+
+<script is:inline>
+	// Remember the visitor's explicit language choice so auto-detection
+	// (see BaseHead) never overrides it on later visits.
+	document.querySelectorAll('a.lang-switch').forEach((el) => {
+		el.addEventListener('click', () => {
+			try { localStorage.setItem('preferred-lang', el.getAttribute('data-lang')); } catch (e) {}
+		});
+	});
+</script>

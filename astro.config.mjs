@@ -7,10 +7,15 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://romainblachier.fr',
-  integrations: [mdx(), sitemap(), react(), tailwind({ applyBaseStyles: false })],
+  integrations: [mdx(), sitemap({
+    i18n: {
+      defaultLocale: 'fr',
+      locales: { fr: 'fr-FR', en: 'en-US', zh: 'zh-Hant' },
+    },
+  }), react(), tailwind({ applyBaseStyles: false })],
   i18n: {
     defaultLocale: 'fr',
-    locales: ['fr', 'en'],
+    locales: ['fr', 'en', 'zh'],
     routing: {
       prefixDefaultLocale: false,
     },

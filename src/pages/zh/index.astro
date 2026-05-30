@@ -1,0 +1,264 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { useTranslations } from "../../i18n/utils";
+import { Image } from "astro:assets";
+import portrait from "../../assets/portrait.jpg";
+import { HeroGeometric } from "../../components/ui/shape-landing-hero";
+import MediaLogosBand from "../../components/MediaLogosBand.astro";
+
+const t = useTranslations('zh');
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<BaseHead title={t('seo.title')} description={t('seo.description')} />
+	</head>
+	<body>
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "https://romainblachier.fr/zh/#website",
+					"url": "https://romainblachier.fr/zh/",
+					"name": "Romain Blachier — 能源與地緣政治",
+					"description": "能源與地緣政治。研討會、頂尖院校培訓、媒體評論。",
+					"publisher": { "@id": "https://romainblachier.fr/#person" },
+					"inLanguage": "zh-Hant"
+				},
+				{
+					"@type": "Person",
+					"@id": "https://romainblachier.fr/#person",
+					"name": "Romain Blachier",
+					"jobTitle": "能源與地緣政治",
+					"url": "https://romainblachier.fr/",
+					"sameAs": [
+						"https://www.linkedin.com/in/romainblachier"
+					],
+					"knowsLanguage": ["fr", "en", "zh"],
+					"email": "contact@rb-webconsultant.net"
+				}
+			]
+		})} />
+
+		<Header />
+
+		<HeroGeometric
+			client:load
+			badge={t('hero.subtitle')}
+			title1="Romain"
+			title2="Blachier"
+			description={t('hero.pitch')}
+			ctaHref="#contact"
+			ctaLabel={`${t('hero.cta')} →`}
+			secondaryHref="/zh/blog/"
+			secondaryLabel={t('nav.blog')}
+		/>
+
+		<MediaLogosBand />
+
+		<section class="about">
+			<div class="about-inner">
+				<div class="about-left">
+					<div class="hero-photo">
+						<div class="hero-photo-frame">
+							<Image src={portrait} alt="Romain Blachier" width={380} height={507} />
+						</div>
+					</div>
+				</div>
+				<div class="about-right">
+					<h2 class="about-label">{t('about.title')}</h2>
+					<div class="about-text">
+						<p>{t('about.p1')}</p>
+						<p>{t('about.p2')}</p>
+						<p>{t('about.p3')}</p>
+						<p>{t('about.p4')}</p>
+						<p>{t('about.p5')}</p>
+						<p>{t('about.p6')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="services-inner">
+				<div class="section-overline" style="text-align:center">服務</div>
+				<h2 class="section-title">{t('services.title')}</h2>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">🎓</div>
+						<h3>{t('services.teaching.title')}</h3>
+						<p>{t('services.teaching.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">📡</div>
+						<h3>{t('services.media.title')}</h3>
+						<p>{t('services.media.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🎤</div>
+						<h3>{t('services.speaking.title')}</h3>
+						<p>{t('services.speaking.desc')}</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🧭</div>
+						<h3>{t('services.comms.title')}</h3>
+						<p>{t('services.comms.desc')}</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sujets">
+			<div class="sujets-inner">
+				<div class="section-overline">主題</div>
+				<h2 class="section-title">{t('topics.title')}</h2>
+				<div class="tags-wrap">
+					<span class="tag hi">{t('tag.energy_markets')}</span>
+					<span class="tag hi">{t('tag.geopolitics')}</span>
+					<span class="tag hi">{t('tag.taiwan')}</span>
+					<span class="tag hi">{t('tag.nuclear')}</span>
+					<span class="tag hi">{t('tag.transition')}</span>
+					<span class="tag hi">{t('tag.sovereignty')}</span>
+				</div>
+				<details class="tags-more">
+					<summary class="tags-toggle">查看所有主題</summary>
+					<div class="tags-wrap" style="margin-top: .75rem;">
+						<span class="tag">{t('tag.hydro')}</span>
+						<span class="tag">{t('tag.public_affairs')}</span>
+						<span class="tag">{t('tag.institutional')}</span>
+						<span class="tag">{t('tag.political_systems')}</span>
+						<span class="tag">{t('tag.crisis_comms')}</span>
+						<span class="tag">{t('tag.religion')}</span>
+						<span class="tag">{t('tag.local_gov')}</span>
+						<span class="tag">{t('tag.digital_comms')}</span>
+						<span class="tag">{t('tag.seo')}</span>
+						<span class="tag">{t('tag.ai_teaching')}</span>
+						<span class="tag">{t('tag.cultural_policy')}</span>
+						<span class="tag">{t('tag.culture_economy')}</span>
+						<span class="tag">{t('tag.music')}</span>
+						<span class="tag">{t('tag.cultural_diplomacy')}</span>
+						<span class="tag">{t('tag.scientific_coop')}</span>
+					</div>
+				</details>
+			</div>
+		</section>
+
+		<section class="references">
+			<div class="references-inner">
+				<div class="section-overline" style="text-align:center">經歷</div>
+				<h2 class="section-title">{t('references.title')}</h2>
+				<div class="ref-grid">
+					<div class="ref-col">
+						<h3>{t('references.teaching')}</h3>
+						<ul>
+							<li>Sciences Po Paris（巴黎政治學院）</li>
+							<li>Grenoble École de Management</li>
+							<li>IEP de Lyon（里昂政治學院）</li>
+							<li>ECAM Lyon</li>
+							<li>ILERI</li>
+							<li>HEIP</li>
+						</ul>
+					</div>
+					<div class="ref-col">
+						<h3>{t('references.culture')}</h3>
+						<ul>
+							<li>法國-福爾摩沙協會 會長</li>
+							<li>Mediatone / Reperkusound 理事</li>
+							<li>Lyon La Duchère 理事</li>
+							<li>《Guillotière(s)》作者</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section" id="contact">
+			<div class="contact-inner">
+				<div class="contact-left">
+					<h2>{t('contact.title')}</h2>
+					<p>{t('contact.desc')}</p>
+					<div class="contact-links">
+						<a href="mailto:contact@rb-webconsultant.net">✉ contact@rb-webconsultant.net</a>
+						<a href="https://www.linkedin.com/in/romainblachier/" target="_blank" rel="noopener noreferrer">→ LinkedIn</a>
+						<a href="https://sciencespo.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer">→ Academia</a>
+					</div>
+					<div class="contact-cv">
+						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
+					</div>
+				</div>
+				<form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/romain.blachier@gmail.com" method="POST">
+					<input type="hidden" name="_captcha" value="false" />
+					<input type="hidden" name="_subject" value="[romainblachier.fr] 新訊息" />
+					<div class="form-row">
+						<input type="text" name="name" placeholder={t('contact.name')} required />
+						<input type="email" name="email" placeholder={t('contact.email')} required />
+					</div>
+					<input type="text" name="subject" placeholder={t('contact.subject')} required />
+					<textarea name="message" placeholder={t('contact.message')} required></textarea>
+					<div class="captcha-row" id="captcha-row">
+						<label id="captcha-label"></label>
+						<input type="text" id="captcha-input" placeholder="您的答案" required autocomplete="off" />
+					</div>
+					<button type="submit" id="contact-submit">{t('contact.send')} →</button>
+					<div id="contact-success" class="form-feedback" style="display:none">
+						感謝您的來信！我會在 48 小時內回覆您。
+					</div>
+					<div id="contact-error" class="form-feedback form-feedback--error" style="display:none">
+						發生錯誤。您可以直接寄信給我：
+						<a href="mailto:contact@rb-webconsultant.net">contact@rb-webconsultant.net</a>。
+					</div>
+				</form>
+				<script>
+					(function() {
+						const a = Math.floor(Math.random() * 10) + 1;
+						const b = Math.floor(Math.random() * 10) + 1;
+						const answer = a + b;
+						document.getElementById('captcha-label').textContent = '防垃圾驗證：' + a + ' + ' + b + ' 等於多少？';
+						document.getElementById('contact-form').addEventListener('submit', async (e) => {
+							e.preventDefault();
+							const input = document.getElementById('captcha-input');
+							if (parseInt(input.value, 10) !== answer) {
+								input.style.borderColor = '#f87171';
+								input.value = '';
+								input.placeholder = '答案錯誤，請再試一次';
+								return;
+							}
+							const form = e.target;
+							const btn = document.getElementById('contact-submit');
+							const success = document.getElementById('contact-success');
+							const error = document.getElementById('contact-error');
+							btn.disabled = true;
+							btn.textContent = '傳送中…';
+							success.style.display = 'none';
+							error.style.display = 'none';
+							try {
+								const data = Object.fromEntries(new FormData(form));
+								delete data['_captcha'];
+								const res = await fetch(form.action, {
+									method: 'POST',
+									headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+									body: JSON.stringify(data)
+								});
+								if (res.ok) {
+									form.reset();
+									success.style.display = 'block';
+									btn.textContent = '已送出！';
+								} else { throw new Error(res.status); }
+							} catch {
+								error.style.display = 'block';
+								btn.textContent = '送出 →';
+								btn.disabled = false;
+							}
+						});
+					})();
+				</script>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>

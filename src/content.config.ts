@@ -20,4 +20,9 @@ const blog_en = defineCollection({
 	schema: blogSchema,
 });
 
-export const collections = { blog, blog_en };
+const blog_zh = defineCollection({
+	loader: glob({ base: './src/content/blog_zh', pattern: '**/*.{md,mdx}' }),
+	schema: blogSchema,
+});
+
+export const collections = { blog, blog_en, blog_zh };
