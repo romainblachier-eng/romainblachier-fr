@@ -11,14 +11,17 @@ type Props = CollectionEntry<'blog'>['data'] & { lang?: string };
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 const lang = Astro.props.lang || getLangFromUrl(Astro.url);
-const t = useTranslations(lang as 'fr' | 'en');
+const t = useTranslations(lang as 'fr' | 'en' | 'zh');
+const htmlLang = lang === 'zh' ? 'zh-Hant' : lang;
 
 const articleMeta = {
 	publishedTime: pubDate ? new Date(pubDate).toISOString() : undefined,
 	modifiedTime: updatedDate ? new Date(updatedDate).toISOString() : undefined,
-	section: lang === 'fr' ? "Énergie & Géopolitique" : "Energy & Geopolitics",
+	section: lang === 'fr' ? "Énergie & Géopolitique" : lang === 'zh' ? "能源與地緣政治" : "Energy & Geopolitics",
 	tags: lang === 'fr'
 		? ["énergie", "géopolitique", "Taïwan", "analyse"]
+		: lang === 'zh'
+		? ["能源", "地緣政治", "台灣", "分析"]
 		: ["energy", "geopolitics", "Taiwan", "analysis"],
 };
 
@@ -43,13 +46,13 @@ const articleSchema = {
 		"@type": "WebPage",
 		"@id": Astro.url.toString()
 	},
-	"articleSection": lang === 'fr' ? "Énergie & Géopolitique" : "Energy & Geopolitics",
-	"inLanguage": lang === 'fr' ? "fr-FR" : "en-US",
+	"articleSection": lang === 'fr' ? "Énergie & Géopolitique" : lang === 'zh' ? "能源與地緣政治" : "Energy & Geopolitics",
+	"inLanguage": lang === 'fr' ? "fr-FR" : lang === 'zh' ? "zh-Hant" : "en-US",
 	"isAccessibleForFree": true
 };
 ---
 
-<html lang={lang}>
+<html lang={htmlLang}>
 	<head>
 		<BaseHead title={`${title} | Romain Blachier`} description={description} article={articleMeta} />
 		<style>

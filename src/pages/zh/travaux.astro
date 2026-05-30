@@ -1,0 +1,311 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import MediaLogosBand from "../../components/MediaLogosBand.astro";
+import { useTranslations } from "../../i18n/utils";
+
+const t = useTranslations('zh');
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<BaseHead title={t('travaux.seo.title')} description={t('travaux.seo.description')} />
+	</head>
+	<body>
+		<Header />
+
+		<!-- HERO -->
+		<section class="travaux-hero">
+			<div class="travaux-hero-inner">
+				<h1>{t('travaux.hero.title')}</h1>
+				<p class="travaux-hero-subtitle">{t('travaux.hero.subtitle')}</p>
+			</div>
+		</section>
+
+		<!-- 教學 -->
+		<section class="travaux-section travaux-teaching">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.teaching.title')}</h2>
+				<p class="travaux-intro">{t('travaux.teaching.intro')}</p>
+
+				<div class="teaching-grid">
+					<div class="teaching-institutions">
+						<h3 class="travaux-label">{t('travaux.teaching.since')}</h3>
+						<div class="institution-list">
+							<div class="institution-item">
+								<span class="institution-name">Sciences Po Paris</span>
+								<span class="institution-detail">碩士課程</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">Grenoble École de Management</span>
+								<span class="institution-detail">Grande École 學程</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">Université Lyon 1</span>
+								<span class="institution-detail">大學課程</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">IEP de Lyon</span>
+								<span class="institution-detail">政治學</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">ECAM Lyon</span>
+								<span class="institution-detail">工程師學校</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">ILERI</span>
+								<span class="institution-detail">國際關係</span>
+							</div>
+							<div class="institution-item">
+								<span class="institution-name">HEIP</span>
+								<span class="institution-detail">比較政治制度</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="teaching-subjects">
+						<h3 class="travaux-label">{t('travaux.teaching.subjects')}</h3>
+						<div class="subject-tags">
+							<span class="subject-tag">能源市場</span>
+							<span class="subject-tag">能源地緣政治</span>
+							<span class="subject-tag">能源轉型</span>
+							<span class="subject-tag">能源主權</span>
+							<span class="subject-tag">台灣與印太</span>
+							<span class="subject-tag">比較政治制度</span>
+							<span class="subject-tag">危機傳播</span>
+							<span class="subject-tag">數位與網路傳播</span>
+							<span class="subject-tag">機構關係</span>
+							<span class="subject-tag">宗教與地緣政治</span>
+							<span class="subject-tag">地方治理</span>
+							<span class="subject-tag">文化經濟</span>
+							<span class="subject-tag">AI 與教學</span>
+							<span class="subject-tag">技術情報觀測</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 合作形式 -->
+		<section class="travaux-section" style="background: var(--bg-alt);">
+			<div class="travaux-inner">
+				<h2 class="section-title">合作形式</h2>
+				<div class="formats-grid">
+					<div class="format-card">
+						<div class="format-icon">🎓</div>
+						<h4>大學課程</h4>
+						<p>完整學期或密集模組。對象：碩士／Grande École。法語或英語。</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🎤</div>
+						<h4>主題演講</h4>
+						<p>45 至 60 分鐘。法語或英語。人數不限。</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">🛠️</div>
+						<h4>工作坊／研討會</h4>
+						<p>半天，互動形式。至多 25 名參與者。</p>
+					</div>
+					<div class="format-card">
+						<div class="format-icon">📡</div>
+						<h4>媒體採訪</h4>
+						<p>電視、廣播、podcast。可現場直播或預錄。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 著作 -->
+		<section class="travaux-section travaux-publications">
+			<div class="travaux-inner">
+				<h2 class="section-title" style="color: var(--beige);">{t('travaux.publications.title')}</h2>
+				<MediaLogosBand />
+
+				<!-- 專書 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.book')}</h3>
+					<div class="pub-book">
+						<div class="pub-book-info">
+							<h4 class="pub-title">Guillotière(s)</h4>
+							<p class="pub-meta">Les Grilles d'Or 出版，2016 年 — 108 頁</p>
+							<p class="pub-meta">Gérard Collomb 作序</p>
+							<p class="pub-desc">
+								關於里昂 Guillotière 街區的半虛構作品。一部融合歷史、城市規劃與街區生活的敘事，描繪里昂都會區最獨特的地帶之一。
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 近期發表 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.recent')}</h3>
+					<div class="pub-recent-grid">
+						<a class="pub-recent-card" href="/zh/blog/ormuz-terra-nova-tensions-energetiques/">
+							<div class="pub-recent-logo" aria-hidden="true">Terra Nova</div>
+							<div class="pub-recent-date">2026 年 4 月</div>
+							<div class="pub-recent-title">荷莫茲海峽揭示我們的能源緊張——亞洲與歐洲皆然</div>
+						</a>
+						<a class="pub-recent-card" href="/zh/blog/telos-emirats-opep-sortie/">
+							<div class="pub-recent-logo" aria-hidden="true">Telos</div>
+							<div class="pub-recent-date">2026 年 5 月</div>
+							<div class="pub-recent-title">阿聯退出 OPEC，並非外界所想的那樣</div>
+						</a>
+						<a class="pub-recent-card" href="/zh/blog/taiwan-energy-challenges-nottingham/">
+							<div class="pub-recent-logo" aria-hidden="true">Taiwan Insight</div>
+							<div class="pub-recent-date">2026 年 4 月 · 大學學術同行評審</div>
+							<div class="pub-recent-title">Taiwan's Energy Challenges — University of Nottingham</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- 智庫與同行評審平台 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.scientific')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Fondation Jean-Jaurès</span>
+							<span class="pub-topic">〈當台灣主要在野黨倒向北京〉（2026 年 4 月）——民主韌性與國民黨的新定位</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Telos</span>
+							<span class="pub-topic">〈阿聯退出 OPEC，並非外界所想的那樣〉（2026 年 5 月）——對一項長達十五年石油變現策略的分析</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Terra Nova — La Grande Conversation</span>
+							<span class="pub-topic">〈荷莫茲海峽揭示我們的能源緊張，亞洲與歐洲皆然〉（2026 年 4 月）——海峽危機與歐洲依賴的揭示</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taiwan Insight（University of Nottingham）</span>
+							<span class="pub-topic">〈Taiwan's Energy Challenges〉（2026 年 4 月）——結構性脆弱、進口依賴與能源安全</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 國際媒體 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.international')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Le Temps</span>
+							<span class="pub-topic">〈中國在台灣上空的脅迫〉（2026 年 4 月）——北京的空域施壓與外交先例</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Asia Times</span>
+							<span class="pub-topic">「KMT's imperialist rhetoric shifts Taiwan's democratic fault line」（2026 年 4 月）——意識形態轉向與外交防線的破口</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Taipei Times</span>
+							<span class="pub-topic">定期專欄——AI 與能源限制（2026 年 3 月）、地熱潛能（2026 年 4 月）、議會外交（2026 年 5 月）</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 法國媒體 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.french')}</h3>
+					<div class="pub-list">
+						<div class="pub-item">
+							<span class="pub-source">Revue Conflits</span>
+							<span class="pub-topic">〈亞洲的共產主義者：東方仍舊是紅色的嗎？〉與〈北京如何讓台灣總統無法升空〉（2026 年 4 月）</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Contrepoints / IREF Europe</span>
+							<span class="pub-topic">〈對烏克蘭援助的衰退是民主國家的危機〉（2023 年）、地緣政治分析、歐洲能源政策</span>
+						</div>
+						<div class="pub-item">
+							<span class="pub-source">Le Vif / L'Express</span>
+							<span class="pub-topic">關於能源、地緣政治與國際關係的不定期分析</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 依主題 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.themes')}</h3>
+					<div class="pub-themes-grid">
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.energy')}</h4>
+							<p class="pub-theme-desc">石油與天然氣市場、能源轉型、核能、水力發電、半導體、AI 與資源限制。</p>
+							<div class="pub-theme-sources">Telos · Terra Nova · Taipei Times · Taiwan Insight</div>
+						</div>
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.geopolitics')}</h4>
+							<p class="pub-theme-desc">戰略海峽（荷莫茲、麻六甲）、歐洲主權、OPEC、中國脅迫、對烏克蘭的援助。</p>
+							<div class="pub-theme-sources">Le Temps · Revue Conflits · Terra Nova · Contrepoints</div>
+						</div>
+						<div class="pub-theme">
+							<h4 class="pub-theme-title">{t('travaux.publications.theme.taiwan')}</h4>
+							<p class="pub-theme-desc">台灣的能源安全、政治重組（國民黨／民進黨）、議會外交、兩岸關係。</p>
+							<div class="pub-theme-sources">Taipei Times · Asia Times · Fondation Jean-Jaurès · Taiwan Insight</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 部落格 -->
+				<div class="pub-category">
+					<h3 class="travaux-label" style="color: var(--gold);">{t('travaux.publications.blog')}</h3>
+					<p class="pub-desc" style="color: var(--beige-dark);">
+						在 <a href="/zh/blog" style="color: var(--gold);">romainblachier.fr</a> 的個人部落格——關於能源、地緣政治、台灣、法國政治與文化議題的定期分析。
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 經歷與參與 -->
+		<section class="travaux-section travaux-research">
+			<div class="travaux-inner">
+				<h2 class="section-title">{t('travaux.research.title')}</h2>
+
+				<div class="research-grid">
+					<div class="research-card">
+						<div class="research-icon">🇹🇼</div>
+						<h4>France-Formosa</h4>
+						<p>法國-福爾摩沙協會會長。促進法國與台灣之間的經濟與文化交流。與台灣駐法代表處合作籌辦交流活動。</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">⚡</div>
+						<h4>能源與地緣政治</h4>
+						<p>在能源領域 18 年資歷（法國大型電力業者）。研究能源市場、核能、水力發電、液化天然氣與半導體。</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">🏛️</div>
+						<h4>地方治理</h4>
+						<p>在大里昂都會區擔任民選代表 12 年。負責文化、數位、活動與國際事務。曾任里昂第七區副區長。</p>
+					</div>
+					<div class="research-card">
+						<div class="research-icon">🎭</div>
+						<h4>文化與公民社會</h4>
+						<p>Mediatone / Reperkusound 理事。Lyon La Duchère 理事。投身於文化、運動與地方的交會之處。</p>
+					</div>
+				</div>
+
+				<div class="research-areas">
+					<h3 class="travaux-label">{t('travaux.research.areas')}</h3>
+					<div class="area-tags">
+						<span class="area-tag">能源地緣政治</span>
+						<span class="area-tag">台灣與印太</span>
+						<span class="area-tag">歐洲能源主權</span>
+						<span class="area-tag">能源轉型</span>
+						<span class="area-tag">文化外交</span>
+						<span class="area-tag">政治傳播</span>
+						<span class="area-tag">地方治理</span>
+						<span class="area-tag">宗教與世俗主義</span>
+					</div>
+				</div>
+
+				<div class="research-academia">
+					<h3 class="travaux-label">文章與著作</h3>
+					<p class="pub-desc">
+						在
+						<a href="https://independent.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer" style="color: var(--accent-dark); font-weight: 600;">Academia.edu →</a>
+						查看我的文章與著作
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
