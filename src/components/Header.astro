@@ -14,10 +14,11 @@ const localized = (code: string) =>
 		: `/${code}${bare === "/" ? "/" : bare}`;
 
 const langLinks = [
-	{ code: "fr", label: "FR", aria: "Passer en français" },
-	{ code: "en", label: "EN", aria: "Switch to English" },
-	{ code: "zh", label: "中", aria: "切換為繁體中文" },
+	{ code: "fr", short: "FR", name: "Français", aria: "Passer en français" },
+	{ code: "en", short: "EN", name: "English", aria: "Switch to English" },
+	{ code: "zh", short: "中", name: "繁體中文", aria: "切換為繁體中文" },
 ];
+const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 ---
 
 <header>
@@ -28,27 +29,42 @@ const langLinks = [
 			<HeaderLink href={getLocalePath(lang, '/travaux')}>{t('nav.travaux')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/blog')}>{t('nav.blog')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/') + '#contact'}>{t('nav.contact')}</HeaderLink>
-			<span class="lang-switcher">
-				{langLinks.map((l) => (
-					<a
-						href={localized(l.code)}
-						class={`lang-switch${l.code === lang ? ' active' : ''}`}
-						data-lang={l.code}
-						aria-label={l.aria}
-						aria-current={l.code === lang ? 'true' : undefined}
-					>{l.label}</a>
-				))}
-			</span>
+			<details class="lang-dd">
+				<summary class="lang-dd-toggle" aria-label="Language · Langue · 語言">
+					<span class="lang-dd-globe" aria-hidden="true">🌐</span><span class="lang-dd-current">{current.short}</span><span class="lang-dd-caret" aria-hidden="true">▾</span>
+				</summary>
+				<ul class="lang-dd-menu">
+					{langLinks.map((l) => (
+						<li>
+							<a
+								href={localized(l.code)}
+								data-lang={l.code}
+								class={l.code === lang ? 'active' : ''}
+								aria-current={l.code === lang ? 'true' : undefined}
+								aria-label={l.aria}
+							>{l.name}</a>
+						</li>
+					))}
+				</ul>
+			</details>
 		</div>
 	</nav>
 </header>
 
 <script is:inline>
-	// Remember the visitor's explicit language choice so auto-detection
-	// (see BaseHead) never overrides it on later visits.
-	document.querySelectorAll('a.lang-switch').forEach((el) => {
-		el.addEventListener('click', () => {
-			try { localStorage.setItem('preferred-lang', el.getAttribute('data-lang')); } catch (e) {}
+	(function () {
+		// Remember the visitor's explicit language choice so auto-detection
+		// (see BaseHead) never overrides it on later visits.
+		document.querySelectorAll('.lang-dd a[data-lang]').forEach(function (el) {
+			el.addEventListener('click', function () {
+				try { localStorage.setItem('preferred-lang', el.getAttribute('data-lang')); } catch (e) {}
+			});
 		});
-	});
+		// Close the dropdown when clicking outside it.
+		document.addEventListener('click', function (e) {
+			document.querySelectorAll('details.lang-dd[open]').forEach(function (d) {
+				if (!d.contains(e.target)) d.removeAttribute('open');
+			});
+		});
+	})();
 </script>
