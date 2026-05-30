@@ -1,7 +1,10 @@
 ---
 const today = new Date();
+const isEn = Astro.url.pathname.startsWith('/en/') || Astro.url.pathname === '/en';
+const researchHref = isEn ? '/en/travaux#recherches' : '/travaux#recherches';
+const researchLabel = isEn ? 'Research on energy and Taiwan' : 'Recherches sur l’énergie et Taïwan';
 ---
 
 <footer class="site-footer">
-	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
+	<p>&copy; {today.getFullYear()} Romain Blachier · <a href={researchHref}>{researchLabel}</a> · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
 </footer>
