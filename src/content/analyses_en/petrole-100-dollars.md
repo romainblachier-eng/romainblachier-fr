@@ -1,5 +1,6 @@
 ---
 pilier: energie
+heroImage: ../../assets/energy-infrastructure.jpg
 tags: ["énergie", "marchés pétroliers", "prix de l’énergie"]
 title: 'Oil above $100: why it goes far beyond the price at the pump'
 description: 'Crude oil has crossed $100 per barrel. Beyond the price at the gas station, this is a systemic shock hitting the entire global economy.'

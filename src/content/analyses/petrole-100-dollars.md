@@ -1,5 +1,6 @@
 ---
 pilier: energie
+heroImage: ../../assets/energy-infrastructure.jpg
 tags: ["énergie", "marchés pétroliers", "prix de l’énergie"]
 title: 'Le pétrole au-dessus de 100 dollars : pourquoi ça ne se limite pas au prix à la pompe'
 description: 'Le baril de brut a franchi les 100 dollars. Au-delà du prix à la station-service, c’est un choc systémique qui touche toute l’économie mondiale.'
