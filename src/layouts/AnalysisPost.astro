@@ -44,11 +44,14 @@ const inLanguage = lang === 'fr' ? 'fr-FR' : lang === 'zh' ? 'zh-Hant' : 'en-US'
 const published = pubDate ? new Date(pubDate).toISOString() : undefined;
 const modified = updatedDate ? new Date(updatedDate).toISOString() : published;
 
+const heroSrc = heroImage?.src ? new URL(heroImage.src, Astro.site).toString() : undefined;
+
 const newsArticleSchema = {
 	"@context": "https://schema.org",
 	"@type": "NewsArticle",
 	"headline": title,
 	"description": description,
+	...(heroSrc ? { image: [heroSrc] } : {}),
 	"author": { "@type": "Person", "@id": "https://romainblachier.fr/#person", "name": "Romain Blachier" },
 	"publisher": { "@type": "Person", "@id": "https://romainblachier.fr/#person", "name": "Romain Blachier" },
 	"datePublished": published,
