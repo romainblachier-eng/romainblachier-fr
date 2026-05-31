@@ -1,0 +1,16 @@
+---
+import { render } from 'astro:content';
+import PublicationPost from '../../../../layouts/PublicationPost.astro';
+import { getPublications } from '../../../../lib/sections';
+
+export async function getStaticPaths() {
+	const posts = await getPublications('zh');
+	return posts.map((post) => ({ params: { media: post.data.mediaSlug, slug: post.id }, props: post }));
+}
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<PublicationPost {...post.data} lang="zh">
+	<Content />
+</PublicationPost>

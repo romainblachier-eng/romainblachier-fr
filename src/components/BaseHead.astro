@@ -6,6 +6,8 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string | undefined;
+	noindex?: boolean;
+	canonical?: string | undefined;
 	article?: {
 		publishedTime?: string;
 		modifiedTime?: string;
@@ -23,8 +25,10 @@ const contentLangMap: Record<string, string> = { fr: 'fr', en: 'en', zh: 'zh-Han
 const ogLocale = ogLocaleMap[lang] ?? 'fr_FR';
 const altLocales = Object.entries(ogLocaleMap).filter(([code]) => code !== lang).map(([, v]) => v);
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title, description, article } = Astro.props;
+const { title, description, article, noindex = false, canonical } = Astro.props;
+// Publications canonicalize to the host publisher; everything else to self.
+const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site).toString();
+const robotsContent = noindex ? "noindex, follow" : "index, follow";
 
 let resolvedImage: string;
 if (Astro.props.image) {
@@ -52,7 +56,7 @@ const zhUrl = localeUrl('zh');
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 
-<meta name="robots" content="index, follow" />
+<meta name="robots" content={robotsContent} />
 <meta name="author" content="Romain Blachier" />
 <meta http-equiv="content-language" content={contentLangMap[lang] ?? lang} />
 <link rel="alternate" hreflang="fr" href={frUrl} />
@@ -95,6 +99,7 @@ const zhUrl = localeUrl('zh');
 {lang === 'zh' && <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />}
 
 <link rel="canonical" href={canonicalURL} />
+{noindex && <meta name="googlebot" content="noindex, follow" />}
 
 <title>{title}</title>
 <meta name="title" content={title} />

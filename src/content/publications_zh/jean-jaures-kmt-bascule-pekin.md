@@ -1,0 +1,28 @@
+---
+media: "Fondation Jean-Jaurès"
+mediaSlug: jean-jaures
+lienCanonique: "https://www.jean-jaures.org/publication/taiwan-quand-le-principal-parti-dopposition-bascule-vers-pekin/"
+kind: tribune
+title: "我為 Fondation Jean-Jaurès 撰寫的報告：當台灣主要在野黨倒向北京"
+description: "由 Fondation Jean-Jaurès 刊登，本報告回顧 2026 年 4 月國民黨主席訪問北京，以及它如何揭示民主面對威權政權吸引力時的脆弱。"
+pubDate: 2026-04-29T11:26:00.000Z
+heroImage: '../../assets/fondation-jean-jaures-logo.svg'
+---
+
+我為 **Fondation Jean-Jaurès（讓·饒勒斯基金會）** 撰寫了一份報告，談台灣國民黨倒向北京，以及它對亞洲與歐洲民主韌性的啟示。
+
+## 讓·饒勒斯基金會
+
+**Fondation Jean-Jaurès** 是法國一個獲認定為公益性質的智庫，成立於 1992 年，與社會民主陣營相關。其工作圍繞三條主軸：研究與調查、國際合作、歷史與記憶。它定期發表報告、調查與評論，為當代重大變遷——民主、氣候、地緣政治、社會凝聚——的公共辯論注入養分。
+
+## 報告主題
+
+2026 年 4 月，台灣第一在野黨——**國民黨**（KMT，民族主義右翼）主席**鄭麗文**，應習近平之邀訪問中國。這是十年來最高層級的一次訪問。在這趟行程中，鄭麗文採用了中國共產黨的詞彙，並放棄了二十年來在兩岸對話中保護台灣主權的外交防線。
+
+報告分析這場倒向的政治與戰略後果：台灣在野陣營的重組、在地方選舉前一年向北京與華府發出的訊號，以及一種比較性的解讀——這個案例對那些同樣借用威權強權語言之政黨所困擾的歐洲民主國家，說明了什麼。
+
+[在讓·饒勒斯基金會網站閱讀全文](https://www.jean-jaures.org/publication/taiwan-quand-le-principal-parti-dopposition-bascule-vers-pekin/)
+
+---
+
+*標誌：Fondation Jean-Jaurès——用於編輯用途，以標示該刊物的發行者。*
