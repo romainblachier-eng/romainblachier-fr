@@ -1,5 +1,6 @@
 ---
 pilier: energie
+heroImage: ../../assets/energy-infrastructure.jpg
 tags: ["énergie", "marchés pétroliers", "prix de l’énergie"]
 title: '油價突破 100 美元：為什麼這不只是加油站的事'
 description: '原油每桶已突破 100 美元。在加油站價格之外，這是一場衝擊整個世界經濟的系統性震盪。'

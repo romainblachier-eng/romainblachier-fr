@@ -83,6 +83,7 @@ export const ui = {
 		'footer.contact': 'Contact',
 		'publications.external': 'Lire sur le média',
 		'publications.published_in': 'Publié dans',
+		'publications.cited_in': 'Cité dans',
 		'analyses.pillar': 'Pilier',
 		// Tags
 		'tag.energy_markets': "Marchés de l'énergie",
@@ -209,6 +210,7 @@ export const ui = {
 		'footer.contact': 'Contact',
 		'publications.external': 'Read on the publisher',
 		'publications.published_in': 'Published in',
+		'publications.cited_in': 'Quoted in',
 		'analyses.pillar': 'Topic',
 		// Tags
 		'tag.energy_markets': 'Energy markets',
@@ -317,6 +319,7 @@ export const ui = {
 		'footer.contact': '聯絡',
 		'publications.external': '前往媒體閱讀',
 		'publications.published_in': '發表於',
+		'publications.cited_in': '受訪／引述於',
 		'analyses.pillar': '主題',
 		// Tags
 		'tag.energy_markets': '能源市場',
