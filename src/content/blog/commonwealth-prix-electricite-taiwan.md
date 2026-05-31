@@ -6,7 +6,7 @@ description: >-
   ressemblent à un atout industriel, mais l'écart entre le prix payé et le coût
   réel n'est pas une subvention — c'est une dette. Pertes record de Taipower,
   investissements renouvelables à l'arrêt et demande dopée par l'IA.
-pubDate: 2026-05-15T09:00:00.000Z
+pubDate: 2026-05-22T09:00:00.000Z
 heroImage: ../../assets/energy-infrastructure.jpg
 ---
 
