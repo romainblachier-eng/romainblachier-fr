@@ -356,6 +356,99 @@ header nav {
 	line-height: 1.55;
 }
 
+/* Formateur section */
+.formateur {
+	background: var(--bg);
+	padding: 5rem 2rem;
+	border-top: 1px solid var(--line);
+}
+.formateur-inner {
+	max-width: var(--max);
+	margin: 0 auto;
+}
+.formateur-intro {
+	font-size: .95rem;
+	color: var(--text);
+	line-height: 1.75;
+	max-width: 720px;
+	margin: -1.5rem auto 2.5rem;
+	text-align: center;
+}
+.formateur-stats {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin-bottom: 3rem;
+}
+.formateur-stat {
+	text-align: center;
+	padding: 1.25rem 1.5rem;
+	background: var(--bg-alt);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	min-width: 140px;
+}
+.formateur-stat-number {
+	display: block;
+	font-family: var(--display);
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: var(--ink);
+	line-height: 1;
+	letter-spacing: -.02em;
+	margin-bottom: .25rem;
+}
+.formateur-stat-label {
+	font-size: .75rem;
+	font-weight: 500;
+	color: var(--muted);
+	text-transform: uppercase;
+	letter-spacing: .06em;
+}
+.formateur-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.25rem;
+}
+.formateur-card {
+	padding: 1.75rem 1.5rem;
+	border: 1px solid var(--line);
+	border-radius: 16px;
+	background: var(--bg-alt);
+	transition: transform .25s cubic-bezier(.4,0,.2,1), box-shadow .25s, border-color .25s;
+}
+.formateur-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 32px rgba(0,0,0,.06);
+	border-color: var(--ink);
+}
+.formateur-card-icon {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+.formateur-card h3 {
+	font-family: var(--sans);
+	font-weight: 600;
+	font-size: .9rem;
+	color: var(--ink);
+	margin-bottom: .5rem;
+}
+.formateur-card p {
+	font-size: .82rem;
+	color: var(--muted);
+	line-height: 1.6;
+}
+@media (max-width: 960px) {
+	.formateur-grid { grid-template-columns: 1fr 1fr }
+	.formateur-stats { gap: 1.5rem }
+}
+@media (max-width: 600px) {
+	.formateur-grid { grid-template-columns: 1fr }
+	.formateur-stats { flex-direction: column; align-items: center; gap: 1rem }
+	.formateur-stat { min-width: 200px }
+	.formateur { padding-left: 1.25rem; padding-right: 1.25rem }
+}
+
 /* Topic tags */
 .sujets {
 	background: var(--ink);
@@ -1102,7 +1195,7 @@ article.blog-post .prose {
 	.formats-grid { grid-template-columns: 1fr }
 	.experience-badges { flex-direction: column }
 	.internal-links { gap: .8rem; font-size: .8rem }
-	.about, .services, .sujets, .references, .contact-section, .travaux-section, .travaux-hero {
+	.about, .services, .formateur, .sujets, .references, .contact-section, .travaux-section, .travaux-hero {
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
 	}
