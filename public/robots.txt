@@ -4,3 +4,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://romainblachier.fr/sitemap-index.xml
+Sitemap: https://romainblachier.fr/news-sitemap.xml
