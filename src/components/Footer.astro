@@ -1,7 +1,15 @@
 ---
+import { getLangFromUrl } from "../i18n/utils";
 const today = new Date();
+const lang = getLangFromUrl(Astro.url);
+const researchHref = lang === 'en' ? '/en/travaux#recherches' : lang === 'zh' ? '/zh/travaux#recherches' : '/travaux#recherches';
+const researchLabel = lang === 'en'
+	? 'Research on energy and Taiwan'
+	: lang === 'zh'
+	? '能源與台灣研究'
+	: 'Recherches sur l\'énergie et Taïwan';
 ---
 
 <footer class="site-footer">
-	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
+	<p>&copy; {today.getFullYear()} Romain Blachier · <a href={researchHref}>{researchLabel}</a> · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
 </footer>
