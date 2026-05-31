@@ -1,7 +1,33 @@
 ---
+import { getLangFromUrl, useTranslations, getLocalePath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const today = new Date();
+
+const institutional = [
+	{ href: getLocalePath(lang, '/a-propos'), label: t('footer.about') },
+	{ href: getLocalePath(lang, '/methodologie'), label: t('footer.methodology') },
+	{ href: getLocalePath(lang, '/corrections'), label: t('footer.corrections') },
+	{ href: getLocalePath(lang, '/mentions-legales'), label: t('footer.legal') },
+	{ href: getLocalePath(lang, '/contact'), label: t('footer.contact') },
+];
 ---
 
 <footer class="site-footer">
+	<nav class="footer-links" aria-label={t('footer.about')}>
+		{institutional.map((l) => <a href={l.href}>{l.label}</a>)}
+	</nav>
 	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
 </footer>
+
+<style>
+	.footer-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem 1.25rem;
+		justify-content: center;
+		margin-bottom: 0.75rem;
+		font-size: 0.9rem;
+	}
+</style>

@@ -1,0 +1,78 @@
+---
+import { Image } from 'astro:assets';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import { getLangFromUrl, useTranslations, getLocalePath } from '../i18n/utils';
+
+interface Props {
+	title: string;
+	description: string;
+	pubDate: Date;
+	updatedDate?: Date;
+	heroImage?: any;
+	media: string;
+	mediaSlug: string;
+	lienCanonique: string;
+	chapo?: string;
+	kind?: string;
+	lang?: string;
+}
+
+const { title, description, pubDate, updatedDate, heroImage, media, mediaSlug, lienCanonique, chapo } = Astro.props;
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+const t = useTranslations(lang as 'fr' | 'en' | 'zh');
+const htmlLang = lang === 'zh' ? 'zh-Hant' : lang;
+const publicationsPath = getLocalePath(lang, '/publications/');
+const mediaPath = getLocalePath(lang, `/publications/?media=${mediaSlug}`);
+---
+
+<html lang={htmlLang}>
+	<head>
+		<!-- noindex,follow + canonical to the host publisher: this is a portfolio entry, not the primary source. -->
+		<BaseHead title={`${title} | Romain Blachier`} description={description} noindex={true} canonical={lienCanonique} />
+		<style>
+			main { width: calc(100% - 2em); max-width: 100%; margin: 0; }
+			.hero-image { width: 100%; }
+			.hero-image img { display: block; margin: 0 auto; border-radius: 12px; box-shadow: var(--box-shadow); }
+			.prose { width: 720px; max-width: calc(100% - 2em); margin: auto; padding: 1em; color: rgb(var(--gray-dark)); }
+			.breadcrumb { width: 720px; max-width: calc(100% - 2em); margin: 1.5em auto 0; font-size: 0.85rem; color: rgb(var(--gray)); }
+			.breadcrumb a { color: rgb(var(--gray)); }
+			.title { margin-bottom: 1em; padding: 1em 0; text-align: center; line-height: 1; }
+			.title h1 { margin: 0 0 0.5em 0; }
+			.media-badge { display: inline-block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: rgb(var(--gray)); margin-bottom: 0.5em; }
+			.chapo { font-size: 1.15rem; color: rgb(var(--gray)); font-weight: 500; text-align: center; max-width: 640px; margin: 0 auto 1em; }
+			.date { margin-bottom: 0.5em; color: rgb(var(--gray)); }
+			.cta-external { display: block; width: 720px; max-width: calc(100% - 2em); margin: 1.5em auto; text-align: center; }
+			.cta-external a { display: inline-block; padding: 0.7em 1.4em; border-radius: 8px; background: rgb(var(--black)); color: white; text-decoration: none; font-weight: 600; }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<nav class="breadcrumb" aria-label="breadcrumb">
+				<a href={publicationsPath}>{t('nav.publications')}</a> › <a href={mediaPath}>{media}</a>
+			</nav>
+			<article>
+				<div class="hero-image">
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt={title} />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<span class="media-badge">{t('publications.published_in')} {media}</span>
+						<div class="date"><FormattedDate date={pubDate} lang={lang} /></div>
+						<h1>{title}</h1>
+						{chapo && <p class="chapo">{chapo}</p>}
+						<hr />
+					</div>
+					<slot />
+				</div>
+				<div class="cta-external">
+					<a href={lienCanonique} target="_blank" rel="noopener nofollow">{t('publications.external')} : {media} ↗</a>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

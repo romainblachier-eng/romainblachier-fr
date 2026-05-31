@@ -1,10 +1,7 @@
-# Redirect English speakers to /en/ version
+# ---------------------------------------------------------------------------
+# Language-based entry redirect (browser language → English site)
+# ---------------------------------------------------------------------------
 /  /en/  302  Language=en
-/about  /en/about  302  Language=en
-/blog  /en/blog  302  Language=en
-/blog/*  /en/blog/:splat  302  Language=en
-
-# Also redirect other common non-French languages to English
 /  /en/  302  Language=de
 /  /en/  302  Language=es
 /  /en/  302  Language=it
@@ -19,15 +16,80 @@
 /  /en/  302  Language=sv
 /  /en/  302  Language=hi
 /  /en/  302  Language=tr
-/about  /en/about  302  Language=de
-/about  /en/about  302  Language=es
-/about  /en/about  302  Language=zh
-/about  /en/about  302  Language=ja
-/blog  /en/blog  302  Language=de
-/blog  /en/blog  302  Language=es
-/blog  /en/blog  302  Language=zh
-/blog  /en/blog  302  Language=ja
-/blog/*  /en/blog/:splat  302  Language=de
-/blog/*  /en/blog/:splat  302  Language=es
-/blog/*  /en/blog/:splat  302  Language=zh
-/blog/*  /en/blog/:splat  302  Language=ja
+
+# ---------------------------------------------------------------------------
+# Institutional pages: old /about template → new /a-propos
+# ---------------------------------------------------------------------------
+/about        /a-propos     301
+/en/about     /en/a-propos  301
+/zh/about     /zh/a-propos  301
+
+# ---------------------------------------------------------------------------
+# Migrated articles: legacy /blog/[slug] → /analyses or /publications (301)
+# (specific rules MUST precede the /blog catch-all below)
+# ---------------------------------------------------------------------------
+/blog/Tawan-face--son-quation-nergtique-impossible  /analyses/taiwan/taiwan-equation-energetique/  301
+/blog/commonwealth-prix-electricite-taiwan  /publications/commonwealth/commonwealth-prix-electricite-taiwan/  301
+/blog/communistes-asie-revue-conflits  /publications/revue-conflits/communistes-asie-revue-conflits/  301
+/blog/jean-jaures-kmt-bascule-pekin  /publications/jean-jaures/jean-jaures-kmt-bascule-pekin/  301
+/blog/kmt-rhetorique-imperialiste-taiwan  /publications/asia-times/kmt-rhetorique-imperialiste-taiwan/  301
+/blog/le-vif-partis-taiwanais-divisions-pekin  /publications/le-vif/le-vif-partis-taiwanais-divisions-pekin/  301
+/blog/letemps-coercition-chinoise-ciel-taiwan  /publications/le-temps/letemps-coercition-chinoise-ciel-taiwan/  301
+/blog/new-bloom-decarbonation-justice-territoriale-france-taiwan  /publications/new-bloom/new-bloom-decarbonation-justice-territoriale-france-taiwan/  301
+/blog/ormuz-terra-nova-tensions-energetiques  /publications/terra-nova/ormuz-terra-nova-tensions-energetiques/  301
+/blog/petrole-100-dollars  /analyses/energie/petrole-100-dollars/  301
+/blog/revue-conflits-pekin-president-taiwanais  /publications/revue-conflits/revue-conflits-pekin-president-taiwanais/  301
+/blog/taipei-times-diplomatie-parlementaire-taiwan  /publications/taipei-times/taipei-times-diplomatie-parlementaire-taiwan/  301
+/blog/taipei-times-geothermie-taiwan  /publications/taipei-times/taipei-times-geothermie-taiwan/  301
+/blog/taipei-times-paradiplomatie-villes-taiwan  /publications/taipei-times/taipei-times-paradiplomatie-villes-taiwan/  301
+/blog/taipei-times-transition-energetique-taiwan  /publications/taipei-times/taipei-times-transition-energetique-taiwan/  301
+/blog/taiwan-energy-challenges-nottingham  /publications/taiwan-insight/taiwan-energy-challenges-nottingham/  301
+/blog/telos-emirats-opep-sortie  /publications/telos/telos-emirats-opep-sortie/  301
+/blog/tribune-taipei-times  /publications/taipei-times/tribune-taipei-times/  301
+/en/blog/commonwealth-low-electricity-prices-taiwan  /en/publications/commonwealth/commonwealth-prix-electricite-taiwan/  301
+/en/blog/commonwealth-prix-electricite-taiwan  /en/publications/commonwealth/commonwealth-prix-electricite-taiwan/  301
+/en/blog/communistes-asie-revue-conflits  /en/publications/revue-conflits/communistes-asie-revue-conflits/  301
+/en/blog/jean-jaures-kmt-bascule-pekin  /en/publications/jean-jaures/jean-jaures-kmt-bascule-pekin/  301
+/en/blog/kmt-rhetorique-imperialiste-taiwan  /en/publications/asia-times/kmt-rhetorique-imperialiste-taiwan/  301
+/en/blog/le-vif-partis-taiwanais-divisions-pekin  /en/publications/le-vif/le-vif-partis-taiwanais-divisions-pekin/  301
+/en/blog/letemps-coercition-chinoise-ciel-taiwan  /en/publications/le-temps/letemps-coercition-chinoise-ciel-taiwan/  301
+/en/blog/new-bloom-decarbonation-justice-territoriale-france-taiwan  /en/publications/new-bloom/new-bloom-decarbonation-justice-territoriale-france-taiwan/  301
+/en/blog/oil-above-100-dollars  /en/analyses/energie/petrole-100-dollars/  301
+/en/blog/ormuz-terra-nova-tensions-energetiques  /en/publications/terra-nova/ormuz-terra-nova-tensions-energetiques/  301
+/en/blog/revue-conflits-pekin-president-taiwanais  /en/publications/revue-conflits/revue-conflits-pekin-president-taiwanais/  301
+/en/blog/taipei-times-diplomatie-parlementaire-taiwan  /en/publications/taipei-times/taipei-times-diplomatie-parlementaire-taiwan/  301
+/en/blog/taipei-times-geothermie-taiwan  /en/publications/taipei-times/taipei-times-geothermie-taiwan/  301
+/en/blog/taipei-times-paradiplomatie-villes-taiwan  /en/publications/taipei-times/taipei-times-paradiplomatie-villes-taiwan/  301
+/en/blog/taipei-times-transition-energetique-taiwan  /en/publications/taipei-times/taipei-times-transition-energetique-taiwan/  301
+/en/blog/taiwan-energy-challenges-nottingham  /en/publications/taiwan-insight/taiwan-energy-challenges-nottingham/  301
+/en/blog/taiwan-impossible-energy-equation  /en/analyses/taiwan/taiwan-equation-energetique/  301
+/en/blog/telos-emirats-opep-sortie  /en/publications/telos/telos-emirats-opep-sortie/  301
+/en/blog/tribune-taipei-times  /en/publications/taipei-times/tribune-taipei-times/  301
+/zh/blog/Tawan-face--son-quation-nergtique-impossible  /zh/analyses/taiwan/taiwan-equation-energetique/  301
+/zh/blog/commonwealth-prix-electricite-taiwan  /zh/publications/commonwealth/commonwealth-prix-electricite-taiwan/  301
+/zh/blog/communistes-asie-revue-conflits  /zh/publications/revue-conflits/communistes-asie-revue-conflits/  301
+/zh/blog/jean-jaures-kmt-bascule-pekin  /zh/publications/jean-jaures/jean-jaures-kmt-bascule-pekin/  301
+/zh/blog/kmt-rhetorique-imperialiste-taiwan  /zh/publications/asia-times/kmt-rhetorique-imperialiste-taiwan/  301
+/zh/blog/le-vif-partis-taiwanais-divisions-pekin  /zh/publications/le-vif/le-vif-partis-taiwanais-divisions-pekin/  301
+/zh/blog/letemps-coercition-chinoise-ciel-taiwan  /zh/publications/le-temps/letemps-coercition-chinoise-ciel-taiwan/  301
+/zh/blog/new-bloom-decarbonation-justice-territoriale-france-taiwan  /zh/publications/new-bloom/new-bloom-decarbonation-justice-territoriale-france-taiwan/  301
+/zh/blog/ormuz-terra-nova-tensions-energetiques  /zh/publications/terra-nova/ormuz-terra-nova-tensions-energetiques/  301
+/zh/blog/petrole-100-dollars  /zh/analyses/energie/petrole-100-dollars/  301
+/zh/blog/revue-conflits-pekin-president-taiwanais  /zh/publications/revue-conflits/revue-conflits-pekin-president-taiwanais/  301
+/zh/blog/taipei-times-diplomatie-parlementaire-taiwan  /zh/publications/taipei-times/taipei-times-diplomatie-parlementaire-taiwan/  301
+/zh/blog/taipei-times-geothermie-taiwan  /zh/publications/taipei-times/taipei-times-geothermie-taiwan/  301
+/zh/blog/taipei-times-paradiplomatie-villes-taiwan  /zh/publications/taipei-times/taipei-times-paradiplomatie-villes-taiwan/  301
+/zh/blog/taipei-times-transition-energetique-taiwan  /zh/publications/taipei-times/taipei-times-transition-energetique-taiwan/  301
+/zh/blog/taiwan-energy-challenges-nottingham  /zh/publications/taiwan-insight/taiwan-energy-challenges-nottingham/  301
+/zh/blog/telos-emirats-opep-sortie  /zh/publications/telos/telos-emirats-opep-sortie/  301
+/zh/blog/tribune-taipei-times  /zh/publications/taipei-times/tribune-taipei-times/  301
+
+# ---------------------------------------------------------------------------
+# /blog kept as an alias of /analyses (catch-all, after the specific rules)
+# ---------------------------------------------------------------------------
+/blog/*      /analyses/     301
+/en/blog/*   /en/analyses/  301
+/zh/blog/*   /zh/analyses/  301
+/blog        /analyses/     301
+/en/blog     /en/analyses/  301
+/zh/blog     /zh/analyses/  301

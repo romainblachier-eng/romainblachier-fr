@@ -1,0 +1,61 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getLangFromUrl } from '../i18n/utils';
+
+interface Props {
+	title: string;
+	description: string;
+	lang?: string;
+}
+
+const { title, description } = Astro.props;
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+const htmlLang = lang === 'zh' ? 'zh-Hant' : lang;
+---
+
+<html lang={htmlLang}>
+	<head>
+		<BaseHead title={`${title} | Romain Blachier`} description={description} />
+		<style>
+			main {
+				width: 720px;
+				max-width: calc(100% - 2em);
+				margin: 0 auto;
+				padding: 2rem 1rem 3rem;
+			}
+			.page-title {
+				font-family: 'Playfair Display', Georgia, serif;
+				margin-bottom: 0.25em;
+			}
+			.page-lede {
+				color: rgb(var(--gray));
+				font-size: 1.1rem;
+				margin-bottom: 2rem;
+			}
+			.page-body :global(h2) {
+				font-family: 'Playfair Display', Georgia, serif;
+				margin-top: 2rem;
+			}
+			.page-body :global(a) {
+				color: var(--accent, #0b5);
+			}
+			.page-note {
+				margin-top: 2.5rem;
+				padding: 1rem;
+				border-left: 3px solid rgb(var(--gray-light));
+				background: rgba(var(--gray-light), 0.4);
+				font-size: 0.9rem;
+				color: rgb(var(--gray));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
