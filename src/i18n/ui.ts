@@ -109,7 +109,7 @@ export const ui = {
 		'tag.cultural_diplomacy': 'Diplomatie culturelle',
 		'tag.scientific_coop': 'Coopération scientifique',
 		// Travaux page
-		'nav.travaux': 'Travaux',
+		'nav.parcours': 'Parcours',
 		'travaux.seo.title': 'Enseignement, Publications & Analyses — Romain Blachier',
 		'travaux.seo.description': "Publications, enseignements et analyses de Romain Blachier. Cours à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1. Auteur de Guillotière(s). Énergie et géopolitique.",
 		'travaux.hero.title': 'Enseignement, Publications & Analyses',
@@ -237,7 +237,7 @@ export const ui = {
 		'tag.cultural_diplomacy': 'Cultural diplomacy',
 		'tag.scientific_coop': 'Scientific cooperation',
 		// Travaux page
-		'nav.travaux': 'Research',
+		'nav.parcours': 'Background',
 		'travaux.seo.title': 'Teaching, Publications & Analysis — Romain Blachier',
 		'travaux.seo.description': "Publications, teaching and analysis by Romain Blachier. Lecturer at Grenoble École de Management, IEP Lyon, Université Lyon 1. Author of Guillotière(s). Energy and geopolitics.",
 		'travaux.hero.title': 'Teaching, Publications & Analysis',
@@ -346,7 +346,7 @@ export const ui = {
 		'tag.cultural_diplomacy': '文化外交',
 		'tag.scientific_coop': '科學合作',
 		// Travaux page
-		'nav.travaux': '研究與著作',
+		'nav.parcours': '經歷',
 		'travaux.seo.title': '教學、著作與分析 — Romain Blachier',
 		'travaux.seo.description': 'Romain Blachier 的著作、教學與分析。任教於巴黎政治學院、格勒諾布爾管理學院、里昂政治學院、里昂第一大學。《Guillotière(s)》作者。能源與地緣政治。',
 		'travaux.hero.title': '教學、著作與分析',
