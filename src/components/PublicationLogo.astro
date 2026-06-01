@@ -1,0 +1,69 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	mediaSlug: string;
+	media: string;
+}
+const { mediaSlug, media } = Astro.props;
+
+// Eagerly resolve every asset so we can pick a logo by filename at build time.
+const files = import.meta.glob<ImageMetadata>('../assets/*', { eager: true, import: 'default' });
+
+const logoFile: Record<string, string> = {
+	commonwealth: 'commonwealth-magazine-logo.svg',
+	'revue-conflits': 'revue-conflits-logo.jpg',
+	'jean-jaures': 'fondation-jean-jaures-logo.svg',
+	'le-vif': 'le-vif-logo.svg',
+	'le-temps': 'le-temps-logo.jpg',
+	'new-bloom': 'new-bloom-logo.png',
+	'terra-nova': 'la-grande-conversation-logo.png',
+	'taipei-times': 'taipei-times-logo.gif',
+	'taiwan-insight': 'university-of-nottingham-logo.svg',
+	telos: 'telos-eu-logo.png',
+	// asia-times: no asset → monogram fallback
+};
+
+const filename = logoFile[mediaSlug];
+const asset = filename ? files[`../assets/${filename}`] : undefined;
+
+// Fallback monogram from the outlet name (e.g. "Asia Times" → "AT").
+const monogram = media
+	.replace(/[^\p{L}\s]/gu, ' ')
+	.trim()
+	.split(/\s+/)
+	.slice(0, 2)
+	.map((w) => w[0])
+	.join('')
+	.toUpperCase();
+---
+
+{
+	asset ? (
+		<img class="pub-logo" src={asset.src} alt={media} width="44" height="44" loading="lazy" decoding="async" />
+	) : (
+		<span class="pub-logo pub-logo--mono" aria-hidden="true">{monogram}</span>
+	)
+}
+
+<style>
+	.pub-logo {
+		width: 44px;
+		height: 44px;
+		flex-shrink: 0;
+		object-fit: contain;
+		border-radius: 8px;
+		background: white;
+		border: 1px solid rgba(var(--gray-light), 0.9);
+		padding: 4px;
+	}
+	.pub-logo--mono {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.95rem;
+		color: rgb(var(--gray-dark));
+		background: rgba(var(--gray-light), 0.7);
+	}
+</style>
