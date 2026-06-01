@@ -1,0 +1,88 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	heading: string;
+}
+const { heading } = Astro.props;
+
+// Resolve any asset by filename at build time; logos appear automatically once
+// the corresponding file is added to src/assets/.
+const files = import.meta.glob<ImageMetadata>('../assets/*', { eager: true, import: 'default' });
+const exts = ['svg', 'png', 'jpg', 'jpeg', 'webp', 'gif'];
+
+const institutions = [
+	{ slug: 'ensap-formation', name: 'ENSAP Formation', url: 'https://www.ensap.fr/' },
+	{ slug: 'cnfpt', name: 'CNFPT', url: 'https://www.cnfpt.fr/' },
+	{ slug: 'lefebvre-dalloz', name: 'Lefebvre Dalloz', url: 'https://www.lefebvre-dalloz.fr/' },
+];
+
+const resolve = (slug: string) => {
+	for (const ext of exts) {
+		const hit = files[`../assets/${slug}-logo.${ext}`];
+		if (hit) return hit;
+	}
+	return undefined;
+};
+
+const items = institutions.map((i) => ({ ...i, asset: resolve(i.slug) }));
+---
+
+<div class="training-band">
+	<p class="training-band-heading">{heading}</p>
+	<div class="training-band-inner">
+		{items.map((i) => (
+			<a class="training-logo-item" href={i.url} target="_blank" rel="noopener noreferrer" aria-label={i.name}>
+				{i.asset ? (
+					<img src={i.asset.src} alt={i.name} height="44" loading="lazy" decoding="async" />
+				) : (
+					<span class="training-wordmark">{i.name}</span>
+				)}
+			</a>
+		))}
+	</div>
+</div>
+
+<style>
+	.training-band {
+		text-align: center;
+		margin: 2.5rem auto 0;
+	}
+	.training-band-heading {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.8rem;
+		color: rgb(var(--gray));
+		margin-bottom: 1rem;
+	}
+	.training-band-inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem 2.5rem;
+	}
+	.training-logo-item {
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+	}
+	.training-logo-item img {
+		width: auto;
+		height: 44px;
+		object-fit: contain;
+		opacity: 0.85;
+		transition: opacity 0.2s ease;
+	}
+	.training-logo-item:hover img {
+		opacity: 1;
+	}
+	.training-wordmark {
+		font-weight: 700;
+		font-size: 1.05rem;
+		color: rgb(var(--gray-dark));
+		padding: 0.4em 0.9em;
+		border: 1px solid rgba(var(--gray-light), 0.9);
+		border-radius: 8px;
+	}
+</style>

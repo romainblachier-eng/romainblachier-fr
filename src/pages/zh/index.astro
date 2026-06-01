@@ -7,6 +7,7 @@ import { Image } from "astro:assets";
 import portrait from "../../assets/portrait.jpg";
 import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
+import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 
 const t = useTranslations('zh');
 ---
@@ -59,6 +60,8 @@ const t = useTranslations('zh');
 		/>
 
 		<MediaLogosBand />
+
+		<TrainingLogosBand heading={t('formateur.clients')} />
 
 		<section class="about">
 			<div class="about-inner">
