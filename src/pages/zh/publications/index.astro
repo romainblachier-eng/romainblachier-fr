@@ -5,6 +5,7 @@ import Footer from '../../../components/Footer.astro';
 import FormattedDate from '../../../components/FormattedDate.astro';
 import { getPublications } from '../../../lib/sections';
 import { getLocalePath } from '../../../i18n/utils';
+import PublicationLogo from '../../../components/PublicationLogo.astro';
 
 const lang = 'zh';
 const posts = await getPublications(lang);
@@ -23,7 +24,8 @@ const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFu
 			.filters button { padding: 0.25em 0.8em; border-radius: 999px; border: 1px solid rgb(var(--gray-light)); background: white; cursor: pointer; font-size: 0.85rem; }
 			.filters button.active { background: rgb(var(--black)); color: white; border-color: rgb(var(--black)); }
 			ul { list-style: none; padding: 0; }
-			li { margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid rgba(var(--gray-light), 0.7); }
+			li { display: flex; gap: 0.9rem; align-items: center; margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid rgba(var(--gray-light), 0.7); }
+			.pub-text { display: flex; flex-direction: column; min-width: 0; }
 			li a.t { font-size: 1.15rem; font-weight: 600; text-decoration: none; }
 			.meta { display: block; color: rgb(var(--gray)); font-size: 0.85rem; margin-top: 0.2em; }
 		</style>
@@ -46,8 +48,11 @@ const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFu
 			<ul id="pub-list">
 				{posts.map((p) => (
 					<li data-media={p.data.mediaSlug} data-year={String(new Date(p.data.pubDate).getFullYear())}>
-						<a class="t" href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{p.data.title}</a>
-						<span class="meta">{p.data.media} · <FormattedDate date={p.data.pubDate} lang={lang} /></span>
+						<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
+						<div class="pub-text">
+							<a class="t" href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{p.data.title}</a>
+							<span class="meta">{p.data.media} · <FormattedDate date={p.data.pubDate} lang={lang} /></span>
+						</div>
 					</li>
 				))}
 			</ul>
