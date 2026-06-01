@@ -25,6 +25,14 @@
 /zh/about     /zh/a-propos  301
 
 # ---------------------------------------------------------------------------
+# Page renommée : /travaux → /parcours (301)
+# ---------------------------------------------------------------------------
+/travaux       /parcours      301
+/en/travaux    /en/parcours   301
+/zh/travaux    /zh/parcours   301
+
+
+# ---------------------------------------------------------------------------
 # Migrated articles: legacy /blog/[slug] → /analyses or /publications (301)
 # (specific rules MUST precede the /blog catch-all below)
 # ---------------------------------------------------------------------------
