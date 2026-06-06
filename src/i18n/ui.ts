@@ -49,8 +49,6 @@ export const ui = {
 		'formateur.elus.desc': "Fort de douze ans de mandat exécutif à la Métropole de Lyon, je forme les élus et leurs équipes sur l'énergie, la communication de crise, les relations institutionnelles et les affaires publiques. Une pédagogie ancrée dans la pratique du terrain.",
 		'formateur.stat.years': '15',
 		'formateur.stat.years.label': "années d'enseignement",
-		'formateur.stat.institutions': '7+',
-		'formateur.stat.institutions.label': 'établissements',
 		'formateur.stat.languages': 'FR / EN',
 		'formateur.stat.languages.label': 'langues d\'intervention',
 		// Thématiques
@@ -177,8 +175,6 @@ export const ui = {
 		'formateur.elus.desc': "Drawing on twelve years of executive office in the Lyon Metropolitan area, I train elected officials and their teams on energy, crisis communications, institutional relations and public affairs. A pedagogy grounded in real-world practice.",
 		'formateur.stat.years': '15',
 		'formateur.stat.years.label': 'years of teaching',
-		'formateur.stat.institutions': '7+',
-		'formateur.stat.institutions.label': 'institutions',
 		'formateur.stat.languages': 'FR / EN',
 		'formateur.stat.languages.label': 'languages',
 		// Topics
