@@ -13,7 +13,7 @@ import nottinghamLogo from '../assets/university-of-nottingham-logo.svg';
 import udnLogo from '../assets/united-daily-news-logo.png';
 
 const logos = [
-	{ src: taipeiTimesLogo, alt: 'Taipei Times', width: 120, height: 40 },
+	{ src: taipeiTimesLogo, alt: 'Taipei Times', width: 320, height: 40, wide: true },
 	{ src: udnLogo, alt: '聯合報 — United Daily News', width: 67, height: 40 },
 	{ src: commonwealthLogo, alt: 'CommonWealth Magazine', width: 40, height: 40 },
 	{ src: telosLogo, alt: 'Telos', width: 100, height: 40 },
@@ -30,7 +30,7 @@ const logos = [
 <div class="media-logos-band">
 	<div class="media-logos-inner">
 		{logos.map((logo) => (
-			<div class="media-logo-item">
+			<div class:list={['media-logo-item', { 'media-logo-item--wide': logo.wide }]}>
 				<Image src={logo.src} alt={logo.alt} width={logo.width} height={40} />
 			</div>
 		))}

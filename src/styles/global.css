@@ -1088,6 +1088,10 @@ article.blog-post .prose {
 	filter: grayscale(100%) opacity(0.5);
 	transition: filter .25s;
 }
+/* Very wide wordmark logos (e.g. Taipei Times) render shorter so they don't dominate the band. */
+.media-logo-item--wide img {
+	height: 26px;
+}
 .media-logo-item:hover img {
 	filter: grayscale(0%) opacity(1);
 }
