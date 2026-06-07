@@ -11,7 +11,7 @@ description: >-
   utility's losses? NT$420 billion in cumulative deficit, ten days of gas
   reserves — and a problem that is less about technology than about governance.
 pubDate: 2026-06-06T07:00:00.000Z
-heroImage: ../../assets/taiwan-energy-wind-turbines.jpg
+heroImage: ../../assets/udn-taiwan-energy-newspaper.jpg
 ---
 
 I have an op-ed in the **[聯合報 (United Daily News)](https://udn.com/news/story/7339/9549010)** — one of Taiwan's major daily newspapers, on page A14 — about the island's energy policy. My starting point is a simple question: **why does Taiwan pay the same energy bill twice?**

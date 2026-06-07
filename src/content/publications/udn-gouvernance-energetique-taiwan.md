@@ -12,7 +12,7 @@ description: >-
   jours de stocks de gaz — et un problème qui relève moins de la technique que
   de la gouvernance.
 pubDate: 2026-06-06T07:00:00.000Z
-heroImage: ../../assets/taiwan-energy-wind-turbines.jpg
+heroImage: ../../assets/udn-taiwan-energy-newspaper.jpg
 ---
 
 Je signe dans le **[聯合報 (United Daily News)](https://udn.com/news/story/7339/9549010)** — l'un des grands quotidiens de Taïwan, en page A14 — une tribune sur la politique énergétique de l'île. Mon point de départ est une question simple : **pourquoi Taïwan paie-t-il la même facture énergétique deux fois ?**
