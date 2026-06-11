@@ -8,8 +8,12 @@ import portrait from "../../assets/portrait.jpg";
 import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { getPublications } from "../../lib/sections";
 
 const t = useTranslations('en');
+const allPubs = await getPublications('en');
+const latestPub = allPubs[0];
 ---
 
 <!doctype html>
@@ -62,6 +66,27 @@ const t = useTranslations('en');
 		<MediaLogosBand />
 
 		<TrainingLogosBand heading={t('formateur.clients')} />
+
+		{latestPub && (
+		<section class="latest-article">
+			<div class="latest-inner">
+				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
+				<h2 class="section-title">{t('latest.title')}</h2>
+				<div class="latest-card">
+					<div class="latest-meta">
+						<span class="latest-media">{latestPub.data.media}</span>
+						<span class="latest-date"><FormattedDate date={latestPub.data.pubDate} lang="en" /></span>
+					</div>
+					<h3 class="latest-headline">{latestPub.data.title}</h3>
+					<p class="latest-desc">{latestPub.data.description}</p>
+					<div class="latest-actions">
+						<a href={latestPub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+						<a href="/en/publications/" class="latest-all">{t('latest.all')}</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		)}
 
 		<section class="about">
 			<div class="about-inner">

@@ -20,7 +20,7 @@ export const ui = {
 		'about.title': 'Pourquoi faire appel à moi',
 		'about.p1': "L'énergie et la géopolitique paraissent souvent techniques, lointaines, réservées aux experts. Mon travail, c'est l'inverse : rendre ces sujets clairs, vivants et utiles — pour vos étudiants, votre audience ou vos équipes.",
 		'about.p2': "Ce que je vous apporte tient en une chose : j'ai vécu ces sujets avant d'en parler. Dix-huit ans au cœur d'un grand opérateur français de l'électricité, douze ans d'élu à la Métropole de Lyon. Quand j'explique un marché, un réseau ou une décision publique, je ne récite pas une théorie — je raconte ce que j'ai pratiqué.",
-		'about.p3': "J'écris sur ces enjeux presque chaque jour — pour des think tanks et dans la presse, en France comme à l'étranger. Vous bénéficiez d'une analyse sourcée et directe, qui va à l'essentiel sans jamais l'appauvrir. Je m'intéresse en particulier à la coopération scientifique et technologique comme levier de puissance.",
+		'about.p3': "Expert associé à la Fondation Jean-Jaurès, j'écris sur ces enjeux presque chaque jour — pour des think tanks et dans la presse, en France comme à l'étranger. Vous bénéficiez d'une analyse sourcée et directe, qui va à l'essentiel sans jamais l'appauvrir. Je m'intéresse en particulier à la coopération scientifique et technologique comme levier de puissance.",
 		'about.p4': "Et j'enseigne depuis quinze ans — à Sciences Po Paris, à Grenoble École de Management, à l'Université Lyon 1 et ailleurs, en français comme en anglais, avec des formations sur mesure pour le public comme pour le privé. Mon vrai métier, c'est de transmettre : faire comprendre, donner envie, marquer les esprits.",
 		'about.p5': "Ce regard, je l'ai aussi forgé sur le terrain, loin de Lyon — au Cambodge, en Ukraine. Parce qu'on parle mieux d'un monde qu'on a arpenté.",
 		'about.p6': "Au fond, je vous offre les deux à la fois : la profondeur de l'expert et la clarté du pédagogue. Un cours à monter, un plateau à préparer, une conférence à animer, une stratégie à construire ? Parlons-en.",
@@ -49,7 +49,7 @@ export const ui = {
 		'formateur.elus.desc': "Fort de douze ans de mandat exécutif à la Métropole de Lyon, je forme les élus et leurs équipes sur l'énergie, la communication de crise, les relations institutionnelles et les affaires publiques. Une pédagogie ancrée dans la pratique du terrain.",
 		'formateur.stat.years': '15',
 		'formateur.stat.years.label': "années d'enseignement",
-		'formateur.stat.languages': 'FR / EN',
+		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'langues d\'intervention',
 		// Thématiques
 		'topics.title': "Thématiques traitées",
@@ -129,6 +129,11 @@ export const ui = {
 		'travaux.publications.blog': 'Blog & analyses',
 		'travaux.research.title': 'Parcours & engagements',
 		'travaux.research.areas': 'Axes d\'expertise et d\'action',
+		// Latest article
+		'latest.overline': 'Dernière publication',
+		'latest.title': 'Mon dernier article',
+		'latest.read': 'Lire l\'article →',
+		'latest.all': 'Toutes les publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Conférencier & Formateur',
 		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
@@ -146,7 +151,7 @@ export const ui = {
 		'about.title': 'Why work with me',
 		'about.p1': "Energy and geopolitics often look technical, distant, reserved for experts. My work is the opposite: making these subjects clear, lively and useful — for your students, your audience or your teams.",
 		'about.p2': "What I bring you comes down to one thing: I lived these subjects before talking about them. Eighteen years at the heart of a major French electricity operator, twelve years as an elected official in the Lyon metropolitan area. When I explain a market, a grid or a public decision, I'm not reciting theory — I'm telling you what I have practised.",
-		'about.p3': "I write on these issues almost every day — for think tanks and the press, in France and abroad. You get analysis that is well-sourced and direct, getting to the point without ever dumbing it down. I have a particular interest in scientific and technological cooperation as a lever of power.",
+		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I write on these issues almost every day — for think tanks and the press, in France and abroad. You get analysis that is well-sourced and direct, getting to the point without ever dumbing it down. I have a particular interest in scientific and technological cooperation as a lever of power.",
 		'about.p4': "And I have been teaching for fifteen years — at Sciences Po Paris, Grenoble École de Management, Université Lyon 1 and elsewhere, in French and English, with bespoke training for the public and private sectors alike. My real craft is conveying: making people understand, sparking interest, leaving a mark.",
 		'about.p5': "I also forged this perspective in the field, far from Lyon — in Cambodia, in Ukraine. Because you speak better about a world you have walked through.",
 		'about.p6': "Ultimately, I offer you both at once: the depth of an expert and the clarity of an educator. A course to build, a TV segment to prepare, a conference to lead, a strategy to design? Let's talk.",
@@ -175,7 +180,7 @@ export const ui = {
 		'formateur.elus.desc': "Drawing on twelve years of executive office in the Lyon Metropolitan area, I train elected officials and their teams on energy, crisis communications, institutional relations and public affairs. A pedagogy grounded in real-world practice.",
 		'formateur.stat.years': '15',
 		'formateur.stat.years.label': 'years of teaching',
-		'formateur.stat.languages': 'FR / EN',
+		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'languages',
 		// Topics
 		'topics.title': 'Topics covered',
@@ -255,6 +260,11 @@ export const ui = {
 		'travaux.publications.blog': 'Blog & analysis',
 		'travaux.research.title': 'Background & engagement',
 		'travaux.research.areas': 'Areas of expertise and action',
+		// Latest article
+		'latest.overline': 'Latest publication',
+		'latest.title': 'My latest article',
+		'latest.read': 'Read the article →',
+		'latest.all': 'All publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Energy & Geopolitics | Speaker & Lecturer',
 		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
@@ -272,7 +282,7 @@ export const ui = {
 		'about.title': '為什麼與我合作',
 		'about.p1': '能源與地緣政治，往往顯得艱澀、遙遠、是專家的專利。而我的工作恰恰相反：讓這些主題變得清晰、生動而實用——為您的學生、您的聽眾，或您的團隊。',
 		'about.p2': '我能帶給您的，歸結為一件事：在談論這些主題之前，我親身經歷過它們。在法國一家大型電力業者的核心工作十八年，在大里昂都會區擔任民選代表十二年。當我說明一個市場、一張電網或一項公共決策時，我不是在背誦理論——而是在講述我親手實踐過的事。',
-		'about.p3': '我幾乎每天都在書寫這些議題——為智庫撰稿，也在法國與海外媒體發表。您得到的，是有憑有據、直截了當的分析，直指核心而絕不流於淺薄。我尤其關注以科學與技術合作作為國力槓桿。',
+		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）的特聘專家，我幾乎每天都在書寫這些議題——為智庫撰稿，也在法國與海外媒體發表。您得到的，是有憑有據、直截了當的分析，直指核心而絕不流於淺薄。我尤其關注以科學與技術合作作為國力槓桿。',
 		'about.p4': '我教學已十五年——任教於巴黎政治學院、格勒諾布爾管理學院、里昂第一大學及其他院校，以法語及英語進行，並為公私部門量身打造培訓。我真正的本業是「傳達」：讓人聽懂、激發興趣、留下印象。',
 		'about.p5': '這樣的視角，我也在遠離里昂的現場淬鍊而成——在柬埔寨、在烏克蘭。因為唯有親自走過的世界，才談得更深刻。',
 		'about.p6': '歸根結柢，我同時帶給您兩者：專家的深度，與教育者的清晰。一門課程要規劃、一檔節目要準備、一場演講要主持、一套策略要建構？讓我們聊聊。',
@@ -364,6 +374,11 @@ export const ui = {
 		'travaux.publications.blog': '部落格與分析',
 		'travaux.research.title': '經歷與參與',
 		'travaux.research.areas': '專業與行動領域',
+		// Latest article
+		'latest.overline': '最新發表',
+		'latest.title': '我的最新文章',
+		'latest.read': '閱讀文章 →',
+		'latest.all': '所有發表 →',
 		// SEO
 		'seo.title': 'Romain Blachier — 能源與地緣政治 | 講者與講師',
 		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。研討會、頂尖院校培訓、媒體評論。',
