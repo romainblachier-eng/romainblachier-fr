@@ -9,13 +9,9 @@ pubDate: 2026-06-11T10:00:00.000Z
 heroImage: '../../assets/fondation-jean-jaures-logo.svg'
 ---
 
-Je viens de publier une note pour la **Fondation Jean-Jaurès** sur la gouvernance électrique en Afrique centrale, à travers trois capitales : Kinshasa, Douala et Brazzaville.
+Cette note est signée en tant qu'**expert associé à la Fondation Jean-Jaurès**, think tank français reconnu d'utilité publique, fondé en 1992. La Fondation publie régulièrement notes, enquêtes et tribunes pour nourrir le débat public sur les grandes transformations contemporaines — démocratie, climat, géopolitique, cohésion sociale. C'est dans ce cadre que je contribue à ses travaux sur l'énergie et la géopolitique.
 
-## La Fondation Jean-Jaurès
-
-La **Fondation Jean-Jaurès** est un think tank français, reconnu d'utilité publique, fondé en 1992 et associé à la famille social-démocrate. Son travail s'organise autour de trois axes : les études et recherches, la coopération internationale, l'histoire et la mémoire. Elle publie régulièrement notes, enquêtes et tribunes pour nourrir le débat public sur les grandes transformations contemporaines — démocratie, climat, géopolitique, cohésion sociale.
-
-## Le sujet de la note
+## Résumé
 
 L'Afrique centrale concentre environ **60 % du potentiel hydroélectrique du continent**, mais ses trois principales métropoles — Kinshasa, Douala, Brazzaville, soit plus de 25 millions d'habitants — restent en crise d'approvisionnement. Le paradoxe est au cœur de cette note : les villes sont l'épicentre de la demande et de la vulnérabilité énergétique, mais elles n'ont aucun pouvoir de décision sur les systèmes électriques qui les alimentent.
 
