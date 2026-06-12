@@ -1,29 +1,72 @@
 ---
-import Page from '../layouts/Page.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import ContactForm from '../components/ContactForm.astro';
 ---
 
-<Page title={"Contact"} description={"Contacter Romain Blachier pour une formation, une conférence, une intervention média ou une collaboration."} lang="fr">
-	<h1 class="page-title">Contact</h1>
-	<p class="page-lede">Formations, conférences, interventions médias, expertise.</p>
-	<div class="page-body">
-<h2>Domaines d'intervention</h2>
-<ul>
-<li><strong>Enseignement et formations</strong> — cours et séminaires en grande école et université (Sciences Po Paris, Grenoble École de Management, IEP Lyon, ILERI, HEIP).</li>
-<li><strong>Conférences et tables rondes</strong> — marchés de l'énergie, géopolitique, Taïwan et Indo-Pacifique.</li>
-<li><strong>Médias</strong> — plateaux TV, radio, podcasts, tribunes.</li>
-<li><strong>Conseil et expertise</strong> — notes stratégiques, auditions, accompagnement institutionnel.</li>
-</ul>
-
-<h2>Écrire</h2>
-<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>, ou via le formulaire&nbsp;:</p>
-<ContactForm lang="fr" variant="light" />
-
-<h2>Retrouver</h2>
-<ul>
-<li><a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a></li>
-<li><a href="https://france-formosa.org" rel="noopener" target="_blank">Association France-Formosa</a></li>
-<li><a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a></li>
-</ul>
-	</div>
-</Page>
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={"Contact | Romain Blachier"} description={"Contacter Romain Blachier pour une formation, une conférence, une intervention média ou une collaboration."} />
+	</head>
+	<body>
+		<Header />
+		<main class="contact-page">
+			<h1>Contact</h1>
+			<p class="contact-lede">
+				Un cours à construire, une conférence à animer, une interview à préparer, un projet de
+				collaboration&nbsp;? Écrivez-moi&nbsp;: chaque message reçoit une réponse, en général sous 48&nbsp;heures.
+			</p>
+			<div class="contact-grid">
+				<div>
+					<h2>Ce que je fais</h2>
+					<ul class="contact-reasons">
+						<li>
+							<span class="emoji" aria-hidden="true">🎓</span>
+							<div>
+								<strong>Enseignement &amp; formations</strong>
+								<p>Cours et séminaires en grande école et université, formations sur mesure pour organisations publiques et privées.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🎤</span>
+							<div>
+								<strong>Conférences &amp; tables rondes</strong>
+								<p>Marchés de l'énergie, géopolitique, Taïwan et Indo-Pacifique — en français et en anglais.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">📡</span>
+							<div>
+								<strong>Médias</strong>
+								<p>Plateaux TV, radio, podcasts, tribunes. Analyses sourcées, accessibles au grand public.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🧭</span>
+							<div>
+								<strong>Conseil &amp; expertise</strong>
+								<p>Notes stratégiques, auditions, accompagnement institutionnel.</p>
+							</div>
+						</li>
+					</ul>
+					<h2>Par email</h2>
+					<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+					<h2>Ailleurs en ligne</h2>
+					<div class="contact-elsewhere">
+						<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
+						<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
+						<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
+					</div>
+					<p class="contact-meta">Interventions en français et en anglais · Basé à Lyon, mobile partout</p>
+				</div>
+				<div>
+					<h2>Envoyer un message</h2>
+					<ContactForm lang="fr" variant="light" />
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

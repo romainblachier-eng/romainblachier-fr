@@ -1,29 +1,72 @@
 ---
-import Page from '../../layouts/Page.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import ContactForm from '../../components/ContactForm.astro';
 ---
 
-<Page title={"Contact"} description={"Contact Romain Blachier for training, conferences, media appearances or expertise."} lang="en">
-	<h1 class="page-title">Contact</h1>
-	<p class="page-lede">Teaching, conferences, media, expertise.</p>
-	<div class="page-body">
-<h2>Areas of work</h2>
-<ul>
-<li><strong>Teaching and training</strong> — courses and seminars at universities and graduate schools (Sciences Po Paris, Grenoble School of Management, IEP Lyon, ILERI, HEIP).</li>
-<li><strong>Conferences and panel discussions</strong> — energy markets, geopolitics, Taiwan and the Indo-Pacific.</li>
-<li><strong>Media</strong> — TV, radio, podcasts, op-eds.</li>
-<li><strong>Advisory and expertise</strong> — strategic briefs, hearings, institutional support.</li>
-</ul>
-
-<h2>Write</h2>
-<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>, or use the form:</p>
-<ContactForm lang="en" variant="light" />
-
-<h2>Find</h2>
-<ul>
-<li><a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a></li>
-<li><a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa Association</a></li>
-<li><a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a></li>
-</ul>
-	</div>
-</Page>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={"Contact | Romain Blachier"} description={"Contact Romain Blachier for training, conferences, media appearances or expertise."} />
+	</head>
+	<body>
+		<Header />
+		<main class="contact-page">
+			<h1>Contact</h1>
+			<p class="contact-lede">
+				A course to build, a talk to give, an interview to prepare, a collaboration in mind?
+				Write to me — every message gets a reply, usually within 48&nbsp;hours.
+			</p>
+			<div class="contact-grid">
+				<div>
+					<h2>What I do</h2>
+					<ul class="contact-reasons">
+						<li>
+							<span class="emoji" aria-hidden="true">🎓</span>
+							<div>
+								<strong>Teaching &amp; training</strong>
+								<p>Courses and seminars at universities and graduate schools, bespoke training for public and private organizations.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🎤</span>
+							<div>
+								<strong>Conferences &amp; panels</strong>
+								<p>Energy markets, geopolitics, Taiwan and the Indo-Pacific — in French and English.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">📡</span>
+							<div>
+								<strong>Media</strong>
+								<p>TV, radio, podcasts, op-eds. Well-sourced analysis, accessible to a broad audience.</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🧭</span>
+							<div>
+								<strong>Advisory &amp; expertise</strong>
+								<p>Strategic briefs, hearings, institutional support.</p>
+							</div>
+						</li>
+					</ul>
+					<h2>By email</h2>
+					<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+					<h2>Elsewhere online</h2>
+					<div class="contact-elsewhere">
+						<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
+						<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
+						<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
+					</div>
+					<p class="contact-meta">Speaking in French and English · Based in Lyon, available anywhere</p>
+				</div>
+				<div>
+					<h2>Send a message</h2>
+					<ContactForm lang="en" variant="light" />
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

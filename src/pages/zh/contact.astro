@@ -1,29 +1,71 @@
 ---
-import Page from '../../layouts/Page.astro';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import ContactForm from '../../components/ContactForm.astro';
 ---
 
-<Page title={"聯絡"} description={"就教學、演講、媒體出席或專業諮詢事宜聯絡 Romain Blachier。"} lang="zh">
-	<h1 class="page-title">聯絡</h1>
-	<p class="page-lede">教學、演講、媒體、專業諮詢。</p>
-	<div class="page-body">
-<h2>服務範疇</h2>
-<ul>
-<li><strong>教學與培訓</strong>——大學與高等學院課程及研討會（巴黎政治學院、格勒諾布爾管理學院、里昂政治學院、ILERI、HEIP）。</li>
-<li><strong>演講與圓桌論壇</strong>——能源市場、地緣政治、臺灣與印太地區。</li>
-<li><strong>媒體</strong>——電視、廣播、播客、評論文章。</li>
-<li><strong>顧問與專業諮詢</strong>——策略研究報告、聽證、機構輔導。</li>
-</ul>
-
-<h2>來信</h2>
-<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>，或透過表單：</p>
-<ContactForm lang="zh" variant="light" />
-
-<h2>關注</h2>
-<ul>
-<li><a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a></li>
-<li><a href="https://france-formosa.org" rel="noopener" target="_blank">法國—福爾摩沙協會</a></li>
-<li><a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a></li>
-</ul>
-	</div>
-</Page>
+<!doctype html>
+<html lang="zh-Hant">
+	<head>
+		<BaseHead title={"聯絡 | Romain Blachier"} description={"就教學、演講、媒體出席或專業諮詢事宜聯絡 Romain Blachier。"} />
+	</head>
+	<body>
+		<Header />
+		<main class="contact-page">
+			<h1>聯絡</h1>
+			<p class="contact-lede">
+				想規劃課程、邀請演講、安排採訪，或有合作計畫？歡迎來信——每封訊息都會收到回覆，通常在 48 小時內。
+			</p>
+			<div class="contact-grid">
+				<div>
+					<h2>我的工作</h2>
+					<ul class="contact-reasons">
+						<li>
+							<span class="emoji" aria-hidden="true">🎓</span>
+							<div>
+								<strong>教學與培訓</strong>
+								<p>大學與高等學院課程及研討會，並為公私機構量身打造培訓。</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🎤</span>
+							<div>
+								<strong>演講與圓桌論壇</strong>
+								<p>能源市場、地緣政治、台灣與印太——以法語及英語進行。</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">📡</span>
+							<div>
+								<strong>媒體</strong>
+								<p>電視、廣播、播客、評論文章。有憑有據、面向大眾的分析。</p>
+							</div>
+						</li>
+						<li>
+							<span class="emoji" aria-hidden="true">🧭</span>
+							<div>
+								<strong>顧問與專業諮詢</strong>
+								<p>策略研究報告、聽證、機構輔導。</p>
+							</div>
+						</li>
+					</ul>
+					<h2>來信</h2>
+					<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+					<h2>線上足跡</h2>
+					<div class="contact-elsewhere">
+						<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
+						<a href="https://france-formosa.org" rel="noopener" target="_blank">法國—福爾摩沙協會</a>
+						<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
+					</div>
+					<p class="contact-meta">以法語及英語演講授課 · 常駐里昂，可至各地</p>
+				</div>
+				<div>
+					<h2>傳送訊息</h2>
+					<ContactForm lang="zh" variant="light" />
+				</div>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
