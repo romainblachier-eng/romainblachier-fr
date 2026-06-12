@@ -18,7 +18,7 @@ const institutional = [
 	<nav class="footer-links" aria-label={t('footer.about')}>
 		{institutional.map((l) => <a href={l.href}>{l.label}</a>)}
 	</nav>
-	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://www.jean-jaures.org/expert/romain-blachier/" target="_blank" rel="me noopener noreferrer">Fondation Jean-Jaurès</a> · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
+	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://www.jean-jaures.org/expert/romain-blachier/" target="_blank" rel="me noopener noreferrer">{t('footer.jaures')}</a> · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
 </footer>
 
 <style>
