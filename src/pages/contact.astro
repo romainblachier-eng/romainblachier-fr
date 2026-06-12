@@ -1,5 +1,6 @@
 ---
 import Page from '../layouts/Page.astro';
+import ContactForm from '../components/ContactForm.astro';
 ---
 
 <Page title={"Contact"} description={"Contacter Romain Blachier pour une formation, une conférence, une intervention média ou une collaboration."} lang="fr">
@@ -15,7 +16,8 @@ import Page from '../layouts/Page.astro';
 </ul>
 
 <h2>Écrire</h2>
-<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a></p>
+<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>, ou via le formulaire&nbsp;:</p>
+<ContactForm lang="fr" variant="light" />
 
 <h2>Retrouver</h2>
 <ul>

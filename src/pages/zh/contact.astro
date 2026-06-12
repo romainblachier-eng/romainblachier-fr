@@ -1,5 +1,6 @@
 ---
 import Page from '../../layouts/Page.astro';
+import ContactForm from '../../components/ContactForm.astro';
 ---
 
 <Page title={"聯絡"} description={"就教學、演講、媒體出席或專業諮詢事宜聯絡 Romain Blachier。"} lang="zh">
@@ -15,7 +16,8 @@ import Page from '../../layouts/Page.astro';
 </ul>
 
 <h2>來信</h2>
-<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a></p>
+<p><a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>，或透過表單：</p>
+<ContactForm lang="zh" variant="light" />
 
 <h2>關注</h2>
 <ul>

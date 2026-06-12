@@ -746,6 +746,35 @@ header nav {
 }
 .captcha-row input::placeholder { color: rgba(255,255,255,.35) }
 
+/* Contact form — light variant (pages à fond clair) */
+.contact-form--light input,
+.contact-form--light textarea {
+	background: var(--bg-alt);
+	border: 1px solid var(--line);
+	color: var(--ink);
+}
+.contact-form--light input::placeholder,
+.contact-form--light textarea::placeholder { color: var(--muted) }
+.contact-form--light input:focus,
+.contact-form--light textarea:focus { border-color: var(--muted) }
+.contact-form--light button {
+	background: var(--ink);
+	color: #fff;
+}
+.contact-form--light button:hover { background: var(--ink); opacity: .85 }
+.contact-form--light .captcha-row label { color: var(--text) }
+.contact-form--light .form-feedback {
+	background: rgba(34, 197, 94, .1);
+	color: #15803d;
+	border-color: rgba(34, 197, 94, .35);
+}
+.contact-form--light .form-feedback--error {
+	background: rgba(239, 68, 68, .08);
+	color: #b91c1c;
+	border-color: rgba(239, 68, 68, .3);
+}
+.contact-form--light .form-feedback--error a { color: #b91c1c }
+
 /* Footer */
 .site-footer {
 	padding: 1.5rem 2rem;
