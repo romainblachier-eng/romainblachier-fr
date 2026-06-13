@@ -8,9 +8,17 @@ import { getLocalePath } from '../../i18n/utils';
 import PublicationLogo from '../../components/PublicationLogo.astro';
 
 const lang = 'fr';
-const posts = await getPublications(lang);
-const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.media])).entries());
-const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFullYear()))).sort((a, b) => b - a);
+const posts = await getPublications(lang); // déjà triées antéchronologiquement
+
+// Regroupement par média. L'ordre des médias suit leur publication la plus récente
+// (les posts étant antéchronologiques) et les articles restent antéchronologiques dans chaque rubrique.
+const byMedia = new Map<string, { name: string; items: typeof posts }>();
+for (const p of posts) {
+	const slug = p.data.mediaSlug;
+	if (!byMedia.has(slug)) byMedia.set(slug, { name: p.data.media, items: [] });
+	byMedia.get(slug)!.items.push(p);
+}
+const mediaGroups = Array.from(byMedia.entries());
 ---
 
 <html lang="fr">
@@ -20,13 +28,15 @@ const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFu
 			main { width: 820px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2rem 1rem 3rem; }
 			h1 { font-family: 'Playfair Display', Georgia, serif; margin-bottom: 0.25em; }
 			.lede { color: rgb(var(--gray)); font-size: 1.1rem; margin-bottom: 1.5rem; }
-			.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.6rem; }
-			.filters button { padding: 0.25em 0.8em; border-radius: 999px; border: 1px solid rgb(var(--gray-light)); background: white; cursor: pointer; font-size: 0.85rem; }
-			.filters button.active { background: rgb(var(--black)); color: white; border-color: rgb(var(--black)); }
-			ul { list-style: none; padding: 0; }
+			.section-h { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; margin: 2.4rem 0 1rem; padding-top: 1.4rem; border-top: 2px solid rgb(var(--gray-light)); }
+			.media-group { margin-bottom: 1.6rem; }
+			.media-title { display: flex; align-items: center; gap: 0.6rem; font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; margin: 1.4rem 0 0.7rem; }
+			ul { list-style: none; padding: 0; margin: 0; }
 			li { display: flex; gap: 0.9rem; align-items: center; margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid rgba(var(--gray-light), 0.7); }
+			.media-group li { margin-bottom: 0.7rem; padding-bottom: 0.7rem; }
+			.media-group li:last-child { border-bottom: none; }
 			.pub-text { display: flex; flex-direction: column; min-width: 0; }
-			li a.t { font-size: 1.15rem; font-weight: 600; text-decoration: none; }
+			li a.t { font-size: 1.1rem; font-weight: 600; text-decoration: none; }
 			.meta { display: block; color: rgb(var(--gray)); font-size: 0.85rem; margin-top: 0.2em; }
 		</style>
 	</head>
@@ -36,18 +46,30 @@ const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFu
 			<h1>Publications</h1>
 			<p class="lede">Mes tribunes parues dans d'autres médias.</p>
 
-			<div class="filters" data-group="media">
-				<button class="active" data-media="all">Tous</button>
-				{medias.map(([slug, name]) => <button data-media={slug}>{name}</button>)}
-			</div>
-			<div class="filters" data-group="year">
-				<button class="active" data-year="all">Tous</button>
-				{years.map((y) => <button data-year={String(y)}>{y}</button>)}
-			</div>
+			<h2 class="section-h">Par média</h2>
+			{mediaGroups.map(([slug, group]) => (
+				<section class="media-group">
+					<h3 class="media-title">
+						<PublicationLogo mediaSlug={slug} media={group.name} />
+						{group.name}
+					</h3>
+					<ul>
+						{group.items.map((p) => (
+							<li>
+								<div class="pub-text">
+									<a class="t" href={getLocalePath(lang, `/publications/${slug}/${p.id}/`)}>{p.data.title}</a>
+									<span class="meta"><FormattedDate date={p.data.pubDate} lang={lang} /></span>
+								</div>
+							</li>
+						))}
+					</ul>
+				</section>
+			))}
 
-			<ul id="pub-list">
+			<h2 class="section-h">Par date</h2>
+			<ul>
 				{posts.map((p) => (
-					<li data-media={p.data.mediaSlug} data-year={String(new Date(p.data.pubDate).getFullYear())}>
+					<li>
 						<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
 						<div class="pub-text">
 							<a class="t" href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{p.data.title}</a>
@@ -58,29 +80,5 @@ const years = Array.from(new Set(posts.map((p) => new Date(p.data.pubDate).getFu
 			</ul>
 		</main>
 		<Footer />
-
-		<script is:inline>
-			(function () {
-				var state = { media: 'all', year: 'all' };
-				function apply() {
-					document.querySelectorAll('#pub-list > li').forEach(function (li) {
-						var okM = state.media === 'all' || li.getAttribute('data-media') === state.media;
-						var okY = state.year === 'all' || li.getAttribute('data-year') === state.year;
-						li.style.display = okM && okY ? '' : 'none';
-					});
-				}
-				document.querySelectorAll('.filters').forEach(function (group) {
-					var key = group.getAttribute('data-group');
-					group.querySelectorAll('button').forEach(function (btn) {
-						btn.addEventListener('click', function () {
-							group.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
-							btn.classList.add('active');
-							state[key] = btn.getAttribute('data-' + key);
-							apply();
-						});
-					});
-				});
-			})();
-		</script>
 	</body>
 </html>
