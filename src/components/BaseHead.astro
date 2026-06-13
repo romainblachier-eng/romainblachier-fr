@@ -159,6 +159,5 @@ const zhUrl = localeUrl('zh');
 <meta property="twitter:image" content={imageURL} />
 
 <link rel="sitemap" href="/sitemap-index.xml" />
-<link rel="alternate" type="application/rss+xml" title={title} href={new URL(lang === 'zh' ? 'zh/rss.xml' : lang === 'en' ? 'en/rss.xml' : 'rss.xml', Astro.site)} />
 
 <script type="application/ld+json" set:html={JSON.stringify(siteSchema)} />

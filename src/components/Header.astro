@@ -26,7 +26,6 @@ const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 		<a href={getLocalePath(lang, '/')} class="site-brand">Romain Blachier</a>
 		<div class="internal-links">
 			<HeaderLink href={getLocalePath(lang, '/')}>{t('nav.home')}</HeaderLink>
-			<HeaderLink href={getLocalePath(lang, '/analyses')}>{t('nav.analyses')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/publications')}>{t('nav.publications')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/travaux')}>{t('nav.travaux')}</HeaderLink>
 			<HeaderLink href={getLocalePath(lang, '/contact')}>{t('nav.contact')}</HeaderLink>

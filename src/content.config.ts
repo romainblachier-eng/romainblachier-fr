@@ -2,36 +2,6 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 // ---------------------------------------------------------------------------
-// ANALYSES — original, primary content. Indexable, eligible for News/Discover.
-// ---------------------------------------------------------------------------
-export const PILLARS = ['energie', 'taiwan', 'indo-pacifique', 'notes'] as const;
-
-const analyseSchema = ({ image }: { image: Function }) =>
-	z.object({
-		title: z.string(),
-		description: z.string(),
-		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		heroImage: image().optional(),
-		pilier: z.enum(PILLARS),
-		tags: z.array(z.string()).default([]),
-		chapo: z.string().optional(),
-	});
-
-const analyses = defineCollection({
-	loader: glob({ base: './src/content/analyses', pattern: '**/*.{md,mdx}' }),
-	schema: analyseSchema,
-});
-const analyses_en = defineCollection({
-	loader: glob({ base: './src/content/analyses_en', pattern: '**/*.{md,mdx}' }),
-	schema: analyseSchema,
-});
-const analyses_zh = defineCollection({
-	loader: glob({ base: './src/content/analyses_zh', pattern: '**/*.{md,mdx}' }),
-	schema: analyseSchema,
-});
-
-// ---------------------------------------------------------------------------
 // PUBLICATIONS — portfolio of op-eds published in other outlets.
 // Detail pages are noindex,follow and canonicalize to the host publisher.
 // ---------------------------------------------------------------------------
@@ -63,6 +33,5 @@ const publications_zh = defineCollection({
 });
 
 export const collections = {
-	analyses, analyses_en, analyses_zh,
 	publications, publications_en, publications_zh,
 };

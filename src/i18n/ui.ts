@@ -80,7 +80,6 @@ export const ui = {
 		// Blog
 		'blog.updated': 'Mis à jour le',
 		// Sections & institutional
-		'nav.analyses': 'Analyses',
 		'nav.publications': 'Publications',
 		'footer.about': 'À propos',
 		'footer.methodology': 'Méthodologie',
@@ -91,7 +90,6 @@ export const ui = {
 		'publications.external': 'Lire sur le média',
 		'publications.published_in': 'Publié dans',
 		'publications.cited_in': 'Cité dans',
-		'analyses.pillar': 'Pilier',
 		// Tags
 		'tag.energy_markets': "Marchés de l'énergie",
 		'tag.taiwan': 'Taïwan & Indo-Pacifique',
@@ -219,7 +217,6 @@ export const ui = {
 		// Blog
 		'blog.updated': 'Last updated on',
 		// Sections & institutional
-		'nav.analyses': 'Analysis',
 		'nav.publications': 'Publications',
 		'footer.about': 'About',
 		'footer.methodology': 'Methodology',
@@ -230,7 +227,6 @@ export const ui = {
 		'publications.external': 'Read on the publisher',
 		'publications.published_in': 'Published in',
 		'publications.cited_in': 'Quoted in',
-		'analyses.pillar': 'Topic',
 		// Tags
 		'tag.energy_markets': 'Energy markets',
 		'tag.taiwan': 'Taiwan & Indo-Pacific',
@@ -341,7 +337,6 @@ export const ui = {
 		// Blog
 		'blog.updated': '更新於',
 		// Sections & institutional
-		'nav.analyses': '分析',
 		'nav.publications': '媒體發表',
 		'footer.about': '關於',
 		'footer.methodology': '編採方法',
@@ -352,7 +347,6 @@ export const ui = {
 		'publications.external': '前往媒體閱讀',
 		'publications.published_in': '發表於',
 		'publications.cited_in': '受訪／引述於',
-		'analyses.pillar': '主題',
 		// Tags
 		'tag.energy_markets': '能源市場',
 		'tag.taiwan': '台灣與印太',
