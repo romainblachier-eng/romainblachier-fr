@@ -8,17 +8,8 @@ import { getLocalePath } from '../../i18n/utils';
 import PublicationLogo from '../../components/PublicationLogo.astro';
 
 const lang = 'fr';
-const posts = await getPublications(lang); // déjà triées antéchronologiquement
-
-// Regroupement par média. L'ordre des médias suit leur publication la plus récente
-// (les posts étant antéchronologiques) et les articles restent antéchronologiques dans chaque rubrique.
-const byMedia = new Map<string, { name: string; items: typeof posts }>();
-for (const p of posts) {
-	const slug = p.data.mediaSlug;
-	if (!byMedia.has(slug)) byMedia.set(slug, { name: p.data.media, items: [] });
-	byMedia.get(slug)!.items.push(p);
-}
-const mediaGroups = Array.from(byMedia.entries());
+const posts = await getPublications(lang); // triées du plus récent au moins récent
+const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.media])).entries());
 ---
 
 <html lang="fr">
@@ -26,17 +17,13 @@ const mediaGroups = Array.from(byMedia.entries());
 		<BaseHead title={`Publications | Romain Blachier`} description={`Mes tribunes parues dans d'autres médias.`} />
 		<style>
 			main { width: 820px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2rem 1rem 3rem; }
-			h1 { font-family: 'Playfair Display', Georgia, serif; margin-bottom: 0.25em; }
-			.pub-nav { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0 1.5rem; }
-			.pub-nav a { padding: 0.3em 0.9em; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); text-decoration: none; font-size: 0.9rem; }
-			.pub-nav a:hover { background: var(--ink); color: white; border-color: var(--ink); }
-			.section-h { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; margin: 2.4rem 0 1rem; padding-top: 1.4rem; border-top: 2px solid var(--line); scroll-margin-top: 5rem; }
-			.media-group { margin-bottom: 1.6rem; }
-			.media-title { display: flex; align-items: center; gap: 0.6rem; font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; margin: 1.4rem 0 0.7rem; }
+			h1 { font-family: 'Playfair Display', Georgia, serif; margin-bottom: 0.6rem; }
+			.media-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0 1.8rem; }
+			.media-filter button { padding: 0.3em 0.9em; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); cursor: pointer; font-size: 0.9rem; }
+			.media-filter button:hover { border-color: var(--ink); }
+			.media-filter button.active { background: var(--ink); color: white; border-color: var(--ink); }
 			ul { list-style: none; padding: 0; margin: 0; }
 			li { display: flex; gap: 0.9rem; align-items: center; margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid var(--line); }
-			.media-group li { margin-bottom: 0.7rem; padding-bottom: 0.7rem; }
-			.media-group li:last-child { border-bottom: none; }
 			.pub-text { display: flex; flex-direction: column; min-width: 0; }
 			li a.t { font-size: 1.1rem; font-weight: 600; text-decoration: none; }
 			.meta { display: block; color: var(--muted); font-size: 0.85rem; margin-top: 0.2em; }
@@ -46,35 +33,15 @@ const mediaGroups = Array.from(byMedia.entries());
 		<Header />
 		<main>
 			<h1>Publications</h1>
-			<nav class="pub-nav">
-				<a href="#media">Par média</a>
-				<a href="#chrono">Antéchronologique</a>
-			</nav>
 
-			<h2 id="media" class="section-h">Par média</h2>
-			{mediaGroups.map(([slug, group]) => (
-				<section class="media-group">
-					<h3 class="media-title">
-						<PublicationLogo mediaSlug={slug} media={group.name} />
-						{group.name}
-					</h3>
-					<ul>
-						{group.items.map((p) => (
-							<li>
-								<div class="pub-text">
-									<a class="t" href={getLocalePath(lang, `/publications/${slug}/${p.id}/`)}>{p.data.title}</a>
-									<span class="meta"><FormattedDate date={p.data.pubDate} lang={lang} /></span>
-								</div>
-							</li>
-						))}
-					</ul>
-				</section>
-			))}
+			<div class="media-filter" id="media-filter">
+				<button class="active" data-media="all">Tous les médias</button>
+				{medias.map(([slug, name]) => <button data-media={slug}>{name}</button>)}
+			</div>
 
-			<h2 id="chrono" class="section-h">Antéchronologique</h2>
-			<ul>
+			<ul id="pub-list">
 				{posts.map((p) => (
-					<li>
+					<li data-media={p.data.mediaSlug}>
 						<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
 						<div class="pub-text">
 							<a class="t" href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{p.data.title}</a>
@@ -85,5 +52,22 @@ const mediaGroups = Array.from(byMedia.entries());
 			</ul>
 		</main>
 		<Footer />
+
+		<script is:inline>
+			(function () {
+				var filter = document.getElementById('media-filter');
+				if (!filter) return;
+				filter.addEventListener('click', function (e) {
+					var btn = e.target.closest('button');
+					if (!btn) return;
+					filter.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+					btn.classList.add('active');
+					var media = btn.getAttribute('data-media');
+					document.querySelectorAll('#pub-list > li').forEach(function (li) {
+						li.style.display = media === 'all' || li.getAttribute('data-media') === media ? '' : 'none';
+					});
+				});
+			})();
+		</script>
 	</body>
 </html>
