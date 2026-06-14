@@ -304,6 +304,21 @@ header nav {
 	transition: color .2s;
 }
 .latest-all:hover { color: var(--ink) }
+.latest-inner--grid { max-width: 1120px }
+.latest-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.25rem;
+	margin-top: 1.75rem;
+}
+.latest-grid .latest-card { display: flex; flex-direction: column }
+.latest-grid .latest-headline { font-size: 1.15rem }
+.latest-grid .latest-desc { margin-bottom: 1.25rem }
+.latest-grid .latest-actions { margin-top: auto }
+.latest-all-wrap { text-align: center; margin-top: 1.75rem }
+@media (max-width: 900px) {
+	.latest-grid { grid-template-columns: 1fr; max-width: 540px; margin-left: auto; margin-right: auto }
+}
 @media (max-width: 600px) {
 	.latest-card { padding: 1.5rem 1.25rem }
 	.latest-headline { font-size: 1.15rem }

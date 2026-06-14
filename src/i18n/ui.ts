@@ -137,7 +137,7 @@ export const ui = {
 		'travaux.research.areas': 'Axes d\'expertise et d\'action',
 		// Latest article
 		'latest.overline': 'Publications',
-		'latest.title': 'Dernière publication',
+		'latest.title': 'Publications récentes',
 		'latest.read': 'Lire l\'article →',
 		'latest.all': 'Toutes les publications →',
 		// SEO
@@ -274,7 +274,7 @@ export const ui = {
 		'travaux.research.areas': 'Areas of expertise and action',
 		// Latest article
 		'latest.overline': 'Publications',
-		'latest.title': 'Latest publication',
+		'latest.title': 'Recent publications',
 		'latest.read': 'Read the article →',
 		'latest.all': 'All publications →',
 		// SEO
@@ -394,7 +394,7 @@ export const ui = {
 		'travaux.research.areas': '專業與行動領域',
 		// Latest article
 		'latest.overline': '媒體發表',
-		'latest.title': '最新發表',
+		'latest.title': '近期發表',
 		'latest.read': '閱讀文章 →',
 		'latest.all': '所有發表 →',
 		// SEO

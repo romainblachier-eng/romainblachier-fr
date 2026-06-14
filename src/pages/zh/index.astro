@@ -13,7 +13,7 @@ import { getPublications } from "../../lib/sections";
 
 const t = useTranslations('zh');
 const allPubs = await getPublications('zh');
-const latestPub = allPubs[0];
+const recentPubs = allPubs.slice(0, 3);
 ---
 
 <!doctype html>
@@ -61,30 +61,36 @@ const latestPub = allPubs[0];
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
 
-		<MediaLogosBand />
-
-		<TrainingLogosBand heading={t('formateur.clients')} />
-
-		{latestPub && (
+		{recentPubs.length > 0 && (
 		<section class="latest-article">
-			<div class="latest-inner">
+			<div class="latest-inner latest-inner--grid">
 				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
 				<h2 class="section-title">{t('latest.title')}</h2>
-				<div class="latest-card">
-					<div class="latest-meta">
-						<span class="latest-media">{latestPub.data.media}</span>
-						<span class="latest-date"><FormattedDate date={latestPub.data.pubDate} lang="zh" /></span>
-					</div>
-					<h3 class="latest-headline">{latestPub.data.title}</h3>
-					<p class="latest-desc">{latestPub.data.description}</p>
-					<div class="latest-actions">
-						<a href={latestPub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
-						<a href="/zh/publications/" class="latest-all">{t('latest.all')}</a>
-					</div>
+				<div class="latest-grid">
+					{recentPubs.map((pub) => (
+						<article class="latest-card">
+							<div class="latest-meta">
+								<span class="latest-media">{pub.data.media}</span>
+								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="zh" /></span>
+							</div>
+							<h3 class="latest-headline">{pub.data.title}</h3>
+							<p class="latest-desc">{pub.data.description}</p>
+							<div class="latest-actions">
+								<a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+							</div>
+						</article>
+					))}
+				</div>
+				<div class="latest-all-wrap">
+					<a href="/zh/publications/" class="latest-all">{t('latest.all')}</a>
 				</div>
 			</div>
 		</section>
 		)}
+
+		<MediaLogosBand />
+
+		<TrainingLogosBand heading={t('formateur.clients')} />
 
 		<section class="about">
 			<div class="about-inner">
