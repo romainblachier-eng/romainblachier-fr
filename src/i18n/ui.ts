@@ -19,7 +19,7 @@ export const ui = {
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique paraissent souvent techniques et réservées aux spécialistes. Mon travail consiste à les rendre claires et utiles — pour des étudiants, une rédaction ou une équipe de direction.",
-		'about.p2': "Cette approche s'appuie sur l'expérience : dix-huit ans à la Compagnie Nationale du Rhône, troisième producteur français d'électricité, et douze ans de mandat à la Métropole de Lyon. Les marchés, les réseaux et la décision publique, je les ai pratiqués avant de les enseigner.",
+		'about.p2': "Cette approche s'appuie sur l'expérience : dix-huit ans dans le secteur de l'énergie et douze ans de mandat à la Métropole de Lyon. Les marchés, les réseaux et la décision publique, je les ai pratiqués avant de les enseigner.",
 		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie régulièrement dans des think tanks et dans la presse, en France et à l'étranger. Je m'intéresse en particulier à la coopération scientifique et technologique comme levier de puissance.",
 		'about.p4': "J'enseigne depuis 2010 — à Sciences Po Paris, Grenoble École de Management, l'Université Lyon 1 et ailleurs, en français comme en anglais, ainsi qu'en formation continue pour les secteurs public et privé.",
 		'about.p5': "Ce regard s'est aussi construit sur le terrain, notamment au Cambodge et en Ukraine.",
@@ -156,7 +156,7 @@ export const ui = {
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics often look technical and reserved for specialists. My work is to make them clear and useful — for students, a newsroom or an executive team.",
-		'about.p2': "This approach is grounded in experience: eighteen years at Compagnie Nationale du Rhône, France's third-largest electricity producer, and twelve years in elected office in the Lyon metropolitan area. Markets, grids and public decision-making — I practised them before teaching them.",
+		'about.p2': "This approach is grounded in experience: eighteen years in the energy sector and twelve years in elected office in the Lyon metropolitan area. Markets, grids and public decision-making — I practised them before teaching them.",
 		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish regularly with think tanks and in the press, in France and abroad, with a particular interest in scientific and technological cooperation as a lever of power.",
 		'about.p4': "I have been teaching since 2010 — at Sciences Po Paris, Grenoble École de Management, Université Lyon 1 and elsewhere, in French and English, along with executive training for the public and private sectors.",
 		'about.p5': "This perspective was also shaped in the field, notably in Cambodia and Ukraine.",
@@ -293,7 +293,7 @@ export const ui = {
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治往往顯得技術性強、僅屬專家領域。我的工作是讓這些主題變得清晰而實用——無論對象是學生、編輯部或管理團隊。',
-		'about.p2': '這一方法建立在實務經驗之上：在法國第三大電力生產商羅納河國家公司（Compagnie Nationale du Rhône）工作十八年，並在大里昂都會區擔任民選代表十二年。市場、電網與公共決策，我先實踐，而後教學。',
+		'about.p2': '這一方法建立在實務經驗之上：在能源產業工作十八年，並在大里昂都會區擔任民選代表十二年。市場、電網與公共決策，我先實踐，而後教學。',
 		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我定期為智庫與法國及海外媒體撰稿，尤其關注以科學與技術合作作為國力槓桿。',
 		'about.p4': '我自 2010 年起任教——巴黎政治學院、格勒諾布爾管理學院、里昂第一大學及其他院校，以法語及英語授課，並為公私部門提供在職培訓。',
 		'about.p5': '這一視野也在田野中形成，特別是在柬埔寨與烏克蘭。',
