@@ -1,0 +1,15 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import DemoScrollFX from "../components/DemoScrollFX";
+import "../styles/full-screen-scroll-fx.css";
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <BaseHead title="Demo Scroll FX" description="Full screen scroll effect demo" />
+  </head>
+  <body style="margin:0;padding:0;">
+    <DemoScrollFX client:load />
+  </body>
+</html>
