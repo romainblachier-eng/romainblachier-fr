@@ -49,6 +49,7 @@ const publicationFields = [
     options: [
       { value: "tribune", label: "Tribune / article" },
       { value: "citation", label: "Citation" },
+      { value: "interview", label: "Interview / entretien" },
     ],
   },
   {
