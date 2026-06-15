@@ -7,6 +7,7 @@ const MEDIA_OPTIONS = [
   { value: "global-taiwan-institute", label: "Global Taiwan Institute" },
   { value: "udn", label: "聯合報 United Daily News" },
   { value: "taipei-times", label: "Taipei Times" },
+  { value: "rti", label: "Radio Taiwan International" },
   { value: "new-bloom", label: "New Bloom Magazine" },
   { value: "telos", label: "Telos" },
   { value: "commonwealth", label: "CommonWealth Magazine" },
