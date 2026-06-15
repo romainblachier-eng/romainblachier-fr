@@ -90,6 +90,7 @@ export const ui = {
 		'publications.external': 'Lire sur le média',
 		'publications.published_in': 'Publié dans',
 		'publications.cited_in': 'Cité dans',
+		'publications.interviewed_by': 'Entretien —',
 		// Tags
 		'tag.energy_markets': "Marchés de l'énergie",
 		'tag.taiwan': 'Taïwan & Indo-Pacifique',
@@ -227,6 +228,7 @@ export const ui = {
 		'publications.external': 'Read on the publisher',
 		'publications.published_in': 'Published in',
 		'publications.cited_in': 'Quoted in',
+		'publications.interviewed_by': 'Interview —',
 		// Tags
 		'tag.energy_markets': 'Energy markets',
 		'tag.taiwan': 'Taiwan & Indo-Pacific',
@@ -347,6 +349,7 @@ export const ui = {
 		'publications.external': '前往媒體閱讀',
 		'publications.published_in': '發表於',
 		'publications.cited_in': '受訪／引述於',
+		'publications.interviewed_by': '專訪 —',
 		// Tags
 		'tag.energy_markets': '能源市場',
 		'tag.taiwan': '台灣與印太',

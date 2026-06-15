@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Radio Taiwan International">
+  <rect width="120" height="120" rx="18" fill="#E2231A"/>
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+    <path d="M72 47 a13 13 0 0 1 13 13"/>
+    <path d="M72 35 a25 25 0 0 1 25 25"/>
+  </g>
+  <text x="60" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="56" fill="#ffffff">Rti</text>
+</svg>

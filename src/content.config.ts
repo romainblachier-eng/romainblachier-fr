@@ -16,7 +16,7 @@ const publicationSchema = ({ image }: { image: Function }) =>
 		mediaSlug: z.string(),
 		lienCanonique: z.string().url(),
 		chapo: z.string().optional(),
-		kind: z.enum(['tribune', 'citation']).default('tribune'),
+		kind: z.enum(['tribune', 'citation', 'interview']).default('tribune'),
 	});
 
 const publications = defineCollection({

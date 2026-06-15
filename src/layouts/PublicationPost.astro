@@ -73,7 +73,7 @@ const breadcrumbSchema = {
 				</div>
 				<div class="prose">
 					<div class="title">
-						<span class="media-badge">{kind === 'citation' ? t('publications.cited_in') : t('publications.published_in')} {media}</span>
+						<span class="media-badge">{kind === 'citation' ? t('publications.cited_in') : kind === 'interview' ? t('publications.interviewed_by') : t('publications.published_in')} {media}</span>
 						<div class="date"><FormattedDate date={pubDate} lang={lang} /></div>
 						<h1>{title}</h1>
 						{chapo && <p class="chapo">{chapo}</p>}
