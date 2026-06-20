@@ -17,6 +17,7 @@ const MEDIA_OPTIONS = [
   { value: "terra-nova", label: "Terra Nova · La Grande Conversation" },
   { value: "taiwan-insight", label: "Taiwan Insight (Univ. of Nottingham)" },
   { value: "asia-times", label: "Asia Times" },
+  { value: "samoa-observer", label: "Samoa Observer" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
