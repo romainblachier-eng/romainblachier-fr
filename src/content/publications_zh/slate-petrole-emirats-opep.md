@@ -5,7 +5,7 @@ lienCanonique: "https://www.slate.fr/monde/petrole-depart-emirats-arabes-unis-op
 kind: tribune
 title: "我在Slate.fr上的文章：阿联酋退出欧佩克的真实原因"
 description: "发表于Slate.fr，本文分析阿联酋退出欧佩克的深层原因——超越伊朗-霍尔木兹海峡战争，这是一项长达十五年的石油战略。"
-pubDate: 2026-06-22T10:00:00.000Z
+pubDate: 2026-05-16T17:00:00.000Z
 heroImage: '../../assets/slate-petrole-emirats-hero.jpg'
 ---
 

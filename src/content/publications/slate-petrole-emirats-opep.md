@@ -5,7 +5,7 @@ lienCanonique: "https://www.slate.fr/monde/petrole-depart-emirats-arabes-unis-op
 kind: tribune
 title: "Mon article sur Slate.fr : la vraie raison du départ des Émirats de l'OPEP"
 description: "Publié sur Slate.fr, cet article décrypte les véritables raisons du retrait des Émirats arabes unis de l'OPEP — au-delà de la guerre Iran-Détroit d'Ormuz, une stratégie pétrolière de quinze ans."
-pubDate: 2026-06-22T10:00:00.000Z
+pubDate: 2026-05-16T17:00:00.000Z
 heroImage: '../../assets/slate-petrole-emirats-hero.jpg'
 ---
 

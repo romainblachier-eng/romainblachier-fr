@@ -5,7 +5,7 @@ lienCanonique: "https://www.slate.fr/monde/petrole-depart-emirats-arabes-unis-op
 kind: tribune
 title: "My article on Slate.fr: the real reason behind the UAE's departure from OPEC"
 description: "Published on Slate.fr, this article examines the real reasons behind the UAE's withdrawal from OPEC — beyond the Iran-Hormuz war, a fifteen-year oil strategy."
-pubDate: 2026-06-22T10:00:00.000Z
+pubDate: 2026-05-16T17:00:00.000Z
 heroImage: '../../assets/slate-petrole-emirats-hero.jpg'
 ---
 
