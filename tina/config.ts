@@ -18,6 +18,8 @@ const MEDIA_OPTIONS = [
   { value: "taiwan-insight", label: "Taiwan Insight (Univ. of Nottingham)" },
   { value: "asia-times", label: "Asia Times" },
   { value: "samoa-observer", label: "Samoa Observer" },
+  { value: "slate-fr", label: "Slate.fr" },
+  { value: "lyonmag", label: "Lyon Mag" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
