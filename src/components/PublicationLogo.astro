@@ -17,7 +17,7 @@ const logoFile: Record<string, string> = {
 	'le-vif': 'le-vif-logo.svg',
 	'le-temps': 'le-temps-logo.jpg',
 	'new-bloom': 'new-bloom-logo.png',
-	'terra-nova': 'la-grande-conversation-logo.png',
+	'terra-nova': 'terra-nova-logo.svg',
 	'taipei-times': 'taipei-times-logo.gif',
 	'global-taiwan-institute': 'global-taiwan-institute-logo.png',
 	'taiwan-insight': 'university-of-nottingham-logo.svg',
@@ -25,11 +25,20 @@ const logoFile: Record<string, string> = {
 	telos: 'telos-eu-logo.png',
 	rti: 'rti-logo.svg',
 	'samoa-observer': 'samoa-observer-logo.svg',
+	'slate-fr': 'slate-fr-logo.png',
 	// asia-times: no asset → monogram fallback
+};
+
+// Secondary logo shown alongside the primary (e.g. Terra Nova + La Grande Conversation).
+const secondLogoFile: Record<string, string> = {
+	'terra-nova': 'la-grande-conversation-logo.svg',
 };
 
 const filename = logoFile[mediaSlug];
 const asset = filename ? files[`../assets/${filename}`] : undefined;
+
+const secondFilename = secondLogoFile[mediaSlug];
+const secondAsset = secondFilename ? files[`../assets/${secondFilename}`] : undefined;
 
 // Fallback monogram from the outlet name (e.g. "Asia Times" → "AT").
 const monogram = media
@@ -43,7 +52,12 @@ const monogram = media
 ---
 
 {
-	asset ? (
+	secondAsset ? (
+		<div class="pub-logo-pair" aria-label={media}>
+			{asset && <img class="pub-logo pub-logo--sm" src={asset.src} alt="" loading="lazy" decoding="async" />}
+			<img class="pub-logo pub-logo--sm" src={secondAsset.src} alt="" loading="lazy" decoding="async" />
+		</div>
+	) : asset ? (
 		<img class="pub-logo" src={asset.src} alt={media} width="44" height="44" loading="lazy" decoding="async" />
 	) : (
 		<span class="pub-logo pub-logo--mono" aria-hidden="true">{monogram}</span>
@@ -69,5 +83,15 @@ const monogram = media
 		font-size: 0.95rem;
 		color: rgb(var(--gray-dark));
 		background: rgba(var(--gray-light), 0.7);
+	}
+	.pub-logo-pair {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		flex-shrink: 0;
+	}
+	.pub-logo--sm {
+		width: 44px;
+		height: 36px;
 	}
 </style>
