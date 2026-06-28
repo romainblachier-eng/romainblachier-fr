@@ -27,7 +27,7 @@ export const ui = {
 		// Services
 		'services.title': "Domaines d'intervention",
 		'services.teaching.title': 'Formations & enseignement',
-		'services.teaching.desc': "Formateur depuis 2010 à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ECAM Lyon, ILERI et HEIP. Cours académiques et formations sur mesure pour organisations publiques et privées.",
+		'services.teaching.desc': "Formateur depuis 2010 à Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ECAM Lyon, ILERI et HEIP.",
 		'services.media.title': 'Médias & chroniques',
 		'services.media.desc': "Interventions TV, radio et podcasts sur l'énergie, la géopolitique et Taïwan. Analyses sourcées, accessibles au grand public.",
 		'services.speaking.title': 'Conférences & événements',
@@ -166,7 +166,7 @@ export const ui = {
 		// Services
 		'services.title': 'Areas of work',
 		'services.teaching.title': 'Training & Teaching',
-		'services.teaching.desc': "Lecturer since 2010 at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ECAM Lyon, ILERI and HEIP. Academic courses and bespoke training for public and private organizations.",
+		'services.teaching.desc': "Lecturer since 2010 at Sciences Po Paris, Grenoble École de Management, IEP Lyon, Université Lyon 1, ECAM Lyon, ILERI and HEIP.",
 		'services.media.title': 'Media & Commentary',
 		'services.media.desc': "TV, radio and podcast appearances on energy, geopolitics and Taiwan. Well-sourced analysis, accessible to a broad audience.",
 		'services.speaking.title': 'Conferences & Events',
@@ -305,7 +305,7 @@ export const ui = {
 		// Services
 		'services.title': '服務範疇',
 		'services.teaching.title': '課程與培訓',
-		'services.teaching.desc': '自 2010 年起任教於巴黎政治學院、格勒諾布爾管理學院、里昂政治學院、里昂第一大學、ECAM Lyon、ILERI 與 HEIP。學術課程及為公私機構量身打造的培訓。',
+		'services.teaching.desc': '自 2010 年起任教於巴黎政治學院、格勒諾布爾管理學院、里昂政治學院、里昂第一大學、ECAM Lyon、ILERI 與 HEIP。',
 		'services.media.title': '媒體與評論',
 		'services.media.desc': '電視、廣播與 podcast 節目，主題涵蓋能源、地緣政治與台灣。有憑有據、面向大眾的分析。',
 		'services.speaking.title': '演講與活動',
