@@ -3,7 +3,7 @@
 ## Identité et contexte
 
 Romain Blachier — Expert énergie & géopolitique, enseignant, chroniqueur.
-- Enseignant depuis 2010 : Sciences Po Paris, EM Lyon, IEP Lyon, ILERI, HEIP
+- Enseignant depuis 2010 : Sciences Po Paris, EM Lyon, ILERI, HEIP
 - 18 ans dans le secteur de l'énergie (Compagnie Nationale du Rhône, 3e producteur français d'électricité)
 - 12 ans élu à la Métropole de Lyon (culture, numérique, international)
 - Président de l'Association France-Formosa
