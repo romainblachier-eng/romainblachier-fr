@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="Géothermie et éolien en mer à Taïwan">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef3f6"/>
+      <stop offset="0.55" stop-color="#dbe6ec"/>
+      <stop offset="1" stop-color="#c3d6df"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fa9bd"/>
+      <stop offset="1" stop-color="#4d7f96"/>
+    </linearGradient>
+    <linearGradient id="mtnBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#88a08a"/>
+      <stop offset="1" stop-color="#6d8a74"/>
+    </linearGradient>
+    <linearGradient id="mtnFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c7a5f"/>
+      <stop offset="1" stop-color="#41603f"/>
+    </linearGradient>
+    <linearGradient id="steam" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <!-- Sun -->
+  <circle cx="905" cy="150" r="58" fill="#f4ede0" opacity="0.85"/>
+  <circle cx="905" cy="150" r="58" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Back mountains (left, geothermal side) -->
+  <path d="M0 340 L120 235 L250 320 L360 250 L470 330 L560 300 L560 600 L0 600 Z" fill="url(#mtnBack)"/>
+  <!-- Front mountains -->
+  <path d="M0 420 L90 320 L200 400 L300 330 L430 430 L560 380 L560 600 L0 600 Z" fill="url(#mtnFront)"/>
+
+  <!-- Steam plumes from geothermal vents -->
+  <g>
+    <path d="M150 400 C135 340 175 320 160 250 C150 220 185 205 172 165" stroke="url(#steam)" stroke-width="34" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <path d="M300 355 C288 300 320 285 308 235 C300 210 328 198 318 170" stroke="url(#steam)" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.75"/>
+  </g>
+
+  <!-- Geothermal plant buildings at mountain base -->
+  <g>
+    <rect x="118" y="392" width="60" height="34" rx="3" fill="#cdd3d0"/>
+    <rect x="128" y="360" width="16" height="40" rx="2" fill="#b7bfbb"/>
+    <rect x="152" y="372" width="14" height="28" rx="2" fill="#b7bfbb"/>
+    <rect x="278" y="352" width="54" height="30" rx="3" fill="#cdd3d0"/>
+    <rect x="296" y="326" width="14" height="34" rx="2" fill="#b7bfbb"/>
+  </g>
+
+  <!-- Sea (right side, overlapping to horizon) -->
+  <path d="M470 430 L1200 380 L1200 600 L470 600 Z" fill="url(#sea)"/>
+  <path d="M470 430 L1200 380 L1200 452 L470 470 Z" fill="#ffffff" opacity="0.06"/>
+
+  <!-- Subtle sea highlights -->
+  <g stroke="#ffffff" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round">
+    <line x1="640" y1="500" x2="700" y2="500"/>
+    <line x1="820" y1="470" x2="880" y2="470"/>
+    <line x1="980" y1="520" x2="1050" y2="520"/>
+    <line x1="720" y1="545" x2="800" y2="545"/>
+  </g>
+
+  <!-- Offshore wind turbines -->
+  <g fill="#f3f6f7" stroke="#e2e9ec" stroke-width="1">
+    <!-- turbine helper positions -->
+    <g transform="translate(690,300)">
+      <rect x="-3" y="0" width="6" height="150" rx="3"/>
+      <circle cx="0" cy="0" r="7"/>
+      <g stroke="#f3f6f7" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="-46"/>
+        <line x1="0" y1="0" x2="40" y2="23"/>
+        <line x1="0" y1="0" x2="-40" y2="23"/>
+      </g>
+    </g>
+    <g transform="translate(850,270) scale(1.18)">
+      <rect x="-3" y="0" width="6" height="150" rx="3"/>
+      <circle cx="0" cy="0" r="7"/>
+      <g stroke="#f3f6f7" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="-46"/>
+        <line x1="0" y1="0" x2="40" y2="23"/>
+        <line x1="0" y1="0" x2="-40" y2="23"/>
+      </g>
+    </g>
+    <g transform="translate(1035,296) scale(1.32)">
+      <rect x="-3" y="0" width="6" height="150" rx="3"/>
+      <circle cx="0" cy="0" r="7"/>
+      <g stroke="#f3f6f7" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="-46"/>
+        <line x1="0" y1="0" x2="40" y2="23"/>
+        <line x1="0" y1="0" x2="-40" y2="23"/>
+      </g>
+    </g>
+    <g transform="translate(590,330) scale(0.82)" opacity="0.85">
+      <rect x="-3" y="0" width="6" height="150" rx="3"/>
+      <circle cx="0" cy="0" r="7"/>
+      <g stroke="#f3f6f7" stroke-width="7" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="-46"/>
+        <line x1="0" y1="0" x2="40" y2="23"/>
+        <line x1="0" y1="0" x2="-40" y2="23"/>
+      </g>
+    </g>
+  </g>
+</svg>

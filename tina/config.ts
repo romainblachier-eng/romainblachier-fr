@@ -6,6 +6,7 @@ const MEDIA_OPTIONS = [
   { value: "jean-jaures", label: "Fondation Jean-Jaurès" },
   { value: "global-taiwan-institute", label: "Global Taiwan Institute" },
   { value: "udn", label: "聯合報 United Daily News" },
+  { value: "liberty-times", label: "自由時報 Liberty Times" },
   { value: "taipei-times", label: "Taipei Times" },
   { value: "rti", label: "Radio Taiwan International" },
   { value: "new-bloom", label: "New Bloom Magazine" },
