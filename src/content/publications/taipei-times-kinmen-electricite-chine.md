@@ -11,18 +11,16 @@ heroImage: '../../assets/taipei-times-logo.gif'
 
 Je publie une tribune dans le grand quotidien anglophone de Taïwan, le **[Taipei Times](https://www.taipeitimes.com)** — *« Kinmen and the law that says no »* (« Kinmen et la loi qui dit non »).
 
-## Le point de départ : une question au Parlement
+## L'utilisation de la Chine
 
-En avril, le législateur KMT Chen Yu-jen a posé une question pragmatique au Premier ministre Cho Jung-tai : pourquoi ne pas connecter le réseau électrique de Kinmen à la province chinoise du Fujian, distante de seulement 5 km ? L'économie potentielle atteindrait NT$3 milliards par an. La réponse de Cho est simple — le cadre juridique taïwanais l'interdit, et y changer quoi que ce soit nécessiterait un vote au Yuan législatif.
+Pékin intègre méthodiquement les infrastructures de Kinmen dans sa stratégie de « réunification pacifique ». Depuis 2018, 90 % de l'eau de l'archipel provient déjà du Fujian. La Chine propose désormais l'électricité, le gaz et des ponts — tout en ayant désigné le Fujian « zone de démonstration du développement intégré à travers le Détroit ». Le Conseil des Affaires continentales de Taïwan qualifie cette démarche de travail de « front uni » : normaliser la dépendance jusqu'à ce que la séparation devienne économiquement insupportable. Le précédent philippin — où State Grid Corp of China détient 40 % de l'opérateur national depuis 2008 — illustre ce que signifie céder le contrôle d'une infrastructure critique à un État qui revendique votre territoire.
 
-## La thèse : l'isolement électrique est un choix, pas une fatalité
+## L'intérêt de Kinmen
 
-L'isolement électrique de Kinmen vis-à-vis de la Chine ne tient pas à la géographie — un câble serait techniquement faisable. Il résulte de décisions politiques délibérées. Pékin poursuit ouvertement l'intégration des infrastructures depuis des années : eau (90 % des besoins de Kinmen proviennent déjà du Fujian depuis 2018), électricité, gaz, ponts. Le Conseil des Affaires continentales qualifie cette démarche de travail de « front uni » — normaliser la dépendance jusqu'à ce que la séparation devienne économiquement et socialement insupportable.
+Kinmen n'est pas Taïwan. L'archipel a échappé à la colonisation japonaise, vécu sous administration militaire jusqu'en 1992, et subi les bombardements de 1958. Deux générations ont connu la garnison comme seul employeur, école et gouvernement. Aujourd'hui, l'électricité y est chère et l'approvisionnement limité : une connexion au Fujian, à 5 km, permettrait d'économiser NT$3 milliards par an. Localement, ce n'est pas une abstraction géopolitique — c'est une facture.
 
-Le cas des Philippines — où State Grid Corp of China détient 40 % de l'opérateur national depuis 2008 — illustre ce que signifie céder le contrôle d'une infrastructure critique à un État qui revendique votre territoire.
+## La raison du refus taïwanais
 
-## La sortie : les renouvelables rendent le refus visible
-
-Refuser le réseau du Fujian est un choix national défendable, qui coûte environ NT$3 milliards par an. Taïwan devrait assumer ce prix visiblement. Des solutions existent : le National Quemoy University a calculé que 127 kW solaires sur chacun des 850 anciens camps militaires de Kinmen couvrirait 50 % des besoins, et 277 kW par site rendrait l'autonomie totale techniquement faisable. La loi qui dit non doit s'accompagner d'une politique qui montre que ce non est soutenable.
+Le cadre juridique taïwanais interdit explicitement ce type de partage d'infrastructure avec la Chine ; modifier la loi nécessiterait un vote au Yuan législatif. Mais le refus va au-delà du droit : un réseau électrique interconnecté est une infrastructure critique contrôlable à distance, impossible à stocker ni à diversifier comme une cargaison. Refuser coûte environ NT$3 milliards par an — un prix que Taïwan devrait assumer visiblement, en accélérant les renouvelables sur l'île. Kinmen a subi des décennies de bombardements pour que les autres n'aient pas à le faire ; la moindre des choses est que la nation finance sa transition énergétique.
 
 → [Lire la tribune sur le Taipei Times](https://www.taipeitimes.com/News/editorials/archives/2026/07/26/2003861379)
