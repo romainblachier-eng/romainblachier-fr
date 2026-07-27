@@ -120,8 +120,8 @@ export const ui = {
 		'latest.read': 'Lire l\'article →',
 		'latest.all': 'Toutes les publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Expert · Enseignant · Chroniqueur',
-		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur de l'énergie, spécialiste Taïwan et Indo-Pacifique. Enseignement en grandes écoles, recherche, chroniques médias.",
+		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Expertise · Enseignement · Conseil · Recherche',
+		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur de l'énergie, spécialiste Taïwan et Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
 	},
 	en: {
 		// Nav
@@ -236,8 +236,8 @@ export const ui = {
 		'latest.read': 'Read the article →',
 		'latest.all': 'All publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Energy & Geopolitics | Expert · Academic · Commentator',
-		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Academic teaching, research, media commentary.',
+		'seo.title': 'Romain Blachier — Energy & Geopolitics | Expertise · Teaching · Advisory · Research',
+		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Expertise, academic teaching, advisory, applied research.',
 	},
 	zh: {
 		// Nav
@@ -335,7 +335,7 @@ export const ui = {
 		'latest.read': '閱讀文章 →',
 		'latest.all': '所有發表 →',
 		// SEO
-		'seo.title': 'Romain Blachier — 能源與地緣政治 | 專家 · 學者 · 評論員',
-		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。頂尖院校教學、研究、媒體評論。',
+		'seo.title': 'Romain Blachier — 能源與地緣政治 | 專業 · 教學 · 顧問 · 研究',
+		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
 	},
 } as const;
