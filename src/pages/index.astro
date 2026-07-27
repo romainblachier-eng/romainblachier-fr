@@ -76,6 +76,18 @@ const recentPubs = allPubs.slice(0, 3);
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
 
+		<section class="event-banner">
+			<div class="event-banner-inner">
+				<span class="event-badge">📍 Prochaine conférence</span>
+				<div class="event-details">
+					<strong>IRIC de Yaoundé</strong>
+					<span class="event-sep">·</span>
+					<span>Mercredi 30 juillet · 14h</span>
+				</div>
+				<p class="event-topic">« Géopolitique de l'électricité en Afrique centrale : souveraineté, régulation et interconnexions »</p>
+			</div>
+		</section>
+
 		{recentPubs.length > 0 && (
 		<section class="latest-article">
 			<div class="latest-inner latest-inner--grid">
@@ -243,6 +255,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<h3>{t('references.teaching')}</h3>
 						<ul>
 							<li>EM Lyon Business School</li>
+							<li>Grenoble École de Management</li>
 							<li>Centrale Lyon</li>
 							<li>INSEEC Grande Écoles</li>
 							<li>Faculté Catholique de Lille</li>
