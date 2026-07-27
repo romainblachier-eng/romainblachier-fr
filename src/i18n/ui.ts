@@ -13,7 +13,7 @@ export const ui = {
 		'nav.blog': 'Articles et blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Énergie & géopolitique · Enseignant · Chercheur · Formateur · Chroniqueur',
+		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
 		'hero.pitch': "Marchés de l'énergie, géopolitique, Taïwan et Indo-Pacifique. Dix-huit ans dans le secteur de l'énergie, enseignant à EM Lyon et Centrale Lyon depuis 2010, expert associé à la Fondation Jean-Jaurès.",
 		'hero.cta': 'Me contacter',
 		// About
@@ -120,7 +120,7 @@ export const ui = {
 		'latest.read': 'Lire l\'article →',
 		'latest.all': 'Toutes les publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Expertise · Enseignement · Conseil · Recherche',
+		'seo.title': 'Romain Blachier — Énergie & géopolitique : expertise, enseignement, conseil, recherche',
 		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur de l'énergie, spécialiste Taïwan et Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
 	},
 	en: {
@@ -129,7 +129,7 @@ export const ui = {
 		'nav.blog': 'Articles & Blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Energy & Geopolitics · Lecturer · Researcher · Trainer · Media Commentator',
+		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
 		'hero.pitch': "Energy markets, geopolitics, Taiwan and the Indo-Pacific. Eighteen years in the energy sector, lecturer at EM Lyon and Centrale Lyon since 2010, associate fellow at the Fondation Jean-Jaurès.",
 		'hero.cta': 'Get in touch',
 		// About
@@ -236,7 +236,7 @@ export const ui = {
 		'latest.read': 'Read the article →',
 		'latest.all': 'All publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Energy & Geopolitics | Expertise · Teaching · Advisory · Research',
+		'seo.title': 'Romain Blachier — Energy & Geopolitics: expertise, teaching, advisory, research',
 		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Expertise, academic teaching, advisory, applied research.',
 	},
 	zh: {
@@ -245,7 +245,7 @@ export const ui = {
 		'nav.blog': '文章與部落格',
 		'nav.contact': '聯絡',
 		// Hero
-		'hero.subtitle': '能源與地緣政治 · 講師 · 研究者 · 培訓師 · 媒體評論員',
+		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
 		'hero.pitch': '能源市場、地緣政治、台灣與印太。能源領域十八年資歷，2010 年起任教於里昂高商與里昂中央理工，讓·饒勒斯基金會副研究員。',
 		'hero.cta': '與我聯絡',
 		// About
@@ -335,7 +335,7 @@ export const ui = {
 		'latest.read': '閱讀文章 →',
 		'latest.all': '所有發表 →',
 		// SEO
-		'seo.title': 'Romain Blachier — 能源與地緣政治 | 專業 · 教學 · 顧問 · 研究',
+		'seo.title': 'Romain Blachier — 能源與地緣政治：專業、教學、顧問、研究',
 		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
 	},
 } as const;
