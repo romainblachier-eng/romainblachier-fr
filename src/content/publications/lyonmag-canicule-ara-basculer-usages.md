@@ -1,6 +1,6 @@
 ---
 media: "Lyon Mag"
-mediaSlug: lyonmag
+mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152699/canicule-en-auvergne-rhone-alpes-le-vrai-defi-n-est-plus-de-produire-propre-mais-de-basculer-les-usages"
 kind: tribune
 title: "Canicule : en Auvergne-Rhône-Alpes, le vrai défi n'est plus de produire propre, mais de basculer les usages — Lyon Mag"
