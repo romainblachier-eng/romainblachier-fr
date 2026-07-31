@@ -1,11 +1,11 @@
 ---
 media: "Revue Conflits"
 mediaSlug: revue-conflits
-lienCanonique: "https://www.revueconflits.com/"
+lienCanonique: "https://www.revueconflits.com/la-chine-est-elle-communiste-autopsie-dun-marxisme-sans-proletariat/"
 kind: tribune
 title: "Mon article dans Revue Conflits : La Chine est-elle communiste ?"
 description: "Publié dans Revue Conflits n°64 (dossier « Chine, un défi pour l'Europe »), cet article démontre que le PCC est plus léniniste que marxiste — et que le paradoxe ultime est que le parti de Xi Jinping ressemble davantage au Kuomintang des années 1970 qu'au PCC de Mao."
-pubDate: 2026-07-03T10:00:00.000Z
+pubDate: 2026-07-04T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 

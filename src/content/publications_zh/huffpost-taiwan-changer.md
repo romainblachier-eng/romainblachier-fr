@@ -5,7 +5,7 @@ lienCanonique: "https://www.huffingtonpost.fr/actualites/article/pourquoi-taiwan
 kind: tribune
 title: "我在《Le HuffPost》的文章：為何台灣將走向改變"
 description: "刊於《Le HuffPost》，本文分析推動台灣深刻轉變的政治、經濟與地緣政治力量。"
-pubDate: 2016-01-18T10:00:00.000Z
+pubDate: 2016-02-18T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'
 ---
 

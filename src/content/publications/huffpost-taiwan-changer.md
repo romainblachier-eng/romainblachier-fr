@@ -5,7 +5,7 @@ lienCanonique: "https://www.huffingtonpost.fr/actualites/article/pourquoi-taiwan
 kind: tribune
 title: "Mon article dans Le HuffPost : Pourquoi Taïwan va changer"
 description: "Publié dans Le HuffPost, cet article analyse les forces politiques, économiques et géopolitiques qui annoncent une transformation profonde de Taïwan."
-pubDate: 2016-01-18T10:00:00.000Z
+pubDate: 2016-02-18T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'
 ---
 
