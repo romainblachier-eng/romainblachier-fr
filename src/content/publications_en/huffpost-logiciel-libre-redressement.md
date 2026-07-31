@@ -5,7 +5,7 @@ lienCanonique: "https://www.huffingtonpost.fr/actualites/article/le-logiciel-lib
 kind: tribune
 title: "My article in Le HuffPost: Free software, a tool for national productive recovery"
 description: "Published in Le HuffPost, this article argues for making free and open-source software a strategic lever for France's industrial and economic renewal."
-pubDate: 2013-01-15T10:00:00.000Z
+pubDate: 2014-01-31T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'
 ---
 

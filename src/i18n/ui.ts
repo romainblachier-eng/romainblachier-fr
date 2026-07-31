@@ -13,16 +13,16 @@ export const ui = {
 		'nav.blog': 'Articles et blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Énergie & géopolitique · Formateur & Enseignant · Chroniqueur · Communication',
+		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
 		'hero.pitch': "Énergie, réseaux, souveraineté — et ce que cela change en géopolitique, en particulier à Taïwan et dans l'Indo-Pacifique. J'enseigne, j'écris et j'interviens auprès d'écoles, de rédactions et d'institutions. Dix-huit ans dans le secteur de l'énergie, expert associé à la Fondation Jean-Jaurès.",
 		'hero.cta': 'Me contacter',
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique paraissent souvent techniques et réservées aux spécialistes. Mon travail consiste à les rendre claires et utiles — pour des étudiants, une rédaction ou une équipe de direction.",
 		'about.p2': "Cette approche s'appuie sur l'expérience : dix-huit ans dans le secteur de l'énergie et douze ans de mandat à la Métropole de Lyon. Les marchés, les réseaux et la décision publique, je les ai pratiqués avant de les enseigner.",
-		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie régulièrement dans des think tanks et dans la presse, en France et à l'étranger. Je m'intéresse en particulier à la coopération scientifique et technologique comme levier de puissance.",
+		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie régulièrement dans des revues spécialisées et dans la presse, en France et à l'étranger. Mes champs de recherche couvrent les systèmes électriques africains, la géopolitique pétrolière, la souveraineté énergétique de Taïwan et la paradiplomatie.",
 		'about.p4': "J'enseigne depuis 2010 — en grandes écoles, à l'université et en formation continue, en français, en anglais et en espagnol. Les établissements où je suis intervenu au fil de ces seize années sont listés plus bas ; les cours changent d'une année à l'autre.",
-		'about.p5': "Ce regard s'est aussi construit sur le terrain : au Cambodge, en Ukraine, et en 2026 au Cameroun, sur la réforme du secteur électrique.",
+		'about.p5': "Ce regard s'est aussi construit sur le terrain — au Cameroun, au Cambodge, en Ukraine et à Taïwan. En 2026, une mission à Yaoundé sur la réforme du secteur électrique.",
 		'about.p6': "Je mène ces activités en parallèle parce qu'elles se répondent. Ce qui se voit sur le terrain finit en cours, puis en article — et l'article donne généralement envie d'y retourner.",
 		// Services
 		'services.title': 'Ce que je fais',
@@ -38,7 +38,7 @@ export const ui = {
 		// Formateur section
 		'formateur.overline': 'Formateur',
 		'formateur.title': 'Seize ans de formation et d\'enseignement',
-		'formateur.intro': "De la grande école au séminaire d'entreprise, de la formation d'élus au module pour cadres dirigeants, je conçois et j'anime des formations qui rendent accessibles des sujets complexes — énergie, géopolitique, communication stratégique. Mon approche associe rigueur académique, douze ans de mandat exécutif et pédagogie concrète.",
+		'formateur.intro': "De la grande école au séminaire d'entreprise, de la formation d'élus au module pour cadres dirigeants, je conçois et j'anime des formations qui rendent accessibles des sujets complexes — énergie, géopolitique, souveraineté, communication stratégique. Mon approche associe rigueur académique, expérience de terrain en Afrique et en Asie, douze ans de mandat exécutif et pédagogie concrète.",
 		'formateur.clients': "J'interviens comme formateur pour",
 		'formateur.academic.title': 'Enseignement académique',
 		'formateur.academic.desc': "Cours magistraux, travaux dirigés et séminaires dans les grandes écoles et universités françaises. Programmes de Bachelor, Master et formation continue.",
@@ -127,8 +127,8 @@ export const ui = {
 		'latest.read': 'Lire l\'article →',
 		'latest.all': 'Toutes les publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Énergie & Géopolitique | Conférencier & Formateur',
-		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur énergie, spécialiste Taïwan et Indo-Pacifique. Conférences, formations grandes écoles, chroniques médias.",
+		'seo.title': 'Romain Blachier — Énergie & géopolitique : expertise, enseignement, conseil, recherche',
+		'seo.description': "Énergie et géopolitique. 18 ans dans le secteur de l'énergie, spécialiste Taïwan et Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
 	},
 	en: {
 		// Nav
@@ -136,16 +136,16 @@ export const ui = {
 		'nav.blog': 'Articles & Blog',
 		'nav.contact': 'Contact',
 		// Hero
-		'hero.subtitle': 'Energy & Geopolitics · Trainer & Lecturer · Media Commentator · Communications',
+		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
 		'hero.pitch': "Energy, grids and sovereignty — and what they change geopolitically, particularly in Taiwan and the Indo-Pacific. I teach, I write, and I work with schools, newsrooms and institutions. Eighteen years in the energy sector, associate fellow at the Fondation Jean-Jaurès.",
 		'hero.cta': 'Get in touch',
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics often look technical and reserved for specialists. My work is to make them clear and useful — for students, a newsroom or an executive team.",
 		'about.p2': "This approach is grounded in experience: eighteen years in the energy sector and twelve years in elected office in the Lyon metropolitan area. Markets, grids and public decision-making — I practised them before teaching them.",
-		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish regularly with think tanks and in the press, in France and abroad, with a particular interest in scientific and technological cooperation as a lever of power.",
+		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish regularly in specialised journals and in the press, in France and abroad. My research covers African power systems, oil geopolitics, Taiwan's energy sovereignty, and paradiplomacy.",
 		'about.p4': "I have been teaching since 2010 — in business schools, universities and executive education, in French, English and Spanish. The institutions I have taught at over those sixteen years are listed below; the courses change from one year to the next.",
-		'about.p5': "This perspective was also shaped in the field: in Cambodia, in Ukraine, and in 2026 in Cameroon, on the reform of the electricity sector.",
+		'about.p5': "This perspective was also shaped in the field — in Cameroon, Cambodia, Ukraine and Taiwan. In 2026, a mission in Yaoundé on electricity sector reform.",
 		'about.p6': "I run these in parallel because they answer one another. What you see in the field ends up in a lecture, then in an article — and the article usually makes you want to go back.",
 		// Services
 		'services.title': 'What I do',
@@ -161,7 +161,7 @@ export const ui = {
 		// Trainer section
 		'formateur.overline': 'Trainer',
 		'formateur.title': 'Sixteen years of training and teaching',
-		'formateur.intro': "From business schools to corporate seminars, from elected officials training to executive workshops, I design and deliver training that makes complex subjects accessible — energy, geopolitics, strategic communications. My approach combines academic rigor, twelve years of executive public office and hands-on pedagogy.",
+		'formateur.intro': "From business schools to corporate seminars, from elected officials training to executive workshops, I design and deliver training that makes complex subjects accessible — energy, geopolitics, sovereignty, strategic communications. My approach combines academic rigour, field experience in Africa and Asia, twelve years of executive public office and hands-on pedagogy.",
 		'formateur.clients': "Organizations I train for",
 		'formateur.academic.title': 'Academic teaching',
 		'formateur.academic.desc': "Lectures, tutorials and seminars at leading French universities and business schools. Bachelor, Master and executive education programs.",
@@ -250,8 +250,8 @@ export const ui = {
 		'latest.read': 'Read the article →',
 		'latest.all': 'All publications →',
 		// SEO
-		'seo.title': 'Romain Blachier — Energy & Geopolitics | Speaker & Lecturer',
-		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Conferences, university lectures, media commentary.',
+		'seo.title': 'Romain Blachier — Energy & Geopolitics: expertise, teaching, advisory, research',
+		'seo.description': 'Energy and geopolitics. 18 years in the energy sector, Taiwan and Indo-Pacific specialist. Expertise, academic teaching, advisory, applied research.',
 	},
 	zh: {
 		// Nav
@@ -259,16 +259,16 @@ export const ui = {
 		'nav.blog': '文章與部落格',
 		'nav.contact': '聯絡',
 		// Hero
-		'hero.subtitle': '能源與地緣政治 · 講師 · 媒體評論員 · 傳播',
+		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
 		'hero.pitch': '能源、電網與主權，以及它們在地緣政治上的意涵——尤其是台灣與印太。我教學、我寫作，也與院校、媒體與機構合作。能源領域十八年資歷，讓·饒勒斯基金會副研究員。',
 		'hero.cta': '與我聯絡',
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治往往顯得技術性強、僅屬專家領域。我的工作是讓這些主題變得清晰而實用——無論對象是學生、編輯部或管理團隊。',
 		'about.p2': '這一方法建立在實務經驗之上：在能源產業工作十八年，並在大里昂都會區擔任民選代表十二年。市場、電網與公共決策，我先實踐，而後教學。',
-		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我定期為智庫與法國及海外媒體撰稿，尤其關注以科學與技術合作作為國力槓桿。',
+		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我定期在學術期刊與法國及海外媒體發表。研究領域涵蓋非洲電力系統整合、石油地緣政治、台灣能源主權與副外交。',
 		'about.p4': '我自 2010 年起任教——在高等學院、大學與在職培訓課程，以法語、英語與西班牙語授課。這十六年間曾任教的機構列於下方；每年開設的課程並不相同。',
-		'about.p5': '這一視野也在田野中形成：柬埔寨、烏克蘭，以及 2026 年在喀麥隆針對電力部門改革的實地工作。',
+		'about.p5': '這一視野也在田野中形成——喀麥隆、柬埔寨、烏克蘭與台灣。2026 年在雅溫得進行電力部門改革的實地工作。',
 		'about.p6': '我同時做這幾件事，是因為它們彼此呼應。田野裡看到的東西會進入課堂，接著寫成文章——而文章通常又讓人想再回去看一次。',
 		// Services
 		'formateur.clients': '我為以下機構授課與培訓',
@@ -357,7 +357,7 @@ export const ui = {
 		'latest.read': '閱讀文章 →',
 		'latest.all': '所有發表 →',
 		// SEO
-		'seo.title': 'Romain Blachier — 能源與地緣政治 | 講者與講師',
-		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。研討會、頂尖院校培訓、媒體評論。',
+		'seo.title': 'Romain Blachier — 能源與地緣政治：專業、教學、顧問、研究',
+		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
 	},
 } as const;

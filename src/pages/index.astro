@@ -42,8 +42,8 @@ const recentPubs = allPubs.slice(0, 3);
 					"name": "Romain Blachier",
 					"givenName": "Romain",
 					"familyName": "Blachier",
-					"jobTitle": "Formateur & Conférencier — Énergie & Géopolitique",
-					"description": "Formateur et conférencier en énergie et géopolitique. 18 ans d'expérience dans le secteur de l'énergie. Formations sur mesure et enseignement en grandes écoles.",
+					"jobTitle": "Expert Énergie & Géopolitique — Enseignement, Conseil & Recherche",
+					"description": "Expert en énergie et géopolitique. 18 ans dans le secteur de l'énergie, enseignant en grandes écoles, consultant en gouvernance, chercheur, chroniqueur médias.",
 					"url": "https://romainblachier.fr/",
 					"sameAs": [
 						"https://www.linkedin.com/in/romainblachier",
@@ -75,6 +75,18 @@ const recentPubs = allPubs.slice(0, 3);
 			ctaHref="#contact"
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
+
+		<section class="event-banner">
+			<div class="event-banner-inner">
+				<span class="event-badge">📍 Prochaine conférence</span>
+				<div class="event-details">
+					<strong>IRIC de Yaoundé</strong>
+					<span class="event-sep">·</span>
+					<span>Mercredi 30 juillet · 14h</span>
+				</div>
+				<p class="event-topic">« Géopolitique de l'électricité en Afrique centrale : souveraineté, régulation et interconnexions »</p>
+			</div>
+		</section>
 
 		{recentPubs.length > 0 && (
 		<section class="latest-article">
@@ -251,15 +263,12 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="ref-col">
 						<h3>{t('references.teaching')}</h3>
 						<ul>
-							<li>Sciences Po Paris</li>
 							<li>EM Lyon Business School</li>
 							<li>Grenoble École de Management</li>
-							<li>Université Lyon 2</li>
-							<li>Université Lyon 1</li>
+							<li>Centrale Lyon</li>
 							<li>INSEEC Grande Écoles</li>
-							<li>ECAM Lyon</li>
-							<li>Faculté Catholique de Lyon</li>
 							<li>Faculté Catholique de Lille</li>
+							<li>Université Lyon 1</li>
 							<li>ILERI</li>
 							<li>HEIP</li>
 						</ul>
