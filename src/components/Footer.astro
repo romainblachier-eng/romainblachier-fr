@@ -5,29 +5,154 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const today = new Date();
 
-const institutional = [
+const navLinks = [
+	{ href: getLocalePath(lang, '/'), label: t('nav.home') },
+	{ href: getLocalePath(lang, '/publications'), label: t('nav.publications') },
 	{ href: getLocalePath(lang, '/a-propos'), label: t('footer.about') },
+	{ href: getLocalePath(lang, '/contact'), label: t('footer.contact') },
+];
+
+const institutional = [
 	{ href: getLocalePath(lang, '/methodologie'), label: t('footer.methodology') },
 	{ href: getLocalePath(lang, '/corrections'), label: t('footer.corrections') },
 	{ href: getLocalePath(lang, '/mentions-legales'), label: t('footer.legal') },
-	{ href: getLocalePath(lang, '/contact'), label: t('footer.contact') },
+];
+
+const elsewhere = [
+	{ href: 'https://www.linkedin.com/in/romainblachier/', label: 'LinkedIn' },
+	{ href: 'https://sciencespo.academia.edu/RomainBlachier', label: 'Academia' },
+	{ href: 'https://orcid.org/0009-0008-3178-1600', label: 'ORCID' },
+	{ href: 'https://france-formosa.org', label: 'France-Formosa' },
 ];
 ---
 
 <footer class="site-footer">
-	<nav class="footer-links" aria-label={t('footer.about')}>
-		{institutional.map((l) => <a href={l.href}>{l.label}</a>)}
-	</nav>
-	<p>&copy; {today.getFullYear()} Romain Blachier · <a href="https://www.jean-jaures.org/expert/romain-blachier/" target="_blank" rel="me noopener noreferrer">{t('footer.jaures')}</a> · <a href="https://france-formosa.org" target="_blank" rel="noopener noreferrer">France-Formosa</a> · <a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">ORCID</a></p>
+	<div class="footer-inner">
+		<div class="footer-brand">
+			<span class="footer-name">Romain Blachier</span>
+			<p class="footer-tagline">{t('footer.tagline')}</p>
+			<a
+				class="footer-affil"
+				href="https://www.jean-jaures.org/expert/romain-blachier/"
+				target="_blank"
+				rel="me noopener noreferrer"
+			>{t('footer.jaures')}</a>
+			<a class="footer-mail" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+		</div>
+
+		<nav class="footer-col" aria-label={t('footer.nav')}>
+			<h2 class="footer-heading">{t('footer.nav')}</h2>
+			<ul>{navLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+		</nav>
+
+		<nav class="footer-col" aria-label={t('footer.institutional')}>
+			<h2 class="footer-heading">{t('footer.institutional')}</h2>
+			<ul>{institutional.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+		</nav>
+
+		<nav class="footer-col" aria-label={t('footer.elsewhere')}>
+			<h2 class="footer-heading">{t('footer.elsewhere')}</h2>
+			<ul>
+				{elsewhere.map((l) => (
+					<li><a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a></li>
+				))}
+			</ul>
+		</nav>
+	</div>
+
+	<div class="footer-bottom">
+		<p>&copy; {today.getFullYear()} Romain Blachier · {t('footer.rights')}</p>
+	</div>
 </footer>
 
 <style>
-	.footer-links {
+	.site-footer {
+		background: var(--bg);
+		color: var(--text);
+		border-top: 1px solid var(--line);
+		padding: 4.5rem 2rem 0;
+		font-size: .875rem;
+	}
+	.footer-inner {
+		max-width: var(--max);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1.7fr 1fr 1fr 1fr;
+		gap: 3rem 3rem;
+		padding-bottom: 3.5rem;
+	}
+
+	.footer-brand {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem 1.25rem;
-		justify-content: center;
-		margin-bottom: 0.75rem;
-		font-size: 0.9rem;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: .7rem;
+		max-width: 34ch;
+	}
+	.footer-name {
+		font-family: var(--display);
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: var(--ink);
+		letter-spacing: -.02em;
+		line-height: 1.1;
+	}
+	.footer-tagline {
+		line-height: 1.65;
+		color: var(--muted);
+	}
+	.footer-affil,
+	.footer-mail {
+		text-decoration: none;
+		color: var(--ink);
+		border-bottom: 1px solid var(--faint);
+		padding-bottom: 1px;
+		transition: border-color .15s;
+	}
+	.footer-affil:hover,
+	.footer-mail:hover { border-color: var(--ink) }
+
+	/* Colophon headings: serif italic rather than tracked-out capitals. */
+	.footer-heading {
+		font-family: var(--display);
+		font-style: italic;
+		font-size: .95rem;
+		font-weight: 400;
+		color: var(--ink);
+		letter-spacing: 0;
+		text-transform: none;
+		margin-bottom: .9rem;
+	}
+	.footer-col ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+	}
+	.footer-col a {
+		text-decoration: none;
+		color: var(--text);
+		transition: color .15s;
+	}
+	.footer-col a:hover { color: var(--ink) }
+
+	.footer-bottom {
+		max-width: var(--max);
+		margin: 0 auto;
+		border-top: 1px solid var(--line);
+		padding: 1.5rem 0 2rem;
+	}
+	.footer-bottom p {
+		font-size: .78rem;
+		color: var(--muted);
+	}
+
+	@media (max-width: 900px) {
+		.footer-inner { grid-template-columns: 1fr 1fr; gap: 2.5rem }
+		.footer-brand { grid-column: 1 / -1 }
+	}
+	@media (max-width: 520px) {
+		.site-footer { padding: 3rem 1.5rem 0 }
+		.footer-inner { grid-template-columns: 1fr; gap: 2.25rem }
 	}
 </style>

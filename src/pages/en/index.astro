@@ -119,28 +119,37 @@ const recentPubs = allPubs.slice(0, 3);
 			<div class="services-inner">
 				<div class="section-overline" style="text-align:center">Services</div>
 				<h2 class="section-title">{t('services.title')}</h2>
-				<div class="services-grid">
-					<div class="service-card">
-						<div class="service-icon">🎓</div>
-						<h3>{t('services.teaching.title')}</h3>
-						<p>{t('services.teaching.desc')}</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">📡</div>
-						<h3>{t('services.media.title')}</h3>
-						<p>{t('services.media.desc')}</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">🎤</div>
-						<h3>{t('services.speaking.title')}</h3>
-						<p>{t('services.speaking.desc')}</p>
-					</div>
-					<div class="service-card">
-						<div class="service-icon">🧭</div>
-						<h3>{t('services.comms.title')}</h3>
-						<p>{t('services.comms.desc')}</p>
-					</div>
-				</div>
+				<p class="services-intro">{t('services.intro')}</p>
+				<ol class="services-list">
+					<li class="service-item">
+						<span class="service-num" aria-hidden="true">01</span>
+						<div class="service-body">
+							<h3>{t('services.teaching.title')}</h3>
+							<p>{t('services.teaching.desc')}</p>
+						</div>
+					</li>
+					<li class="service-item">
+						<span class="service-num" aria-hidden="true">02</span>
+						<div class="service-body">
+							<h3>{t('services.writing.title')}</h3>
+							<p>{t('services.writing.desc')}</p>
+						</div>
+					</li>
+					<li class="service-item">
+						<span class="service-num" aria-hidden="true">03</span>
+						<div class="service-body">
+							<h3>{t('services.expertise.title')}</h3>
+							<p>{t('services.expertise.desc')}</p>
+						</div>
+					</li>
+					<li class="service-item">
+						<span class="service-num" aria-hidden="true">04</span>
+						<div class="service-body">
+							<h3>{t('services.research.title')}</h3>
+							<p>{t('services.research.desc')}</p>
+						</div>
+					</li>
+				</ol>
 			</div>
 		</section>
 
@@ -181,21 +190,25 @@ const recentPubs = allPubs.slice(0, 3);
 
 		<section class="references">
 			<div class="references-inner">
-				<div class="section-overline" style="text-align:center">Track record</div>
+				<div class="section-overline" style="text-align:center">Background</div>
 				<h2 class="section-title">{t('references.title')}</h2>
 				<div class="ref-grid">
 					<div class="ref-col">
 						<h3>{t('references.teaching')}</h3>
 						<ul>
+							<li>Sciences Po Paris</li>
+							<li>EM Lyon Business School</li>
 							<li>Grenoble École de Management</li>
+							<li>Université Lyon 2</li>
+							<li>Université Lyon 1</li>
 							<li>INSEEC Grande Écoles</li>
-						<li>Faculté Catholique de Lyon</li>
-						<li>Faculté Catholique de Lille</li>
-						<li>Université Lyon 1</li>
 							<li>ECAM Lyon</li>
+							<li>Faculté Catholique de Lyon</li>
+							<li>Faculté Catholique de Lille</li>
 							<li>ILERI</li>
 							<li>HEIP</li>
 						</ul>
+						<p class="ref-note">{t('references.teaching.note')}</p>
 					</div>
 					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>

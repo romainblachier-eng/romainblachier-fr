@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Circle } from "lucide-react";
-import { cn } from "../../lib/utils";
+import { ArrowUpRight, Circle } from "lucide-react";
 
 function ElegantShape({
     className,
@@ -37,7 +36,7 @@ function ElegantShape({
                 ease: [0.23, 0.86, 0.39, 0.96],
                 opacity: { duration: 1.2 },
             }}
-            className={cn("absolute", className)}
+            className={`absolute ${className ?? ""}`}
         >
             <motion.div
                 animate={{
@@ -55,15 +54,7 @@ function ElegantShape({
                 className="relative"
             >
                 <div
-                    className={cn(
-                        "absolute inset-0 rounded-full",
-                        "bg-gradient-to-r to-transparent",
-                        gradient,
-                        "backdrop-blur-[2px] border-2 border-white/[0.15]",
-                        "shadow-[0_8px_32px_0_rgba(255,255,255,0.1)]",
-                        "after:absolute after:inset-0 after:rounded-full",
-                        "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]"
-                    )}
+                    className={`absolute inset-0 rounded-full bg-gradient-to-r to-transparent ${gradient} border border-[#12304a]/[0.12] shadow-[0_8px_32px_0_rgba(18,48,74,0.08)]`}
                 />
             </motion.div>
         </motion.div>
@@ -103,8 +94,8 @@ function HeroGeometric({
     };
 
     return (
-        <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
+        <section className="hero-new relative min-h-[680px] w-full flex items-center overflow-hidden bg-[#f5f3ee]">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#dce8ed]/70 via-transparent to-[#f4d8cf]/60 blur-3xl" />
 
             <div className="absolute inset-0 overflow-hidden">
                 <ElegantShape
@@ -112,7 +103,7 @@ function HeroGeometric({
                     width={600}
                     height={140}
                     rotate={12}
-                    gradient="from-indigo-500/[0.15]"
+                    gradient="from-[#7b9cac]/[0.18]"
                     className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
                 />
 
@@ -121,7 +112,7 @@ function HeroGeometric({
                     width={500}
                     height={120}
                     rotate={-15}
-                    gradient="from-rose-500/[0.15]"
+                    gradient="from-[#d9826b]/[0.18]"
                     className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
                 />
 
@@ -130,7 +121,7 @@ function HeroGeometric({
                     width={300}
                     height={80}
                     rotate={-8}
-                    gradient="from-violet-500/[0.15]"
+                    gradient="from-[#e0b35a]/[0.18]"
                     className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
                 />
 
@@ -139,7 +130,7 @@ function HeroGeometric({
                     width={200}
                     height={60}
                     rotate={20}
-                    gradient="from-amber-500/[0.15]"
+                    gradient="from-[#7b9cac]/[0.14]"
                     className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
                 />
 
@@ -148,22 +139,22 @@ function HeroGeometric({
                     width={150}
                     height={40}
                     rotate={-25}
-                    gradient="from-cyan-500/[0.15]"
+                    gradient="from-[#d9826b]/[0.14]"
                     className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
                 />
             </div>
 
-            <div className="relative z-10 container mx-auto px-4 md:px-6">
-                <div className="max-w-3xl mx-auto text-center">
+            <div className="relative z-10 container mx-auto px-6 md:px-10">
+                <div className="max-w-4xl mx-auto text-center">
                     <motion.div
                         custom={0}
                         variants={fadeUpVariants}
                         initial="hidden"
                         animate="visible"
-                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/70 border border-[#12304a]/[0.12] mb-8 md:mb-10"
                     >
                         <Circle className="h-2 w-2 fill-rose-500/80" />
-                        <span className="text-sm text-white/60 tracking-wide">
+                        <span className="text-xs uppercase tracking-[0.18em] text-[#12304a]/70 font-semibold">
                             {badge}
                         </span>
                     </motion.div>
@@ -174,15 +165,13 @@ function HeroGeometric({
                         initial="hidden"
                         animate="visible"
                     >
-                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
+                        <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-6 md:mb-8 tracking-[-0.06em] leading-[0.9]">
+                            <span className="text-[#12304a]">
                                 {title1}
                             </span>
                             <br />
                             <span
-                                className={cn(
-                                    "bg-clip-text text-transparent bg-gradient-to-r from-white/90 via-white/60 to-white/90"
-                                )}
+                                className="text-[#d9826b]"
                             >
                                 {title2}
                             </span>
@@ -196,7 +185,7 @@ function HeroGeometric({
                             initial="hidden"
                             animate="visible"
                         >
-                            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-[#12304a]/70 mb-8 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
                                 {description}
                             </p>
                         </motion.div>
@@ -213,15 +202,15 @@ function HeroGeometric({
                             {ctaHref && ctaLabel && (
                                 <a
                                     href={ctaHref}
-                                    className="inline-flex items-center px-6 py-3 rounded-full bg-white text-black font-medium text-sm hover:bg-white/90 transition-colors"
+                                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#12304a] text-white font-medium text-sm hover:bg-[#1d496b] transition-colors shadow-lg shadow-[#12304a]/15"
                                 >
-                                    {ctaLabel}
+                                    {ctaLabel}<ArrowUpRight size={16} aria-hidden="true" />
                                 </a>
                             )}
                             {secondaryHref && secondaryLabel && (
                                 <a
                                     href={secondaryHref}
-                                    className="inline-flex items-center px-6 py-3 rounded-full border border-white/20 text-white/70 font-medium text-sm hover:bg-white/[0.05] transition-colors"
+                                    className="inline-flex items-center px-6 py-3 rounded-full border border-[#12304a]/20 text-[#12304a]/75 font-medium text-sm hover:bg-white/60 transition-colors"
                                 >
                                     {secondaryLabel}
                                 </a>
@@ -231,8 +220,8 @@ function HeroGeometric({
                 </div>
             </div>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
-        </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#f5f3ee]/70 via-transparent to-[#f5f3ee]/20 pointer-events-none" />
+        </section>
     );
 }
 
