@@ -5,7 +5,7 @@ lienCanonique: "https://english.cw.com.tw/article/article.action?id=4772"
 kind: tribune
 title: "為什麼過低的電價長遠來看可能傷害台灣 — 天下雜誌 CommonWealth"
 description: "在台灣首屈一指的財經媒體《天下雜誌》（CommonWealth Magazine）發表的評論：台灣人為偏低的電價看似工業資產，但電價與真實成本之間的落差並非補貼——而是一筆債務。台電虧損創紀錄、再生能源投資停滯、AI 帶動的需求激增。"
-pubDate: 2026-05-22T09:00:00.000Z
+pubDate: 2026-05-15T09:00:00.000Z
 heroImage: ../../assets/energy-infrastructure.jpg
 ---
 

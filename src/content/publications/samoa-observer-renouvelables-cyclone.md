@@ -5,7 +5,7 @@ lienCanonique: "https://www.samoaobserver.ws/category/op_ed/120503"
 kind: tribune
 title: "Pour les Samoa, les renouvelables sont le bon pari — à condition de résister aux cyclones — Samoa Observer"
 description: "Tribune dans le Samoa Observer : pour les Samoa, le passage aux énergies renouvelables est économiquement justifié, mais sa réussite dépend de leur résilience aux cyclones, de la gouvernance et de la formation locale."
-pubDate: 2026-06-20T12:00:00.000Z
+pubDate: 2026-06-20T20:00:00.000Z
 ---
 
 Je publie une tribune dans le **[Samoa Observer](https://www.samoaobserver.ws/category/op_ed/120503)**, le principal quotidien indépendant des Samoa. Fondé en 1978 et basé à Apia, c'est l'un des titres de référence du Pacifique insulaire, reconnu pour son indépendance éditoriale et son attachement à la liberté de la presse dans la région. Il paraît en anglais et en samoan.

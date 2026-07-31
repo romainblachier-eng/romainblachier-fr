@@ -5,7 +5,7 @@ lienCanonique: "https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes
 kind: tribune
 title: "我在 Telos 的文章：阿聯退出 OPEC，並非外界所想的那樣"
 description: "刊於 Telos，本文分析阿拉伯聯合大公國於 2026 年 4 月退出 OPEC——這並非突如其來的決裂，而是一項長達十五年、追求石油租金最大化策略的合乎邏輯的終點。"
-pubDate: 2026-05-23T10:00:00.000Z
+pubDate: 2026-05-12T10:00:00.000Z
 heroImage: '../../assets/telos-eu-logo-hero.jpg'
 ---
 

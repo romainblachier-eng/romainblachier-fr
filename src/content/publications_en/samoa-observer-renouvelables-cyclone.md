@@ -5,7 +5,7 @@ lienCanonique: "https://www.samoaobserver.ws/category/op_ed/120503"
 kind: tribune
 title: "For Samoa, renewables are the right bet — if they are built to survive a cyclone — Samoa Observer"
 description: "Op-ed in the Samoa Observer: for Samoa, going renewable makes clear economic sense, but success depends on cyclone resilience, governance and local training."
-pubDate: 2026-06-20T12:00:00.000Z
+pubDate: 2026-06-20T20:00:00.000Z
 ---
 
 I have an op-ed in the **[Samoa Observer](https://www.samoaobserver.ws/category/op_ed/120503)**, Samoa's main independent daily newspaper. Founded in 1978 and based in Apia, it is one of the Pacific's reference titles, known for its editorial independence and its commitment to press freedom in the region. It publishes in English and Samoan.

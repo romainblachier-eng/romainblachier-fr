@@ -5,7 +5,7 @@ lienCanonique: "https://camerounactuel.com/electricite-au-cameroun-trois-chantie
 kind: tribune
 title: "Ma tribune dans Cameroun Actuel : Électricité au Cameroun, trois chantiers pour transformer la nationalisation en réussite durable"
 description: "Publiée sur Cameroun Actuel, cette tribune analyse les conditions d'une renationalisation réussie du secteur électrique camerounais — ENEO devenue SOCADEL — et identifie trois chantiers prioritaires pour en faire une réussite durable."
-pubDate: 2026-07-18T09:00:00.000Z
+pubDate: 2026-07-18T13:10:00.000Z
 ---
 
 ## Cameroun Actuel

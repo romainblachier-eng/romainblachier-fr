@@ -5,7 +5,7 @@ lienCanonique: "https://www.samoaobserver.ws/category/op_ed/120503"
 kind: tribune
 title: "對薩摩亞而言，再生能源是正確選擇——前提是能挺過颶風 — Samoa Observer"
 description: "刊於《薩摩亞觀察報》的評論：對薩摩亞來說，發展再生能源在經濟上合情合理，但成敗取決於抗颶風韌性、治理與在地培訓。"
-pubDate: 2026-06-20T12:00:00.000Z
+pubDate: 2026-06-20T20:00:00.000Z
 ---
 
 我在**[《薩摩亞觀察報》（Samoa Observer）](https://www.samoaobserver.ws/category/op_ed/120503)**發表評論。《薩摩亞觀察報》創立於 1978 年，總部位於阿皮亞，是薩摩亞主要的獨立日報，也是太平洋島嶼地區的指標性媒體之一，以編輯獨立性與捍衛新聞自由著稱，以英文及薩摩亞文出版。
