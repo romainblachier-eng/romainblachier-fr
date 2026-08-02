@@ -32,7 +32,7 @@ export const ui = {
 		'services.writing.title': "J'écris",
 		'services.writing.desc': "Analyses et tribunes dans la presse française et internationale, notes pour think tanks, chroniques radio et télévision. C'est là que je teste ce que je crois avoir compris.",
 		'services.expertise.title': "J'expertise",
-		'services.expertise.desc': "Interventions ponctuelles auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. En 2026, une mission de terrain au Cameroun sur la réforme du secteur électrique.",
+		'services.expertise.desc': "Interventions ponctuelles auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Des missions en France, au Cameroun et à Taïwan.",
 		'services.research.title': 'Je réfléchis',
 		'services.research.desc': "Je suis expert associé à la Fondation Jean-Jaurès, et je mène en parallèle un travail de recherche sur la gouvernance des systèmes électriques. C'est la partie lente, celle qui prend des années.",
 		// Formateur section
@@ -155,7 +155,7 @@ export const ui = {
 		'services.writing.title': 'I write',
 		'services.writing.desc': "Analysis and op-eds in the French and international press, think-tank papers, radio and television commentary. This is where I test what I think I have understood.",
 		'services.expertise.title': 'I advise',
-		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. In 2026, a field mission in Cameroon on electricity sector reform.",
+		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Assignments in France, Cameroon and Taiwan.",
 		'services.research.title': 'I research',
 		'services.research.desc': "I am an associate fellow at the Fondation Jean-Jaurès, and I carry out research on the governance of power systems alongside it. This is the slow part, the one that takes years.",
 		// Trainer section
@@ -279,7 +279,7 @@ export const ui = {
 		'services.writing.title': '我寫作',
 		'services.writing.desc': '為法國與國際媒體撰寫分析與評論，為智庫撰寫研究短文，並在廣播與電視擔任評論。這是我檢驗自己是否真的想清楚的地方。',
 		'services.expertise.title': '我提供專業意見',
-		'services.expertise.desc': '為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。2026 年於喀麥隆進行電力部門改革的實地工作。',
+		'services.expertise.desc': '為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。任務地點包括法國、喀麥隆與台灣。',
 		'services.research.title': '我持續研究',
 		'services.research.desc': '我是讓·饒勒斯基金會副研究員，並同時進行電力系統治理的研究工作。這是最慢的部分，需要好幾年。',
 		// Topics
