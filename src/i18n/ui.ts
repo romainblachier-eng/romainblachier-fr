@@ -14,7 +14,7 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
-		'hero.pitch': "Énergie, réseaux, souveraineté — et ce que cela change en géopolitique, en particulier à Taïwan et dans l'Indo-Pacifique. J'enseigne, j'écris et j'interviens auprès d'écoles, de rédactions et d'institutions. Deux décennies dans l'énergie, expert associé à la Fondation Jean-Jaurès.",
+		'hero.pitch': "Énergie, réseaux, souveraineté — et ce que cela change en géopolitique, en France, en Afrique et dans l'Indo-Pacifique, Taïwan en particulier. J'enseigne, j'écris et j'interviens auprès d'écoles, de rédactions et d'institutions. Deux décennies dans l'énergie, expert associé à la Fondation Jean-Jaurès.",
 		'hero.cta': 'Me contacter',
 		// About
 		'about.title': 'À propos',
@@ -128,7 +128,7 @@ export const ui = {
 		'latest.all': 'Toutes les publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Énergie & géopolitique : expertise, enseignement, conseil, recherche',
-		'seo.description': "Énergie et géopolitique. Deux décennies dans l'énergie, spécialiste Taïwan et Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
+		'seo.description': "Énergie et géopolitique. Deux décennies dans l'énergie, travaux sur la France, l'Afrique et l'Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
 	},
 	en: {
 		// Nav
@@ -137,7 +137,7 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
-		'hero.pitch': "Energy, grids and sovereignty — and what they change geopolitically, particularly in Taiwan and the Indo-Pacific. I teach, I write, and I work with schools, newsrooms and institutions. Two decades in energy, associate fellow at the Fondation Jean-Jaurès.",
+		'hero.pitch': "Energy, grids and sovereignty — and what they change geopolitically, in France, in Africa and across the Indo-Pacific, Taiwan in particular. I teach, I write, and I work with schools, newsrooms and institutions. Two decades in energy, associate fellow at the Fondation Jean-Jaurès.",
 		'hero.cta': 'Get in touch',
 		// About
 		'about.title': 'About',
@@ -251,7 +251,7 @@ export const ui = {
 		'latest.all': 'All publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Energy & Geopolitics: expertise, teaching, advisory, research',
-		'seo.description': 'Energy and geopolitics. Two decades in energy, Taiwan and Indo-Pacific specialist. Expertise, academic teaching, advisory, applied research.',
+		'seo.description': 'Energy and geopolitics. Two decades in energy, work on France, Africa and the Indo-Pacific. Expertise, academic teaching, advisory, applied research.',
 	},
 	zh: {
 		// Nav
@@ -260,7 +260,7 @@ export const ui = {
 		'nav.contact': '聯絡',
 		// Hero
 		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
-		'hero.pitch': '能源、電網與主權，以及它們在地緣政治上的意涵——尤其是台灣與印太。我教學、我寫作，也與院校、媒體與機構合作。能源領域二十年資歷，讓·饒勒斯基金會副研究員。',
+		'hero.pitch': '能源、電網與主權，以及它們在地緣政治上的意涵——涵蓋法國、非洲與印太，尤其是台灣。我教學、我寫作，也與院校、媒體與機構合作。能源領域二十年資歷，讓·饒勒斯基金會副研究員。',
 		'hero.cta': '與我聯絡',
 		// About
 		'about.title': '關於',
@@ -358,6 +358,6 @@ export const ui = {
 		'latest.all': '所有發表 →',
 		// SEO
 		'seo.title': 'Romain Blachier — 能源與地緣政治：專業、教學、顧問、研究',
-		'seo.description': '能源與地緣政治。能源領域 18 年資歷，台灣與印太專家。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
+		'seo.description': '能源與地緣政治。能源領域二十年資歷，研究涵蓋法國、非洲與印太。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
 	},
 } as const;
