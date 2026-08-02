@@ -48,19 +48,22 @@ const items = institutions.map((i) => ({ ...i, asset: resolve(i.slug) }));
 		text-align: center;
 		margin: 2.5rem auto 0;
 	}
+	/* Intertitre en serif italique, comme les autres chapeaux de la page. */
 	.training-band-heading {
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		font-size: 0.8rem;
-		color: rgb(var(--gray));
-		margin-bottom: 1rem;
+		font-family: var(--display);
+		font-style: italic;
+		font-size: .95rem;
+		color: var(--muted);
+		letter-spacing: 0;
+		text-transform: none;
+		margin-bottom: .85rem;
 	}
 	.training-band-inner {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-		gap: 1.5rem 2.5rem;
+		gap: .5rem 2rem;
 	}
 	.training-logo-item {
 		display: inline-flex;
@@ -71,18 +74,18 @@ const items = institutions.map((i) => ({ ...i, asset: resolve(i.slug) }));
 		width: auto;
 		height: 44px;
 		object-fit: contain;
-		opacity: 0.85;
-		transition: opacity 0.2s ease;
+		opacity: .85;
+		transition: opacity .2s ease;
 	}
-	.training-logo-item:hover img {
-		opacity: 1;
-	}
+	.training-logo-item:hover img { opacity: 1 }
+	/* Repli quand aucun fichier logo n'est fourni : simple libellé, pas de pastille. */
 	.training-wordmark {
-		font-weight: 700;
-		font-size: 1.05rem;
-		color: rgb(var(--gray-dark));
-		padding: 0.4em 0.9em;
-		border: 1px solid rgba(var(--gray-light), 0.9);
-		border-radius: 8px;
+		font-size: 1rem;
+		font-weight: 500;
+		color: var(--ink);
+		border-bottom: 1px solid var(--faint);
+		padding-bottom: 1px;
+		transition: border-color .15s;
 	}
+	.training-logo-item:hover .training-wordmark { border-color: var(--ink) }
 </style>
