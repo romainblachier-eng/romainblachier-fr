@@ -43,7 +43,7 @@ const recentPubs = allPubs.slice(0, 3);
 					"givenName": "Romain",
 					"familyName": "Blachier",
 					"jobTitle": "Expert Énergie & Géopolitique — Enseignement, Conseil & Recherche",
-					"description": "Expert en énergie et géopolitique. 18 ans dans le secteur de l'énergie, enseignant en grandes écoles, consultant en gouvernance, chercheur, chroniqueur médias.",
+					"description": "Expert en énergie et géopolitique. Dix-huit ans dans la production d'électricité renouvelable, enseignant en grandes écoles, consultant en gouvernance, chercheur, chroniqueur médias.",
 					"url": "https://romainblachier.fr/",
 					"sameAs": [
 						"https://www.linkedin.com/in/romainblachier",
@@ -78,11 +78,8 @@ const recentPubs = allPubs.slice(0, 3);
 
 		<section class="event-banner">
 			<div class="event-banner-inner">
-				<span class="event-badge">📍 Prochaine conférence</span>
 				<div class="event-details">
 					<strong>IRIC de Yaoundé</strong>
-					<span class="event-sep">·</span>
-					<span>Mercredi 30 juillet · 14h</span>
 				</div>
 				<p class="event-topic">« Géopolitique de l'électricité en Afrique centrale : souveraineté, régulation et interconnexions »</p>
 			</div>
@@ -184,38 +181,34 @@ const recentPubs = allPubs.slice(0, 3);
 				<h2 class="section-title">{t('formateur.title')}</h2>
 				<p class="formateur-intro">{t('formateur.intro')}</p>
 				<TrainingLogosBand heading={t('formateur.clients')} />
-				<div class="formateur-stats">
+				<dl class="formateur-stats">
 					<div class="formateur-stat">
-						<span class="formateur-stat-number">{t('formateur.stat.years')}</span>
-						<span class="formateur-stat-label">{t('formateur.stat.years.label')}</span>
+						<dt class="formateur-stat-number">{t('formateur.stat.years')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.years.label')}</dd>
 					</div>
 					<div class="formateur-stat">
-						<span class="formateur-stat-number">{t('formateur.stat.languages')}</span>
-						<span class="formateur-stat-label">{t('formateur.stat.languages.label')}</span>
+						<dt class="formateur-stat-number">{t('formateur.stat.languages')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.languages.label')}</dd>
 					</div>
-				</div>
-				<div class="formateur-grid">
-					<div class="formateur-card">
-						<div class="formateur-card-icon">🏛️</div>
-						<h3>{t('formateur.academic.title')}</h3>
-						<p>{t('formateur.academic.desc')}</p>
+				</dl>
+				<dl class="formateur-list">
+					<div class="formateur-row">
+						<dt>{t('formateur.notes.title')}</dt>
+						<dd>{t('formateur.notes.desc')}</dd>
 					</div>
-					<div class="formateur-card">
-						<div class="formateur-card-icon">🎯</div>
-						<h3>{t('formateur.custom.title')}</h3>
-						<p>{t('formateur.custom.desc')}</p>
+					<div class="formateur-row">
+						<dt>{t('formateur.academic.title')}</dt>
+						<dd>{t('formateur.academic.desc')}</dd>
 					</div>
-					<div class="formateur-card">
-						<div class="formateur-card-icon">🎤</div>
-						<h3>{t('formateur.conference.title')}</h3>
-						<p>{t('formateur.conference.desc')}</p>
+					<div class="formateur-row">
+						<dt>{t('formateur.custom.title')}</dt>
+						<dd>{t('formateur.custom.desc')}</dd>
 					</div>
-					<div class="formateur-card">
-						<div class="formateur-card-icon">⚖️</div>
-						<h3>{t('formateur.elus.title')}</h3>
-						<p>{t('formateur.elus.desc')}</p>
+					<div class="formateur-row">
+						<dt>{t('formateur.elus.title')}</dt>
+						<dd>{t('formateur.elus.desc')}</dd>
 					</div>
-				</div>
+				</dl>
 			</div>
 		</section>
 
@@ -295,7 +288,7 @@ const recentPubs = allPubs.slice(0, 3);
 					<h2>{t('contact.title')}</h2>
 					<p>{t('contact.desc')}</p>
 					<div class="contact-links">
-						<a href="mailto:romain.blachier@gmail.com">✉ romain.blachier@gmail.com</a>
+						<a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
 						<a href="https://www.linkedin.com/in/romainblachier/" target="_blank" rel="noopener noreferrer">→ LinkedIn</a>
 						<a href="https://sciencespo.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer">→ Academia</a>
 						<a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">→ ORCID</a>
