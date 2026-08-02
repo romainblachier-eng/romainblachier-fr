@@ -34,7 +34,7 @@ export const ui = {
 		'services.expertise.title': "J'expertise",
 		'services.expertise.desc': "Interventions ponctuelles auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. En 2026, une mission de terrain au Cameroun sur la réforme du secteur électrique.",
 		'services.research.title': 'Je réfléchis',
-		'services.research.desc': "Un doctorat en préparation sur la gouvernance de la transition électrique, et le travail d'expert associé à la Fondation Jean-Jaurès. C'est la partie lente, celle qui prend des années.",
+		'services.research.desc': "Le travail d'expert associé à la Fondation Jean-Jaurès. C'est la partie lente, celle qui prend des années.",
 		// Formateur section
 		'formateur.overline': 'Formateur',
 		'formateur.title': 'Seize ans de formation et d\'enseignement',
@@ -157,7 +157,7 @@ export const ui = {
 		'services.expertise.title': 'I advise',
 		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. In 2026, a field mission in Cameroon on electricity sector reform.",
 		'services.research.title': 'I research',
-		'services.research.desc': "A doctorate in progress on the governance of the electricity transition, and the work of an associate fellow at the Fondation Jean-Jaurès. This is the slow part, the one that takes years.",
+		'services.research.desc': "The work of an associate fellow at the Fondation Jean-Jaurès. This is the slow part, the one that takes years.",
 		// Trainer section
 		'formateur.overline': 'Trainer',
 		'formateur.title': 'Sixteen years of training and teaching',
@@ -281,7 +281,7 @@ export const ui = {
 		'services.expertise.title': '我提供專業意見',
 		'services.expertise.desc': '為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。2026 年於喀麥隆進行電力部門改革的實地工作。',
 		'services.research.title': '我持續研究',
-		'services.research.desc': '進行中的博士研究，主題為電力轉型的治理，以及讓·饒勒斯基金會副研究員的工作。這是最慢的部分，需要好幾年。',
+		'services.research.desc': '讓·饒勒斯基金會副研究員的工作。這是最慢的部分，需要好幾年。',
 		// Topics
 		'topics.title': '涵蓋主題',
 		// References
