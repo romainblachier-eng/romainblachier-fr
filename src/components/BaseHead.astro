@@ -8,6 +8,12 @@ interface Props {
 	image?: string | undefined;
 	noindex?: boolean;
 	canonical?: string | undefined;
+	/**
+	 * Explicit hreflang alternates, for pages that do not share one path across
+	 * locales (different slug, or no version in a given language). When omitted,
+	 * alternates are derived by reusing the current path in all three languages.
+	 */
+	alternates?: Partial<Record<'fr' | 'en' | 'zh', string>> | undefined;
 	article?: {
 		publishedTime?: string;
 		modifiedTime?: string;
@@ -75,9 +81,14 @@ const pathname = Astro.url.pathname;
 const barePath = pathname.replace(/^\/(en|zh)(?=\/|$)/, '') || '/';
 const localeUrl = (code: string) =>
 	new URL(code === 'fr' ? barePath : `/${code}${barePath === '/' ? '/' : barePath}`, Astro.site).toString();
-const frUrl = localeUrl('fr');
-const enUrl = localeUrl('en');
-const zhUrl = localeUrl('zh');
+
+const { alternates } = Astro.props;
+const abs = (p: string) => new URL(p, Astro.site).toString();
+// An explicit map lists only the languages the page actually exists in; a missing
+// entry means no alternate, not a same-path fallback.
+const frUrl = alternates ? (alternates.fr ? abs(alternates.fr) : undefined) : localeUrl('fr');
+const enUrl = alternates ? (alternates.en ? abs(alternates.en) : undefined) : localeUrl('en');
+const zhUrl = alternates ? (alternates.zh ? abs(alternates.zh) : undefined) : localeUrl('zh');
 ---
 
 <meta charset="utf-8" />
@@ -88,10 +99,10 @@ const zhUrl = localeUrl('zh');
 <meta name="robots" content={robotsContent} />
 <meta name="author" content="Romain Blachier" />
 <meta http-equiv="content-language" content={contentLangMap[lang] ?? lang} />
-<link rel="alternate" hreflang="fr" href={frUrl} />
-<link rel="alternate" hreflang="en" href={enUrl} />
-<link rel="alternate" hreflang="zh-Hant" href={zhUrl} />
-<link rel="alternate" hreflang="x-default" href={frUrl} />
+{frUrl && <link rel="alternate" hreflang="fr" href={frUrl} />}
+{enUrl && <link rel="alternate" hreflang="en" href={enUrl} />}
+{zhUrl && <link rel="alternate" hreflang="zh-Hant" href={zhUrl} />}
+{frUrl && <link rel="alternate" hreflang="x-default" href={frUrl} />}
 
 <script is:inline>
 	// Auto-redirect Traditional/Simplified Chinese browsers to the /zh/ site,
@@ -111,8 +122,13 @@ const zhUrl = localeUrl('zh');
 			var bare = path.replace(/^\/(en|zh)(?=\/|$)/, '') || '/';
 			// Article slugs differ between locales; route English deep links to the
 			// Chinese blog index to avoid 404s. Default-locale (FR) slugs match /zh/.
+			// Pages with no Chinese version: send the visitor to the /zh/ home
+			// rather than to a /zh/… URL that does not exist.
+			var noZh = ['/conseil', '/consulting', '/presse', '/press', '/recherche', '/research'];
 			var target;
-			if (current === 'en' && /^\/blog\/.+/.test(bare)) {
+			if (noZh.indexOf(bare.replace(/\/$/, '')) !== -1) {
+				target = '/zh/';
+			} else if (current === 'en' && /^\/blog\/.+/.test(bare)) {
 				target = '/zh/blog/';
 			} else {
 				target = '/zh' + (bare === '/' ? '/' : bare);

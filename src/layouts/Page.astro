@@ -3,21 +3,25 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl } from '../i18n/utils';
+import { routeAlternates, type RouteKey } from '../i18n/routes';
 
 interface Props {
 	title: string;
 	description: string;
 	lang?: string;
+	/** Set on pages whose slug differs across locales, or that only exist in some. */
+	routeKey?: RouteKey;
 }
 
-const { title, description } = Astro.props;
+const { title, description, routeKey } = Astro.props;
 const lang = Astro.props.lang || getLangFromUrl(Astro.url);
 const htmlLang = lang === 'zh' ? 'zh-Hant' : lang;
+const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 ---
 
 <html lang={htmlLang}>
 	<head>
-		<BaseHead title={`${title} | Romain Blachier`} description={description} />
+		<BaseHead title={`${title} | Romain Blachier`} description={description} alternates={alternates} />
 		<style>
 			main {
 				width: 720px;

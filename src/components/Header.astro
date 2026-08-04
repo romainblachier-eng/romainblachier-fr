@@ -1,17 +1,35 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { getLangFromUrl, useTranslations, getLocalePath } from "../i18n/utils";
+import { routePath, localizedRoutes, type RouteKey } from "../i18n/routes";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+// Conseil, Recherche and Presse have no Chinese version yet: routePath returns
+// undefined and the link is simply not rendered, rather than pointing at a 404.
+const conseilHref = routePath('conseil', lang);
+const rechercheHref = routePath('recherche', lang);
+const presseHref = routePath('presse', lang);
+
 const pathname = Astro.url.pathname;
 // Strip any locale prefix to obtain the "bare" path shared across languages.
 const bare = pathname.replace(/^\/(en|zh)(?=\/|$)/, "") || "/";
-const localized = (code: string) =>
-	code === "fr"
+
+// Pages whose slug differs across locales, or that only exist in some of them:
+// the switcher must follow the route map instead of reusing the current path.
+// Without a counterpart, it falls back to that language's home page.
+const currentRoute = (Object.keys(localizedRoutes) as RouteKey[]).find((key) =>
+	Object.values(localizedRoutes[key]).some((p) => p.replace(/\/$/, "") === pathname.replace(/\/$/, "")),
+);
+const localized = (code: string) => {
+	if (currentRoute) {
+		return routePath(currentRoute, code as typeof lang) ?? (code === "fr" ? "/" : `/${code}/`);
+	}
+	return code === "fr"
 		? bare === "/" ? "/" : bare
 		: `/${code}${bare === "/" ? "/" : bare}`;
+};
 
 const langLinks = [
 	{ code: "fr", short: "FR", name: "Français", aria: "Passer en français" },
@@ -26,7 +44,10 @@ const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 		<a href={getLocalePath(lang, '/')} class="site-brand">Romain Blachier</a>
 		<div class="internal-links">
 			<HeaderLink href={getLocalePath(lang, '/')}>{t('nav.home')}</HeaderLink>
+			{conseilHref && <HeaderLink href={conseilHref}>{t('nav.consulting')}</HeaderLink>}
+			{rechercheHref && <HeaderLink href={rechercheHref}>{t('nav.research')}</HeaderLink>}
 			<HeaderLink href={getLocalePath(lang, '/publications')}>{t('nav.publications')}</HeaderLink>
+			{presseHref && <HeaderLink href={presseHref}>{t('nav.press')}</HeaderLink>}
 			<HeaderLink href={getLocalePath(lang, '/contact')}>{t('nav.contact')}</HeaderLink>
 			<details class="lang-dd">
 				<summary class="lang-dd-toggle" aria-label="Language · Langue · 語言">

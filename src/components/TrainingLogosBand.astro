@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from 'astro';
+import { trainingOrgs as institutions } from '../data/profile';
 
 interface Props {
 	heading: string;
@@ -10,12 +11,6 @@ const { heading } = Astro.props;
 // the corresponding file is added to src/assets/.
 const files = import.meta.glob<ImageMetadata>('../assets/*', { eager: true, import: 'default' });
 const exts = ['svg', 'png', 'jpg', 'jpeg', 'webp', 'gif'];
-
-const institutions = [
-	{ slug: 'ensap-formation', name: 'ENSAP Formation', url: 'https://www.ensap.fr/' },
-	{ slug: 'cnfpt', name: 'CNFPT', url: 'https://www.cnfpt.fr/' },
-	{ slug: 'lefebvre-dalloz', name: 'Lefebvre Dalloz', url: 'https://www.lefebvre-dalloz.fr/' },
-];
 
 const resolve = (slug: string) => {
 	for (const ext of exts) {

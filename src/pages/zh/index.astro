@@ -10,6 +10,7 @@ import MediaLogosBand from "../../components/MediaLogosBand.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import { getPublications } from "../../lib/sections";
+import { teachingInstitutions, upcomingInstitutions, institutionLabel } from "../../data/profile";
 
 const t = useTranslations('zh');
 const allPubs = await getPublications('zh');
@@ -171,16 +172,13 @@ const recentPubs = allPubs.slice(0, 3);
 						<span class="tag">{t('tag.hydro')}</span>
 						<span class="tag">{t('tag.public_affairs')}</span>
 						<span class="tag">{t('tag.institutional')}</span>
+						<span class="tag">{t('tag.european_politics')}</span>
 						<span class="tag">{t('tag.political_systems')}</span>
 						<span class="tag">{t('tag.crisis_comms')}</span>
 						<span class="tag">{t('tag.religion')}</span>
 						<span class="tag">{t('tag.local_gov')}</span>
 						<span class="tag">{t('tag.digital_comms')}</span>
-						<span class="tag">{t('tag.seo')}</span>
 						<span class="tag">{t('tag.ai_teaching')}</span>
-						<span class="tag">{t('tag.cultural_policy')}</span>
-						<span class="tag">{t('tag.culture_economy')}</span>
-						<span class="tag">{t('tag.music')}</span>
 						<span class="tag">{t('tag.cultural_diplomacy')}</span>
 						<span class="tag">{t('tag.scientific_coop')}</span>
 					</div>
@@ -196,19 +194,12 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="ref-col">
 						<h3>{t('references.teaching')}</h3>
 						<ul>
-							<li>EM Lyon Business School（里昂高等商學院）</li>
-							<li>Grenoble École de Management</li>
-							<li>Centrale Lyon（里昂中央理工）</li>
-							<li>國立臺灣大學（NTU，臺北）</li>
-							<li>Université Lyon 1（里昂第一大學）</li>
-							<li>INSEEC Grande Écoles</li>
-							<li>ECAM Lyon</li>
-							<li>Faculté Catholique de Lyon（里昂天主教大學）</li>
-							<li>Faculté Catholique de Lille（里爾天主教大學）</li>
-							<li>ILERI</li>
-							<li>HEIP</li>
+							{teachingInstitutions.map((i) => <li>{institutionLabel(i, 'zh')}</li>)}
 						</ul>
 						<p class="ref-note">{t('references.teaching.note')}</p>
+						<p class="ref-note">
+							{t('references.teaching.upcoming')}{upcomingInstitutions.map((i) => institutionLabel(i, 'zh')).join('、')}。
+						</p>
 					</div>
 					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>
