@@ -83,12 +83,14 @@ Cas en attente de compléments (autre boîte mail à connecter) : PCAET 120 000 
 - **5 pays** de publication : France, Taïwan, États-Unis, Cameroun, Suisse.
 - **3 zones** d'intervention : Afrique francophone, Europe, Indo-Pacifique.
 
-### Enseignement 2026-2027 — liste canonique unique (12 établissements)
+### Enseignement 2026-2027 — liste affichée sur le site (10 établissements)
 
-Sciences Po Paris • Sciences Po Lyon (IEP) • emlyon business school • Grenoble École de Management • École Centrale de Lyon • INSA Lyon • ENTPE • UCLy • Université catholique de Lille • HEIP • ILERI • IRIS Sup'.
+emlyon business school • Grenoble École de Management • École Centrale de Lyon • INSA Lyon • ENTPE • UCLy • Université catholique de Lille • HEIP • ILERI • IRIS Sup'.
 
 Notes :
 
+- **Sciences Po Paris et Sciences Po Lyon (IEP) sont volontairement absents** de la liste affichée (choix de Romain, 2026-08-04) bien qu'il y enseigne : ne pas les réintroduire sans son accord.
+- Les belles écoles se placent en tête de liste (ordre voulu).
 - École Centrale de Lyon et INSA Lyon sont **programmés 2026-2027** (nouveaux). Ne pas écrire qu'il y intervient « depuis 2010 ».
 - Université de Grenade (Espagne) : cycle invité annuel en espagnol, à mentionner à part (hors des 12).
 - NTU Taipei ne figure pas au CV 2026-27 : ne pas la lister sans confirmation de Romain.

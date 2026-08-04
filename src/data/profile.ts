@@ -25,8 +25,8 @@ export type Institution = {
  * annuel en espagnol) se mentionne à part, jamais dans cette liste.
  */
 export const teachingInstitutions: Institution[] = [
-	{ name: 'Sciences Po Paris', zh: '巴黎政治學院' },
-	{ name: 'Sciences Po Lyon (IEP)', zh: 'Sciences Po Lyon（里昂政治學院）' },
+	// Belles écoles en tête, à la demande de Romain (2026-08-04). Sciences Po
+	// Paris et Sciences Po Lyon sont volontairement absents de la liste affichée.
 	{ name: 'emlyon business school', zh: 'emlyon business school（里昂高等商學院）' },
 	{ name: 'Grenoble École de Management', zh: 'Grenoble École de Management（格勒諾布爾管理學院）' },
 	{ name: 'ENTPE', zh: 'ENTPE（國立公共工程學院）' },
