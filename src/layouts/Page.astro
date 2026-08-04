@@ -22,7 +22,15 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 <html lang={htmlLang}>
 	<head>
 		<BaseHead title={`${title} | Romain Blachier`} description={description} alternates={alternates} />
-		<style>
+		<!--
+			is:global below: .page-title / .page-lede / .page-body's children / .page-note
+			are written in each *page* file as <Page> slot content, not in this file — Astro
+			assigns its scoped-style attribute to the template that authors an element, so a
+			normal scoped rule here never matched them (bullets, section dividers, lede
+			colour were all silently dead). main styles fine either way; kept in the same
+			global block for one source of truth.
+		-->
+		<style is:global>
 			main {
 				width: 720px;
 				max-width: calc(100% - 2em);
@@ -39,21 +47,28 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 				margin-bottom: 2.5rem;
 				line-height: 1.6;
 			}
-			.page-body :global(h2) {
+			.page-body h2 {
 				font-family: 'Playfair Display', Georgia, serif;
 				margin-top: 2.5rem;
 				margin-bottom: 1.25rem;
 			}
-			.page-body :global(p) {
+			.page-body p {
 				line-height: 1.7;
 			}
-			.page-body :global(ul), .page-body :global(ol) {
+			.page-body ul, .page-body ol {
 				margin-bottom: 1.5rem;
+				padding-left: 1.25rem;
 			}
-			.page-body :global(li) {
+			.page-body ul {
+				list-style: disc;
+			}
+			.page-body ol {
+				list-style: decimal;
+			}
+			.page-body li {
 				margin-bottom: 0.5rem;
 			}
-			.page-body :global(a) {
+			.page-body a {
 				color: var(--accent, #0b5);
 			}
 			.page-note {
