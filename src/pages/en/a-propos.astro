@@ -1,5 +1,9 @@
 ---
 import Page from '../../layouts/Page.astro';
+import { teachingInstitutions, upcomingInstitutions, institutionLabel } from '../../data/profile';
+
+const taught = teachingInstitutions.map((i) => institutionLabel(i, 'en')).join(', ');
+const upcoming = upcomingInstitutions.map((i) => institutionLabel(i, 'en')).join(', ');
 ---
 
 <Page title={"About"} description={"Romain Blachier — energy & geopolitics expert, lecturer and columnist. Background, expertise and commitments."} lang="en">
@@ -11,13 +15,15 @@ import Page from '../../layouts/Page.astro';
 <ul>
 <li><strong>18 years</strong> in the energy sector (electricity generation).</li>
 <li><strong>12 years</strong> as an elected official in the Lyon metropolitan area (culture, digital, international).</li>
-<li>Lecturer since 2010: Sciences Po Paris, Grenoble École de Management, INSEEC Grande Écoles, Faculté Catholique de Lyon, Faculté Catholique de Lille, Université Lyon 1, ECAM Lyon, ILERI, HEIP.</li>
+<li>Lecturer since 2010: {taught}. Scheduled for 2026-2027: {upcoming}.</li>
+<li>Registered energy expert with the African Development Bank.</li>
+<li>Associate fellow at the Fondation Jean-Jaurès and member of the civil-society college of the Plateforme RSE (France Stratégie).</li>
 <li>President of the France-Formosa Association.</li>
 </ul>
 <h2>Expertise</h2>
 <p>Energy markets and geopolitics, energy transition and sovereignty, Taiwan &amp; Indo-Pacific, comparative political systems, strategic and crisis communications, public affairs.</p>
 <h2>Languages</h2>
-<p>French, English, Mandarin.</p>
+<p>French (native), English (C1 — working language for fieldwork, writing and teaching), Spanish (C1 — teaching language: lectures on European politics at the Universidad de Granada), basic Mandarin Chinese.</p>
 <h2>Online</h2>
 <ul>
 <li><a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID 0009-0008-3178-1600</a></li>

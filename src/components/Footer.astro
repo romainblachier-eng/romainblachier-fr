@@ -1,16 +1,22 @@
 ---
 import { getLangFromUrl, useTranslations, getLocalePath } from '../i18n/utils';
+import { routePath } from '../i18n/routes';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const today = new Date();
 
+// Conseil / Presse / Recherche exist in FR and EN only; routePath returns
+// undefined elsewhere and the entry is dropped rather than linking to a 404.
 const navLinks = [
 	{ href: getLocalePath(lang, '/'), label: t('nav.home') },
+	{ href: routePath('conseil', lang), label: t('nav.consulting') },
 	{ href: getLocalePath(lang, '/publications'), label: t('nav.publications') },
+	{ href: routePath('recherche', lang), label: t('nav.research') },
+	{ href: routePath('presse', lang), label: t('nav.press') },
 	{ href: getLocalePath(lang, '/a-propos'), label: t('footer.about') },
 	{ href: getLocalePath(lang, '/contact'), label: t('footer.contact') },
-];
+].filter((l): l is { href: string; label: string } => Boolean(l.href));
 
 const institutional = [
 	{ href: getLocalePath(lang, '/methodologie'), label: t('footer.methodology') },

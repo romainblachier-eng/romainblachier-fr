@@ -1,5 +1,9 @@
 ---
 import Page from '../layouts/Page.astro';
+import { teachingInstitutions, upcomingInstitutions, institutionLabel } from '../data/profile';
+
+const taught = teachingInstitutions.map((i) => institutionLabel(i, 'fr')).join(', ');
+const upcoming = upcomingInstitutions.map((i) => institutionLabel(i, 'fr')).join(', ');
 ---
 
 <Page title={"À propos"} description={"Romain Blachier — expert énergie & géopolitique, enseignant et chroniqueur. Parcours, expertise et engagements."} lang="fr">
@@ -11,13 +15,15 @@ import Page from '../layouts/Page.astro';
 <ul>
 <li><strong>18 ans</strong> dans le secteur de l'énergie (production d'électricité).</li>
 <li><strong>12 ans</strong> élu à la Métropole de Lyon (culture, numérique, international).</li>
-<li>Enseignant depuis 2010 : Sciences Po Paris, Grenoble École de Management, INSEEC Grande Écoles, Faculté Catholique de Lyon, Faculté Catholique de Lille, Université Lyon 1, ECAM Lyon, ILERI, HEIP.</li>
+<li>Enseignant depuis 2010 : {taught}. Programmé pour 2026-2027 : {upcoming}.</li>
+<li>Expert énergie inscrit auprès de la Banque africaine de développement.</li>
+<li>Expert associé à la Fondation Jean-Jaurès et membre du collège société civile de la Plateforme RSE (France Stratégie).</li>
 <li>Président de l'Association France-Formosa.</li>
 </ul>
 <h2>Expertise</h2>
 <p>Marchés et géopolitique de l'énergie, transition et souveraineté énergétiques, Taïwan &amp; Indo-Pacifique, systèmes politiques comparés, communication stratégique et de crise, affaires publiques.</p>
 <h2>Langues</h2>
-<p>Français, anglais, mandarin.</p>
+<p>Français (langue maternelle), anglais (C1 — langue de travail pour le terrain, l'écriture et l'enseignement), espagnol (C1 — langue d'enseignement&nbsp;: conférences sur la politique européenne à l'Universidad de Granada), notions de chinois mandarin.</p>
 <h2>Présence</h2>
 <ul>
 <li><a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID 0009-0008-3178-1600</a></li>
