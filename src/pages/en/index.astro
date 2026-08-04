@@ -7,6 +7,7 @@ import { Image } from "astro:assets";
 import portrait from "../../assets/portrait.jpg";
 import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
+import ContactForm from "../../components/ContactForm.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PublicationLogo from "../../components/PublicationLogo.astro";
@@ -63,6 +64,15 @@ const recentPubs = allPubs.slice(0, 3);
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
 
+		<section class="event-banner">
+			<div class="event-banner-inner">
+				<div class="event-details">
+					<strong>IRIC, Yaoundé</strong>
+				</div>
+				<p class="event-topic">"The geopolitics of electricity in Central Africa: sovereignty, regulation and interconnections"</p>
+			</div>
+		</section>
+
 		{recentPubs.length > 0 && (
 		<section class="latest-article">
 			<div class="latest-inner latest-inner--grid">
@@ -94,8 +104,6 @@ const recentPubs = allPubs.slice(0, 3);
 		)}
 
 		<MediaLogosBand />
-
-		<TrainingLogosBand heading={t('formateur.clients')} />
 
 		<section class="about">
 			<div class="about-inner">
@@ -158,6 +166,43 @@ const recentPubs = allPubs.slice(0, 3);
 			</div>
 		</section>
 
+		<section class="formateur" id="formateur">
+			<div class="formateur-inner">
+				<div class="section-overline" style="text-align:center">{t('formateur.overline')}</div>
+				<h2 class="section-title">{t('formateur.title')}</h2>
+				<p class="formateur-intro">{t('formateur.intro')}</p>
+				<TrainingLogosBand heading={t('formateur.clients')} />
+				<dl class="formateur-stats">
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.years')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.years.label')}</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.languages')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.languages.label')}</dd>
+					</div>
+				</dl>
+				<dl class="formateur-list">
+					<div class="formateur-row">
+						<dt>{t('formateur.notes.title')}</dt>
+						<dd>{t('formateur.notes.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.academic.title')}</dt>
+						<dd>{t('formateur.academic.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.custom.title')}</dt>
+						<dd>{t('formateur.custom.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.elus.title')}</dt>
+						<dd>{t('formateur.elus.desc')}</dd>
+					</div>
+				</dl>
+			</div>
+		</section>
+
 		<section class="sujets">
 			<div class="sujets-inner">
 				<div class="section-overline">Topics</div>
@@ -168,6 +213,7 @@ const recentPubs = allPubs.slice(0, 3);
 					<span class="tag hi">{t('tag.taiwan')}</span>
 					<span class="tag hi">{t('tag.nuclear')}</span>
 					<span class="tag hi">{t('tag.transition')}</span>
+					<span class="tag hi">{t('tag.renewables')}</span>
 					<span class="tag hi">{t('tag.sovereignty')}</span>
 				</div>
 				<details class="tags-more">
@@ -232,72 +278,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t('contact.cv')}</a>
 					</div>
 				</div>
-				<form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/romain.blachier@gmail.com" method="POST">
-					<input type="hidden" name="_captcha" value="false" />
-					<input type="hidden" name="_subject" value="[romainblachier.fr] New message" />
-					<div class="form-row">
-						<input type="text" name="name" placeholder={t('contact.name')} required />
-						<input type="email" name="email" placeholder={t('contact.email')} required />
-					</div>
-					<input type="text" name="subject" placeholder={t('contact.subject')} required />
-					<textarea name="message" placeholder={t('contact.message')} required></textarea>
-					<div class="captcha-row" id="captcha-row">
-						<label id="captcha-label"></label>
-						<input type="text" id="captcha-input" placeholder="Your answer" required autocomplete="off" />
-					</div>
-					<button type="submit" id="contact-submit">{t('contact.send')} →</button>
-					<div id="contact-success" class="form-feedback" style="display:none">
-						Thank you for your message! I'll get back to you within 48 hours.
-					</div>
-					<div id="contact-error" class="form-feedback form-feedback--error" style="display:none">
-						Something went wrong. You can email me directly at
-						<a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>.
-					</div>
-				</form>
-				<script>
-					(function() {
-						const a = Math.floor(Math.random() * 10) + 1;
-						const b = Math.floor(Math.random() * 10) + 1;
-						const answer = a + b;
-						document.getElementById('captcha-label').textContent = 'Anti-spam: what is ' + a + ' + ' + b + '?';
-						document.getElementById('contact-form').addEventListener('submit', async (e) => {
-							e.preventDefault();
-							const input = document.getElementById('captcha-input');
-							if (parseInt(input.value, 10) !== answer) {
-								input.style.borderColor = '#f87171';
-								input.value = '';
-								input.placeholder = 'Wrong answer, try again';
-								return;
-							}
-							const form = e.target;
-							const btn = document.getElementById('contact-submit');
-							const success = document.getElementById('contact-success');
-							const error = document.getElementById('contact-error');
-							btn.disabled = true;
-							btn.textContent = 'Sending...';
-							success.style.display = 'none';
-							error.style.display = 'none';
-							try {
-								const data = Object.fromEntries(new FormData(form));
-								delete data['_captcha'];
-								const res = await fetch(form.action, {
-									method: 'POST',
-									headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-									body: JSON.stringify(data)
-								});
-								if (res.ok) {
-									form.reset();
-									success.style.display = 'block';
-									btn.textContent = 'Sent!';
-								} else { throw new Error(res.status); }
-							} catch {
-								error.style.display = 'block';
-								btn.textContent = 'Send →';
-								btn.disabled = false;
-							}
-						});
-					})();
-				</script>
+				<ContactForm lang="en" />
 			</div>
 		</section>
 
