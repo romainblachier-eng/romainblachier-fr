@@ -19,25 +19,22 @@ export type Institution = {
 };
 
 /**
- * Établissements où l'enseignement a effectivement eu lieu depuis 2010.
- * Un cours seulement programmé n'a rien à faire ici : voir `upcomingInstitutions`.
+ * Liste canonique 2026-2027 (CV expert, août 2026) des établissements
+ * d'enseignement. Un cours seulement programmé n'a rien à faire ici :
+ * voir `upcomingInstitutions`. L'Universidad de Granada (cycle invité
+ * annuel en espagnol) se mentionne à part, jamais dans cette liste.
  */
 export const teachingInstitutions: Institution[] = [
 	{ name: 'Sciences Po Paris', zh: '巴黎政治學院' },
-	{ name: 'EM Lyon Business School', zh: 'EM Lyon（里昂高等商學院）' },
+	{ name: 'Sciences Po Lyon (IEP)', zh: 'Sciences Po Lyon（里昂政治學院）' },
+	{ name: 'emlyon business school', zh: 'emlyon business school（里昂高等商學院）' },
 	{ name: 'Grenoble École de Management', zh: 'Grenoble École de Management（格勒諾布爾管理學院）' },
-	{ name: 'IEP de Lyon', zh: 'IEP de Lyon（里昂政治學院）' },
-	{ name: 'Université Lyon 2', zh: 'Université Lyon 2（里昂第二大學）' },
-	{ name: 'Université Lyon 1', zh: 'Université Lyon 1（里昂第一大學）' },
 	{ name: 'ENTPE', zh: 'ENTPE（國立公共工程學院）' },
-	{ name: 'ECAM Lyon', zh: 'ECAM Lyon（里昂ECAM工程師學院）' },
-	{ name: 'INSEEC Grande Écoles', zh: 'INSEEC Grande Écoles' },
 	{ name: 'UCLy — Université catholique de Lyon', zh: 'UCLy（里昂天主教大學）' },
-	{ name: 'Université catholique de Lille (FLD)', zh: 'Université catholique de Lille（里爾天主教大學）' },
-	{ name: 'ILERI', zh: 'ILERI' },
+	{ name: 'Université catholique de Lille', zh: 'Université catholique de Lille（里爾天主教大學）' },
 	{ name: 'HEIP', zh: 'HEIP' },
+	{ name: 'ILERI', zh: 'ILERI' },
 	{ name: "IRIS Sup'", zh: "IRIS Sup'" },
-	{ name: 'Universidad de Granada', zh: 'Universidad de Granada（格拉納達大學）' },
 ];
 
 /** Cours contractés pour l'année 2026-2027, pas encore dispensés. */
