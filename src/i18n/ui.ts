@@ -14,12 +14,12 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
-		'hero.pitch': "Énergie, réseaux, souveraineté — et ce que cela change en géopolitique, en France, en Afrique et dans l'Indo-Pacifique, Taïwan en particulier. J'enseigne, j'écris et j'interviens auprès d'écoles, de rédactions et d'institutions. Deux décennies dans l'énergie, expert associé à la Fondation Jean-Jaurès.",
+		'hero.pitch': "Énergie, réseaux, souveraineté — et ce que cela change en géopolitique, en France, en Afrique et dans l'Indo-Pacifique, Taïwan en particulier. J'enseigne, j'écris et j'interviens auprès d'écoles, de rédactions et d'institutions. Près de deux décennies dans l'énergie, expert associé à la Fondation Jean-Jaurès.",
 		'hero.cta': 'Me contacter',
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique paraissent souvent techniques et réservées aux spécialistes. Mon travail consiste à les rendre claires et utiles — pour des étudiants, une rédaction ou une équipe de direction.",
-		'about.p2': "Cette approche s'appuie sur l'expérience : deux décennies dans l'énergie et douze ans de mandat à la Métropole de Lyon. Les marchés, les réseaux et la décision publique, je les ai pratiqués avant de les enseigner.",
+		'about.p2': "Cette approche s'appuie sur l'expérience : dix-huit ans dans l'énergie et douze ans de mandat à la Métropole de Lyon. Les marchés, les réseaux et la décision publique, je les ai pratiqués avant de les enseigner.",
 		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie régulièrement dans des revues spécialisées et dans la presse, en France et à l'étranger. Mes champs de recherche couvrent les systèmes électriques africains, la géopolitique pétrolière, la souveraineté énergétique de Taïwan et la paradiplomatie.",
 		'about.p4': "J'enseigne depuis 2010 — en grandes écoles, à l'université et en formation continue, en français, en anglais et en espagnol. Les établissements où je suis intervenu depuis sont listés plus bas ; les cours changent d'une année à l'autre.",
 		'about.p5': "Ce regard s'est aussi construit sur le terrain — au Cameroun, au Cambodge, en Ukraine et à Taïwan. En 2026, une mission à Yaoundé sur la réforme du secteur électrique.",
@@ -132,7 +132,7 @@ export const ui = {
 		'latest.all': 'Toutes les publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Énergie & géopolitique : expertise, enseignement, conseil, recherche',
-		'seo.description': "Énergie et géopolitique. Deux décennies dans l'énergie, travaux sur la France, l'Afrique et l'Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
+		'seo.description': "Énergie et géopolitique. Près de deux décennies dans l'énergie, travaux sur la France, l'Afrique et l'Indo-Pacifique. Expertise, enseignement en grandes écoles, conseil, recherche appliquée.",
 	},
 	en: {
 		// Nav
@@ -141,12 +141,12 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
-		'hero.pitch': "Energy, grids and sovereignty — and what they change geopolitically, in France, in Africa and across the Indo-Pacific, Taiwan in particular. I teach, I write, and I work with schools, newsrooms and institutions. Two decades in energy, associate fellow at the Fondation Jean-Jaurès.",
+		'hero.pitch': "Energy, grids and sovereignty — and what they change geopolitically, in France, in Africa and across the Indo-Pacific, Taiwan in particular. I teach, I write, and I work with schools, newsrooms and institutions. Nearly two decades in energy, associate fellow at the Fondation Jean-Jaurès.",
 		'hero.cta': 'Get in touch',
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics often look technical and reserved for specialists. My work is to make them clear and useful — for students, a newsroom or an executive team.",
-		'about.p2': "This approach is grounded in experience: two decades in energy and twelve years in elected office in the Lyon metropolitan area. Markets, grids and public decision-making — I practised them before teaching them.",
+		'about.p2': "This approach is grounded in experience: eighteen years in energy and twelve years in elected office in the Lyon metropolitan area. Markets, grids and public decision-making — I practised them before teaching them.",
 		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish regularly in specialised journals and in the press, in France and abroad. My research covers African power systems, oil geopolitics, Taiwan's energy sovereignty, and paradiplomacy.",
 		'about.p4': "I have been teaching since 2010 — in business schools, universities and executive education, in French, English and Spanish. The institutions I have taught at since then are listed below; the courses change from one year to the next.",
 		'about.p5': "This perspective was also shaped in the field — in Cameroon, Cambodia, Ukraine and Taiwan. In 2026, a mission in Yaoundé on electricity sector reform.",
@@ -259,7 +259,7 @@ export const ui = {
 		'latest.all': 'All publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Energy & Geopolitics: expertise, teaching, advisory, research',
-		'seo.description': 'Energy and geopolitics. Two decades in energy, work on France, Africa and the Indo-Pacific. Expertise, academic teaching, advisory, applied research.',
+		'seo.description': 'Energy and geopolitics. Nearly two decades in energy, work on France, Africa and the Indo-Pacific. Expertise, academic teaching, advisory, applied research.',
 	},
 	zh: {
 		// Nav
@@ -268,12 +268,12 @@ export const ui = {
 		'nav.contact': '聯絡',
 		// Hero
 		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
-		'hero.pitch': '能源、電網與主權，以及它們在地緣政治上的意涵——涵蓋法國、非洲與印太，尤其是台灣。我教學、我寫作，也與院校、媒體與機構合作。能源領域二十年資歷，讓·饒勒斯基金會副研究員。',
+		'hero.pitch': '能源、電網與主權，以及它們在地緣政治上的意涵——涵蓋法國、非洲與印太，尤其是台灣。我教學、我寫作，也與院校、媒體與機構合作。能源領域近二十年資歷，讓·饒勒斯基金會副研究員。',
 		'hero.cta': '與我聯絡',
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治往往顯得技術性強、僅屬專家領域。我的工作是讓這些主題變得清晰而實用——無論對象是學生、編輯部或管理團隊。',
-		'about.p2': '這一方法建立在實務經驗之上：在能源領域工作二十年，並在大里昂都會區擔任民選代表十二年。市場、電網與公共決策，我先實踐，而後教學。',
+		'about.p2': '這一方法建立在實務經驗之上：在能源領域工作十八年，並在大里昂都會區擔任民選代表十二年。市場、電網與公共決策，我先實踐，而後教學。',
 		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我定期在學術期刊與法國及海外媒體發表。研究領域涵蓋非洲電力系統整合、石油地緣政治、台灣能源主權與副外交。',
 		'about.p4': '我自 2010 年起任教——在高等學院、大學與在職培訓課程，以法語、英語與西班牙語授課。自那時起曾任教的機構列於下方；每年開設的課程並不相同。',
 		'about.p5': '這一視野也在田野中形成——喀麥隆、柬埔寨、烏克蘭與台灣。2026 年在雅溫得進行電力部門改革的實地工作。',
@@ -367,6 +367,6 @@ export const ui = {
 		'latest.all': '所有發表 →',
 		// SEO
 		'seo.title': 'Romain Blachier — 能源與地緣政治：專業、教學、顧問、研究',
-		'seo.description': '能源與地緣政治。能源領域二十年資歷，研究涵蓋法國、非洲與印太。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
+		'seo.description': '能源與地緣政治。能源領域近二十年資歷，研究涵蓋法國、非洲與印太。專業諮詢、頂尖院校教學、治理顧問、應用研究。',
 	},
 } as const;
