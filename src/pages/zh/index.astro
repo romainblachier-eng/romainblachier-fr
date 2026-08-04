@@ -9,6 +9,7 @@ import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
+import PublicationLogo from "../../components/PublicationLogo.astro";
 import { getPublications } from "../../lib/sections";
 import { teachingInstitutions, upcomingInstitutions, institutionLabel } from "../../data/profile";
 
@@ -70,6 +71,9 @@ const recentPubs = allPubs.slice(0, 3);
 				<div class="latest-grid">
 					{recentPubs.map((pub) => (
 						<article class="latest-card">
+							<div class="latest-logo">
+								<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
+							</div>
 							<div class="latest-meta">
 								<span class="latest-media">{pub.data.media}</span>
 								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="zh" /></span>

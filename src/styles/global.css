@@ -281,6 +281,9 @@ header nav {
 	padding: 2rem 2.5rem;
 	border: 1px solid rgba(0,0,0,.06);
 }
+.latest-logo {
+	margin-bottom: .75rem;
+}
 .latest-meta {
 	display: flex;
 	align-items: center;

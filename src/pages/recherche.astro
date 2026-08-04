@@ -10,9 +10,11 @@ import Page from '../layouts/Page.astro';
 >
 	<h1 class="page-title">Recherche</h1>
 	<p class="page-lede">Qui décide vraiment dans la gouvernance de l'énergie, avec quels moyens, et comment cette asymétrie se légitime.</p>
-	<div class="page-body">
+	<div class="page-body recherche-page">
 
 <p>Mon objet de recherche est l'écart entre l'autorité formellement attribuée et la capacité réelle d'agir dans la gouvernance de l'énergie&nbsp;: qui décide vraiment, avec quels moyens, et comment cette asymétrie se légitime. Ce fil court de la métropole à la scène internationale, des concessions de réseau aux interconnexions régionales, et traverse mes articles académiques, mes notes de think tank et mon travail journalistique.</p>
+
+<hr class="section-sep" />
 
 <h2>Axes de travail</h2>
 <ul>
@@ -24,6 +26,8 @@ import Page from '../layouts/Page.astro';
 <li>Décentralisation et justice énergétique.</li>
 </ul>
 
+<hr class="section-sep" />
+
 <h2>Publications à comité de lecture</h2>
 <ul>
 <li>«&nbsp;La fenêtre de rente&nbsp;: la sortie émiratie de l'OPEP+ comme aboutissement&nbsp;», <em>La Revue de l'énergie</em>, accepté, numéro juillet-août 2026.</li>
@@ -31,18 +35,46 @@ import Page from '../layouts/Page.astro';
 <li>Plusieurs articles en cours d'évaluation dans des revues françaises et internationales à comité de lecture.</li>
 </ul>
 
+<hr class="section-sep" />
+
 <h2>Notes et analyses pour think tanks</h2>
 <ul>
 <li><strong>Fondation Jean-Jaurès</strong> (expert associé, observatoires Climat-Énergie, Afrique subsaharienne et Asie-Pacifique)&nbsp;: «&nbsp;Intégrer l'électricité en Afrique centrale&nbsp;: la métropole comme arbitre absent&nbsp;», 11 juin 2026&nbsp;; «&nbsp;Quand le principal parti d'opposition taïwanais bascule vers Pékin&nbsp;», 29 avril 2026.</li>
 <li><strong>Terra Nova</strong> (La Grande Conversation), <strong>Telos</strong>, <strong>Global Taiwan Institute</strong> (Washington D.C.), <strong>Taiwan Insight</strong> (université de Nottingham). <a href="/publications/">Voir les publications →</a></li>
 </ul>
 
-<h2>Conférences (sélection)</h2>
-<ul>
-<li>Institut des relations internationales du Cameroun (IRIC, Université de Yaoundé II), 29 juillet 2026&nbsp;: «&nbsp;Géopolitique de l'électricité en Afrique centrale&nbsp;: souveraineté, régulation et interconnexions&nbsp;».</li>
-<li>Colloque sur Taïwan à l'Assemblée nationale, novembre 2024.</li>
-<li>Journées FNSER-Condorcet (Blois, 2023 et 2024)&nbsp;; cycle de conférences énergie Hybria (depuis 2022).</li>
-</ul>
+<hr class="section-sep" />
+
+<h2>Conférences et cycles (sélection)</h2>
+
+<div class="conf-card">
+	<h3>Conférences académiques et institutionnelles</h3>
+	<ul>
+	<li>Institut des relations internationales du Cameroun (IRIC, Université de Yaoundé II), 29 juillet 2026&nbsp;: «&nbsp;Géopolitique de l'électricité en Afrique centrale&nbsp;: souveraineté, régulation et interconnexions&nbsp;».</li>
+	<li>Colloque sur Taïwan à l'Assemblée nationale, novembre 2024.</li>
+	<li>Journées FNSER-Condorcet (Blois, 2023 et 2024).</li>
+	</ul>
+</div>
+
+<div class="conf-card">
+	<h3>Conférences HEIP</h3>
+	<p>Cycle de conférences sur la géopolitique de l'énergie à HEIP (Hautes Études Internationales et Politiques), en complément des enseignements dispensés dans l'école. Interventions régulières devant les étudiants sur des sujets d'actualité&nbsp;: crises énergétiques, souveraineté électrique, transitions en Asie et en Afrique.</p>
+</div>
+
+<div class="conf-card">
+	<h3>Université Ouverte de la Duchère</h3>
+	<p>Cycle mensuel de conférences d'éducation populaire que j'ai créé au sein du club de Lyon La Duchère, en partenariat avec le Ciné Duchère. Le principe&nbsp;: inviter chaque mois une personnalité — universitaire, artiste, intellectuel — à plancher devant les habitants du quartier populaire de la Duchère à Lyon, suivi d'un échange et d'une projection.</p>
+	<p>Inauguration en novembre 2022 avec le mathématicien Cédric Villani. Parmi les invités&nbsp;: Catou Faust (EM Lyon Business School). Le cycle mêle rigueur académique et ancrage territorial, dans une démarche de démocratisation du savoir.</p>
+</div>
+
+<div class="conf-card">
+	<h3>Autres cycles</h3>
+	<ul>
+	<li>Cycle de conférences énergie Hybria (depuis 2022).</li>
+	</ul>
+</div>
+
+<hr class="section-sep" />
 
 <h2>Terrains</h2>
 <ul>
@@ -50,6 +82,8 @@ import Page from '../layouts/Page.astro';
 <li><strong>Taïwan</strong> (2019, 2025)&nbsp;: deux missions sur invitation du ministère des Affaires étrangères&nbsp;; entretiens académiques, diplomatiques et industriels.</li>
 <li><strong>Cambodge</strong> (2017-2022)&nbsp;: politiques énergétiques et coopérations régionales en Asie du Sud-Est.</li>
 </ul>
+
+<hr class="section-sep" />
 
 <h2>Affiliations et identifiants</h2>
 <ul>
@@ -59,3 +93,54 @@ import Page from '../layouts/Page.astro';
 
 	</div>
 </Page>
+
+<style>
+	.recherche-page {
+		line-height: 1.75;
+	}
+
+	.recherche-page p {
+		margin-bottom: 1.25rem;
+	}
+
+	.section-sep {
+		border: none;
+		border-top: 1px solid rgba(var(--gray-light), 0.6);
+		margin: 3rem 0;
+	}
+
+	.conf-card {
+		border: 1px solid rgba(var(--gray-light), 0.6);
+		border-radius: 10px;
+		padding: 1.75rem;
+		margin-bottom: 1.25rem;
+		transition: box-shadow 0.2s ease;
+	}
+
+	.conf-card:hover {
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+	}
+
+	.conf-card h3 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.15rem;
+		margin: 0 0 0.75rem 0;
+		color: rgb(var(--black));
+	}
+
+	.conf-card p {
+		margin-bottom: 0.75rem;
+	}
+
+	.conf-card ul {
+		margin-bottom: 0;
+	}
+
+	.conf-card li {
+		margin-bottom: 0.75rem;
+	}
+
+	.conf-card li:last-child {
+		margin-bottom: 0;
+	}
+</style>
