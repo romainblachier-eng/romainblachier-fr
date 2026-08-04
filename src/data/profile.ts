@@ -56,6 +56,6 @@ export const institutionLabel = (i: Institution, lang: string) =>
 export const trainingOrgs = [
 	{ slug: 'nepsen', name: 'NEPSEN', url: 'https://www.nepsen.fr/' },
 	{ slug: 'ensap-formation', name: 'ENSAP Formation', url: 'https://www.ensap.fr/' },
-	{ slug: 'ecologica', name: 'Ecologica', url: 'https://ecologica.fr/' },
+	{ slug: 'emlyon', name: 'emlyon business school', url: 'https://em-lyon.com/' },
 	{ slug: 'lefebvre-dalloz', name: 'Lefebvre Dalloz', url: 'https://www.lefebvre-dalloz.fr/' },
 ];
