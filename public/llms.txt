@@ -1,0 +1,25 @@
+# romainblachier.fr
+
+> Site professionnel de Romain Blachier — expert en politiques énergétiques, gouvernance publique et coopération internationale. Basé à Lyon, France. Trilingue : français (défaut), anglais (/en/), chinois traditionnel (/zh/).
+
+Près de deux décennies dans le secteur de l'électricité renouvelable, douze ans de mandat local (Ville et Métropole de Lyon, 2008-2020), enseignant en grandes écoles et à l'université depuis 2010. Expert associé à la Fondation Jean-Jaurès. Président de l'association France-Formosa. Zones de travail : France et Europe, Afrique francophone, Indo-Pacifique (Taïwan en particulier).
+
+## Pages principales
+
+- [Accueil](https://romainblachier.fr/) : présentation, publications récentes, enseignement, contact
+- [Missions & conseil](https://romainblachier.fr/conseil) : types de missions, étude de cas, cadre d'intervention (via Lapin Bleu SASU)
+- [Recherche](https://romainblachier.fr/recherche) : recherche doctorale (gouvernance de la transition électrique), notes et terrains
+- [Publications](https://romainblachier.fr/publications/) : tribunes et analyses parues en France et à l'international (Le Temps, Taipei Times, Revue Conflits, African Arguments…)
+- [Presse & médias](https://romainblachier.fr/presse) : sujets d'intervention, biographies prêtes à l'emploi, photo, contact direct
+- [À propos](https://romainblachier.fr/a-propos) : parcours détaillé
+- [Contact](https://romainblachier.fr/contact) : formulaire et coordonnées
+
+## Méthode
+
+- [Méthodologie](https://romainblachier.fr/methodologie) : sources, distinction analyse originale / publication externe
+- [Corrections](https://romainblachier.fr/corrections) : politique de corrections transparente et datée
+
+## Versions linguistiques
+
+- English: https://romainblachier.fr/en/
+- 繁體中文: https://romainblachier.fr/zh/

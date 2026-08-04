@@ -20,10 +20,11 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 
 <html lang="fr">
 	<head>
-		<BaseHead title={`Publications | Romain Blachier`} description={`Mes tribunes parues dans d'autres médias.`} />
+		<BaseHead title={`Publications | Romain Blachier`} description={`Tribunes et analyses de Romain Blachier sur l'énergie, Taïwan et l'Afrique : Le Temps, Taipei Times, Revue Conflits, African Arguments et d'autres médias.`} />
 		<style>
 			main { width: 820px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2rem 1rem 3rem; }
 			h1 { font-family: 'Playfair Display', Georgia, serif; margin-bottom: 0.6rem; }
+		.press-hint { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
 			.media-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0 1.8rem; }
 			.media-filter button { padding: 0.3em 0.9em; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); cursor: pointer; font-size: 0.9rem; }
 			.media-filter button:hover { border-color: var(--ink); }
@@ -43,6 +44,7 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 		<Header />
 		<main>
 			<h1>Publications</h1>
+			<p class="press-hint">Journaliste&nbsp;? Bios prêtes à l'emploi, photo et contact direct sur la <a href="/presse/">page presse</a>.</p>
 
 			<div class="media-filter" id="media-filter">
 				<button class="active" data-media="all">Tous les médias</button>

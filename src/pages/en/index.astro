@@ -25,33 +25,6 @@ const recentPubs = allPubs.slice(0, 3);
 		<BaseHead title={t('seo.title')} description={t('seo.description')} />
 	</head>
 	<body>
-		<script type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@graph": [
-				{
-					"@type": "WebSite",
-					"@id": "https://romainblachier.fr/en/#website",
-					"url": "https://romainblachier.fr/en/",
-					"name": "Romain Blachier — Energy & Geopolitics",
-					"description": "Energy and geopolitics. Conferences, university lectures, media commentary.",
-					"publisher": { "@id": "https://romainblachier.fr/#person" },
-					"inLanguage": "en-US"
-				},
-				{
-					"@type": "Person",
-					"@id": "https://romainblachier.fr/#person",
-					"name": "Romain Blachier",
-					"jobTitle": "Energy & Geopolitics",
-					"url": "https://romainblachier.fr/",
-					"sameAs": [
-						"https://www.linkedin.com/in/romainblachier"
-					],
-					"knowsLanguage": ["fr", "en", "zh"],
-					"email": "romain.blachier@gmail.com"
-				}
-			]
-		})} />
-
 		<Header />
 
 		<HeroGeometric
@@ -153,6 +126,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<div class="service-body">
 							<h3>{t('services.expertise.title')}</h3>
 							<p>{t('services.expertise.desc')}</p>
+							<a href="/en/consulting" class="latest-cta">{t('nav.consulting')} →</a>
 						</div>
 					</li>
 					<li class="service-item">
@@ -160,6 +134,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<div class="service-body">
 							<h3>{t('services.research.title')}</h3>
 							<p>{t('services.research.desc')}</p>
+							<a href="/en/research" class="latest-cta">{t('nav.research')} →</a>
 						</div>
 					</li>
 				</ol>

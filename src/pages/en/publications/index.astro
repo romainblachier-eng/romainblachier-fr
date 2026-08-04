@@ -20,10 +20,11 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 
 <html lang="en">
 	<head>
-		<BaseHead title={`Publications | Romain Blachier`} description={`My op-eds published in other outlets.`} />
+		<BaseHead title={`Publications | Romain Blachier`} description={`Op-eds and analysis by Romain Blachier on energy, Taiwan and Africa: Le Temps, Taipei Times, Revue Conflits, African Arguments and many other outlets.`} />
 		<style>
 			main { width: 820px; max-width: calc(100% - 2em); margin: 0 auto; padding: 2rem 1rem 3rem; }
 			h1 { font-family: 'Playfair Display', Georgia, serif; margin-bottom: 0.6rem; }
+			.press-hint { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
 			.media-filter { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0 1.8rem; }
 			.media-filter button { padding: 0.3em 0.9em; border-radius: 999px; border: 1px solid var(--line); background: white; color: var(--ink); cursor: pointer; font-size: 0.9rem; }
 			.media-filter button:hover { border-color: var(--ink); }
@@ -43,6 +44,7 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 		<Header />
 		<main>
 			<h1>Publications</h1>
+			<p class="press-hint">Journalist? Ready-to-use bios, photo and direct contact on the <a href="/en/press/">press page</a>.</p>
 
 			<div class="media-filter" id="media-filter">
 				<button class="active" data-media="all">All outlets</button>

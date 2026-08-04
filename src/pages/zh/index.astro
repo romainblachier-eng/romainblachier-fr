@@ -25,33 +25,6 @@ const recentPubs = allPubs.slice(0, 3);
 		<BaseHead title={t('seo.title')} description={t('seo.description')} />
 	</head>
 	<body>
-		<script type="application/ld+json" set:html={JSON.stringify({
-			"@context": "https://schema.org",
-			"@graph": [
-				{
-					"@type": "WebSite",
-					"@id": "https://romainblachier.fr/zh/#website",
-					"url": "https://romainblachier.fr/zh/",
-					"name": "Romain Blachier — 能源與地緣政治",
-					"description": "能源與地緣政治。研討會、頂尖院校培訓、媒體評論。",
-					"publisher": { "@id": "https://romainblachier.fr/#person" },
-					"inLanguage": "zh-Hant"
-				},
-				{
-					"@type": "Person",
-					"@id": "https://romainblachier.fr/#person",
-					"name": "Romain Blachier",
-					"jobTitle": "能源與地緣政治",
-					"url": "https://romainblachier.fr/",
-					"sameAs": [
-						"https://www.linkedin.com/in/romainblachier"
-					],
-					"knowsLanguage": ["fr", "en", "zh"],
-					"email": "romain.blachier@gmail.com"
-				}
-			]
-		})} />
-
 		<Header />
 
 		<HeroGeometric
