@@ -33,8 +33,10 @@ export const teachingInstitutions: Institution[] = [
 	{ name: 'UCLy — Université catholique de Lyon', zh: 'UCLy（里昂天主教大學）' },
 	{ name: 'Université catholique de Lille', zh: 'Université catholique de Lille（里爾天主教大學）' },
 	{ name: 'HEIP', zh: 'HEIP' },
+	{ name: 'INSEEC Grande École', zh: 'INSEEC Grande École' },
 	{ name: 'ILERI', zh: 'ILERI' },
 	{ name: "IRIS Sup'", zh: "IRIS Sup'" },
+	{ name: 'Hybria', zh: 'Hybria' },
 ];
 
 /** Cours contractés pour l'année 2026-2027, pas encore dispensés. */
