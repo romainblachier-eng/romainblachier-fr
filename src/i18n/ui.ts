@@ -66,7 +66,7 @@ export const ui = {
 		'references.culture': 'Culture & engagement',
 		// Contact
 		'contact.title': 'Contact',
-		'contact.desc': "Pour une formation, une conférence, une intervention média ou une collaboration : écrivez-moi par email ou via le formulaire.",
+		'contact.desc': "Pour une étude, une note de cadrage, une formation, une conférence, une intervention média ou une collaboration : écrivez-moi par email ou via le formulaire.",
 		'contact.name': 'Nom',
 		'contact.email': 'Email',
 		'contact.subject': 'Sujet de votre demande',
@@ -193,7 +193,7 @@ export const ui = {
 		'references.culture': 'Culture & civic engagement',
 		// Contact
 		'contact.title': 'Contact',
-		'contact.desc': "For training, a conference, a media appearance or a collaboration: write to me by email or through the form.",
+		'contact.desc': "For a study, a briefing note, training, a conference, a media appearance or a collaboration: write to me by email or through the form.",
 		'contact.name': 'Name',
 		'contact.email': 'Email',
 		'contact.subject': 'Subject',
@@ -304,7 +304,7 @@ export const ui = {
 		'references.culture': '文化與公民參與',
 		// Contact
 		'contact.title': '聯絡',
-		'contact.desc': '培訓、演講、媒體出席或合作事宜，歡迎來信或透過表單與我聯絡。',
+		'contact.desc': '研究報告、簡報、培訓、演講、媒體出席或合作事宜，歡迎來信或透過表單與我聯絡。',
 		'contact.name': '姓名',
 		'contact.email': '電子郵件',
 		'contact.subject': '來信主旨',
