@@ -84,9 +84,11 @@ Cas en attente de compléments (autre boîte mail à connecter) : PCAET 120 000 
 - **5 pays** de publication : France, Taïwan, États-Unis, Cameroun, Suisse.
 - **3 zones** d'intervention : Afrique francophone, Europe, Indo-Pacifique.
 
-### Enseignement 2026-2027 — liste affichée sur le site (10 établissements)
+### Enseignement 2026-2027 — liste affichée sur le site (12 établissements)
 
-emlyon business school • Grenoble École de Management • École Centrale de Lyon • INSA Lyon • ENTPE • UCLy • Université catholique de Lille • HEIP • ILERI • IRIS Sup'.
+emlyon business school • Grenoble École de Management • École Centrale de Lyon • INSA Lyon • ENTPE • UCLy • Université catholique de Lille • HEIP • INSEEC Grande École • ILERI • IRIS Sup' • Hybria.
+
+Hybria (Ecully) et INSEEC Grande École (campus Lyon) ajoutés le 2026-08-09 : engagements confirmés par échanges mail (planification 2026-2027, syllabus signés), absents de la liste par omission. Hybria : intervenant depuis 2022 (conférences, PGE). INSEEC : cours en L3 confirmés pour 2026-2027 (Panorama des RI, Public Policy), jurys de soutenance MSc.
 
 Notes :
 
