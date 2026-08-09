@@ -48,6 +48,7 @@ Ne jamais mentionner l'employeur salarié de Romain, ni son nom, ni son sigle, n
 - Aucun contenu partisan, aucune mention d'appartenance ou d'engagement politique passé ou présent.
 - Les mandats locaux (12 ans d'élu à Lyon) peuvent apparaître comme crédential factuel d'expérience des collectivités, sans étiquette.
 - Ne pas remonter d'interviews ou contenus relevant de la vie politique interne dans /publications ou /presse.
+- **Pas de repli/étiquetage par période** (décision Romain, 2026-08-09) : `/publications` affichait auparavant les textes 2012-2017 dans un `<details>` replié « période d'engagement politique ». Supprimé à sa demande — toutes les publications approuvées se lisent dans une seule liste chronologique, sans distinction visuelle par date. Cette règle ne change rien au filtre amont (rien de partisan n'est publié) : elle porte uniquement sur l'affichage de ce qui est déjà en ligne.
 
 ## Règle n°5 — Études de cas
 

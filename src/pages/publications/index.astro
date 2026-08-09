@@ -9,12 +9,6 @@ import PublicationLogo from '../../components/PublicationLogo.astro';
 
 const lang = 'fr';
 const posts = await getPublications(lang); // triées du plus récent au moins récent
-// Les textes antérieurs à 2018 relèvent de la période d'engagement politique.
-// Ils restent en ligne et filtrables, mais repliés : deux corpus distincts ne se
-// lisent pas dans la même liste.
-const ARCHIVE_BEFORE = 2018;
-const recent = posts.filter((p) => p.data.pubDate.getFullYear() >= ARCHIVE_BEFORE);
-const archive = posts.filter((p) => p.data.pubDate.getFullYear() < ARCHIVE_BEFORE);
 const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.media])).entries());
 ---
 
@@ -33,10 +27,6 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 			li { display: flex; gap: 0.9rem; align-items: center; margin-bottom: 1.3rem; padding-bottom: 1.3rem; border-bottom: 1px solid var(--line); }
 			.pub-text { display: flex; flex-direction: column; min-width: 0; }
 			li a.t { font-size: 1.1rem; font-weight: 600; text-decoration: none; }
-			.pub-archive { margin-top: 2.5rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
-			.pub-archive > summary { cursor: pointer; color: var(--muted); font-size: 0.9rem; list-style-position: outside; }
-			.pub-archive > summary:hover { color: var(--ink); }
-			.pub-archive[open] > summary { margin-bottom: 1.3rem; }
 			.meta { display: block; color: var(--muted); font-size: 0.85rem; margin-top: 0.2em; }
 		</style>
 	</head>
@@ -52,7 +42,7 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 			</div>
 
 			<ul id="pub-list">
-				{recent.map((p) => (
+				{posts.map((p) => (
 					<li data-media={p.data.mediaSlug}>
 						<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
 						<div class="pub-text">
@@ -62,23 +52,6 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 					</li>
 				))}
 			</ul>
-
-			{archive.length > 0 && (
-			<details class="pub-archive">
-				<summary>Archives 2012-2017 — textes de la période d’engagement politique</summary>
-				<ul id="pub-archive-list">
-					{archive.map((p) => (
-						<li data-media={p.data.mediaSlug}>
-							<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
-							<div class="pub-text">
-								<a class="t" href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{p.data.title}</a>
-								<span class="meta">{p.data.media} · <FormattedDate date={p.data.pubDate} lang={lang} /></span>
-							</div>
-						</li>
-					))}
-				</ul>
-			</details>
-			)}
 		</main>
 		<Footer />
 
@@ -92,7 +65,7 @@ const medias = Array.from(new Map(posts.map((p) => [p.data.mediaSlug, p.data.med
 					filter.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
 					btn.classList.add('active');
 					var media = btn.getAttribute('data-media');
-					document.querySelectorAll('#pub-list > li, #pub-archive-list > li').forEach(function (li) {
+					document.querySelectorAll('#pub-list > li').forEach(function (li) {
 						li.style.display = media === 'all' || li.getAttribute('data-media') === media ? '' : 'none';
 					});
 				});
