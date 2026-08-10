@@ -1,0 +1,206 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { Image } from "astro:assets";
+import portrait from "../assets/portrait.jpg";
+import { routeAlternates } from "../i18n/routes";
+
+const title = "Diagnostic flash IA générative — Romain Blachier";
+const description = "Deux heures de diagnostic + une note de recommandations pour décider quoi faire de l'IA générative dans votre organisation. 990 € HT.";
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={title} description={description} alternates={routeAlternates('diagnosticIA')} />
+	</head>
+	<body>
+		<Header />
+		<main class="offer-page">
+			<div class="offer-hero">
+				<h1 class="page-title">Diagnostic flash IA générative</h1>
+				<p class="page-lede">Deux heures pour savoir quoi faire de l'IA dans votre organisation. Une note de recommandations sous 10 jours. 990&nbsp;€ HT.</p>
+
+				<div class="top-cta">
+					<a href="#contact" class="conseil-cta-link">Réserver un diagnostic →</a>
+					<p class="phone-note">Ou directement par téléphone&nbsp;: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
+				</div>
+
+				<dl class="formateur-stats offer-stats">
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">990&nbsp;€</dt>
+						<dd class="formateur-stat-label">HT, prix de la mission</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">2h</dt>
+						<dd class="formateur-stat-label">de session en visioconférence</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">10 j</dt>
+						<dd class="formateur-stat-label">pour la note de recommandations</dd>
+					</div>
+				</dl>
+			</div>
+
+			<div class="page-body offer-body">
+
+				<div class="offer-about">
+					<div class="hero-photo offer-photo">
+						<div class="hero-photo-frame">
+							<Image src={portrait} alt="Romain Blachier" width={320} height={427} />
+						</div>
+					</div>
+					<div class="offer-about-text">
+						<p>Consultant et formateur, j'enseigne l'IA et la stratégie dans une douzaine d'établissements d'enseignement supérieur (Sciences Po Paris, emlyon business school, entre autres).</p>
+						<p>Cette méthode reprend celle de mes diagnostics sectoriels dans l'énergie et les politiques publiques&nbsp;: partir de vos dossiers réels, pas d'un catalogue d'outils.</p>
+					</div>
+				</div>
+
+				<hr class="section-sep" />
+
+				<h2>Le problème que ça résout</h2>
+				<p>Votre structure sait qu'elle doit «&nbsp;faire quelque chose avec l'IA générative&nbsp;», mais personne n'a le temps ni le recul pour trancher&nbsp;: quels usages, quels outils, quels risques, quelle politique interne, faut-il former les équipes. Le diagnostic flash répond à ces questions en une session, avec une priorisation écrite.</p>
+
+				<hr class="section-sep" />
+
+				<h2>Comment ça se passe</h2>
+				<ol>
+					<li><strong>Avant la session&nbsp;:</strong> vous remplissez un questionnaire court (une dizaine de questions sur vos métiers, vos outils actuels, vos points de friction, vos contraintes de confidentialité).</li>
+					<li><strong>La session&nbsp;:</strong> 2 heures de visioconférence avec le décideur, et si utile un ou deux collaborateurs clés. On passe en revue vos cas d'usage réels, on identifie ceux où l'IA a un retour immédiat, on pointe les risques concrets.</li>
+					<li><strong>Le livrable&nbsp;:</strong> une note de recommandations de 3 à 4 pages, sous 10 jours.</li>
+				</ol>
+
+				<hr class="section-sep" />
+
+				<h2>Ce que contient la note</h2>
+				<ul>
+					<li>état des lieux de vos usages actuels</li>
+					<li>3 à 5 cas d'usage priorisés, avec outils recommandés</li>
+					<li>risques et garde-fous (confidentialité des données, RGPD, fiabilité des contenus produits)</li>
+					<li>feuille de route sur 90 jours</li>
+				</ul>
+
+				<hr class="section-sep" />
+
+				<h2>Pour qui</h2>
+				<p>Organismes de formation, écoles et directions de programme, PME, collectivités et structures publiques.</p>
+
+				<hr class="section-sep" />
+
+				<h2>Ce que ce n'est pas</h2>
+				<p>Pas un audit technique, pas d'intégration d'outils, pas d'accompagnement au long cours. Vous achetez un avis structuré et une priorisation, pas une prestation informatique.</p>
+
+				<hr class="section-sep" />
+
+				<h2>Modalités</h2>
+				<p>990&nbsp;€ HT. Paiement à la commande. Facturation par Lapin Bleu SASU. Livrable sous 10 jours après la session.</p>
+
+			</div>
+		</main>
+
+		<section class="contact-section" id="contact">
+			<div class="contact-inner">
+				<div class="contact-left">
+					<h2>Réserver un diagnostic</h2>
+					<p>Décrivez votre organisation et vos usages en quelques lignes&nbsp;: je reviens vers vous pour caler la session.</p>
+					<div class="contact-links">
+						<a href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+					</div>
+					<p class="phone-note phone-note--light">Ou directement par téléphone&nbsp;: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
+				</div>
+				<ContactForm lang="fr" subject="Diagnostic flash IA" submitLabel="Réserver un diagnostic →" />
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.offer-hero {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 3rem 1rem 0;
+		text-align: left;
+	}
+	.page-title {
+		font-family: 'Playfair Display', Georgia, serif;
+		margin-bottom: 0.5em;
+	}
+	.page-lede {
+		color: rgb(var(--gray));
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+	.top-cta {
+		margin-bottom: 2.5rem;
+	}
+	.phone-note {
+		margin-top: .85rem;
+		font-size: .85rem;
+		color: rgb(var(--gray));
+	}
+	.phone-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+	.phone-note--light { color: rgba(255,255,255,.6); }
+	.phone-note--light a { color: rgba(255,255,255,.85); }
+	.offer-stats {
+		justify-content: flex-start;
+		margin-bottom: 3rem;
+	}
+	.offer-body {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 1rem 1rem 4rem;
+		line-height: 1.75;
+	}
+	.offer-body p { margin-bottom: 1.25rem; }
+	.offer-body h2 {
+		font-family: 'Playfair Display', Georgia, serif;
+		margin-top: 2.5rem;
+		margin-bottom: 1.25rem;
+	}
+	.offer-body ul, .offer-body ol {
+		margin-bottom: 1.5rem;
+		padding-left: 1.25rem;
+	}
+	.offer-body ul { list-style: disc; }
+	.offer-body ol { list-style: decimal; }
+	.offer-body li { margin-bottom: 0.65rem; line-height: 1.7; }
+
+	.offer-about {
+		display: flex;
+		gap: 1.75rem;
+		align-items: center;
+		margin: 0 0 1rem;
+	}
+	.offer-photo { width: 132px; flex-shrink: 0; }
+	.offer-about-text p { margin-bottom: 0.75rem; font-size: .95rem; }
+	.offer-about-text p:last-child { margin-bottom: 0; }
+
+	.section-sep {
+		border: none;
+		border-top: 1px solid rgba(var(--gray-light), 0.6);
+		margin: 3rem 0;
+	}
+
+	.conseil-cta-link {
+		display: inline-block;
+		padding: 0.85rem 2.5rem;
+		background: rgb(var(--black));
+		color: white !important;
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 500;
+		font-size: 1rem;
+		transition: opacity 0.2s ease;
+	}
+	.conseil-cta-link:hover { opacity: 0.85; }
+
+	@media (max-width: 600px) {
+		.offer-about { flex-direction: column; align-items: flex-start; }
+		.offer-photo { width: 160px; }
+	}
+</style>

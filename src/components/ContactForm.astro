@@ -4,11 +4,17 @@ import { getLangFromUrl, useTranslations } from '../i18n/utils';
 interface Props {
 	lang?: 'fr' | 'en' | 'zh';
 	variant?: 'dark' | 'light';
+	/** Prefills the subject field, e.g. for a page selling one specific offer. */
+	subject?: string;
+	/** Overrides the submit button label (defaults to the site-wide "Envoyer →" translation). */
+	submitLabel?: string;
 }
 
 const lang = Astro.props.lang || getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const variant = Astro.props.variant || 'dark';
+const subject = Astro.props.subject;
+const submitLabel = Astro.props.submitLabel || `${t('contact.send')} →`;
 ---
 
 <form
@@ -20,7 +26,7 @@ const variant = Astro.props.variant || 'dark';
 	data-captcha-wrong={t('contact.captcha.wrong')}
 	data-sending={t('contact.sending')}
 	data-sent={t('contact.sent')}
-	data-send={`${t('contact.send')} →`}
+	data-send={submitLabel}
 >
 	<input type="hidden" name="_captcha" value="false" />
 	<input type="hidden" name="_subject" value="[romainblachier.fr] Nouveau message" />
@@ -29,13 +35,13 @@ const variant = Astro.props.variant || 'dark';
 		<input type="text" name="name" placeholder={t('contact.name')} required />
 		<input type="email" name="email" placeholder={t('contact.email')} required />
 	</div>
-	<input type="text" name="subject" placeholder={t('contact.subject')} required />
+	<input type="text" name="subject" placeholder={t('contact.subject')} value={subject} required />
 	<textarea name="message" placeholder={t('contact.message')} required></textarea>
 	<div class="captcha-row" id="captcha-row">
 		<label id="captcha-label"></label>
 		<input type="text" id="captcha-input" placeholder={t('contact.captcha.placeholder')} required autocomplete="off" />
 	</div>
-	<button type="submit" id="contact-submit">{t('contact.send')} →</button>
+	<button type="submit" id="contact-submit">{submitLabel}</button>
 	<div id="contact-success" class="form-feedback" style="display:none">
 		{t('contact.success')}
 	</div>

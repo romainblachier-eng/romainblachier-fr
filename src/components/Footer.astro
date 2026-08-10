@@ -11,6 +11,8 @@ const today = new Date();
 const navLinks = [
 	{ href: getLocalePath(lang, '/'), label: t('nav.home') },
 	{ href: routePath('conseil', lang), label: t('nav.consulting') },
+	// FR-only offer page, no EN/ZH version yet: only listed for lang === 'fr'.
+	{ href: lang === 'fr' ? routePath('diagnosticIA', lang) : undefined, label: 'Diagnostic IA' },
 	{ href: getLocalePath(lang, '/publications'), label: t('nav.publications') },
 	{ href: routePath('recherche', lang), label: t('nav.research') },
 	{ href: routePath('presse', lang), label: t('nav.press') },

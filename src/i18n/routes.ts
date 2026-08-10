@@ -22,6 +22,7 @@ export const localizedRoutes = {
 	conseil: { fr: '/conseil', en: '/en/consulting' },
 	presse: { fr: '/presse', en: '/en/press' },
 	recherche: { fr: '/recherche', en: '/en/research' },
+	diagnosticIA: { fr: '/diagnostic-ia' },
 } as const satisfies Record<string, Partial<Record<Lang, string>>>;
 
 export type RouteKey = keyof typeof localizedRoutes;
