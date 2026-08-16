@@ -48,11 +48,11 @@
 		"volume": "2026/3",
 		"year": 2026,
 		"issue_period": "Mai-Juin",
-		"issn": null,
-		"eissn": null,
+		"issn": "2274-4444",
+		"eissn": "3038-5733",
+		"revueFondeeEn": 2023,
 		"section": null,
-		"pages": null,
-		"pageDebut": 40,
+		"pages": "40-44",
 		"doi": null,
 		"url": "https://shs.cairn.info/revue-cahiers-de-conflits-2026-3-page-40?lang=fr",
 		"relatedSitePublication": "communistes-asie-revue-conflits",
@@ -60,13 +60,13 @@
 		"memeTexteQueVersionWeb": true,
 		"noteEditoriale": "Revue sans comité de lecture, confirmé par Romain le 2026-08-16. Cairn étiquette pourtant cet article « Article de revue », comme celui de La Revue de l'Énergie : c'est un type de document, pas un label de qualité. Ne pas remonter cette référence sous « Publications à comité de lecture », et la déclarer sans comité de lecture au dépôt HAL.",
 		"aConfirmer": [
-			"page de fin (l'URL Cairn ne donne que la page de début)",
-			"doi",
-			"ISSN des Cahiers de Conflits"
+			"doi"
 		],
 		"sources": [
 			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »",
-			"URL article Cairn transmise le 2026-08-16 : la convention Cairn « …-page-N » fixe la page de début à 40"
+			"URL article Cairn transmise le 2026-08-16 : la convention Cairn « …-page-N » fixe la page de début à 40",
+			"Pagination 40-44 et ISSN transmis le 2026-08-16, recoupés par Romain entre la page officielle de la revue sur Cairn.info et le répertoire entrevues.org",
+			"Revue universitaire adossée à Conflits, fondée en 2023, diffusée par Cairn (même source croisée)"
 		]
 	}
 ]
