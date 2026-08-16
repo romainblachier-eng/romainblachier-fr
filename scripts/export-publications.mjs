@@ -290,6 +290,9 @@ function toBibtex(w) {
 			note: [
 				j.urlIsIssueLevel ? 'URL = sommaire du numero' : null,
 				j.dateEnLigne ? `mis en ligne le ${j.dateEnLigne}` : null,
+				// A known start page with no end page is stated as such rather than
+				// emitted as a range, which would invent an extent.
+				!j.pages && j.pageDebut ? `commence p. ${j.pageDebut}, page de fin a confirmer` : null,
 			]
 				.filter(Boolean)
 				.join(' ; ') || null,

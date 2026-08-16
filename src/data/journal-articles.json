@@ -51,18 +51,21 @@
 		"eissn": null,
 		"section": null,
 		"pages": null,
+		"pageDebut": 40,
 		"doi": null,
-		"url": null,
+		"url": "https://shs.cairn.info/revue-cahiers-de-conflits-2026-3-page-40?lang=fr",
 		"relatedSitePublication": "communistes-asie-revue-conflits",
+		"comiteDeLecture": false,
+		"noteEditoriale": "Cairn étiquette cet article « Article de revue », comme celui de La Revue de l'Énergie. C'est un type de document, pas un label de qualité : il ne vaut pas évaluation par les pairs. Ne pas remonter cette référence sous « Publications à comité de lecture ».",
 		"aConfirmer": [
-			"pages",
+			"page de fin (l'URL Cairn ne donne que la page de début)",
 			"doi",
-			"url Cairn de l'article",
 			"ISSN des Cahiers de Conflits",
 			"articulation entre la version web Revue Conflits (27 avril 2026) et cette parution imprimée"
 		],
 		"sources": [
-			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »"
+			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »",
+			"URL article Cairn transmise le 2026-08-16 : la convention Cairn « …-page-N » fixe la page de début à 40"
 		]
 	}
 ]
