@@ -32,7 +32,7 @@ export const ui = {
 		'services.writing.title': "J'écris",
 		'services.writing.desc': "Analyses et tribunes dans la presse française et internationale, notes pour think tanks, chroniques radio et télévision. C'est là que je teste ce que je crois avoir compris.",
 		'services.expertise.title': "J'expertise",
-		'services.expertise.desc': "Interventions ponctuelles auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Des missions en France, au Cameroun et à Taïwan.",
+		'services.expertise.desc': "Conseil en gouvernance et stratégie, intelligence énergie-climat : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Des missions en France, au Cameroun et à Taïwan.",
 		'services.research.title': 'Je réfléchis',
 		'services.research.desc': "Je suis expert associé à la Fondation Jean-Jaurès, et je mène en parallèle un travail de recherche sur la gouvernance des systèmes électriques. C'est la partie lente, celle qui prend des années.",
 		// Formateur section
@@ -40,6 +40,7 @@ export const ui = {
 		'formateur.title': 'Former et enseigner depuis 2010',
 		'formateur.intro': "De la grande école au séminaire d'entreprise, de la formation d'élus au module pour cadres dirigeants, je conçois et j'anime des formations qui rendent accessibles des sujets complexes — énergie, géopolitique, souveraineté, communication stratégique. Mon approche associe rigueur académique, expérience de terrain en Afrique et en Asie, douze ans de mandat exécutif et pédagogie concrète.",
 		'formateur.clients': "J'interviens comme formateur pour",
+		'formateur.cta': 'Je conseille aussi',
 		'formateur.academic.title': 'Enseignement académique',
 		'formateur.academic.desc': "Cours magistraux, travaux dirigés et séminaires en grandes écoles et à l'université, du Bachelor au Master et en formation continue. Direction de mémoires et participation aux jurys de soutenance.",
 		'formateur.custom.title': 'Formations sur mesure',
@@ -159,7 +160,7 @@ export const ui = {
 		'services.writing.title': 'I write',
 		'services.writing.desc': "Analysis and op-eds in the French and international press, think-tank papers, radio and television commentary. This is where I test what I think I have understood.",
 		'services.expertise.title': 'I advise',
-		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Assignments in France, Cameroon and Taiwan.",
+		'services.expertise.desc': "Governance and strategy consulting, energy-climate intelligence: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Assignments in France, Cameroon and Taiwan.",
 		'services.research.title': 'I research',
 		'services.research.desc': "I am an associate fellow at the Fondation Jean-Jaurès, and I carry out research on the governance of power systems alongside it. This is the slow part, the one that takes years.",
 		// Trainer section
@@ -167,6 +168,7 @@ export const ui = {
 		'formateur.title': 'Training and teaching since 2010',
 		'formateur.intro': "From business schools to corporate seminars, from elected officials training to executive workshops, I design and deliver training that makes complex subjects accessible — energy, geopolitics, sovereignty, strategic communications. My approach combines academic rigour, field experience in Africa and Asia, twelve years of executive public office and hands-on pedagogy.",
 		'formateur.clients': "Organizations I train for",
+		'formateur.cta': 'I also advise',
 		'formateur.academic.title': 'Academic teaching',
 		'formateur.academic.desc': "Lectures, tutorials and seminars at French universities and business schools, from Bachelor to Master and executive education. Dissertation supervision and examination panels.",
 		'formateur.custom.title': 'Bespoke training',
@@ -287,7 +289,7 @@ export const ui = {
 		'services.writing.title': '我寫作',
 		'services.writing.desc': '為法國與國際媒體撰寫分析與評論，為智庫撰寫研究短文，並在廣播與電視擔任評論。這是我檢驗自己是否真的想清楚的地方。',
 		'services.expertise.title': '我提供專業意見',
-		'services.expertise.desc': '為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。任務地點包括法國、喀麥隆與台灣。',
+		'services.expertise.desc': '能源與氣候治理、策略與情報顧問：為機構與組織承接部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播等短期工作。任務地點包括法國、喀麥隆與台灣。',
 		'services.research.title': '我持續研究',
 		'services.research.desc': '我是讓·饒勒斯基金會副研究員，並同時進行電力系統治理的研究工作。這是最慢的部分，需要好幾年。',
 		// Topics

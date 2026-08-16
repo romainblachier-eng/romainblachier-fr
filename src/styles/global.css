@@ -482,6 +482,10 @@ header nav {
 	margin: -1.5rem auto 2.5rem;
 	text-align: center;
 }
+.formateur-cta {
+	text-align: center;
+	margin: -1.5rem 0 2.5rem;
+}
 /* Chiffres : filets verticaux plutôt que boîtes arrondies. */
 .formateur-stats {
 	display: flex;
