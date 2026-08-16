@@ -80,7 +80,11 @@ inconnus sont absents des fichiers plutôt que remplis au jugé.
 — *La Revue de l'Énergie*, n° 685 (2026/4), p. 48-62. Manque : le DOI.
 
 **« Communistes d'Asie : l'Orient est-il toujours rouge ? »**
-— *Cahiers de Conflits*, 2026/3 Mai-Juin, n° 18, p. 40-44. Manque : le DOI.
+— *Cahiers de Conflits*, 2026/3 Mai-Juin, n° 18, p. 41-44. Manque : le DOI.
+
+Le numéro de page dans une URL Cairn n'est pas la pagination imprimée : celle de cet
+article est `…-page-40` alors que le texte commence p. 41. Ne pas déduire l'une de
+l'autre.
 
 ⚠️ **Doublon confirmé** : ce texte figure deux fois dans `orcid-works.bib` — comme
 tribune web Revue Conflits (27 avril 2026) et comme article imprimé dans les Cahiers

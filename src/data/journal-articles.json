@@ -26,7 +26,7 @@
 		"doi": null,
 		"url": "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr",
 		"aConfirmer": [
-			"doi — non constaté ; les DOI Cairn suivent le motif 10.3917/<code revue>.<numéro>.<page de début>, ce qui donnerait 10.3917/ener.685.0048, mais l'hypothèse reste à vérifier sur la page de l'article",
+			"doi — non constaté ; les DOI Cairn se construisent sur 10.3917/<code revue>.<numéro>.<jeton de page>, où le jeton est celui de l'URL (ici 0048) et non nécessairement la page imprimée — voir la fiche Cahiers de Conflits, où les deux divergent. L'hypothèse 10.3917/ener.685.0048 reste donc à vérifier sur la page de l'article.",
 			"date de parution papier du n° 685 (seule la mise en ligne Cairn est vérifiée)"
 		],
 		"sources": [
@@ -52,7 +52,7 @@
 		"eissn": "3038-5733",
 		"revueFondeeEn": 2023,
 		"section": null,
-		"pages": "40-44",
+		"pages": "41-44",
 		"doi": null,
 		"url": "https://shs.cairn.info/revue-cahiers-de-conflits-2026-3-page-40?lang=fr",
 		"relatedSitePublication": "communistes-asie-revue-conflits",
@@ -64,8 +64,8 @@
 		],
 		"sources": [
 			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »",
-			"URL article Cairn transmise le 2026-08-16 : la convention Cairn « …-page-N » fixe la page de début à 40",
-			"Pagination 40-44 et ISSN transmis le 2026-08-16, recoupés par Romain entre la page officielle de la revue sur Cairn.info et le répertoire entrevues.org",
+			"URL article Cairn transmise le 2026-08-16. Attention : son jeton « …-page-40 » ne correspond PAS à la pagination imprimée, qui commence p. 41. Ce jeton adresse l'article dans Cairn, il ne renseigne pas la page de début.",
+			"Pagination 41-44 et ISSN transmis le 2026-08-16, recoupés par Romain entre la page officielle de la revue sur Cairn.info et le répertoire entrevues.org",
 			"Revue universitaire adossée à Conflits, fondée en 2023, diffusée par Cairn (même source croisée)"
 		]
 	}
