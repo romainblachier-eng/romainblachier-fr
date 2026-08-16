@@ -12,6 +12,8 @@
 		"eissn": "2492-7988",
 		"section": "Politique énergétique",
 		"dateEnLigne": "2026-08-14",
+		"comiteDeLecture": true,
+		"noteEditoriale": "Revue à comité de lecture — c'est le classement retenu de longue date sur la page Recherche du site, cohérent avec la présentation de la revue par son diffuseur. À reconfirmer si un doute apparaît.",
 		"keywords": [
 			"politique énergétique",
 			"Émirats arabes unis",
@@ -56,12 +58,12 @@
 		"url": "https://shs.cairn.info/revue-cahiers-de-conflits-2026-3-page-40?lang=fr",
 		"relatedSitePublication": "communistes-asie-revue-conflits",
 		"comiteDeLecture": false,
-		"noteEditoriale": "Cairn étiquette cet article « Article de revue », comme celui de La Revue de l'Énergie. C'est un type de document, pas un label de qualité : il ne vaut pas évaluation par les pairs. Ne pas remonter cette référence sous « Publications à comité de lecture ».",
+		"memeTexteQueVersionWeb": true,
+		"noteEditoriale": "Revue sans comité de lecture, confirmé par Romain le 2026-08-16. Cairn étiquette pourtant cet article « Article de revue », comme celui de La Revue de l'Énergie : c'est un type de document, pas un label de qualité. Ne pas remonter cette référence sous « Publications à comité de lecture », et la déclarer sans comité de lecture au dépôt HAL.",
 		"aConfirmer": [
 			"page de fin (l'URL Cairn ne donne que la page de début)",
 			"doi",
-			"ISSN des Cahiers de Conflits",
-			"articulation entre la version web Revue Conflits (27 avril 2026) et cette parution imprimée"
+			"ISSN des Cahiers de Conflits"
 		],
 		"sources": [
 			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »",

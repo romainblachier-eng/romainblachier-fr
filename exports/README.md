@@ -61,6 +61,13 @@ Global Taiwan Institute, Taiwan Insight).
 1. *Déposer* → importer le fichier BibTeX pour préremplir les métadonnées.
 2. Typologie : `ART` (article dans une revue) pour les deux articles de revue,
    `OTHER` (autre publication scientifique) pour les notes.
+3. ⚠️ HAL demande si l'article est **« avec comité de lecture »**. La réponse
+   diffère entre les deux, et Cairn ne permet pas de les distinguer — il étiquette
+   tout « Article de revue » :
+   - *La Revue de l'Énergie* → **avec** comité de lecture
+   - *Cahiers de Conflits* → **sans** comité de lecture
+
+   Chaque entrée `@article` porte le rappel dans son champ `note`.
 3. Renseigner l'IdHAL et le lier à l'ORCID : HAL sait ensuite pousser les dépôts
    vers ORCID automatiquement, ce qui évite de refaire l'import à chaque publication.
 
@@ -75,13 +82,24 @@ Manquent : pagination, DOI, et l'URL au niveau article (le lien enregistré poin
 vers le sommaire du numéro).
 
 **« Communistes d'Asie : l'Orient est-il toujours rouge ? »**
-— *Cahiers de Conflits*, 2026/3 Mai-Juin, n° 18. Manquent : pagination, DOI, URL
-d'article, ISSN.
+— *Cahiers de Conflits*, 2026/3 Mai-Juin, n° 18, à partir de la p. 40.
+Manquent : page de fin, DOI, ISSN.
 
-⚠️ **Doublon** : ce second texte figure deux fois dans `orcid-works.bib` — une fois
-comme tribune web Revue Conflits (27 avril 2026), une fois comme article imprimé dans
-les Cahiers de Conflits. Selon qu'il s'agit du même texte ou de deux versions
-distinctes, n'en importer qu'un. À trancher.
+⚠️ **Doublon confirmé** : ce texte figure deux fois dans `orcid-works.bib` — comme
+tribune web Revue Conflits (27 avril 2026) et comme article imprimé dans les Cahiers
+de Conflits. Même URL canonique de part et d'autre : c'est le même texte sous deux
+formes. N'en importer qu'un.
+
+## Cairn ne certifie rien
+
+Être diffusé par Cairn n'atteste pas d'une évaluation par les pairs. Cairn diffuse
+l'édition francophone en sciences humaines — revues académiques et revues de débat
+confondues — et applique à tout le contenu d'un numéro la même étiquette « Article de
+revue », qui est un type de document et non un label de qualité. Les sous-domaines
+`shs.` et `stm.` relèvent d'un découpage disciplinaire, pas d'une hiérarchie.
+
+D'où la distinction portée dans `journal-articles.json` via `comiteDeLecture`, que le
+site et les dépôts doivent tenir puisque Cairn l'aplatit.
 
 ## Exclusions volontaires
 

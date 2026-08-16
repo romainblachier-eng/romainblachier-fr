@@ -259,9 +259,13 @@ for (const j of journals) {
 	// web op-ed, once as the print reference. Importing both would double-count it.
 	if (j.relatedSitePublication) {
 		warnings.push(
-			`doublon probable — ${j.slug} et ${j.relatedSitePublication} sont vraisemblablement ` +
-				`le même texte (version imprimée / version web) : n'en importer qu'un`,
+			`doublon ${j.memeTexteQueVersionWeb ? 'confirmé' : 'probable'} — ${j.slug} et ` +
+				`${j.relatedSitePublication} sont le même texte (version imprimée / version web) : ` +
+				`n'en importer qu'un`,
 		);
+	}
+	if (j.comiteDeLecture === false) {
+		warnings.push(`HAL — ${j.slug} : déclarer SANS comité de lecture (Cairn ne le distingue pas)`);
 	}
 }
 
@@ -293,6 +297,11 @@ function toBibtex(w) {
 				// A known start page with no end page is stated as such rather than
 				// emitted as a range, which would invent an extent.
 				!j.pages && j.pageDebut ? `commence p. ${j.pageDebut}, page de fin a confirmer` : null,
+				// HAL's deposit form asks whether an ART is "avec comite de lecture".
+				// Cairn labels every hosted item "Article de revue" regardless, so the
+				// answer has to travel with the entry or it gets mis-declared.
+				j.comiteDeLecture === false ? 'HAL : declarer SANS comite de lecture' : null,
+				j.comiteDeLecture === true ? 'HAL : declarer AVEC comite de lecture' : null,
 			]
 				.filter(Boolean)
 				.join(' ; ') || null,
