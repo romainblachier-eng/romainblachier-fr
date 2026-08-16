@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "tinacms dev -c \"astro dev\"",
     "build": "tinacms build --skip-cloud-checks && astro build",
+    "build:site": "astro build",
     "preview": "astro preview",
     "verify:seo": "node scripts/verify-seo.mjs",
+    "export:publications": "node scripts/export-publications.mjs",
     "astro": "astro"
   },
   "dependencies": {

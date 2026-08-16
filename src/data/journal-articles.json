@@ -1,0 +1,72 @@
+[
+	{
+		"slug": "revue-energie-685-fenetre-de-rente",
+		"title": "La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement",
+		"lang": "fr",
+		"journal": "La Revue de l'Énergie",
+		"publisher": "Conseil français de l'énergie",
+		"number": "685",
+		"volume": "2026/4",
+		"year": 2026,
+		"issn": "0303-240X",
+		"eissn": "2492-7988",
+		"section": "Politique énergétique",
+		"dateEnLigne": "2026-08-14",
+		"comiteDeLecture": true,
+		"noteEditoriale": "Revue à comité de lecture — c'est le classement retenu de longue date sur la page Recherche du site, cohérent avec la présentation de la revue par son diffuseur. À reconfirmer si un doute apparaît.",
+		"keywords": [
+			"politique énergétique",
+			"Émirats arabes unis",
+			"OPEP",
+			"rente pétrolière",
+			"transition",
+			"Golfe"
+		],
+		"pages": "48-62",
+		"doi": null,
+		"url": "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr",
+		"aConfirmer": [
+			"doi — non constaté ; les DOI Cairn se construisent sur 10.3917/<code revue>.<numéro>.<jeton de page>, où le jeton est celui de l'URL (ici 0048) et non nécessairement la page imprimée — voir la fiche Cahiers de Conflits, où les deux divergent. L'hypothèse 10.3917/ener.685.0048 reste donc à vérifier sur la page de l'article.",
+			"date de parution papier du n° 685 (seule la mise en ligne Cairn est vérifiée)"
+		],
+		"sources": [
+			"Sommaire imprimé du n° 685 (exemplaire papier, 2026-08-16) : titre, auteur, rubrique « Articles », ISSN 0303-240X",
+			"Page auteur Cairn de Romain Blachier, bloc « Dernière publication » : La Revue de l'Énergie (2026/4 n° 685), type « Article de revue »",
+			"Sommaire Cairn du n° 685, rubrique « Politique énergétique »",
+			"Page article Cairn, onglet Résumé : date de mise en ligne 14/08/2026 et mots-clés éditeurs",
+			"Pagination 48-62 relevée sur la page article Cairn (transmise le 2026-08-16)",
+			"URL au niveau article confirmée le 2026-08-16, conforme à la convention Cairn « …-page-<page de début> »"
+		]
+	},
+	{
+		"slug": "cahiers-de-conflits-18-communistes-asie",
+		"title": "Communistes d'Asie : l'Orient est-il toujours rouge ?",
+		"lang": "fr",
+		"journal": "Cahiers de Conflits",
+		"publisher": null,
+		"number": "18",
+		"volume": "2026/3",
+		"year": 2026,
+		"issue_period": "Mai-Juin",
+		"issn": "2274-4444",
+		"eissn": "3038-5733",
+		"revueFondeeEn": 2023,
+		"section": null,
+		"pages": "41-44",
+		"doi": null,
+		"url": "https://shs.cairn.info/revue-cahiers-de-conflits-2026-3-page-40?lang=fr",
+		"relatedSitePublication": "communistes-asie-revue-conflits",
+		"comiteDeLecture": false,
+		"memeTexteQueVersionWeb": true,
+		"noteEditoriale": "Revue sans comité de lecture, confirmé par Romain le 2026-08-16. Cairn étiquette pourtant cet article « Article de revue », comme celui de La Revue de l'Énergie : c'est un type de document, pas un label de qualité. Ne pas remonter cette référence sous « Publications à comité de lecture », et la déclarer sans comité de lecture au dépôt HAL.",
+		"aConfirmer": [
+			"doi"
+		],
+		"sources": [
+			"Page auteur Cairn de Romain Blachier, bloc « Articles les plus consultés » : Cahiers de Conflits (2026/3 Mai-Juin n° 18), type « Article de revue »",
+			"URL article Cairn transmise le 2026-08-16. Attention : son jeton « …-page-40 » ne correspond PAS à la pagination imprimée, qui commence p. 41. Ce jeton adresse l'article dans Cairn, il ne renseigne pas la page de début.",
+			"Pagination 41-44 et ISSN transmis le 2026-08-16, recoupés par Romain entre la page officielle de la revue sur Cairn.info et le répertoire entrevues.org",
+			"Revue universitaire adossée à Conflits, fondée en 2023, diffusée par Cairn (même source croisée)"
+		]
+	}
+]

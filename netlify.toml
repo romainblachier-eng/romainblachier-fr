@@ -1,3 +1,15 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+# Deploy previews and branch deploys build the site only, skipping `tinacms build`.
+# That step generates the /admin CMS interface and needs TinaCloud credentials, which
+# are not exposed outside the production context — so it failed on every pull request
+# and left previews unusable. Nothing under src/ imports Tina, so `astro build` alone
+# produces the complete site; previews simply have no /admin, which is where content
+# is never edited anyway. Production is untouched and still runs the full build.
+[context.deploy-preview]
+  command = "npm run build:site"
+
+[context.branch-deploy]
+  command = "npm run build:site"
