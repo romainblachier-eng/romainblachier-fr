@@ -277,7 +277,8 @@ function toBibtex(w) {
 			year: j.year,
 			volume: j.volume ? esc(j.volume) : null,
 			number: j.number ? esc(j.number) : null,
-			pages: j.pages ? esc(j.pages) : null,
+			// BibTeX ranges use an en dash: "48-62" -> "48--62".
+			pages: j.pages ? esc(j.pages).replace(/(\d)\s*-\s*(\d)/, '$1--$2') : null,
 			issn: j.issn || null,
 			doi: j.doi || null,
 			url: j.url || null,

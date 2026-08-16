@@ -20,21 +20,21 @@
 			"transition",
 			"Golfe"
 		],
-		"pages": null,
+		"pages": "48-62",
 		"doi": null,
 		"url": "https://stm.cairn.info/revue-revue-de-l-energie-2026-4?lang=fr",
 		"urlIsIssueLevel": true,
 		"aConfirmer": [
-			"pages",
-			"doi",
-			"url au niveau article (le lien enregistré pointe vers le sommaire du numéro)",
+			"doi — à vérifier sur Cairn ; ses DOI suivent le motif 10.3917/ener.685.<page de début>, soit vraisemblablement 10.3917/ener.685.0048, mais ce n'est qu'une hypothèse tant qu'elle n'est pas constatée",
+			"url au niveau article (le lien enregistré pointe vers le sommaire du numéro ; l'identifiant serait de la forme ENER_685_0048)",
 			"date de parution papier du n° 685 (seule la mise en ligne Cairn est vérifiée)"
 		],
 		"sources": [
 			"Sommaire imprimé du n° 685 (exemplaire papier, 2026-08-16) : titre, auteur, rubrique « Articles », ISSN 0303-240X",
 			"Page auteur Cairn de Romain Blachier, bloc « Dernière publication » : La Revue de l'Énergie (2026/4 n° 685), type « Article de revue »",
 			"Sommaire Cairn du n° 685, rubrique « Politique énergétique »",
-			"Page article Cairn, onglet Résumé : date de mise en ligne 14/08/2026 et mots-clés éditeurs"
+			"Page article Cairn, onglet Résumé : date de mise en ligne 14/08/2026 et mots-clés éditeurs",
+			"Pagination 48-62 relevée sur la page article Cairn (transmise le 2026-08-16)"
 		]
 	},
 	{
