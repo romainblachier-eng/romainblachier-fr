@@ -77,9 +77,7 @@ Le script signale ces points à chaque exécution. Rien n'a été deviné : les 
 inconnus sont absents des fichiers plutôt que remplis au jugé.
 
 **« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement »**
-— *La Revue de l'Énergie*, n° 685 (2026/4), rubrique « Politique énergétique ».
-Manquent : pagination, DOI, et l'URL au niveau article (le lien enregistré pointe
-vers le sommaire du numéro).
+— *La Revue de l'Énergie*, n° 685 (2026/4), p. 48-62. Manque : le DOI.
 
 **« Communistes d'Asie : l'Orient est-il toujours rouge ? »**
 — *Cahiers de Conflits*, 2026/3 Mai-Juin, n° 18, à partir de la p. 40.
