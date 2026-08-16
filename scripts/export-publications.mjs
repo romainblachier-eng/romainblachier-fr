@@ -283,7 +283,15 @@ function toBibtex(w) {
 			url: j.url || null,
 			publisher: j.publisher ? esc(j.publisher) : null,
 			language: LANG_NAME[j.lang] || null,
-			note: j.urlIsIssueLevel ? 'URL = sommaire du numero' : null,
+			keywords: j.keywords?.length ? esc(j.keywords.join(', ')) : null,
+			// Cairn's "date de mise en ligne" is the online release, not the print date.
+			urldate: j.dateEnLigne || null,
+			note: [
+				j.urlIsIssueLevel ? 'URL = sommaire du numero' : null,
+				j.dateEnLigne ? `mis en ligne le ${j.dateEnLigne}` : null,
+			]
+				.filter(Boolean)
+				.join(' ; ') || null,
 			orcid: ORCID,
 		});
 	}
