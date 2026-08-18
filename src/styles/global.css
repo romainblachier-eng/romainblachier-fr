@@ -287,6 +287,34 @@ header nav {
 .event-link a:hover {
 	border-bottom-color: currentColor;
 }
+.event-banner-inner--duo {
+	max-width: 900px;
+}
+.event-duo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.75rem;
+	margin-top: .75rem;
+}
+.event-duo .event-item + .event-item {
+	border-left: 1px solid var(--line);
+	padding-left: 1.75rem;
+}
+.event-duo .event-details {
+	font-size: 1.05rem;
+}
+@media (max-width: 700px) {
+	.event-duo {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+	.event-duo .event-item + .event-item {
+		border-left: 0;
+		padding-left: 0;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--line);
+	}
+}
 
 .latest-article {
 	background: var(--bg);
