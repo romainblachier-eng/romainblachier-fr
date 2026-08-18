@@ -4,7 +4,7 @@ mediaSlug: revue-energie
 lienCanonique: "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr"
 kind: tribune
 title: "Mon article dans La Revue de l'Énergie : « La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement »"
-description: "Article paru dans La Revue de l'Énergie, n° 685 (2026/4), p. 48-62 : la sortie des Émirats arabes unis de l'OPEP+ lue non comme une rupture, mais comme l'aboutissement d'une stratégie de maximisation de la rente pétrolière avant la transition."
+description: "Article paru dans La Revue de l'Énergie, n° 685 (2026/4), p. 48-62 : le retrait émirien de l'OPEP+ lu non comme une rupture, mais comme l'aboutissement d'une trajectoire de quinze ans de maximisation intertemporelle de la rente pétrolière."
 pubDate: 2026-08-14T10:00:00.000Z
 ---
 
@@ -16,11 +16,11 @@ Mon article **« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme ab
 
 ## Le propos : une sortie qui n'est pas une rupture
 
-Le 28 avril 2026, les Émirats arabes unis ont annoncé leur retrait de l'OPEP et de l'OPEP+. La lecture immédiate y a vu une conséquence de la crise d'Ormuz. J'y oppose une autre lecture : le retrait est l'**aboutissement d'une trajectoire** engagée bien avant, dont le premier signal public remonte à la contestation des quotas par Abou Dhabi en 2021.
+Le 28 avril 2026, les Émirats arabes unis ont annoncé leur retrait de l'OPEP et de son élargissement, l'OPEP+, avec effet au 1er mai. La presse internationale y a lu une rupture, précipitée par la guerre d'Iran. Je propose une autre lecture : celle de l'**aboutissement d'une trajectoire de quinze ans**, déjà lisible lors du bras de fer de juillet 2021 au sein de l'OPEP+.
 
-L'argument tient à la notion de **fenêtre de rente**. Les Émirats arbitrent en faveur de la valorisation maximale de leur rente pétrolière tant qu'elle reste valorisable, ce qui suppose de s'affranchir des disciplines collectives qui plafonnent la production. Cet arbitrage éclaire aussi le décalage entre le récit émirien sur la transition — présidence de la COP28, investissements dans les renouvelables — et la structure réelle des investissements du pays.
+Ce que la sortie révèle, c'est la cohérence de la stratégie émirienne : une **maximisation intertemporelle de la rente** — tirer le maximum de valeur du pétrole tant qu'il reste valorisable — financée par une diversification qui **recycle** la rente plutôt qu'elle ne la remplace. Cette stratégie est institutionnalisée dans la fédération elle-même, à travers l'asymétrie économique entre Abu Dhabi, qui détient 96 % des réserves, et Dubaï, laboratoire d'une économie post-rente.
 
-J'en tire une conséquence pour les Européens : les producteurs du Golfe sont des partenaires **pendant** la transition plutôt que des partenaires **de** la transition, et la coopération gagne à se construire sur les segments d'intérêt réellement partagés.
+L'article en tire **cinq recommandations opérationnelles** pour la diplomatie énergétique européenne.
 
 **Mots-clés éditeurs** : politique énergétique, Émirats arabes unis, OPEP, rente pétrolière, transition, Golfe.
 
