@@ -21,6 +21,7 @@ const MEDIA_OPTIONS = [
   { value: "samoa-observer", label: "Samoa Observer" },
   { value: "slate-fr", label: "Slate.fr" },
   { value: "lyonmag", label: "Lyon Mag" },
+  { value: "hespress", label: "Hespress" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
