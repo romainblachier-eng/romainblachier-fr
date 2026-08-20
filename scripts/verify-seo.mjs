@@ -80,14 +80,20 @@ for (const file of htmlFiles) {
 console.log(`    ${pagesWithHreflang} pages with hreflang, ${hreflangChecked} internal targets checked.`);
 
 // ---- 4. Publications are noindex + canonical off-site ----
-console.log('\n[4] Checking /publications detail pages are noindex with off-site canonical…');
+console.log('\n[4] Checking /publications detail pages are noindex with off-site canonical (self-canonical if print-only)…');
 const pubPages = htmlFiles.filter((f) => /\/publications\/[^/]+\/[^/]+\/index\.html$/.test(f));
 let pubChecked = 0;
 for (const file of pubPages) {
 	const html = readFileSync(file, 'utf8');
 	if (!/<meta name="robots" content="noindex/.test(html)) fail(`${file.replace(DIST, '')} : not noindex`);
 	const canon = html.match(/<link rel="canonical" href="([^"]+)"/);
-	if (!canon || canon[1].startsWith(SITE)) fail(`${file.replace(DIST, '')} : canonical not pointing off-site`);
+	// Print-only pieces have no online source: they self-canonicalize instead.
+	const printOnly = /<meta name="publication-source" content="print"/.test(html);
+	if (printOnly) {
+		if (!canon || !canon[1].startsWith(SITE)) fail(`${file.replace(DIST, '')} : print-only entry should canonical to itself`);
+	} else if (!canon || canon[1].startsWith(SITE)) {
+		fail(`${file.replace(DIST, '')} : canonical not pointing off-site`);
+	}
 	pubChecked++;
 }
 console.log(`    ${pubChecked} publication detail pages checked.`);

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="Défis Actuels">
+  <rect width="240" height="60" fill="white"/>
+  <text x="120" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" letter-spacing="0.5">
+    <tspan fill="#14328c" font-weight="700">défis</tspan><tspan fill="#d8232a" font-weight="400"> actuels</tspan>
+  </text>
+</svg>

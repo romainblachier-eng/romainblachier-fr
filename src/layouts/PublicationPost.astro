@@ -14,7 +14,7 @@ interface Props {
 	heroImage?: any;
 	media: string;
 	mediaSlug: string;
-	lienCanonique: string;
+	lienCanonique?: string;
 	chapo?: string;
 	kind?: string;
 	lang?: string;
@@ -42,8 +42,9 @@ const breadcrumbSchema = {
 
 <html lang={htmlLang}>
 	<head>
-		<!-- noindex,follow + canonical to the host publisher: this is a portfolio entry, not the primary source. -->
+		<!-- noindex,follow + canonical to the host publisher when there is one; print-only pieces fall back to self-canonical. -->
 		<BaseHead title={`${title} | Romain Blachier`} description={description} noindex={true} canonical={lienCanonique} />
+		{!lienCanonique && <meta name="publication-source" content="print" />}
 		<style>
 			main { width: calc(100% - 2em); max-width: 100%; margin: 0; }
 			.hero-image { width: 100%; }
@@ -57,6 +58,7 @@ const breadcrumbSchema = {
 			.chapo { font-size: 1.15rem; color: rgb(var(--gray)); font-weight: 500; text-align: center; max-width: 640px; margin: 0 auto 1em; }
 			.date { margin-bottom: 0.5em; color: rgb(var(--gray)); }
 			.cta-external { display: block; width: 720px; max-width: calc(100% - 2em); margin: 1.5em auto; text-align: center; }
+			.print-only { margin: 0; font-size: 0.95rem; color: rgb(var(--gray)); }
 			.cta-external a { display: inline-block; padding: 0.7em 1.4em; border-radius: 8px; background: rgb(var(--black)); color: white; text-decoration: none; font-weight: 600; }
 		</style>
 	</head>
@@ -82,7 +84,9 @@ const breadcrumbSchema = {
 					<slot />
 				</div>
 				<div class="cta-external">
-					<a href={lienCanonique} target="_blank" rel="noopener nofollow">{t('publications.external')} : {media} ↗</a>
+					{lienCanonique
+						? <a href={lienCanonique} target="_blank" rel="noopener nofollow">{t('publications.external')} : {media} ↗</a>
+						: <p class="print-only">{t('publications.print_only')}</p>}
 				</div>
 			</article>
 		</main>

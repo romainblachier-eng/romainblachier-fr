@@ -14,7 +14,8 @@ const publicationSchema = ({ image }: { image: Function }) =>
 		heroImage: image().optional(),
 		media: z.string(),
 		mediaSlug: z.string(),
-		lienCanonique: z.string().url(),
+		// Optional: some pieces run in print only and have no online source URL.
+		lienCanonique: z.string().url().optional(),
 		chapo: z.string().optional(),
 		kind: z.enum(['tribune', 'citation', 'interview']).default('tribune'),
 	});
