@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153382/en-chantier-nous-ralons-contre-ce-qui-empeche-la-ville-de-tomber-en-panne"
 kind: tribune
-title: "工程進行中：我們抱怨的，其實是讓城市不故障的那些東西 — Lyon Mag（法國）"
+title: "工程進行中：我們抱怨的，其實是讓城市不故障的那些東西"
 description: >-
   刊於 Lyon Mag 的專欄：里昂夏季施工作為都市基礎設施隱形運作的顯影劑。
   借助 Star 與 Ruhleder（基礎設施在正常運作時是隱形的）與 Huré（技術，

@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/92722/demain-sera-t-il-possible-de-poster-des-photos-de-neige-a-lyon-sur-facebook/50"
 kind: tribune
-title: "我在《Lyon Mag》（法國）的文章：未來還能在Facebook上曬里昂雪景照嗎？"
+title: "我在《Lyon Mag》的文章：未來還能在Facebook上曬里昂雪景照嗎？"
 description: "刊於《Lyon Mag》，本文將全球氣候變化數據落地至里昂日常生活：越來越稀少的冬雪，以及未來數十年里昂氣候的演變軌跡。"
 pubDate: 2017-12-18T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

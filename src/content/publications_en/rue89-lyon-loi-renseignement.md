@@ -3,7 +3,7 @@ media: "Rue89 Lyon"
 mediaSlug: rue89-lyon
 lienCanonique: "https://www.rue89lyon.fr/2015/05/04/loi-renseignement-si-jetais-depute/"
 kind: tribune
-title: "My article in Rue89 Lyon (France): Intelligence bill — if I were an MP…"
+title: "My article in Rue89 Lyon: Intelligence bill — if I were an MP…"
 description: "Published in Rue89 Lyon, this article sets out the reasons why, as an elected citizen, I would have voted against the French intelligence bill: mass surveillance, civil liberties, and insufficient democratic oversight."
 pubDate: 2015-05-04T10:00:00.000Z
 heroImage: '../../assets/rue89-lyon-logo.svg'

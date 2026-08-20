@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/communistes-dasie-lorient-est-il-toujours-rouge/"
 kind: tribune
-title: "My article in Revue Conflits (France): Asian Communists — is the East still red?"
+title: "My article in Revue Conflits: Asian Communists — is the East still red?"
 description: "Published in Revue Conflits, this article revisits what remains of 'communism' in Asia: from North Korean racial nationalism to the Vietnamese and Laotian developmental states, the label conceals more than it clarifies."
 pubDate: 2026-04-27T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

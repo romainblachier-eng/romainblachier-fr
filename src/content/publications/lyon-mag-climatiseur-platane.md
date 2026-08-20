@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153266/le-climatiseur-et-le-platane"
 kind: tribune
-title: "Le climatiseur et le platane — Lyon Mag (France)"
+title: "Le climatiseur et le platane"
 description: >-
   Tribune dans Lyon Mag : trois décisions face à la canicule lyonnaise de 2026 —
   abandon des quais Rive Droite, climatiseurs régionaux, inaction métropolitaine.

@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153382/en-chantier-nous-ralons-contre-ce-qui-empeche-la-ville-de-tomber-en-panne"
 kind: tribune
-title: "Under construction: we grumble at what keeps the city from breaking down — Lyon Mag (France)"
+title: "Under construction: we grumble at what keeps the city from breaking down"
 description: >-
   Op-ed in Lyon Mag: Lyon's summer roadworks as a window onto the invisible
   workings of urban infrastructure. Draws on Star and Ruhleder (infrastructure

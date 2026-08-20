@@ -3,7 +3,7 @@ media: "Le Monde"
 mediaSlug: le-monde
 lienCanonique: "https://www.lemonde.fr/idees/article/2012/10/18/entrepreneurs-on-vous-aime_1777216_3232.html"
 kind: tribune
-title: "My article in Le Monde (France): Entrepreneurs, we love you!"
+title: "My article in Le Monde: Entrepreneurs, we love you!"
 description: "Published in Le Monde, this article makes the case for an economic policy that values entrepreneurship, innovation and company creation — at a time when French political debate pitted speculative finance against industry."
 pubDate: 2012-10-18T10:00:00.000Z
 heroImage: '../../assets/le-monde-logo.svg'

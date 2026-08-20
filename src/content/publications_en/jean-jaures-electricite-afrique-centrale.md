@@ -3,7 +3,7 @@ media: "Fondation Jean-Jaurès"
 mediaSlug: jean-jaures
 lienCanonique: "https://www.jean-jaures.org/publication/integrer-lelectricite-en-afrique-centrale-kinshasa-douala-brazzaville-la-metropole-comme-arbitre-absent/"
 kind: tribune
-title: "My note for Fondation Jean-Jaurès (France): Integrating electricity in Central Africa — the metropolis as absent arbiter"
+title: "My note for Fondation Jean-Jaurès: Integrating electricity in Central Africa — the metropolis as absent arbiter"
 description: "Published by Fondation Jean-Jaurès, this note examines electricity governance challenges in three Central African capitals — Kinshasa, Douala, Brazzaville — where metropolitan areas concentrate demand without having decision-making power over the electrical systems that serve them."
 pubDate: 2026-06-11T10:00:00.000Z
 heroImage: '../../assets/fondation-jean-jaures-logo.svg'

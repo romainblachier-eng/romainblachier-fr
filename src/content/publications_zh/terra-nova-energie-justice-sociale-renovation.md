@@ -3,7 +3,7 @@ media: "Terra Nova · La Grande Conversation"
 mediaSlug: terra-nova
 lienCanonique: "https://www.lagrandeconversation.com/ecologie/energie-et-justice-sociale-permettre-de-renover/"
 kind: tribune
-title: "能源與社會正義：讓翻新真正可行 — La Grande Conversation（法國）"
+title: "能源與社會正義：讓翻新真正可行"
 description: "我為 Terra Nova 撰寫、刊於 La Grande Conversation 的政策報告：儘管公共支持力度龐大，法國住宅節能翻新為何仍然停滯不前，以及如何排除其中的財務與制度障礙。"
 pubDate: 2026-06-25T10:00:00.000Z
 heroImage: '../../assets/la-grande-conversation-logo.png'

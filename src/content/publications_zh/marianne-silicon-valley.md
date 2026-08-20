@@ -3,7 +3,7 @@ media: "Marianne"
 mediaSlug: marianne
 lienCanonique: "https://www.marianne.net/agora/tribunes-libres/oui-peut-critiquer-la-silicon-valley"
 kind: tribune
-title: "我在《Marianne》（法國）的文章：是的，我們可以批評矽谷！"
+title: "我在《Marianne》的文章：是的，我們可以批評矽谷！"
 description: "刊於《Marianne》，本文主張批評矽谷的正當性——其壟斷行為、避稅行為，以及少數美國科技巨頭對經濟權力的集中。"
 pubDate: 2014-12-12T10:00:00.000Z
 heroImage: '../../assets/marianne-logo.svg'

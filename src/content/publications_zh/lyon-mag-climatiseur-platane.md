@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153266/le-climatiseur-et-le-platane"
 kind: tribune
-title: "冷氣機與法國梧桐 — Lyon Mag（法國）"
+title: "冷氣機與法國梧桐"
 description: >-
   刊於 Lyon Mag 的專欄：面對 2026 年里昂熱浪的三項決策——放棄隆河右岸河堤改造、
   地區發放冷氣機、大都會層級的不作為。借助 Bauer（政策拆解的四種方式）、

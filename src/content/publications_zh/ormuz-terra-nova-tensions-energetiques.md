@@ -3,7 +3,7 @@ media: "Terra Nova · La Grande Conversation"
 mediaSlug: terra-nova
 lienCanonique: "https://www.lagrandeconversation.com/monde/ormuz-revele-nos-tensions-energetiques-en-asie-comme-en-europe/"
 kind: tribune
-title: "我在 La Grande Conversation（法國）的評論：荷莫茲海峽揭示我們的能源緊張，亞洲與歐洲皆然"
+title: "我在 La Grande Conversation 的評論：荷莫茲海峽揭示我們的能源緊張，亞洲與歐洲皆然"
 description: "由 Terra Nova 旗下的 La Grande Conversation 刊登，這篇評論回顧荷莫茲海峽封鎖所引發的石油危機，以及它如何揭示亞洲的化石燃料依賴與歐洲的盲點。"
 pubDate: 2026-04-21T10:00:00.000Z
 heroImage: '../../assets/la-grande-conversation-logo.png'

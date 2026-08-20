@@ -3,7 +3,7 @@ media: "Terra Nova · La Grande Conversation"
 mediaSlug: terra-nova
 lienCanonique: "https://www.lagrandeconversation.com/monde/ormuz-revele-nos-tensions-energetiques-en-asie-comme-en-europe/"
 kind: tribune
-title: "Ma tribune sur La Grande Conversation (France) : Ormuz révèle nos tensions énergétiques, en Asie comme en Europe"
+title: "Ma tribune sur La Grande Conversation : Ormuz révèle nos tensions énergétiques, en Asie comme en Europe"
 description: "Publiée par Terra Nova sur La Grande Conversation, cette tribune revient sur la crise pétrolière ouverte par la fermeture du détroit d'Ormuz et ce qu'elle dit de la dépendance fossile de l'Asie et des angles morts européens."
 pubDate: 2026-04-21T10:00:00.000Z
 heroImage: '../../assets/la-grande-conversation-logo.png'

@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique"
 kind: tribune
-title: "La clim est une machine, son accès est une politique — Lyon Mag (France)"
+title: "La clim est une machine, son accès est une politique"
 description: >-
   Enquête de terrain (reportage et fact-checking), publiée dans Lyon Mag, sur
   l'accès inégal à la climatisation à Lyon et la mortalité liée aux fortes

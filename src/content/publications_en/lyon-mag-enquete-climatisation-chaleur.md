@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique"
 kind: tribune
-title: "Air conditioning is a machine, access to it is a policy — Lyon Mag (France)"
+title: "Air conditioning is a machine, access to it is a policy"
 description: >-
   Field investigation (reporting and fact-checking), published in Lyon Mag,
   on unequal access to air conditioning in Lyon and heat-related mortality —

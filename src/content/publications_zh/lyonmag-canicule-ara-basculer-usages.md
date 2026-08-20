@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152699/canicule-en-auvergne-rhone-alpes-le-vrai-defi-n-est-plus-de-produire-propre-mais-de-basculer-les-usages"
 kind: tribune
-title: "熱浪來襲：在奧弗涅－隆河阿爾卑斯大區，真正的挑戰已不是產出乾淨電力，而是轉換用電方式——Lyon Mag（法國）"
+title: "熱浪來襲：在奧弗涅－隆河阿爾卑斯大區，真正的挑戰已不是產出乾淨電力，而是轉換用電方式——Lyon Mag"
 description: >-
   奧弗涅－隆河阿爾卑斯大區每年生產 1190 億度電，其中 96.5% 已經去碳化，
   盈餘電力還輸往瑞士與義大利。真正的挑戰已不在生產端，而在用電端的去碳化。

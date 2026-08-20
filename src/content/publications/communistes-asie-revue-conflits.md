@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/communistes-dasie-lorient-est-il-toujours-rouge/"
 kind: tribune
-title: "Mon article dans Revue Conflits (France) : Communistes d'Asie, l'Orient est-il toujours rouge ?"
+title: "Mon article dans Revue Conflits : Communistes d'Asie, l'Orient est-il toujours rouge ?"
 description: "Publié dans Revue Conflits, cet article revisite ce qu'il reste du « communisme » en Asie : du nationalisme racial nord-coréen aux États développementalistes vietnamien et laotien, le label cache plus qu'il n'éclaire."
 pubDate: 2026-04-27T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

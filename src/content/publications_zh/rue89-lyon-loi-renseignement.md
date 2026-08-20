@@ -3,7 +3,7 @@ media: "Rue89 Lyon"
 mediaSlug: rue89-lyon
 lienCanonique: "https://www.rue89lyon.fr/2015/05/04/loi-renseignement-si-jetais-depute/"
 kind: tribune
-title: "我在《Rue89 Lyon》（法國）的文章：情報法案——如果我是國會議員……"
+title: "我在《Rue89 Lyon》的文章：情報法案——如果我是國會議員……"
 description: "刊於《Rue89 Lyon》，本文闡述身為公民選舉代表，我為何會投票反對法國情報法案：大規模監控、公民自由、民主監督不足。"
 pubDate: 2015-05-04T10:00:00.000Z
 heroImage: '../../assets/rue89-lyon-logo.svg'

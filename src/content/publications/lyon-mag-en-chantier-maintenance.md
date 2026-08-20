@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153382/en-chantier-nous-ralons-contre-ce-qui-empeche-la-ville-de-tomber-en-panne"
 kind: tribune
-title: "En chantier : nous râlons contre ce qui empêche la ville de tomber en panne — Lyon Mag (France)"
+title: "En chantier : nous râlons contre ce qui empêche la ville de tomber en panne"
 description: >-
   Tribune dans Lyon Mag : les chantiers d'été lyonnais comme révélateur du
   fonctionnement invisible des infrastructures urbaines. Mobilise Star et

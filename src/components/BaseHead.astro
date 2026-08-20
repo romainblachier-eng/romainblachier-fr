@@ -31,7 +31,7 @@ const ogLocale = ogLocaleMap[lang] ?? 'fr_FR';
 const altLocales = Object.entries(ogLocaleMap).filter(([code]) => code !== lang).map(([, v]) => v);
 
 const { title, description, article, canonical } = Astro.props;
-// Publications canonicalize to the host publisher; everything else to self.
+// Every page canonicalizes to itself unless a caller overrides it.
 const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site).toString();
 // Every page of the site is indexable: noindex is never emitted, anywhere.
 const robotsContent = "index, follow";

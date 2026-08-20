@@ -3,7 +3,7 @@ media: "Libération"
 mediaSlug: liberation
 lienCanonique: "https://www.liberation.fr/planete/2014/07/30/persecutes-les-chretiens-d-orient-sont-ils-amenes-a-disparaitre_1072963/"
 kind: tribune
-title: "我在《Libération》（法國）的文章：遭受迫害的東方基督徒，是否注定消失？"
+title: "我在《Libération》的文章：遭受迫害的東方基督徒，是否注定消失？"
 description: "刊於《Libération》，本文探討中東基督教社群所受的迫害——尤其在伊拉克與敘利亞——以及這些有著數千年歷史的少數群體的命運。"
 pubDate: 2014-07-30T10:00:00.000Z
 heroImage: '../../assets/liberation-logo.svg'

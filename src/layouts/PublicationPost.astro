@@ -42,9 +42,11 @@ const breadcrumbSchema = {
 
 <html lang={htmlLang}>
 	<head>
-		<!-- Indexable, like every page of the site. Canonical goes to the host publisher when there is one; print-only pieces fall back to self-canonical. -->
-		<BaseHead title={`${title} | Romain Blachier`} description={description} canonical={lienCanonique} />
-		{!lienCanonique && <meta name="publication-source" content="print" />}
+		<!-- Indexable and self-canonical, like every page of the site: pointing the
+		     canonical at the host publisher told search engines to drop this page,
+		     which is exactly what we do not want. `lienCanonique` stays the outbound
+		     "read at the publisher" link, nothing more. -->
+		<BaseHead title={`${title} | Romain Blachier`} description={description} />
 		<style>
 			main { width: calc(100% - 2em); max-width: 100%; margin: 0; }
 			.hero-image { width: 100%; }

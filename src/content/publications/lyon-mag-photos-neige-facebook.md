@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/92722/demain-sera-t-il-possible-de-poster-des-photos-de-neige-a-lyon-sur-facebook/50"
 kind: tribune
-title: "Mon article dans Lyon Mag (France) : Demain sera-t-il possible de poster des photos de neige à Lyon sur Facebook ?"
+title: "Mon article dans Lyon Mag : Demain sera-t-il possible de poster des photos de neige à Lyon sur Facebook ?"
 description: "Publié dans Lyon Mag, cet article ancre les données globales du changement climatique dans une réalité lyonnaise concrète : la neige en ville, les hivers de plus en plus doux, et la trajectoire du climat local."
 pubDate: 2017-12-18T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

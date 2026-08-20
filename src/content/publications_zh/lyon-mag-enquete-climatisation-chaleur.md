@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique"
 kind: tribune
-title: "我在《Lyon Mag》（法國）的文章：冷氣是一台機器，能否使用是一種政策"
+title: "我在《Lyon Mag》的文章：冷氣是一台機器，能否使用是一種政策"
 description: >-
   刊於《Lyon Mag》的實地調查報導（新聞查證與事實查核），探討里昂居民取得冷氣的不平等
   與高溫致死率的關聯——根據法國公共衛生署（Santé publique France）統計，

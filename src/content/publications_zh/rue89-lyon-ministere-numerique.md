@@ -3,7 +3,7 @@ media: "Rue89 Lyon"
 mediaSlug: rue89-lyon
 lienCanonique: "https://www.rue89lyon.fr/2014/08/25/remaniement-et-si-on-en-profitait-creer-grand-ministere-du-numerique/"
 kind: tribune
-title: "我在《Rue89 Lyon》（法國）的文章：內閣改組——何不借此機會設立真正的數字部？"
+title: "我在《Rue89 Lyon》的文章：內閣改組——何不借此機會設立真正的數字部？"
 description: "刊於《Rue89 Lyon》，本文建議藉助政府改組之機，將分散於各部的數字職能整合為一個統一、連貫的部門，以應對國家數字轉型的挑戰。"
 pubDate: 2014-08-25T10:00:00.000Z
 heroImage: '../../assets/rue89-lyon-logo.svg'

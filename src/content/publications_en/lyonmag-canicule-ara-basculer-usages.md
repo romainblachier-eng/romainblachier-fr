@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152699/canicule-en-auvergne-rhone-alpes-le-vrai-defi-n-est-plus-de-produire-propre-mais-de-basculer-les-usages"
 kind: tribune
-title: "Heatwave: in Auvergne-Rhône-Alpes, the real challenge is no longer producing clean power, but switching usages — Lyon Mag (France)"
+title: "Heatwave: in Auvergne-Rhône-Alpes, the real challenge is no longer producing clean power, but switching usages — Lyon Mag"
 description: >-
   The Auvergne-Rhône-Alpes region produces 119 TWh a year, 96.5% of it
   carbon-free, and exports its surplus to Switzerland and Italy. The real

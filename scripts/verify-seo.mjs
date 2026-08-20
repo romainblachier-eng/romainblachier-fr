@@ -89,19 +89,17 @@ for (const file of htmlFiles) {
 }
 console.log(`    ${indexChecked} pages checked.`);
 
-// ---- 5. Publication detail pages canonicalize to the host publisher ----
-console.log('\n[5] Checking /publications detail pages canonicalize off-site (self-canonical if print-only)…');
+// ---- 5. Publication detail pages are self-canonical ----
+console.log('\n[5] Checking /publications detail pages canonicalize to themselves…');
 const pubPages = htmlFiles.filter((f) => /\/publications\/[^/]+\/[^/]+\/index\.html$/.test(f));
 let pubChecked = 0;
 for (const file of pubPages) {
 	const html = readFileSync(file, 'utf8');
 	const canon = html.match(/<link rel="canonical" href="([^"]+)"/);
-	// Print-only pieces have no online source: they self-canonicalize instead.
-	const printOnly = /<meta name="publication-source" content="print"/.test(html);
-	if (printOnly) {
-		if (!canon || !canon[1].startsWith(SITE)) fail(`${file.replace(DIST, '')} : print-only entry should canonical to itself`);
-	} else if (!canon || canon[1].startsWith(SITE)) {
-		fail(`${file.replace(DIST, '')} : canonical not pointing off-site`);
+	const self = SITE + file.replace(DIST, '').replace(/index\.html$/, '');
+	// A canonical pointing at the publisher hands the page over to them: it must stay on us.
+	if (!canon || canon[1] !== self) {
+		fail(`${file.replace(DIST, '')} : canonical is ${canon ? canon[1] : 'missing'}, expected ${self}`);
 	}
 	pubChecked++;
 }

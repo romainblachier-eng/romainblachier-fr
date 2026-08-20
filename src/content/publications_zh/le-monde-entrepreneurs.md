@@ -3,7 +3,7 @@ media: "Le Monde"
 mediaSlug: le-monde
 lienCanonique: "https://www.lemonde.fr/idees/article/2012/10/18/entrepreneurs-on-vous-aime_1777216_3232.html"
 kind: tribune
-title: "我在《Le Monde》（法國）的文章：企業家，我們愛你們！"
+title: "我在《Le Monde》的文章：企業家，我們愛你們！"
 description: "刊於《Le Monde》，本文為創業精神發聲——在法國政治辯論將金融投機與實體產業對立的時代，呼籲一種真正重視創業、創新與企業創辦的經濟政策。"
 pubDate: 2012-10-18T10:00:00.000Z
 heroImage: '../../assets/le-monde-logo.svg'

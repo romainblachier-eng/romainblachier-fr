@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/pour-qu-il-n-y-ait-plus-d-autre-kobane_44462.html"
 kind: tribune
-title: "My article in Le HuffPost (France): So there are no more Kobanés"
+title: "My article in Le HuffPost: So there are no more Kobanés"
 description: "Published in Le HuffPost, this article analyses the encirclement of Kobané by ISIS, the contradictions of Turkish policy, and the paralysis of the Western coalition in the face of the Islamic State's advance."
 pubDate: 2014-10-07T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

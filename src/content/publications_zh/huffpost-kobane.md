@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/pour-qu-il-n-y-ait-plus-d-autre-kobane_44462.html"
 kind: tribune
-title: "我在《Le HuffPost》（法國）的文章：不再有另一個科巴尼"
+title: "我在《Le HuffPost》的文章：不再有另一個科巴尼"
 description: "刊於《Le HuffPost》，本文以科巴尼保衛戰為案例，呼籲對抗伊斯蘭國採取更協調一致的國際應對策略。"
 pubDate: 2014-10-07T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'
