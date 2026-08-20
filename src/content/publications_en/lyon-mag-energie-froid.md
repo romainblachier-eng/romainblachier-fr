@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152258/energie-a-lyon-on-fabrique-aussi-du-froid"
 kind: tribune
-title: "My article in Lyon Mag: Energy — Lyon also manufactures cold"
+title: "My article in Lyon Mag (France): Energy — Lyon also manufactures cold"
 description: "Published in Lyon Mag, this article explores Lyon's urban district cooling networks: a little-known energy infrastructure that cools buildings and public spaces without individual air conditioning units."
 pubDate: 2026-05-29T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/06/25/2003859684"
 kind: tribune
-title: "Une bouée de sauvetage n'est pas une stratégie"
+title: "Une bouée de sauvetage n'est pas une stratégie — Taipei Times (Taïwan)"
 description: "Tribune dans le Taipei Times : le Taiwan Energy Security and Anti-Embargo Act adopté au Congrès américain sécurise un approvisionnement par la mer, mais une bouée de sauvetage n'est pas une stratégie. La vraie sécurité énergétique de Taïwan se produit sur l'île."
 pubDate: 2026-06-25T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

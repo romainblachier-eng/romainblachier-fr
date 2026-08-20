@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9549010"
 kind: tribune
-title: "L'énergie ne devrait pas changer de camp à chaque alternance — 聯合報 (United Daily News)"
+title: "L'énergie ne devrait pas changer de camp à chaque alternance — 聯合報 (United Daily News, Taïwan)"
 description: >-
   Tribune publiée dans le 聯合報 (United Daily News), l'un des grands quotidiens
   de Taïwan (page A14) : pourquoi Taïwan paie-t-il sa facture énergétique deux

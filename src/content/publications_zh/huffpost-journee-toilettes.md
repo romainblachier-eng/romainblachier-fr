@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/life/article/la-journee-mondiale-des-toilettes-est-un-sujet-serieux_22693.html"
 kind: tribune
-title: "我在《Le HuffPost》的文章：世界廁所日是一個嚴肅的議題"
+title: "我在《Le HuffPost》（法國）的文章：世界廁所日是一個嚴肅的議題"
 description: "刊於《Le HuffPost》，本文提醒讀者：全球三分之一的人口缺乏基本衛生設施——這是公共衛生、發展與人權問題。"
 pubDate: 2013-07-29T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

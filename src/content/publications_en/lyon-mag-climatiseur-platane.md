@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153266/le-climatiseur-et-le-platane"
 kind: tribune
-title: "The air conditioner and the plane tree"
+title: "The air conditioner and the plane tree — Lyon Mag (France)"
 description: >-
   Op-ed in Lyon Mag: three decisions taken during Lyon's 2026 heatwave —
   the abandonment of the Rive Droite riverbank project, regional air conditioners,

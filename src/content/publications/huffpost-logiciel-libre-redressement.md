@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/le-logiciel-libre-un-instrument-du-redressement-productif-national_31660.html"
 kind: tribune
-title: "Mon article dans Le HuffPost : Le logiciel libre, un instrument du redressement productif national"
+title: "Mon article dans Le HuffPost (France) : Le logiciel libre, un instrument du redressement productif national"
 description: "Publié dans Le HuffPost, cet article plaide pour faire du logiciel libre un levier stratégique du redressement industriel et économique de la France."
 pubDate: 2014-01-31T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

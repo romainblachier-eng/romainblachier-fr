@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/131464/lyon-merite-des-trains-de-nuit/50"
 kind: tribune
-title: "My article in Lyon Mag: Lyon deserves night trains!"
+title: "My article in Lyon Mag (France): Lyon deserves night trains!"
 description: "Published in Lyon Mag, this article makes the case for restoring night train services from Lyon: decarbonised travel, competitiveness against aviation, and territorial cohesion."
 pubDate: 2023-08-04T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

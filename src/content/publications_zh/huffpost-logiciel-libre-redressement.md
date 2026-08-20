@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/le-logiciel-libre-un-instrument-du-redressement-productif-national_31660.html"
 kind: tribune
-title: "我在《Le HuffPost》的文章：自由軟體——法國生產力復興的工具"
+title: "我在《Le HuffPost》（法國）的文章：自由軟體——法國生產力復興的工具"
 description: "刊於《Le HuffPost》，本文主張將自由與開源軟體作為法國工業與經濟復甦的戰略槓桿。"
 pubDate: 2014-01-31T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/07/26/2003861379"
 kind: tribune
-title: "Kinmen et la loi qui dit non"
+title: "Kinmen et la loi qui dit non — Taipei Times (Taïwan)"
 description: "Tribune dans le Taipei Times : la connexion électrique entre Kinmen et la province chinoise du Fujian est techniquement faisable — c'est un choix légal et politique délibéré qui l'interdit. Accepter ce coût de NT$3 milliards par an, et le rendre visible, est une décision que Taïwan devrait porter fièrement."
 pubDate: 2026-07-26T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

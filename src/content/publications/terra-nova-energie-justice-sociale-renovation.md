@@ -3,7 +3,7 @@ media: "Terra Nova · La Grande Conversation"
 mediaSlug: terra-nova
 lienCanonique: "https://www.lagrandeconversation.com/ecologie/energie-et-justice-sociale-permettre-de-renover/"
 kind: tribune
-title: "Énergie et justice sociale : permettre de rénover"
+title: "Énergie et justice sociale : permettre de rénover — La Grande Conversation (France)"
 description: "Note que j'ai écrite pour Terra Nova, publiée sur La Grande Conversation : pourquoi la rénovation énergétique des logements reste bloquée malgré un soutien public massif, et comment lever les obstacles financiers et institutionnels."
 pubDate: 2026-06-25T10:00:00.000Z
 heroImage: '../../assets/la-grande-conversation-logo.png'

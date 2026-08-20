@@ -3,7 +3,7 @@ media: "自由時報 Liberty Times"
 mediaSlug: liberty-times
 lienCanonique: "https://talk.ltn.com.tw/article/breakingnews/5540278"
 kind: tribune
-title: "廈金通電 不能只算30億元 — “The Xiamen–Kinmen Power Link Is Not Just a NT$3 Billion Question” (自由時報 Liberty Times)"
+title: "廈金通電 不能只算30億元 — “The Xiamen–Kinmen Power Link Is Not Just a NT$3 Billion Question” (自由時報 Liberty Times, Taiwan)"
 description: >-
   Op-ed in the 自由時報 (Liberty Times): the NT$3 billion saved by wiring Kinmen to
   Fujian hides what actually matters — who controls the grid, and whether Taiwan

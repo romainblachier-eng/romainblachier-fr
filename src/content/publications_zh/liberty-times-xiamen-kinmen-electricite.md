@@ -3,7 +3,7 @@ media: "自由時報 Liberty Times"
 mediaSlug: liberty-times
 lienCanonique: "https://talk.ltn.com.tw/article/breakingnews/5540278"
 kind: tribune
-title: "廈金通電 不能只算30億元 — 自由時報"
+title: "廈金通電 不能只算30億元 — 自由時報（台灣）"
 description: "刊於《自由時報》自由開講的投書：廈金通電每年省下的 30 億元是真的，但真正該算的是誰掌握電網，以及還能不能退出。"
 pubDate: 2026-08-17T07:00:00.000Z
 ---

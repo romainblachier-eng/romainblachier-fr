@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9578535"
 kind: tribune
-title: "大戶自用發電，應採一定比率再生能源 — 聯合報"
+title: "大戶自用發電，應採一定比率再生能源 — 聯合報（台灣）"
 description: "2026 年 6 月 21 日刊於《聯合報》民意論壇的投書：台灣修訂後的《能源管理法》允許用電大戶以天然氣自發電，但這並不能真正提升能源自主。唯有仰賴在地資源——太陽能、風力、地熱——才能降低逾九成的能源進口依賴。"
 pubDate: 2026-06-21T07:00:00.000Z
 heroImage: ../../assets/udn-taiwan-energy-newspaper.jpg

@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152258/energie-a-lyon-on-fabrique-aussi-du-froid"
 kind: tribune
-title: "Mon article dans Lyon Mag : Énergie — à Lyon, on fabrique aussi du froid"
+title: "Mon article dans Lyon Mag (France) : Énergie — à Lyon, on fabrique aussi du froid"
 description: "Publié dans Lyon Mag, cet article explore les réseaux de froid urbains à Lyon : une infrastructure énergétique méconnue qui rafraîchit bâtiments et espaces publics sans climatiseur individuel."
 pubDate: 2026-05-29T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

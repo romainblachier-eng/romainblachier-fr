@@ -3,7 +3,7 @@ media: "Marianne"
 mediaSlug: marianne
 lienCanonique: "https://www.marianne.net/agora/tribunes-libres/oui-peut-critiquer-la-silicon-valley"
 kind: tribune
-title: "My article in Marianne: Yes, we can criticise Silicon Valley!"
+title: "My article in Marianne (France): Yes, we can criticise Silicon Valley!"
 description: "Published in Marianne, this article argues for the right to criticise Silicon Valley — its monopolies, its tax practices, and the concentration of economic power in the hands of a few American tech giants."
 pubDate: 2014-12-12T10:00:00.000Z
 heroImage: '../../assets/marianne-logo.svg'

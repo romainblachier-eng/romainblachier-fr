@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/life/article/la-journee-mondiale-des-toilettes-est-un-sujet-serieux_22693.html"
 kind: tribune
-title: "Mon article dans Le HuffPost : La journée mondiale des toilettes est un sujet sérieux"
+title: "Mon article dans Le HuffPost (France) : La journée mondiale des toilettes est un sujet sérieux"
 description: "Publié dans Le HuffPost, cet article rappelle qu'une personne sur trois dans le monde n'a pas accès à des sanitaires corrects — un enjeu de santé publique, de développement et de droits humains."
 pubDate: 2013-07-29T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

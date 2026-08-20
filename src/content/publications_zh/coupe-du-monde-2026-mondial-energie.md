@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/"
 kind: tribune
-title: "我在《Revue Conflits》的文章：2026 世界盃，一場以能源為主軸的賽事"
+title: "我在《Revue Conflits》（法國）的文章：2026 世界盃，一場以能源為主軸的賽事"
 description: "刊於《Revue Conflits》，本文分析能源大國如何將 2026 世界盃當作地緣政治影響力的槓桿。"
 pubDate: 2026-06-17T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

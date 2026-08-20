@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/communistes-dasie-lorient-est-il-toujours-rouge/"
 kind: tribune
-title: "我在《Revue Conflits》的文章：亞洲的共產主義者，東方仍舊是紅色的嗎？"
+title: "我在《Revue Conflits》（法國）的文章：亞洲的共產主義者，東方仍舊是紅色的嗎？"
 description: "刊於《Revue Conflits》，本文重新檢視亞洲「共產主義」還剩下什麼：從北韓的種族民族主義，到越南與寮國的發展型國家，這個標籤遮蔽的多於它所闡明的。"
 pubDate: 2026-04-27T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

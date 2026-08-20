@@ -3,7 +3,7 @@ media: "讓·饒勒斯基金會（Fondation Jean-Jaurès）"
 mediaSlug: jean-jaures
 lienCanonique: "https://www.jean-jaures.org/publication/integrer-lelectricite-en-afrique-centrale-kinshasa-douala-brazzaville-la-metropole-comme-arbitre-absent/"
 kind: tribune
-title: "我在讓·饒勒斯基金會的研究報告：中部非洲的電力整合——缺席的都會仲裁者"
+title: "我在讓·饒勒斯基金會（法國）的研究報告：中部非洲的電力整合——缺席的都會仲裁者"
 description: "由讓·饒勒斯基金會發表，本報告分析中部非洲三座首都——金夏沙、杜阿拉、布拉乍維爾——面臨的電力治理挑戰：都會區集中了需求，卻無權參與電力系統的決策。"
 pubDate: 2026-06-11T10:00:00.000Z
 heroImage: '../../assets/fondation-jean-jaures-logo.svg'

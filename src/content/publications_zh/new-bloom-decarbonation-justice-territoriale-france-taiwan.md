@@ -3,7 +3,7 @@ media: "New Bloom Magazine"
 mediaSlug: new-bloom
 lienCanonique: "https://newbloommag.net/2026/05/24/decarbonizing-france-tw/"
 kind: tribune
-title: "領土正義與能源轉型 — New Bloom Magazine"
+title: "領土正義與能源轉型 — New Bloom Magazine（台灣）"
 description: "刊於 New Bloom Magazine 的文章，從領土正義與民主治理的角度，比較法國與台灣的能源轉型路徑。"
 pubDate: 'May 24 2026 12:00:00'
 heroImage: '../../assets/new-bloom-logo-hero.png'

@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 
 // ---------------------------------------------------------------------------
 // PUBLICATIONS — portfolio of op-eds published in other outlets.
-// Detail pages are noindex,follow and canonicalize to the host publisher.
+// Detail pages are indexable and canonicalize to the host publisher.
 // ---------------------------------------------------------------------------
 const publicationSchema = ({ image }: { image: Function }) =>
 	z.object({

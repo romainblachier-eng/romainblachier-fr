@@ -3,7 +3,7 @@ media: "自由時報 Liberty Times"
 mediaSlug: liberty-times
 lienCanonique: "https://talk.ltn.com.tw/article/breakingnews/5540278"
 kind: tribune
-title: "廈金通電 不能只算30億元 — « Relier Xiamen à Kinmen ne se compte pas seulement en 3 milliards » (自由時報 Liberty Times)"
+title: "廈金通電 不能只算30億元 — « Relier Xiamen à Kinmen ne se compte pas seulement en 3 milliards » (自由時報 Liberty Times, Taïwan)"
 description: >-
   Tribune dans le 自由時報 (Liberty Times) : les 3 milliards de dollars taïwanais
   économisés en reliant Kinmen au Fujian masquent l'essentiel — qui contrôle le

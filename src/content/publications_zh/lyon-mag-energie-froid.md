@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152258/energie-a-lyon-on-fabrique-aussi-du-froid"
 kind: tribune
-title: "我在《Lyon Mag》的文章：里昂的能源，也能製冷"
+title: "我在《Lyon Mag》（法國）的文章：里昂的能源，也能製冷"
 description: "刊於《Lyon Mag》，本文介紹里昂城市供冷網絡——一個鮮為人知卻極具潛力的基礎設施，在氣候適應與能源脫碳的雙重背景下意義重大。"
 pubDate: 2026-05-29T10:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'

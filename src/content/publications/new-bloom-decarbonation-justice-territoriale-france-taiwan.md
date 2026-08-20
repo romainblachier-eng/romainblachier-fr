@@ -3,7 +3,7 @@ media: "New Bloom Magazine"
 mediaSlug: new-bloom
 lienCanonique: "https://newbloommag.net/2026/05/24/decarbonizing-france-tw/"
 kind: tribune
-title: "Justice territoriale et transition énergétique — New Bloom Magazine"
+title: "Justice territoriale et transition énergétique — New Bloom Magazine (Taïwan)"
 description: "Article publié dans New Bloom Magazine comparant les approches française et taïwanaise de la transition énergétique sous l'angle de la justice territoriale et de la gouvernance démocratique."
 pubDate: 'May 24 2026 12:00:00'
 heroImage: '../../assets/new-bloom-logo-hero.png'

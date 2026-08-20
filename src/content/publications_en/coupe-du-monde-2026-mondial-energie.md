@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/"
 kind: tribune
-title: "My article in Revue Conflits: The 2026 World Cup, a tournament shaped by energy"
+title: "My article in Revue Conflits (France): The 2026 World Cup, a tournament shaped by energy"
 description: "Published in Revue Conflits, this article examines how the major energy powers are using the 2026 World Cup as a lever of geopolitical influence."
 pubDate: 2026-06-17T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

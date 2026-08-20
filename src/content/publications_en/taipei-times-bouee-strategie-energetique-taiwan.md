@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/06/25/2003859684"
 kind: tribune
-title: "An energy lifeline is not a strategy"
+title: "An energy lifeline is not a strategy — Taipei Times (Taiwan)"
 description: "Op-ed in the Taipei Times: the Taiwan Energy Security and Anti-Embargo Act moving through the US Congress secures supply by sea, but a lifeline is not a strategy. Taiwan's real energy security is generated on the island."
 pubDate: 2026-06-25T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

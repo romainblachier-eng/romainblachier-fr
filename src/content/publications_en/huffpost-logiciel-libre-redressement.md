@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/le-logiciel-libre-un-instrument-du-redressement-productif-national_31660.html"
 kind: tribune
-title: "My article in Le HuffPost: Free software, a tool for national productive recovery"
+title: "My article in Le HuffPost (France): Free software, a tool for national productive recovery"
 description: "Published in Le HuffPost, this article argues for making free and open-source software a strategic lever for France's industrial and economic renewal."
 pubDate: 2014-01-31T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/06/25/2003859684"
 kind: tribune
-title: "一條救生索不等於一套戰略"
+title: "一條救生索不等於一套戰略 — 台北時報（台灣）"
 description: "《台北時報》專欄：美國國會推動的《台灣能源安全與反禁運法案》確保了海上補給，但救生索不等於戰略。台灣真正的能源安全，要在島上自己發出來。"
 pubDate: 2026-06-25T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

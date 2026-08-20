@@ -3,7 +3,7 @@ media: "Terra Nova · La Grande Conversation"
 mediaSlug: terra-nova
 lienCanonique: "https://www.lagrandeconversation.com/monde/ormuz-revele-nos-tensions-energetiques-en-asie-comme-en-europe/"
 kind: tribune
-title: "My op-ed on La Grande Conversation: Hormuz reveals our energy tensions, in Asia and in Europe"
+title: "My op-ed on La Grande Conversation (France): Hormuz reveals our energy tensions, in Asia and in Europe"
 description: "Published by Terra Nova on La Grande Conversation, this op-ed examines the oil crisis triggered by the closure of the Strait of Hormuz and what it says about Asia's fossil-fuel dependence and Europe's blind spots."
 pubDate: 2026-04-21T10:00:00.000Z
 heroImage: '../../assets/la-grande-conversation-logo.png'

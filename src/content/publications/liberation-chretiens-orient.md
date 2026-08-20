@@ -3,7 +3,7 @@ media: "Libération"
 mediaSlug: liberation
 lienCanonique: "https://www.liberation.fr/planete/2014/07/30/persecutes-les-chretiens-d-orient-sont-ils-amenes-a-disparaitre_1072963/"
 kind: tribune
-title: "Mon article dans Libération : Persécutés, les chrétiens d'Orient sont-ils amenés à disparaître ?"
+title: "Mon article dans Libération (France) : Persécutés, les chrétiens d'Orient sont-ils amenés à disparaître ?"
 description: "Publié dans Libération, cet article interroge la capacité des communautés chrétiennes d'Irak, de Syrie et d'Égypte à survivre aux persécutions jihadistes et aux convulsions géopolitiques régionales."
 pubDate: 2014-07-30T10:00:00.000Z
 heroImage: '../../assets/liberation-logo.svg'

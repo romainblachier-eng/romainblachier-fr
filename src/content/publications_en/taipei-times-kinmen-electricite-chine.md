@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/07/26/2003861379"
 kind: tribune
-title: "Kinmen and the law that says no"
+title: "Kinmen and the law that says no — Taipei Times (Taiwan)"
 description: "Op-ed in the Taipei Times: the electrical connection between Kinmen and China's Fujian province is technically feasible — it is a deliberate legal and political choice that forbids it. Accepting this NT$3 billion annual cost, and making it visible, is a decision Taiwan should own proudly."
 pubDate: 2026-07-26T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

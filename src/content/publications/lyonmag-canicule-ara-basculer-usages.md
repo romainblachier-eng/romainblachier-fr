@@ -3,7 +3,7 @@ media: "Lyon Mag"
 mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/152699/canicule-en-auvergne-rhone-alpes-le-vrai-defi-n-est-plus-de-produire-propre-mais-de-basculer-les-usages"
 kind: tribune
-title: "Canicule : en Auvergne-Rhône-Alpes, le vrai défi n'est plus de produire propre, mais de basculer les usages — Lyon Mag"
+title: "Canicule : en Auvergne-Rhône-Alpes, le vrai défi n'est plus de produire propre, mais de basculer les usages — Lyon Mag (France)"
 description: >-
   La région Auvergne-Rhône-Alpes produit 119 TWh par an, à 96,5 % décarbonés,
   et exporte ses surplus vers la Suisse et l'Italie. Le vrai défi n'est plus la

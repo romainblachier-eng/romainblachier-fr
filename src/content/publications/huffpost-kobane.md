@@ -3,7 +3,7 @@ media: "Le HuffPost"
 mediaSlug: huffpost
 lienCanonique: "https://www.huffingtonpost.fr/actualites/article/pour-qu-il-n-y-ait-plus-d-autre-kobane_44462.html"
 kind: tribune
-title: "Mon article dans Le HuffPost : Pour qu'il n'y ait plus d'autre Kobané"
+title: "Mon article dans Le HuffPost (France) : Pour qu'il n'y ait plus d'autre Kobané"
 description: "Publié dans Le HuffPost, cet article analyse l'encerclement de Kobané par Daech, les contradictions de la politique turque et la paralysie de la coalition occidentale face à la menace de l'État islamique."
 pubDate: 2014-10-07T10:00:00.000Z
 heroImage: '../../assets/huffpost-logo.svg'

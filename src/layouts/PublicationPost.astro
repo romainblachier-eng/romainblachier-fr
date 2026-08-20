@@ -42,8 +42,8 @@ const breadcrumbSchema = {
 
 <html lang={htmlLang}>
 	<head>
-		<!-- noindex,follow + canonical to the host publisher when there is one; print-only pieces fall back to self-canonical. -->
-		<BaseHead title={`${title} | Romain Blachier`} description={description} noindex={true} canonical={lienCanonique} />
+		<!-- Indexable, like every page of the site. Canonical goes to the host publisher when there is one; print-only pieces fall back to self-canonical. -->
+		<BaseHead title={`${title} | Romain Blachier`} description={description} canonical={lienCanonique} />
 		{!lienCanonique && <meta name="publication-source" content="print" />}
 		<style>
 			main { width: calc(100% - 2em); max-width: 100%; margin: 0; }
