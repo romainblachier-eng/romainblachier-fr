@@ -11,7 +11,7 @@ pubDate: 2026-08-18T07:00:00.000Z
 
 ## 關於《Défis Actuels》
 
-《**Défis Actuels**》是一份專注於經濟議題的喀麥隆刊物，由 Overland Company 發行，僅有紙本版本。
+《**Défis Actuels**》是一份以經濟報導為主的喀麥隆日報，報頭自稱「喀麥隆第一新聞雜誌」。
 
 ## 投書重點
 

@@ -11,7 +11,7 @@ I published an op-ed in **Défis Actuels** (Cameroon) — issue no. 1142, Tuesda
 
 ## What is Défis Actuels?
 
-**Défis Actuels** is a Cameroonian publication devoted to economic affairs, put out by Overland Company. It appears in print.
+**Défis Actuels** is a Cameroonian daily covering economic affairs, billed on its own masthead as the country's "premier news magazine".
 
 ## The argument
 

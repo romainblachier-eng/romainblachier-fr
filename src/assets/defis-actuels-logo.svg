@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="Défis Actuels">
-  <rect width="240" height="60" fill="white"/>
-  <text x="120" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="28" letter-spacing="0.5">
-    <tspan fill="#14328c" font-weight="700">défis</tspan><tspan fill="#d8232a" font-weight="400"> actuels</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348 72" width="348" height="72" role="img" aria-label="Défis Actuels">
+  <rect width="348" height="72" fill="white"/>
+  <g font-family="Verdana, 'DejaVu Sans', Arial, Helvetica, sans-serif" font-weight="700" font-size="46">
+    <ellipse cx="26" cy="34" rx="21" ry="29" fill="none" stroke="#E1332B" stroke-width="5"/>
+    <text x="26" y="51" text-anchor="middle" fill="#1E5AA8" textLength="26" lengthAdjust="spacingAndGlyphs">d</text>
+    <text x="50" y="51" fill="#1E5AA8" textLength="76" lengthAdjust="spacingAndGlyphs">éfis</text>
+    <ellipse cx="170" cy="34" rx="21" ry="29" fill="none" stroke="#E1332B" stroke-width="5"/>
+    <text x="170" y="51" text-anchor="middle" fill="#E1332B" textLength="26" lengthAdjust="spacingAndGlyphs">a</text>
+    <text x="194" y="51" fill="#1E5AA8" textLength="118" lengthAdjust="spacingAndGlyphs">ctuels</text>
+  </g>
 </svg>

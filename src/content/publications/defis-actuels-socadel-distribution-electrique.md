@@ -11,7 +11,7 @@ Je publie dans **Défis Actuels** (Cameroun) — édition n° 1142 du mardi 18 a
 
 ## Qu'est-ce que Défis Actuels ?
 
-**Défis Actuels** est une publication camerounaise consacrée aux questions économiques, éditée par Overland Company. Elle paraît en édition imprimée.
+**Défis Actuels** est un quotidien camerounais consacré à l'économie, qui se présente en une comme le « premier news magazine camerounais ».
 
 ## L'essentiel de la tribune
 
