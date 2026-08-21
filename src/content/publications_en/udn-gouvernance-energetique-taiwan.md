@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9549010"
 kind: tribune
-title: "Energy Policy Should Not Switch Sides at Every Election — 聯合報 (United Daily News)"
+title: "Energy Policy Should Not Switch Sides at Every Election — 聯合報 (United Daily News, Taiwan)"
 description: >-
   Op-ed published in the 聯合報 (United Daily News), one of Taiwan's major
   daily newspapers (page A14): why does Taiwan pay its energy bill twice — once

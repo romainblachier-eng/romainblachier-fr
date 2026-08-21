@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9549010"
 kind: tribune
-title: "能源承諾不該隨政黨翻盤 — 聯合報"
+title: "能源承諾不該隨政黨翻盤 — 聯合報（台灣）"
 description: "在台灣大報之一的《聯合報》（A14 版）發表的投書：為什麼台灣的能源帳單要付兩次——一次付在被壓低的電價裡，一次付在用來填補公營事業虧損的稅金裡？累積虧損約 4,200 億新台幣、天然氣安全存量僅約十天——而真正的問題與其說是技術，不如說是治理。"
 pubDate: 2026-06-06T07:00:00.000Z
 heroImage: ../../assets/udn-taiwan-energy-newspaper.jpg

@@ -3,7 +3,7 @@ media: "Taipei Times"
 mediaSlug: taipei-times
 lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/07/26/2003861379"
 kind: tribune
-title: "金門與那部說「不」的法律"
+title: "金門與那部說「不」的法律 — 台北時報（台灣）"
 description: "刊於《台北時報》的專欄：金門與中國福建的電力聯網在技術上完全可行——真正擋下它的，是一項刻意為之的法律與政治選擇。台灣應該正視並自豪地承擔這每年新台幣三十億元的代價。"
 pubDate: 2026-07-26T09:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'

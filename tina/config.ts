@@ -23,6 +23,7 @@ const MEDIA_OPTIONS = [
   { value: "lyonmag", label: "Lyon Mag" },
   { value: "hespress", label: "Hespress" },
   { value: "revue-energie", label: "La Revue de l'Énergie" },
+  { value: "defis-actuels", label: "Défis Actuels" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).

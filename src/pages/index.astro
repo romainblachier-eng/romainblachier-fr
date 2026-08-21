@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import { useTranslations } from "../i18n/utils";
+import { useTranslations, getLocalePath } from "../i18n/utils";
 import { Image } from "astro:assets";
 import portrait from "../assets/portrait.jpg";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
@@ -74,7 +74,9 @@ const recentPubs = allPubs.slice(0, 3);
 							<h3 class="latest-headline">{pub.data.title}</h3>
 							<p class="latest-desc">{pub.data.description}</p>
 							<div class="latest-actions">
-								<a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+								{pub.data.lienCanonique
+									? <a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+									: <a href={getLocalePath('fr', `/publications/${pub.data.mediaSlug}/${pub.id}/`)} class="latest-cta">{t('latest.read_summary')}</a>}
 							</div>
 						</article>
 					))}

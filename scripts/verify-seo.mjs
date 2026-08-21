@@ -79,15 +79,28 @@ for (const file of htmlFiles) {
 }
 console.log(`    ${pagesWithHreflang} pages with hreflang, ${hreflangChecked} internal targets checked.`);
 
-// ---- 4. Publications are noindex + canonical off-site ----
-console.log('\n[4] Checking /publications detail pages are noindex with off-site canonical…');
+// ---- 4. No page is ever noindex ----
+console.log('\n[4] Checking no page is noindex…');
+let indexChecked = 0;
+for (const file of htmlFiles) {
+	const html = readFileSync(file, 'utf8');
+	if (/content="noindex/.test(html)) fail(`${file.replace(DIST, '')} : noindex — every page of the site must stay indexable`);
+	indexChecked++;
+}
+console.log(`    ${indexChecked} pages checked.`);
+
+// ---- 5. Publication detail pages are self-canonical ----
+console.log('\n[5] Checking /publications detail pages canonicalize to themselves…');
 const pubPages = htmlFiles.filter((f) => /\/publications\/[^/]+\/[^/]+\/index\.html$/.test(f));
 let pubChecked = 0;
 for (const file of pubPages) {
 	const html = readFileSync(file, 'utf8');
-	if (!/<meta name="robots" content="noindex/.test(html)) fail(`${file.replace(DIST, '')} : not noindex`);
 	const canon = html.match(/<link rel="canonical" href="([^"]+)"/);
-	if (!canon || canon[1].startsWith(SITE)) fail(`${file.replace(DIST, '')} : canonical not pointing off-site`);
+	const self = SITE + file.replace(DIST, '').replace(/index\.html$/, '');
+	// A canonical pointing at the publisher hands the page over to them: it must stay on us.
+	if (!canon || canon[1] !== self) {
+		fail(`${file.replace(DIST, '')} : canonical is ${canon ? canon[1] : 'missing'}, expected ${self}`);
+	}
 	pubChecked++;
 }
 console.log(`    ${pubChecked} publication detail pages checked.`);
@@ -95,4 +108,4 @@ console.log(`    ${pubChecked} publication detail pages checked.`);
 // ---- Result ----
 console.log('');
 if (failures) { console.error(`✗ verification FAILED with ${failures} issue(s).`); process.exit(1); }
-console.log('✓ verification PASSED — redirects, hreflang, and publication noindex all consistent.');
+console.log('✓ verification PASSED — redirects, hreflang, indexability, and publication canonicals all consistent.');

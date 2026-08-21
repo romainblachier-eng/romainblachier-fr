@@ -99,6 +99,7 @@ export const ui = {
 		'footer.elsewhere': 'Ailleurs',
 		'footer.rights': 'Tous droits réservés.',
 		'publications.external': 'Lire sur le média',
+		'publications.print_only': 'Article paru en édition imprimée.',
 		'publications.published_in': 'Publié dans',
 		'publications.cited_in': 'Cité dans',
 		'publications.interviewed_by': 'Entretien —',
@@ -129,6 +130,7 @@ export const ui = {
 		'latest.overline': 'Publications',
 		'latest.title': 'Publications récentes',
 		'latest.read': 'Lire l\'article →',
+		'latest.read_summary': 'Lire le résumé →',
 		'latest.all': 'Toutes les publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Énergie & géopolitique : expertise, enseignement, conseil, recherche',
@@ -226,6 +228,7 @@ export const ui = {
 		'footer.elsewhere': 'Elsewhere',
 		'footer.rights': 'All rights reserved.',
 		'publications.external': 'Read on the publisher',
+		'publications.print_only': 'Published in print.',
 		'publications.published_in': 'Published in',
 		'publications.cited_in': 'Quoted in',
 		'publications.interviewed_by': 'Interview —',
@@ -256,6 +259,7 @@ export const ui = {
 		'latest.overline': 'Publications',
 		'latest.title': 'Recent publications',
 		'latest.read': 'Read the article →',
+		'latest.read_summary': 'Read the summary →',
 		'latest.all': 'All publications →',
 		// SEO
 		'seo.title': 'Romain Blachier — Energy & Geopolitics: expertise, teaching, advisory, research',
@@ -334,6 +338,7 @@ export const ui = {
 		'footer.elsewhere': '其他平台',
 		'footer.rights': '版權所有。',
 		'publications.external': '前往媒體閱讀',
+		'publications.print_only': '本文刊於紙本。',
 		'publications.published_in': '發表於',
 		'publications.cited_in': '受訪／引述於',
 		'publications.interviewed_by': '專訪 —',
@@ -364,6 +369,7 @@ export const ui = {
 		'latest.overline': '媒體發表',
 		'latest.title': '近期發表',
 		'latest.read': '閱讀文章 →',
+		'latest.read_summary': '閱讀摘要 →',
 		'latest.all': '所有發表 →',
 		// SEO
 		'seo.title': 'Romain Blachier — 能源與地緣政治：專業、教學、顧問、研究',

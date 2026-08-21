@@ -3,7 +3,8 @@ import { glob } from 'astro/loaders';
 
 // ---------------------------------------------------------------------------
 // PUBLICATIONS — portfolio of op-eds published in other outlets.
-// Detail pages are noindex,follow and canonicalize to the host publisher.
+// Detail pages are indexable and self-canonical; lienCanonique is only the
+// outbound link to the publisher.
 // ---------------------------------------------------------------------------
 const publicationSchema = ({ image }: { image: Function }) =>
 	z.object({
@@ -14,7 +15,8 @@ const publicationSchema = ({ image }: { image: Function }) =>
 		heroImage: image().optional(),
 		media: z.string(),
 		mediaSlug: z.string(),
-		lienCanonique: z.string().url(),
+		// Optional: some pieces run in print only and have no online source URL.
+		lienCanonique: z.string().url().optional(),
 		chapo: z.string().optional(),
 		kind: z.enum(['tribune', 'citation', 'interview']).default('tribune'),
 	});

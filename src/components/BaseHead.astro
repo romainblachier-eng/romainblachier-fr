@@ -6,7 +6,6 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string | undefined;
-	noindex?: boolean;
 	canonical?: string | undefined;
 	/**
 	 * Explicit hreflang alternates, for pages that do not share one path across
@@ -31,10 +30,11 @@ const contentLangMap: Record<string, string> = { fr: 'fr', en: 'en', zh: 'zh-Han
 const ogLocale = ogLocaleMap[lang] ?? 'fr_FR';
 const altLocales = Object.entries(ogLocaleMap).filter(([code]) => code !== lang).map(([, v]) => v);
 
-const { title, description, article, noindex = false, canonical } = Astro.props;
-// Publications canonicalize to the host publisher; everything else to self.
+const { title, description, article, canonical } = Astro.props;
+// Every page canonicalizes to itself unless a caller overrides it.
 const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site).toString();
-const robotsContent = noindex ? "noindex, follow" : "index, follow";
+// Every page of the site is indexable: noindex is never emitted, anywhere.
+const robotsContent = "index, follow";
 
 // Site-wide structured data: defines the #person node (referenced by NewsArticle
 // author/publisher) and the #website node. Person carries the sameAs identity links.
@@ -156,7 +156,6 @@ const zhUrl = alternates ? (alternates.zh ? abs(alternates.zh) : undefined) : lo
 {lang === 'zh' && <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />}
 
 <link rel="canonical" href={canonicalURL} />
-{noindex && <meta name="googlebot" content="noindex, follow" />}
 
 <title>{title}</title>
 <meta name="title" content={title} />

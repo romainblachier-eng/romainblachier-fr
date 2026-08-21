@@ -3,7 +3,7 @@ media: "New Bloom Magazine"
 mediaSlug: new-bloom
 lienCanonique: "https://newbloommag.net/2026/05/24/decarbonizing-france-tw/"
 kind: tribune
-title: "Territorial Justice and the Energy Transition — New Bloom Magazine"
+title: "Territorial Justice and the Energy Transition — New Bloom Magazine (Taiwan)"
 description: "Article published in New Bloom Magazine comparing French and Taiwanese approaches to the energy transition through the lens of territorial justice and democratic governance."
 pubDate: 'May 24 2026 12:00:00'
 heroImage: '../../assets/new-bloom-logo-hero.png'

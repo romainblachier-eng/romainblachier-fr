@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9578535"
 kind: tribune
-title: "Les grands consommateurs qui s'autoapprovisionnent doivent recourir aux renouvelables — 聯合報 (United Daily News)"
+title: "Les grands consommateurs qui s'autoapprovisionnent doivent recourir aux renouvelables — 聯合報 (United Daily News, Taïwan)"
 description: >-
   Tribune publiée dans le 聯合報 (United Daily News), le 21 juin 2026 :
   la révision de la loi taïwanaise sur la gestion de l'énergie permet aux
