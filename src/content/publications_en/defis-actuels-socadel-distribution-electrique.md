@@ -1,7 +1,6 @@
 ---
 media: "Défis Actuels"
 mediaSlug: defis-actuels
-lienCanonique: "https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/"
 kind: tribune
 title: "Socadel will inherit the meters, not the capacity: the real challenge for Cameroon's power distribution — Défis Actuels (Cameroon)"
 description: "Op-ed in Défis Actuels (Cameroon), 18 August 2026: the handover of power distribution to Socadel turns less on assets than on the capacity to run them."
@@ -31,8 +30,4 @@ The conclusion is an uncomfortable one: **a decree creates authority, not capaci
 
 ---
 
-→ [Read the op-ed on Défis Actuels](https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/)
-
----
-
-*Print edition: Défis Actuels no. 1142, Tuesday 18 August 2026, Horizons section, page 11.*
+*Published in print. Défis Actuels no. 1142, Tuesday 18 August 2026, Horizons section, page 11.*

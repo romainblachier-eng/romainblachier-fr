@@ -1,7 +1,6 @@
 ---
 media: "Défis Actuels"
 mediaSlug: defis-actuels
-lienCanonique: "https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/"
 kind: tribune
 title: "Socadel héritera des compteurs, pas de la capacité : le vrai chantier de la distribution électrique camerounaise — Défis Actuels (Cameroun)"
 description: "Tribune parue dans Défis Actuels (Cameroun), 18 août 2026 : le transfert de la distribution à Socadel se joue moins sur les actifs que sur la capacité d'agir."
@@ -31,8 +30,4 @@ Ma conclusion tient en une phrase inconfortable : **le décret crée l'autorité
 
 ---
 
-→ [Lire la tribune sur Défis Actuels](https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/)
-
----
-
-*Édition imprimée : Défis Actuels n° 1142, mardi 18 août 2026, rubrique Horizons, page 11.*
+*Tribune parue en édition imprimée. Défis Actuels n° 1142, mardi 18 août 2026, rubrique Horizons, page 11.*
