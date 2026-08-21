@@ -1,6 +1,7 @@
 ---
 media: "Défis Actuels"
 mediaSlug: defis-actuels
+lienCanonique: "https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/"
 kind: tribune
 title: "Socadel 接手的是電表，不是能力：喀麥隆配電的真正課題 — Défis Actuels（喀麥隆）"
 description: "2026 年 8 月 18 日刊於喀麥隆《Défis Actuels》的投書：配電業務移交給新公營業者 Socadel，關鍵不在資產，而在承接方是否具備營運能力。"
@@ -30,4 +31,8 @@ pubDate: 2026-08-18T07:00:00.000Z
 
 ---
 
-*本文刊於紙本。Défis Actuels 第 1142 期，2026 年 8 月 18 日（週二），Horizons 版，第 11 頁。*
+→ [在《Défis Actuels》閱讀全文](https://www.newsducamer.com/socadel-defi-distribution-electrique-cameroun/)
+
+---
+
+*紙本版：Défis Actuels 第 1142 期，2026 年 8 月 18 日（週二），Horizons 版，第 11 頁。*
