@@ -128,6 +128,15 @@ Notes :
 - Ne pas casser les URL existantes. Toute suppression de page = redirection 301.
 - Ne pas ajouter de tracking, cookies ou scripts tiers sans demande explicite.
 - Build : `tinacms build` + `astro build` (Node ≥ 22.12 requis). Toute dépendance utilisée dans `src/` doit figurer dans `package.json`.
+- **Indexation** : aucune page du site ne doit être en `noindex`, jamais (décision Romain, 2026-08-21). `BaseHead` n'expose plus de prop `noindex`, et les pages de publication se canonicalisent sur elles-mêmes — un canonical vers le média revient à demander aux moteurs de céder la page à l'éditeur. `lienCanonique` ne sert qu'au lien sortant « lire sur le média ». `npm run verify:seo` vérifie ces deux règles.
+
+### TinaCMS
+
+- Le CMS est adossé à **GitHub** : dépôt `romainblachier-eng/romainblachier-fr`, branche `main` (`tina/config.ts`). Romain s'authentifie sur TinaCloud (app.tina.io) via son compte GitHub ; l'édition dans `/admin` écrit donc directement des commits sur `main`.
+- Cette authentification GitHub concerne l'interface d'édition, pas le build. Le build CI utilise un jeton de projet : `TINA_PUBLIC_CLIENT_ID` et `TINA_TOKEN`, variables d'environnement **Netlify du seul contexte production**, absentes du dépôt.
+- Conséquence : `npm run build` échoue partout où ces variables manquent — en local et dans les sessions Claude Code — avec « Client not configured properly ». Ce n'est pas une régression. Utiliser `npm run build:site` (`astro build` seul) pour vérifier un changement ; rien sous `src/` n'importe Tina, le site produit est complet, il lui manque seulement `/admin`.
+- `netlify.toml` applique déjà cette règle : previews et branch deploys tournent sur `build:site`, la production sur le build complet.
+- Tout nouveau média ajouté aux publications doit être déclaré dans `MEDIA_OPTIONS` de `tina/config.ts`, sinon il n'est pas sélectionnable dans le CMS.
 
 ## Domaines d'enseignement
 
