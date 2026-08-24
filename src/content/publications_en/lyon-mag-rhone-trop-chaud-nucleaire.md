@@ -1,6 +1,6 @@
 ---
 media: "Lyon Mag"
-mediaSlug: lyonmag
+mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire"
 kind: tribune
 title: "When the Rhône gets too warm for nuclear power — Lyon Mag"
@@ -9,6 +9,7 @@ description: >-
   timing problem — heatwaves cut output at the very moment air conditioning
   drives demand up.
 pubDate: 2026-08-24T07:00:00.000Z
+heroImage: '../../assets/lyon-mag-logo.svg'
 ---
 
 I published an op-ed in **[Lyon Mag](https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire)** on what the warming of the Rhône does to the power system — and on what local government can, and cannot, do about it.

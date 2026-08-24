@@ -1,6 +1,6 @@
 ---
 media: "Lyon Mag"
-mediaSlug: lyonmag
+mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire"
 kind: tribune
 title: "Quand le Rhône devient trop chaud pour le nucléaire — Lyon Mag"
@@ -9,6 +9,7 @@ description: >-
   révèle un problème de calendrier — la canicule réduit la production au moment
   précis où la climatisation fait grimper la demande.
 pubDate: 2026-08-24T07:00:00.000Z
+heroImage: '../../assets/lyon-mag-logo.svg'
 ---
 
 Je publie dans **[Lyon Mag](https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire)** une tribune sur ce que la chaleur du Rhône fait à notre système électrique — et sur ce que les collectivités peuvent, ou non, y faire.
