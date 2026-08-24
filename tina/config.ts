@@ -20,7 +20,7 @@ const MEDIA_OPTIONS = [
   { value: "asia-times", label: "Asia Times" },
   { value: "samoa-observer", label: "Samoa Observer" },
   { value: "slate-fr", label: "Slate.fr" },
-  { value: "lyonmag", label: "Lyon Mag" },
+  { value: "lyon-mag", label: "Lyon Mag" },
   { value: "hespress", label: "Hespress" },
   { value: "revue-energie", label: "La Revue de l'Énergie" },
   { value: "defis-actuels", label: "Défis Actuels" },

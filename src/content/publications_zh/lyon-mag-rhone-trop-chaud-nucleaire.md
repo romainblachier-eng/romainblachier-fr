@@ -1,12 +1,13 @@
 ---
 media: "Lyon Mag"
-mediaSlug: lyonmag
+mediaSlug: lyon-mag
 lienCanonique: "https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire"
 kind: tribune
 title: "當隆河熱到不適合核電 — Lyon Mag"
 description: >-
   2026 年 8 月 24 日刊於《Lyon Mag》的投書：比熱核電廠的停機暴露出一個時間點的問題——熱浪削減發電，正好落在冷氣推高用電的同一刻。
 pubDate: 2026-08-24T07:00:00.000Z
+heroImage: '../../assets/lyon-mag-logo.svg'
 ---
 
 我在《**[Lyon Mag](https://www.lyonmag.com/article/153698/quand-le-rhone-devient-trop-chaud-pour-le-nucleaire)**》發表投書，談隆河升溫對電力系統的影響，以及地方政府在其中能做與不能做的事。
