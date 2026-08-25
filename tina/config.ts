@@ -26,6 +26,13 @@ const MEDIA_OPTIONS = [
   { value: "revue-energie", label: "La Revue de l'Énergie" },
   { value: "defis-actuels", label: "Défis Actuels" },
   { value: "ecomatin", label: "EcoMatin" },
+  { value: "le-monde", label: "Le Monde" },
+  { value: "liberation", label: "Libération" },
+  { value: "marianne", label: "Marianne" },
+  { value: "huffpost", label: "Le HuffPost" },
+  { value: "rue89-lyon", label: "Rue89 Lyon" },
+  { value: "cameroun-actuel", label: "Cameroun Actuel" },
+  { value: "african-arguments", label: "African Arguments" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
