@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 74" width="248" height="74" role="img" aria-label="CEIAS — Central European Institute of Asian Studies">
+  <defs>
+    <clipPath id="ceias-lower">
+      <path d="M6 38 A30 30 0 0 0 66 38 Z"/>
+    </clipPath>
+  </defs>
+  <!-- Upper half-disc, solid. -->
+  <path d="M6 34 A30 30 0 0 1 66 34 Z" fill="#000"/>
+  <!-- Lower half-disc, drawn as horizontal bars clipped to the semicircle. -->
+  <g clip-path="url(#ceias-lower)" fill="#D8202A">
+    <rect x="0" y="38" width="72" height="5"/>
+    <rect x="0" y="46" width="72" height="5"/>
+    <rect x="0" y="54" width="72" height="5"/>
+    <rect x="0" y="62" width="72" height="5"/>
+  </g>
+  <text x="88" y="52" font-family="Arial, Helvetica, 'DejaVu Sans', sans-serif" font-weight="700"
+        font-size="40" fill="#111" textLength="152" lengthAdjust="spacingAndGlyphs">CEIAS</text>
+</svg>
