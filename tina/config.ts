@@ -11,6 +11,7 @@ const MEDIA_OPTIONS = [
   { value: "rti", label: "Radio Taiwan International" },
   { value: "new-bloom", label: "New Bloom Magazine" },
   { value: "telos", label: "Telos" },
+  { value: "ceias", label: "CEIAS" },
   { value: "commonwealth", label: "CommonWealth Magazine" },
   { value: "le-vif", label: "Le Vif" },
   { value: "le-temps", label: "Le Temps" },
