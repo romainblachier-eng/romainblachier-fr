@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 90" width="330" height="90" role="img" aria-label="AFP Factuel">
+  <text x="0" y="62" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-style="italic" font-size="48" fill="#3347E5" textLength="100" lengthAdjust="spacingAndGlyphs">AFP</text>
+  <circle cx="133" cy="45" r="14" fill="#3347E5"/>
+  <text x="160" y="60" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="40" fill="#141414" textLength="165" lengthAdjust="spacingAndGlyphs">Factuel</text>
+</svg>
