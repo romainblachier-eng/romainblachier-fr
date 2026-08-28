@@ -33,6 +33,7 @@ const MEDIA_OPTIONS = [
   { value: "rue89-lyon", label: "Rue89 Lyon" },
   { value: "cameroun-actuel", label: "Cameroun Actuel" },
   { value: "african-arguments", label: "African Arguments" },
+  { value: "afp-factuel", label: "AFP Factuel" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).

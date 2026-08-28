@@ -11,6 +11,7 @@ const { mediaSlug, media } = Astro.props;
 const files = import.meta.glob<ImageMetadata>('../assets/*', { eager: true, import: 'default' });
 
 const logoFile: Record<string, string> = {
+	'afp-factuel': 'afp-factuel-logo.svg',
 	commonwealth: 'commonwealth-magazine-logo.svg',
 	'revue-conflits': 'revue-conflits-logo.jpg',
 	'jean-jaures': 'fondation-jean-jaures-logo.svg',
