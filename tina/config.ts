@@ -26,6 +26,7 @@ const MEDIA_OPTIONS = [
   { value: "revue-energie", label: "La Revue de l'Énergie" },
   { value: "defis-actuels", label: "Défis Actuels" },
   { value: "ecomatin", label: "EcoMatin" },
+  { value: "journal-du-cameroun", label: "Journal du Cameroun" },
   { value: "le-monde", label: "Le Monde" },
   { value: "liberation", label: "Libération" },
   { value: "marianne", label: "Marianne" },
