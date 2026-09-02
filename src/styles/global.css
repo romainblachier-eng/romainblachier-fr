@@ -1505,3 +1505,43 @@ article.blog-post .prose {
 .service-icon::after, .formateur-card-icon::after { content: ""; display: block; width: 9px; height: 9px; border-radius: 50%; background: var(--accent-warm); box-shadow: 14px 0 0 rgba(255,255,255,.55); }
 .formateur-card-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: flex-start; }
 .formateur-card-icon::after { width: 8px; height: 8px; }
+
+/* Bande de preuve sous le hero : trois logos et un intitulé, plus discrète que
+   le bandeau complet qui reste plus bas dans la page. */
+.media-logos-band--proof {
+	padding: 1.25rem 2rem;
+	background: var(--bg);
+	border-bottom: 1px solid var(--line);
+}
+.media-logos-band--proof .media-logos-inner {
+	gap: 1rem 2rem;
+}
+.media-logos-band--proof .media-logo-item img {
+	height: 28px;
+	filter: grayscale(100%) opacity(0.55);
+}
+.media-logos-band--proof .media-logo-item--wide img {
+	height: 20px;
+}
+.media-logos-label {
+	font-size: .72rem;
+	letter-spacing: .16em;
+	text-transform: uppercase;
+	color: var(--muted);
+	font-weight: 600;
+}
+@media (max-width: 640px) {
+	.media-logos-band--proof { padding: 1rem 1.25rem }
+	.media-logos-band--proof .media-logos-inner { gap: .75rem 1.25rem }
+	.media-logos-label { width: 100%; text-align: center }
+}
+
+/* Sous 700 px, les deux colonnes de la liste « Ce que je fais » ne tenaient plus :
+   les colonnes 1fr ne descendent pas sous leur contenu minimum, la grille
+   débordait de son conteneur et la home anglaise scrollait de 34 px en largeur. */
+@media (max-width: 700px) {
+	.services-list {
+		grid-template-columns: 1fr;
+		column-gap: 0;
+	}
+}

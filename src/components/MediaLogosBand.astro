@@ -1,4 +1,15 @@
 ---
+// Deux usages, une seule liste de logos : le bandeau complet (sans prop) et la
+// bande de preuve sous le hero (`featured` + `label`), qui n'en garde que
+// quelques-uns. Sélection par `alt` pour rester lisible côté page.
+interface Props {
+	/** Libellés `alt` à conserver, dans cet ordre. Sans valeur : tous les logos. */
+	featured?: string[];
+	/** Intitulé affiché devant les logos, ex. « Publié dans ». */
+	label?: string;
+}
+const { featured, label } = Astro.props;
+
 import { Image } from 'astro:assets';
 import afpFactuelLogo from '../assets/afp-factuel-logo.svg';
 import taipeiTimesLogo from '../assets/taipei-times-logo.gif';
@@ -61,11 +72,18 @@ const logos = [
 	{ src: africanArgumentsLogo, alt: 'African Arguments', width: 125, height: 40, wide: true },
 	{ src: hespressLogo, alt: 'Hespress', width: 167, height: 40, wide: true },
 ];
+
+const shown = featured
+	? featured
+			.map((name) => logos.find((l) => l.alt === name))
+			.filter((l): l is (typeof logos)[number] => Boolean(l))
+	: logos;
 ---
 
-<div class="media-logos-band">
+<div class:list={['media-logos-band', { 'media-logos-band--proof': featured }]}>
 	<div class="media-logos-inner">
-		{logos.map((logo) => (
+		{label && <span class="media-logos-label">{label}</span>}
+		{shown.map((logo) => (
 			<div class:list={['media-logo-item', { 'media-logo-item--wide': logo.wide }]}>
 				<Image src={logo.src} alt={logo.alt} width={logo.width} height={40} />
 			</div>
