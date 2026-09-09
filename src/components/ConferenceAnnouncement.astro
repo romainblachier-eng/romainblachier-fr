@@ -1,0 +1,159 @@
+---
+interface Props {
+	lang: 'fr' | 'en' | 'zh';
+}
+
+const { lang } = Astro.props;
+// Date and venue: MEDEF International reminder of 9 September 2026.
+// Speaking slot and session: the organiser's confirmation and supplied agenda.
+const copy = {
+	fr: {
+		label: 'Conférence · Paris',
+		date: '10 septembre 2026',
+		month: 'Septembre',
+		title: 'Sécurité énergétique et géopolitique',
+		conference: '28e conférence France–Taïwan de coopération économique',
+		text: 'Mon intervention apporte un regard français et européen sur la sécurité énergétique et les coopérations avec Taïwan. La session III, « Global Energy Security & Geopolitical Strategy », accueille également Kuan-Shen Chiang, du département des combustibles de Taipower.',
+		time: 'Intervention · 11 h 10–11 h 25',
+		language: 'En anglais · heure de Paris',
+		venue: 'Cercle de l’Union Interalliée, Paris',
+		link: 'Voir l’événement',
+	},
+	en: {
+		label: 'Conference · Paris',
+		date: '10 September 2026',
+		month: 'September',
+		title: 'Energy security and geopolitics',
+		conference: '28th France–Taiwan Economic Cooperation Conference',
+		text: 'My contribution brings a French and European perspective on energy security and cooperation with Taiwan. Session III, “Global Energy Security & Geopolitical Strategy”, also features Kuan-Shen Chiang from Taipower’s Department of Fuels.',
+		time: 'Speaking slot · 11:10–11:25',
+		language: 'In English · Paris time',
+		venue: 'Cercle de l’Union Interalliée, Paris',
+		link: 'View the event',
+	},
+	zh: {
+		label: '會議 · 巴黎',
+		date: '2026年9月10日',
+		month: '9月',
+		title: '能源安全與地緣政治',
+		conference: '第28屆臺法經濟合作會議',
+		text: '我的演講從法國與歐洲的角度，探討能源安全及與臺灣的合作。第三場次「Global Energy Security & Geopolitical Strategy」（全球能源安全與地緣政治策略）亦邀請台灣電力公司燃料處蔣光聲副處長發表演講。',
+		time: '演講時段 · 11:10–11:25',
+		language: '英語演講 · 巴黎時間',
+		venue: 'Cercle de l’Union Interalliée，巴黎',
+		link: '查看活動資訊',
+	},
+}[lang];
+const eventUrl = 'https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520';
+---
+
+<section class="conference-announcement" id="conference-france-taiwan" aria-labelledby="conference-title">
+	<div class="conference-inner">
+		<div class="conference-date-column">
+			<p class="conference-label">{copy.label}</p>
+			<time class="conference-date" datetime="2026-09-10" aria-label={copy.date}>
+				<span class="conference-day" aria-hidden="true">10</span>
+				<span class="conference-month" aria-hidden="true">{copy.month} 2026</span>
+			</time>
+		</div>
+		<div class="conference-content">
+			<p class="conference-name">{copy.conference}</p>
+			<h2 id="conference-title">{copy.title}</h2>
+			<p class="conference-organisers">MEDEF International <span aria-hidden="true">×</span> CIECA</p>
+			<p class="conference-description">{copy.text}</p>
+			<div class="conference-footer">
+				<div class="conference-details">
+					<p><strong>{copy.time}</strong> <span>· {copy.language}</span></p>
+					<p>{copy.venue}</p>
+				</div>
+				<a class="conference-link" href={eventUrl} target="_blank" rel="noopener noreferrer">
+					{copy.link} <span aria-hidden="true">↗</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.conference-announcement {
+		padding: 2.5rem 2rem;
+		background: var(--ink);
+		color: var(--bg);
+		scroll-margin-top: 5rem;
+	}
+	.conference-inner {
+		max-width: var(--max);
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 165px minmax(0, 1fr);
+		gap: 2.5rem;
+	}
+	.conference-date-column {
+		border-right: 1px solid rgba(255, 253, 249, .25);
+		padding-right: 1.5rem;
+	}
+	.conference-label {
+		font-size: .7rem;
+		font-weight: 600;
+		letter-spacing: .12em;
+		text-transform: uppercase;
+		color: #edb4a4;
+	}
+	.conference-date { display: block; margin-top: .7rem; }
+	.conference-day {
+		display: block;
+		font-family: var(--display);
+		font-size: 5rem;
+		line-height: 1;
+		font-variant-numeric: lining-nums;
+	}
+	.conference-month { display: block; margin-top: .5rem; font-size: .8rem; }
+	.conference-name { font-size: .82rem; color: #d4dfe6; }
+	h2 { margin-top: .4rem; color: var(--bg); font-size: clamp(1.5rem, 2.7vw, 2rem); }
+	.conference-organisers { margin-top: .6rem; font-size: .8rem; font-weight: 600; color: #edb4a4; }
+	.conference-organisers span { padding: 0 .4rem; }
+	.conference-description { max-width: 78ch; margin-top: .8rem; font-size: .9rem; line-height: 1.7; color: #e1e7ec; }
+	.conference-footer {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem 1.5rem;
+		margin-top: 1.25rem;
+	}
+	.conference-details { font-size: .78rem; line-height: 1.8; }
+	.conference-details span { color: #d4dfe6; }
+	.conference-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		min-height: 44px;
+		padding: .6rem 1rem;
+		border: 1px solid rgba(255, 253, 249, .6);
+		border-radius: 4px;
+		font-size: .8rem;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.conference-link:hover { background: var(--bg); color: var(--ink); }
+	.conference-link:focus-visible { outline-color: #edb4a4; outline-offset: 4px; }
+	@media (max-width: 700px) {
+		.conference-announcement { padding: 1.75rem 1.5rem; scroll-margin-top: 9rem; }
+		.conference-inner { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+		.conference-date-column {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: .75rem 1.5rem;
+			border-right: 0;
+			border-bottom: 1px solid rgba(255, 253, 249, .25);
+			padding: 0 0 1rem;
+		}
+		.conference-date { display: flex; align-items: baseline; gap: .45rem; margin: 0; }
+		.conference-day { font-family: var(--sans); font-size: 1rem; font-weight: 600; }
+		.conference-month { margin: 0; }
+		.conference-details span { display: block; }
+	}
+</style>
