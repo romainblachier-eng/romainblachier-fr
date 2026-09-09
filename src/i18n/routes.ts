@@ -16,13 +16,17 @@ export type Lang = keyof typeof ui;
  *     too. A missing entry here means "no alternate in that language" — not
  *     "same path".
  *
- * Any page added here must pass its key to `<Page routeKey="…">`.
+ * BaseHead and the language switcher use this map to resolve actual counterparts.
+ * Pages may also pass an explicit key to `<Page routeKey="…">`.
  */
 export const localizedRoutes = {
 	conseil: { fr: '/conseil', en: '/en/consulting' },
 	presse: { fr: '/presse', en: '/en/press' },
 	recherche: { fr: '/recherche', en: '/en/research' },
 	diagnosticIA: { fr: '/diagnostic-ia' },
+	demoScroll: { fr: '/demo-scroll/' },
+	// Local preview: registering its language does not publish the page.
+	demoHero: { fr: '/demo-hero/' },
 } as const satisfies Record<string, Partial<Record<Lang, string>>>;
 
 export type RouteKey = keyof typeof localizedRoutes;
@@ -35,4 +39,12 @@ export function routePath(key: RouteKey, lang: Lang): string | undefined {
 /** Every language in which a page exists, for hreflang emission. */
 export function routeAlternates(key: RouteKey): Partial<Record<Lang, string>> {
 	return localizedRoutes[key];
+}
+
+/** Known counterparts for a path, or undefined for pages using a shared slug. */
+export function routeAlternatesForPath(pathname: string): Partial<Record<Lang, string>> | undefined {
+	const normalized = pathname.replace(/\/$/, '');
+	return Object.values(localizedRoutes).find((routes) =>
+		Object.values(routes).some((path) => path.replace(/\/$/, '') === normalized),
+	);
 }
