@@ -7,7 +7,6 @@ import { Image } from "astro:assets";
 import portrait from "../../assets/portrait.jpg";
 import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
-import ConferenceAnnouncement from "../../components/ConferenceAnnouncement.astro";
 import ContactForm from "../../components/ContactForm.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
@@ -38,7 +37,49 @@ const recentPubs = allPubs.slice(0, 3);
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
 
-		<ConferenceAnnouncement lang="zh" />
+		<section class="reperes" aria-label="關鍵數字">
+			<dl class="reperes-inner">
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.energy')}</dt>
+					<dd class="repere-label">{t('reperes.energy.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.elected')}</dt>
+					<dd class="repere-label">{t('reperes.elected.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.teaching')}</dt>
+					<dd class="repere-label">{t('reperes.teaching.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.countries')}</dt>
+					<dd class="repere-label">{t('reperes.countries.label')}</dd>
+				</div>
+			</dl>
+		</section>
+
+		<section class="event-banner">
+			<div class="event-banner-inner event-banner-inner--trio">
+				<div class="section-overline" style="text-align:center">{t('alaune.overline')}</div>
+				<div class="event-trio">
+					<div class="event-item">
+						<div class="event-details"><strong>《世界報》Le Monde</strong></div>
+						<p class="event-topic">〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉</p>
+						<p class="event-link"><a href="https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html" target="_blank" rel="noopener noreferrer">閱讀全文（法文）→</a></p>
+					</div>
+					<div class="event-item">
+						<div class="event-details"><strong>《能源評論》La Revue de l'Énergie</strong></div>
+						<p class="event-topic">〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62</p>
+						<p class="event-link"><a href="https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr" target="_blank" rel="noopener noreferrer">於 Cairn 閱讀（法文）→</a></p>
+					</div>
+					<div class="event-item">
+						<div class="event-details"><strong>{t('alaune.conference.title')}</strong></div>
+						<p class="event-topic">{t('alaune.conference.topic')}</p>
+						<p class="event-link"><a href="https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520" target="_blank" rel="noopener noreferrer">{t('alaune.conference.link')}</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		{recentPubs.length > 0 && (
 		<section class="latest-article">
@@ -74,26 +115,6 @@ const recentPubs = allPubs.slice(0, 3);
 
 		<MediaLogosBand />
 
-		<section class="event-banner">
-			<div class="event-banner-inner event-banner-inner--duo">
-				<div class="section-overline" style="text-align:center">焦點</div>
-				<div class="event-duo">
-					<div class="event-item">
-						<div class="event-details"><strong>《世界報》Le Monde</strong></div>
-						<p class="event-topic">〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉</p>
-						<p class="event-link"><a href="https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html" target="_blank" rel="noopener noreferrer">閱讀全文（法文）→</a></p>
-					</div>
-					<div class="event-item">
-						<div class="event-details"><strong>《能源評論》La Revue de l'Énergie</strong></div>
-						<p class="event-topic">〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62</p>
-						<p class="event-link"><a href="https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr" target="_blank" rel="noopener noreferrer">於 Cairn 閱讀（法文）→</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<TrainingLogosBand heading={t('formateur.clients')} />
-
 		<section class="about">
 			<div class="about-inner">
 				<div class="about-left">
@@ -112,6 +133,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<p>{t('about.p4')}</p>
 						<p>{t('about.p5')}</p>
 						<p>{t('about.p6')}</p>
+						<p>{t('about.p7')}</p>
 					</div>
 				</div>
 			</div>
@@ -152,6 +174,47 @@ const recentPubs = allPubs.slice(0, 3);
 						</div>
 					</li>
 				</ol>
+			</div>
+		</section>
+
+		<section class="formateur" id="formateur">
+			<div class="formateur-inner">
+				<div class="section-overline" style="text-align:center">{t('formateur.overline')}</div>
+				<h2 class="section-title">{t('formateur.title')}</h2>
+				<p class="formateur-intro">{t('formateur.intro')}</p>
+				<TrainingLogosBand heading={t('formateur.clients')} />
+				<dl class="formateur-stats">
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.years')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.years.label')}</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.schools')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.schools.label')}</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.languages')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.languages.label')}</dd>
+					</div>
+				</dl>
+				<dl class="formateur-list">
+					<div class="formateur-row">
+						<dt>{t('formateur.notes.title')}</dt>
+						<dd>{t('formateur.notes.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.academic.title')}</dt>
+						<dd>{t('formateur.academic.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.custom.title')}</dt>
+						<dd>{t('formateur.custom.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.elus.title')}</dt>
+						<dd>{t('formateur.elus.desc')}</dd>
+					</div>
+				</dl>
 			</div>
 		</section>
 
@@ -203,11 +266,20 @@ const recentPubs = allPubs.slice(0, 3);
 						</p>
 					</div>
 					<div class="ref-col">
+						<h3>{t('references.institutional')}</h3>
+						<ul>
+							<li>讓·饒勒斯基金會副研究員</li>
+							<li>法國戰略署企業社會責任平台公民社會委員</li>
+							<li>非洲開發銀行專家名冊（2025 年起）</li>
+							<li>里昂第二大學博士研究：電力轉型治理</li>
+						</ul>
+					</div>
+					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>
 						<ul>
-							<li>法國-福爾摩沙協會 會長</li>
+							<li>法國福爾摩沙協會（France-Formosa）會長，2012 年起；2019 年與 2025 年兩度赴台執行官方任務</li>
 							<li>Mediatone / Reperkusound 理事</li>
-							<li>《Guillotière(s)》作者</li>
+							<li>著有 <em>Guillotière(s)</em></li>
 						</ul>
 					</div>
 				</div>

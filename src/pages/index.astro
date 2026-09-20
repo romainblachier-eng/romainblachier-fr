@@ -8,7 +8,6 @@ import { Image } from "astro:assets";
 import portrait from "../assets/portrait.jpg";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import MediaLogosBand from "../components/MediaLogosBand.astro";
-import ConferenceAnnouncement from "../components/ConferenceAnnouncement.astro";
 import ContactForm from "../components/ContactForm.astro";
 import TrainingLogosBand from "../components/TrainingLogosBand.astro";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -39,7 +38,49 @@ const recentPubs = allPubs.slice(0, 3);
 			ctaLabel={`${t('hero.cta')} →`}
 		/>
 
-		<ConferenceAnnouncement lang="fr" />
+		<section class="reperes" aria-label="Repères">
+			<dl class="reperes-inner">
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.energy')}</dt>
+					<dd class="repere-label">{t('reperes.energy.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.elected')}</dt>
+					<dd class="repere-label">{t('reperes.elected.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.teaching')}</dt>
+					<dd class="repere-label">{t('reperes.teaching.label')}</dd>
+				</div>
+				<div class="repere">
+					<dt class="repere-number">{t('reperes.countries')}</dt>
+					<dd class="repere-label">{t('reperes.countries.label')}</dd>
+				</div>
+			</dl>
+		</section>
+
+		<section class="event-banner">
+			<div class="event-banner-inner event-banner-inner--trio">
+				<div class="section-overline" style="text-align:center">{t('alaune.overline')}</div>
+				<div class="event-trio">
+					<div class="event-item">
+						<div class="event-details"><strong>Le Monde</strong></div>
+						<p class="event-topic">« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »</p>
+						<p class="event-link"><a href="https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html" target="_blank" rel="noopener noreferrer">Lire la tribune →</a></p>
+					</div>
+					<div class="event-item">
+						<div class="event-details"><strong>La Revue de l'Énergie</strong></div>
+						<p class="event-topic">« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62</p>
+						<p class="event-link"><a href="https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr" target="_blank" rel="noopener noreferrer">Lire sur Cairn →</a></p>
+					</div>
+					<div class="event-item">
+						<div class="event-details"><strong>{t('alaune.conference.title')}</strong></div>
+						<p class="event-topic">{t('alaune.conference.topic')}</p>
+						<p class="event-link"><a href="https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520" target="_blank" rel="noopener noreferrer">{t('alaune.conference.link')}</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		{recentPubs.length > 0 && (
 		<section class="latest-article">
@@ -75,24 +116,6 @@ const recentPubs = allPubs.slice(0, 3);
 
 		<MediaLogosBand />
 
-		<section class="event-banner">
-			<div class="event-banner-inner event-banner-inner--duo">
-				<div class="section-overline" style="text-align:center">À la une</div>
-				<div class="event-duo">
-					<div class="event-item">
-						<div class="event-details"><strong>Le Monde</strong></div>
-						<p class="event-topic">« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »</p>
-						<p class="event-link"><a href="https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html" target="_blank" rel="noopener noreferrer">Lire la tribune →</a></p>
-					</div>
-					<div class="event-item">
-						<div class="event-details"><strong>La Revue de l'Énergie</strong></div>
-						<p class="event-topic">« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62</p>
-						<p class="event-link"><a href="https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr" target="_blank" rel="noopener noreferrer">Lire sur Cairn →</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="about">
 			<div class="about-inner">
 				<div class="about-left">
@@ -111,6 +134,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<p>{t('about.p4')}</p>
 						<p>{t('about.p5')}</p>
 						<p>{t('about.p6')}</p>
+						<p>{t('about.p7')}</p>
 					</div>
 				</div>
 			</div>
@@ -166,6 +190,10 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="formateur-stat">
 						<dt class="formateur-stat-number">{t('formateur.stat.years')}</dt>
 						<dd class="formateur-stat-label">{t('formateur.stat.years.label')}</dd>
+					</div>
+					<div class="formateur-stat">
+						<dt class="formateur-stat-number">{t('formateur.stat.schools')}</dt>
+						<dd class="formateur-stat-label">{t('formateur.stat.schools.label')}</dd>
 					</div>
 					<div class="formateur-stat">
 						<dt class="formateur-stat-number">{t('formateur.stat.languages')}</dt>
@@ -242,9 +270,18 @@ const recentPubs = allPubs.slice(0, 3);
 						</p>
 					</div>
 					<div class="ref-col">
+						<h3>{t('references.institutional')}</h3>
+						<ul>
+							<li>Expert associé, Fondation Jean-Jaurès</li>
+							<li>Membre du collège société civile, Plateforme RSE (France Stratégie)</li>
+							<li>Expert référencé, Banque africaine de développement (depuis 2025)</li>
+							<li>Recherche doctorale, Université Lyon 2 — gouvernance de la transition électrique</li>
+						</ul>
+					</div>
+					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>
 						<ul>
-							<li>Président, Association France-Formosa</li>
+							<li>Président, Association France-Formosa (depuis 2012) — deux missions officielles à Taïwan, 2019 et 2025</li>
 							<li>Administrateur, Mediatone / Reperkusound</li>
 							<li>Auteur, <em>Guillotière(s)</em></li>
 						</ul>
