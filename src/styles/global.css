@@ -333,6 +333,11 @@ header nav {
 .latest-logo {
 	margin-bottom: .75rem;
 }
+.latest-logo img.pub-logo {
+	width: auto;
+	max-width: 160px;
+	height: 44px;
+}
 .latest-meta {
 	display: flex;
 	align-items: center;

@@ -11,7 +11,7 @@ import ContactForm from "../../components/ContactForm.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
 import PublicationLogo from "../../components/PublicationLogo.astro";
-import { getPublications } from "../../lib/sections";
+import { getPublications, cardTitle } from "../../lib/sections";
 import { teachingInstitutions, upcomingInstitutions, institutionLabel } from "../../data/profile";
 
 const t = useTranslations('zh');
@@ -96,7 +96,7 @@ const recentPubs = allPubs.slice(0, 3);
 								<span class="latest-media">{pub.data.media}</span>
 								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="zh" /></span>
 							</div>
-							<h3 class="latest-headline">{pub.data.title}</h3>
+							<h3 class="latest-headline">{cardTitle(pub.data.title, pub.data.media)}</h3>
 							<p class="latest-desc">{pub.data.description}</p>
 							<div class="latest-actions">
 								{pub.data.lienCanonique
@@ -150,6 +150,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<div class="service-body">
 							<h3>{t('services.teaching.title')}</h3>
 							<p>{t('services.teaching.desc')}</p>
+							<a href="#formateur" class="latest-cta">{t('services.teaching.link')}</a>
 						</div>
 					</li>
 					<li class="service-item">
@@ -157,6 +158,7 @@ const recentPubs = allPubs.slice(0, 3);
 						<div class="service-body">
 							<h3>{t('services.writing.title')}</h3>
 							<p>{t('services.writing.desc')}</p>
+							<a href="/zh/publications/" class="latest-cta">{t('nav.publications')} →</a>
 						</div>
 					</li>
 					<li class="service-item">
@@ -199,10 +201,6 @@ const recentPubs = allPubs.slice(0, 3);
 				</dl>
 				<dl class="formateur-list">
 					<div class="formateur-row">
-						<dt>{t('formateur.notes.title')}</dt>
-						<dd>{t('formateur.notes.desc')}</dd>
-					</div>
-					<div class="formateur-row">
 						<dt>{t('formateur.academic.title')}</dt>
 						<dd>{t('formateur.academic.desc')}</dd>
 					</div>
@@ -213,6 +211,10 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="formateur-row">
 						<dt>{t('formateur.elus.title')}</dt>
 						<dd>{t('formateur.elus.desc')}</dd>
+					</div>
+					<div class="formateur-row">
+						<dt>{t('formateur.notes.title')}</dt>
+						<dd>{t('formateur.notes.desc')}</dd>
 					</div>
 				</dl>
 			</div>

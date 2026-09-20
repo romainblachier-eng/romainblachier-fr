@@ -14,7 +14,7 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
-		'hero.pitch': "Qui décide vraiment dans le secteur électrique, et avec quels moyens ? C'est la question qui traverse mon travail, à Taïwan comme en Afrique centrale ou dans une métropole française. Dix-huit ans dans l'électricité renouvelable, douze ans d'élu à Lyon, enseignant depuis 2010. Expert associé à la Fondation Jean-Jaurès, membre de la Plateforme RSE de France Stratégie.",
+		'hero.pitch': "Qui décide vraiment dans le secteur électrique, et avec quels moyens ? C'est la question qui traverse mon travail, à Taïwan comme en Afrique centrale ou dans une métropole française : en cours, dans la presse de cinq pays et en mission auprès d'institutions. Expert associé à la Fondation Jean-Jaurès, membre de la Plateforme RSE de France Stratégie.",
 		'hero.cta': 'Me contacter',
 		// About
 		'about.title': 'À propos',
@@ -30,6 +30,7 @@ export const ui = {
 		'services.intro': "Quatre activités, et elles tiennent ensemble. Comment l'électricité se produit, qui tient les réseaux, ce que cela pèse dans un rapport de force : ce sont des sujets longs à comprendre. Il faut les lire, aller les voir, les enseigner, et seulement ensuite les écrire.",
 		'services.teaching.title': "J'enseigne",
 		'services.teaching.desc': "Cours en école et à l'université, formations pour cadres et pour élus, conférences. Marchés de l'énergie, transition énergétique, géopolitique, communication publique.",
+		'services.teaching.link': 'Formations et enseignement →',
 		'services.writing.title': "J'écris",
 		'services.writing.desc': "Analyses et tribunes dans la presse française et internationale, notes pour think tanks, chroniques radio et télévision. C'est là que je teste ce que je crois avoir compris.",
 		'services.expertise.title': "J'expertise",
@@ -85,7 +86,7 @@ export const ui = {
 		'references.culture': 'Engagements',
 		// Contact
 		'contact.title': 'Contact',
-		'contact.desc': "Pour une formation, une conférence, une intervention média ou une collaboration : écrivez-moi par email ou via le formulaire.",
+		'contact.desc': "Pour une formation, une conférence, une intervention média, une mission de conseil ou une collaboration : écrivez-moi par email ou via le formulaire.",
 		'contact.name': 'Nom',
 		'contact.email': 'Email',
 		'contact.subject': 'Sujet de votre demande',
@@ -162,7 +163,7 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
-		'hero.pitch': "Who really decides in the power sector, and with what means? That question runs through everything I do, in Taiwan as much as in Central Africa or in a French metropolitan area. Eighteen years in renewable electricity, twelve years in elected office in Lyon, teaching since 2010. Associate fellow at the Fondation Jean-Jaurès, member of France Stratégie's CSR Platform.",
+		'hero.pitch': "Who really decides in the power sector, and with what means? That question runs through everything I do, in Taiwan as much as in Central Africa or in a French metropolitan area: in the classroom, in the press of five countries and on assignment for institutions. Associate fellow at the Fondation Jean-Jaurès, member of France Stratégie's CSR Platform.",
 		'hero.cta': 'Get in touch',
 		// About
 		'about.title': 'About',
@@ -178,6 +179,7 @@ export const ui = {
 		'services.intro': "Four activities, and they hold together. How electricity gets produced, who holds the grids, what that weighs in a balance of power: these take a long time to understand. You have to read them, go and see them, teach them, and only then write them.",
 		'services.teaching.title': 'I teach',
 		'services.teaching.desc': "Lectures at business schools and universities, training for executives and elected officials, keynotes. Energy markets, the energy transition, geopolitics, public communications.",
+		'services.teaching.link': 'Training and teaching →',
 		'services.writing.title': 'I write',
 		'services.writing.desc': "Analysis and op-eds in the French and international press, think-tank papers, radio and television commentary. This is where I test what I think I have understood.",
 		'services.expertise.title': 'I advise',
@@ -233,7 +235,7 @@ export const ui = {
 		'references.culture': 'Civic engagement',
 		// Contact
 		'contact.title': 'Contact',
-		'contact.desc': "For training, a conference, a media appearance or a collaboration: write to me by email or through the form.",
+		'contact.desc': "For training, a conference, a media appearance, a consulting assignment or a collaboration: write to me by email or through the form.",
 		'contact.name': 'Name',
 		'contact.email': 'Email',
 		'contact.subject': 'Subject',
@@ -310,7 +312,7 @@ export const ui = {
 		'nav.contact': '聯絡',
 		// Hero
 		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
-		'hero.pitch': '電力部門究竟由誰做主，又握有什麼資源？這個問題貫穿我所有的工作，無論在台灣、中部非洲，還是一座法國都會區。在再生能源電力領域十八年，在里昂擔任民選代表十二年，自 2010 年起任教。讓·饒勒斯基金會副研究員，法國戰略署企業社會責任平台成員。',
+		'hero.pitch': '電力部門究竟由誰做主，又握有什麼資源？這個問題貫穿我所有的工作，無論在台灣、中部非洲，還是一座法國都會區：在課堂上、在五個國家的媒體上，也在為機構執行的任務中。讓·饒勒斯基金會副研究員，法國戰略署企業社會責任平台成員。',
 		'hero.cta': '與我聯絡',
 		// About
 		'about.title': '關於',
@@ -327,6 +329,7 @@ export const ui = {
 		'services.intro': '我做四件事，而它們是相通的。電力如何生產、電網由誰掌握、這在權力關係中有多重：這些題目要花很長時間才弄得懂。得讀、得親自去看、得拿去教，然後才寫得出來。',
 		'services.teaching.title': '我教學',
 		'services.teaching.desc': '高等學院與大學的課程、面向管理者與民選代表的培訓、專題演講。主題涵蓋能源市場、能源轉型、地緣政治與公共傳播。',
+		'services.teaching.link': '培訓與教學 →',
 		'services.writing.title': '我寫作',
 		'services.writing.desc': '為法國與國際媒體撰寫分析與評論，為智庫撰寫研究短文，並在廣播與電視擔任評論。這是我檢驗自己是否真的想清楚的地方。',
 		'services.expertise.title': '我提供專業意見',
@@ -381,7 +384,7 @@ export const ui = {
 		'references.culture': '公民參與',
 		// Contact
 		'contact.title': '聯絡',
-		'contact.desc': '培訓、演講、媒體出席或合作事宜，歡迎來信或透過表單與我聯絡。',
+		'contact.desc': '培訓、演講、媒體出席、顧問任務或合作事宜，歡迎來信或透過表單與我聯絡。',
 		'contact.name': '姓名',
 		'contact.email': '電子郵件',
 		'contact.subject': '來信主旨',
