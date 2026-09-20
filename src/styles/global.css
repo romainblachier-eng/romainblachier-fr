@@ -1545,3 +1545,76 @@ article.blog-post .prose {
 		column-gap: 0;
 	}
 }
+
+/* Repères : bande de quatre chiffres sous le hero. Même vocabulaire que les
+   chiffres de la section Formateur (filets verticaux), en plus dense. */
+.reperes {
+	background: var(--bg);
+	border-top: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
+	padding: 2rem 2rem;
+}
+.reperes-inner {
+	max-width: var(--max);
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+}
+.repere {
+	text-align: center;
+	padding: 0 1.25rem;
+	border-left: 1px solid var(--line);
+}
+.repere:first-child { border-left: 0 }
+.repere-number {
+	display: block;
+	font-family: var(--display);
+	font-size: 2.1rem;
+	font-weight: 700;
+	color: var(--ink);
+	line-height: 1;
+	letter-spacing: -.02em;
+	margin-bottom: .45rem;
+	font-variant-numeric: tabular-nums;
+}
+.repere-label {
+	font-size: .8rem;
+	color: var(--muted);
+	line-height: 1.45;
+	max-width: 22ch;
+	margin: 0 auto;
+}
+@media (max-width: 860px) {
+	.reperes-inner { grid-template-columns: 1fr 1fr; row-gap: 2rem }
+	.repere:nth-child(3) { border-left: 0 }
+}
+@media (max-width: 480px) {
+	.reperes { padding: 1.75rem 1.25rem }
+	.reperes-inner { grid-template-columns: 1fr; gap: 1.5rem }
+	.repere { border-left: 0; padding: 0 }
+	.repere-number { font-size: 1.9rem }
+}
+
+/* À la une : trois items (deux publications + une intervention). */
+.event-banner-inner--trio { max-width: 1120px }
+.event-trio {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.75rem;
+	margin-top: .75rem;
+}
+.event-trio .event-item + .event-item {
+	border-left: 1px solid var(--line);
+	padding-left: 1.75rem;
+}
+.event-trio .event-details { font-size: 1.05rem }
+@media (max-width: 860px) {
+	.event-trio { grid-template-columns: 1fr; gap: 1.25rem }
+	.event-trio .event-item + .event-item {
+		border-left: 0;
+		padding-left: 0;
+		padding-top: 1.25rem;
+		border-top: 1px solid var(--line);
+	}
+}
