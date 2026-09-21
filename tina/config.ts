@@ -13,6 +13,7 @@ const MEDIA_OPTIONS = [
   { value: "telos", label: "Telos" },
   { value: "ceias", label: "CEIAS" },
   { value: "commonwealth", label: "CommonWealth Magazine" },
+  { value: "cw-opinion", label: "獨立評論@天下 Opinion@CommonWealth" },
   { value: "le-vif", label: "Le Vif" },
   { value: "le-temps", label: "Le Temps" },
   { value: "revue-conflits", label: "Revue Conflits" },

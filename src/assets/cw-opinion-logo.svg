@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="獨立評論@天下 Opinion@CommonWealth">
+  <rect width="200" height="200" fill="#1F1F1F"/>
+  <text x="100" y="78" text-anchor="middle" textLength="168" lengthAdjust="spacingAndGlyphs"
+        font-family="'Noto Serif TC','Songti TC','PingFang TC','Microsoft JhengHei',serif"
+        font-size="48" font-weight="700" fill="#ffffff">獨立評論</text>
+  <text x="100" y="140" text-anchor="middle"
+        font-family="'Noto Serif TC','Songti TC','PingFang TC','Microsoft JhengHei',serif"
+        font-size="46" font-weight="700" fill="#ffffff"><tspan fill="#C8161E" font-family="Georgia,'Times New Roman',serif">@</tspan><tspan>天下</tspan></text>
+  <text x="100" y="176" text-anchor="middle" textLength="116" lengthAdjust="spacingAndGlyphs"
+        font-family="Georgia,'Times New Roman',serif" font-size="22" font-weight="700"
+        letter-spacing="2" fill="#ffffff">OPINION</text>
+</svg>
