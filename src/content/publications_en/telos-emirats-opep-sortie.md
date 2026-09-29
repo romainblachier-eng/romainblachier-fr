@@ -1,7 +1,7 @@
 ---
 media: "Telos"
 mediaSlug: telos
-lienCanonique: "https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
+lienCanonique: "https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
 kind: tribune
 title: "My article on Telos: the UAE's exit from OPEC is not what you think"
 description: "Published on Telos, this article analyses the UAE's withdrawal from OPEC in April 2026 — not as a sudden break, but as the logical outcome of a fifteen-year strategy to maximise oil rent."
@@ -23,4 +23,4 @@ The Emirati strategy rests on a clear trade-off: **maximising present oil rent b
 
 The article also questions the Emirati narrative on the energy transition. Despite the COP28 presidency and investments in Masdar, ADNOC's fossil/renewables capex ratio remains 7 to 1 — well above that of Western majors. Gulf producers are **partners during the transition**, not partners of the transition. Cooperation must be built on genuinely shared interest segments: civil nuclear, maritime security, critical minerals, low-carbon hydrogen.
 
-[Read the full article on Telos](https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)
+[Read the full article on Telos](https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)

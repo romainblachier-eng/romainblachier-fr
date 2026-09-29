@@ -1,7 +1,7 @@
 ---
 media: "Telos"
 mediaSlug: telos
-lienCanonique: "https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
+lienCanonique: "https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
 kind: tribune
 title: "Mon article sur Telos : la sortie des Émirats de l'OPEP n'est pas celle qu'on croit"
 description: "Publié sur Telos, cet article analyse le retrait des Émirats arabes unis de l'OPEP en avril 2026 — non pas comme une rupture soudaine, mais comme l'aboutissement logique d'une stratégie de quinze ans de maximisation de la rente pétrolière."
@@ -23,4 +23,4 @@ La stratégie émirienne repose sur un arbitrage clair : **maximiser la rente p�
 
 L'article interroge aussi le récit émirien sur la transition énergétique. Malgré la présidence de la COP28 et les investissements dans Masdar, le ratio capex fossile/renouvelables d'ADNOC reste de 7 pour 1 — bien supérieur à celui des majors occidentales. Les producteurs du Golfe sont des **partenaires pendant la transition**, pas des partenaires de la transition. La coopération doit se bâtir sur les segments d'intérêt réellement partagés : nucléaire civil, sécurité maritime, minéraux critiques, hydrogène bas-carbone.
 
-[Lire l'article complet sur Telos](https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)
+[Lire l'article complet sur Telos](https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)

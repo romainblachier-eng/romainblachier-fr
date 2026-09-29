@@ -1,7 +1,7 @@
 ---
 media: "Telos"
 mediaSlug: telos
-lienCanonique: "https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
+lienCanonique: "https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html"
 kind: tribune
 title: "我在 Telos 的文章：阿聯退出 OPEC，並非外界所想的那樣"
 description: "刊於 Telos，本文分析阿拉伯聯合大公國於 2026 年 4 月退出 OPEC——這並非突如其來的決裂，而是一項長達十五年、追求石油租金最大化策略的合乎邏輯的終點。"
@@ -23,4 +23,4 @@ heroImage: '../../assets/telos-eu-logo-hero.jpg'
 
 文章也質疑阿聯關於能源轉型的敘事。儘管主辦了 COP28、並投資 Masdar，ADNOC 的化石／再生能源資本支出比仍為 7 比 1——遠高於西方大型石油公司。波灣的生產者是**轉型期間的夥伴**，而非轉型的夥伴。合作應建立在真正共享利益的領域：民用核能、海上安全、關鍵礦物、低碳氫能。
 
-[在 Telos 閱讀全文](https://www.telos-eu.com/fr/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)
+[在 Telos 閱讀全文](https://www.telos-eu.com/fr/economie/energie-la-sortie-des-emirats-arabes-unis-de-lopep-nest-pas-celle-quon-croit.html)
