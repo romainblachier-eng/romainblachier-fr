@@ -14,13 +14,13 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
-		'hero.pitch': "Qui décide vraiment dans le secteur électrique, et avec quels moyens ? C'est la question qui traverse mon travail, à Taïwan comme en Afrique centrale ou dans une métropole française : en cours, dans la presse de cinq pays et en mission auprès d'institutions. Expert associé à la Fondation Jean-Jaurès, membre de la Plateforme RSE de France Stratégie.",
+		'hero.pitch': "Qui décide vraiment dans le secteur électrique, et avec quels moyens ? C'est la question qui traverse mon travail, à Taïwan comme en Afrique centrale ou dans une métropole française : en cours, dans la presse en France et à l'étranger, et en mission auprès d'institutions. Expert associé à la Fondation Jean-Jaurès, membre de la Plateforme RSE de France Stratégie.",
 		'hero.cta': 'Me contacter',
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique passent pour des sujets d'experts. Mon travail consiste à les rendre lisibles et utilisables : devant des étudiants, pour une rédaction qui boucle, ou face à une équipe de direction qui doit trancher.",
 		'about.p2': "Cette lecture vient d'abord de la pratique : dix-huit ans dans l'électricité renouvelable, douze ans de mandat à la Ville puis à la Métropole de Lyon. Les marchés, les réseaux, la décision publique, je les ai pratiqués avant de les enseigner.",
-		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie dans la presse et les revues spécialisées de cinq pays : du Monde au Taipei Times, de La Revue de l'Énergie à la presse camerounaise. Mes terrains d'écriture : les systèmes électriques africains, la géopolitique pétrolière, la souveraineté énergétique de Taïwan, la diplomatie des villes.",
+		'about.p3': "Expert associé à la Fondation Jean-Jaurès, je publie dans la presse et les revues spécialisées, en France et à l'international : du Monde au Taipei Times, de La Revue de l'Énergie à la presse camerounaise. Mes terrains d'écriture : les systèmes électriques africains, la géopolitique pétrolière, la souveraineté énergétique de Taïwan, la diplomatie des villes.",
 		'about.p4': "J'enseigne depuis 2010, en grande école, à l'université et en formation continue : une dizaine d'établissements, environ 180 heures par an, en français, en anglais et en espagnol. Les établissements sont listés plus bas ; les cours, eux, changent d'une année sur l'autre.",
 		'about.p5': "Ce regard s'est construit autant sur le terrain qu'en salle : Cameroun, Cambodge, Ukraine, Taïwan. En juillet 2026, une mission sur la réforme du secteur électrique d'un État d'Afrique centrale, suivie d'une conférence dans un institut de relations internationales de la région.",
 		'about.p6': "Deux missions officielles à Taïwan, sur invitation du ministère des Affaires étrangères (2019 et 2025), et un référencement comme expert auprès de la Banque africaine de développement depuis 2025 prolongent ce travail de terrain.",
@@ -155,13 +155,13 @@ export const ui = {
 		'nav.contact': 'Contact',
 		// Hero
 		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
-		'hero.pitch': "Who really decides in the power sector, and with what means? That question runs through everything I do, in Taiwan as much as in Central Africa or in a French metropolitan area: in the classroom, in the press of five countries and on assignment for institutions. Associate fellow at the Fondation Jean-Jaurès, member of France Stratégie's CSR Platform.",
+		'hero.pitch': "Who really decides in the power sector, and with what means? That question runs through everything I do, in Taiwan as much as in Central Africa or in a French metropolitan area: in the classroom, in the press in France and abroad, and on assignment for institutions. Associate fellow at the Fondation Jean-Jaurès, member of France Stratégie's CSR Platform.",
 		'hero.cta': 'Get in touch',
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics are treated as expert territory. My work is to make them readable and usable: in front of students, for a newsroom on deadline, or for an executive team that has to decide.",
 		'about.p2': "That reading comes from practice first: eighteen years in renewable electricity, twelve years in elected office in the City and then the Metropolitan area of Lyon. Markets, grids, public decision-making, I practised them before teaching them.",
-		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish in the press and specialised journals of five countries: from Le Monde to the Taipei Times, from La Revue de l'Énergie to the Cameroonian press. What I write about: African power systems, oil geopolitics, Taiwan's energy sovereignty, city diplomacy.",
+		'about.p3': "An associate fellow at the Fondation Jean-Jaurès, I publish in the press and specialised journals, in France and abroad: from Le Monde to the Taipei Times, from La Revue de l'Énergie to the Cameroonian press. What I write about: African power systems, oil geopolitics, Taiwan's energy sovereignty, city diplomacy.",
 		'about.p4': "I have taught since 2010, in business schools, universities and executive education: around ten institutions, some 180 hours a year, in French, English and Spanish. The institutions are listed below; the courses change from one year to the next.",
 		'about.p5': "This perspective was built in the field as much as in the classroom: Cameroon, Cambodia, Ukraine, Taiwan. In July 2026, a mission on the reform of a Central African state's power sector, followed by a lecture at an international relations institute in the region.",
 		'about.p6': "Two official missions to Taiwan at the invitation of the Ministry of Foreign Affairs (2019 and 2025), and a listing as an expert with the African Development Bank since 2025, extend that fieldwork.",
@@ -296,13 +296,13 @@ export const ui = {
 		'nav.contact': '聯絡',
 		// Hero
 		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
-		'hero.pitch': '電力部門究竟由誰做主，又握有什麼資源？這個問題貫穿我所有的工作，無論在台灣、中部非洲，還是一座法國都會區：在課堂上、在五個國家的媒體上，也在為機構執行的任務中。讓·饒勒斯基金會副研究員，法國戰略署企業社會責任平台成員。',
+		'hero.pitch': '電力部門究竟由誰做主，又握有什麼資源？這個問題貫穿我所有的工作，無論在台灣、中部非洲，還是一座法國都會區：在課堂上、在法國與海外的媒體上，也在為機構執行的任務中。讓·饒勒斯基金會副研究員，法國戰略署企業社會責任平台成員。',
 		'hero.cta': '與我聯絡',
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治常被當成專家的領域。我的工作是讓它們讀得懂、用得上：面對學生、面對趕稿的編輯部，或面對必須做決定的管理團隊。',
 		'about.p2': '這樣的判讀首先來自實作：在再生能源電力領域十八年，先後在里昂市與大里昂都會區擔任民選代表十二年。市場、電網、公共決策，我先實踐，而後教學。',
-		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我在五個國家的媒體與專業期刊發表：從《世界報》到《台北時報》，從《能源評論》到喀麥隆媒體。書寫的題目包括：非洲電力系統、石油地緣政治、台灣能源主權、城市外交。',
+		'about.p3': '身為讓·饒勒斯基金會（Fondation Jean-Jaurès）副研究員，我在法國與海外的媒體與專業期刊發表：從《世界報》到《台北時報》，從《能源評論》到喀麥隆媒體。書寫的題目包括：非洲電力系統、石油地緣政治、台灣能源主權、城市外交。',
 		'about.p4': '我自 2010 年起任教，在高等學院、大學與在職培訓課程：約十所機構，每年約 180 小時，以法語、英語與西班牙語授課。任教機構列於下方；每年開設的課程並不相同。',
 		'about.p5': '這一視野在田野與課堂上同時形成：喀麥隆、柬埔寨、烏克蘭、台灣。2026 年 7 月，為中部非洲一國的電力部門改革執行任務，隨後在該地區一所國際關係學院發表演講。',
 		'about.p6': '應外交部邀請兩度赴台執行官方任務（2019 年與 2025 年），並自 2025 年起列入非洲開發銀行的專家名冊，延續了這些田野工作。',
