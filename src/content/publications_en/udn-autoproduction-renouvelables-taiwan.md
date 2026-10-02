@@ -3,7 +3,7 @@ media: "聯合報 United Daily News"
 mediaSlug: udn
 lienCanonique: "https://udn.com/news/story/7339/9578535"
 kind: tribune
-title: "Large Self-Generating Consumers Must Embrace Renewables — 聯合報 (United Daily News, Taiwan)"
+title: "Large Self-Generating Consumers Must Embrace Renewables (Taiwan) — 聯合報 (United Daily News)"
 description: >-
   Op-ed published in the 聯合報 (United Daily News), June 21, 2026:
   Taiwan's revised Energy Management Act allows large industrial users to

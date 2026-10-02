@@ -3,7 +3,7 @@ media: "Fondation Jean-Jaurès"
 mediaSlug: jean-jaures
 lienCanonique: "https://www.jean-jaures.org/publication/taiwan-quand-le-principal-parti-dopposition-bascule-vers-pekin/"
 kind: tribune
-title: "Ma note pour la Fondation Jean-Jaurès : quand le principal parti d'opposition taïwanais bascule vers Pékin"
+title: "Ma note pour la Fondation Jean-Jaurès : quand le principal parti d'opposition taïwanais bascule vers Pékin (Taïwan)"
 description: "Publiée par la Fondation Jean-Jaurès, cette note revient sur la visite à Pékin de la présidente du Kuomintang en avril 2026 et ce qu'elle révèle de la fragilité des démocraties face à l'attraction des régimes autoritaires."
 pubDate: 2026-04-29T11:26:00.000Z
 heroImage: '../../assets/fondation-jean-jaures-logo.svg'

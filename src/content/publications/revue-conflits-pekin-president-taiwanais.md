@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/comment-pekin-a-cloue-au-sol-le-president-taiwanais/"
 kind: tribune
-title: "Mon article dans Revue Conflits : Comment Pékin a cloué au sol le président taïwanais"
+title: "Mon article dans Revue Conflits : Comment Pékin a cloué au sol le président taïwanais (Taïwan)"
 description: "Publié dans Revue Conflits, cet article analyse comment la Chine a obtenu le retrait des autorisations de survol par les Seychelles, Maurice et Madagascar, empêchant le président taïwanais de se rendre en Eswatini."
 pubDate: 2026-04-23T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

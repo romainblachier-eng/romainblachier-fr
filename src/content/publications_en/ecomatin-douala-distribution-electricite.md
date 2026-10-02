@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-lelectricite-ne-manque-pas-elle-narrive-pas-assez"
 kind: tribune
-title: "In Douala, electricity is not what is missing — the delivery is — EcoMatin (Cameroon)"
+title: "In Douala, electricity is not what is missing — the delivery is (Cameroon) — EcoMatin"
 description: >-
   Op-ed in EcoMatin (Cameroon), 21 August 2026: in Douala, nearly seven
   outages in ten come from the wires rather than the power stations — and

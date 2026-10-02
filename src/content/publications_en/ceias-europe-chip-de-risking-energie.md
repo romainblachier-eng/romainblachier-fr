@@ -3,7 +3,7 @@ media: "CEIAS"
 mediaSlug: ceias
 lienCanonique: "https://ceias.eu/europes-chip-de-risking-has-no-energy-chapter/"
 kind: tribune
-title: "“Europe's chip de-risking has no energy chapter” — CEIAS"
+title: "“Europe's chip de-risking has no energy chapter” (Taiwan) — CEIAS"
 description: >-
   Analysis published by CEIAS: European semiconductor policy counts fabs, never
   the megawatts every advanced chip made in Taiwan depends on.

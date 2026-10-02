@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-lelectricite-ne-manque-pas-elle-narrive-pas-assez"
 kind: tribune
-title: "À Douala, l'électricité ne manque pas : elle n'arrive pas assez — EcoMatin (Cameroun)"
+title: "À Douala, l'électricité ne manque pas : elle n'arrive pas assez (Cameroun) — EcoMatin"
 description: >-
   Tribune parue dans EcoMatin (Cameroun) le 21 août 2026 : à Douala, près de
   sept coupures sur dix ne viennent pas des centrales mais des lignes — et de

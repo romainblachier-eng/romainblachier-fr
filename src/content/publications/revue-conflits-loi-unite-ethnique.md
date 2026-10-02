@@ -3,7 +3,7 @@ media: "Revue Conflits"
 mediaSlug: revue-conflits
 lienCanonique: "https://www.revueconflits.com/la-loi-chinoise-sur-lunite-ethnique-quand-pekin-legifere-pour-le-monde-entier/"
 kind: tribune
-title: "Mon article dans Revue Conflits : La loi chinoise sur l'unité ethnique — quand Pékin légifère pour le monde entier"
+title: "Mon article dans Revue Conflits : La loi chinoise sur l'unité ethnique — quand Pékin légifère pour le monde entier (Chine)"
 description: "Publié dans Revue Conflits, cet article analyse la loi chinoise sur l'unité ethnique et ses ambitions extraterritoriales : comment Pékin entend imposer ses normes identitaires bien au-delà des frontières de la République populaire."
 pubDate: 2026-07-16T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'

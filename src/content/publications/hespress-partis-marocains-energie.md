@@ -3,7 +3,7 @@ media: "Hespress"
 mediaSlug: hespress
 lienCanonique: "https://fr.hespress.com/484689-pourquoi-les-partis-marocains-ne-parlent-ils-pas-denergie.html"
 kind: tribune
-title: "« Pourquoi les partis marocains ne parlent-ils pas d'énergie ? » — Hespress"
+title: "« Pourquoi les partis marocains ne parlent-ils pas d'énergie ? » (Maroc) — Hespress"
 description: "Tribune publiée dans Hespress : le Maroc conduit une stratégie énergétique continue depuis 2009, mais la campagne des législatives de septembre 2026 ignore les décisions — tarifs, dessalement, contrats — qui engagent la prochaine législature."
 pubDate: 2026-08-10T07:21:00.000Z
 heroImage: '../../assets/hespress-logo.jpg'

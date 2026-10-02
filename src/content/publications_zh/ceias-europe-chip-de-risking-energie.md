@@ -3,7 +3,7 @@ media: "CEIAS"
 mediaSlug: ceias
 lienCanonique: "https://ceias.eu/europes-chip-de-risking-has-no-energy-chapter/"
 kind: tribune
-title: "〈歐洲的晶片去風險化少了能源這一章〉— CEIAS"
+title: "〈歐洲的晶片去風險化少了能源這一章〉（台灣） — CEIAS"
 description: "刊於 CEIAS 的分析：歐洲的半導體政策清點晶圓廠與關鍵原料，卻從未計算台灣每一片先進晶片所仰賴的每一度電。"
 pubDate: 2026-08-24T07:00:00.000Z
 heroImage: '../../assets/ceias-logo.svg'

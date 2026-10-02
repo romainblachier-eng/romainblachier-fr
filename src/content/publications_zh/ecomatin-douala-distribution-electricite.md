@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-lelectricite-ne-manque-pas-elle-narrive-pas-assez"
 kind: tribune
-title: "在杜阿拉，缺的不是電，而是送不到 — EcoMatin（喀麥隆）"
+title: "在杜阿拉，缺的不是電，而是送不到（喀麥隆） — EcoMatin"
 description: >-
   2026 年 8 月 21 日刊於喀麥隆《EcoMatin》的投書：在杜阿拉，近十分之七的停電並非來自電廠，而是來自線路——以及決策的方式。
 pubDate: 2026-08-21T15:46:00.000Z

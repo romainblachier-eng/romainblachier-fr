@@ -3,7 +3,7 @@ media: "CEIAS"
 mediaSlug: ceias
 lienCanonique: "https://ceias.eu/europes-chip-de-risking-has-no-energy-chapter/"
 kind: tribune
-title: "« Europe's chip de-risking has no energy chapter » — Le de-risking européen des semi-conducteurs n'a pas de chapitre énergie (CEIAS)"
+title: "« Europe's chip de-risking has no energy chapter » — Le de-risking européen des semi-conducteurs n'a pas de chapitre énergie (Taïwan) — CEIAS"
 description: >-
   Analyse publiée par le CEIAS : la politique européenne des semi-conducteurs
   compte les usines, jamais les mégawatts dont dépend chaque puce faite à

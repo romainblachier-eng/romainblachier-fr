@@ -3,7 +3,7 @@ media: "La Revue de l'Énergie"
 mediaSlug: revue-energie
 lienCanonique: "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr"
 kind: tribune
-title: "My article in La Revue de l'Énergie: \"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\""
+title: "My article in La Revue de l'Énergie: \"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\" (United Arab Emirates)"
 description: "Article published in La Revue de l'Énergie, no. 685 (2026/4), pp. 48-62: the Emirati withdrawal from OPEC+ read not as a rupture, but as the culmination of a fifteen-year strategy of intertemporal oil rent maximisation."
 pubDate: 2026-08-14T10:00:00.000Z
 ---
