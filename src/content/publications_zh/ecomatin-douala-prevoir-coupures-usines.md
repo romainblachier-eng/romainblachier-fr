@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-les-usines-devraient-connaitre-la-veille-lheure-de-la-coupure"
 kind: tribune
-title: "在杜阿拉，工廠應在前一天知道停電時間 — EcoMatin（喀麥隆）"
+title: "在杜阿拉，工廠應在前一天知道停電時間（喀麥隆）"
 description: >-
   2026 年 10 月 1 日刊於《EcoMatin》的投書：提前一天通知工廠降低用電的時段，
   並協助融資改善功率因數的設備，減輕杜阿拉電網的負擔。

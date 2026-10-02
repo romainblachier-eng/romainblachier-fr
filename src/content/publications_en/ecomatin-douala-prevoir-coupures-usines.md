@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-les-usines-devraient-connaitre-la-veille-lheure-de-la-coupure"
 kind: tribune
-title: "In Douala, factories should know the day before when the power will be cut — EcoMatin (Cameroon)"
+title: "In Douala, factories should know the day before when the power will be cut (Cameroon)"
 description: >-
   Op-ed in EcoMatin, 1 October 2026: give factories advance notice of demand
   reductions and finance equipment that eases pressure on Douala's

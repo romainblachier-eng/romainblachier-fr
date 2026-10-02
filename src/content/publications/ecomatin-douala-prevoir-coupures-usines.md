@@ -3,7 +3,7 @@ media: "EcoMatin"
 mediaSlug: ecomatin
 lienCanonique: "https://ecomatin.net/opinions/a-douala-les-usines-devraient-connaitre-la-veille-lheure-de-la-coupure"
 kind: tribune
-title: "À Douala, les usines devraient connaître la veille l'heure de la coupure — EcoMatin (Cameroun)"
+title: "À Douala, les usines devraient connaître la veille l'heure de la coupure (Cameroun)"
 description: >-
   Tribune publiée dans EcoMatin le 1er octobre 2026 : annoncer la veille les
   réductions de consommation et financer les équipements qui soulagent le
