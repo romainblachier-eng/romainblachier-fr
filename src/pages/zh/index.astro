@@ -35,7 +35,9 @@ const recentPubs = allPubs.slice(0, 3);
 			title2="Blachier"
 			description={t('hero.pitch')}
 			ctaHref="#contact"
-			ctaLabel={`${t('hero.cta')} →`}
+			ctaLabel={t('hero.cta')}
+			secondaryHref={getLocalePath('zh', '/publications')}
+			secondaryLabel={t('hero.secondary')}
 		/>
 
 		<section class="event-banner">
@@ -56,64 +58,6 @@ const recentPubs = allPubs.slice(0, 3);
 						<div class="event-details"><strong>{t('alaune.conference.title')}</strong></div>
 						<p class="event-topic">{t('alaune.conference.topic')}</p>
 						<p class="event-link"><a href="https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520" target="_blank" rel="noopener noreferrer">{t('alaune.conference.link')}</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		{recentPubs.length > 0 && (
-		<section class="latest-article">
-			<div class="latest-inner latest-inner--grid">
-				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
-				<h2 class="section-title">{t('latest.title')}</h2>
-				<div class="latest-grid">
-					{recentPubs.map((pub) => (
-						<article class="latest-card">
-							<div class="latest-logo">
-								<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
-							</div>
-							<div class="latest-meta">
-								<span class="latest-media">{pub.data.media}</span>
-								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="zh" /></span>
-							</div>
-							<h3 class="latest-headline">{cardTitle(pub.data.title, pub.data.media)}</h3>
-							<p class="latest-desc">{pub.data.description}</p>
-							<div class="latest-actions">
-								{pub.data.lienCanonique
-									? <a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
-									: <a href={getLocalePath('zh', `/publications/${pub.data.mediaSlug}/${pub.id}/`)} class="latest-cta">{t('latest.read_summary')}</a>}
-							</div>
-						</article>
-					))}
-				</div>
-				<div class="latest-all-wrap">
-					<a href="/zh/publications/" class="latest-all">{t('latest.all')}</a>
-				</div>
-			</div>
-		</section>
-		)}
-
-		<MediaLogosBand />
-
-		<section class="about">
-			<div class="about-inner">
-				<div class="about-left">
-					<div class="hero-photo">
-						<div class="hero-photo-frame">
-							<Image src={portrait} alt="Romain Blachier" width={380} height={507} />
-						</div>
-					</div>
-				</div>
-				<div class="about-right">
-					<h2 class="about-label">{t('about.title')}</h2>
-					<div class="about-text">
-						<p>{t('about.p1')}</p>
-						<p>{t('about.p2')}</p>
-						<p>{t('about.p3')}</p>
-						<p>{t('about.p4')}</p>
-						<p>{t('about.p5')}</p>
-						<p>{t('about.p6')}</p>
-						<p>{t('about.p7')}</p>
 					</div>
 				</div>
 			</div>
@@ -159,6 +103,40 @@ const recentPubs = allPubs.slice(0, 3);
 			</div>
 		</section>
 
+		{recentPubs.length > 0 && (
+		<section class="latest-article">
+			<div class="latest-inner latest-inner--grid">
+				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
+				<h2 class="section-title">{t('latest.title')}</h2>
+				<div class="latest-grid">
+					{recentPubs.map((pub) => (
+						<article class="latest-card">
+							<div class="latest-logo">
+								<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
+							</div>
+							<div class="latest-meta">
+								<span class="latest-media">{pub.data.media}</span>
+								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="zh" /></span>
+							</div>
+							<h3 class="latest-headline">{cardTitle(pub.data.title, pub.data.media)}</h3>
+							<p class="latest-desc">{pub.data.description}</p>
+							<div class="latest-actions">
+								{pub.data.lienCanonique
+									? <a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+									: <a href={getLocalePath('zh', `/publications/${pub.data.mediaSlug}/${pub.id}/`)} class="latest-cta">{t('latest.read_summary')}</a>}
+							</div>
+						</article>
+					))}
+				</div>
+				<div class="latest-all-wrap">
+					<a href="/zh/publications/" class="latest-all">{t('latest.all')}</a>
+				</div>
+			</div>
+		</section>
+		)}
+
+		<MediaLogosBand />
+
 		<section class="formateur" id="formateur">
 			<div class="formateur-inner">
 				<div class="section-overline" style="text-align:center">{t('formateur.overline')}</div>
@@ -201,6 +179,27 @@ const recentPubs = allPubs.slice(0, 3);
 						<dd>{t('formateur.notes.desc')}</dd>
 					</div>
 				</dl>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="about-inner">
+				<div class="about-left">
+					<div class="hero-photo">
+						<div class="hero-photo-frame">
+							<Image src={portrait} alt="Romain Blachier" width={380} height={507} />
+						</div>
+					</div>
+				</div>
+				<div class="about-right">
+					<h2 class="about-label">{t('about.title')}</h2>
+					<div class="about-text">
+						<p>{t('about.p1')}</p>
+						<p>{t('about.p2')}</p>
+						<p>{t('about.p3')}</p>
+					</div>
+					<a href={getLocalePath('zh', '/a-propos')} class="about-more">{t('about.more')}</a>
+				</div>
 			</div>
 		</section>
 

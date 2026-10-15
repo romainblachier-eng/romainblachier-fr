@@ -55,6 +55,9 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 			.page-body p {
 				line-height: 1.7;
 			}
+			.page-body p + p {
+				margin-top: 1rem;
+			}
 			.page-body ul, .page-body ol {
 				margin-bottom: 1.5rem;
 				padding-left: 1.25rem;
@@ -70,6 +73,51 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 			}
 			.page-body a {
 				color: var(--accent, #0b5);
+			}
+			.key-figures {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: 1px;
+				margin: 2.5rem 0 1rem;
+				background: var(--line);
+				border: 1px solid var(--line);
+				border-radius: var(--radius);
+				overflow: hidden;
+			}
+			.key-figures > div {
+				background: var(--bg);
+				padding: 1.1rem 1rem 1rem;
+			}
+			.key-figures dt {
+				font-family: var(--display);
+				font-size: 1.6rem;
+				font-weight: 700;
+				color: var(--ink);
+				line-height: 1.1;
+				letter-spacing: -.01em;
+			}
+			.key-figures dd {
+				margin-top: .35rem;
+				font-size: .8rem;
+				line-height: 1.4;
+				color: var(--muted);
+			}
+			@media (max-width: 640px) {
+				.key-figures { grid-template-columns: 1fr 1fr; }
+			}
+			.page-cta {
+				margin-top: 3rem;
+				padding-top: 1.5rem;
+				border-top: 1px solid var(--line);
+				font-family: var(--display);
+				font-size: 1.15rem;
+				color: var(--ink);
+			}
+			.page-body .page-cta a {
+				color: var(--ink);
+				font-weight: 600;
+				text-decoration: none;
+				border-bottom: 2px solid var(--accent-warm);
 			}
 			.page-note {
 				margin-top: 2.5rem;

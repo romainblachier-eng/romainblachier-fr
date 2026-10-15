@@ -436,6 +436,17 @@ header nav {
 	color: var(--text);
 }
 .about-text p + p { margin-top: 1rem }
+.about-more {
+	display: inline-block;
+	margin-top: 1.5rem;
+	font-size: .9rem;
+	font-weight: 600;
+	color: var(--ink);
+	text-decoration: none;
+	border-bottom: 2px solid var(--accent-warm);
+	padding-bottom: .1rem;
+}
+.about-more:hover { opacity: .75 }
 
 /* Section titles */
 .section-title {
@@ -509,6 +520,7 @@ header nav {
 	color: var(--text);
 	line-height: 1.7;
 }
+.service-body .latest-cta { margin-top: 1.1rem }
 
 /* Formateur section */
 .formateur {
@@ -836,7 +848,7 @@ header nav {
 	white-space: nowrap;
 }
 .captcha-row input {
-	width: 100px;
+	width: 130px;
 	padding: .6rem .75rem;
 	background: rgba(255,255,255,.06);
 	border: 1px solid rgba(255,255,255,.12);
@@ -878,6 +890,9 @@ header nav {
 
 /* Page contact */
 .contact-page {
+	/* The legacy `main { width: 720px }` rule below would otherwise fix the
+	   width and overflow narrow screens (max-width here replaces its calc()). */
+	width: 100%;
 	max-width: 1040px;
 	margin: 0 auto;
 	padding: 3rem 1.5rem 4.5rem;
@@ -923,11 +938,22 @@ header nav {
 	gap: .9rem;
 	align-items: flex-start;
 }
-.contact-reasons .emoji {
-	font-size: 1.3rem;
-	line-height: 1.5;
+.contact-reasons .reason-num {
+	font-family: var(--display);
+	font-size: .95rem;
+	line-height: 1.6;
+	color: var(--accent-warm);
+	font-variant-numeric: tabular-nums;
+	min-width: 1.6rem;
 	flex-shrink: 0;
 }
+.contact-reasons a { color: var(--ink); text-underline-offset: 2px }
+.contact-phone {
+	margin: -1.5rem 0 2.25rem;
+	font-size: .92rem;
+	color: var(--text);
+}
+.contact-phone a { color: var(--ink); text-underline-offset: 2px }
 .contact-reasons strong {
 	display: block;
 	color: var(--ink);
