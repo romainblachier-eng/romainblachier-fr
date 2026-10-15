@@ -24,6 +24,9 @@
 /en/about     /en/a-propos  301
 /zh/about     /zh/a-propos  301
 
+# Leftover template demo page, removed
+/demo-scroll  /  301
+
 # ---------------------------------------------------------------------------
 # Migrated articles: legacy /blog/[slug] → /publications (301)
 # (specific rules MUST precede the /blog catch-all below)

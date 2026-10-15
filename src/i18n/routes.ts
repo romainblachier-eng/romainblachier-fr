@@ -24,7 +24,6 @@ export const localizedRoutes = {
 	presse: { fr: '/presse', en: '/en/press' },
 	recherche: { fr: '/recherche', en: '/en/research' },
 	diagnosticIA: { fr: '/diagnostic-ia' },
-	demoScroll: { fr: '/demo-scroll/' },
 	// Local preview: registering its language does not publish the page.
 	demoHero: { fr: '/demo-hero/' },
 } as const satisfies Record<string, Partial<Record<Lang, string>>>;
