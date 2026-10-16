@@ -63,6 +63,40 @@ const recentPubs = allPubs.slice(0, 3);
 			</div>
 		</section>
 
+		{recentPubs.length > 0 && (
+		<section class="latest-article">
+			<div class="latest-inner latest-inner--grid">
+				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
+				<h2 class="section-title">{t('latest.title')}</h2>
+				<div class="latest-grid">
+					{recentPubs.map((pub) => (
+						<article class="latest-card">
+							<div class="latest-logo">
+								<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
+							</div>
+							<div class="latest-meta">
+								<span class="latest-media">{pub.data.media}</span>
+								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="en" /></span>
+							</div>
+							<h3 class="latest-headline">{cardTitle(pub.data.title, pub.data.media)}</h3>
+							<p class="latest-desc">{pub.data.description}</p>
+							<div class="latest-actions">
+								{pub.data.lienCanonique
+									? <a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
+									: <a href={getLocalePath('en', `/publications/${pub.data.mediaSlug}/${pub.id}/`)} class="latest-cta">{t('latest.read_summary')}</a>}
+							</div>
+						</article>
+					))}
+				</div>
+				<div class="latest-all-wrap">
+					<a href="/en/publications/" class="latest-all">{t('latest.all')}</a>
+				</div>
+			</div>
+		</section>
+		)}
+
+		<MediaLogosBand />
+
 		<section class="services">
 			<div class="services-inner">
 				<div class="section-overline" style="text-align:center">Services</div>
@@ -104,40 +138,6 @@ const recentPubs = allPubs.slice(0, 3);
 				</ol>
 			</div>
 		</section>
-
-		{recentPubs.length > 0 && (
-		<section class="latest-article">
-			<div class="latest-inner latest-inner--grid">
-				<div class="section-overline" style="text-align:center">{t('latest.overline')}</div>
-				<h2 class="section-title">{t('latest.title')}</h2>
-				<div class="latest-grid">
-					{recentPubs.map((pub) => (
-						<article class="latest-card">
-							<div class="latest-logo">
-								<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
-							</div>
-							<div class="latest-meta">
-								<span class="latest-media">{pub.data.media}</span>
-								<span class="latest-date"><FormattedDate date={pub.data.pubDate} lang="en" /></span>
-							</div>
-							<h3 class="latest-headline">{cardTitle(pub.data.title, pub.data.media)}</h3>
-							<p class="latest-desc">{pub.data.description}</p>
-							<div class="latest-actions">
-								{pub.data.lienCanonique
-									? <a href={pub.data.lienCanonique} target="_blank" rel="noopener noreferrer" class="latest-cta">{t('latest.read')}</a>
-									: <a href={getLocalePath('en', `/publications/${pub.data.mediaSlug}/${pub.id}/`)} class="latest-cta">{t('latest.read_summary')}</a>}
-							</div>
-						</article>
-					))}
-				</div>
-				<div class="latest-all-wrap">
-					<a href="/en/publications/" class="latest-all">{t('latest.all')}</a>
-				</div>
-			</div>
-		</section>
-		)}
-
-		<MediaLogosBand />
 
 		<section class="formateur" id="formateur">
 			<div class="formateur-inner">
