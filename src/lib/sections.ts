@@ -47,6 +47,13 @@ export function cardTitle(title: string, media: string) {
 	}
 	const s = out.match(/^(.*?)\s*—\s*([^—]+)$/);
 	if (s && names(s[2]) && s[2].length <= media.length + 16) out = s[1];
+	// Parenthèse finale qui ne contient que le média : « (Global Taiwan Institute) ».
+	// Une parenthèse qui nomme aussi un pays reste en place (règle des titres).
+	const paren = out.match(/^(.*?)\s*\(([^()]{2,60})\)\s*$/);
+	if (paren) {
+		const rest = paren[2].toLowerCase().replace(media.toLowerCase(), '');
+		if (names(paren[2]) && rest.replace(/[\s,·/-]/g, '') === '') out = paren[1];
+	}
 	out = out.trim();
 	return out ? out.charAt(0).toUpperCase() + out.slice(1) : title;
 }

@@ -448,6 +448,52 @@ header nav {
 }
 .about-more:hover { opacity: .75 }
 
+/* Repères sous le hero : quatre preuves lisibles avant tout défilement. */
+.proof-bar {
+	background: var(--bg);
+	border-bottom: 1px solid var(--line);
+}
+.proof-inner {
+	max-width: var(--max);
+	margin: 0 auto;
+	padding: 1.4rem 2rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.25rem 2.5rem;
+}
+.proof-item dt {
+	font-family: var(--sans);
+	font-size: .68rem;
+	font-weight: 600;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: var(--accent-warm);
+	margin-bottom: .3rem;
+}
+.proof-item dd {
+	font-size: .88rem;
+	line-height: 1.45;
+	color: var(--ink);
+}
+@media (max-width: 900px) {
+	.proof-inner { grid-template-columns: 1fr 1fr; padding: 1.25rem 1.5rem }
+}
+@media (max-width: 520px) {
+	.proof-inner { grid-template-columns: 1fr; gap: 1rem }
+}
+
+/* Étiquette de nature au-dessus du média, dans « À la une ». */
+.event-kind {
+	display: block;
+	font-family: var(--sans);
+	font-size: .66rem;
+	font-weight: 600;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	color: var(--muted);
+	margin-bottom: .35rem;
+}
+
 /* Section titles */
 .section-title {
 	font-family: var(--display);
