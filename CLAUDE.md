@@ -109,6 +109,7 @@ Notes :
 
 - Lapin Bleu SASU (Lyon) : structure indépendante de conseil et de formation, organisme de formation déclaré NDA 84692485869. Facturation France et international.
 - Expert référencé auprès de la Banque africaine de développement (BAD) depuis 2025.
+- Consultant inscrit au registre des consultants (CMS) de la Banque asiatique de développement (BAsD) depuis le 4 octobre 2026. Formulation sur le site : « consultant référencé / inscrit au registre », pas « expert énergie » (la spécialité n'est pas précisée par la BAsD).
 
 ## Conventions éditoriales
 
