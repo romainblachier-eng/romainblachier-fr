@@ -40,22 +40,31 @@ const recentPubs = allPubs.slice(0, 3);
 			secondaryLabel={t('hero.secondary')}
 		/>
 
+		<section class="proof-bar" aria-label="Key facts">
+			<dl class="proof-inner">
+				<div class="proof-item"><dt>{t('proof.media')}</dt><dd>{t('proof.media.v')}</dd></div>
+				<div class="proof-item"><dt>{t('proof.afdb')}</dt><dd>{t('proof.afdb.v')}</dd></div>
+				<div class="proof-item"><dt>{t('proof.jaures')}</dt><dd>{t('proof.jaures.v')}</dd></div>
+				<div class="proof-item"><dt>{t('proof.teaching')}</dt><dd>{t('proof.teaching.v')}</dd></div>
+			</dl>
+		</section>
+
 		<section class="event-banner">
 			<div class="event-banner-inner event-banner-inner--trio">
 				<div class="section-overline" style="text-align:center">{t('alaune.overline')}</div>
 				<div class="event-trio">
 					<div class="event-item">
-						<div class="event-details"><strong>Le Monde</strong></div>
+						<div class="event-details"><span class="event-kind">{t('alaune.kind.tribune')}</span><strong>Le Monde</strong></div>
 						<p class="event-topic">"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet"</p>
 						<p class="event-link"><a href="https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html" target="_blank" rel="noopener noreferrer">Read the op-ed (in French) →</a></p>
 					</div>
 					<div class="event-item">
-						<div class="event-details"><strong>La Revue de l'Énergie</strong></div>
+						<div class="event-details"><span class="event-kind">{t('alaune.kind.journal')}</span><strong>La Revue de l'Énergie</strong></div>
 						<p class="event-topic">"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement", peer-reviewed journal, no. 685 (2026/4), pp. 48-62</p>
 						<p class="event-link"><a href="https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr" target="_blank" rel="noopener noreferrer">Read on Cairn (in French) →</a></p>
 					</div>
 					<div class="event-item">
-						<div class="event-details"><strong>{t('alaune.conference.title')}</strong></div>
+						<div class="event-details"><span class="event-kind">{t('alaune.kind.conference')}</span><strong>{t('alaune.conference.title')}</strong></div>
 						<p class="event-topic">{t('alaune.conference.topic')}</p>
 						<p class="event-link"><a href="https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520" target="_blank" rel="noopener noreferrer">{t('alaune.conference.link')}</a></p>
 					</div>
@@ -212,6 +221,8 @@ const recentPubs = allPubs.slice(0, 3);
 				<div class="tags-wrap">
 					<span class="tag hi">{t('tag.energy_markets')}</span>
 					<span class="tag hi">{t('tag.geopolitics')}</span>
+					<span class="tag hi">{t('tag.oil')}</span>
+					<span class="tag hi">{t('tag.africa')}</span>
 					<span class="tag hi">{t('tag.taiwan')}</span>
 					<span class="tag hi">{t('tag.nuclear')}</span>
 					<span class="tag hi">{t('tag.transition')}</span>
