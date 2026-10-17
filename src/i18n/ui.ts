@@ -12,6 +12,9 @@ export const ui = {
 		'nav.home': 'Accueil',
 		'nav.blog': 'Articles et blog',
 		'nav.contact': 'Contact',
+		'nav.role': 'Énergie & géopolitique',
+		'nav.menu': 'Menu',
+		'nav.main': 'Navigation principale',
 		// Hero
 		'hero.subtitle': 'Énergie · Géopolitique | Expertise · Enseignement · Conseil',
 		'hero.pitch': "Qui décide vraiment dans le secteur électrique, et avec quels moyens ? Je travaille cette question à Taïwan, en Afrique centrale et dans les métropoles françaises : en cours, dans la presse et en mission auprès d'institutions.",
@@ -151,6 +154,9 @@ export const ui = {
 		'nav.home': 'Home',
 		'nav.blog': 'Articles & Blog',
 		'nav.contact': 'Contact',
+		'nav.role': 'Energy & geopolitics',
+		'nav.menu': 'Menu',
+		'nav.main': 'Main navigation',
 		// Hero
 		'hero.subtitle': 'Energy · Geopolitics | Expertise · Teaching · Advisory',
 		'hero.pitch': "Who really decides in the power sector, and with what means? I work on that question in Taiwan, in Central Africa and in French metropolitan areas: in the classroom, in the press and on assignment for institutions.",
@@ -290,6 +296,9 @@ export const ui = {
 		'nav.home': '首頁',
 		'nav.blog': '文章與部落格',
 		'nav.contact': '聯絡',
+		'nav.role': '能源與地緣政治',
+		'nav.menu': '選單',
+		'nav.main': '主要導覽',
 		// Hero
 		'hero.subtitle': '能源 · 地緣政治 | 專業 · 教學 · 顧問',
 		'hero.pitch': "電力部門究竟由誰做主，又握有什麼資源？我在台灣、中部非洲與法國各大都會區探究這個問題：在課堂上、在媒體上，也在為機構執行的任務中。",

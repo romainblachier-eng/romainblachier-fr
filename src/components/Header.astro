@@ -8,9 +8,14 @@ const t = useTranslations(lang);
 
 // Conseil, Recherche and Presse have no Chinese version yet: routePath returns
 // undefined and the link is simply not rendered, rather than pointing at a 404.
-const conseilHref = routePath('conseil', lang);
-const rechercheHref = routePath('recherche', lang);
-const presseHref = routePath('presse', lang);
+// Home is reached through the name, Contact through the button on the right.
+const navLinks = [
+	{ href: getLocalePath(lang, '/publications'), label: t('nav.publications') },
+	{ href: routePath('conseil', lang), label: t('nav.consulting') },
+	{ href: routePath('recherche', lang), label: t('nav.research') },
+	{ href: routePath('presse', lang), label: t('nav.press') },
+	{ href: getLocalePath(lang, '/a-propos'), label: t('footer.about') },
+].filter((l): l is { href: string; label: string } => Boolean(l.href));
 
 const pathname = Astro.url.pathname;
 // Strip any locale prefix to obtain the "bare" path shared across languages.
@@ -39,21 +44,51 @@ const langLinks = [
 const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 ---
 
-<header>
-	<nav>
-		<a href={getLocalePath(lang, '/')} class="site-brand">Romain Blachier</a>
-		<div class="internal-links">
-			<HeaderLink href={getLocalePath(lang, '/')}>{t('nav.home')}</HeaderLink>
-			{conseilHref && <HeaderLink href={conseilHref}>{t('nav.consulting')}</HeaderLink>}
-			{rechercheHref && <HeaderLink href={rechercheHref}>{t('nav.research')}</HeaderLink>}
-			<HeaderLink href={getLocalePath(lang, '/publications')}>{t('nav.publications')}</HeaderLink>
-			{presseHref && <HeaderLink href={presseHref}>{t('nav.press')}</HeaderLink>}
-			<HeaderLink href={getLocalePath(lang, '/contact')}>{t('nav.contact')}</HeaderLink>
-			<details class="lang-dd">
-				<summary class="lang-dd-toggle" aria-label="Language · Langue · 語言">
-					<svg class="lang-dd-globe" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.5 3.3 5.5 3.3 9s-1.1 6.5-3.3 9c-2.2-2.5-3.3-5.5-3.3-9S9.8 5.5 12 3Z"/></svg><span class="lang-dd-current">{current.short}</span><span class="lang-dd-caret" aria-hidden="true">⌄</span>
-				</summary>
-				<ul class="lang-dd-menu">
+<header class="site-header" data-nav>
+	<nav class="nav" aria-label={t('nav.main')}>
+		<a href={getLocalePath(lang, '/')} class="site-brand">
+			<span class="brand-mark" aria-hidden="true">RB</span>
+			<span class="brand-text">
+				<span class="brand-name">Romain Blachier</span>
+				<span class="brand-role">{t('nav.role')}</span>
+			</span>
+		</a>
+
+		<button
+			class="nav-toggle"
+			type="button"
+			aria-expanded="false"
+			aria-controls="nav-panel"
+			aria-label={t('nav.menu')}
+		>
+			<svg viewBox="0 0 24 24" aria-hidden="true"><path class="nav-toggle-top" d="M4 7h16" /><path class="nav-toggle-mid" d="M4 12h16" /><path class="nav-toggle-bot" d="M4 17h16" /></svg>
+		</button>
+
+		<div class="nav-panel" id="nav-panel">
+			<div class="internal-links">
+				{navLinks.map((l) => <HeaderLink href={l.href}>{l.label}</HeaderLink>)}
+			</div>
+			<div class="nav-actions">
+				<details class="lang-dd">
+					<summary class="lang-dd-toggle" aria-label="Language · Langue · 語言">
+						<svg class="lang-dd-globe" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.5 3.3 5.5 3.3 9s-1.1 6.5-3.3 9c-2.2-2.5-3.3-5.5-3.3-9S9.8 5.5 12 3Z"/></svg><span class="lang-dd-current">{current.short}</span><svg class="lang-dd-caret" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+					</summary>
+					<ul class="lang-dd-menu">
+						{langLinks.map((l) => (
+							<li>
+								<a
+									href={localized(l.code)}
+									data-lang={l.code}
+									class={l.code === lang ? 'active' : ''}
+									aria-current={l.code === lang ? 'true' : undefined}
+									aria-label={l.aria}
+									lang={l.code === 'zh' ? 'zh-Hant' : l.code}
+								>{l.name}</a>
+							</li>
+						))}
+					</ul>
+				</details>
+				<ul class="lang-row">
 					{langLinks.map((l) => (
 						<li>
 							<a
@@ -62,20 +97,23 @@ const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 								class={l.code === lang ? 'active' : ''}
 								aria-current={l.code === lang ? 'true' : undefined}
 								aria-label={l.aria}
+								lang={l.code === 'zh' ? 'zh-Hant' : l.code}
 							>{l.name}</a>
 						</li>
 					))}
 				</ul>
-			</details>
+				<a href={getLocalePath(lang, '/contact')} class="btn btn-primary btn-sm nav-cta">{t('hero.cta')}</a>
+			</div>
 		</div>
 	</nav>
 </header>
+<noscript><style>.site-header .nav-panel { display: flex !important } .site-header .nav-toggle { display: none !important }</style></noscript>
 
 <script is:inline>
 	(function () {
 		// Remember the visitor's explicit language choice so auto-detection
 		// (see BaseHead) never overrides it on later visits.
-		document.querySelectorAll('.lang-dd a[data-lang]').forEach(function (el) {
+		document.querySelectorAll('.lang-dd a[data-lang], .lang-row a[data-lang]').forEach(function (el) {
 			el.addEventListener('click', function () {
 				try { localStorage.setItem('preferred-lang', el.getAttribute('data-lang')); } catch (e) {}
 			});
@@ -86,5 +124,40 @@ const current = langLinks.find((l) => l.code === lang) ?? langLinks[0];
 				if (!d.contains(e.target)) d.removeAttribute('open');
 			});
 		});
+
+		// Mobile menu: the panel is collapsed under 960 px and opened by the toggle.
+		var header = document.querySelector('[data-nav]');
+		if (!header) return;
+		var toggle = header.querySelector('.nav-toggle');
+		var setOpen = function (open) {
+			header.classList.toggle('is-open', open);
+			toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+			document.documentElement.classList.toggle('nav-locked', open);
+		};
+		toggle.addEventListener('click', function () {
+			setOpen(!header.classList.contains('is-open'));
+		});
+		// A tap on the dimmed backdrop (the header's ::after) lands on the header itself.
+		header.addEventListener('click', function (e) {
+			if (e.target === header && header.classList.contains('is-open')) setOpen(false);
+		});
+		// In-page anchors (e.g. #contact) must close the panel after navigating.
+		header.querySelectorAll('.nav-panel a').forEach(function (a) {
+			a.addEventListener('click', function () { setOpen(false); });
+		});
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape' && header.classList.contains('is-open')) {
+				setOpen(false);
+				toggle.focus();
+			}
+		});
+		window.matchMedia('(min-width: 960px)').addEventListener('change', function (mq) {
+			if (mq.matches) setOpen(false);
+		});
+
+		// Thin shadow once the page has scrolled, so the bar reads as separate.
+		var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+		onScroll();
+		window.addEventListener('scroll', onScroll, { passive: true });
 	})();
 </script>

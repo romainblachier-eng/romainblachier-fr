@@ -1,0 +1,430 @@
+---
+// Page d'accueil, une seule mise en page pour les trois langues. Les textes
+// viennent de src/i18n/ui.ts ; ce qui était écrit en dur dans chaque index
+// (« À la une », références, listes de thématiques) vit dans `copy` ci-dessous,
+// repris mot pour mot des anciennes pages FR, EN et ZH.
+import "../../styles/home.css";
+import { Image } from "astro:assets";
+import portrait from "../../assets/portrait.jpg";
+import conferencePhoto from "../../assets/conference-france-taiwan-2026.jpg";
+import MediaLogosBand from "../MediaLogosBand.astro";
+import ContactForm from "../ContactForm.astro";
+import TrainingLogosBand from "../TrainingLogosBand.astro";
+import FormattedDate from "../FormattedDate.astro";
+import PublicationLogo from "../PublicationLogo.astro";
+import { useTranslations, getLocalePath } from "../../i18n/utils";
+import { routePath } from "../../i18n/routes";
+import { getPublications, cardTitle, type Lang } from "../../lib/sections";
+import { teachingInstitutions, upcomingInstitutions, institutionLabel } from "../../data/profile";
+
+interface Props {
+	lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const recentPubs = (await getPublications(lang)).slice(0, 3);
+
+const LE_MONDE = "https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html";
+const CAIRN = "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr";
+const MEDEF = "https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520";
+
+type TagKey = Parameters<typeof t>[0];
+const copy = {
+	fr: {
+		featured: [
+			{ kind: "Tribune", source: "Le Monde", text: "« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »", href: LE_MONDE, link: "Lire la tribune →" },
+			{ kind: "Article de revue", source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
+			{ kind: "Conférence", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+		],
+		pressLabel: "Dans la presse",
+		servicesOverline: "Services",
+		topicsMore: "Voir toutes les thématiques",
+		referencesOverline: "Parcours",
+		institutional: [
+			"Expert associé, Fondation Jean-Jaurès",
+			"Membre du collège société civile, Plateforme RSE (France Stratégie)",
+			"Expert référencé, Banque africaine de développement (depuis 2025)",
+			"Recherche doctorale, Université Lyon 2 — gouvernance de la transition électrique",
+		],
+		culture: [
+			{ text: "Président, Association France-Formosa (depuis 2012) — deux missions officielles à Taïwan, 2019 et 2025" },
+			{ text: "Administrateur, Mediatone / Reperkusound" },
+			{ text: "Auteur, ", em: "Guillotière(s)" },
+		],
+		upcoming: (list: string[]) => `${t("references.teaching.upcoming")} ${list.join(", ")}.`,
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
+	},
+	en: {
+		featured: [
+			{ kind: "Op-ed", source: "Le Monde", text: "\"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet\"", href: LE_MONDE, link: "Read the op-ed (in French) →" },
+			{ kind: "Journal article", source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
+			{ kind: "Conference", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+		],
+		pressLabel: "In the press",
+		servicesOverline: "Services",
+		topicsMore: "See all topics",
+		referencesOverline: "Background",
+		institutional: [
+			"Associate fellow, Fondation Jean-Jaurès",
+			"Civil-society college member, CSR Platform (France Stratégie)",
+			"Listed expert, African Development Bank (since 2025)",
+			"Doctoral research, Université Lyon 2 — governance of the electricity transition",
+		],
+		culture: [
+			{ text: "President, Association France-Formosa (since 2012) — two official missions to Taiwan, 2019 and 2025" },
+			{ text: "Board member, Mediatone / Reperkusound" },
+			{ text: "Author, ", em: "Guillotière(s)" },
+		],
+		upcoming: (list: string[]) => `${t("references.teaching.upcoming")} ${list.join(", ")}.`,
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
+	},
+	zh: {
+		featured: [
+			{ kind: "評論", source: "《世界報》Le Monde", text: "〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉", href: LE_MONDE, link: "閱讀全文（法文）→" },
+			{ kind: "期刊論文", source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
+			{ kind: "研討會", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+		],
+		pressLabel: "媒體",
+		servicesOverline: "服務",
+		topicsMore: "查看所有主題",
+		referencesOverline: "經歷",
+		institutional: [
+			"讓·饒勒斯基金會副研究員",
+			"法國戰略署企業社會責任平台公民社會委員",
+			"非洲開發銀行專家名冊（2025 年起）",
+			"里昂第二大學博士研究：電力轉型治理",
+		],
+		culture: [
+			{ text: "法國福爾摩沙協會（France-Formosa）會長，2012 年起；2019 年與 2025 年兩度赴台執行官方任務" },
+			{ text: "Mediatone / Reperkusound 理事" },
+			{ text: "著有 ", em: "Guillotière(s)" },
+		],
+		upcoming: (list: string[]) => `${t("references.teaching.upcoming")}${list.join("、")}。`,
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.sovereignty"],
+	},
+}[lang] as {
+	featured: { kind: string; source: string; text: string; href: string; link: string }[];
+	pressLabel: string;
+	servicesOverline: string;
+	topicsMore: string;
+	referencesOverline: string;
+	institutional: string[];
+	culture: { text: string; em?: string }[];
+	upcoming: (list: string[]) => string;
+	topics: TagKey[];
+};
+
+const moreTopics: TagKey[] = [
+	"tag.hydro", "tag.public_affairs", "tag.institutional", "tag.european_politics",
+	"tag.political_systems", "tag.crisis_comms", "tag.religion", "tag.local_gov",
+	"tag.digital_comms", "tag.ai_teaching", "tag.cultural_diplomacy", "tag.scientific_coop",
+];
+
+const publicationsHref = getLocalePath(lang, "/publications/");
+const conseilHref = routePath("conseil", lang);
+const rechercheHref = routePath("recherche", lang);
+
+// Icônes au trait (même grammaire que Lucide), dessinées en ligne pour ne pas
+// charger de bibliothèque côté client.
+const icons = {
+	teach: '<path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/>',
+	write: '<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+	advise: '<circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/>',
+	research: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+};
+
+const services = [
+	{ icon: icons.teach, title: t("services.teaching.title"), desc: t("services.teaching.desc"), href: "#formateur", link: t("services.teaching.link") },
+	{ icon: icons.write, title: t("services.writing.title"), desc: t("services.writing.desc"), href: publicationsHref, link: `${t("nav.publications")} →` },
+	{ icon: icons.advise, title: t("services.expertise.title"), desc: t("services.expertise.desc"), href: conseilHref, link: `${t("nav.consulting")} →` },
+	{ icon: icons.research, title: t("services.research.title"), desc: t("services.research.desc"), href: rechercheHref, link: `${t("nav.research")} →` },
+];
+
+const formats = [
+	{ title: t("formateur.academic.title"), desc: t("formateur.academic.desc") },
+	{ title: t("formateur.custom.title"), desc: t("formateur.custom.desc") },
+	{ title: t("formateur.elus.title"), desc: t("formateur.elus.desc") },
+	{ title: t("formateur.notes.title"), desc: t("formateur.notes.desc") },
+];
+
+const stats = [
+	{ value: t("formateur.stat.years"), label: t("formateur.stat.years.label") },
+	{ value: t("formateur.stat.schools"), label: t("formateur.stat.schools.label") },
+	{ value: t("formateur.stat.languages"), label: t("formateur.stat.languages.label") },
+];
+
+const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
+---
+
+<main class="home">
+	<!-- Hero -->
+	<section class="hp-hero">
+		<div class="hp-wrap hp-hero-grid">
+			<div class="hp-hero-copy">
+				<p class="hp-eyebrow">
+					{t("hero.subtitle").split("|").map((part) => <span>{part.trim()}</span>)}
+				</p>
+				<h1 class="hp-hero-title">Romain <span>Blachier</span></h1>
+				<p class="hp-hero-lede">{t("hero.pitch")}</p>
+				<div class="hp-hero-ctas">
+					<a class="btn btn-primary" href="#contact">
+						{t("hero.cta")}
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={arrow} />
+					</a>
+					<a class="btn btn-outline" href={publicationsHref}>{t("hero.secondary")}</a>
+				</div>
+			</div>
+			<figure class="hp-hero-portrait">
+				<div class="hp-portrait-frame">
+					<Image
+						src={portrait}
+						alt="Romain Blachier"
+						widths={[360, 520, 720, 1040]}
+						sizes="(max-width: 959px) 70vw, 440px"
+						loading="eager"
+						fetchpriority="high"
+					/>
+				</div>
+				<figcaption class="hp-portrait-badge">
+					<span class="hp-badge-dot" aria-hidden="true"></span>
+					{t("footer.jaures")}
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<!-- À la une -->
+	<section class="hp-section hp-featured" aria-labelledby="hp-featured-title">
+		<div class="hp-wrap">
+			<div class="hp-head hp-head--row">
+				<h2 class="hp-overline hp-overline--solo" id="hp-featured-title">{t("alaune.overline")}</h2>
+			</div>
+			<div class="hp-featured-grid">
+				{copy.featured.map((item) => (
+					<article class="hp-feature reveal">
+						<p class="hp-feature-kind">{item.kind}</p>
+						<h3 class="hp-feature-source">{item.source}</h3>
+						<p class="hp-feature-text">{item.text}</p>
+						<a class="link-arrow" href={item.href} target="_blank" rel="noopener noreferrer">{item.link}</a>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<!-- Publications récentes -->
+	{recentPubs.length > 0 && (
+		<section class="hp-section hp-latest" aria-labelledby="hp-latest-title">
+			<div class="hp-wrap">
+				<div class="hp-head hp-head--row reveal">
+					<div>
+						<p class="hp-overline">{t("latest.overline")}</p>
+						<h2 class="hp-title" id="hp-latest-title">{t("latest.title")}</h2>
+					</div>
+					<a class="link-arrow hp-head-link" href={publicationsHref}>{t("latest.all")}</a>
+				</div>
+				<div class="hp-latest-grid">
+					{recentPubs.map((pub) => {
+						const href = pub.data.lienCanonique ?? getLocalePath(lang, `/publications/${pub.data.mediaSlug}/${pub.id}/`);
+						const external = Boolean(pub.data.lienCanonique);
+						return (
+							<article class="hp-pub reveal">
+								<div class="hp-pub-logo">
+									<PublicationLogo mediaSlug={pub.data.mediaSlug} media={pub.data.media} />
+								</div>
+								<p class="hp-pub-meta">
+									<span class="hp-pub-media">{pub.data.media}</span>
+									<span aria-hidden="true">·</span>
+									<FormattedDate date={pub.data.pubDate} lang={lang} />
+								</p>
+								<h3 class="hp-pub-title">
+									<a href={href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined}>{cardTitle(pub.data.title, pub.data.media)}</a>
+								</h3>
+								<p class="hp-pub-desc">{pub.data.description}</p>
+								<span class="hp-pub-cta" aria-hidden="true">{external ? t("latest.read") : t("latest.read_summary")}</span>
+							</article>
+						);
+					})}
+				</div>
+			</div>
+		</section>
+	)}
+
+	<!-- Bande de médias -->
+	<section class="hp-press" aria-label={copy.pressLabel}>
+		<p class="hp-press-label">{copy.pressLabel}</p>
+		<MediaLogosBand />
+	</section>
+
+	<!-- Ce que je fais -->
+	<section class="hp-section hp-services" aria-labelledby="hp-services-title">
+		<div class="hp-wrap">
+			<div class="hp-head hp-head--split reveal">
+				<div>
+					<p class="hp-overline">{copy.servicesOverline}</p>
+					<h2 class="hp-title" id="hp-services-title">{t("services.title")}</h2>
+				</div>
+				<p class="hp-intro">{t("services.intro")}</p>
+			</div>
+			<ol class="hp-services-grid">
+				{services.map((s, i) => (
+					<li class="hp-service reveal">
+						<div class="hp-service-top">
+							<span class="hp-service-icon">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={s.icon} />
+							</span>
+							<span class="hp-service-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+						</div>
+						<h3>{s.title}</h3>
+						<p>{s.desc}</p>
+						{s.href && <a class="link-arrow" href={s.href}>{s.link}</a>}
+					</li>
+				))}
+			</ol>
+		</div>
+	</section>
+
+	<!-- Expertise & formation -->
+	<section class="hp-section hp-training" id="formateur" aria-labelledby="hp-training-title">
+		<div class="hp-wrap">
+			<div class="hp-head hp-head--split reveal">
+				<div>
+					<p class="hp-overline">{t("formateur.overline")}</p>
+					<h2 class="hp-title" id="hp-training-title">{t("formateur.title")}</h2>
+				</div>
+				<p class="hp-intro">{t("formateur.intro")}</p>
+			</div>
+
+			<div class="hp-training-grid">
+				<figure class="hp-training-photo reveal">
+					<Image src={conferencePhoto} alt={t("formateur.photo.alt")} widths={[640, 960, 1280, 1600]} sizes="(max-width: 959px) 100vw, 720px" />
+					<figcaption>{t("formateur.photo.caption")}</figcaption>
+				</figure>
+				<dl class="hp-stats reveal">
+					{stats.map((s) => (
+						<div class="hp-stat">
+							<dt>{s.value}</dt>
+							<dd>{s.label}</dd>
+						</div>
+					))}
+				</dl>
+			</div>
+
+			<dl class="hp-formats">
+				{formats.map((f) => (
+					<div class="hp-format reveal">
+						<dt>{f.title}</dt>
+						<dd>{f.desc}</dd>
+					</div>
+				))}
+			</dl>
+
+			<div class="hp-training-logos">
+				<TrainingLogosBand heading={t("formateur.clients")} />
+			</div>
+		</div>
+	</section>
+
+	<!-- À propos + thématiques -->
+	<section class="hp-section hp-about" aria-labelledby="hp-about-title">
+		<div class="hp-wrap">
+			<div class="hp-about-grid">
+				<div class="hp-about-lead reveal">
+					<h2 class="hp-title" id="hp-about-title">{t("about.title")}</h2>
+					<p class="hp-about-quote">{t("about.p1")}</p>
+				</div>
+				<div class="hp-about-body reveal">
+					<p>{t("about.p2")}</p>
+					<p>{t("about.p3")}</p>
+					<a class="link-arrow" href={getLocalePath(lang, "/a-propos")}>{t("about.more")}</a>
+				</div>
+			</div>
+
+			<div class="hp-topics reveal">
+				<h3 class="hp-topics-title">{t("topics.title")}</h3>
+				<ul class="hp-tags">
+					{copy.topics.map((k) => <li class="hp-tag hp-tag--hi">{t(k)}</li>)}
+				</ul>
+				<details class="hp-tags-more">
+					<summary>{copy.topicsMore}</summary>
+					<ul class="hp-tags">
+						{moreTopics.map((k) => <li class="hp-tag">{t(k)}</li>)}
+					</ul>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<!-- Références -->
+	<section class="hp-section hp-refs" aria-labelledby="hp-refs-title">
+		<div class="hp-wrap">
+			<div class="hp-head reveal">
+				<p class="hp-overline">{copy.referencesOverline}</p>
+				<h2 class="hp-title" id="hp-refs-title">{t("references.title")}</h2>
+			</div>
+			<div class="hp-refs-grid">
+				<div class="hp-ref reveal">
+					<h3>{t("references.teaching")}</h3>
+					<ul>
+						{teachingInstitutions.map((i) => <li>{institutionLabel(i, lang)}</li>)}
+					</ul>
+					<p class="hp-ref-note">{t("references.teaching.note")}</p>
+					<p class="hp-ref-note">{copy.upcoming(upcomingInstitutions.map((i) => institutionLabel(i, lang)))}</p>
+				</div>
+				<div class="hp-ref reveal">
+					<h3>{t("references.institutional")}</h3>
+					<ul>
+						{copy.institutional.map((item) => <li>{item}</li>)}
+					</ul>
+				</div>
+				<div class="hp-ref reveal">
+					<h3>{t("references.culture")}</h3>
+					<ul>
+						{copy.culture.map((item) => <li>{item.text}{item.em && <em>{item.em}</em>}</li>)}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="contact-section" id="contact">
+		<div class="contact-inner">
+			<div class="contact-left">
+				<h2>{t("contact.title")}</h2>
+				<p>{t("contact.desc")}</p>
+				<div class="contact-links">
+					<a href="mailto:romain.blachier@gmail.com" class="contact-mail">romain.blachier@gmail.com</a>
+					<a href="https://www.linkedin.com/in/romainblachier/" target="_blank" rel="noopener noreferrer">→ LinkedIn</a>
+					<a href="https://sciencespo.academia.edu/RomainBlachier" target="_blank" rel="noopener noreferrer">→ Academia</a>
+					<a href="https://orcid.org/0009-0008-3178-1600" target="_blank" rel="noopener noreferrer">→ ORCID</a>
+				</div>
+				<div class="contact-cv">
+					<a href="https://romain-blachier.com" target="_blank" rel="noopener noreferrer">{t("contact.cv")}</a>
+				</div>
+			</div>
+			<ContactForm lang={lang} />
+		</div>
+	</section>
+</main>
+
+<script is:inline>
+	(function () {
+		// Discreet fade-in as sections enter the viewport. Content stays visible
+		// without JavaScript, with reduced motion, or without IntersectionObserver.
+		var root = document.documentElement;
+		if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+		var items = document.querySelectorAll('.home .reveal');
+		root.classList.add('reveal-ready');
+		var io = new IntersectionObserver(function (entries) {
+			entries.forEach(function (e) {
+				if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+			});
+		}, { rootMargin: '0px 0px -4% 0px', threshold: 0 });
+		items.forEach(function (el) {
+			// Already on screen at load: show at once, no flash.
+			if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+			else io.observe(el);
+		});
+	})();
+</script>

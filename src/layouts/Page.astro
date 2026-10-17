@@ -32,26 +32,45 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 		-->
 		<style is:global>
 			main {
-				width: 720px;
+				width: 760px;
 				max-width: calc(100% - 2em);
 				margin: 0 auto;
-				padding: 3rem 1rem 4rem;
+				padding: clamp(2.5rem, 6vw, 4.5rem) 1rem 4.5rem;
 			}
 			.page-title {
-				font-family: 'Playfair Display', Georgia, serif;
-				margin-bottom: 0.5em;
+				font-family: var(--display);
+				font-size: clamp(2.5rem, 6vw, 3.8rem);
+				font-weight: 500;
+				letter-spacing: -.03em;
+				line-height: 1.02;
+				margin-bottom: 0.45em;
+			}
+			/* Copper rule above every inner-page title, as on the home overlines. */
+			.page-title::before {
+				content: "";
+				display: block;
+				width: 40px;
+				height: 3px;
+				border-radius: 2px;
+				background: var(--spark);
+				margin-bottom: 1.4rem;
 			}
 			.page-lede {
-				color: rgb(var(--gray));
-				font-size: 1.1rem;
-				margin-bottom: 2.5rem;
-				line-height: 1.6;
+				color: var(--text);
+				font-family: var(--display);
+				font-size: clamp(1.15rem, 2vw, 1.35rem);
+				margin-bottom: 2.75rem;
+				padding-bottom: 2rem;
+				border-bottom: 1px solid var(--line);
+				line-height: 1.5;
 			}
 			.page-body h2 {
-				font-family: 'Playfair Display', Georgia, serif;
-				margin-top: 2.5rem;
+				font-family: var(--display);
+				font-weight: 500;
+				margin-top: 3rem;
 				margin-bottom: 1.25rem;
 			}
+			.page-body h3 { font-weight: 600 }
 			.page-body p {
 				line-height: 1.7;
 			}
@@ -72,8 +91,12 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 				margin-bottom: 0.5rem;
 			}
 			.page-body a {
-				color: var(--accent, #0b5);
+				color: var(--ink);
+				text-decoration-color: var(--spark);
+				text-decoration-thickness: 1.5px;
+				text-underline-offset: 3px;
 			}
+			.page-body a:hover { color: var(--accent-warm) }
 			.key-figures {
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);

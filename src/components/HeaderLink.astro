@@ -4,28 +4,12 @@ type Props = {
 };
 const { href } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname;
-const isActive = href === pathname || href === pathname.replace(/\/$/, "");
+// Active on the page itself and on its children (a publication detail keeps
+// « Publications » highlighted).
+const normalize = (p: string) => p.replace(/\/$/, "") || "/";
+const isActive = normalize(href) === normalize(pathname) || (normalize(href) !== "/" && normalize(pathname).startsWith(`${normalize(href)}/`));
 ---
 
-<a href={href} class:list={[{ active: isActive }]}>
+<a href={href} class:list={["nav-link", { active: isActive }]} aria-current={isActive ? "page" : undefined}>
 	<slot />
 </a>
-<style>
-	a {
-		font-family: "Outfit", sans-serif;
-		font-size: 0.8rem;
-		font-weight: 400;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: var(--muted);
-		text-decoration: none;
-		padding: 0.3rem 0;
-		border-bottom: 1px solid transparent;
-		transition: all 0.3s;
-	}
-	a:hover,
-	a.active {
-		color: var(--ink);
-		border-bottom-color: var(--ink);
-	}
-</style>
