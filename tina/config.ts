@@ -28,6 +28,7 @@ const MEDIA_OPTIONS = [
   { value: "defis-actuels", label: "Défis Actuels" },
   { value: "ecomatin", label: "EcoMatin" },
   { value: "journal-du-cameroun", label: "Journal du Cameroun" },
+  { value: "tribune-eco", label: "Tribune Eco" },
   { value: "le-monde", label: "Le Monde" },
   { value: "liberation", label: "Libération" },
   { value: "marianne", label: "Marianne" },
