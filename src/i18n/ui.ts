@@ -68,10 +68,10 @@ export const ui = {
 		'alaune.overline': 'À la une',
 		'alaune.kind.tribune': 'Tribune',
 		'alaune.kind.journal': 'Revue à comité de lecture',
-		'alaune.kind.conference': 'Conférence',
-		'alaune.conference.title': 'Conférence France–Taïwan',
-		'alaune.conference.topic': "« Sécurité énergétique et géopolitique », 28e conférence France–Taïwan de coopération économique (MEDEF International, CIECA), Paris, 10 septembre 2026, aux côtés de Taipower.",
-		'alaune.conference.link': 'Le programme →',
+		'alaune.kind.conference': 'Colloque',
+		'alaune.conference.title': 'AIEE Energy Symposium, Turin',
+		'alaune.conference.topic': "« Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates », communication retenue par le comité scientifique du 10e AIEE Energy Symposium (Association italienne des économistes de l'énergie, Université de Turin), 25-26 novembre 2026.",
+		'alaune.conference.link': 'Le symposium →',
 		// Thématiques
 		'topics.title': "Thématiques traitées",
 		// References
@@ -220,10 +220,10 @@ export const ui = {
 		'alaune.overline': 'Featured',
 		'alaune.kind.tribune': 'Op-ed',
 		'alaune.kind.journal': 'Peer-reviewed journal',
-		'alaune.kind.conference': 'Conference',
-		'alaune.conference.title': 'France–Taiwan Conference',
-		'alaune.conference.topic': "\"Energy security and geopolitics\", 28th France–Taiwan Economic Cooperation Conference (MEDEF International, CIECA), Paris, 10 September 2026, alongside Taipower.",
-		'alaune.conference.link': 'Programme →',
+		'alaune.kind.conference': 'Symposium',
+		'alaune.conference.title': 'AIEE Energy Symposium, Turin',
+		'alaune.conference.topic': "\"Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates\", paper accepted by the scientific committee of the 10th AIEE Energy Symposium (Italian Association of Energy Economists, University of Turin), 25–26 November 2026.",
+		'alaune.conference.link': 'The symposium →',
 		// Topics
 		'topics.title': 'Topics covered',
 		// References
@@ -372,10 +372,10 @@ export const ui = {
 		'alaune.overline': '焦點',
 		'alaune.kind.tribune': '評論',
 		'alaune.kind.journal': '同儕審查期刊',
-		'alaune.kind.conference': '會議',
-		'alaune.conference.title': '臺法經濟合作會議',
-		'alaune.conference.topic': '〈能源安全與地緣政治〉，第 28 屆臺法經濟合作會議（MEDEF International、CIECA），巴黎，2026 年 9 月 10 日，與台灣電力公司同場發表。',
-		'alaune.conference.link': '會議議程 →',
+		'alaune.kind.conference': '研討會',
+		'alaune.conference.title': 'AIEE 能源研討會，杜林',
+		'alaune.conference.topic': '〈Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates〉（能源安全的政治語法：法國、臺灣與阿拉伯聯合大公國），獲第 10 屆 AIEE 能源研討會學術委員會錄取（義大利能源經濟學會、杜林大學），2026 年 11 月 25–26 日。',
+		'alaune.conference.link': '研討會網站 →',
 		// Topics
 		'topics.title': '涵蓋主題',
 		// References
