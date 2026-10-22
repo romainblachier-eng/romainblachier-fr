@@ -1,73 +1,61 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Page from '../../layouts/Page.astro';
 import ContactForm from '../../components/ContactForm.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={"Contact | Romain Blachier"} description={"Contact Romain Blachier for training, conferences, media appearances or expertise."} />
-	</head>
-	<body>
-		<Header />
-		<main class="contact-page">
-			<h1>Contact</h1>
-			<p class="contact-lede">
-				A course to build, a talk to give, an interview to prepare, a collaboration in mind?
-				Write to me — every message gets a reply, usually within 48&nbsp;hours.
-			</p>
-			<div class="contact-grid">
-				<div>
-					<h2>What I do</h2>
-					<ul class="contact-reasons">
-						<li>
-							<span class="reason-num" aria-hidden="true">01</span>
-							<div>
-								<strong>Teaching &amp; training</strong>
-								<p>Courses and seminars at universities and graduate schools, bespoke training for public and private organizations.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">02</span>
-							<div>
-								<strong>Conferences &amp; panels</strong>
-								<p>Energy markets, geopolitics, Taiwan and the Indo-Pacific, in French, English or Spanish.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">03</span>
-							<div>
-								<strong>Media</strong>
-								<p>TV, radio, podcasts, op-eds. Well-sourced analysis, accessible to a broad audience.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">04</span>
-							<div>
-								<strong>Advisory assignments</strong>
-								<p>Sector diagnoses, scoping papers, institutional support, delivered through Lapin Bleu. <a href="/en/consulting">See assignments</a>.</p>
-							</div>
-						</li>
-					</ul>
-					<h2>By email</h2>
-					<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
-					<p class="contact-phone">By phone: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
-					<h2>Elsewhere online</h2>
-					<div class="contact-elsewhere">
-						<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
-						<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
-						<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
+<Page title={"Contact"} description={"Contact Romain Blachier for training, conferences, media appearances or expertise."} lang="en">
+	<h1 class="page-title">Contact</h1>
+	<p class="page-lede">
+		A course to build, a talk to give, an interview to prepare, a collaboration in mind?
+		Write to me — every message gets a reply, usually within 48&nbsp;hours.
+	</p>
+	<div class="contact-grid">
+		<div>
+			<h2 class="hp-overline">What I do</h2>
+			<ul class="contact-reasons">
+				<li>
+					<span class="reason-num" aria-hidden="true">01</span>
+					<div>
+						<strong>Teaching &amp; training</strong>
+						<p>Courses and seminars at universities and graduate schools, bespoke training for public and private organizations.</p>
 					</div>
-					<p class="contact-meta">Speaking in French, English and Spanish · Based in Lyon, assignments in France and abroad</p>
-				</div>
-				<div>
-					<h2>Send a message</h2>
-					<ContactForm lang="en" variant="light" />
-				</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">02</span>
+					<div>
+						<strong>Conferences &amp; panels</strong>
+						<p>Energy markets, geopolitics, Taiwan and the Indo-Pacific, in French, English or Spanish.</p>
+					</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">03</span>
+					<div>
+						<strong>Media</strong>
+						<p>TV, radio, podcasts, op-eds. Well-sourced analysis, accessible to a broad audience.</p>
+					</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">04</span>
+					<div>
+						<strong>Advisory assignments</strong>
+						<p>Sector diagnoses, scoping papers, institutional support, delivered through Lapin Bleu. <a href="/en/consulting">See assignments</a>.</p>
+					</div>
+				</li>
+			</ul>
+			<h2 class="hp-overline">By email</h2>
+			<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+			<p class="contact-phone">By phone: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
+			<h2 class="hp-overline">Elsewhere online</h2>
+			<div class="contact-elsewhere">
+				<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
+				<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
+				<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
 			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+			<p class="contact-meta">Speaking in French, English and Spanish · Based in Lyon, assignments in France and abroad</p>
+		</div>
+		<div class="ip-form-card">
+			<h2>Send a message</h2>
+			<ContactForm lang="en" variant="light" />
+		</div>
+	</div>
+</Page>

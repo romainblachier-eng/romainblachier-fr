@@ -1,0 +1,445 @@
+/* -----------------------------------------------------------------------------
+   Pages intérieures (gabarit src/layouts/Page.astro), FR / EN / ZH : Conseil,
+   Recherche, Presse, À propos, Contact, Publications et pages de service.
+   Jetons de global.css ; les composants communs avec l'accueil viennent de
+   home.css (.hp-overline, .hp-feature, .hp-feature-kind, .hp-tag, .hp-tags,
+   .hp-tags-more, .hp-stats) et ne sont pas redéfinis ici.
+   ----------------------------------------------------------------------------- */
+
+/* Same column as the home (.hp-wrap) without a wrapper element: the side
+   padding puts the content on the 1180 px grid. Replaces the legacy
+   `main { width: 720px }` rule of global.css. */
+main.ip {
+	position: relative;
+	isolation: isolate;
+	width: auto;
+	max-width: none;
+	margin: 0;
+	padding:
+		clamp(2.75rem, 6vw, 5rem)
+		max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)))
+		clamp(4rem, 8vw, 6.5rem);
+	background:
+		radial-gradient(56rem 24rem at 90% -4rem, rgba(232, 131, 58, .12), transparent 62%),
+		var(--bg);
+}
+/* Faint dot grid behind the title, as in the home hero. */
+main.ip::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: min(52%, 44rem);
+	height: 24rem;
+	z-index: -1;
+	pointer-events: none;
+	background-image: radial-gradient(rgba(14, 34, 53, .15) 1px, transparent 1.2px);
+	background-size: 22px 22px;
+	-webkit-mask-image: radial-gradient(ellipse 70% 75% at 70% 25%, #000 25%, transparent 75%);
+	mask-image: radial-gradient(ellipse 70% 75% at 70% 25%, #000 25%, transparent 75%);
+}
+
+/* Page head */
+.page-title {
+	max-width: 20ch;
+	margin-bottom: .4em;
+	font-size: clamp(2.6rem, 6.2vw, 4.6rem);
+	font-weight: 500;
+	letter-spacing: -.03em;
+	line-height: 1;
+}
+/* Copper rule above every title, as on the home overlines. */
+.page-title::before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--spark);
+	margin-bottom: 1.5rem;
+}
+.page-lede {
+	/* The text wraps at about 42rem; the rule underneath spans the column. */
+	padding: 0 max(0px, calc(100% - 42rem)) clamp(2rem, 4vw, 2.75rem) 0;
+	margin-bottom: clamp(2.25rem, 4.5vw, 3.5rem);
+	border-bottom: 1px solid var(--line);
+	font-family: var(--display);
+	font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+	line-height: 1.45;
+	color: var(--text);
+}
+html[lang="zh-Hant"] .page-title { letter-spacing: 0; line-height: 1.15 }
+
+/* Body copy. :where() keeps these defaults at element weight so the
+   components below override them without a specificity race. */
+:where(.page-body) {
+	font-size: 1.02rem;
+	line-height: 1.75;
+	color: var(--text);
+}
+.page-body:not(.ip-split) { max-width: 46rem }
+:where(.page-body) p + p { margin-top: 1rem }
+:where(.page-body) h2 {
+	margin: 3rem 0 1rem;
+	font-size: clamp(1.55rem, 2.4vw, 2rem);
+	font-weight: 500;
+	letter-spacing: -.015em;
+}
+:where(.page-body) > h2:first-child { margin-top: 0 }
+:where(.page-body) h3 { margin: 1.75rem 0 .6rem; font-size: 1.2rem; font-weight: 600 }
+:where(.page-body) ul, :where(.page-body) ol { margin: 0 0 1.5rem; padding-left: 1.25rem }
+:where(.page-body) p + :is(ul, ol) { margin-top: .85rem }
+:where(.page-body) ul { list-style: disc }
+:where(.page-body) ol { list-style: decimal }
+:where(.page-body) li { margin-bottom: .55rem }
+:where(.page-body) li::marker { color: var(--spark) }
+:where(.page-body) strong { color: var(--ink); font-weight: 600 }
+:where(.page-body) a:not(.btn) {
+	color: var(--ink);
+	text-decoration: underline;
+	text-decoration-color: var(--spark);
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 3px;
+}
+:where(.page-body) a:not(.btn):hover { color: var(--accent-warm) }
+:where(.page-body) blockquote { margin: 1.5rem 0 }
+
+/* Sectioned layout: the heading sits in a narrow left column and stays in
+   view while its section scrolls, the text runs in the right column. Echoes
+   the split heads of the home (.hp-head--split). */
+.ip-sec {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr);
+	gap: .9rem clamp(2rem, 5vw, 5rem);
+	padding: clamp(2.5rem, 5vw, 3.75rem) 0;
+	border-top: 1px solid var(--line);
+}
+.ip-sec:first-child { padding-top: 0; border-top: 0 }
+.ip-sec > h2 {
+	grid-column: 1;
+	align-self: start;
+	position: sticky;
+	top: calc(var(--header-h) + 1.75rem);
+	margin: 0;
+	font-size: clamp(1.45rem, 2.1vw, 1.85rem);
+	line-height: 1.15;
+}
+.ip-sec > h2::before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--spark);
+	margin-bottom: 1rem;
+}
+.ip-sec-body {
+	grid-column: 2;
+	min-width: 0;
+	container-type: inline-size;
+}
+.ip-sec-body > :first-child { margin-top: 0 }
+.ip-sec-body > :last-child { margin-bottom: 0 }
+.ip-sec--intro .ip-sec-body { font-size: 1.08rem }
+
+/* Cards (missions, conferences, bios): the home's .hp-feature card, without
+   the hover lift since they are not links. */
+.ip-cards { display: grid; gap: 1.25rem; margin: 0 0 1.5rem }
+@container (min-width: 36rem) {
+	.ip-cards--2 { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+}
+.hp-feature.ip-card { gap: .7rem; padding: 1.6rem 1.6rem 1.5rem }
+.hp-feature.ip-card:hover { transform: none; box-shadow: var(--shadow-sm); border-color: var(--line) }
+.ip-card h3 { margin: 0 }
+.ip-card h3:not(.hp-feature-kind) {
+	font-size: 1.28rem;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: -.01em;
+}
+.ip-card h3:not(.hp-feature-kind)::before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--spark);
+	margin-bottom: 1rem;
+}
+.ip-card p, .ip-card ul { margin: 0; font-size: .95rem; line-height: 1.65 }
+.ip-card li:last-child { margin-bottom: 0 }
+.ip-card-foot {
+	margin-top: auto;
+	padding-top: .9rem;
+	border-top: 1px solid var(--line);
+	font-size: .88rem;
+	line-height: 1.55;
+	color: var(--muted);
+}
+.ip-card-foot .hp-feature-kind { display: block; margin-bottom: .3rem }
+
+/* Bios: the heading reads as the card's label. */
+.ip-bio + .ip-bio { margin-top: 1.25rem }
+.ip-bio h3 { font-family: var(--sans); line-height: 1.4 }
+.ip-bio blockquote { margin: 0; font-size: .98rem; line-height: 1.7; color: var(--text) }
+.ip-bio blockquote p + p { margin-top: .9rem }
+
+/* Ruled list: items with a bold lead, references, fieldwork. */
+.ip-list {
+	list-style: none;
+	margin-bottom: 1.5rem;
+	padding: 0;
+	border-top: 1px solid var(--line);
+}
+.ip-list > li { margin: 0; padding: .95rem 0; border-bottom: 1px solid var(--line) }
+
+/* Links shown as pills (profiles, identifiers): the home's .hp-tag. */
+.page-body .hp-tags { padding: 0 }
+.hp-tags > li { margin: 0 }
+.page-body a.hp-tag {
+	display: inline-flex;
+	align-items: center;
+	min-height: 40px;
+	font-weight: 500;
+	color: var(--ink);
+	text-decoration: none;
+	transition: border-color .15s, color .15s;
+}
+.page-body a.hp-tag:hover { border-color: var(--ink); color: var(--ink) }
+
+/* Press contact: the address set large, as on the home contact block. */
+.ip-contact { list-style: none; padding: 0; display: flex; flex-direction: column; gap: .5rem }
+.ip-contact li { margin: 0 }
+.page-body .ip-contact a[href^="mailto:"] {
+	font-family: var(--display);
+	font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1.5px solid var(--spark);
+	padding-bottom: 2px;
+	overflow-wrap: anywhere;
+}
+
+.ip-note { margin-top: 1.25rem; font-size: .9rem; font-style: italic; color: var(--muted) }
+.page-body p.ip-note + p.ip-note { margin-top: .6rem }
+.ip-actions { margin-top: 2rem }
+
+/* Key figures: the home's night stat panel, laid out as one row. */
+.hp-stats.ip-stats {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0;
+	padding: 1.6rem 0;
+	margin: 0 0 clamp(2.5rem, 5vw, 3.5rem);
+}
+.ip-stats .hp-stat {
+	padding: .4rem clamp(1rem, 2.4vw, 1.9rem);
+	border-bottom: 0;
+	border-left: 1px solid rgba(255, 255, 255, .12);
+}
+.ip-stats .hp-stat:first-child { border-left: 0 }
+
+/* Closing call to action: a night panel with a copper glow. */
+.page-cta {
+	margin-top: clamp(2.5rem, 5vw, 3.5rem);
+	padding: clamp(1.75rem, 4vw, 2.5rem);
+	border-radius: var(--radius);
+	background:
+		radial-gradient(24rem 14rem at 100% 0%, rgba(232, 131, 58, .28), transparent 60%),
+		var(--night);
+	font-family: var(--display);
+	font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+	line-height: 1.35;
+	color: #fff;
+}
+.page-body .page-cta a {
+	color: #fff;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: 2px solid var(--spark);
+}
+.page-body .page-cta a:hover { color: #fff; border-color: #fff }
+
+.page-note {
+	margin-top: 2.5rem;
+	padding: 1rem 1.25rem;
+	border-left: 3px solid var(--line-strong);
+	background: var(--bg-alt);
+	font-size: .9rem;
+	color: var(--muted);
+}
+
+/* Contact */
+.ip .contact-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) }
+/* The anti-spam question length varies with its random numbers: let it wrap. */
+.ip-form-card .captcha-row { flex-wrap: wrap }
+.ip-form-card .captcha-row label { white-space: normal }
+.contact-grid .hp-overline { margin-bottom: 1.1rem }
+.contact-reasons li { padding-bottom: 1.1rem; border-bottom: 1px solid var(--line) }
+.contact-reasons li:last-child { padding-bottom: 0; border-bottom: 0 }
+.contact-email {
+	font-family: var(--display);
+	font-size: clamp(1.3rem, 2.2vw, 1.55rem);
+	font-weight: 500;
+	border-bottom-width: 1.5px;
+	border-bottom-color: var(--spark);
+	overflow-wrap: anywhere;
+}
+.contact-elsewhere a { min-height: 40px; display: inline-flex; align-items: center; border-color: var(--line-strong); background: var(--surface) }
+.ip-form-card {
+	padding: clamp(1.5rem, 3.5vw, 2.25rem);
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-md);
+}
+.ip-form-card h2 { margin-bottom: 1.25rem; font-size: clamp(1.45rem, 2.2vw, 1.75rem); font-weight: 500 }
+
+/* Publications index */
+.pubs-hint { margin-top: -.15rem; font-size: .92rem; color: var(--muted) }
+.pubs-hint a { color: var(--ink); text-decoration-color: var(--spark); text-underline-offset: 3px }
+.pubs-filter {
+	margin: clamp(1.75rem, 4vw, 2.5rem) 0 .5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid var(--line);
+}
+.pubs-filter .hp-overline { margin-bottom: 1rem }
+.pubs-filter .hp-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: .45rem;
+	min-height: 40px;
+	font-weight: 500;
+	transition: border-color .15s, background-color .15s, color .15s;
+}
+.pubs-filter .hp-tag:hover { border-color: var(--ink); color: var(--ink) }
+.pubs-filter .hp-tag--hi:hover { color: #fff }
+.pubs-count { font-size: .76rem; font-variant-numeric: tabular-nums; color: var(--muted) }
+.hp-tag--hi .pubs-count { color: rgba(255, 255, 255, .72) }
+.pubs-more { margin-top: .6rem }
+.pubs-more summary { color: var(--ink) }
+
+.pubs-list { list-style: none }
+.pubs-row {
+	position: relative;
+	display: grid;
+	grid-template-columns: 44px minmax(0, 1fr) auto;
+	grid-template-areas:
+		"logo meta  date"
+		"logo title title"
+		"logo desc  desc";
+	gap: 0 1.25rem;
+	align-items: start;
+	padding: 1.75rem 0;
+	border-bottom: 1px solid var(--line);
+}
+.pubs-row[hidden] { display: none }
+.pubs-row > :first-child { grid-area: logo }
+.pubs-meta {
+	grid-area: meta;
+	align-self: center;
+	font-size: .8rem;
+	font-weight: 600;
+	letter-spacing: .02em;
+	color: var(--ink);
+}
+.pubs-date {
+	grid-area: date;
+	align-self: center;
+	font-size: .8rem;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+	color: var(--muted);
+}
+.pubs-title {
+	grid-area: title;
+	max-width: 52rem;
+	margin: .4rem 0 0;
+	font-size: clamp(1.18rem, 1.8vw, 1.38rem);
+	font-weight: 600;
+	line-height: 1.28;
+	letter-spacing: -.01em;
+	text-wrap: pretty;
+}
+.pubs-title a { color: var(--ink); text-decoration: none; transition: color .15s }
+.pubs-title a:focus-visible { outline: none }
+/* The title link covers the whole row. */
+.pubs-title a::after { content: ""; position: absolute; inset: 0 }
+.pubs-row:focus-within { outline: 2px solid var(--accent-warm); outline-offset: 4px; border-radius: 4px }
+.pubs-row:hover .pubs-title a { color: var(--accent-warm) }
+.pubs-desc {
+	grid-area: desc;
+	max-width: 52rem;
+	margin-top: .5rem;
+	font-size: .93rem;
+	line-height: 1.6;
+	color: var(--text);
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 899px) {
+	.ip .contact-grid { grid-template-columns: minmax(0, 1fr) }
+	.ip-sec { grid-template-columns: minmax(0, 1fr); gap: 1.1rem }
+	.ip-sec > h2 { position: static }
+	.ip-sec-body { grid-column: 1 }
+	.hp-stats.ip-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: .5rem 0 }
+	.ip-stats .hp-stat { padding: 1.1rem 1.4rem; border-left: 0 }
+	.ip-stats .hp-stat:nth-child(even) { border-left: 1px solid rgba(255, 255, 255, .12) }
+	.ip-stats .hp-stat:nth-child(n + 3) { border-top: 1px solid rgba(255, 255, 255, .12) }
+}
+@media (max-width: 640px) {
+	main.ip::before { width: 70%; height: 16rem }
+	.page-lede { padding-right: 0 }
+	.hp-feature.ip-card { padding: 1.35rem 1.25rem 1.25rem }
+	.ip-stats .hp-stat { padding: 1rem 1.1rem }
+	.ip-stats .hp-stat dt { font-size: 1.9rem }
+	.page-body .page-cta a { white-space: normal }
+
+	/* Featured outlets become one swipeable row of chips. */
+	.pubs-filter > .hp-tags {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		margin: 0 calc(var(--gutter) * -1);
+		padding: .15rem var(--gutter) .35rem;
+		scroll-padding: 0 var(--gutter);
+		scrollbar-width: none;
+	}
+	.pubs-filter > .hp-tags::-webkit-scrollbar { display: none }
+	.pubs-filter > .hp-tags .hp-tag { flex-shrink: 0; white-space: nowrap }
+	/* The other outlets scroll sideways on three rows instead of a long stack. */
+	.pubs-more .hp-tags {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-rows: repeat(3, auto);
+		justify-content: start;
+		gap: .5rem;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		margin: .5rem calc(var(--gutter) * -1) 0;
+		padding: .15rem var(--gutter) .35rem;
+		scrollbar-width: none;
+	}
+	.pubs-more .hp-tags::-webkit-scrollbar { display: none }
+	.pubs-more .hp-tag { white-space: nowrap }
+	.pubs-row { gap: 0 .9rem; padding: 1.4rem 0 }
+	.pubs-desc { font-size: .9rem }
+}
+@media (hover: hover) {
+	.pubs-row::before {
+		content: "";
+		position: absolute;
+		inset: 0 -1rem;
+		z-index: -1;
+		border-radius: var(--radius-sm);
+		background: var(--surface);
+		opacity: 0;
+		transition: opacity .2s;
+	}
+	.pubs-row:hover::before { opacity: 1 }
+}

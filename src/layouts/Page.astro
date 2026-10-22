@@ -4,6 +4,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl } from '../i18n/utils';
 import { routeAlternates, type RouteKey } from '../i18n/routes';
+// Inner-page layout and the components it shares with the home.
+import '../styles/home.css';
+import '../styles/pages.css';
 
 interface Props {
 	title: string;
@@ -22,139 +25,10 @@ const alternates = routeKey ? routeAlternates(routeKey) : undefined;
 <html lang={htmlLang}>
 	<head>
 		<BaseHead title={`${title} | Romain Blachier`} description={description} alternates={alternates} />
-		<!--
-			is:global below: .page-title / .page-lede / .page-body's children / .page-note
-			are written in each *page* file as <Page> slot content, not in this file — Astro
-			assigns its scoped-style attribute to the template that authors an element, so a
-			normal scoped rule here never matched them (bullets, section dividers, lede
-			colour were all silently dead). main styles fine either way; kept in the same
-			global block for one source of truth.
-		-->
-		<style is:global>
-			main {
-				width: 760px;
-				max-width: calc(100% - 2em);
-				margin: 0 auto;
-				padding: clamp(2.5rem, 6vw, 4.5rem) 1rem 4.5rem;
-			}
-			.page-title {
-				font-family: var(--display);
-				font-size: clamp(2.5rem, 6vw, 3.8rem);
-				font-weight: 500;
-				letter-spacing: -.03em;
-				line-height: 1.02;
-				margin-bottom: 0.45em;
-			}
-			/* Copper rule above every inner-page title, as on the home overlines. */
-			.page-title::before {
-				content: "";
-				display: block;
-				width: 40px;
-				height: 3px;
-				border-radius: 2px;
-				background: var(--spark);
-				margin-bottom: 1.4rem;
-			}
-			.page-lede {
-				color: var(--text);
-				font-family: var(--display);
-				font-size: clamp(1.15rem, 2vw, 1.35rem);
-				margin-bottom: 2.75rem;
-				padding-bottom: 2rem;
-				border-bottom: 1px solid var(--line);
-				line-height: 1.5;
-			}
-			.page-body h2 {
-				font-family: var(--display);
-				font-weight: 500;
-				margin-top: 3rem;
-				margin-bottom: 1.25rem;
-			}
-			.page-body h3 { font-weight: 600 }
-			.page-body p {
-				line-height: 1.7;
-			}
-			.page-body p + p {
-				margin-top: 1rem;
-			}
-			.page-body ul, .page-body ol {
-				margin-bottom: 1.5rem;
-				padding-left: 1.25rem;
-			}
-			.page-body ul {
-				list-style: disc;
-			}
-			.page-body ol {
-				list-style: decimal;
-			}
-			.page-body li {
-				margin-bottom: 0.5rem;
-			}
-			.page-body a {
-				color: var(--ink);
-				text-decoration-color: var(--spark);
-				text-decoration-thickness: 1.5px;
-				text-underline-offset: 3px;
-			}
-			.page-body a:hover { color: var(--accent-warm) }
-			.key-figures {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				gap: 1px;
-				margin: 2.5rem 0 1rem;
-				background: var(--line);
-				border: 1px solid var(--line);
-				border-radius: var(--radius);
-				overflow: hidden;
-			}
-			.key-figures > div {
-				background: var(--bg);
-				padding: 1.1rem 1rem 1rem;
-			}
-			.key-figures dt {
-				font-family: var(--display);
-				font-size: 1.6rem;
-				font-weight: 700;
-				color: var(--ink);
-				line-height: 1.1;
-				letter-spacing: -.01em;
-			}
-			.key-figures dd {
-				margin-top: .35rem;
-				font-size: .8rem;
-				line-height: 1.4;
-				color: var(--muted);
-			}
-			@media (max-width: 640px) {
-				.key-figures { grid-template-columns: 1fr 1fr; }
-			}
-			.page-cta {
-				margin-top: 3rem;
-				padding-top: 1.5rem;
-				border-top: 1px solid var(--line);
-				font-family: var(--display);
-				font-size: 1.15rem;
-				color: var(--ink);
-			}
-			.page-body .page-cta a {
-				color: var(--ink);
-				font-weight: 600;
-				text-decoration: none;
-				border-bottom: 2px solid var(--accent-warm);
-			}
-			.page-note {
-				margin-top: 2.5rem;
-				padding: 1rem;
-				border-left: 3px solid rgb(var(--gray-light));
-				background: rgba(var(--gray-light), 0.4);
-				font-size: 0.9rem;
-				color: rgb(var(--gray));
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="ip">
 			<slot />
 		</main>
 		<Footer />

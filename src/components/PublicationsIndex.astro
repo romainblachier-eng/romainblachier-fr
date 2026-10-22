@@ -1,0 +1,96 @@
+---
+// Filtre par média et liste des publications, partagés par /publications, /en/publications
+// et /zh/publications. Le titre et le texte d'introduction restent dans chaque page.
+// Une seule liste chronologique, sans regroupement par année (CLAUDE.md, règle n°4).
+import FormattedDate from './FormattedDate.astro';
+import PublicationLogo from './PublicationLogo.astro';
+import { getPublications, cardTitle, type Lang } from '../lib/sections';
+import { getLocalePath, useTranslations } from '../i18n/utils';
+
+interface Props {
+	lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const posts = await getPublications(lang); // du plus récent au moins récent
+
+const copy = {
+	fr: { label: 'Filtrer par média', all: 'Tous les médias', more: 'Autres médias' },
+	en: { label: 'Filter by outlet', all: 'All outlets', more: 'More outlets' },
+	zh: { label: '依媒體篩選', all: '全部媒體', more: '其他媒體' },
+}[lang];
+
+// Médias visibles d'emblée : ceux que nomment les descriptions des pages Publications
+// (FR/EN : Le Monde, Taipei Times, Lyon Mag, Le Temps, Revue Conflits ; ZH : 聯合報),
+// plus tout média qui compte au moins trois textes. Les autres se replient.
+const NAMED_IN_DESCRIPTIONS = new Set(['le-monde', 'taipei-times', 'lyon-mag', 'le-temps', 'revue-conflits', 'udn']);
+const FEATURED_MIN_COUNT = 3;
+
+const bySlug = new Map<string, { slug: string; name: string; count: number }>();
+for (const p of posts) {
+	const m = bySlug.get(p.data.mediaSlug) ?? { slug: p.data.mediaSlug, name: p.data.media, count: 0 };
+	m.count++;
+	bySlug.set(m.slug, m);
+}
+const medias = [...bySlug.values()];
+const isFeatured = (m: { slug: string; count: number }) => NAMED_IN_DESCRIPTIONS.has(m.slug) || m.count >= FEATURED_MIN_COUNT;
+const featured = medias.filter(isFeatured).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, lang));
+const others = medias.filter((m) => !isFeatured(m)).sort((a, b) => a.name.localeCompare(b.name, lang));
+
+const kindPrefix = (kind: string) =>
+	kind === 'citation' ? `${t('publications.cited_in')} ` : kind === 'interview' ? `${t('publications.interviewed_by')} ` : '';
+---
+
+<div class="pubs" data-pubs>
+	<div class="pubs-filter" role="group" aria-label={copy.label}>
+		<ul class="hp-tags">
+			<li><button type="button" class="hp-tag hp-tag--hi" data-media="all" aria-pressed="true">{copy.all} <span class="pubs-count">{posts.length}</span></button></li>
+			{featured.map((m) => (
+				<li><button type="button" class="hp-tag" data-media={m.slug} aria-pressed="false">{m.name} <span class="pubs-count">{m.count}</span></button></li>
+			))}
+		</ul>
+		{others.length > 0 && (
+			<details class="hp-tags-more pubs-more">
+				<summary>{copy.more} ({others.length})</summary>
+				<ul class="hp-tags">
+					{others.map((m) => (
+						<li><button type="button" class="hp-tag" data-media={m.slug} aria-pressed="false">{m.name} <span class="pubs-count">{m.count}</span></button></li>
+					))}
+				</ul>
+			</details>
+		)}
+	</div>
+
+	<ul class="pubs-list">
+		{posts.map((p) => (
+			<li class="pubs-row" data-media={p.data.mediaSlug}>
+				<PublicationLogo mediaSlug={p.data.mediaSlug} media={p.data.media} />
+				<p class="pubs-meta">{kindPrefix(p.data.kind)}{p.data.media}</p>
+				<p class="pubs-date"><FormattedDate date={p.data.pubDate} lang={lang} /></p>
+				<h2 class="pubs-title">
+					<a href={getLocalePath(lang, `/publications/${p.data.mediaSlug}/${p.id}/`)}>{cardTitle(p.data.title, p.data.media)}</a>
+				</h2>
+				<p class="pubs-desc">{p.data.description}</p>
+			</li>
+		))}
+	</ul>
+</div>
+
+<script>
+	for (const root of document.querySelectorAll<HTMLElement>('[data-pubs]')) {
+		const buttons = root.querySelectorAll<HTMLButtonElement>('.pubs-filter button[data-media]');
+		const rows = root.querySelectorAll<HTMLElement>('.pubs-row');
+		root.querySelector('.pubs-filter')?.addEventListener('click', (event) => {
+			const button = (event.target as Element).closest<HTMLButtonElement>('button[data-media]');
+			if (!button) return;
+			const media = button.dataset.media;
+			for (const b of buttons) {
+				const on = b === button;
+				b.classList.toggle('hp-tag--hi', on);
+				b.setAttribute('aria-pressed', String(on));
+			}
+			for (const row of rows) row.hidden = media !== 'all' && row.dataset.media !== media;
+		});
+	}
+</script>
