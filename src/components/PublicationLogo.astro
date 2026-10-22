@@ -58,6 +58,19 @@ const asset = filename ? files[`../assets/${filename}`] : undefined;
 const secondFilename = secondLogoFile[mediaSlug];
 const secondAsset = secondFilename ? files[`../assets/${secondFilename}`] : undefined;
 
+// Wordmarks much wider than tall (Taipei Times, Cœur d'Afrique, Journal du Cameroun…)
+// shrink to a few pixels in a 44 px square. They get a wider pill instead: same
+// height, width following the logo's ratio, capped at WIDE_MAX. --logo-w carries
+// that width so a context with its own sizing (home cards) can ignore it.
+const WIDE_RATIO = 1.8;
+const WIDE_MAX = 132;
+const pill = (a: ImageMetadata | undefined, inner: number) => {
+	const ratio = a && a.height ? a.width / a.height : 1;
+	return ratio >= WIDE_RATIO ? Math.min(WIDE_MAX, Math.round(inner * ratio + 18)) : undefined;
+};
+const wideW = pill(asset, 32);
+const pairW = [pill(asset, 24), pill(secondAsset, 24)];
+
 // Fallback monogram from the outlet name (e.g. "Asia Times" → "AT").
 const monogram = media
 	.replace(/[^\p{L}\s]/gu, ' ')
@@ -71,12 +84,12 @@ const monogram = media
 
 {
 	secondAsset ? (
-		<div class="pub-logo-pair" aria-label={media}>
-			{asset && <img class="pub-logo pub-logo--sm" src={asset.src} alt="" loading="lazy" decoding="async" />}
-			<img class="pub-logo pub-logo--sm" src={secondAsset.src} alt="" loading="lazy" decoding="async" />
+		<div class="pub-logo-pair" role="img" aria-label={media}>
+			{asset && <img class:list={['pub-logo pub-logo--sm', { 'pub-logo--wide': pairW[0] }]} style={pairW[0] && `--logo-w: ${pairW[0]}px`} src={asset.src} alt="" loading="lazy" decoding="async" />}
+			<img class:list={['pub-logo pub-logo--sm', { 'pub-logo--wide': pairW[1] }]} style={pairW[1] && `--logo-w: ${pairW[1]}px`} src={secondAsset.src} alt="" loading="lazy" decoding="async" />
 		</div>
 	) : asset ? (
-		<img class="pub-logo" src={asset.src} alt={media} width="44" height="44" loading="lazy" decoding="async" />
+		<img class:list={['pub-logo', { 'pub-logo--wide': wideW }]} style={wideW && `--logo-w: ${wideW}px`} src={asset.src} alt={media} width={wideW ?? 44} height="44" loading="lazy" decoding="async" />
 	) : (
 		<span class="pub-logo pub-logo--mono" aria-hidden="true">{monogram}</span>
 	)
@@ -112,4 +125,9 @@ const monogram = media
 		width: 44px;
 		height: 36px;
 	}
+	.pub-logo--wide {
+		width: var(--logo-w);
+		padding: 5px 8px;
+	}
+	.pub-logo--sm.pub-logo--wide { padding: 4px 8px }
 </style>

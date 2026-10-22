@@ -134,6 +134,14 @@ const proof: { label: TagKey; value: TagKey }[] = [
 	{ label: "proof.teaching", value: "proof.teaching.v" },
 ];
 
+// Bande « Dans la presse » : dix médias marquants (France, Taïwan, Europe,
+// Afrique) plutôt que les 33 logos, illisibles une fois réduits. Libellés `alt`
+// de MediaLogosBand ; la liste complète des médias reste filtrable sur /publications.
+const pressLogos = [
+	"Le Monde", "Taipei Times", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
+	"African Arguments", "Libération", "CEIAS — Central European Institute of Asian Studies", "Terra Nova", "Revue Conflits",
+];
+
 const publicationsHref = getLocalePath(lang, "/publications/");
 const conseilHref = routePath("conseil", lang);
 const rechercheHref = routePath("recherche", lang);
@@ -278,7 +286,7 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 	<!-- Bande de médias -->
 	<section class="hp-press" aria-label={copy.pressLabel}>
 		<p class="hp-press-label">{copy.pressLabel}</p>
-		<MediaLogosBand />
+		<MediaLogosBand featured={pressLogos} />
 	</section>
 
 	<!-- Ce que je fais -->

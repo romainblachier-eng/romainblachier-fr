@@ -342,8 +342,9 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 	border: 0;
 	padding: 1.25rem var(--gutter) 0;
 }
-.home .hp-press .media-logos-inner { gap: 1.5rem 2.25rem }
-.home .hp-press .media-logo-item img { filter: grayscale(100%) opacity(.6) }
+.home .hp-press .media-logos-inner { gap: 1.5rem 3rem; max-width: 62rem }
+.home .hp-press .media-logo-item img { height: 34px; filter: grayscale(100%) opacity(.65) }
+.home .hp-press .media-logo-item--wide img { height: 24px }
 .home .hp-press .media-logo-item:hover img { filter: none }
 
 /* Ce que je fais */
