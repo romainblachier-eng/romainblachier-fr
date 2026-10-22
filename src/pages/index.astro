@@ -9,6 +9,7 @@ import portrait from "../assets/portrait.jpg";
 import conferencePhoto from "../assets/conference-france-taiwan-2026.jpg";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import MediaLogosBand from "../components/MediaLogosBand.astro";
+import TaiwanMissionAnnouncement from "../components/TaiwanMissionAnnouncement.astro";
 import ContactForm from "../components/ContactForm.astro";
 import TrainingLogosBand from "../components/TrainingLogosBand.astro";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -28,6 +29,7 @@ const recentPubs = allPubs.slice(0, 3);
 	</head>
 	<body>
 		<Header />
+		<TaiwanMissionAnnouncement lang="fr" variant="strip" />
 
 		<HeroGeometric
 			client:load
@@ -49,6 +51,8 @@ const recentPubs = allPubs.slice(0, 3);
 				<div class="proof-item"><dt>{t('proof.teaching')}</dt><dd>{t('proof.teaching.v')}</dd></div>
 			</dl>
 		</section>
+
+		<TaiwanMissionAnnouncement lang="fr" />
 
 		<section class="event-banner">
 			<div class="event-banner-inner event-banner-inner--trio">
