@@ -32,10 +32,11 @@ type TagKey = Parameters<typeof t>[0];
 const copy = {
 	fr: {
 		featured: [
-			{ kind: "Tribune", source: "Le Monde", text: "« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »", href: LE_MONDE, link: "Lire la tribune →" },
-			{ kind: "Article de revue", source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
-			{ kind: "Conférence", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »", href: LE_MONDE, link: "Lire la tribune →" },
+			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
 		],
+		proofLabel: "Repères",
 		pressLabel: "Dans la presse",
 		servicesOverline: "Services",
 		topicsMore: "Voir toutes les thématiques",
@@ -53,14 +54,15 @@ const copy = {
 			{ text: "Auteur, ", em: "Guillotière(s)" },
 		],
 		upcoming: (list: string[]) => `${t("references.teaching.upcoming")} ${list.join(", ")}.`,
-		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.oil", "tag.africa", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
 	},
 	en: {
 		featured: [
-			{ kind: "Op-ed", source: "Le Monde", text: "\"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet\"", href: LE_MONDE, link: "Read the op-ed (in French) →" },
-			{ kind: "Journal article", source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
-			{ kind: "Conference", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "\"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet\"", href: LE_MONDE, link: "Read the op-ed (in French) →" },
+			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
 		],
+		proofLabel: "Key facts",
 		pressLabel: "In the press",
 		servicesOverline: "Services",
 		topicsMore: "See all topics",
@@ -78,14 +80,15 @@ const copy = {
 			{ text: "Author, ", em: "Guillotière(s)" },
 		],
 		upcoming: (list: string[]) => `${t("references.teaching.upcoming")} ${list.join(", ")}.`,
-		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.oil", "tag.africa", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.renewables", "tag.sovereignty"],
 	},
 	zh: {
 		featured: [
-			{ kind: "評論", source: "《世界報》Le Monde", text: "〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉", href: LE_MONDE, link: "閱讀全文（法文）→" },
-			{ kind: "期刊論文", source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
-			{ kind: "研討會", source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.tribune"), source: "《世界報》Le Monde", text: "〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉", href: LE_MONDE, link: "閱讀全文（法文）→" },
+			{ kind: t("alaune.kind.journal"), source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
 		],
+		proofLabel: "重點",
 		pressLabel: "媒體",
 		servicesOverline: "服務",
 		topicsMore: "查看所有主題",
@@ -103,10 +106,11 @@ const copy = {
 			{ text: "著有 ", em: "Guillotière(s)" },
 		],
 		upcoming: (list: string[]) => `${t("references.teaching.upcoming")}${list.join("、")}。`,
-		topics: ["tag.energy_markets", "tag.geopolitics", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.sovereignty"],
+		topics: ["tag.energy_markets", "tag.geopolitics", "tag.oil", "tag.africa", "tag.taiwan", "tag.nuclear", "tag.transition", "tag.sovereignty"],
 	},
 }[lang] as {
 	featured: { kind: string; source: string; text: string; href: string; link: string }[];
+	proofLabel: string;
 	pressLabel: string;
 	servicesOverline: string;
 	topicsMore: string;
@@ -121,6 +125,13 @@ const moreTopics: TagKey[] = [
 	"tag.hydro", "tag.public_affairs", "tag.institutional", "tag.european_politics",
 	"tag.political_systems", "tag.crisis_comms", "tag.religion", "tag.local_gov",
 	"tag.digital_comms", "tag.ai_teaching", "tag.cultural_diplomacy", "tag.scientific_coop",
+];
+
+const proof: { label: TagKey; value: TagKey }[] = [
+	{ label: "proof.media", value: "proof.media.v" },
+	{ label: "proof.afdb", value: "proof.afdb.v" },
+	{ label: "proof.jaures", value: "proof.jaures.v" },
+	{ label: "proof.teaching", value: "proof.teaching.v" },
 ];
 
 const publicationsHref = getLocalePath(lang, "/publications/");
@@ -194,6 +205,17 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 				</figcaption>
 			</figure>
 		</div>
+		<!-- Repères : quatre preuves lisibles avant tout défilement. -->
+		<section class="hp-wrap hp-proof" aria-label={copy.proofLabel}>
+			<dl>
+				{proof.map((p) => (
+					<div>
+						<dt>{t(p.label)}</dt>
+						<dd>{t(p.value)}</dd>
+					</div>
+				))}
+			</dl>
+		</section>
 	</section>
 
 	<!-- À la une -->

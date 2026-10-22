@@ -193,6 +193,35 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 	flex-shrink: 0;
 }
 
+/* Repères sous le hero */
+.hp-proof { margin-top: clamp(2.5rem, 5vw, 4rem) }
+.hp-proof dl {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.25rem 2.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--line);
+}
+.hp-proof dt {
+	margin-bottom: .35rem;
+	font-size: .7rem;
+	font-weight: 600;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	color: var(--accent-warm);
+}
+.hp-proof dd {
+	font-size: .92rem;
+	line-height: 1.45;
+	color: var(--ink);
+}
+@media (max-width: 900px) {
+	.hp-proof dl { grid-template-columns: 1fr 1fr }
+}
+@media (max-width: 520px) {
+	.hp-proof dl { grid-template-columns: 1fr; gap: 1rem }
+}
+
 /* À la une */
 .hp-featured { padding-top: 0 }
 .hp-featured .hp-head { margin-bottom: 1.25rem }
