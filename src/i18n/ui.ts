@@ -45,7 +45,7 @@ export const ui = {
 		'services.expertise.title': "J'expertise",
 		'services.expertise.desc': "Missions courtes auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Expert référencé auprès de la Banque africaine de développement. Le principe est toujours le même : partir de leurs dossiers.",
 		'services.research.title': 'Je réfléchis',
-		'services.research.desc': "Expert associé à la Fondation Jean-Jaurès, je prépare en parallèle une thèse à l'Université Lyon 2 sur la gouvernance de la transition électrique. C'est la partie lente, celle qui prend des années.",
+		'services.research.desc': "Expert associé à la Fondation Jean-Jaurès, je mène en parallèle des recherches sur la gouvernance de la transition électrique, publiées dans des revues à comité de lecture comme La Revue de l'Énergie. C'est la partie lente, celle qui prend des années.",
 		// Formateur section
 		'formateur.overline': 'Expertise & formation',
 		'formateur.title': 'Former et enseigner depuis 2010',
@@ -200,7 +200,7 @@ export const ui = {
 		'services.expertise.title': 'I advise',
 		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Listed expert with the African Development Bank. The principle never changes: start from their own files.",
 		'services.research.title': 'I research',
-		'services.research.desc': "An associate fellow at the Fondation Jean-Jaurès, I am also preparing a doctoral thesis at Université Lyon 2 on the governance of the electricity transition. This is the slow part, the one that takes years.",
+		'services.research.desc': "An associate fellow at the Fondation Jean-Jaurès, I also research the governance of the electricity transition, with work published in peer-reviewed journals such as La Revue de l'Énergie. This is the slow part, the one that takes years.",
 		// Trainer section
 		'formateur.overline': 'Expertise & training',
 		'formateur.title': 'Training and teaching since 2010',
@@ -358,7 +358,7 @@ export const ui = {
 		'services.expertise.title': '我提供專業意見',
 		'services.expertise.desc': "為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。非洲開發銀行登錄專家。原則始終相同：從對方手上的案子出發。",
 		'services.research.title': '我持續研究',
-		'services.research.desc': '身為讓·饒勒斯基金會副研究員，我同時在里昂第二大學準備關於電力轉型治理的博士論文。這是最慢的部分，需要好幾年。',
+		'services.research.desc': '身為讓·饒勒斯基金會副研究員，我同時研究電力轉型的治理，成果發表於《能源評論》（La Revue de l\'Énergie）等同行評審期刊。這是最慢的部分，需要好幾年。',
 		// Formateur section
 		'formateur.overline': '專業與培訓',
 		'formateur.title': '自 2010 年起教學與培訓',
