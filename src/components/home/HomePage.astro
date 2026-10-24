@@ -8,6 +8,7 @@ import { Image } from "astro:assets";
 import portrait from "../../assets/portrait.jpg";
 import conferencePhoto from "../../assets/conference-france-taiwan-2026.jpg";
 import MediaLogosBand from "../MediaLogosBand.astro";
+import TaiwanMissionAnnouncement from "../TaiwanMissionAnnouncement.astro";
 import ContactForm from "../ContactForm.astro";
 import TrainingLogosBand from "../TrainingLogosBand.astro";
 import FormattedDate from "../FormattedDate.astro";
@@ -26,7 +27,7 @@ const recentPubs = (await getPublications(lang)).slice(0, 3);
 
 const LE_MONDE = "https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html";
 const CAIRN = "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr";
-const MEDEF = "https://event.medefinternational.fr/28eme-conference-france-taiwan-de-cooperation-economique-g520";
+const AIEE = "https://www.aieesymposium.eu/";
 
 type TagKey = Parameters<typeof t>[0];
 const copy = {
@@ -34,7 +35,7 @@ const copy = {
 		featured: [
 			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »", href: LE_MONDE, link: "Lire la tribune →" },
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
-			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
 		proofLabel: "Repères",
 		pressLabel: "Dans la presse",
@@ -48,7 +49,7 @@ const copy = {
 			"Consultant référencé, Banque asiatique de développement (depuis 2026)",
 		],
 		culture: [
-			{ text: "Président, Association France-Formosa (depuis 2012) — deux missions officielles à Taïwan, 2019 et 2025" },
+			{ text: "Président, Association France-Formosa (depuis 2012) — dix séjours à Taïwan, dont quatre à l'invitation du ministère des Affaires étrangères" },
 			{ text: "Administrateur, Mediatone / Reperkusound" },
 			{ text: "Auteur, ", em: "Guillotière(s)" },
 		],
@@ -59,7 +60,7 @@ const copy = {
 		featured: [
 			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "\"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet\"", href: LE_MONDE, link: "Read the op-ed (in French) →" },
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
-			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
 		proofLabel: "Key facts",
 		pressLabel: "In the press",
@@ -73,7 +74,7 @@ const copy = {
 			"Registered consultant, Asian Development Bank (since 2026)",
 		],
 		culture: [
-			{ text: "President, Association France-Formosa (since 2012) — two official missions to Taiwan, 2019 and 2025" },
+			{ text: "President, Association France-Formosa (since 2012) — ten trips to Taiwan, four of them at the invitation of the Ministry of Foreign Affairs" },
 			{ text: "Board member, Mediatone / Reperkusound" },
 			{ text: "Author, ", em: "Guillotière(s)" },
 		],
@@ -84,7 +85,7 @@ const copy = {
 		featured: [
 			{ kind: t("alaune.kind.tribune"), source: "《世界報》Le Monde", text: "〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉", href: LE_MONDE, link: "閱讀全文（法文）→" },
 			{ kind: t("alaune.kind.journal"), source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
-			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: MEDEF, link: t("alaune.conference.link") },
+			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
 		proofLabel: "重點",
 		pressLabel: "媒體",
@@ -98,7 +99,7 @@ const copy = {
 			"亞洲開發銀行顧問名冊（2026 年起）",
 		],
 		culture: [
-			{ text: "法國福爾摩沙協會（France-Formosa）會長，2012 年起；2019 年與 2025 年兩度赴台執行官方任務" },
+			{ text: "法國福爾摩沙協會（France-Formosa）會長，2012 年起；十度赴台，其中四次應外交部邀請" },
 			{ text: "Mediatone / Reperkusound 理事" },
 			{ text: "著有 ", em: "Guillotière(s)" },
 		],
@@ -175,6 +176,9 @@ const stats = [
 const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 ---
 
+<!-- Mission à Taïwan (23 octobre – 1er novembre 2026) : barre sous l'en-tête, visible sans défiler. -->
+<TaiwanMissionAnnouncement lang={lang} variant="strip" />
+
 <main class="home">
 	<!-- Hero -->
 	<section class="hp-hero">
@@ -222,6 +226,9 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 			</dl>
 		</section>
 	</section>
+
+	<!-- Mission à Taïwan : entre les Repères et « À la une ». -->
+	<TaiwanMissionAnnouncement lang={lang} />
 
 	<!-- À la une -->
 	<section class="hp-section hp-featured" aria-labelledby="hp-featured-title">

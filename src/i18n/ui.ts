@@ -21,8 +21,8 @@ export const ui = {
 		'hero.cta': 'Me contacter',
 		'proof.media': 'Tribunes et analyses',
 		'proof.media.v': 'Le Monde, Le Temps, Taipei Times, La Revue de l’Énergie',
-		'proof.afdb': 'Expert référencé',
-		'proof.afdb.v': 'Banque africaine de développement',
+		'proof.afdb': 'Expert et consultant référencé',
+		'proof.afdb.v': 'Banques africaine et asiatique de développement',
 		'proof.jaures': 'Expert associé',
 		'proof.jaures.v': 'Fondation Jean-Jaurès · Plateforme RSE, France Stratégie',
 		'proof.teaching': 'Enseignement',
@@ -31,7 +31,7 @@ export const ui = {
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique passent pour des sujets d'experts. Mon travail consiste à les rendre lisibles et utilisables : devant des étudiants, pour une rédaction qui boucle, ou face à une équipe de direction qui doit trancher.",
-		'about.p2': "Cette lecture vient de la pratique : dix-huit ans dans l'électricité renouvelable, douze ans de mandat à la Ville puis à la Métropole de Lyon, des terrains au Cameroun, au Cambodge, en Ukraine et à Taïwan, où je me suis rendu deux fois en mission officielle sur invitation du ministère des Affaires étrangères (2019 et 2025).",
+		'about.p2': "Cette lecture vient de la pratique : dix-huit ans dans l'électricité renouvelable, douze ans de mandat à la Ville puis à la Métropole de Lyon, des terrains au Cameroun, au Cambodge, en Ukraine et à Taïwan, où je me suis rendu dix fois, dont quatre à l'invitation du ministère des Affaires étrangères.",
 		'about.p3': "Je publie en France et à l'international, du Monde au Taipei Times, de La Revue de l'Énergie à la presse camerounaise : la rente pétrolière des Émirats, le nucléaire français face aux canicules, la souveraineté électrique de Taïwan, l'électricité en Afrique centrale. Ce qui se voit sur le terrain finit en cours, puis en article, et l'article donne généralement envie d'y retourner.",
 		'about.more': 'Parcours complet →',
 		// Services
@@ -43,7 +43,7 @@ export const ui = {
 		'services.writing.title': "J'écris",
 		'services.writing.desc': "Analyses et tribunes dans Le Monde, Le Temps, Slate, le Taipei Times ou La Revue de l'Énergie, notes pour think tanks, chroniques radio et télévision. Pétrole et OPEP+, détroits, nucléaire, systèmes électriques africains, Taïwan. C'est là que je teste ce que je crois avoir compris.",
 		'services.expertise.title': "J'expertise",
-		'services.expertise.desc': "Missions courtes auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Expert référencé auprès de la Banque africaine de développement. Le principe est toujours le même : partir de leurs dossiers.",
+		'services.expertise.desc': "Missions courtes auprès d'institutions et d'organisations : diagnostic de secteur, note de cadrage, appui à la concertation, communication institutionnelle et de crise. Expert référencé auprès de la Banque africaine de développement, consultant inscrit au registre de la Banque asiatique de développement. Le principe est toujours le même : partir de leurs dossiers.",
 		'services.research.title': 'Je réfléchis',
 		'services.research.desc': "Expert associé à la Fondation Jean-Jaurès, je mène en parallèle des recherches sur la gouvernance de la transition électrique, publiées dans des revues à comité de lecture comme La Revue de l'Énergie. C'est la partie lente, celle qui prend des années.",
 		// Formateur section
@@ -71,10 +71,10 @@ export const ui = {
 		'alaune.overline': 'À la une',
 		'alaune.kind.tribune': 'Tribune',
 		'alaune.kind.journal': 'Revue à comité de lecture',
-		'alaune.kind.conference': 'Conférence',
-		'alaune.conference.title': 'Conférence France–Taïwan',
-		'alaune.conference.topic': "« Sécurité énergétique et géopolitique », 28e conférence France–Taïwan de coopération économique (MEDEF International, CIECA), Paris, 10 septembre 2026, aux côtés de Taipower.",
-		'alaune.conference.link': 'Le programme →',
+		'alaune.kind.conference': 'Colloque',
+		'alaune.conference.title': 'AIEE Energy Symposium, Turin',
+		'alaune.conference.topic': "« Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates », communication retenue par le comité scientifique du 10e AIEE Energy Symposium (Association italienne des économistes de l'énergie, Université de Turin), 25-26 novembre 2026.",
+		'alaune.conference.link': 'Le symposium →',
 		// Thématiques
 		'topics.title': "Thématiques traitées",
 		// References
@@ -176,8 +176,8 @@ export const ui = {
 		'hero.cta': 'Get in touch',
 		'proof.media': 'Op-eds and analysis',
 		'proof.media.v': 'Le Monde, Le Temps, Taipei Times, La Revue de l’Énergie',
-		'proof.afdb': 'Listed expert',
-		'proof.afdb.v': 'African Development Bank',
+		'proof.afdb': 'Listed expert and consultant',
+		'proof.afdb.v': 'African and Asian Development Banks',
 		'proof.jaures': 'Associate fellow',
 		'proof.jaures.v': 'Fondation Jean-Jaurès · CSR Platform, France Stratégie',
 		'proof.teaching': 'Teaching',
@@ -186,7 +186,7 @@ export const ui = {
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics are treated as expert territory. My work is to make them readable and usable: in front of students, for a newsroom on deadline, or for an executive team that has to decide.",
-		'about.p2': "That reading comes from practice: eighteen years in renewable electricity, twelve years in elected office in the City and then the Metropolitan area of Lyon, and fieldwork in Cameroon, Cambodia, Ukraine and Taiwan, where I have twice travelled on official missions at the invitation of the Ministry of Foreign Affairs (2019 and 2025).",
+		'about.p2': "That reading comes from practice: eighteen years in renewable electricity, twelve years in elected office in the City and then the Metropolitan area of Lyon, and fieldwork in Cameroon, Cambodia, Ukraine and Taiwan, which I have visited ten times, four of them at the invitation of the Ministry of Foreign Affairs.",
 		'about.p3': "I publish in France and abroad, from Le Monde to the Taipei Times, from La Revue de l'Énergie to the Cameroonian press: the Emirates' oil rent, French nuclear power in a heatwave, Taiwan's electric sovereignty, electricity in Central Africa. What I see in the field ends up in a lecture, then in an article, and the article usually makes me want to go back.",
 		'about.more': 'Full background →',
 		// Services
@@ -198,7 +198,7 @@ export const ui = {
 		'services.writing.title': 'I write',
 		'services.writing.desc': "Analysis and op-eds in Le Monde, Le Temps, Slate, the Taipei Times or La Revue de l'Énergie, think-tank papers, radio and television commentary. Oil and OPEC+, straits, nuclear power, African power systems, Taiwan. This is where I test what I think I have understood.",
 		'services.expertise.title': 'I advise',
-		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Listed expert with the African Development Bank. The principle never changes: start from their own files.",
+		'services.expertise.desc': "Short assignments for institutions and organizations: sector diagnosis, scoping papers, stakeholder consultation, institutional and crisis communications. Listed expert with the African Development Bank and registered consultant with the Asian Development Bank. The principle never changes: start from their own files.",
 		'services.research.title': 'I research',
 		'services.research.desc': "An associate fellow at the Fondation Jean-Jaurès, I also research the governance of the electricity transition, with work published in peer-reviewed journals such as La Revue de l'Énergie. This is the slow part, the one that takes years.",
 		// Trainer section
@@ -226,10 +226,10 @@ export const ui = {
 		'alaune.overline': 'Featured',
 		'alaune.kind.tribune': 'Op-ed',
 		'alaune.kind.journal': 'Peer-reviewed journal',
-		'alaune.kind.conference': 'Conference',
-		'alaune.conference.title': 'France–Taiwan Conference',
-		'alaune.conference.topic': "\"Energy security and geopolitics\", 28th France–Taiwan Economic Cooperation Conference (MEDEF International, CIECA), Paris, 10 September 2026, alongside Taipower.",
-		'alaune.conference.link': 'Programme →',
+		'alaune.kind.conference': 'Symposium',
+		'alaune.conference.title': 'AIEE Energy Symposium, Turin',
+		'alaune.conference.topic': "\"Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates\", paper accepted by the scientific committee of the 10th AIEE Energy Symposium (Italian Association of Energy Economists, University of Turin), 25–26 November 2026.",
+		'alaune.conference.link': 'The symposium →',
 		// Topics
 		'topics.title': 'Topics covered',
 		// References
@@ -331,8 +331,8 @@ export const ui = {
 		'hero.cta': '與我聯絡',
 		'proof.media': '評論與分析',
 		'proof.media.v': '《世界報》、《時代報》、《台北時報》、《能源評論》',
-		'proof.afdb': '登錄專家',
-		'proof.afdb.v': '非洲開發銀行',
+		'proof.afdb': '登錄專家與顧問',
+		'proof.afdb.v': '非洲開發銀行 · 亞洲開發銀行',
 		'proof.jaures': '副研究員',
 		'proof.jaures.v': '讓·饒勒斯基金會 · 法國戰略署企業社會責任平台',
 		'proof.teaching': '教學',
@@ -341,7 +341,7 @@ export const ui = {
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治常被當成專家的領域。我的工作是讓它們讀得懂、用得上：面對學生、面對趕稿的編輯部，或面對必須做決定的管理團隊。',
-		'about.p2': "這樣的判讀來自實作：在再生能源電力領域十八年，先後在里昂市與大里昂都會區擔任民選代表十二年，並在喀麥隆、柬埔寨、烏克蘭與台灣進行田野工作；曾應外交部邀請兩度赴台執行官方任務（2019 年與 2025 年）。",
+		'about.p2': "這樣的判讀來自實作：在再生能源電力領域十八年，先後在里昂市與大里昂都會區擔任民選代表十二年，並在喀麥隆、柬埔寨、烏克蘭與台灣進行田野工作；曾十度赴台，其中四次應外交部邀請。",
 		'about.p3': "我在法國與海外發表文章：從《世界報》到《台北時報》，從《能源評論》到喀麥隆媒體，題目包括阿聯的石油租金、熱浪下的法國核電、台灣的電力主權、中部非洲的電力。田野裡看到的東西會進入課堂，接著寫成文章；而文章通常又讓我想再回去看一次。",
 		'about.more': '完整經歷 →',
 		// Services
@@ -356,7 +356,7 @@ export const ui = {
 		'services.writing.title': '我寫作',
 		'services.writing.desc': "在《世界報》、《時代報》、Slate、《台北時報》或《能源評論》發表分析與評論，為智庫撰寫研究短文，並在廣播與電視擔任評論。石油與 OPEC+、海峽、核電、非洲電力系統、台灣。這是我檢驗自己是否真的想清楚的地方。",
 		'services.expertise.title': '我提供專業意見',
-		'services.expertise.desc': "為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。非洲開發銀行登錄專家。原則始終相同：從對方手上的案子出發。",
+		'services.expertise.desc': "為機構與組織承接短期工作：部門診斷、框架報告、利害關係人協商、機構傳播與危機傳播。非洲開發銀行登錄專家、亞洲開發銀行登錄顧問。原則始終相同：從對方手上的案子出發。",
 		'services.research.title': '我持續研究',
 		'services.research.desc': '身為讓·饒勒斯基金會副研究員，我同時研究電力轉型的治理，成果發表於《能源評論》（La Revue de l\'Énergie）等同行評審期刊。這是最慢的部分，需要好幾年。',
 		// Formateur section
@@ -381,10 +381,10 @@ export const ui = {
 		'alaune.overline': '焦點',
 		'alaune.kind.tribune': '評論',
 		'alaune.kind.journal': '同儕審查期刊',
-		'alaune.kind.conference': '會議',
-		'alaune.conference.title': '臺法經濟合作會議',
-		'alaune.conference.topic': '〈能源安全與地緣政治〉，第 28 屆臺法經濟合作會議（MEDEF International、CIECA），巴黎，2026 年 9 月 10 日，與台灣電力公司同場發表。',
-		'alaune.conference.link': '會議議程 →',
+		'alaune.kind.conference': '研討會',
+		'alaune.conference.title': 'AIEE 能源研討會，杜林',
+		'alaune.conference.topic': '〈Political Grammars of Energy Security: France, Taiwan and the United Arab Emirates〉（能源安全的政治語法：法國、臺灣與阿拉伯聯合大公國），獲第 10 屆 AIEE 能源研討會學術委員會錄取（義大利能源經濟學會、杜林大學），2026 年 11 月 25–26 日。',
+		'alaune.conference.link': '研討會網站 →',
 		// Topics
 		'topics.title': '涵蓋主題',
 		// References
