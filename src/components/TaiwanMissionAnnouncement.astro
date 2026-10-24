@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import mofaSeal from '../assets/mofa-taiwan-cachet.png';
+
 interface Props {
 	lang: 'fr' | 'en' | 'zh';
 	// 'strip' : barre fine sous l'en-tête, visible sans défiler, qui renvoie à la section.
@@ -10,14 +13,16 @@ const { lang, variant = 'section' } = Astro.props;
 // Sources : annonce rédigée par Romain Blachier (22 octobre 2026) ; dates de Kinmen (25-26 octobre),
 // nom du groupe (« politique et économique ») et réception du 28 octobre : échanges avec le MOFA.
 // Chiffres : tribune Taipei Times du 21 octobre 2026.
+// Cachet : logo officiel du MOFA (en.mofa.gov.tw), utilisé avec l'accord du ministère (24 octobre 2026).
 const copy = {
 	fr: {
 		strip: 'Du 23 octobre au 1er novembre, je suis à Taïwan à l’invitation du ministère des Affaires étrangères.',
 		stripLink: 'Énergie, Kinmen, rencontres',
 		label: 'Mission à Taïwan',
+		sealAlt: 'Cachet du ministère des Affaires étrangères de la République de Chine (Taïwan)',
 		dateline: 'Taipei et Kinmen · 23 octobre – 1er novembre 2026',
 		title: 'Invité à Taïwan par le ministère des Affaires étrangères',
-		lead: 'Du 25 au 30 octobre, je fais partie de la Délégation de leaders d’opinion européens et de chercheurs reçue par le ministère : quatorze personnalités venues de toute l’Europe. J’appartiens à son groupe politique et économique. C’est ma troisième invitation à ce titre.',
+		lead: 'Du 25 au 30 octobre, je fais partie de la Délégation de leaders d’opinion européens et de chercheurs reçue par le ministère : quatorze personnalités venues de toute l’Europe. J’appartiens à son groupe politique et économique. C’est la quatrième fois que le ministère m’invite, et mon dixième séjour à Taïwan.',
 		kinmen: 'Le programme s’ouvre à Kinmen, archipel taïwanais situé à une dizaine de kilomètres de Xiamen et à 187 kilomètres des côtes de l’île de Taïwan. Mon prochain article de recherche, accepté par la revue Flux, porte sur son approvisionnement électrique.',
 		research: 'J’arrive dès le 23 octobre et repars le 1er novembre, pour rencontrer en marge du programme des chercheuses et chercheurs et des responsables du secteur de l’énergie.',
 		contact: 'Me proposer une rencontre à Taipei',
@@ -40,9 +45,10 @@ const copy = {
 		strip: 'From 23 October to 1 November, I am in Taiwan at the invitation of the Ministry of Foreign Affairs.',
 		stripLink: 'Energy, Kinmen, meetings',
 		label: 'Mission to Taiwan',
+		sealAlt: 'Seal of the Ministry of Foreign Affairs, Republic of China (Taiwan)',
 		dateline: 'Taipei and Kinmen · 23 October – 1 November 2026',
 		title: 'Invited to Taiwan by the Ministry of Foreign Affairs',
-		lead: 'From 25 to 30 October, I am part of the European Opinion Leaders Delegation hosted by the Ministry: fourteen opinion leaders and researchers from across Europe. I belong to its political and economic group. This is my third invitation in this capacity.',
+		lead: 'From 25 to 30 October, I am part of the European Opinion Leaders Delegation hosted by the Ministry: fourteen opinion leaders and researchers from across Europe. I belong to its political and economic group. This is the fourth time the Ministry has invited me, and my tenth trip to Taiwan.',
 		kinmen: 'The programme opens on Kinmen, the Taiwanese archipelago some ten kilometres from Xiamen and 187 kilometres from the coast of Taiwan proper. My next research article, accepted by the journal Flux, deals with its electricity supply.',
 		research: 'I arrive on 23 October and leave on 1 November, to meet researchers and energy-sector leaders alongside the official programme.',
 		contact: 'Suggest a meeting in Taipei',
@@ -65,9 +71,10 @@ const copy = {
 		strip: '10 月 23 日至 11 月 1 日，我應外交部邀請訪問台灣。',
 		stripLink: '能源、金門、會面',
 		label: '訪台行程',
+		sealAlt: '中華民國外交部徽章',
 		dateline: '台北、金門 · 2026 年 10 月 23 日至 11 月 1 日',
 		title: '應外交部邀請訪問台灣',
-		lead: '10 月 25 日至 30 日，我參加外交部接待的歐洲意見領袖訪問團，成員為來自歐洲各地的十四位意見領袖與研究人員。我屬於訪問團的政治經濟組。這是我第三次以此身分受邀訪台。',
+		lead: '10 月 25 日至 30 日，我參加外交部接待的歐洲意見領袖訪問團，成員為來自歐洲各地的十四位意見領袖與研究人員。我屬於訪問團的政治經濟組。這是我第四次應外交部邀請、第十次訪台。',
 		kinmen: '行程從金門開始。金門距廈門約十公里，距台灣本島海岸 187 公里。我的下一篇研究論文已獲期刊《Flux》接受，主題正是金門的電力供應。',
 		research: '我 10 月 23 日抵達、11 月 1 日離開，在正式行程之外與研究人員及能源業界人士會面。',
 		contact: '在台北與我約見',
@@ -101,8 +108,13 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 <section class="mission" id="mission-taiwan" aria-labelledby="mission-title">
 	<div class="mission-inner">
 		<div class="mission-main">
-			<p class="mission-label">{copy.label}</p>
-			<p class="mission-dateline">{copy.dateline}</p>
+			<div class="mission-head">
+				<Image src={mofaSeal} alt={copy.sealAlt} height={88} densities={[1, 2]} class="mission-seal" />
+				<div>
+					<p class="mission-label">{copy.label}</p>
+					<p class="mission-dateline">{copy.dateline}</p>
+				</div>
+			</div>
 			<h2 id="mission-title">{copy.title}</h2>
 			<p class="mission-lead">{copy.lead}</p>
 			<p>{copy.kinmen}</p>
@@ -188,6 +200,8 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 		letter-spacing: .06em;
 		text-transform: uppercase;
 	}
+	.mission-head { display: flex; align-items: center; gap: 1.1rem; }
+	.mission-seal { flex: none; width: auto; height: 88px; }
 	.mission-dateline { margin-top: .9rem; font-size: .9rem; font-weight: 500; color: var(--ink); }
 	h2 {
 		margin-top: .6rem;
@@ -274,6 +288,8 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 		.mission-strip p { padding: .6rem 1rem; font-size: .85rem; }
 		.mission { padding: 2.25rem 1rem; scroll-margin-top: 9rem; }
 		h2 { font-size: 1.9rem; }
+		.mission-head { gap: .9rem; }
+		.mission-seal { height: 68px; }
 		.mission-energy, .mission-programme { padding: 1.2rem 1.1rem; }
 		.mission-stats { gap: .75rem; }
 		.mission-stats dt { font-size: 1.4rem; }

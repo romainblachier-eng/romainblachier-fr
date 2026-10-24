@@ -28,7 +28,7 @@ export const ui = {
 		// About
 		'about.title': 'À propos',
 		'about.p1': "L'énergie et la géopolitique passent pour des sujets d'experts. Mon travail consiste à les rendre lisibles et utilisables : devant des étudiants, pour une rédaction qui boucle, ou face à une équipe de direction qui doit trancher.",
-		'about.p2': "Cette lecture vient de la pratique : dix-huit ans dans l'électricité renouvelable, douze ans de mandat à la Ville puis à la Métropole de Lyon, des terrains au Cameroun, au Cambodge, en Ukraine et à Taïwan, où je me suis rendu deux fois en mission officielle sur invitation du ministère des Affaires étrangères (2019 et 2025).",
+		'about.p2': "Cette lecture vient de la pratique : dix-huit ans dans l'électricité renouvelable, douze ans de mandat à la Ville puis à la Métropole de Lyon, des terrains au Cameroun, au Cambodge, en Ukraine et à Taïwan, où je me suis rendu dix fois, dont quatre à l'invitation du ministère des Affaires étrangères.",
 		'about.p3': "Je publie en France et à l'international, du Monde au Taipei Times, de La Revue de l'Énergie à la presse camerounaise : la rente pétrolière des Émirats, le nucléaire français face aux canicules, la souveraineté électrique de Taïwan, l'électricité en Afrique centrale. Ce qui se voit sur le terrain finit en cours, puis en article, et l'article donne généralement envie d'y retourner.",
 		'about.more': 'Parcours complet →',
 		// Services
@@ -180,7 +180,7 @@ export const ui = {
 		// About
 		'about.title': 'About',
 		'about.p1': "Energy and geopolitics are treated as expert territory. My work is to make them readable and usable: in front of students, for a newsroom on deadline, or for an executive team that has to decide.",
-		'about.p2': "That reading comes from practice: eighteen years in renewable electricity, twelve years in elected office in the City and then the Metropolitan area of Lyon, and fieldwork in Cameroon, Cambodia, Ukraine and Taiwan, where I have twice travelled on official missions at the invitation of the Ministry of Foreign Affairs (2019 and 2025).",
+		'about.p2': "That reading comes from practice: eighteen years in renewable electricity, twelve years in elected office in the City and then the Metropolitan area of Lyon, and fieldwork in Cameroon, Cambodia, Ukraine and Taiwan, which I have visited ten times, four of them at the invitation of the Ministry of Foreign Affairs.",
 		'about.p3': "I publish in France and abroad, from Le Monde to the Taipei Times, from La Revue de l'Énergie to the Cameroonian press: the Emirates' oil rent, French nuclear power in a heatwave, Taiwan's electric sovereignty, electricity in Central Africa. What I see in the field ends up in a lecture, then in an article, and the article usually makes me want to go back.",
 		'about.more': 'Full background →',
 		// Services
@@ -332,7 +332,7 @@ export const ui = {
 		// About
 		'about.title': '關於',
 		'about.p1': '能源與地緣政治常被當成專家的領域。我的工作是讓它們讀得懂、用得上：面對學生、面對趕稿的編輯部，或面對必須做決定的管理團隊。',
-		'about.p2': "這樣的判讀來自實作：在再生能源電力領域十八年，先後在里昂市與大里昂都會區擔任民選代表十二年，並在喀麥隆、柬埔寨、烏克蘭與台灣進行田野工作；曾應外交部邀請兩度赴台執行官方任務（2019 年與 2025 年）。",
+		'about.p2': "這樣的判讀來自實作：在再生能源電力領域十八年，先後在里昂市與大里昂都會區擔任民選代表十二年，並在喀麥隆、柬埔寨、烏克蘭與台灣進行田野工作；曾十度赴台，其中四次應外交部邀請。",
 		'about.p3': "我在法國與海外發表文章：從《世界報》到《台北時報》，從《能源評論》到喀麥隆媒體，題目包括阿聯的石油租金、熱浪下的法國核電、台灣的電力主權、中部非洲的電力。田野裡看到的東西會進入課堂，接著寫成文章；而文章通常又讓我想再回去看一次。",
 		'about.more': '完整經歷 →',
 		// Services
