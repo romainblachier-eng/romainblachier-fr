@@ -7,19 +7,19 @@ interface Props {
 
 const { lang, variant = 'section' } = Astro.props;
 // Mission du 23 octobre au 1er novembre 2026 : à retirer ou à passer au passé après le 1er novembre.
-// Sources : annonce rédigée par Romain Blachier (22 octobre 2026) ; dates de Kinmen (25-26 octobre),
-// nom du groupe (« politique et économique ») et réception du 28 octobre : échanges avec le MOFA.
-// Chiffres : tribune Taipei Times du 21 octobre 2026.
+// Contenu volontairement vague à la demande de Romain (26 octobre 2026) : nom officiel de la
+// délégation conservé, mais ni programme daté, ni effectif, ni interlocuteur nommé.
+// Sources : Romain Blachier (22 et 26 octobre 2026) ; thème IA et drones : forum du programme
+// (échanges avec le MOFA). Chiffres : tribune Taipei Times du 21 octobre 2026.
 const copy = {
 	fr: {
-		strip: 'Du 23 octobre au 1er novembre, je suis à Taïwan à l’invitation du ministère des Affaires étrangères.',
+		strip: 'Du 23 octobre au 1er novembre, je suis à Taïwan, sélectionné par le ministère des Affaires étrangères pour sa délégation d’experts et de personnalités européennes.',
 		stripLink: 'Énergie, Kinmen, rencontres',
 		label: 'Mission à Taïwan',
 		dateline: 'Taipei et Kinmen · 23 octobre – 1er novembre 2026',
 		title: 'Invité à Taïwan par le ministère des Affaires étrangères',
-		lead: 'Du 25 au 30 octobre, je fais partie de la Délégation de leaders d’opinion européens et de chercheurs reçue par le ministère : quatorze personnalités venues de toute l’Europe. J’appartiens à son groupe politique et économique. C’est ma troisième invitation à ce titre.',
-		kinmen: 'Le programme s’ouvre à Kinmen, archipel taïwanais situé à une dizaine de kilomètres de Xiamen et à 187 kilomètres des côtes de l’île de Taïwan. Mon prochain article de recherche, accepté par la revue Flux, porte sur son approvisionnement électrique.',
-		research: 'J’arrive dès le 23 octobre et repars le 1er novembre, pour rencontrer en marge du programme des chercheuses et chercheurs et des responsables du secteur de l’énergie.',
+		lead: 'Le ministère m’a sélectionné pour sa Délégation de leaders d’opinion européens et de chercheurs, qui réunit des experts et des personnalités de toute l’Europe. C’est ma troisième invitation officielle.',
+		body: 'Le programme nous conduit auprès de ministres, d’acteurs économiques et de chercheurs taïwanais, jusqu’à Kinmen, l’archipel en première ligne face à Xiamen. Les échanges portent notamment sur la coopération entre Taïwan et l’Europe dans l’intelligence artificielle et les drones. J’y porte pour ma part la question de la sécurité énergétique d’une île qui importe la quasi-totalité de son énergie.',
 		contact: 'Me proposer une rencontre à Taipei',
 		energyTitle: 'L’énergie de Taïwan',
 		stats: [
@@ -29,22 +29,15 @@ const copy = {
 		],
 		energyNote: 'Dans le Taipei Times du 21 octobre, je plaide pour une réserve stratégique inscrite au budget national et pour un travail commun avec les opérateurs européens de réseaux et de stockage de gaz.',
 		energyLink: 'Lire la tribune',
-		programmeTitle: 'Au programme',
-		programme: [
-			{ date: '25-26 oct.', text: 'Kinmen' },
-			{ date: '27 oct.', text: 'Forum « La technologie fiable et démocratique » : coopération entre Taïwan et l’Europe dans l’intelligence artificielle et les drones' },
-			{ date: '28 oct.', text: 'Réception par le vice-ministre des Affaires étrangères François Wu (吳志中), ancien représentant de Taïwan en France' },
-		],
 	},
 	en: {
-		strip: 'From 23 October to 1 November, I am in Taiwan at the invitation of the Ministry of Foreign Affairs.',
+		strip: 'From 23 October to 1 November, I am in Taiwan, selected by the Ministry of Foreign Affairs for its delegation of European experts and public figures.',
 		stripLink: 'Energy, Kinmen, meetings',
 		label: 'Mission to Taiwan',
 		dateline: 'Taipei and Kinmen · 23 October – 1 November 2026',
 		title: 'Invited to Taiwan by the Ministry of Foreign Affairs',
-		lead: 'From 25 to 30 October, I am part of the European Opinion Leaders Delegation hosted by the Ministry: fourteen opinion leaders and researchers from across Europe. I belong to its political and economic group. This is my third invitation in this capacity.',
-		kinmen: 'The programme opens on Kinmen, the Taiwanese archipelago some ten kilometres from Xiamen and 187 kilometres from the coast of Taiwan proper. My next research article, accepted by the journal Flux, deals with its electricity supply.',
-		research: 'I arrive on 23 October and leave on 1 November, to meet researchers and energy-sector leaders alongside the official programme.',
+		lead: 'The Ministry selected me for its European Opinion Leaders Delegation, which brings together experts and public figures from across Europe. This is my third official invitation.',
+		body: 'The programme takes us to meet Taiwanese ministers, business leaders and researchers, all the way to Kinmen, the archipelago on the front line facing Xiamen. Discussions cover, among other things, Taiwan–Europe cooperation on artificial intelligence and drones. My own focus is the energy security of an island that imports almost all of its energy.',
 		contact: 'Suggest a meeting in Taipei',
 		energyTitle: 'Taiwan’s energy',
 		stats: [
@@ -54,22 +47,15 @@ const copy = {
 		],
 		energyNote: 'In the Taipei Times of 21 October, I argue for a strategic reserve written into the national budget and for joint work with European gas grid and storage operators.',
 		energyLink: 'Read the op-ed',
-		programmeTitle: 'Programme',
-		programme: [
-			{ date: '25–26 Oct', text: 'Kinmen' },
-			{ date: '27 Oct', text: 'Forum on trustworthy and democratic technology: Taiwan–Europe cooperation in artificial intelligence and drones' },
-			{ date: '28 Oct', text: 'Reception by Deputy Foreign Minister François Wu (吳志中), former Taiwanese representative to France' },
-		],
 	},
 	zh: {
-		strip: '10 月 23 日至 11 月 1 日，我應外交部邀請訪問台灣。',
+		strip: '10 月 23 日至 11 月 1 日，我獲外交部遴選，隨歐洲專家與知名人士訪問團訪問台灣。',
 		stripLink: '能源、金門、會面',
 		label: '訪台行程',
 		dateline: '台北、金門 · 2026 年 10 月 23 日至 11 月 1 日',
 		title: '應外交部邀請訪問台灣',
-		lead: '10 月 25 日至 30 日，我參加外交部接待的歐洲意見領袖訪問團，成員為來自歐洲各地的十四位意見領袖與研究人員。我屬於訪問團的政治經濟組。這是我第三次以此身分受邀訪台。',
-		kinmen: '行程從金門開始。金門距廈門約十公里，距台灣本島海岸 187 公里。我的下一篇研究論文已獲期刊《Flux》接受，主題正是金門的電力供應。',
-		research: '我 10 月 23 日抵達、11 月 1 日離開，在正式行程之外與研究人員及能源業界人士會面。',
+		lead: '我獲外交部遴選加入「歐洲意見領袖訪問團」，團員為來自歐洲各地的專家與知名人士。這是我第三度應邀正式訪台。',
+		body: '行程中我們與台灣的部會首長、經濟界人士及研究人員會面，並前往與廈門隔海相望、位居第一線的金門。討論議題包括台灣與歐洲在人工智慧及無人機領域的合作。我個人則聚焦於能源安全：台灣的能源幾乎全數仰賴進口。',
 		contact: '在台北與我約見',
 		energyTitle: '台灣的能源',
 		stats: [
@@ -79,12 +65,6 @@ const copy = {
 		],
 		energyNote: '我在 10 月 21 日的《台北時報》主張，將戰略儲備編入國家預算，並與歐洲的天然氣輸送及儲存業者合作。',
 		energyLink: '閱讀投書',
-		programmeTitle: '行程重點',
-		programme: [
-			{ date: '10/25–26', text: '金門' },
-			{ date: '10/27', text: '「可信賴的民主科技」論壇：台灣與歐洲在人工智慧與無人機領域的合作' },
-			{ date: '10/28', text: '外交部政務次長吳志中接見。吳次長曾任駐法國代表。' },
-		],
 	},
 }[lang];
 const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21/2003866326';
@@ -105,8 +85,7 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 			<p class="mission-dateline">{copy.dateline}</p>
 			<h2 id="mission-title">{copy.title}</h2>
 			<p class="mission-lead">{copy.lead}</p>
-			<p>{copy.kinmen}</p>
-			<p>{copy.research}</p>
+			<p>{copy.body}</p>
 			<a class="mission-link" href="#contact">{copy.contact} <span aria-hidden="true">→</span></a>
 		</div>
 		<aside class="mission-side">
@@ -119,14 +98,6 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 				</dl>
 				<p class="mission-note">{copy.energyNote}</p>
 				<a class="mission-link" href={opedUrl} target="_blank" rel="noopener noreferrer">{copy.energyLink} <span aria-hidden="true">↗</span></a>
-			</div>
-			<div class="mission-programme">
-				<h3>{copy.programmeTitle}</h3>
-				<ol>
-					{copy.programme.map((p) => (
-						<li><span class="mission-date">{p.date}</span><span>{p.text}</span></li>
-					))}
-				</ol>
 			</div>
 		</aside>
 	</div>
@@ -205,8 +176,7 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 	}
 	.mission-main > .mission-lead { margin-top: 1.4rem; font-size: 1.08rem; color: var(--ink); }
 	.mission-side { display: grid; gap: 1.25rem; }
-	.mission-energy,
-	.mission-programme {
+	.mission-energy {
 		background: var(--bg);
 		border: 1px solid var(--line);
 		border-radius: var(--radius);
@@ -241,17 +211,6 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 		font-size: .9rem;
 		line-height: 1.65;
 	}
-	.mission-programme ol { margin-top: .8rem; list-style: none; padding: 0; }
-	.mission-programme li {
-		display: grid;
-		grid-template-columns: 5.5rem minmax(0, 1fr);
-		gap: .75rem;
-		padding: .6rem 0;
-		font-size: .9rem;
-		line-height: 1.55;
-	}
-	.mission-programme li + li { border-top: 1px solid var(--line); }
-	.mission-date { font-weight: 600; color: var(--ink); white-space: nowrap; }
 	.mission-link {
 		display: inline-flex;
 		align-items: center;
@@ -274,9 +233,8 @@ const opedUrl = 'https://www.taipeitimes.com/News/editorials/archives/2026/10/21
 		.mission-strip p { padding: .6rem 1rem; font-size: .85rem; }
 		.mission { padding: 2.25rem 1rem; scroll-margin-top: 9rem; }
 		h2 { font-size: 1.9rem; }
-		.mission-energy, .mission-programme { padding: 1.2rem 1.1rem; }
+		.mission-energy { padding: 1.2rem 1.1rem; }
 		.mission-stats { gap: .75rem; }
 		.mission-stats dt { font-size: 1.4rem; }
-		.mission-programme li { grid-template-columns: 4.75rem minmax(0, 1fr); }
 	}
 </style>
