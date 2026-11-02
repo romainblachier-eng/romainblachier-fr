@@ -8,7 +8,7 @@ import portrait from "../../assets/portrait.jpg";
 import conferencePhoto from "../../assets/conference-france-taiwan-2026.jpg";
 import { HeroGeometric } from "../../components/ui/shape-landing-hero";
 import MediaLogosBand from "../../components/MediaLogosBand.astro";
-import TaiwanMissionAnnouncement from "../../components/TaiwanMissionAnnouncement.astro";
+import ImaghyneAnnouncement from "../../components/ImaghyneAnnouncement.astro";
 import ContactForm from "../../components/ContactForm.astro";
 import TrainingLogosBand from "../../components/TrainingLogosBand.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
@@ -28,7 +28,6 @@ const recentPubs = allPubs.slice(0, 3);
 	</head>
 	<body>
 		<Header />
-		<TaiwanMissionAnnouncement lang="zh" variant="strip" />
 
 		<HeroGeometric
 			client:load
@@ -51,7 +50,7 @@ const recentPubs = allPubs.slice(0, 3);
 			</dl>
 		</section>
 
-		<TaiwanMissionAnnouncement lang="zh" />
+		<ImaghyneAnnouncement lang="zh" />
 
 		<section class="event-banner">
 			<div class="event-banner-inner event-banner-inner--trio">
@@ -278,7 +277,7 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>
 						<ul>
-							<li>法國福爾摩沙協會（France-Formosa）會長，2012 年起；2019 年與 2025 年兩度赴台執行官方任務</li>
+							<li>法國福爾摩沙協會（France-Formosa）會長，2012 年起；2019 年、2025 年與 2026 年三度赴台執行官方任務</li>
 							<li>Mediatone / Reperkusound 理事</li>
 							<li>著有 <em>Guillotière(s)</em></li>
 						</ul>

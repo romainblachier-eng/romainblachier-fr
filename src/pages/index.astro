@@ -9,7 +9,7 @@ import portrait from "../assets/portrait.jpg";
 import conferencePhoto from "../assets/conference-france-taiwan-2026.jpg";
 import { HeroGeometric } from "../components/ui/shape-landing-hero";
 import MediaLogosBand from "../components/MediaLogosBand.astro";
-import TaiwanMissionAnnouncement from "../components/TaiwanMissionAnnouncement.astro";
+import ImaghyneAnnouncement from "../components/ImaghyneAnnouncement.astro";
 import ContactForm from "../components/ContactForm.astro";
 import TrainingLogosBand from "../components/TrainingLogosBand.astro";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -29,7 +29,6 @@ const recentPubs = allPubs.slice(0, 3);
 	</head>
 	<body>
 		<Header />
-		<TaiwanMissionAnnouncement lang="fr" variant="strip" />
 
 		<HeroGeometric
 			client:load
@@ -52,7 +51,7 @@ const recentPubs = allPubs.slice(0, 3);
 			</dl>
 		</section>
 
-		<TaiwanMissionAnnouncement lang="fr" />
+		<ImaghyneAnnouncement lang="fr" />
 
 		<section class="event-banner">
 			<div class="event-banner-inner event-banner-inner--trio">
@@ -282,7 +281,7 @@ const recentPubs = allPubs.slice(0, 3);
 					<div class="ref-col">
 						<h3>{t('references.culture')}</h3>
 						<ul>
-							<li>Président, Association France-Formosa (depuis 2012) — deux missions officielles à Taïwan, 2019 et 2025</li>
+							<li>Président, Association France-Formosa (depuis 2012) — trois missions officielles à Taïwan, 2019, 2025 et 2026</li>
 							<li>Administrateur, Mediatone / Reperkusound</li>
 							<li>Auteur, <em>Guillotière(s)</em></li>
 						</ul>

@@ -16,28 +16,13 @@ Stack : Astro v5.x + TinaCMS, site statique trilingue FR (défaut) / EN (`/en/`)
 - Ne rien ajouter à la page Publications qui n'ait une URL source vérifiable.
 - En cas de doute sur un fait, vérifier la fiche de faits ci-dessous ; s'il n'y figure pas, demander à Romain.
 
-## Règle n°2 — Anonymisation totale (obligatoire, aucune exception)
+## Règle n°2 — Nommage des clients, commanditaires et organisateurs (levée)
 
-Aucun nom de client, de commanditaire ou de collectivité cliente ne doit apparaître sur le site : ni dans les textes, ni dans le code, ni dans les métadonnées, balises title/alt, noms de fichiers, URLs ou commits.
+Levée par Romain le 2026-11-02 : clients, commanditaires, organisateurs d'événements et partenaires peuvent être nommés sur le site. La seule interdiction de nommage qui demeure est celle de l'employeur salarié (règle n°3).
 
-Aucune exception, Cameroun inclus. Dans les études de cas, la mission Cameroun est anonymisée comme les autres. Seule la page Publications conserve les titres et médias tels que publiés : un titre de tribune déjà paru ne se réécrit pas.
-
-Distinctions à appliquer :
-
-1. Clients de conseil (Lapin Bleu) → toujours anonymisés, sans exception.
-2. Organismes de formation et établissements d'enseignement (écoles, universités, organismes de formation continue et d'élus) → peuvent être nommés (validé par Romain, 2026-08-04). Le bandeau `trainingOrgs` de `src/data/profile.ts` et la section Références/enseignement restent tels quels ; ne pas y ajouter de nom sans validation.
-3. Clients finaux d'une formation (la collectivité ou l'entreprise bénéficiaire) et lieux liés à une mission client → anonymisés dans les études de cas. Un lieu précis (ville, pays, campus) suffit souvent à identifier le commanditaire.
-
-Formulations génériques approuvées (à utiliser telles quelles) :
-
-- Cas PCAET → « une commune de 120 000 habitants »
-- Formation d'élus à la transition écologique → « les élus d'une grande ville française »
-- Formation secteur juridique → « un groupe d'édition juridique »
-- Mission secteur électrique africain → « une institution régionale africaine du secteur électrique », « un État d'Afrique centrale »
-- Séminaires à l'étranger → « une capitale d'Asie de l'Est »
-- Cycle de conférences universitaires → « une université espagnole »
-
-Si un nouveau cas apparaît sans formulation approuvée : proposer une formulation générique (type de structure + ordre de grandeur), ne jamais publier le nom.
+- Les formulations anonymisées déjà en ligne (études de cas, page Conseil, Terrains) restent telles quelles tant que Romain ne demande pas de les modifier : ne pas les « dé-anonymiser » de sa propre initiative.
+- Un nom ajouté doit rester vérifiable (mail, programme officiel, page publique de l'événement) ; la règle n°1 s'applique toujours.
+- La page Publications conserve les titres et médias tels que publiés : un titre de tribune déjà paru ne se réécrit pas.
 
 ## Règle n°3 — Employeur salarié
 
@@ -63,8 +48,7 @@ Cas en attente de compléments (autre boîte mail à connecter) : PCAET 120 000 
 
 ## Règle n°6 — Hygiène du dépôt
 
-- Ce fichier ne contient volontairement aucun nom de client réel : ne pas en ajouter, même en commentaire.
-- Pas de noms de clients dans les commentaires de code, les données de test, les fichiers d'exemple ou les messages de commit.
+- Ni ce fichier, ni le code, ni les messages de commit ne nomment l'employeur salarié (règle n°3).
 - En cas de doute sur le caractère public d'une information : la traiter comme confidentielle et signaler le doute à Romain plutôt que de publier.
 
 ## Fiche de faits — source de vérité (CV expert, août 2026)
@@ -102,7 +86,7 @@ Notes :
 - Chef de projet Innovation dans le secteur de l'électricité renouvelable (depuis 2017, dans l'entreprise depuis 2008 — voir règle n°3, ne jamais nommer).
 - Expert associé, Fondation Jean-Jaurès.
 - Membre du collège société civile, Plateforme RSE (France Stratégie, services du Premier ministre).
-- Président de l'association France-Formosa depuis 2012 ; deux missions officielles à Taïwan sur invitation du MOFA (2019, 2025).
+- Président de l'association France-Formosa depuis 2012 ; trois missions officielles à Taïwan sur invitation du MOFA (2019, 2025, 2026 — délégation d'experts européens, 23 octobre-1er novembre).
 - Recherche doctorale en préparation (Université Lyon 2), codirection Stéphane Cadiou (Triangle) et François-Mathieu Poupeau (LATTS/ENPC), sur la gouvernance de la transition électrique.
 
 ### Conseil — Lapin Bleu

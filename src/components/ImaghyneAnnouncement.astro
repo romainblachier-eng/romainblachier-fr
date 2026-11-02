@@ -1,0 +1,107 @@
+---
+interface Props {
+	lang: 'fr' | 'en' | 'zh';
+}
+
+const { lang } = Astro.props;
+// Forum du 3 novembre 2026 : à passer au passé ou à retirer après le 3 novembre.
+// Sources : invitation et confirmation de l'organisateur (25 septembre et 6 octobre 2026),
+// programme du forum, déroulé de la table ronde (23-30 octobre 2026).
+// Lieu : Hôtel de Région, 101 cours Charlemagne, Lyon 2e. Table ronde à 14 h 15.
+const copy = {
+	fr: {
+		label: 'Prochaine intervention',
+		dateline: 'Mardi 3 novembre 2026 · 14 h 15 · Hôtel de Région, Lyon',
+		title: 'Hydrogène : construire une demande durable dans les territoires',
+		lead: 'J’interviens au Business Oriented Forum IMAGHyNE, organisé par Tenerrdis avec Cara et Axelera, dans la table ronde « De l’ambition au marché : comment construire une demande H₂ durable dans les territoires ? ».',
+		body: 'Aux côtés de Vicat, de NaTran et de Spark Cleantech, j’y parle depuis la place des communes et des intercommunalités : ce qu’une collectivité attend concrètement d’un projet hydrogène, les critères sur lesquels elle arbitre entre plusieurs projets, et les contreparties qu’elle peut demander en échange de son soutien.',
+		link: 'Informations sur le forum',
+	},
+	en: {
+		label: 'Upcoming talk',
+		dateline: 'Tuesday 3 November 2026 · 2:15 pm · Hôtel de Région, Lyon',
+		title: 'Hydrogen: building lasting demand in local areas',
+		lead: 'I am speaking at the IMAGHyNE Business Oriented Forum, organised by Tenerrdis with Cara and Axelera, in the round table “From ambition to market: how to build lasting H₂ demand in local areas?”.',
+		body: 'Alongside Vicat, NaTran and Spark Cleantech, I speak from the standpoint of municipalities and inter-municipal bodies: what a local authority concretely expects from a hydrogen project, the criteria it uses to choose between projects, and what it can ask for in return for its support.',
+		link: 'Forum information (in French)',
+	},
+	zh: {
+		label: '近期活動',
+		dateline: '2026 年 11 月 3 日（週二）14:15 · 里昂大區議會大樓',
+		title: '氫能：在地方建立可持續的需求',
+		lead: '我將出席由 Tenerrdis 與 Cara、Axelera 合辦的 IMAGHyNE 商務論壇，參加圓桌討論「從抱負到市場：如何在地方建立可持續的氫能需求？」。',
+		body: '我與 Vicat、NaTran 及 Spark Cleantech 同台，從市鎮與市鎮聯合體的角度發言：地方政府對氫能專案的具體期待、在多個專案之間取捨的標準，以及能以其支持換取哪些回報。',
+		link: '論壇資訊（法文）',
+	},
+}[lang];
+const forumUrl = 'https://espace-membres.tenerrdis.fr/fr/agenda/business-oriented-forum-imaghyne-212';
+---
+
+<section class="forum" id="forum-imaghyne" aria-labelledby="forum-title">
+	<div class="forum-inner">
+		<p class="forum-label">{copy.label}</p>
+		<p class="forum-dateline">{copy.dateline}</p>
+		<h2 id="forum-title">{copy.title}</h2>
+		<p class="forum-lead">{copy.lead}</p>
+		<p>{copy.body}</p>
+		<a class="forum-link" href={forumUrl} target="_blank" rel="noopener noreferrer">{copy.link} <span aria-hidden="true">↗</span></a>
+	</div>
+</section>
+
+<style>
+	.forum {
+		padding: 3.5rem 2rem;
+		background: var(--bg-alt);
+		border-top: 3px solid var(--accent-warm);
+		border-bottom: 1px solid var(--line);
+		color: var(--text);
+		scroll-margin-top: 5rem;
+	}
+	.forum-inner { max-width: var(--max); margin: 0 auto; }
+	.forum-label {
+		display: inline-block;
+		padding: .25rem .7rem;
+		border-radius: 999px;
+		background: var(--ink);
+		color: #fff;
+		font-size: .75rem;
+		font-weight: 600;
+		letter-spacing: .06em;
+		text-transform: uppercase;
+	}
+	.forum-dateline { margin-top: .9rem; font-size: .9rem; font-weight: 500; color: var(--ink); }
+	h2 {
+		margin-top: .6rem;
+		max-width: 26ch;
+		font-size: clamp(1.9rem, 3.1vw, 2.65rem);
+		line-height: 1.18;
+		font-weight: 500;
+		color: var(--ink);
+	}
+	.forum-inner > p:not(.forum-label):not(.forum-dateline) {
+		margin-top: 1rem;
+		max-width: 68ch;
+		font-size: 1rem;
+		line-height: 1.75;
+	}
+	.forum-inner > .forum-lead { margin-top: 1.4rem; font-size: 1.08rem; color: var(--ink); }
+	.forum-link {
+		display: inline-flex;
+		align-items: center;
+		gap: .6rem;
+		min-height: 44px;
+		margin-top: .9rem;
+		font-size: .92rem;
+		font-weight: 500;
+		color: var(--ink);
+		text-decoration: underline;
+		text-underline-offset: 5px;
+		text-decoration-thickness: 1px;
+	}
+	.forum-link:hover { color: #734837; }
+	.forum-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+	@media (max-width: 700px) {
+		.forum { padding: 2.25rem 1rem; scroll-margin-top: 9rem; }
+		h2 { font-size: 1.9rem; }
+	}
+</style>
