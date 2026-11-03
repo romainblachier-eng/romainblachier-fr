@@ -86,7 +86,7 @@ Notes :
 - Chef de projet Innovation dans le secteur de l'électricité renouvelable (depuis 2017, dans l'entreprise depuis 2008 — voir règle n°3, ne jamais nommer).
 - Expert associé, Fondation Jean-Jaurès.
 - Membre du collège société civile, Plateforme RSE (France Stratégie, services du Premier ministre).
-- Président de l'association France-Formosa depuis 2012 ; trois missions officielles à Taïwan sur invitation du MOFA (2019, 2025, 2026 — délégation d'experts européens, 23 octobre-1er novembre).
+- Président de l'association France-Formosa depuis 2012 ; quatre missions officielles à Taïwan sur invitation du MOFA (2012, 2019, 2025, 2026 — délégation d'experts européens, 23 octobre-1er novembre).
 - Recherche doctorale en préparation (Université Lyon 2), codirection Stéphane Cadiou (Triangle) et François-Mathieu Poupeau (LATTS/ENPC), sur la gouvernance de la transition électrique.
 
 ### Conseil — Lapin Bleu
