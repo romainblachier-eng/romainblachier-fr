@@ -38,6 +38,7 @@ const MEDIA_OPTIONS = [
   { value: "cameroun-actuel", label: "Cameroun Actuel" },
   { value: "african-arguments", label: "African Arguments" },
   { value: "afp-factuel", label: "AFP Factuel" },
+  { value: "les-echos", label: "Les Echos" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
