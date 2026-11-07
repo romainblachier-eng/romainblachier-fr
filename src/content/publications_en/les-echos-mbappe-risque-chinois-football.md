@@ -11,6 +11,7 @@ description: >-
   unions can write that risk into their contracts.
 pubDate: 2026-11-03T11:45:00.000Z
 updatedDate: 2026-11-03T13:11:00.000Z
+heroImage: '../../assets/les-echos-logo.png'
 ---
 
 I published an op-ed in **[Les Echos](https://www.lesechos.fr/idees-debats/cercle/affaire-mbappe-les-ligues-et-les-clubs-devraient-appliquer-aux-recettes-chinoises-une-decote-pour-risque-politique-comme-le-fait-un-investisseur-dans-un-pays-instable-2260741)** (in French), in its Le Cercle section, on the Mbappé affair and what it reveals about European football's exposure to Beijing's decisions.

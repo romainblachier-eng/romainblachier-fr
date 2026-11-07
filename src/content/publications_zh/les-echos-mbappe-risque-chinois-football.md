@@ -7,6 +7,7 @@ title: "姆巴佩事件：〈聯賽與球會應對中國收入計入政治風險
 description: "2026 年 11 月 3 日刊於法國《回聲報》（Les Echos）「Le Cercle」評論版：姆巴佩的中國合約在一天之內蒸發，說明足球的中國收入高度相關且受政治決定左右。與其事後道歉，球會、聯賽與球員工會不如把這項風險寫進合約。"
 pubDate: 2026-11-03T11:45:00.000Z
 updatedDate: 2026-11-03T13:11:00.000Z
+heroImage: '../../assets/les-echos-logo.png'
 ---
 
 我在法國《**[回聲報](https://www.lesechos.fr/idees-debats/cercle/affaire-mbappe-les-ligues-et-les-clubs-devraient-appliquer-aux-recettes-chinoises-une-decote-pour-risque-politique-comme-le-fait-un-investisseur-dans-un-pays-instable-2260741)**》（Les Echos）的「Le Cercle」評論版發表了一篇法文評論，談姆巴佩事件，以及它揭露了歐洲足球對北京決定的曝險程度。

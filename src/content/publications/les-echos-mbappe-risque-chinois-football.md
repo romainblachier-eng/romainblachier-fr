@@ -11,6 +11,7 @@ description: >-
   et syndicats de joueurs peuvent écrire ce risque dans les contrats.
 pubDate: 2026-11-03T11:45:00.000Z
 updatedDate: 2026-11-03T13:11:00.000Z
+heroImage: '../../assets/les-echos-logo.png'
 ---
 
 J'ai publié une tribune dans **[Les Echos](https://www.lesechos.fr/idees-debats/cercle/affaire-mbappe-les-ligues-et-les-clubs-devraient-appliquer-aux-recettes-chinoises-une-decote-pour-risque-politique-comme-le-fait-un-investisseur-dans-un-pays-instable-2260741)**, dans Le Cercle, sur l'affaire Mbappé et ce qu'elle révèle de l'exposition du football européen aux décisions de Pékin.
