@@ -8,7 +8,6 @@ import { Image } from "astro:assets";
 import portrait from "../../assets/portrait.jpg";
 import conferencePhoto from "../../assets/conference-france-taiwan-2026.jpg";
 import MediaLogosBand from "../MediaLogosBand.astro";
-import TaiwanMissionAnnouncement from "../TaiwanMissionAnnouncement.astro";
 import ContactForm from "../ContactForm.astro";
 import TrainingLogosBand from "../TrainingLogosBand.astro";
 import FormattedDate from "../FormattedDate.astro";
@@ -132,11 +131,11 @@ const proof: { label: TagKey; value: TagKey }[] = [
 	{ label: "proof.teaching", value: "proof.teaching.v" },
 ];
 
-// Bande « Dans la presse » : dix médias marquants (France, Taïwan, Europe,
+// Bande « Dans la presse » : onze médias marquants (France, Taïwan, Europe,
 // Afrique) plutôt que les 33 logos, illisibles une fois réduits. Libellés `alt`
 // de MediaLogosBand ; la liste complète des médias reste filtrable sur /publications.
 const pressLogos = [
-	"Le Monde", "Taipei Times", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
+	"Le Monde", "Les Echos", "Taipei Times", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
 	"African Arguments", "Libération", "CEIAS — Central European Institute of Asian Studies", "Terra Nova", "Revue Conflits",
 ];
 
@@ -175,9 +174,6 @@ const stats = [
 
 const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 ---
-
-<!-- Mission à Taïwan (23 octobre – 1er novembre 2026) : barre sous l'en-tête, visible sans défiler. -->
-<TaiwanMissionAnnouncement lang={lang} variant="strip" />
 
 <main class="home">
 	<!-- Hero -->
@@ -226,9 +222,6 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 			</dl>
 		</section>
 	</section>
-
-	<!-- Mission à Taïwan : entre les Repères et « À la une ». -->
-	<TaiwanMissionAnnouncement lang={lang} />
 
 	<!-- À la une -->
 	<section class="hp-section hp-featured" aria-labelledby="hp-featured-title">

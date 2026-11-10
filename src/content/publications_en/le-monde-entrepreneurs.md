@@ -11,6 +11,6 @@ heroImage: '../../assets/le-monde-logo.svg'
 
 I published an op-ed in **Le Monde** in favour of entrepreneurs, at a time when French political debate too often opposed speculative finance and industry, big capital and SMEs.
 
-The article advocates for an economic policy that values risk-taking, innovation and company creation — from small businesses to mid-sized enterprises — and argues that entrepreneurship is one of the essential drivers of French industrial renewal. Already presented in Le Monde in 2012 as a manager in the renewable energy industry, this text reflects a long-standing coherence between economic engagement and political conviction.
+The article advocates for an economic policy that values risk-taking, innovation and company creation — from small businesses to mid-sized enterprises — and argues that entrepreneurship is one of the essential drivers of French industrial renewal. Le Monde introduced me at the time as a manager in the renewable energy industry.
 
 [Read the full article in Le Monde](https://www.lemonde.fr/idees/article/2012/10/18/entrepreneurs-on-vous-aime_1777216_3232.html)
