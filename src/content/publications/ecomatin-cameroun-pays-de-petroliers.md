@@ -16,7 +16,7 @@ Je publie dans **[EcoMatin](https://ecomatin.net/opinions/le-cameroun-est-il-enc
 
 ## EcoMatin
 
-**EcoMatin** est un média d'information économique et financière consacré au Cameroun et à l'Afrique centrale. Il suit les entreprises, la banque et la finance, les politiques publiques, les mines et l'énergie dans les pays de la zone CEMAC. Il publie en ligne, envoie chaque matin une lettre d'information et édite un magazine diffusé en kiosque. Sa rubrique Opinions accueille des tribunes d'experts. J'y ai déjà publié deux textes sur l'électricité à Douala, en [août](/publications/ecomatin/ecomatin-douala-distribution-electricite/) et en [octobre 2026](/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/).
+**EcoMatin** est un média économique camerounais. Il suit les entreprises, la banque et la finance, les politiques publiques, les mines et l'énergie au Cameroun et dans les autres pays de la zone CEMAC. Il publie en ligne, envoie chaque matin une lettre d'information et édite un magazine diffusé en kiosque. Sa rubrique Opinions accueille des tribunes d'experts. J'y ai déjà publié deux textes sur l'électricité à Douala, en [août](/publications/ecomatin/ecomatin-douala-distribution-electricite/) et en [octobre 2026](/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/).
 
 ## Ce que dit la tribune
 
