@@ -16,7 +16,7 @@ I published an op-ed in **[EcoMatin](https://ecomatin.net/opinions/le-cameroun-e
 
 ## EcoMatin
 
-**EcoMatin** is an economic and financial news outlet covering Cameroon and Central Africa. It reports on business, banking and finance, public policy, mining and energy across the countries of CEMAC, the Central African Economic and Monetary Community. It publishes online, sends out a newsletter every morning and produces a print magazine. Its Opinions section runs op-eds by outside experts. I have already published two pieces there on electricity in Douala, in [August](/en/publications/ecomatin/ecomatin-douala-distribution-electricite/) and [October 2026](/en/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/).
+**EcoMatin** is a Cameroonian business news outlet. It reports on business, banking and finance, public policy, mining and energy in Cameroon and the other countries of CEMAC, the Central African Economic and Monetary Community. It publishes online, sends out a newsletter every morning and produces a print magazine. Its Opinions section runs op-eds by outside experts. I have already published two pieces there on electricity in Douala, in [August](/en/publications/ecomatin/ecomatin-douala-distribution-electricite/) and [October 2026](/en/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/).
 
 ## What the op-ed says
 

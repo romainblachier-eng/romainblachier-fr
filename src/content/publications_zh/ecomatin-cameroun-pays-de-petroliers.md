@@ -13,7 +13,7 @@ heroImage: '../../assets/ecomatin-logo.svg'
 
 ## EcoMatin
 
-《**EcoMatin**》是一家專注於喀麥隆與中部非洲的經濟與財經媒體，報導中部非洲經濟與貨幣共同體（CEMAC）各國的企業、銀行與金融、公共政策、礦業與能源。它以網站發布新聞，每天早上寄送電子報，並出版在書報攤販售的雜誌。其評論版刊登外部專家的投書。我先前已在該刊發表兩篇關於杜阿拉電力的投書，分別刊於 2026 年 [8 月](/zh/publications/ecomatin/ecomatin-douala-distribution-electricite/)與 [10 月](/zh/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/)。
+《**EcoMatin**》是喀麥隆的經濟媒體，報導喀麥隆及中部非洲經濟與貨幣共同體（CEMAC）其他國家的企業、銀行與金融、公共政策、礦業與能源。它以網站發布新聞，每天早上寄送電子報，並出版在書報攤販售的雜誌。其評論版刊登外部專家的投書。我先前已在該刊發表兩篇關於杜阿拉電力的投書，分別刊於 2026 年 [8 月](/zh/publications/ecomatin/ecomatin-douala-distribution-electricite/)與 [10 月](/zh/publications/ecomatin/ecomatin-douala-prevoir-coupures-usines/)。
 
 ## 投書重點
 
