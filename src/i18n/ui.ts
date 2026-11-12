@@ -26,7 +26,7 @@ export const ui = {
 		'proof.jaures': 'Expert associé',
 		'proof.jaures.v': 'Fondation Jean-Jaurès · Plateforme RSE, France Stratégie',
 		'proof.teaching': 'Enseignement',
-		'proof.teaching.v': '10 établissements en 2026-2027, en français, anglais et espagnol',
+		'proof.teaching.v': 'Grandes écoles et universités, en français, anglais et espagnol',
 		'hero.secondary': 'Lire mes publications',
 		// About
 		'about.title': 'À propos',
@@ -181,7 +181,7 @@ export const ui = {
 		'proof.jaures': 'Associate fellow',
 		'proof.jaures.v': 'Fondation Jean-Jaurès · CSR Platform, France Stratégie',
 		'proof.teaching': 'Teaching',
-		'proof.teaching.v': '10 institutions in 2026-2027, in French, English and Spanish',
+		'proof.teaching.v': 'Graduate schools and universities, in French, English and Spanish',
 		'hero.secondary': 'Read my publications',
 		// About
 		'about.title': 'About',
@@ -336,7 +336,7 @@ export const ui = {
 		'proof.jaures': '副研究員',
 		'proof.jaures.v': '讓·饒勒斯基金會 · 法國戰略署企業社會責任平台',
 		'proof.teaching': '教學',
-		'proof.teaching.v': '2026-2027 學年 10 所院校，以法語、英語與西班牙語授課',
+		'proof.teaching.v': '高等學院與大學，以法語、英語與西班牙語授課',
 		'hero.secondary': '閱讀我的文章',
 		// About
 		'about.title': '關於',

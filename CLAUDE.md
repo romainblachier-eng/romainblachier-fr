@@ -78,7 +78,7 @@ Notes :
 - Les belles écoles se placent en tête de liste (ordre voulu).
 - École Centrale de Lyon et INSA Lyon sont **programmés 2026-2027** (nouveaux). Ne pas écrire qu'il y intervient « depuis 2010 ».
 - Université de Grenade (Espagne) : cycle invité annuel en espagnol, à mentionner à part (hors des 12).
-- NTU Taipei ne figure pas au CV 2026-27 : ne pas la lister sans confirmation de Romain.
+- NTU (National Taiwan University) : conférence invitée en ligne, en anglais, le 1er décembre 2026, dans le cours « Decarbonization Strategies » (annoncée à la demande de Romain, 12/11/2026). Intervention ponctuelle : ne pas ajouter NTU à la liste des établissements où il enseigne.
 - Cette liste vit dans `src/data/profile.ts` (source unique) et remplace toute liste divergente.
 
 ### Positions institutionnelles

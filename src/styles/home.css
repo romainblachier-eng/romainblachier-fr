@@ -260,6 +260,9 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 	margin-bottom: .6rem;
 }
 .hp-feature .link-arrow { align-self: flex-start }
+/* Prochaine intervention : carte pleine largeur au-dessus des trois cartes. */
+.hp-feature--next { margin-bottom: 1.25rem; border-top: 3px solid var(--accent-warm) }
+.hp-feature--next .hp-feature-text { font-family: inherit; font-style: normal; font-size: 1rem; line-height: 1.65; max-width: 75ch }
 
 /* Publications récentes */
 .hp-latest { background: var(--bg-alt) }

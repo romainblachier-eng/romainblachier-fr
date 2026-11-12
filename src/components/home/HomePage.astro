@@ -36,6 +36,15 @@ const copy = {
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
+		// Conférence invitée NTU du 1er décembre 2026 : à retirer après cette date (elle reste dans
+		// la liste des conférences de la page Recherche). Source : échanges avec Stephen M. Griffith
+		// et lettre d'invitation des 10-11 novembre 2026.
+		next: {
+			kind: "Prochaine intervention · mardi 1er décembre 2026",
+			source: "National Taiwan University",
+			text: "Conférence invitée, en ligne et en anglais, dans le cours « Decarbonization Strategies » de Stephen M. Griffith (département des sciences de l'atmosphère). Les étudiants auront lu et discuté mon article du Taipei Times sur la transition énergétique de Taïwan ; je le prolonge avec la demande industrielle et le réseau électrique.",
+			link: "L'article lu en cours →",
+		},
 		proofLabel: "Repères",
 		pressLabel: "Dans la presse",
 		servicesOverline: "Services",
@@ -61,6 +70,12 @@ const copy = {
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
+		next: {
+			kind: "Upcoming talk · Tuesday 1 December 2026",
+			source: "National Taiwan University",
+			text: "Guest lecture, online and in English, in the Decarbonization Strategies course taught by Stephen M. Griffith (Department of Atmospheric Sciences). Students will have read and discussed my Taipei Times article on Taiwan's energy transition; I take it further, to industrial demand and the power grid.",
+			link: "The article read in class →",
+		},
 		proofLabel: "Key facts",
 		pressLabel: "In the press",
 		servicesOverline: "Services",
@@ -86,6 +101,12 @@ const copy = {
 			{ kind: t("alaune.kind.journal"), source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
 		],
+		next: {
+			kind: "近期活動 · 2026 年 12 月 1 日（週二）",
+			source: "國立臺灣大學",
+			text: "應大氣科學系 Stephen M. Griffith 老師之邀，以英語線上客座演講，課程為「Decarbonization Strategies」。學生將先閱讀並討論我在《台北時報》談台灣能源轉型的文章；我會在此基礎上，進一步談產業用電需求與電網。",
+			link: "課堂閱讀的文章 →",
+		},
 		proofLabel: "重點",
 		pressLabel: "媒體",
 		servicesOverline: "服務",
@@ -107,6 +128,7 @@ const copy = {
 	},
 }[lang] as {
 	featured: { kind: string; source: string; text: string; href: string; link: string }[];
+	next: { kind: string; source: string; text: string; link: string };
 	proofLabel: string;
 	pressLabel: string;
 	servicesOverline: string;
@@ -131,15 +153,16 @@ const proof: { label: TagKey; value: TagKey }[] = [
 	{ label: "proof.teaching", value: "proof.teaching.v" },
 ];
 
-// Bande « Dans la presse » : onze médias marquants (France, Taïwan, Europe,
+// Bande « Dans la presse » : douze médias marquants (France, Taïwan, Europe,
 // Afrique) plutôt que les 33 logos, illisibles une fois réduits. Libellés `alt`
 // de MediaLogosBand ; la liste complète des médias reste filtrable sur /publications.
 const pressLogos = [
-	"Le Monde", "Les Echos", "Taipei Times", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
+	"Le Monde", "Les Echos", "Taipei Times", "Domino Theory", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
 	"African Arguments", "Libération", "CEIAS — Central European Institute of Asian Studies", "Terra Nova", "Revue Conflits",
 ];
 
 const publicationsHref = getLocalePath(lang, "/publications/");
+const ntuArticleHref = getLocalePath(lang, "/publications/taipei-times/taipei-times-transition-energetique-taiwan/");
 const conseilHref = routePath("conseil", lang);
 const rechercheHref = routePath("recherche", lang);
 
@@ -229,6 +252,12 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 			<div class="hp-head hp-head--row">
 				<h2 class="hp-overline hp-overline--solo" id="hp-featured-title">{t("alaune.overline")}</h2>
 			</div>
+			<article class="hp-feature hp-feature--next reveal">
+				<p class="hp-feature-kind">{copy.next.kind}</p>
+				<h3 class="hp-feature-source">{copy.next.source}</h3>
+				<p class="hp-feature-text">{copy.next.text}</p>
+				<a class="link-arrow" href={ntuArticleHref}>{copy.next.link}</a>
+			</article>
 			<div class="hp-featured-grid">
 				{copy.featured.map((item) => (
 					<article class="hp-feature reveal">
