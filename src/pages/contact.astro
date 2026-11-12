@@ -1,73 +1,61 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Page from '../layouts/Page.astro';
 import ContactForm from '../components/ContactForm.astro';
 ---
 
-<!doctype html>
-<html lang="fr">
-	<head>
-		<BaseHead title={"Contact | Romain Blachier"} description={"Contacter Romain Blachier pour une formation, une conférence, une intervention média ou une collaboration."} />
-	</head>
-	<body>
-		<Header />
-		<main class="contact-page">
-			<h1>Contact</h1>
-			<p class="contact-lede">
-				Un cours à construire, une conférence à animer, une interview à préparer, un projet de
-				collaboration&nbsp;? Écrivez-moi&nbsp;: chaque message reçoit une réponse, en général sous 48&nbsp;heures.
-			</p>
-			<div class="contact-grid">
-				<div>
-					<h2>Ce que je fais</h2>
-					<ul class="contact-reasons">
-						<li>
-							<span class="reason-num" aria-hidden="true">01</span>
-							<div>
-								<strong>Enseignement &amp; formations</strong>
-								<p>Cours et séminaires en grande école et université, formations sur mesure pour organisations publiques et privées.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">02</span>
-							<div>
-								<strong>Conférences &amp; tables rondes</strong>
-								<p>Marchés de l'énergie, géopolitique, Taïwan et Indo-Pacifique, en français, en anglais ou en espagnol.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">03</span>
-							<div>
-								<strong>Médias</strong>
-								<p>Plateaux TV, radio, podcasts, tribunes. Analyses sourcées, accessibles au grand public.</p>
-							</div>
-						</li>
-						<li>
-							<span class="reason-num" aria-hidden="true">04</span>
-							<div>
-								<strong>Missions de conseil</strong>
-								<p>Diagnostics de secteur, notes de cadrage, appui institutionnel, portés par Lapin Bleu. <a href="/conseil">Voir les missions</a>.</p>
-							</div>
-						</li>
-					</ul>
-					<h2>Par email</h2>
-					<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
-					<p class="contact-phone">Par téléphone&nbsp;: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
-					<h2>Ailleurs en ligne</h2>
-					<div class="contact-elsewhere">
-						<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
-						<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
-						<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
+<Page title={"Contact"} description={"Contacter Romain Blachier pour une formation, une conférence, une intervention média ou une collaboration."} lang="fr">
+	<h1 class="page-title">Contact</h1>
+	<p class="page-lede">
+		Un cours à construire, une conférence à animer, une interview à préparer, un projet de
+		collaboration&nbsp;? Écrivez-moi&nbsp;: chaque message reçoit une réponse, en général sous 48&nbsp;heures.
+	</p>
+	<div class="contact-grid">
+		<div>
+			<h2 class="hp-overline">Ce que je fais</h2>
+			<ul class="contact-reasons">
+				<li>
+					<span class="reason-num" aria-hidden="true">01</span>
+					<div>
+						<strong>Enseignement &amp; formations</strong>
+						<p>Cours et séminaires en grande école et université, formations sur mesure pour organisations publiques et privées.</p>
 					</div>
-					<p class="contact-meta">Interventions en français, en anglais et en espagnol · Basé à Lyon, missions en France et à l'international</p>
-				</div>
-				<div>
-					<h2>Envoyer un message</h2>
-					<ContactForm lang="fr" variant="light" />
-				</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">02</span>
+					<div>
+						<strong>Conférences &amp; tables rondes</strong>
+						<p>Marchés de l'énergie, géopolitique, Taïwan et Indo-Pacifique, en français, en anglais ou en espagnol.</p>
+					</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">03</span>
+					<div>
+						<strong>Médias</strong>
+						<p>Plateaux TV, radio, podcasts, tribunes. Analyses sourcées, accessibles au grand public.</p>
+					</div>
+				</li>
+				<li>
+					<span class="reason-num" aria-hidden="true">04</span>
+					<div>
+						<strong>Missions de conseil</strong>
+						<p>Diagnostics de secteur, notes de cadrage, appui institutionnel, portés par Lapin Bleu. <a href="/conseil">Voir les missions</a>.</p>
+					</div>
+				</li>
+			</ul>
+			<h2 class="hp-overline">Par email</h2>
+			<a class="contact-email" href="mailto:romain.blachier@gmail.com">romain.blachier@gmail.com</a>
+			<p class="contact-phone">Par téléphone&nbsp;: <a href="tel:+33618321424">+33 6 18 32 14 24</a></p>
+			<h2 class="hp-overline">Ailleurs en ligne</h2>
+			<div class="contact-elsewhere">
+				<a href="https://www.linkedin.com/in/romainblachier/" rel="me noopener" target="_blank">LinkedIn</a>
+				<a href="https://france-formosa.org" rel="noopener" target="_blank">France-Formosa</a>
+				<a href="https://orcid.org/0009-0008-3178-1600" rel="me noopener" target="_blank">ORCID</a>
 			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+			<p class="contact-meta">Interventions en français, en anglais et en espagnol · Basé à Lyon, missions en France et à l'international</p>
+		</div>
+		<div class="ip-form-card">
+			<h2>Envoyer un message</h2>
+			<ContactForm lang="fr" variant="light" />
+		</div>
+	</div>
+</Page>

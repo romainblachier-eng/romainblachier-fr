@@ -37,7 +37,10 @@ const elsewhere = [
 <footer class="site-footer">
 	<div class="footer-inner">
 		<div class="footer-brand">
-			<span class="footer-name">Romain Blachier</span>
+			<a class="footer-name" href={getLocalePath(lang, '/')}>
+				<span class="brand-mark" aria-hidden="true">RB</span>
+				Romain Blachier
+			</a>
 			<p class="footer-tagline">{t('footer.tagline')}</p>
 			<a
 				class="footer-affil"
@@ -75,7 +78,7 @@ const elsewhere = [
 
 <style>
 	.site-footer {
-		background: var(--bg);
+		background: var(--bg-alt);
 		color: var(--text);
 		border-top: 1px solid var(--line);
 		padding: 4.5rem 2rem 0;
@@ -98,13 +101,19 @@ const elsewhere = [
 		max-width: 34ch;
 	}
 	.footer-name {
+		display: inline-flex;
+		align-items: center;
+		gap: .7rem;
 		font-family: var(--display);
 		font-size: 1.6rem;
 		font-weight: 600;
 		color: var(--ink);
 		letter-spacing: -.02em;
 		line-height: 1.1;
+		text-decoration: none;
 	}
+	.footer-name .brand-mark { box-shadow: none }
+	.footer-name .brand-mark::after { box-shadow: 0 0 0 2px var(--bg-alt) }
 	.footer-tagline {
 		line-height: 1.65;
 		color: var(--muted);
@@ -122,14 +131,13 @@ const elsewhere = [
 
 	/* Colophon headings: serif italic rather than tracked-out capitals. */
 	.footer-heading {
-		font-family: var(--display);
-		font-style: italic;
-		font-size: .95rem;
-		font-weight: 400;
-		color: var(--ink);
-		letter-spacing: 0;
-		text-transform: none;
-		margin-bottom: .9rem;
+		font-family: var(--sans);
+		font-size: .74rem;
+		font-weight: 600;
+		color: var(--accent-warm);
+		letter-spacing: .14em;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
 	}
 	.footer-col ul {
 		list-style: none;
@@ -142,12 +150,12 @@ const elsewhere = [
 		color: var(--text);
 		transition: color .15s;
 	}
-	.footer-col a:hover { color: var(--ink) }
+	.footer-col a:hover { color: var(--accent-warm) }
 
 	.footer-bottom {
 		max-width: var(--max);
 		margin: 0 auto;
-		border-top: 1px solid var(--line);
+		border-top: 1px solid var(--line-strong);
 		padding: 1.5rem 0 2rem;
 	}
 	.footer-bottom p {
