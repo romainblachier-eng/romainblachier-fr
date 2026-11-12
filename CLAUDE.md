@@ -86,6 +86,7 @@ Notes :
 - Chef de projet Innovation dans le secteur de l'électricité renouvelable (depuis 2017, dans l'entreprise depuis 2008 — voir règle n°3, ne jamais nommer).
 - Expert associé, Fondation Jean-Jaurès.
 - Membre du collège société civile, Plateforme RSE (France Stratégie, services du Premier ministre).
+- Correspondant Afrique centrale d'African Energy (publication britannique, africa-energy.com). Articles signés dans le n° 550 (1er et 4 novembre 2026, Cameroun et Congo). Ne pas ajouter de date de début.
 - Président de l'association France-Formosa depuis 2012 ; dix séjours à Taïwan, dont quatre à l'invitation du MOFA (le dernier : délégation d'experts européens, 23 octobre-1er novembre 2026). Formulation sur le site : « dix séjours à Taïwan, dont quatre à l'invitation du ministère des Affaires étrangères », sans liste d'années.
 - Doctorat : **pas encore admis** (Université Lyon 2). Ne jamais écrire « thèse en préparation », « doctorant » ni « recherche doctorale », ne pas nommer de codirection. Citer à la place les travaux vérifiables : La Revue de l'Énergie (2026), article accepté par Flux (Kinmen), communication au 10e AIEE Energy Symposium (Turin, 25-26 novembre 2026).
 

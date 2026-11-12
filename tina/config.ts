@@ -40,6 +40,7 @@ const MEDIA_OPTIONS = [
   { value: "afp-factuel", label: "AFP Factuel" },
   { value: "les-echos", label: "Les Echos" },
   { value: "domino-theory", label: "Domino Theory" },
+  { value: "african-energy", label: "African Energy" },
 ];
 
 // Champs communs aux trois collections de publications (FR / EN / ZH).
