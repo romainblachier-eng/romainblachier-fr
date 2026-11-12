@@ -1,6 +1,8 @@
 ---
 import { getLangFromUrl, useTranslations, getLocalePath } from '../i18n/utils';
 import { routePath } from '../i18n/routes';
+import cairnLogo from '../assets/cairn-logo.png';
+import halLogo from '../assets/hal-logo.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -26,10 +28,14 @@ const institutional = [
 	{ href: getLocalePath(lang, '/mentions-legales'), label: t('footer.legal') },
 ];
 
-const elsewhere = [
+// Cairn et HAL s'affichent par leur logo. HAL : pas encore d'IdHAL (donc pas de page CV),
+// le lien ouvre la recherche des dépôts au nom de Romain Blachier.
+const elsewhere: { href: string; label: string; logo?: { src: string }; logoHeight?: number }[] = [
 	{ href: 'https://www.linkedin.com/in/romainblachier/', label: 'LinkedIn' },
 	{ href: 'https://sciencespo.academia.edu/RomainBlachier', label: 'Academia' },
 	{ href: 'https://orcid.org/0009-0008-3178-1600', label: 'ORCID' },
+	{ href: 'https://stm.cairn.info/publications-de-romain-blachier--905969?lang=fr', label: 'Cairn.info', logo: cairnLogo, logoHeight: 17 },
+	{ href: 'https://hal.science/search/index/?q=authFullName_s%3A%22Romain+Blachier%22', label: 'HAL', logo: halLogo, logoHeight: 30 },
 	{ href: 'https://france-formosa.org', label: 'France-Formosa' },
 ];
 ---
@@ -65,7 +71,11 @@ const elsewhere = [
 			<h2 class="footer-heading">{t('footer.elsewhere')}</h2>
 			<ul>
 				{elsewhere.map((l) => (
-					<li><a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a></li>
+					<li>
+						<a href={l.href} target="_blank" rel="noopener noreferrer" class:list={[{ 'footer-logo-link': l.logo }]}>
+							{l.logo ? <img src={l.logo.src} alt={l.label} class="footer-logo" style={`height:${l.logoHeight}px`} loading="lazy" decoding="async" /> : l.label}
+						</a>
+					</li>
 				))}
 			</ul>
 		</nav>
@@ -151,6 +161,9 @@ const elsewhere = [
 		transition: color .15s;
 	}
 	.footer-col a:hover { color: var(--accent-warm) }
+	.footer-logo-link { display: inline-flex; align-items: center; min-height: 24px }
+	.footer-logo { display: block; width: auto; max-width: none; opacity: .85; transition: opacity .15s }
+	.footer-logo-link:hover .footer-logo { opacity: 1 }
 
 	.footer-bottom {
 		max-width: var(--max);
