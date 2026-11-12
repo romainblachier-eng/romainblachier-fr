@@ -227,7 +227,7 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 .hp-featured .hp-head { margin-bottom: 1.25rem }
 .hp-featured-grid {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 1.25rem;
 }
 .hp-feature {

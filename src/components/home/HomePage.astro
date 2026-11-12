@@ -25,6 +25,7 @@ const t = useTranslations(lang);
 const recentPubs = (await getPublications(lang)).slice(0, 3);
 
 const LE_MONDE = "https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucleaires-a-l-arret-le-scenario-combinant-canicule-durable-eau-trop-chaude-et-baisse-des-debits-met-a-mal-le-parc-francais_6745802_3232.html";
+const LES_ECHOS = "https://www.lesechos.fr/idees-debats/cercle/affaire-mbappe-les-ligues-et-les-clubs-devraient-appliquer-aux-recettes-chinoises-une-decote-pour-risque-politique-comme-le-fait-un-investisseur-dans-un-pays-instable-2260741";
 const CAIRN = "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr";
 const AIEE = "https://www.aieesymposium.eu/";
 
@@ -32,6 +33,7 @@ type TagKey = Parameters<typeof t>[0];
 const copy = {
 	fr: {
 		featured: [
+			{ kind: t("alaune.kind.tribune"), source: "Les Echos", text: "Affaire Mbappé : « Les ligues et les clubs devraient appliquer aux recettes chinoises une décote pour risque politique, comme le fait un investisseur dans un pays instable »", href: LES_ECHOS, link: "Lire la tribune →" },
 			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "« Centrales nucléaires à l'arrêt : le scénario combinant canicule durable, eau trop chaude et baisse des débits met à mal le parc français »", href: LE_MONDE, link: "Lire la tribune →" },
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "« La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement », n° 685 (2026/4), p. 48-62", href: CAIRN, link: "Lire sur Cairn →" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
@@ -67,6 +69,7 @@ const copy = {
 	},
 	en: {
 		featured: [
+			{ kind: t("alaune.kind.tribune"), source: "Les Echos", text: "The Mbappé affair: \"Leagues and clubs should apply a political-risk discount to Chinese revenue, as an investor does in an unstable country\"", href: LES_ECHOS, link: "Read the op-ed (in French) →" },
 			{ kind: t("alaune.kind.tribune"), source: "Le Monde", text: "\"Nuclear reactors shut down: the combination of a lasting heatwave, water that is too warm and falling river flows is straining the French fleet\"", href: LE_MONDE, link: "Read the op-ed (in French) →" },
 			{ kind: t("alaune.kind.journal"), source: "La Revue de l'Énergie", text: "\"La fenêtre de rente : la sortie émirienne de l'OPEP+ comme aboutissement\", peer-reviewed journal, no. 685 (2026/4), pp. 48-62", href: CAIRN, link: "Read on Cairn (in French) →" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
@@ -99,6 +102,7 @@ const copy = {
 	},
 	zh: {
 		featured: [
+			{ kind: t("alaune.kind.tribune"), source: "《回聲報》Les Echos", text: "姆巴佩事件：〈聯賽與球會應對中國收入計入政治風險折價，一如投資人面對不穩定國家〉", href: LES_ECHOS, link: "閱讀全文（法文）→" },
 			{ kind: t("alaune.kind.tribune"), source: "《世界報》Le Monde", text: "〈核電機組停機：持續熱浪、水溫過高與河川流量下降的疊加情境，正衝擊法國核電機隊〉", href: LE_MONDE, link: "閱讀全文（法文）→" },
 			{ kind: t("alaune.kind.journal"), source: "《能源評論》La Revue de l'Énergie", text: "〈租金之窗：阿聯退出 OPEC+ 作為終局〉，同行評審學術期刊，第 685 期（2026/4），頁 48-62", href: CAIRN, link: "於 Cairn 閱讀（法文）→" },
 			{ kind: t("alaune.kind.conference"), source: t("alaune.conference.title"), text: t("alaune.conference.topic"), href: AIEE, link: t("alaune.conference.link") },
