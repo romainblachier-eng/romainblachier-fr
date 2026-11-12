@@ -64,7 +64,7 @@ Cas en attente de compléments (autre boîte mail à connecter) : PCAET 120 000 
 
 - **18 ans** dans l'électricité renouvelable (depuis 2008). Formulation acceptée : « près de deux décennies ». Ne pas écrire « deux décennies » sec.
 - **12 ans** de mandat exécutif local (Ville et Métropole de Lyon, 2008-2020).
-- **16 ans** d'enseignement supérieur (depuis 2010), ~180 h/an, ~780 h cumulées, en français, anglais et espagnol.
+- **16 ans** d'enseignement supérieur (depuis 2010), en français, anglais et espagnol. Ne plus afficher de volume horaire (« 180 h par an ») sur le site : retiré à la demande de Romain le 12/11/2026.
 - **5 pays** de publication : France, Taïwan, États-Unis, Cameroun, Suisse.
 - **3 zones** d'intervention : Afrique francophone, Europe, Indo-Pacifique.
 

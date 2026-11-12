@@ -61,8 +61,6 @@ export const ui = {
 		'formateur.notes.desc': "L'essentiel du travail est écrit : notes de cadrage, diagnostics de secteur, analyses pour des institutions. Une partie reste confidentielle, le reste paraît en tribune ou en note publique.",
 		'formateur.elus.title': 'Formation d\'élus',
 		'formateur.elus.desc': "Douze ans de mandat exécutif à la Ville puis à la Métropole de Lyon : je forme les élus et leurs équipes sur l'énergie, la communication de crise, les relations institutionnelles et les affaires publiques.",
-		'formateur.stat.years': '≈ 180 h',
-		'formateur.stat.years.label': "d'enseignement par an, depuis 2010",
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'langues d\'intervention',
 		// À la une
@@ -214,8 +212,6 @@ export const ui = {
 		'formateur.notes.desc': "Most of the work is written: scoping papers, sector diagnoses, analysis for institutions. Some of it stays confidential; the rest appears as an op-ed or a published paper.",
 		'formateur.elus.title': 'Elected officials training',
 		'formateur.elus.desc': "Twelve years of executive office in the City and then the Metropolitan area of Lyon: I train elected officials and their teams on energy, crisis communications, institutional relations and public affairs.",
-		'formateur.stat.years': '≈ 180 h',
-		'formateur.stat.years.label': 'of teaching a year, since 2010',
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'languages',
 		// Featured
@@ -367,8 +363,6 @@ export const ui = {
 		'formateur.notes.desc': '大部分工作是書面的：框架報告、部門診斷、為機構撰寫的分析。一部分保密，其餘以評論或公開研究短文的形式發表。',
 		'formateur.elus.title': '民選代表培訓',
 		'formateur.elus.desc': "先後在里昂市與大里昂都會區擔任十二年執行職務：我為民選代表及其團隊提供能源、危機傳播、機構關係與公共事務方面的培訓。",
-		'formateur.stat.years': '≈ 180 小時',
-		'formateur.stat.years.label': '每年授課時數，自 2010 年起',
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': '授課語言',
 		// Featured

@@ -153,13 +153,8 @@ const proof: { label: TagKey; value: TagKey }[] = [
 	{ label: "proof.teaching", value: "proof.teaching.v" },
 ];
 
-// Bande « Dans la presse » : douze médias marquants (France, Taïwan, Europe,
-// Afrique) plutôt que les 33 logos, illisibles une fois réduits. Libellés `alt`
-// de MediaLogosBand ; la liste complète des médias reste filtrable sur /publications.
-const pressLogos = [
-	"Le Monde", "Les Echos", "Taipei Times", "Domino Theory", "Le Temps", "聯合報 — United Daily News", "Fondation Jean-Jaurès",
-	"African Arguments", "Libération", "CEIAS — Central European Institute of Asian Studies", "Terra Nova", "Revue Conflits",
-];
+// Bande « Dans la presse » : tous les logos de MediaLogosBand (médias, puis Cairn
+// et HAL), à la demande de Romain (12/11/2026).
 
 const publicationsHref = getLocalePath(lang, "/publications/");
 const ntuArticleHref = getLocalePath(lang, "/publications/taipei-times/taipei-times-transition-energetique-taiwan/");
@@ -190,7 +185,6 @@ const formats = [
 ];
 
 const stats = [
-	{ value: t("formateur.stat.years"), label: t("formateur.stat.years.label") },
 	{ value: t("formateur.stat.languages"), label: t("formateur.stat.languages.label") },
 ];
 
@@ -243,6 +237,12 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 				))}
 			</dl>
 		</section>
+	</section>
+
+	<!-- Bande de médias : tous les logos, juste sous les repères. -->
+	<section class="hp-press" aria-label={copy.pressLabel}>
+		<p class="hp-press-label">{copy.pressLabel}</p>
+		<MediaLogosBand />
 	</section>
 
 	<!-- À la une -->
@@ -307,12 +307,6 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 			</div>
 		</section>
 	)}
-
-	<!-- Bande de médias -->
-	<section class="hp-press" aria-label={copy.pressLabel}>
-		<p class="hp-press-label">{copy.pressLabel}</p>
-		<MediaLogosBand featured={pressLogos} />
-	</section>
 
 	<!-- Ce que je fais -->
 	<section class="hp-section hp-services" aria-labelledby="hp-services-title">
