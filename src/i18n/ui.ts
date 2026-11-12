@@ -63,8 +63,6 @@ export const ui = {
 		'formateur.elus.desc': "Douze ans de mandat exécutif à la Ville puis à la Métropole de Lyon : je forme les élus et leurs équipes sur l'énergie, la communication de crise, les relations institutionnelles et les affaires publiques.",
 		'formateur.stat.years': '≈ 180 h',
 		'formateur.stat.years.label': "d'enseignement par an, depuis 2010",
-		'formateur.stat.schools': '10',
-		'formateur.stat.schools.label': 'établissements en 2026-2027',
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'langues d\'intervention',
 		// À la une
@@ -218,8 +216,6 @@ export const ui = {
 		'formateur.elus.desc': "Twelve years of executive office in the City and then the Metropolitan area of Lyon: I train elected officials and their teams on energy, crisis communications, institutional relations and public affairs.",
 		'formateur.stat.years': '≈ 180 h',
 		'formateur.stat.years.label': 'of teaching a year, since 2010',
-		'formateur.stat.schools': '10',
-		'formateur.stat.schools.label': 'institutions in 2026-2027',
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': 'languages',
 		// Featured
@@ -373,8 +369,6 @@ export const ui = {
 		'formateur.elus.desc': "先後在里昂市與大里昂都會區擔任十二年執行職務：我為民選代表及其團隊提供能源、危機傳播、機構關係與公共事務方面的培訓。",
 		'formateur.stat.years': '≈ 180 小時',
 		'formateur.stat.years.label': '每年授課時數，自 2010 年起',
-		'formateur.stat.schools': '10',
-		'formateur.stat.schools.label': '所機構，2026-2027 學年',
 		'formateur.stat.languages': 'FR / EN / ES',
 		'formateur.stat.languages.label': '授課語言',
 		// Featured
