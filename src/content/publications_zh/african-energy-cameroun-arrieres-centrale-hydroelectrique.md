@@ -13,7 +13,7 @@ heroImage: '../../assets/african-energy-logo.svg'
 
 ## African Energy
 
-《**African Energy**》是一家英國能源專業媒體，聚焦非洲能源，提供新聞、數據與顧問服務。我擔任該刊的中部非洲通訊記者。
+《**African Energy**》是一家英國能源專業媒體，聚焦非洲能源，提供新聞、數據與顧問服務。我擔任該刊的[中部非洲通訊記者](https://www.africa-energy.com/about-african-energy/staff-romain-blachier)。
 
 ## 文章內容
 

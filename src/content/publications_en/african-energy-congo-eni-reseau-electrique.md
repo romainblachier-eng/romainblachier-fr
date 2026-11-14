@@ -16,7 +16,7 @@ With Jon Marks, I co-wrote an analysis in **[African Energy](https://www.africa-
 
 ## African Energy
 
-**African Energy** is a UK-based publication covering energy in Africa, combining news, data and consultancy. I am its Central Africa correspondent.
+**African Energy** is a UK-based publication covering energy in Africa, combining news, data and consultancy. I am its [Central Africa correspondent](https://www.africa-energy.com/about-african-energy/staff-romain-blachier).
 
 ## The article
 

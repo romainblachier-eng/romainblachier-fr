@@ -28,6 +28,8 @@ const LE_MONDE = "https://www.lemonde.fr/idees/article/2026/08/13/centrales-nucl
 const LES_ECHOS = "https://www.lesechos.fr/idees-debats/cercle/affaire-mbappe-les-ligues-et-les-clubs-devraient-appliquer-aux-recettes-chinoises-une-decote-pour-risque-politique-comme-le-fait-un-investisseur-dans-un-pays-instable-2260741";
 const CAIRN = "https://stm.cairn.info/revue-revue-de-l-energie-2026-4-page-48?lang=fr";
 const AIEE = "https://www.aieesymposium.eu/";
+// Page de correspondant sur le site d'African Energy (rubrique « Our staff »).
+const AFRICAN_ENERGY_STAFF = "https://www.africa-energy.com/about-african-energy/staff-romain-blachier";
 
 type TagKey = Parameters<typeof t>[0];
 const copy = {
@@ -57,7 +59,7 @@ const copy = {
 			"Membre du collège société civile, Plateforme RSE (France Stratégie)",
 			"Expert référencé, Banque africaine de développement (depuis 2025)",
 			"Consultant référencé, Banque asiatique de développement (depuis 2026)",
-			"Correspondant Afrique centrale, African Energy",
+			{ text: "Correspondant Afrique centrale, African Energy", href: AFRICAN_ENERGY_STAFF },
 		],
 		culture: [
 			{ text: "Président, Association France-Formosa (depuis 2012) — dix séjours à Taïwan, dont quatre à l'invitation du ministère des Affaires étrangères" },
@@ -90,7 +92,7 @@ const copy = {
 			"Civil-society college member, CSR Platform (France Stratégie)",
 			"Listed expert, African Development Bank (since 2025)",
 			"Registered consultant, Asian Development Bank (since 2026)",
-			"Central Africa correspondent, African Energy",
+			{ text: "Central Africa correspondent, African Energy", href: AFRICAN_ENERGY_STAFF },
 		],
 		culture: [
 			{ text: "President, Association France-Formosa (since 2012) — ten trips to Taiwan, four of them at the invitation of the Ministry of Foreign Affairs" },
@@ -123,7 +125,7 @@ const copy = {
 			"法國戰略署企業社會責任平台公民社會委員",
 			"非洲開發銀行專家名冊（2025 年起）",
 			"亞洲開發銀行顧問名冊（2026 年起）",
-			"《African Energy》中部非洲通訊記者",
+			{ text: "《African Energy》中部非洲通訊記者", href: AFRICAN_ENERGY_STAFF },
 		],
 		culture: [
 			{ text: "法國福爾摩沙協會（France-Formosa）會長，2012 年起；十度赴台，其中四次應外交部邀請" },
@@ -141,7 +143,7 @@ const copy = {
 	servicesOverline: string;
 	topicsMore: string;
 	referencesOverline: string;
-	institutional: string[];
+	institutional: (string | { text: string; href: string })[];
 	culture: { text: string; em?: string }[];
 	upcoming: (list: string[]) => string;
 	topics: TagKey[];
@@ -153,8 +155,9 @@ const moreTopics: TagKey[] = [
 	"tag.digital_comms", "tag.ai_teaching", "tag.cultural_diplomacy", "tag.scientific_coop",
 ];
 
-const proof: { label: TagKey; value: TagKey }[] = [
+const proof: { label: TagKey; value: TagKey; href?: string }[] = [
 	{ label: "proof.media", value: "proof.media.v" },
+	{ label: "proof.correspondent", value: "proof.correspondent.v", href: AFRICAN_ENERGY_STAFF },
 	{ label: "proof.afdb", value: "proof.afdb.v" },
 	{ label: "proof.jaures", value: "proof.jaures.v" },
 	{ label: "proof.teaching", value: "proof.teaching.v" },
@@ -233,13 +236,13 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 				</figcaption>
 			</figure>
 		</div>
-		<!-- Repères : quatre preuves lisibles avant tout défilement. -->
+		<!-- Repères : cinq preuves lisibles avant tout défilement. -->
 		<section class="hp-wrap hp-proof" aria-label={copy.proofLabel}>
 			<dl>
 				{proof.map((p) => (
 					<div>
 						<dt>{t(p.label)}</dt>
-						<dd>{t(p.value)}</dd>
+						<dd>{p.href ? <a href={p.href} rel="noopener" target="_blank">{t(p.value)}</a> : t(p.value)}</dd>
 					</div>
 				))}
 			</dl>
@@ -433,7 +436,7 @@ const arrow = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
 				<div class="hp-ref reveal">
 					<h3>{t("references.institutional")}</h3>
 					<ul>
-						{copy.institutional.map((item) => <li>{item}</li>)}
+						{copy.institutional.map((item) => <li>{typeof item === "string" ? item : <a href={item.href} rel="noopener" target="_blank">{item.text}</a>}</li>)}
 					</ul>
 				</div>
 				<div class="hp-ref reveal">

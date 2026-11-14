@@ -16,7 +16,7 @@ Je cosigne avec Marc Howard, dans **[African Energy](https://www.africa-energy.c
 
 ## African Energy
 
-**African Energy** est une publication britannique consacrée à l'énergie en Afrique, qui associe informations, données et conseil. J'en suis le correspondant pour l'Afrique centrale.
+**African Energy** est une publication britannique consacrée à l'énergie en Afrique, qui associe informations, données et conseil. J'en suis le [correspondant pour l'Afrique centrale](https://www.africa-energy.com/about-african-energy/staff-romain-blachier).
 
 ## L'article
 

@@ -197,8 +197,8 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 .hp-proof { margin-top: clamp(2.5rem, 5vw, 4rem) }
 .hp-proof dl {
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-	gap: 1.25rem 2.5rem;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 1.25rem 2rem;
 	padding-top: 1.5rem;
 	border-top: 1px solid var(--line);
 }
@@ -215,7 +215,17 @@ main.home { width: auto; max-width: none; margin: 0; padding: 0 }
 	line-height: 1.45;
 	color: var(--ink);
 }
-@media (max-width: 900px) {
+.hp-proof dd a, .hp-ref li a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-warm);
+	text-underline-offset: .2em;
+}
+.hp-proof dd a:hover, .hp-ref li a:hover { color: var(--accent-warm) }
+@media (max-width: 1080px) {
+	.hp-proof dl { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+}
+@media (max-width: 760px) {
 	.hp-proof dl { grid-template-columns: 1fr 1fr }
 }
 @media (max-width: 520px) {
