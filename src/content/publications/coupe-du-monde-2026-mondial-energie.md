@@ -9,10 +9,10 @@ pubDate: 2026-06-17T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 
-Je signe dans **Revue Conflits** un article sur la dimension énergétique de la Coupe du monde 2026.
+Je signe dans **[Revue Conflits](https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/)**, le 17 juin 2026, un article intitulé « Coupe du monde 2026 : un Mondial sous le signe de l'énergie ».
 
-Depuis l'Afrique du Sud en 2010, le Mondial n'a plus quitté les grands producteurs d'hydrocarbures : le Brésil et son pétrole offshore en 2014, la Russie en 2018, le Qatar en 2022, et désormais le trio nord-américain mené par le premier producteur mondial de pétrole et de gaz. Le ballon est devenu une affaire d'énergie.
+J'y relève une régularité : depuis l'édition sud-africaine de 2010, le tournoi s'est toujours tenu chez de grands pays d'hydrocarbures, du Brésil au Qatar, et celui de 2026 est coorganisé par trois pays d'Amérique du Nord, emmenés par les États-Unis, qui extraient plus de pétrole et de gaz que tout autre pays. Je distingue ensuite trois manières de convertir une rente énergétique en influence : la contrainte, dont la Russie a usé avant d'être écartée de la compétition après son attaque contre l'Ukraine ; la séduction, pratiquée par le Qatar et l'Arabie saoudite, qui achètent des clubs et financent la FIFA ; la règle, que Washington impose aux autres.
 
-L'article distingue trois usages de la rente énergétique : l'énergie comme arme, dont la Russie a fait l'expérience avant d'être exclue après l'agression de l'Ukraine ; l'énergie comme charme, avec le Qatar et l'Arabie saoudite qui rachètent des clubs et sponsorisent la FIFA pour bâtir un soft power durable ; et l'énergie comme loi, les États-Unis imposant leurs conditions. Il s'arrête enfin sur le paradoxe français : favorite du tournoi, la France dispose de géants énergétiques mondiaux — EDF, Engie, TotalEnergies — sans dépendre d'hydrocarbures domestiques, en s'appuyant sur l'excellence technique et l'innovation.
+Je termine sur la France, favorite du tournoi : elle compte des groupes énergétiques de taille mondiale, EDF, Engie et TotalEnergies, sans disposer d'hydrocarbures sur son sol, et doit ce rang énergétique à l'ingénierie plutôt qu'à une rente.
 
 [Lire l'article complet sur Revue Conflits](https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/)

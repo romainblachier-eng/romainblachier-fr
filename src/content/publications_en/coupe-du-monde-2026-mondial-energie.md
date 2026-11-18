@@ -9,10 +9,10 @@ pubDate: 2026-06-17T10:00:00.000Z
 heroImage: '../../assets/revue-conflits-logo.jpg'
 ---
 
-I published an article in **Revue Conflits** on the energy dimension of the 2026 World Cup.
+I have an article in **[Revue Conflits](https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/)**, published on 17 June 2026 under the title “Coupe du monde 2026 : un Mondial sous le signe de l'énergie”.
 
-Since South Africa in 2010, the World Cup has stayed within the orbit of the major hydrocarbon producers: Brazil and its offshore oil in 2014, Russia in 2018, Qatar in 2022, and now the North American trio led by the world's leading producer of oil and gas. The game has become a matter of energy.
+In it I point to a pattern: since the 2010 tournament in South Africa, the World Cup has always been held in major hydrocarbon countries, from Brazil to Qatar, and the 2026 edition is co-hosted by three North American countries led by the United States, which extracts more oil and gas than any other country. I then set out three ways of turning energy rent into influence: coercion, used by Russia before it was barred from the competition after its attack on Ukraine; seduction, practised by Qatar and Saudi Arabia, which buy clubs and fund FIFA; and the rule, which Washington imposes on others.
 
-The article distinguishes three uses of energy rent: energy as a weapon, which Russia experienced before being excluded after its aggression against Ukraine; energy as charm, with Qatar and Saudi Arabia buying clubs and sponsoring FIFA to build durable soft power; and energy as law, with the United States setting its own terms. It closes on the French paradox: a tournament favourite, France has world-class energy companies — EDF, Engie, TotalEnergies — without depending on domestic hydrocarbons, relying instead on technical excellence and innovation.
+I close on France, a tournament favourite: it has world-class energy groups, EDF, Engie and TotalEnergies, without hydrocarbons on its own soil, and owes that energy standing to engineering rather than to rent.
 
 [Read the full article on Revue Conflits](https://www.revueconflits.com/coupe-du-monde-2026-un-mondial-sous-le-signe-de-lenergie/)

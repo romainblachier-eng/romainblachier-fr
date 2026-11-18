@@ -5,28 +5,17 @@ lienCanonique: "https://www.lyonmag.com/article/153513/la-clim-est-une-machine-s
 kind: tribune
 title: "La clim est une machine, son accès est une politique"
 description: >-
-  Enquête de terrain (reportage et fact-checking), publiée dans Lyon Mag, sur
-  l'accès inégal à la climatisation à Lyon et la mortalité liée aux fortes
-  chaleurs — au moins 5 764 décès en excès entre le 17 juin et le 2 juillet
-  2026 selon Santé publique France. L'article croise recherche académique,
-  fiscalité (TVA, MaPrimeRénov') et délégations métropolitaines pour montrer
-  l'absence d'un pilotage unique de la politique de la chaleur urbaine.
+  Enquête parue dans Lyon Mag sur l'accès inégal à la climatisation à Lyon après
+  la canicule meurtrière de 2026, et sur une politique de la chaleur sans
+  pilote.
 pubDate: 2026-08-09T06:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'
 ---
 
-Enquête publiée dans **[Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)** le 9 août 2026, sur l'accès inégal à la climatisation à Lyon et la mortalité liée aux fortes chaleurs. Un travail de terrain et de vérification des faits, pas une tribune d'opinion.
+Enquête publiée dans **[Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)** sous le titre « La clim est une machine, son accès est une politique », sur l'accès inégal à la climatisation à Lyon et la mortalité due aux fortes chaleurs.
 
-## Une mortalité chiffrée
+Point de départ : selon Santé publique France, la canicule du 17 juin au 2 juillet 2026 a causé au moins 5 764 morts de plus que la normale, surtout parmi les 75 ans et plus, la progression la plus nette concernant les décès à domicile. Les études, de Bouchama en 2007 à une vaste recherche ontarienne parue dans le *JAMA Internal Medicine*, convergent : la protection vient de la climatisation dans la chambre, non de la pièce commune rafraîchie qu'exige la réglementation française.
 
-Entre le 17 juin et le 2 juillet 2026, la canicule a provoqué au moins 5 764 décès en excès (+36 %) selon Santé publique France, dont les deux tiers chez les 75 ans et plus. La hausse la plus brutale a eu lieu à domicile : +91 % sur la seule semaine du 22 au 28 juin. La recherche converge depuis vingt ans, de Bouchama (2007) à la grande étude ontarienne publiée dans le *JAMA Internal Medicine* : la climatisation dans la chambre protège, pas la salle rafraîchie du rez-de-chaussée que le droit français impose.
-
-## Une fiscalité qui creuse l'écart
-
-Même appareil, deux traitements. Jusqu'à 5 000 € de MaPrimeRénov' pour une pompe à chaleur air-eau posée seule, rien pour son équivalent air-air sauf rénovation d'ampleur. TVA à 5,5 % pour un climatiseur réversible fixe posé par une entreprise, 20 % pour le monobloc mobile — le seul appareil accessible à un locataire sans travaux ni accord du bailleur, et le plus énergivore.
-
-## Un pilotage introuvable
-
-Six délégations métropolitaines touchent la chaleur — santé, autonomie, adaptation climatique, urbanisme, habitat, offre de logement — sans qu'aucune ne la contienne. Côté Ville de Lyon, l'urbanisme et l'habitat reviennent à la Métropole depuis 2015 : la marge de manœuvre municipale sur le parc privé existant, où se joue l'essentiel, est structurellement faible.
+Je montre ensuite que les règles publiques creusent l'écart. MaPrimeRénov' aide la pompe à chaleur air-eau, pas sa jumelle air-air hors rénovation d'ampleur ; la TVA réduite ne vaut que pour les appareils fixes posés par une entreprise, alors que le climatiseur mobile, seule option d'un locataire sans travaux et appareil le plus gourmand, reste à 20 %. Enfin, personne ne pilote la question : six vice-présidences de la Métropole touchent à la chaleur sans qu'aucune en ait la charge, et la Ville, dont l'urbanisme et l'habitat relèvent de la Métropole depuis 2015, a peu de leviers sur les logements privés existants.
 
 → [Lire l'enquête dans Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)

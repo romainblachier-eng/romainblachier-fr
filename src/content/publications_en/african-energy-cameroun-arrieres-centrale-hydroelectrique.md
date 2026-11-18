@@ -6,8 +6,8 @@ kind: tribune
 title: "Cameroon: Arrears for flagship hydroelectric plant almost exhausted guarantee — African Energy"
 description: >-
   Analysis co-written with Marc Howard in African Energy (issue 550, 1
-  November 2026): arrears from the state-owned offtaker almost exhausted the
-  guarantee of a flagship hydroelectric plant in Cameroon.
+  November 2026): a flagship hydroelectric plant in Cameroon has nearly used up
+  its guarantee because the state-owned buyer is behind on payments.
 pubDate: 2026-11-01T12:00:00.000Z
 heroImage: '../../assets/african-energy-logo.svg'
 ---
@@ -20,7 +20,7 @@ With Marc Howard, I co-wrote an analysis in **[African Energy](https://www.afric
 
 ## The article
 
-A large hydroelectric power plant in Cameroon saw significant arrears built up by the state-owned offtaker, almost exhausting its guarantee. Its fiscal position should improve once new high-voltage infrastructure is commissioned.
+Unpaid bills from Cameroon's state-owned power buyer piled up at a major hydroelectric plant until its guarantee was nearly used up. The plant's finances should recover once new high-voltage infrastructure enters service.
 
 The article is available to African Energy subscribers.
 

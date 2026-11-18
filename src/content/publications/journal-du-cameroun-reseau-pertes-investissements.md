@@ -21,8 +21,8 @@ Avec les 420 MW de Nachtigal, la plateforme cartographique préparée par le MIN
 
 Je propose deux méthodes simples, à tester avant de les généraliser :
 
-- **Créer des fiches électriques par bassin de charge.** Elles réuniraient la charge des postes et des lignes, les incidents, les pertes, les demandes de raccordement et les projets territoriaux à venir. Ces données permettraient de classer les investissements selon des critères stables — saturation, fréquence des coupures, demande attendue, coût des travaux et importance des usages desservis — puis d'établir un programme glissant sur trois à cinq ans.
-- **Suivre les pertes et le recouvrement départ par départ.** Un bilan mensuel comparerait l'électricité injectée en tête de départ, celle enregistrée par les compteurs, les volumes facturés et les sommes encaissées. Il deviendrait alors possible de distinguer une perte technique d'un branchement irrégulier, d'un défaut de comptage, d'une erreur dans la base clientèle ou d'un impayé — et de choisir la réponse adaptée.
+- **Une fiche par bassin de charge.** Elles réuniraient la charge des postes et des lignes, les incidents, les pertes, les demandes de raccordement et les projets territoriaux à venir. Ces données permettraient de classer les investissements selon des critères stables — saturation, fréquence des coupures, demande attendue, coût des travaux et importance des usages desservis — puis de les planifier sur un horizon glissant de trois à cinq ans.
+- **Mesurer pertes et encaissements pour chaque départ.** Chaque mois, on rapprocherait l'énergie injectée au départ, celle enregistrée par les compteurs, les volumes facturés et les sommes encaissées. Il deviendrait alors possible de distinguer une perte technique d'un branchement irrégulier, d'un défaut de comptage, d'une erreur dans la base clientèle ou d'un impayé — et de choisir la réponse adaptée.
 
 Quelques territoires contrastés et une dizaine de départs moyenne tension suffiraient pour lancer l'expérimentation. Après six à douze mois, les résultats montreraient quelles interventions fonctionnent, ce qu'elles rapportent et ce qui mérite d'être étendu.
 

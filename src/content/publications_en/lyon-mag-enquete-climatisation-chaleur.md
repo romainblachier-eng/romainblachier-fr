@@ -5,28 +5,17 @@ lienCanonique: "https://www.lyonmag.com/article/153513/la-clim-est-une-machine-s
 kind: tribune
 title: "Air conditioning is a machine, access to it is a policy"
 description: >-
-  Field investigation (reporting and fact-checking), published in Lyon Mag,
-  on unequal access to air conditioning in Lyon and heat-related mortality —
-  at least 5,764 excess deaths between 17 June and 2 July 2026 according to
-  Santé publique France. The piece brings together academic research, tax
-  policy (VAT, renovation subsidies) and metropolitan portfolios to show the
-  lack of a single lead on urban heat policy.
+  Investigation in Lyon Mag into unequal access to air conditioning in Lyon
+  after the deadly 2026 heatwave, and into a heat policy with no one at the
+  helm.
 pubDate: 2026-08-09T06:00:00.000Z
 heroImage: '../../assets/lyon-mag-logo.svg'
 ---
 
-Investigation published in **[Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)** (original title: *« La clim est une machine, son accès est une politique »*) on 9 August 2026, on unequal access to air conditioning in Lyon and heat-related mortality. A piece of field reporting and fact-checking, not an opinion column.
+Investigation published in **[Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)** under the title “La clim est une machine, son accès est une politique”, on unequal access to air conditioning in Lyon and deaths caused by extreme heat.
 
-## Mortality, in numbers
+Starting point: according to Santé publique France, the heatwave from 17 June to 2 July 2026 caused at least 5,764 more deaths than expected, mostly among people aged 75 and over, with the sharpest increase in deaths at home. Studies, from Bouchama in 2007 to a large Ontario study published in *JAMA Internal Medicine*, converge: protection comes from air conditioning in the bedroom, not from the shared cooled room that French regulations require.
 
-Between 17 June and 2 July 2026, the heatwave caused at least 5,764 excess deaths (+36%) according to Santé publique France, two-thirds of them among people aged 75 and over. The sharpest rise was at home: +91% in the single week of 22–28 June. Research has converged for twenty years, from Bouchama (2007) to a large Ontario study published in *JAMA Internal Medicine*: air conditioning in the bedroom protects; the shared cooled room on the ground floor mandated by French law does not.
-
-## A tax system that widens the gap
-
-Same appliance, two treatments. Up to €5,000 in renovation subsidies for a standalone air-to-water heat pump, nothing for its air-to-air equivalent unless bundled into a large-scale renovation. VAT at 5.5% for a fixed reversible unit installed by a company, 20% for the portable unit — the only appliance a tenant can access without works or a landlord's approval, and the most energy-hungry.
-
-## No one clearly in charge
-
-Six metropolitan portfolios touch on heat — health, elderly care, climate adaptation, planning, housing, housing supply — and none of them owns it. At the City of Lyon, planning and housing have been a Metropolis competency since 2015: the municipality's room for manoeuvre on the existing private housing stock, where most of the problem sits, is structurally limited.
+I then show that public rules widen the gap. MaPrimeRénov' supports an air-to-water heat pump, not its air-to-air twin outside a major renovation; the reduced VAT rate applies only to fixed units installed by a company, whereas the portable air conditioner, a tenant's only option without works and the most energy-hungry appliance, stays at 20%. Lastly, no one is in charge: six Metropolis vice-presidencies touch on heat without any of them owning it, and the City, whose planning and housing powers have sat with the Metropolis since 2015, has few levers over existing private homes.
 
 → [Read the investigation in Lyon Mag](https://www.lyonmag.com/article/153513/la-clim-est-une-machine-son-acces-est-une-politique)

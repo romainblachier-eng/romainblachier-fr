@@ -5,28 +5,16 @@ lienCanonique: "https://www.taipeitimes.com/News/editorials/archives/2026/11/01/
 kind: tribune
 title: "European soccer’s apology to China — Taipei Times"
 description: >-
-  Editorial in the Taipei Times, 1 November 2026: over a meme, Beijing obtained
-  an apology from European soccer. Taiwan can make bravery cheaper.
+  Op-ed in the Taipei Times, 1 November 2026: after a Mao meme, Beijing
+  obtained an apology from European soccer. What Taiwan can set against it.
 pubDate: 2026-11-01T08:00:00.000Z
 heroImage: '../../assets/taipei-times-logo.gif'
 ---
 
-I have a piece in the **[Taipei Times](https://www.taipeitimes.com/News/editorials/archives/2026/11/01/2003866936)** titled “European soccer’s apology to China”. It appeared on the Editorials page on 1 November 2026.
+I have an op-ed in the **[Taipei Times](https://www.taipeitimes.com/News/editorials/archives/2026/11/01/2003866936)**, published on 1 November 2026 on the Editorials page: “European soccer’s apology to China”.
 
-## What happened
+The piece starts from a video in which Kylian Mbappé laughs at a meme that portrays him as Mao Zedong (毛澤東). Beijing made it an affair of state: three Chinese companies broke off their contracts with him, CCTV pulled La Liga from its schedule, and then the player, La Liga and Real Madrid apologized. I argue that by saying sorry for a joke about a leader whose policies caused a deadly famine, European soccer lets Beijing recast historical fact as an outrage. Taiwanese went through a similar scene in 2016, when the singer Chou Tzu-yu (周子瑜) had to read out a declaration in front of a camera; the NBA, for its part, held firm in 2019.
 
-A video from the French show *The Bridge* showed Kylian Mbappé laughing at a meme that pasted his face onto the body of Mao Zedong (毛澤東). Beijing turned it into a diplomatic affair. Three Chinese companies ended their deals with him with immediate effect, one citing “a zero-tolerance policy toward any behavior that offends national sentiments”, and state broadcaster CCTV dropped Spanish La Liga. Then came the apologies: Mbappé’s, in three languages including Mandarin, then La Liga’s and Real Madrid’s. The Chinese foreign ministry spokesman said Beijing took the apology “seriously”. He did not say Beijing accepted it.
-
-## A fact turned into an offense
-
-Mao’s Great Leap Forward caused a famine between 1959 and 1961 that killed tens of millions of people. Calling him a dictator is what textbooks do. Apologizing to Beijing for a meme turns a fact into an offense.
-
-Taiwanese have seen this movie before. In 2016, the Taiwanese singer Chou Tzu-yu (周子瑜), then 16, had to read a statement on camera saying there was “only one China”, for having held the Republic of China flag on South Korean television. Many Taiwanese compared the video to a hostage tape. Companies usually bend, with rare exceptions such as the NBA in 2019, which refused to fire an executive and survived its losses. European soccer picked the other script.
-
-## What I propose
-
-Taiwan cannot pay clubs to be brave, but it can make bravery cheaper. It has a decade of case files, from pop singers to airlines. Its representative offices in Europe could share them with players’ unions such as FIFPRO, while no case is running. The message would be simple: an opinion about a dead dictator is not a breach of contract.
-
-Taiwanese companies could add a lighter touch. A brand willing to sign a player who laughs at a Mao meme would buy more goodwill in Europe than a year of tourism campaigns.
+My proposal: Taiwan cannot afford to buy clubs’ courage, but it can ease what that courage costs them. Its representative offices in Europe could open ten years of documented cases to players’ unions such as FIFPRO, and a Taiwanese brand that took on as its ambassador a player who had laughed at a Mao meme would make more friends in Europe than any tourism campaign.
 
 → [Read the editorial in the Taipei Times](https://www.taipeitimes.com/News/editorials/archives/2026/11/01/2003866936)
